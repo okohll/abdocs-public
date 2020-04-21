@@ -48,6 +48,11 @@
   </url>
   
   <url>
+    <loc>https://okohll.github.io/abdocs-public/docs/security/</loc>
+    <lastmod>2020-04-21T17:43:03+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://okohll.github.io/abdocs-public/about/the-user-interface/</loc>
     <lastmod>2020-04-21T17:09:43+01:00</lastmod>
   </url>
@@ -65,11 +70,6 @@
   <url>
     <loc>https://okohll.github.io/abdocs-public/docs/security/users/managing-users/</loc>
     <lastmod>2020-04-21T17:33:49+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://okohll.github.io/abdocs-public/security/users/</loc>
-    <lastmod>2020-04-21T17:09:43+01:00</lastmod>
   </url>
   
   <url>
@@ -94,12 +94,7 @@
   
   <url>
     <loc>https://okohll.github.io/abdocs-public/</loc>
-    <lastmod>2020-04-21T17:33:49+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://okohll.github.io/abdocs-public/security/</loc>
-    <lastmod>2020-04-21T17:09:43+01:00</lastmod>
+    <lastmod>2020-04-21T17:43:03+01:00</lastmod>
   </url>
   
 </urlset>
