@@ -3,66 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://okohll.github.io/abdocs-public/docs/adding-help/</loc>
-    <lastmod>2020-04-24T20:19:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://okohll.github.io/abdocs-public/docs/advanced-usage/</loc>
-    <lastmod>2020-04-24T20:19:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://okohll.github.io/abdocs-public/docs/calendar/</loc>
-    <lastmod>2020-04-24T20:19:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://okohll.github.io/abdocs-public/docs/change-log/</loc>
-    <lastmod>2020-04-24T20:19:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://okohll.github.io/abdocs-public/docs/charting/</loc>
-    <lastmod>2020-04-24T20:19:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://okohll.github.io/abdocs-public/docs/fields/</loc>
-    <lastmod>2020-04-24T20:19:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://okohll.github.io/abdocs-public/docs/integrations/</loc>
-    <lastmod>2020-04-24T20:19:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://okohll.github.io/abdocs-public/docs/security-and-compliance/</loc>
-    <lastmod>2020-04-24T20:19:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://okohll.github.io/abdocs-public/docs/tables/</loc>
-    <lastmod>2020-04-24T20:19:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://okohll.github.io/abdocs-public/docs/tiles/</loc>
-    <lastmod>2020-04-24T20:19:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://okohll.github.io/abdocs-public/docs/views/</loc>
-    <lastmod>2020-04-24T20:19:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://okohll.github.io/abdocs-public/docs/workflows/</loc>
-    <lastmod>2020-04-24T20:19:52+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://okohll.github.io/abdocs-public/quickstart/tiles/</loc>
     <lastmod>2020-04-21T17:09:43+01:00</lastmod>
   </url>
@@ -93,8 +33,18 @@
   </url>
   
   <url>
+    <loc>https://okohll.github.io/abdocs-public/docs/security-and-compliance/</loc>
+    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://okohll.github.io/abdocs-public/quickstart/tables/</loc>
     <lastmod>2020-04-21T17:09:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://okohll.github.io/abdocs-public/docs/tiles/</loc>
+    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
   </url>
   
   <url>
@@ -103,13 +53,63 @@
   </url>
   
   <url>
+    <loc>https://okohll.github.io/abdocs-public/docs/tables/</loc>
+    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://okohll.github.io/abdocs-public/quickstart/views/</loc>
     <lastmod>2020-04-21T17:09:43+01:00</lastmod>
   </url>
   
   <url>
+    <loc>https://okohll.github.io/abdocs-public/docs/fields/</loc>
+    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://okohll.github.io/abdocs-public/docs/views/</loc>
+    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://okohll.github.io/abdocs-public/docs/workflows/</loc>
+    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://okohll.github.io/abdocs-public/docs/charting/</loc>
+    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://okohll.github.io/abdocs-public/docs/calendar/</loc>
+    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://okohll.github.io/abdocs-public/docs/adding-help/</loc>
+    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://okohll.github.io/abdocs-public/docs/integrations/</loc>
+    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://okohll.github.io/abdocs-public/docs/advanced-usage/</loc>
+    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://okohll.github.io/abdocs-public/docs/change-log/</loc>
+    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://okohll.github.io/abdocs-public/</loc>
-    <lastmod>2020-04-24T20:19:52+01:00</lastmod>
+    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
   </url>
   
 </urlset>
