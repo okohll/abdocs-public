@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>agileBase docs – Docs</title>
-    <link>https://docs.agilebase.co.uk/abdocs-public/docs/</link>
+    <link>https://docs.agilebase.co.uk/docs/</link>
     <description>Recent content in Docs on agileBase docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 18 Apr 2020 16:57:55 +0100</lastBuildDate>
     
-	  <atom:link href="https://docs.agilebase.co.uk/abdocs-public/docs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://docs.agilebase.co.uk/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Quickstart: Creating Tiles</title>
-      <link>https://docs.agilebase.co.uk/abdocs-public/quickstart/tiles/</link>
+      <link>https://docs.agilebase.co.uk/quickstart/tiles/</link>
       <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/abdocs-public/quickstart/tiles/</guid>
+      <guid>https://docs.agilebase.co.uk/quickstart/tiles/</guid>
       <description>
         
         
@@ -32,10 +32,10 @@
     
     <item>
       <title>Introduction: What is no code?</title>
-      <link>https://docs.agilebase.co.uk/abdocs-public/introduction/what-is-no-code/</link>
+      <link>https://docs.agilebase.co.uk/introduction/what-is-no-code/</link>
       <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/abdocs-public/introduction/what-is-no-code/</guid>
+      <guid>https://docs.agilebase.co.uk/introduction/what-is-no-code/</guid>
       <description>
         
         
@@ -45,10 +45,10 @@
     
     <item>
       <title>Quickstart: Adding a table</title>
-      <link>https://docs.agilebase.co.uk/abdocs-public/quickstart/tables/</link>
+      <link>https://docs.agilebase.co.uk/quickstart/tables/</link>
       <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/abdocs-public/quickstart/tables/</guid>
+      <guid>https://docs.agilebase.co.uk/quickstart/tables/</guid>
       <description>
         
         
@@ -58,10 +58,10 @@
     
     <item>
       <title>Quickstart: Adding some fields</title>
-      <link>https://docs.agilebase.co.uk/abdocs-public/quickstart/fields/</link>
+      <link>https://docs.agilebase.co.uk/quickstart/fields/</link>
       <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/abdocs-public/quickstart/fields/</guid>
+      <guid>https://docs.agilebase.co.uk/quickstart/fields/</guid>
       <description>
         
         
@@ -71,10 +71,10 @@
     
     <item>
       <title>Quickstart: Creating a view</title>
-      <link>https://docs.agilebase.co.uk/abdocs-public/quickstart/views/</link>
+      <link>https://docs.agilebase.co.uk/quickstart/views/</link>
       <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/abdocs-public/quickstart/views/</guid>
+      <guid>https://docs.agilebase.co.uk/quickstart/views/</guid>
       <description>
         
         
