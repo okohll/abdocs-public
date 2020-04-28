@@ -1,0 +1,83 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Security Features</title>
+    <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/</link>
+    <description>Recent content in Security Features on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Apr 2020 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Users</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Privileges</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Roles</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Exporting</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Usage Monitoring</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
