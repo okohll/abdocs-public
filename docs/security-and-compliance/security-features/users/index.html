@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-04-29T09:13:25+01:00" />
+<meta property="article:modified_time" content="2020-04-29T09:17:41+01:00" />
 <meta itemprop="name" content="Users">
 <meta itemprop="description" content="Adding, viewing and removing users">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-04-29T09:13:25&#43;01:00" />
+<meta itemprop="dateModified" content="2020-04-29T09:17:41&#43;01:00" />
 <meta itemprop="wordCount" content="1034">
 
 
@@ -535,15 +535,15 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#passwords">Passwords</a></li>
-    <li><a href="#two-factor-authentication">Two factor authentication</a></li>
-    <li><a href="#other-options">Other options</a>
+    <li><a href="#adding-a-user">Adding a user</a>
       <ul>
-        <li><a href="#roles">Roles</a></li>
-        <li><a href="#privileges">Privileges</a></li>
-        <li><a href="#tiles">Tiles</a></li>
+        <li><a href="#passwords">Passwords</a></li>
+        <li><a href="#two-factor-authentication">Two factor authentication</a></li>
+        <li><a href="#other-options">Other options</a></li>
       </ul>
     </li>
+    <li><a href="#viewing-users">Viewing users</a></li>
+    <li><a href="#removing-users">Removing users</a></li>
   </ul>
 </nav>
 
@@ -603,7 +603,7 @@
 	<h1>Users</h1>
     <div class="lead">Adding, viewing and removing users</div>
 	       
-	<h1 id="adding-a-user">Adding a user</h1>
+	<h2 id="adding-a-user">Adding a user</h2>
 <ol>
 <li>Expand the <em>Administration</em> menu in the lefthand sidebar</li>
 <li>Click <em>users</em>. You&rsquo;ll see a list of existing users</li>
@@ -617,41 +617,41 @@
 <li>to allow them to receive notifications when another user adds a comment against a record</li>
 <li>as various features allow a user to be assigned to a record. Workflows can be set up to email those users. E.g. if an account manager is assigned to a customer, you may want to email them when a complaint is received from that customer.</li>
 </ul>
-<h2 id="passwords">Passwords</h2>
+<h3 id="passwords">Passwords</h3>
 <p>The recommended way to set passwords is for the user to choose their own, which they can do once they have a username and email address filled in. They will need to visit the login page, click the &lsquo;forgotten password&rsquo; link and type in their username. They will be emailed a link which will let them set a password.</p>
 <p>As an administrator, you can also manually reset a user&rsquo;s password by clicking &lsquo;change password&rsquo; in their user details screen.
 Passwords are required to be at least 8 characaters long. Apart from that, there are no rules. However, all passwords entered are checked against the <a href="https://haveibeenpwned.com/">https://haveibeenpwned.com/</a> website. Any password that is found in their database of &lsquo;breaches&rsquo; is not allowed to be used.</p>
 <blockquote>
 <p>We recommend the adoption of a password wallet service like <a href="https://1password.com/">1Password</a>, <a href="https://lastpass.com">LastPass</a> or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.</p>
 </blockquote>
-<h2 id="two-factor-authentication">Two factor authentication</h2>
-<p>Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can&rsquo;t do for them, but luckily it is quick and easy to do: <a href="https://todo.com">here&rsquo;s how</a>
-Users without 2FA will be prompted to do so in the user interface and by email.</p>
+<h3 id="two-factor-authentication">Two factor authentication</h3>
+<p>Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can&rsquo;t do for them, but luckily it is quick and easy to do: <a href="https://todo.com">here&rsquo;s how</a>.</p>
+<p>Users without 2FA will be prompted to do so in the user interface and by email.</p>
 <p>2FA is mandatory for <a href="#roles">administrators</a> and necessary before <a href="https://todo.com">manage</a> privileges can be assigned to a user.</p>
 <p>When enabled, a user will be prompted for the 2FA code as well as their password when they log in from a device or location they haven&rsquo;t used in the past 30 days.</p>
 <p>If a user encounters any problems with 2FA, e.g. they lose the device for generating their codes, you can temporarily disable 2FA on their account by going to their user details screen and un-ticking &lsquo;use 2FA&rsquo;. Of course, you need to be aware of the risks, for example double checking that a user who contacts you is really who they say they are. Once they can log in again, they&rsquo;ll be able to enable 2FA themselves again.</p>
 <p>If someone can&rsquo;t use app-based 2FA for some reason, then a fallback option is to use text-message (SMS) based authentication. This is not recommended as there are known insecurities in this method, but it&rsquo;s still better than having no 2FA at all. To enable that, just type in the user&rsquo;s mobile phone number when editing their user details. That phone number isn&rsquo;t used for any other purposes.</p>
-<h2 id="other-options">Other options</h2>
+<h3 id="other-options">Other options</h3>
 <p><strong>Use the custom AgileChilli UI rather than agileBase&rsquo;s:</strong>
 It&rsquo;s possible for companies to apply their logo and custom login screen to the system. Please contact us if you&rsquo;d like to set this up.</p>
 <p><strong>Logout after</strong>
 Automatically end the user&rsquo;s session after after this many minutes of inactivity. The user themselves can also change this setting.</p>
-<h3 id="roles">Roles</h3>
+<h4 id="roles">Roles</h4>
 <p>Tick a role to assign the user to it. The primary purpose of roles is to apply privileges to groups of users, see <a href="https://todo.com">roles</a> for more information.</p>
-<p>There&rsquo;s one special role which can be assigned. It will be marked <strong>grants administrative privileges</strong>. Assigning that role will make a user an administrator, with full permissions over the complete system. They can create/remove users, roles, tables etc. ,as well as assign themselves privileges on any table.</p>
+<p>There&rsquo;s one special role which can be assigned. It will be marked <strong>grants administrative privileges</strong>. Assigning that role will make a user an administrator, with full permissions over the complete system. They can create/remove users, roles, tables etc., as well as assign themselves privileges on any table.</p>
 <p>Next to each role listed is a list of tiles that will be added to their screen if that role is assigned to them. This is a convenience feature to speed up setting up their home screen. The tiles shown for a role are those which more than 50% of the members of that role have. Tiles can be manually added and removed by an <a href="https://todo.com">administrator</a> or the user themselves.</p>
 <p>If any role is a <a href="https://todo.com">filtering role</a>, the filter applied is also displayed.</p>
-<h3 id="privileges">Privileges</h3>
+<h4 id="privileges">Privileges</h4>
 <p>Assign individual table <a href="https://todo.com">privileges</a> to a user.</p>
 <blockquote>
 <p>When dealing with larger numbers of users it&rsquo;s usually more manageable if you use roles to assign privileges.</p>
 </blockquote>
 <p>If a user has a privilege due to being a member of a role, that privilege is shown with a shaded blue background. if the privilege has been individually assigned to them, it&rsquo;s shown in green.</p>
-<h3 id="tiles">Tiles</h3>
+<h4 id="tiles">Tiles</h4>
 <p>Allows an admin to add/remove <a href="https://todo.com">tiles</a> for a user. By default users can add/remove tiles themselves too, although this can be disabled through the use of a <a href="#other-options">custom UI</a>.</p>
-<h1 id="viewing-users">Viewing users</h1>
+<h2 id="viewing-users">Viewing users</h2>
 <p>Expand the <em>Administration</em> menu in the lefthand sidebar and click users. You&rsquo;ll see a list of existing user accounts. Their details are listed including 2FA status (whether they&rsquo;re using app-based 2FA, text message codes or none) and when they last logged in.</p>
-<h1 id="removing-users">Removing users</h1>
+<h2 id="removing-users">Removing users</h2>
 <p>To remove users, when viewing the list of users, tick those to remove and press the delete (cross) button in the top toolbar.</p>
 <p>A user removal will have no effect on any data stored in the system. The user&rsquo;s previous comments will still be visible for example and their username will still be logged against any records they&rsquo;re marked as owner of. Their changes will still be in the audit trail and they will be marked as the creator/last editor of records where relevant.</p>
 <p>You may want to take some other actions after deletion e.g. to re-assign records they are assigned to.</p>
@@ -719,7 +719,7 @@ Automatically end the user&rsquo;s session after after this many minutes of inac
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified April 29, 2020: <a  href="https://github.com/okohll/abdocs/commit/da446d5bd8bfaae0534899f14ede637fca1dc7d8">Draft 1 of users content (da446d5)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified April 29, 2020: <a  href="https://github.com/okohll/abdocs/commit/7ecfae26c95924c9d8b94e5b42134a20ff64cc60">Draft 1 of users content - fix headings (7ecfae2)</a>
 </div>
 </div>
 
