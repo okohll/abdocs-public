@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-04-29T16:22:05+01:00" />
+<meta property="article:modified_time" content="2020-04-29T16:29:33+01:00" />
 <meta itemprop="name" content="Roles">
 <meta itemprop="description" content="Organising users into groups for better management">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-04-29T16:22:05&#43;01:00" />
-<meta itemprop="wordCount" content="842">
+<meta itemprop="dateModified" content="2020-04-29T16:29:33&#43;01:00" />
+<meta itemprop="wordCount" content="900">
 
 
 
@@ -543,7 +543,7 @@
     </li>
     <li><a href="#multi-tenanting">Multi-tenanting</a>
       <ul>
-        <li></li>
+        <li><a href="#complex-multi-tenanting">Complex multi-tenanting</a></li>
       </ul>
     </li>
   </ul>
@@ -618,7 +618,7 @@
 <img src="/role-details.png" alt="Role details"></p>
 <p><strong>Allow Export</strong><br>
 Referrs to exporting to spreadsheet - see <a href="https://todo.com">spreadsheet exports</a></p>
-<p><strong>User Visibility</strong> and <strong>Restrict Data Access</strong>
+<p><strong>User Visibility</strong> and <strong>Restrict Data Access</strong><br>
 These are used to set up <a href="https://todo.com">multi-tenanting</a></p>
 <h3 id="members">Members</h3>
 <p>Tick each user to add them to the role. Users will gain all the privileges defined by the role</p>
@@ -645,12 +645,14 @@ These are used to set up <a href="https://todo.com">multi-tenanting</a></p>
 </ol>
 <p>Users who <strong>aren&rsquo;t</strong> a member of the role will see the account name field in the data editing form and in views. This can be useful for allowing e.g. group managers to see all data.</p>
 <p>If any multi-tenanting roles are set up, then views which <strong>don&rsquo;t</strong> contain a multi-tenanting field will be marked in red in the administration interface, as a warning. If a multi-tenanting user loads one of these views, they will see all records. Typically, practically all views will need the multi-tenanting field to be present.</p>
-<h4 id="complex-multi-tenanting">Complex multi-tenanting</h4>
-<p><strong>Multi-level</strong><br>
-Users may be a member of more than one multi-tenanting role, to set up multi-level multi-tenanting. For example you may use two multi-tenanting fields/roles, one for a company and another for a division. Members of a company role will be able to see data from all divisions in their company and members of both a company and a division role will only be able to see data for a single division.</p>
-<p><strong>Multi-account</strong><br>
-It&rsquo;s also possible for a user to be a member of multiple roles, all of which are set to multi-tenant on the same field, with different values. E.g. if a user is a member of Company A and Company B roles as in our example above, they will see data from those two companies when viewing records, but not Company C.</p>
+<h3 id="complex-multi-tenanting">Complex multi-tenanting</h3>
+<h4 id="multi-level">Multi-level</h4>
+<p>Users may be a member of more than one multi-tenanting role. For example you may use two multi-tenanting fields/roles, one for a company and another for a division. Members of a company role will be able to see data from all divisions in their company and members of both a company and a division role will only be able to see data for a single division.</p>
+<h4 id="multi-account-via-multiple-roles">Multi-account (via multiple roles)</h4>
+<p>It&rsquo;s also possible for a user to be a member of multiple roles, all of which are set to multi-tenant on the same field, with different values. E.g. if a user is a member of Company A and Company B roles as in our example above, they will see data from those two companies when viewing records, but not Company C.</p>
 <p>This works best when the user has read-only privileges on the data, e.g. for a manager reporting on those two companies. They can view records but not add new records, as the system is unable to determine the value of the account name field to use.</p>
+<h4 id="multi-account-via-_contains_-filtering">Multi-account (via <em>contains</em> filtering)</h4>
+<p>It&rsquo;s also possible to define a role filter under <em>restrict data access</em> with a &lsquo;contains&rsquo; rather than an &lsquo;=&rsquo; filter. You can then use a naming convension for your account name values to allow members of this role to see multiple accounts. As above, users of this role will need to be read-only on the data.</p>
 
 	
 		<style>
@@ -714,7 +716,7 @@ It&rsquo;s also possible for a user to be a member of multiple roles, all of whi
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified April 29, 2020: <a  href="https://github.com/okohll/abdocs/commit/e73343bcd155a6ba652f94931c716450ddf3a36e">Roles (e73343b)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified April 29, 2020: <a  href="https://github.com/okohll/abdocs/commit/00ce80b1e2e89521c628a57883b35218bd55c486">Roles tweaks (00ce80b)</a>
 </div>
 </div>
 
