@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-04-28T19:40:29+01:00" />
+<meta property="article:modified_time" content="2020-04-29T16:22:05+01:00" />
 <meta itemprop="name" content="Roles">
 <meta itemprop="description" content="Organising users into groups for better management">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-04-28T19:40:29&#43;01:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="dateModified" content="2020-04-29T16:22:05&#43;01:00" />
+<meta itemprop="wordCount" content="842">
 
 
 
@@ -533,6 +533,22 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#creating-a-role">Creating a role</a>
+      <ul>
+        <li><a href="#members">Members</a></li>
+        <li><a href="#privileges">Privileges</a></li>
+      </ul>
+    </li>
+    <li><a href="#multi-tenanting">Multi-tenanting</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -589,7 +605,53 @@
 	<h1>Roles</h1>
     <div class="lead">Organising users into groups for better management</div>
 	       
-	
+	<p>The primary purpose of roles is to apply privileges to groups of users, rather than applying them individually. That makes managing large numbers of users easier and also more secure as it&rsquo;s easy to see which privileges each type of user has and which they don&rsquo;t.</p>
+<p>Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together.</p>
+<p>Roles have some other important uses, such as multi-tennting, described below.</p>
+<h2 id="creating-a-role">Creating a role</h2>
+<ol>
+<li>Expand the <em>Administration</em> menu in the lefthand sidebar</li>
+<li>Click <em>roles</em>. You&rsquo;ll see a list of existing roles</li>
+<li>Click the plus button in the toolbar at the top</li>
+</ol>
+<p>You should now see an editing screen with the details of the role you just created. You can give it a name and there are a couple of options:
+<img src="/role-details.png" alt="Role details"></p>
+<p><strong>Allow Export</strong><br>
+Referrs to exporting to spreadsheet - see <a href="https://todo.com">spreadsheet exports</a></p>
+<p><strong>User Visibility</strong> and <strong>Restrict Data Access</strong>
+These are used to set up <a href="https://todo.com">multi-tenanting</a></p>
+<h3 id="members">Members</h3>
+<p>Tick each user to add them to the role. Users will gain all the privileges defined by the role</p>
+<h3 id="privileges">Privileges</h3>
+<p>Select the <a href="https://todo.com">table privileges</a> this role will apply to members</p>
+<h2 id="multi-tenanting">Multi-tenanting</h2>
+<p>Multi-tenanting is the ability to separate users into groups who can’t see each other’s data. This can be used for example to allow different sets of companies, clubs, or membership groups (or whatever the organisational group is) to use the same system features whilst remaining separate from each other.</p>
+<blockquote>
+<p>Multi-tenanting is a powerful feature that can be used not just for customers to segragate data amongst their users.</p>
+<p>Partners can also use this facility if building software to widely market. In that case, each customer they sign up can very quickly be set up with their own private dataset, whilst the partner retains the ability to add features which will automatically apply to everyone.</p>
+</blockquote>
+<p>To set up multi-tenanting:</p>
+<ol>
+<li>first <a href="https://todo.com">add a text field</a> to all tables in the system for which you want data to be segragated. The field must be named the same in every table, for example&rsquo;s sake here let&rsquo;s assume it&rsquo;s called &lsquo;account name&rsquo;.</li>
+<li>Then create one role for each set of users who you want to segregate. We&rsquo;ll assume there&rsquo;s one called &lsquo;Customer A&rsquo;.</li>
+<li>In the role details screen for the Customer A role, tick <em>user visibility</em>. That means that users in this role won&rsquo;t see users in other roles with the same option ticked. In other words, users from Customer A won&rsquo;t be able to select Customer B or Customer C users when doing things like adding comments or assigning users to records.</li>
+<li>Under <em>restrict data access</em> in the role details, enter <code>account name = Customer A</code></li>
+<li>Finally, ensure the account name field is present in all views based on the table. When creating a view, any fields used for multi-tenanting will automatically be added but you may need to retro-fit any existing views.</li>
+</ol>
+<p>This has two effects -</p>
+<ol>
+<li>When a user assigned to the Customer A role creates a new record in one of the multi-tenanting tables, the account name field will automatically be populated with the value Customer A (as entered under <em>restrict data access</em>). The field will be invisible to them - they won&rsquo;t be able to see or edit the value.</li>
+<li>When looking at records in a view, a filter will be automatically applied so the user only sees records where account name = Customer A.</li>
+</ol>
+<p>Users who <strong>aren&rsquo;t</strong> a member of the role will see the account name field in the data editing form and in views. This can be useful for allowing e.g. group managers to see all data.</p>
+<p>If any multi-tenanting roles are set up, then views which <strong>don&rsquo;t</strong> contain a multi-tenanting field will be marked in red in the administration interface, as a warning. If a multi-tenanting user loads one of these views, they will see all records. Typically, practically all views will need the multi-tenanting field to be present.</p>
+<h4 id="complex-multi-tenanting">Complex multi-tenanting</h4>
+<p><strong>Multi-level</strong><br>
+Users may be a member of more than one multi-tenanting role, to set up multi-level multi-tenanting. For example you may use two multi-tenanting fields/roles, one for a company and another for a division. Members of a company role will be able to see data from all divisions in their company and members of both a company and a division role will only be able to see data for a single division.</p>
+<p><strong>Multi-account</strong><br>
+It&rsquo;s also possible for a user to be a member of multiple roles, all of which are set to multi-tenant on the same field, with different values. E.g. if a user is a member of Company A and Company B roles as in our example above, they will see data from those two companies when viewing records, but not Company C.</p>
+<p>This works best when the user has read-only privileges on the data, e.g. for a manager reporting on those two companies. They can view records but not add new records, as the system is unable to determine the value of the account name field to use.</p>
+
 	
 		<style>
   .feedback--answer {
@@ -652,7 +714,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified April 28, 2020: <a  href="https://github.com/okohll/abdocs/commit/1c982b629ae1058f95d35384f761a18e97f5caee">Security structure (1c982b6)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified April 29, 2020: <a  href="https://github.com/okohll/abdocs/commit/e73343bcd155a6ba652f94931c716450ddf3a36e">Roles (e73343b)</a>
 </div>
 </div>
 
