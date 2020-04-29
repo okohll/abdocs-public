@@ -146,8 +146,7 @@ Automatically end the user&amp;rsquo;s session after after this many minutes of 
         
         
         &lt;p&gt;The primary purpose of roles is to apply privileges to groups of users, rather than applying them individually. That makes managing large numbers of users easier and also more secure as it&amp;rsquo;s easy to see which privileges each type of user has and which they don&amp;rsquo;t.&lt;/p&gt;
-&lt;p&gt;Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together.&lt;/p&gt;
-&lt;p&gt;Roles have some other important uses, such as multi-tennting, described below.&lt;/p&gt;
+&lt;p&gt;Roles have some other important uses, such as multi-tenanting, described below.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-role&#34;&gt;Creating a role&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
@@ -161,9 +160,10 @@ Referrs to exporting to spreadsheet - see &lt;a href=&#34;https://todo.com&#34;&
 &lt;p&gt;&lt;strong&gt;User Visibility&lt;/strong&gt; and &lt;strong&gt;Restrict Data Access&lt;/strong&gt;&lt;br&gt;
 These are used to set up &lt;a href=&#34;https://todo.com&#34;&gt;multi-tenanting&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;members&#34;&gt;Members&lt;/h3&gt;
-&lt;p&gt;Tick each user to add them to the role. Users will gain all the privileges defined by the role&lt;/p&gt;
+&lt;p&gt;Tick each user to add them to the role. Users will gain all the privileges defined by the role.&lt;/p&gt;
 &lt;h3 id=&#34;privileges&#34;&gt;Privileges&lt;/h3&gt;
-&lt;p&gt;Select the &lt;a href=&#34;https://todo.com&#34;&gt;table privileges&lt;/a&gt; this role will apply to members&lt;/p&gt;
+&lt;p&gt;Select the &lt;a href=&#34;https://todo.com&#34;&gt;table privileges&lt;/a&gt; which will apply to members.&lt;/p&gt;
+&lt;p&gt;Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together.&lt;/p&gt;
 &lt;h2 id=&#34;multi-tenanting&#34;&gt;Multi-tenanting&lt;/h2&gt;
 &lt;p&gt;Multi-tenanting is the ability to separate users into groups who can’t see each other’s data. This can be used for example to allow different sets of companies, clubs, or membership groups (or whatever the organisational group is) to use the same system features whilst remaining separate from each other.&lt;/p&gt;
 &lt;blockquote&gt;
