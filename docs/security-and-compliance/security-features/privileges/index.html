@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-04-28T20:17:57+01:00" />
+<meta property="article:modified_time" content="2020-04-29T19:21:30+01:00" />
 <meta itemprop="name" content="Privileges">
 <meta itemprop="description" content="The different types of privilege and how they can be assigned">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-04-28T20:17:57&#43;01:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="dateModified" content="2020-04-29T19:21:30&#43;01:00" />
+<meta itemprop="wordCount" content="520">
 
 
 
@@ -533,6 +533,18 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#privilege-levels">Privilege levels</a>
+      <ul>
+        <li><a href="#assigning-table-privileges">Assigning table privileges</a></li>
+        <li><a href="#assigning-the-administrator-privilege">Assigning the administrator privilege</a></li>
+      </ul>
+    </li>
+    <li><a href="#related-to-privileges">Related to privileges</a></li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -589,7 +601,72 @@
 	<h1>Privileges</h1>
     <div class="lead">The different types of privilege and how they can be assigned</div>
 	       
-	
+	<p>In agileBase, there are three privilege levels, as well as a special ‘administrator’ privilege.</p>
+<p>The three privileges take effect per table, i.e. a user/role can have certain privileges on one table and different ones on another.</p>
+<p>Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together.</p>
+<h2 id="privilege-levels">Privilege levels</h2>
+<ul>
+<li><strong>View</strong>: ability to see data in a table</li>
+<li><strong>Edit</strong>: ability to edit data in a table</li>
+<li><strong>Manage</strong>: the privilege that allows you to use the &lsquo;application building&rsquo; features of agileBase, relating to a table. Namely the ability to
+<ul>
+<li>modify the structure, i.e. create/delete fields, tabs, change options etc.</li>
+<li>create, edit and delete views from the table, including creating charts, maps and word clouds.</li>
+<li>upload or create printout templates for views</li>
+<li>view usage statistics about a table</li>
+<li>Manage also allows some extended user features, which are
+<ul>
+<li>deleting any user&rsquo;s comments from a table</li>
+<li>unlock locked records to allow editing (one at a time)</li>
+<li>override table options which would normally disallow adding/removing records from a table</li>
+<li>import data from spreadsheet</li>
+<li>export data to spreadsheet (override any option to disallow this to users without manage privileges)</li>
+<li>global edit (bulk edit) data in the table</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Finally the <strong>administrator</strong> privilege allows full permissions over the complete system. An administrator can create/remove users, roles, tables etc., as well as assign table privileges to any user, including themselves.</p>
+<blockquote>
+<p>The administrator privilege is the only one that allows the user to add new tables.</p>
+</blockquote>
+<blockquote>
+<p>Two Factor Authentication is required for any user with manage or administrator privileges</p>
+</blockquote>
+<h3 id="assigning-table-privileges">Assigning table privileges</h3>
+<ul>
+<li>Table privileges can be assigned to one or more users or roles from that table&rsquo;s editing screen.</li>
+<li>From a user or role editing screen, privileges on one or more tables can be assigned</li>
+</ul>
+<p>The two methods are equivalent, whichever is the most convenient can be used.</p>
+<p>Managing privileges by role rather than by individual user is recommended. That makes managing large numbers of users easier and also more secure as it&rsquo;s easy to see which privileges each type of user has and which they don&rsquo;t.</p>
+<p>To assign one or more role or user privileges to a table:</p>
+<ol>
+<li>Expand the <em>Build Tables</em> section in the lefthand navigation</li>
+<li>Click a table</li>
+<li>Click the pencil (edit) icon in the top toolbar (or click a record to load the editing screen)</li>
+<li>Click the <em>manage</em> tab at the bottom of the screen</li>
+<li>Open the <em>roles</em> or <em>users</em> section, then select or un-select any privileges required</li>
+</ol>
+<p>To assign one or more table privileges to a particular role or user:</p>
+<ol>
+<li>Expand the <em>Administration</em> section of the lefthand navigation</li>
+<li>Click <em>roles</em> or <em>users</em></li>
+<li>Select the role or user to assign privileges to, then select or un-select any privileges required</li>
+</ol>
+<h3 id="assigning-the-administrator-privilege">Assigning the administrator privilege</h3>
+<ol>
+<li>Expand the <em>Administration</em> section</li>
+<li>Click <em>users</em></li>
+<li>Select the user to make an administrator</li>
+<li>Open the <em>roles</em> section</li>
+<li>Tick the role marked <strong>Grants administrative privileges</strong></li>
+</ol>
+<h2 id="related-to-privileges">Related to privileges</h2>
+<p>Database systems often have the concept of row level privileges. The equivalent in agileBase is the [multi-tenanting]({{relref &ldquo;roles#multi-tenanting&rdquo;}}) system.</p>
+<p>Individual fields in a table can be locked or hidden, see the <a href="https://todo.com">field options</a></p>
+
 	
 		<style>
   .feedback--answer {
@@ -652,7 +729,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified April 28, 2020: <a  href="https://github.com/okohll/abdocs/commit/1ba34a48b53e8da11f17366be487fada772b515d">Test link (1ba34a4)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified April 29, 2020: <a  href="https://github.com/okohll/abdocs/commit/228230b4cbc31e492fa8c3c1ede4c8d164129b66">Privileges (228230b)</a>
 </div>
 </div>
 
