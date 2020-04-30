@@ -221,11 +221,11 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
         
         &lt;p&gt;In agileBase, there are three privilege levels, as well as a special ‘administrator’ privilege.&lt;/p&gt;
 &lt;p&gt;The three privileges take effect per table, i.e. a user/role can have certain privileges on one table and different ones on another.&lt;/p&gt;
-&lt;p&gt;Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together.&lt;/p&gt;
+&lt;p&gt;Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together, plus any they may have individually assigned.&lt;/p&gt;
 &lt;h2 id=&#34;privilege-levels&#34;&gt;Privilege levels&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;View&lt;/strong&gt;: ability to see data in a table&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit&lt;/strong&gt;: ability to edit data in a table&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit&lt;/strong&gt;: ability to create, edit and delete data in a table (create and delete subject to various table options)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Manage&lt;/strong&gt;: the privilege that allows you to use the &amp;lsquo;application building&amp;rsquo; features of agileBase, relating to a table. Namely the ability to
 &lt;ul&gt;
 &lt;li&gt;modify the structure, i.e. create/delete fields, tabs, change options etc.&lt;/li&gt;
@@ -310,7 +310,43 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        
+        &lt;p&gt;Exporting to spreadsheet is only one way of getting data out of agileBase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the &lt;a href=&#34;https://todo.com&#34;&gt;API&lt;/a&gt; can be used.&lt;/p&gt;
+&lt;h2 id=&#34;allowing-exports&#34;&gt;Allowing exports&lt;/h2&gt;
+&lt;p&gt;In order for a user to be allowed to export to spreadsheet, a number of critieria have to be matched, to suitably protect your organisation&amp;rsquo;s data.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The user must have [Two Factor Authentication](&amp;lt;{{relref &amp;ldquo;users#two-factor-authentication&amp;rdquo;}}) enabled&lt;/li&gt;
+&lt;li&gt;The view to export from must have exporting enabled (it&amp;rsquo;s enabled by default). To do this
+&lt;ul&gt;
+&lt;li&gt;in the tiles interface, open the view in question, click your user icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;tick &lt;em&gt;allow exports&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The user must also be a member of a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/&#34;&gt;role&lt;/a&gt; that allows exporting (disabled by default). To allow exporting for a role,
+&lt;ul&gt;
+&lt;li&gt;in the admin interface, expand the &lt;em&gt;Administration&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
+&lt;li&gt;click &lt;em&gt;roles&lt;/em&gt; and select the role you want&lt;/li&gt;
+&lt;li&gt;tick &lt;em&gt;allow exports&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A user with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;manage privileges&lt;/a&gt; on the view&amp;rsquo;s parent table can bypass criteria 2 and 3. This privilege is not commonly applied to normal users.&lt;/p&gt;
+&lt;h2 id=&#34;exporting&#34;&gt;Exporting&lt;/h2&gt;
+&lt;p&gt;A user with the ability to export can do so by opening the view, clicking the print icon to the left and selecting &lt;em&gt;export to spreadsheet&lt;/em&gt; from the options at the top of the screen.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If the user &lt;a href=&#34;https://todo.com&#34;&gt;filters&lt;/a&gt; the data on screen before doing this, only the filtered data will be exported.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The resulting spreadsheet will be in Microsoft Excel format. The first sheet will be some metadata about the export, such as a timestamp, the name of the exporter and any filters applied. The second sheet will be the actual data.&lt;/p&gt;
+&lt;p&gt;Column A in the data sheet will be hidden. It holds the internal row ID of each record. This is useful for matching purposes if you&amp;rsquo;re going to be modifying then re-importing the data.&lt;/p&gt;
+&lt;h3 id=&#34;charts&#34;&gt;Charts&lt;/h3&gt;
+&lt;p&gt;If the view has &lt;a href=&#34;https://todo.com&#34;&gt;charts&lt;/a&gt; attached, one sheet per chart will also be included in the spreadsheet. The contents will be the chart data, not the chart visualisation itself, but the visualisation can easily be re-created in the spreadsheet from the data if necessary.&lt;/p&gt;
+&lt;h2 id=&#34;limits-and-notifications&#34;&gt;Limits and notifications&lt;/h2&gt;
+&lt;p&gt;An administrator can log whether each table contains commercially sensitive data (ticked by default) and/or personal data (see &lt;a href=&#34;https://gdpr-info.eu/art-4-gdpr/)&#34;&gt;https://gdpr-info.eu/art-4-gdpr/)&lt;/a&gt;. If either of these options is ticked for a view&amp;rsquo;s parent table, you’ll have additional options for&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;notifying all administrators if an export of more than a certain number of rows is done&lt;/li&gt;
+&lt;li&gt;setting a hard limit to completely disallow exports of more than a certain number of rows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To configure these options, see &lt;a href=&#34;https://todo.com&#34;&gt;tables&lt;/a&gt;&lt;/p&gt;
+
       </description>
     </item>
     
