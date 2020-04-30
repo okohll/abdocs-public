@@ -232,13 +232,13 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;create, edit and delete views from the table, including creating charts, maps and word clouds.&lt;/li&gt;
 &lt;li&gt;upload or create printout templates for views&lt;/li&gt;
 &lt;li&gt;view usage statistics about a table&lt;/li&gt;
-&lt;li&gt;Manage also allows some extended user features, which are
+&lt;li&gt;Manage also allows some extended user features
 &lt;ul&gt;
-&lt;li&gt;deleting any user&amp;rsquo;s comments from a table&lt;/li&gt;
+&lt;li&gt;delete any user&amp;rsquo;s comments from a table&lt;/li&gt;
 &lt;li&gt;unlock locked records to allow editing (one at a time)&lt;/li&gt;
 &lt;li&gt;override table options which would normally disallow adding/removing records from a table&lt;/li&gt;
+&lt;li&gt;override options which would normally disallow exporting data to a spreadsheet&lt;/li&gt;
 &lt;li&gt;import data from spreadsheet&lt;/li&gt;
-&lt;li&gt;export data to spreadsheet (override any option to disallow this to users without manage privileges)&lt;/li&gt;
 &lt;li&gt;global edit (bulk edit) data in the table&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -257,7 +257,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;Table privileges can be assigned to one or more users or roles from that table&amp;rsquo;s editing screen.&lt;/li&gt;
 &lt;li&gt;From a user or role editing screen, privileges on one or more tables can be assigned&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The two methods are equivalent, whichever is the most convenient can be used.&lt;/p&gt;
+&lt;p&gt;The two methods are equivalent, whichever is the most convenient for a given purpose can be used.&lt;/p&gt;
 &lt;p&gt;Managing privileges by role rather than by individual user is recommended. That makes managing large numbers of users easier and also more secure as it&amp;rsquo;s easy to see which privileges each type of user has and which they don&amp;rsquo;t.&lt;/p&gt;
 &lt;p&gt;To assign one or more role or user privileges to a table:&lt;/p&gt;
 &lt;ol&gt;
@@ -282,7 +282,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;Tick the role marked &lt;strong&gt;Grants administrative privileges&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;related-to-privileges&#34;&gt;Related to privileges&lt;/h2&gt;
-&lt;p&gt;Database systems often have the concept of row level privileges. The equivalent in agileBase is the [multi-tenanting]({{relref &amp;ldquo;roles#multi-tenanting&amp;rdquo;}}) system.&lt;/p&gt;
+&lt;p&gt;Database systems often have the concept of row level privileges. The equivalent in agileBase is the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; system.&lt;/p&gt;
 &lt;p&gt;Individual fields in a table can be locked or hidden, see the &lt;a href=&#34;https://todo.com&#34;&gt;field options&lt;/a&gt;&lt;/p&gt;
 
       </description>
