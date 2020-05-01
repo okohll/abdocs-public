@@ -233,7 +233,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h2 id=&#34;allowing-exports&#34;&gt;Allowing exports&lt;/h2&gt;
 &lt;p&gt;In order for a user to be allowed to export to spreadsheet, a number of critieria have to be matched, to suitably protect your organisation&amp;rsquo;s data.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;The user must have [Two Factor Authentication](&amp;lt;{{relref &amp;ldquo;users#two-factor-authentication&amp;rdquo;}}) enabled&lt;/li&gt;
+&lt;li&gt;The user must have &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#two-factor-authentication&#34;&gt;Two Factor Authentication&lt;/a&gt; enabled&lt;/li&gt;
 &lt;li&gt;The view to export from must have exporting enabled (it&amp;rsquo;s enabled by default). To do this
 &lt;ul&gt;
 &lt;li&gt;in the tiles interface, open the view in question, click your user icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt;&lt;/li&gt;
@@ -278,7 +278,70 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
+        &lt;p&gt;agileBase comprehensively logs changes to data in the system as well as changes to the structure of the system. Powerful reporting facilities allow the generation of audit trails, trend monitoring, customer success monitoring etc.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-logged&#34;&gt;What is logged&lt;/h2&gt;
+&lt;h3 id=&#34;user-actions&#34;&gt;User actions&lt;/h3&gt;
+&lt;p&gt;The following actions are recorded&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;logins, including connection details&lt;/li&gt;
+&lt;li&gt;record edits (create, update and delete)&lt;/li&gt;
+&lt;li&gt;global edits&lt;/li&gt;
+&lt;li&gt;comment additions and removals&lt;/li&gt;
+&lt;li&gt;data imports and exports&lt;/li&gt;
+&lt;li&gt;viewing and searching/filtering data in views&lt;/li&gt;
+&lt;li&gt;password resets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When logging a record deletion, the data values deleted are logged.&lt;/p&gt;
+&lt;p&gt;Further, for every record in a table, the following metadata is logged and can be included in views:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The creation time and time of last update&lt;/li&gt;
+&lt;li&gt;The user who created the record and who last updated it&lt;/li&gt;
+&lt;li&gt;The view count: how many times the record has been opened&lt;/li&gt;
+&lt;li&gt;A visual activity histogram showing the number of edits per week over the past six months&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See &lt;a href=&#34;https://todo.com&#34;&gt;automatically present fields&lt;/a&gt; for full details.&lt;/p&gt;
+&lt;h3 id=&#34;api-and-workflow-actions&#34;&gt;API and workflow actions&lt;/h3&gt;
+&lt;p&gt;Data changes or outflows arising from &lt;a href=&#34;https://todo.com&#34;&gt;API calls&lt;/a&gt; are logged to the same log store as user actions. Instead of logging the user taking the action, it&amp;rsquo;s logged as an API call with the IP address of the source of the request.&lt;/p&gt;
+&lt;p&gt;Automated &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt; actions are also logged. Each is marked as a workflow actions with the name of the action (i.e. the view name) to identify it.&lt;/p&gt;
+&lt;h3 id=&#34;administration-and-management-actions&#34;&gt;Administration and management actions&lt;/h3&gt;
+&lt;p&gt;All significant actions are recorded, in summary&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;adding, updating or removing users, roles and privileges&lt;/li&gt;
+&lt;li&gt;table additions and removals, field additions and removals, data constraint additions and removals&lt;/li&gt;
+&lt;li&gt;view additions, updates and removals&lt;/li&gt;
+&lt;li&gt;chart edits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;retention-periods&#34;&gt;Retention periods&lt;/h2&gt;
+&lt;p&gt;Data is retained for 12 months as standard. The enhanced audit trail allows customers to define their own retention period, the maximum being unlimited.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Policies</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/policies/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/policies/</guid>
+      <description>
         
+        
+        &lt;h2 id=&#34;backups&#34;&gt;Backups&lt;/h2&gt;
+&lt;p&gt;Data backups are performed across the stack of technology, from server down to databases and file storage.&lt;/p&gt;
+&lt;p&gt;Database and agileBase content (uploaded files, custom templates etc.) backups are taken daily and hosted in the European Union by Amazon. Older backups transition to &lt;a href=&#34;https://aws.amazon.com/glacier/&#34;&gt;Amazon Glacier&lt;/a&gt; and are kept for 200 days - this allows a balance between the practical necessity of allowing rollbacks to a certain point in time, whilst not storing data for an unnecessarily long period, to comply with the GDPR.&lt;/p&gt;
+&lt;p&gt;These backups are encrypted so that Amazon has no access to the data within then.&lt;/p&gt;
+&lt;p&gt;The backup and recovery process is monitored and tested regularly.&lt;/p&gt;
+&lt;h3 id=&#34;retrieval&#34;&gt;Retrieval&lt;/h3&gt;
+&lt;p&gt;There may be a charge for retrieval of customer data from backup, to cover our costs. The data will be restored to a separate instance of agileBase available at a different URL, which a customer can look at to compare data. If necessary, data can then be extracted from one and loaded into the other. Please be aware that depending on needs, this may be a complex process due to the fact that other data in the live system may have changed since the backup. A simple overwrite of existing data may not be the best option.&lt;/p&gt;
+&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h2&gt;
+&lt;p&gt;agileBase Ltd is funded directly by the customers we provide services to, we do not have any other business model, particularly we do not resell any data.&lt;/p&gt;
+&lt;p&gt;Our privacy policy is available here: &lt;a href=&#34;https://agilechilli.com/help-centre/agilebase/privacy-policy/&#34;&gt;https://agilechilli.com/help-centre/agilebase/privacy-policy/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;gdpr-policy&#34;&gt;GDPR Policy&lt;/h2&gt;
+&lt;p&gt;An overview of our GDPR policy is available &lt;a href=&#34;https://docs.agilebase.co.uk/gdpr-overview.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/gdpr-overview.pdf&#34;&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/gdpr-compliance-cycle.png&#34; alt=&#34;GDPR Compliance Cycle&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;data-protection-and-disaster-recovery&#34;&gt;Data Protection and Disaster Recovery&lt;/h2&gt;
+&lt;p&gt;Full details of our processes and plans are available to customers and relevant parties on request.&lt;/p&gt;
+
       </description>
     </item>
     

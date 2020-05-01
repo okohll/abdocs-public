@@ -314,7 +314,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h2 id=&#34;allowing-exports&#34;&gt;Allowing exports&lt;/h2&gt;
 &lt;p&gt;In order for a user to be allowed to export to spreadsheet, a number of critieria have to be matched, to suitably protect your organisation&amp;rsquo;s data.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;The user must have [Two Factor Authentication](&amp;lt;{{relref &amp;ldquo;users#two-factor-authentication&amp;rdquo;}}) enabled&lt;/li&gt;
+&lt;li&gt;The user must have &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#two-factor-authentication&#34;&gt;Two Factor Authentication&lt;/a&gt; enabled&lt;/li&gt;
 &lt;li&gt;The view to export from must have exporting enabled (it&amp;rsquo;s enabled by default). To do this
 &lt;ul&gt;
 &lt;li&gt;in the tiles interface, open the view in question, click your user icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt;&lt;/li&gt;
@@ -351,15 +351,81 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
     </item>
     
     <item>
-      <title>Docs: Usage Monitoring</title>
-      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/</link>
+      <title>Docs: Reporting</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting.vm/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/</guid>
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting.vm/</guid>
       <description>
         
         
+        &lt;p&gt;Log data reporting provides a rich view of system usage.&lt;/p&gt;
+&lt;h2 id=&#34;enhanced-audit-trail&#34;&gt;Enhanced audit trail&lt;/h2&gt;
+&lt;p&gt;For organisations who have activated the enhanced audit trail, all logs are stored in user-accessible tablee which are just like any other tables in the system, the only difference being the data is read only. This means an administrator can use the full power of the built in agileBase reporting features, to create views, add calculations, charts etc., even export via the API.&lt;/p&gt;
+&lt;p&gt;So for example, you could analyse how many changes were made per month by each user, count the volume of logins from various locations or see what the most common fields are to search on. All actions listed above are available to query.&lt;/p&gt;
+&lt;p&gt;Data is also retained for an extended period, see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/#retention-periods&#34;&gt;retention periods&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If interested in activating this feature, please &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;get in touch&lt;/a&gt;. There will be a small recurring charge added to your bill.&lt;/p&gt;
+&lt;h2 id=&#34;standard-reporting&#34;&gt;Standard reporting&lt;/h2&gt;
+&lt;p&gt;Built in reports are available in a number of areas, whether using the enhanced audit trail or standard logging.&lt;/p&gt;
+&lt;h3 id=&#34;the-dashboard&#34;&gt;The dashboard&lt;/h3&gt;
+&lt;p&gt;From the tiles interface, click the bird icon at the top left, then select &lt;em&gt;usage dashboard&lt;/em&gt;. The dashboard contains system reports including usage data.&lt;/p&gt;
+&lt;h4 id=&#34;trends&#34;&gt;Trends&lt;/h4&gt;
+&lt;p&gt;An overall usage treemap is displayed at the top. Each view is a section of the screen. Large areas represent views that get a lot of use, smaller areas those that don’t. Colours give immediate feedback on whether usage has been increasing (blue) or decreasing (grey) this month. Hovering over an area shows more stats including the top users.&lt;/p&gt;
+&lt;p&gt;Underneath that a series of sparkline charts show long term trends, across selected operational, tactical and strategic metrics, all geared to showing utilisation over a 12 month period.&lt;/p&gt;
+&lt;p&gt;Raw data can be downloaded to spreadsheet using the links beneath each sparkline. Note only the most recent 200,000 records can be downloaded in this way.&lt;/p&gt;
+&lt;h4 id=&#34;capacity&#34;&gt;Capacity&lt;/h4&gt;
+&lt;p&gt;As well as actual usage, the dashboard shows total capacity i.e. how many users, records, tables etc. are present in the system, along with purchased capacity (if relevant). These elements affect billing.&lt;/p&gt;
+&lt;h4 id=&#34;workflows&#34;&gt;Workflows&lt;/h4&gt;
+&lt;p&gt;A convenience view of all workflows which carry out automated data modifications, see &lt;a href=&#34;https://todo.com&#34;&gt;workflows&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;database-graph&#34;&gt;Database graph&lt;/h4&gt;
+&lt;p&gt;Finally, for background on what the data structure looks like and how tables are connected, the database graph shows relations between tables is visual form. This can provide a fuller understaning of the system.&lt;/p&gt;
+&lt;h3 id=&#34;table-and-view-usage&#34;&gt;Table and view usage&lt;/h3&gt;
+&lt;p&gt;A quick overview of who is viewing data is shown in the administration interface for both tables and views.&lt;/p&gt;
+&lt;p&gt;For a table&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open a table, under the &lt;em&gt;Build Tables&lt;/em&gt; section of the lefthand navigation&lt;/li&gt;
+&lt;li&gt;Go the the manage tab and click the &lt;em&gt;Usage&lt;/em&gt; icon&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The report shows the number of times each user has viewed data from the table, per view. All views which contain any data from the table are included.&lt;/p&gt;
+&lt;p&gt;For a view&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open a view from the lefthand navigation&lt;/li&gt;
+&lt;li&gt;Go to the manage tab and click the &lt;em&gt;Usage&lt;/em&gt; icon&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Similar data is show as for tables, but limited to the selected view.&lt;/p&gt;
+&lt;h2 id=&#34;individual-record-histories&#34;&gt;Individual record histories&lt;/h2&gt;
+&lt;p&gt;Any user can see the complete history of changes to an individual record, up to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/#retention-periods&#34;&gt;retention period&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When editing a record, scroll to the bottom of the screen and click &lt;em&gt;history&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;To view the precise time of a change, hover over a date.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Policies</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/policies/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/policies/</guid>
+      <description>
         
+        
+        &lt;h2 id=&#34;backups&#34;&gt;Backups&lt;/h2&gt;
+&lt;p&gt;Data backups are performed across the stack of technology, from server down to databases and file storage.&lt;/p&gt;
+&lt;p&gt;Database and agileBase content (uploaded files, custom templates etc.) backups are taken daily and hosted in the European Union by Amazon. Older backups transition to &lt;a href=&#34;https://aws.amazon.com/glacier/&#34;&gt;Amazon Glacier&lt;/a&gt; and are kept for 200 days - this allows a balance between the practical necessity of allowing rollbacks to a certain point in time, whilst not storing data for an unnecessarily long period, to comply with the GDPR.&lt;/p&gt;
+&lt;p&gt;These backups are encrypted so that Amazon has no access to the data within then.&lt;/p&gt;
+&lt;p&gt;The backup and recovery process is monitored and tested regularly.&lt;/p&gt;
+&lt;h3 id=&#34;retrieval&#34;&gt;Retrieval&lt;/h3&gt;
+&lt;p&gt;There may be a charge for retrieval of customer data from backup, to cover our costs. The data will be restored to a separate instance of agileBase available at a different URL, which a customer can look at to compare data. If necessary, data can then be extracted from one and loaded into the other. Please be aware that depending on needs, this may be a complex process due to the fact that other data in the live system may have changed since the backup. A simple overwrite of existing data may not be the best option.&lt;/p&gt;
+&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h2&gt;
+&lt;p&gt;agileBase Ltd is funded directly by the customers we provide services to, we do not have any other business model, particularly we do not resell any data.&lt;/p&gt;
+&lt;p&gt;Our privacy policy is available here: &lt;a href=&#34;https://agilechilli.com/help-centre/agilebase/privacy-policy/&#34;&gt;https://agilechilli.com/help-centre/agilebase/privacy-policy/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;gdpr-policy&#34;&gt;GDPR Policy&lt;/h2&gt;
+&lt;p&gt;An overview of our GDPR policy is available &lt;a href=&#34;https://docs.agilebase.co.uk/gdpr-overview.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/gdpr-overview.pdf&#34;&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/gdpr-compliance-cycle.png&#34; alt=&#34;GDPR Compliance Cycle&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;data-protection-and-disaster-recovery&#34;&gt;Data Protection and Disaster Recovery&lt;/h2&gt;
+&lt;p&gt;Full details of our processes and plans are available to customers and relevant parties on request.&lt;/p&gt;
+
       </description>
     </item>
     
