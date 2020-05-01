@@ -14,5 +14,27 @@
       
     
     
+    <item>
+      <title>Docs: Relational Database Concepts</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Before diving into the details of building applications, starting with tables, let&amp;rsquo;s take a step back and learn some background information about databases, including what a table is. If you&amp;rsquo;re familiar with these concepts, feel free to skip this section.&lt;/p&gt;
+&lt;p&gt;When building back office software with agileBase, a large amount of what we&amp;rsquo;ll be doing is building database structures, to store user-entered data. agileBase takes care of creating the user interface to allow users to use these structures automatically, e.g. to search for data, add and edit it.&lt;/p&gt;
+&lt;p&gt;You will find many articles explaining relational databases if you look for them on the internet. Most will introduce SQL, the language used to work with databases. It&amp;rsquo;s not necessary to learn that as agileBase generates it automatically behind the scenes, but the higher level concepts are useful to grasp.&lt;/p&gt;
+&lt;p&gt;If you like learning from videos, this is a good one:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NvrpuBAMddw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
