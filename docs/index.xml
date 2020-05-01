@@ -88,7 +88,7 @@ Automatically end the user&amp;rsquo;s session after after this many minutes of 
 &lt;h4 id=&#34;roles&#34;&gt;Roles&lt;/h4&gt;
 &lt;p&gt;Tick a role to assign the user to it. The primary purpose of roles is to apply privileges to groups of users, see &lt;a href=&#34;https://todo.com&#34;&gt;roles&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;p&gt;There&amp;rsquo;s one special role which can be assigned. It will be marked &lt;strong&gt;grants administrative privileges&lt;/strong&gt;. Assigning that role will make a user an administrator, with full permissions over the complete system. They can create/remove users, roles, tables etc., as well as assign themselves privileges on any table.&lt;/p&gt;
-&lt;p&gt;Next to each role listed is a list of tiles that will be added to their screen if that role is assigned to them. This is a convenience feature to speed up setting up their home screen. The tiles shown for a role are those which more than 50% of the members of that role have. Tiles can be manually added and removed by an &lt;a href=&#34;https://todo.com&#34;&gt;administrator&lt;/a&gt; or the user themselves.&lt;/p&gt;
+&lt;p&gt;Next to each role listed is a list of tiles that will be added to their screen if that role is assigned to them. This is a convenience feature to speed up setting up their home screen. The tiles shown for a role are those which more than half of the members of that role have. Tiles can be manually added and removed by an &lt;a href=&#34;https://todo.com&#34;&gt;administrator&lt;/a&gt; or the user themselves.&lt;/p&gt;
 &lt;p&gt;If any role is a &lt;a href=&#34;https://todo.com&#34;&gt;filtering role&lt;/a&gt;, the filter applied is also displayed.&lt;/p&gt;
 &lt;h4 id=&#34;privileges&#34;&gt;Privileges&lt;/h4&gt;
 &lt;p&gt;Assign individual table &lt;a href=&#34;https://todo.com&#34;&gt;privileges&lt;/a&gt; to a user.&lt;/p&gt;
@@ -420,7 +420,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;blockquote&gt;
 &lt;p&gt;Please be aware that depending on needs, this may be a complex process due to the fact that other data in the live system may have changed since the backup. A simple overwrite of existing data may not be the best option.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h2&gt;
+&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy policy&lt;/h2&gt;
 &lt;p&gt;agileBase Ltd is funded directly by the customers we provide services to, we do not have any other business model, particularly we do not resell any data.&lt;/p&gt;
 &lt;p&gt;Our privacy policy is available here: &lt;a href=&#34;https://agilechilli.com/help-centre/agilebase/privacy-policy/&#34;&gt;https://agilechilli.com/help-centre/agilebase/privacy-policy/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;gdpr-policy&#34;&gt;GDPR Policy&lt;/h2&gt;
