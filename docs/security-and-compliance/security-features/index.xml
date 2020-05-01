@@ -278,7 +278,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;agileBase comprehensively logs changes to data in the system as well as changes to the structure of the system. Powerful reporting facilities allow the generation of audit trails, trend monitoring, customer success monitoring etc.&lt;/p&gt;
+        &lt;p&gt;agileBase comprehensively logs changes to data in the system as well as changes to the structure of the system. Powerful &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/&#34;&gt;reporting facilities&lt;/a&gt; allow the generation of audit trails, trend monitoring, customer success monitoring etc.&lt;/p&gt;
 &lt;h2 id=&#34;what-is-logged&#34;&gt;What is logged&lt;/h2&gt;
 &lt;h3 id=&#34;user-actions&#34;&gt;User actions&lt;/h3&gt;
 &lt;p&gt;The following actions are recorded&lt;/p&gt;
@@ -332,7 +332,10 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;These backups are encrypted so that Amazon has no access to the data within then.&lt;/p&gt;
 &lt;p&gt;The backup and recovery process is monitored and tested regularly.&lt;/p&gt;
 &lt;h3 id=&#34;retrieval&#34;&gt;Retrieval&lt;/h3&gt;
-&lt;p&gt;There may be a charge for retrieval of customer data from backup, to cover our costs. The data will be restored to a separate instance of agileBase available at a different URL, which a customer can look at to compare data. If necessary, data can then be extracted from one and loaded into the other. Please be aware that depending on needs, this may be a complex process due to the fact that other data in the live system may have changed since the backup. A simple overwrite of existing data may not be the best option.&lt;/p&gt;
+&lt;p&gt;There may be a charge for retrieval of customer data from backup, to cover our costs. The data will be restored to a separate instance of agileBase available at a different URL, which a customer can look at to compare data. If necessary, data can then be extracted from one and loaded into the other.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Please be aware that depending on needs, this may be a complex process due to the fact that other data in the live system may have changed since the backup. A simple overwrite of existing data may not be the best option.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h2&gt;
 &lt;p&gt;agileBase Ltd is funded directly by the customers we provide services to, we do not have any other business model, particularly we do not resell any data.&lt;/p&gt;
 &lt;p&gt;Our privacy policy is available here: &lt;a href=&#34;https://agilechilli.com/help-centre/agilebase/privacy-policy/&#34;&gt;https://agilechilli.com/help-centre/agilebase/privacy-policy/&lt;/a&gt;&lt;/p&gt;
