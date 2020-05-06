@@ -90,5 +90,93 @@
       </description>
     </item>
     
+    <item>
+      <title>Docs: Adding and removing</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/adding-and-removing/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/adding-and-removing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an agileBase application.&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-table&#34;&gt;Adding a table&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;create a new table&lt;/em&gt; at the bottom of the list of existing tables&lt;/li&gt;
+&lt;li&gt;Name the table&lt;/li&gt;
+&lt;li&gt;If necessary, click the pencil icon in the toolbar to see the details of the table you just created.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;TODO: image&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You can change the table&amp;rsquo;s name and add a longer description under &lt;strong&gt;Purpose&lt;/strong&gt;. This description will be used as help text in the user interface.&lt;/p&gt;
+&lt;h3 id=&#34;naming-tables&#34;&gt;Naming tables&lt;/h3&gt;
+&lt;p&gt;When naming a table, it&amp;rsquo;s best to use a plural form. Also avoid filler endings like &amp;lsquo;info&amp;rsquo; or &amp;lsquo;details&amp;rsquo;. So rather than &amp;lsquo;company info&amp;rsquo;, you might call a table &amp;lsquo;companies&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;The reason for this is that the user interface will automatically convert plural names into singular forms where appropriate. So for example if there&amp;rsquo;s a plus button on the screen to allow the user to add a new record in the table, it will automatically recognise the table and title the button Add Company.&lt;/p&gt;
+&lt;p&gt;If you build a large system with lots of tables, you may find it a good idea to prefix table names using a numbering/lettering system e.g.
+&lt;code&gt;a) table 1&lt;/code&gt;
+&lt;code&gt;b) table 2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In the administrator interface, tables are listed alphabetically, so you can arrange the tables into a logical order with this method.&lt;/p&gt;
+&lt;p&gt;The user interface will strip out any prefixes when displaying names to users, if they end with a closing bracket &lt;code&gt;)&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;removing-a-table&#34;&gt;Removing a table&lt;/h2&gt;
+&lt;p&gt;Before removing a table, you first need to remove all views and fields.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s not necessary to remove actual data records from the table first.&lt;/p&gt;
+&lt;p&gt;A list of existing views is visible in the &lt;em&gt;manage&lt;/em&gt; tab of the table, at the top right. Visit each view and delete it.&lt;/p&gt;
+&lt;p&gt;Then next to the table&amp;rsquo;s manage tab is the &lt;em&gt;fields&lt;/em&gt; tab. Delete all the existing fields from here.&lt;/p&gt;
+&lt;p&gt;When deleting views and fields, you may find you have to first delete other views or fields they depend on. In complex systems there can be chains of objects that need to be deleted in order.&lt;/p&gt;
+&lt;p&gt;Deleting is a destructive process so is not highly automated on purpose, to avoid accidental deletion. However at each stage you&amp;rsquo;ll be shown any dependencies which have to be removed first, so you can follow through the chain.&lt;/p&gt;
+&lt;p&gt;Once all views and fields have been deleted, you may need to reload the table by choosing it from the list under &lt;em&gt;Build Tables&lt;/em&gt;. In the &lt;em&gt;manage&lt;/em&gt; tab, the &lt;em&gt;Delete Table&lt;/em&gt; button should now be enabled and you can click it to perform the final step of the deletion.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Table layouts</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/table-layouts/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/table-layouts/</guid>
+      <description>
+        
+        
+        &lt;p&gt;For each table, agileBase will automatically build a data entry form for users to view, add and edit records with.&lt;/p&gt;
+&lt;p&gt;The layout of this form can be controlled by selecting a layout option and adding separators to create blocks i.e. groups of fields which go together. This will create a more pleasant and usable system.&lt;/p&gt;
+&lt;h2 id=&#34;layout&#34;&gt;Layout&lt;/h2&gt;
+&lt;p&gt;The layout option is the main control. There are three options&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;single column&lt;/strong&gt; - a simple vertical list of fields&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;blocks in two columns&lt;/strong&gt; - makes the best use of screen space for large forms. Also allows tabs
+&lt;ul&gt;
+&lt;li&gt;All fields before the first separator are displayed in a section at the top of the screen, in two columns&lt;/li&gt;
+&lt;li&gt;After that, each separator added creates a new block of fields. Blocks are arranged in two &amp;lsquo;newspaper&amp;rsquo; style columns which are displayed below the top section&lt;/li&gt;
+&lt;li&gt;If the table has tabs, they are displayed below the top section&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;process flow&lt;/strong&gt; - blocks of fields are arranged vertically one after each other, works well when there the data entry form maps to a set process&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here&amp;rsquo;s what the same data entry form looks like in each of the three configurations&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TODO: image&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;and here&amp;rsquo;s an example of &lt;strong&gt;2. blocks in two columns&lt;/strong&gt; with tabs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TODO: image&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;separators&#34;&gt;Separators&lt;/h2&gt;
+&lt;p&gt;To form a block, click on the &lt;em&gt;fields&lt;/em&gt; tab of a table and add a field of type &amp;lsquo;separator&amp;rsquo; - see the &lt;a href=&#34;https://todo.com&#34;&gt;fields reference&lt;/a&gt;. Move it to where the start of the block should be i.e. before the first field in the block.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Hierarchy Navigation</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/</link>
+      <pubDate>Mon, 04 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;agileBase does its best with sensible defaults to create a friendly user interface.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s useful for an administrator to know how to configure and tweak the system to allow the to user navigate the structure of an application in the most intuitive way possible.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>

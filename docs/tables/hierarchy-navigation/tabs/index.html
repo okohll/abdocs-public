@@ -7,7 +7,6 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://docs.agilebase.co.uk/docs/workflows/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,15 +20,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Workflows | agileBase docs</title><meta property="og:title" content="Workflows" />
-<meta property="og:description" content="A powerful set of automation features" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://docs.agilebase.co.uk/docs/workflows/" />
-<meta property="og:updated_time" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="name" content="Workflows">
-<meta itemprop="description" content="A powerful set of automation features"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Workflows"/>
-<meta name="twitter:description" content="A powerful set of automation features"/>
+<title>Tabs | agileBase docs</title><meta property="og:title" content="Tabs" />
+<meta property="og:description" content="Tabs allow navigation from a parent record to a related child record" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/" />
+<meta property="article:published_time" content="2020-05-04T16:40:00+01:00" />
+<meta property="article:modified_time" content="2020-05-04T16:40:00+01:00" />
+<meta itemprop="name" content="Tabs">
+<meta itemprop="description" content="Tabs allow navigation from a parent record to a related child record">
+<meta itemprop="datePublished" content="2020-05-04T16:40:00&#43;01:00" />
+<meta itemprop="dateModified" content="2020-05-04T16:40:00&#43;01:00" />
+<meta itemprop="wordCount" content="1026">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tabs"/>
+<meta name="twitter:description" content="Tabs allow navigation from a parent record to a related child record"/>
 
 
 
@@ -46,7 +53,7 @@
 
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -300,10 +307,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/tables/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tables</a>
+    <a  href="/docs/tables/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Tables</a>
   </li>
   <ul>
-    <li class="collapse " id="docstables">
+    <li class="collapse show" id="docstables">
       
       
       
@@ -352,17 +359,17 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/tables/hierarchy-navigation/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Hierarchy Navigation</a>
+    <a  href="/docs/tables/hierarchy-navigation/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Hierarchy Navigation</a>
   </li>
   <ul>
-    <li class="collapse " id="docstableshierarchy-navigation">
+    <li class="collapse show" id="docstableshierarchy-navigation">
       
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docstableshierarchy-navigationtabs" href="/docs/tables/hierarchy-navigation/tabs/">Tabs</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docstableshierarchy-navigationtabs" href="/docs/tables/hierarchy-navigation/tabs/">Tabs</a>
       
       
       
@@ -445,10 +452,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/workflows/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Workflows</a>
+    <a  href="/docs/workflows/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Workflows</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsworkflows">
+    <li class="collapse " id="docsworkflows">
       
       
       
@@ -621,8 +628,8 @@
 
 
 
-<a href="https://github.com/okohll/abdocs/edit/master/content/en/docs/workflows/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/okohll/abdocs/issues/new?title=Workflows" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/okohll/abdocs/edit/master/content/en/docs/tables/hierarchy-navigation/tabs.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/okohll/abdocs/issues/new?title=Tabs" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
 
@@ -630,6 +637,27 @@
 
 
 
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#adding-a-tab">Adding a tab</a></li>
+    <li><a href="#tab-types">Tab types</a></li>
+    <li><a href="#tab-options">Tab options</a>
+      <ul>
+        <li><a href="#tab-view">Tab view</a></li>
+        <li><a href="#populate-from-template">Populate from template</a></li>
+        <li><a href="#show-only-if-in-view">Show only if in view</a></li>
+        <li><a href="#colour-from-view">Colour from view</a></li>
+        <li><a href="#name">Name</a></li>
+        <li><a href="#use-inline-editing">Use inline editing</a></li>
+        <li><a href="#show-relation-fields">Show relation fields</a></li>
+        <li><a href="#choose-a-record-when-a-new-item-is-added">Choose a record when a new item is added</a></li>
+        <li><a href="#accept-emails-from-parent-table">Accept emails from parent table</a></li>
+      </ul>
+    </li>
+    <li><a href="#multiple-tabs-for-the-same-table">Multiple tabs for the same table</a></li>
+  </ul>
+</nav>
 
 
 
@@ -648,6 +676,12 @@
 
 
 
+
+
+
+
+
+
 <li class="breadcrumb-item" >
 	<a href="https://docs.agilebase.co.uk/docs/">Docs</a>
 </li>
@@ -655,8 +689,22 @@
 
 
 
+<li class="breadcrumb-item" >
+	<a href="https://docs.agilebase.co.uk/docs/tables/">Tables</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/">Hierarchy Navigation</a>
+</li>
+
+
+
+
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://docs.agilebase.co.uk/docs/workflows/">Workflows</a>
+	<a href="https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/">Tabs</a>
 </li>
 
 	</ol>
@@ -664,77 +712,61 @@
 
             
 <div class="td-content">
-	<h1>Workflows</h1>
-        <div class="lead">A powerful set of automation features</div>
-	
-	
-        <div class="section-index">
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    
-</div>
+	<h1>Tabs</h1>
+    <div class="lead">Tabs allow navigation from a parent record to a related child record</div>
+	       
+	<p>Tabs are one way of exposing relationships between tables, to allow the user to navigate the structure of an application. For example, in a companies table, a contacts tab may show all the people employed at that particular company.</p>
+<blockquote>
+<p>The user interface can display more than two levels of structure on screen in other ways (e.g. showing a menu in a tab) and wherever the user is, they can navigate up or down the hierarchy of data.</p>
+</blockquote>
+<h2 id="adding-a-tab">Adding a tab</h2>
+<ol>
+<li>Expand the <em>Build Tables</em> menu in the lefthand sidebar</li>
+<li>Select the table you wish to add a tab to</li>
+<li>Click the pencil icon in the toolbar to edit the table, then select the table&rsquo;s <em>manage</em> tab</li>
+<li>Scroll down to the bottom of the form</li>
+<li>Under &lsquo;Choose child tabs for the form&rsquo;, select an option in the <em>Add a tab</em> dropdown</li>
+</ol>
+<h2 id="tab-types">Tab types</h2>
+<p>There are two types of tab, those which show a <strong>single record</strong> and those which show <strong>multiple records</strong>.</p>
+<p>The type used depends on the relation field in the child table used in the tab, which links to the main table. If it is <a href="https://todo.com">one-to-one</a>, then a single record is shown in the tab. If it&rsquo;s <a href="/docs/tables/table-layouts/">one to many</a>, then a view appears embedded in the tab, with which the user can choose a record to edit.</p>
+<p>A one to one example may be showing a tab of specification information against an ingredient for example.</p>
+<p><strong>TODO: screenshot of spec tab</strong></p>
+<p>A one to many may be a list of suppliers who supply that ingredient.</p>
+<p><strong>TODO: screenshot</strong></p>
+<h2 id="tab-options">Tab options</h2>
+<p>Typically, these options are only needed to finnesse an application. They can be useful to look at once the core of the structure is built.</p>
+<h3 id="tab-view">Tab view</h3>
+<p>For one to many tabs, which <a href="https://todo.com">view</a> to use to show items. By creating a specific view to use for the tab, you can control which fields are displayed in which order, add calculations, filter those which are shown etc.</p>
+<h3 id="populate-from-template">Populate from template</h3>
+<p>Under a tab, a button allows the user to add records. For example in the contacts tab of an organisation, they would be able to add a new contact.</p>
+<p>However, in some situations you want to pre-populate the tab with records, rather than make the user create each one manually. An example might be order lines for a customer order in a telesales system. The order lines could be initially pre-populated with regular items the customer orders.</p>
+<p>One way of doing that is to use the &lsquo;Populate from template&rsquo; view, first creating a new view to use for this purpose. The view must contain the record ID field of the parent table (e.g. customer orders in our example). When the user clicks on the tab, if there are no records present yet, it will prompt to populate the tab. Each row from the view where the record ID matches that of the parent record (cutomer order) will be used to create a record in the tab.</p>
+<p>Any calculations in the view <strong>with the same name</strong> as a field in the tab table will be used to populate values in the records.</p>
+<blockquote>
+<p>Another way of auto-populating data is to use a <a href="https://todo.com">workflow which runs on record creation</a> or in the background. You can choose whichever method works best for a particular purpose.</p>
+</blockquote>
+<h3 id="show-only-if-in-view">Show only if in view</h3>
+<p>This option allows you to control tab visibility - whether the tab is visible on screen or not at any time depends on whether the main record appears in the view chosen. This works exactly the same way as <a href="https://todo.com">field visibility</a></p>
+<h3 id="colour-from-view">Colour from view</h3>
+<p>The colour of each tab can be chosen. For example, different steps of a process may each be represented by a tab. Once a step is complete, the tab may be coloured green.</p>
+<p>To set this up, create a view from the main (parent) table. It should contain a text calculation called &lsquo;colour&rsquo; which outputs the name of a colour e.g. green, or a blank value for no colour. The colour names are the same as those for <a href="https://todo.com">record flagging</a>.</p>
+<h3 id="name">Name</h3>
+<p>By default the tab is named the same as the table used. However, you can override that here.</p>
+<h3 id="use-inline-editing">Use inline editing</h3>
+<p>Speed up intensive data entry by allowing each field in the tab view to be edited inline. Here&rsquo;s an example using an order processing system.</p>
+<p><strong>TODO: example screenshot</strong></p>
+<h3 id="show-relation-fields">Show relation fields</h3>
+<p>If this is un-ticked (which it is by default), any relation fields in the tab table will be hidden. This can be useful if you want to reduce the complexity exposed to the user. They can load all data including relations by navigating to the full record.</p>
+<h3 id="choose-a-record-when-a-new-item-is-added">Choose a record when a new item is added</h3>
+<p>Used when a tab shows a <a href="/docs/tables/relational-database-concepts/#a-more-complex-example">join (also called a junction) table</a>. To continue the example from that page, when adding a link between supplier and raw materials, if the raw materials table had a tab showing links, this option would cause the user to be immediately prompted for a supplier when adding a link.</p>
+<h3 id="accept-emails-from-parent-table">Accept emails from parent table</h3>
+<p>The system can accept incoming emails and attach them to relevant records e.g. attaching an email from a customer to that customer&rsquo;s record. Please <a href="https://agilechilli.com/contact-us/">contact us</a> if you&rsquo;d like to set that up.</p>
+<h2 id="multiple-tabs-for-the-same-table">Multiple tabs for the same table</h2>
+<p>A final note about tabs. In a small number of cases, one table A may have two relations to the <strong>same</strong> table B. For example, a record of a contract between two parties may have a relation to the customer and supplier, both of which are records in an organisations table.</p>
+<p>In this case, you may want to add two tabs to the organisations table, one to show contracts for which a particular organisation is a customer, another for which they are a supplier.</p>
+<p>You can do that - just add two tabs for the same table. The system will use the first relation it finds for the first tab, the second for the next.</p>
+<p>Another example is a recursive Bill Of Materials (BOM) system where a join table may link to a parent item and a child item.</p>
 
 	
 		<style>
@@ -798,9 +830,10 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified April 24, 2020: <a  href="https://github.com/okohll/abdocs/commit/67d84f3f9fa1495ad714edb2988d54a0d69e2fef">Domain name change (67d84f3)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 4, 2020
 </div>
 </div>
+
 
           </main>
         </div>

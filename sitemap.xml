@@ -98,6 +98,11 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/tables/adding-and-removing/</loc>
+    <lastmod>2020-04-24T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/</loc>
     <lastmod>2020-05-01T11:40:51+01:00</lastmod>
   </url>
@@ -113,6 +118,11 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/tables/table-layouts/</loc>
+    <lastmod>2020-04-24T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/</loc>
     <lastmod>2020-05-01T16:29:26+01:00</lastmod>
   </url>
@@ -120,6 +130,11 @@
   <url>
     <loc>https://docs.agilebase.co.uk/docs/views/</loc>
     <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/</loc>
+    <lastmod>2020-05-04T16:40:00+01:00</lastmod>
   </url>
   
   <url>
@@ -133,8 +148,23 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/</loc>
+    <lastmod>2020-05-04T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/to-grandchild-records/</loc>
+    <lastmod>2020-05-04T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/docs/charting/</loc>
     <lastmod>2020-04-24T21:16:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/upwards-navigation/</loc>
+    <lastmod>2020-05-04T16:40:00+01:00</lastmod>
   </url>
   
   <url>
@@ -164,7 +194,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/</loc>
-    <lastmod>2020-05-04T15:08:59+01:00</lastmod>
+    <lastmod>2020-05-04T16:40:00+01:00</lastmod>
   </url>
   
 </urlset>
