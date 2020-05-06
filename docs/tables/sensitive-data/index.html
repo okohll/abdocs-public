@@ -7,7 +7,6 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://docs.agilebase.co.uk/docs/tables/sensitive-data/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -23,11 +22,19 @@
 
 <title>Sensitive data | agileBase docs</title><meta property="og:title" content="Sensitive data" />
 <meta property="og:description" content="Options relevant to storing commerically sensitive or personal data" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/tables/sensitive-data/" />
-<meta property="og:updated_time" content="2020-04-24T16:40:00+01:00" />
+<meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
+<meta property="article:modified_time" content="2020-04-24T16:40:00+01:00" />
 <meta itemprop="name" content="Sensitive data">
-<meta itemprop="description" content="Options relevant to storing commerically sensitive or personal data"><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="Options relevant to storing commerically sensitive or personal data">
+<meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
+<meta itemprop="dateModified" content="2020-04-24T16:40:00&#43;01:00" />
+<meta itemprop="wordCount" content="233">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Sensitive data"/>
 <meta name="twitter:description" content="Options relevant to storing commerically sensitive or personal data"/>
 
@@ -46,7 +53,7 @@
 
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -300,7 +307,7 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/tables/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Tables</a>
+    <a  href="/docs/tables/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Tables</a>
   </li>
   <ul>
     <li class="collapse show" id="docstables">
@@ -309,25 +316,8 @@
       
       
       
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/tables/relational-database-concepts/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Relational Database Concepts</a>
-  </li>
-  <ul>
-    <li class="collapse " id="docstablesrelational-database-concepts">
       
-      
-      
-    </li>
-  </ul>
-</ul>
-
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docstablesrelational-database-concepts" href="/docs/tables/relational-database-concepts/">Relational Database Concepts</a>
       
       
       
@@ -385,25 +375,14 @@
       
       
       
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/tables/sensitive-data/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Sensitive data</a>
-  </li>
-  <ul>
-    <li class="collapse show" id="docstablessensitive-data">
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docstablessensitive-data" href="/docs/tables/sensitive-data/">Sensitive data</a>
       
       
       
-    </li>
-  </ul>
-</ul>
-
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docstablesoptions" href="/docs/tables/options/">Options</a>
       
       
     </li>
@@ -644,7 +623,7 @@
 
 
 
-<a href="https://github.com/okohll/abdocs/edit/master/content/en/docs/tables/sensitive-data/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/okohll/abdocs/edit/master/content/en/docs/tables/sensitive-data.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
 <a href="https://github.com/okohll/abdocs/issues/new?title=Sensitive%20data" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
@@ -706,12 +685,12 @@
             
 <div class="td-content">
 	<h1>Sensitive data</h1>
-        <div class="lead">Options relevant to storing commerically sensitive or personal data</div>
-	
+    <div class="lead">Options relevant to storing commerically sensitive or personal data</div>
+	       
 	<p>In a table&rsquo;s <em>manage</em> tab, there are two options which are worth considering if the data is storing commercially sensitive information (plenty of information in most customer systems falls under this category!) or personal information as defined by EU General Data Protection Regulations (GDPR).</p>
 <p>When either option is ticked, two controls appear.</p>
 <h2 id="notify-administrators-on-export">Notify administrators on export</h2>
-<p>Here you can enter a number. When a user exports more than that number of records at once to spreadsheet, all administrators (users with the [administrator]({{relref &ldquo;/docs/security-and-compliance/security-features/privileges#assigning-the-administrator-privilege&quot;&gt;}}) privilege) are notified by email.</p>
+<p>Here you can enter a number. When a user exports more than that number of records at once to spreadsheet, all administrators (users with the <a href="/docs/security-and-compliance/security-features/privileges/#assigning-the-administrator-privilege">administrator</a> privilege) are notified by email.</p>
 <h2 id="disallow-exports">Disallow exports</h2>
 <p>This is also a number, representing a hard limit on the number of records which can be exported from this table at any one time.</p>
 <blockquote>
@@ -725,78 +704,8 @@
 <p>When either option is ticked, some additional information is shown that can highlight opportunities for data to be exported.</p>
 <ul>
 <li>Any API views which send data to third party systems</li>
-<li>Any roles which are set up to allow exporting and which have users with privileges to see the table data, are shown</li>
+<li>Any roles which are set up to allow exporting and which have users with privileges to see the table data</li>
 </ul>
-
-        <div class="section-index">
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    
-</div>
 
 	
 		<style>
@@ -863,6 +772,7 @@
 	<div class="text-muted mt-5 pt-3 border-top">Last modified April 24, 2020
 </div>
 </div>
+
 
           </main>
         </div>

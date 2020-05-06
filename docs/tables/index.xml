@@ -190,7 +190,7 @@
         &lt;p&gt;In a table&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab, there are two options which are worth considering if the data is storing commercially sensitive information (plenty of information in most customer systems falls under this category!) or personal information as defined by EU General Data Protection Regulations (GDPR).&lt;/p&gt;
 &lt;p&gt;When either option is ticked, two controls appear.&lt;/p&gt;
 &lt;h2 id=&#34;notify-administrators-on-export&#34;&gt;Notify administrators on export&lt;/h2&gt;
-&lt;p&gt;Here you can enter a number. When a user exports more than that number of records at once to spreadsheet, all administrators (users with the [administrator]({{relref &amp;ldquo;/docs/security-and-compliance/security-features/privileges#assigning-the-administrator-privilege&amp;quot;&amp;gt;}}) privilege) are notified by email.&lt;/p&gt;
+&lt;p&gt;Here you can enter a number. When a user exports more than that number of records at once to spreadsheet, all administrators (users with the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/#assigning-the-administrator-privilege&#34;&gt;administrator&lt;/a&gt; privilege) are notified by email.&lt;/p&gt;
 &lt;h2 id=&#34;disallow-exports&#34;&gt;Disallow exports&lt;/h2&gt;
 &lt;p&gt;This is also a number, representing a hard limit on the number of records which can be exported from this table at any one time.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -204,8 +204,63 @@
 &lt;p&gt;When either option is ticked, some additional information is shown that can highlight opportunities for data to be exported.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Any API views which send data to third party systems&lt;/li&gt;
-&lt;li&gt;Any roles which are set up to allow exporting and which have users with privileges to see the table data, are shown&lt;/li&gt;
+&lt;li&gt;Any roles which are set up to allow exporting and which have users with privileges to see the table data&lt;/li&gt;
 &lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Options</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/options/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/options/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To access these options&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
+&lt;li&gt;Select the table you wish to edit&lt;/li&gt;
+&lt;li&gt;Click the pencil icon in the toolbar to edit the table, then select the table&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;Options&lt;/em&gt; button&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;allow-add&#34;&gt;Allow add&lt;/h2&gt;
+&lt;p&gt;If this is ticked (it is by default), users can add records to the table. Anyone with manage privileges on the table can add tables regardless.&lt;/p&gt;
+&lt;h3 id=&#34;only-from-within-tab&#34;&gt;Only from within tab&lt;/h3&gt;
+&lt;p&gt;If this is ticked, users can add records but only when accessing this table&amp;rsquo;s form from within a tab of a parent record. This can help ensure that child records are always connected to a parent and aren&amp;rsquo;t created as &amp;lsquo;orphans&amp;rsquo;.&lt;/p&gt;
+&lt;h2 id=&#34;allow-clone&#34;&gt;Allow clone&lt;/h2&gt;
+&lt;p&gt;(Off by default). Show a clone record button when a user is viewing a record. This makes a simple copy of all data in the record. The contents of tabs are not cloned. A more advanced clone facility can be created with a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt; if desired.&lt;/p&gt;
+&lt;h2 id=&#34;allow-remove&#34;&gt;Allow remove&lt;/h2&gt;
+&lt;p&gt;(On by default). Allow records to be deleted by people with EDIT privileges as well as people with MANAGE privileges, who can always delete.&lt;/p&gt;
+&lt;h2 id=&#34;allow-share&#34;&gt;Allow share&lt;/h2&gt;
+&lt;p&gt;Showa button which allows links to individual records to be shared between users using email. Note - recipients still need a login and relevant privileges to see the record.&lt;/p&gt;
+&lt;h2 id=&#34;when-a-records-created-run-this-workflow&#34;&gt;When a record&amp;rsquo;s created, run this workflow&lt;/h2&gt;
+&lt;p&gt;Run a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt; immediately after the creation of a record. The workflow runs after any field default values have been set.&lt;/p&gt;
+&lt;h3 id=&#34;run-this-workflow-whenever-each-record-is-viewed&#34;&gt;Run this workflow whenever each record is viewed&lt;/h3&gt;
+&lt;p&gt;As well as running the workflow on record creation, also run it whenever a user views a record in this table. Be aware this may have a performance impact for users, if the workflow is resource intensive and/or multi-step.&lt;/p&gt;
+&lt;h2 id=&#34;data-entry-from-external-sources&#34;&gt;Data entry from external sources&lt;/h2&gt;
+&lt;p&gt;The options in this section are for configuring the table to allow an API request from an external source to create and edit records. See &lt;a href=&#34;https://todo.com&#34;&gt;API use&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;h2 id=&#34;other-options&#34;&gt;Other options&lt;/h2&gt;
+&lt;h3 id=&#34;records-lockable&#34;&gt;Records lockable&lt;/h3&gt;
+&lt;p&gt;Records can be locked to prevent editing. You may like to do this based on criteria e.g. once a customer order has been sent, it should be locked against further changes.&lt;/p&gt;
+&lt;p&gt;To actually lock the record, a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt; can be used.&lt;/p&gt;
+&lt;p&gt;Locked records can be manually unlocked by someone with manage privileges on the table, but only one at a time.&lt;/p&gt;
+&lt;h3 id=&#34;email-notifications&#34;&gt;Email notifications&lt;/h3&gt;
+&lt;p&gt;When someone adds a comment to a record, when selecting recipients, they have the option to email those recipients, as well as adding the comment to the &lt;a href=&#34;https://todo.com&#34;&gt;comment stream&lt;/a&gt;. Ticking this table option sets the default to send emails for any comment added to this table. Users can override this on an individual comment basis and recipients can override in their notification preferences.&lt;/p&gt;
+&lt;h3 id=&#34;flag-records-with-colour&#34;&gt;Flag records with colour&lt;/h3&gt;
+&lt;p&gt;Enter a field name here and add a field with the same name to a view, to flag records. The contents of the field must be one of the colour names as given on the screen. The field added to the view can be a calculation, specifically a hidden calculation. This will flag the view without showing the colour name on screen.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It&amp;rsquo;s also possible to colour individual table fields or calculations in a view (as opposed to this option which flags the whole row). See the options for &lt;a href=&#34;https://todo.com&#34;&gt;field colouring&lt;/a&gt; or &lt;a href=&#34;https://todo.com&#34;&gt;calculation colouring&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;accept-emails-to-this-address&#34;&gt;Accept emails to this address&lt;/h3&gt;
+&lt;p&gt;The system can accept incoming emails and attach them to relevant records e.g. attaching an email from a customer to that customer&amp;rsquo;s record.&lt;/p&gt;
+&lt;p&gt;A particular email address can be set up to receive emails. The system can be configured to either accept emails from anyone, or just from users. If just from users, then users can forward any emails they receive to the system to have them imported.&lt;/p&gt;
+&lt;p&gt;The email text will be logged as a &lt;a href=&#34;https://todo.com&#34;&gt;comment&lt;/a&gt; against the record, with the full email attached if it is HTML formatted or includes attachments. The table must have a comments field.&lt;/p&gt;
+&lt;p&gt;Please &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; if you&amp;rsquo;d like to set that up.&lt;/p&gt;
+&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
+&lt;p&gt;After the options, some structural information is shown, such as which tables depend on this one i.e. have a &lt;a href=&#34;https://todo.com&#34;&gt;relation&lt;/a&gt; to it, how many fields and views per tile there are. See also the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#the-dashboard&#34;&gt;usage dashboard&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>

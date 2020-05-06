@@ -7,7 +7,6 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://docs.agilebase.co.uk/docs/calendar/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,15 +20,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Calendar | agileBase docs</title><meta property="og:title" content="Calendar" />
-<meta property="og:description" content="Using the built in calendar and integrating with third party calendars" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://docs.agilebase.co.uk/docs/calendar/" />
-<meta property="og:updated_time" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="name" content="Calendar">
-<meta itemprop="description" content="Using the built in calendar and integrating with third party calendars"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Calendar"/>
-<meta name="twitter:description" content="Using the built in calendar and integrating with third party calendars"/>
+<title>Options | agileBase docs</title><meta property="og:title" content="Options" />
+<meta property="og:description" content="Options which alter table behaviour" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://docs.agilebase.co.uk/docs/tables/options/" />
+<meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
+<meta property="article:modified_time" content="2020-04-24T16:40:00+01:00" />
+<meta itemprop="name" content="Options">
+<meta itemprop="description" content="Options which alter table behaviour">
+<meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
+<meta itemprop="dateModified" content="2020-04-24T16:40:00&#43;01:00" />
+<meta itemprop="wordCount" content="709">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Options"/>
+<meta name="twitter:description" content="Options which alter table behaviour"/>
 
 
 
@@ -46,7 +53,7 @@
 
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -300,10 +307,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/tables/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tables</a>
+    <a  href="/docs/tables/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Tables</a>
   </li>
   <ul>
-    <li class="collapse " id="docstables">
+    <li class="collapse show" id="docstables">
       
       
       
@@ -375,7 +382,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docstablesoptions" href="/docs/tables/options/">Options</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docstablesoptions" href="/docs/tables/options/">Options</a>
       
       
     </li>
@@ -486,10 +493,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/calendar/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Calendar</a>
+    <a  href="/docs/calendar/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Calendar</a>
   </li>
   <ul>
-    <li class="collapse show" id="docscalendar">
+    <li class="collapse " id="docscalendar">
       
       
       
@@ -616,8 +623,8 @@
 
 
 
-<a href="https://github.com/okohll/abdocs/edit/master/content/en/docs/calendar/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/okohll/abdocs/issues/new?title=Calendar" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/okohll/abdocs/edit/master/content/en/docs/tables/options.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/okohll/abdocs/issues/new?title=Options" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
 
@@ -625,6 +632,34 @@
 
 
 
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#allow-add">Allow add</a>
+      <ul>
+        <li><a href="#only-from-within-tab">Only from within tab</a></li>
+      </ul>
+    </li>
+    <li><a href="#allow-clone">Allow clone</a></li>
+    <li><a href="#allow-remove">Allow remove</a></li>
+    <li><a href="#allow-share">Allow share</a></li>
+    <li><a href="#when-a-records-created-run-this-workflow">When a record&rsquo;s created, run this workflow</a>
+      <ul>
+        <li><a href="#run-this-workflow-whenever-each-record-is-viewed">Run this workflow whenever each record is viewed</a></li>
+      </ul>
+    </li>
+    <li><a href="#data-entry-from-external-sources">Data entry from external sources</a></li>
+    <li><a href="#other-options">Other options</a>
+      <ul>
+        <li><a href="#records-lockable">Records lockable</a></li>
+        <li><a href="#email-notifications">Email notifications</a></li>
+        <li><a href="#flag-records-with-colour">Flag records with colour</a></li>
+        <li><a href="#accept-emails-to-this-address">Accept emails to this address</a></li>
+      </ul>
+    </li>
+    <li><a href="#information">Information</a></li>
+  </ul>
+</nav>
 
 
 
@@ -643,6 +678,9 @@
 
 
 
+
+
+
 <li class="breadcrumb-item" >
 	<a href="https://docs.agilebase.co.uk/docs/">Docs</a>
 </li>
@@ -650,8 +688,15 @@
 
 
 
+<li class="breadcrumb-item" >
+	<a href="https://docs.agilebase.co.uk/docs/tables/">Tables</a>
+</li>
+
+
+
+
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://docs.agilebase.co.uk/docs/calendar/">Calendar</a>
+	<a href="https://docs.agilebase.co.uk/docs/tables/options/">Options</a>
 </li>
 
 	</ol>
@@ -659,81 +704,51 @@
 
             
 <div class="td-content">
-	<h1>Calendar</h1>
-        <div class="lead">Using the built in calendar and integrating with third party calendars</div>
-	
-	
-        <div class="section-index">
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    
-</div>
+	<h1>Options</h1>
+    <div class="lead">Options which alter table behaviour</div>
+	       
+	<p>To access these options</p>
+<ol>
+<li>Expand the <em>Build Tables</em> menu in the lefthand sidebar</li>
+<li>Select the table you wish to edit</li>
+<li>Click the pencil icon in the toolbar to edit the table, then select the table&rsquo;s <em>manage</em> tab</li>
+<li>Click the <em>Options</em> button</li>
+</ol>
+<h2 id="allow-add">Allow add</h2>
+<p>If this is ticked (it is by default), users can add records to the table. Anyone with manage privileges on the table can add tables regardless.</p>
+<h3 id="only-from-within-tab">Only from within tab</h3>
+<p>If this is ticked, users can add records but only when accessing this table&rsquo;s form from within a tab of a parent record. This can help ensure that child records are always connected to a parent and aren&rsquo;t created as &lsquo;orphans&rsquo;.</p>
+<h2 id="allow-clone">Allow clone</h2>
+<p>(Off by default). Show a clone record button when a user is viewing a record. This makes a simple copy of all data in the record. The contents of tabs are not cloned. A more advanced clone facility can be created with a <a href="https://todo.com">workflow</a> if desired.</p>
+<h2 id="allow-remove">Allow remove</h2>
+<p>(On by default). Allow records to be deleted by people with EDIT privileges as well as people with MANAGE privileges, who can always delete.</p>
+<h2 id="allow-share">Allow share</h2>
+<p>Showa button which allows links to individual records to be shared between users using email. Note - recipients still need a login and relevant privileges to see the record.</p>
+<h2 id="when-a-records-created-run-this-workflow">When a record&rsquo;s created, run this workflow</h2>
+<p>Run a <a href="https://todo.com">workflow</a> immediately after the creation of a record. The workflow runs after any field default values have been set.</p>
+<h3 id="run-this-workflow-whenever-each-record-is-viewed">Run this workflow whenever each record is viewed</h3>
+<p>As well as running the workflow on record creation, also run it whenever a user views a record in this table. Be aware this may have a performance impact for users, if the workflow is resource intensive and/or multi-step.</p>
+<h2 id="data-entry-from-external-sources">Data entry from external sources</h2>
+<p>The options in this section are for configuring the table to allow an API request from an external source to create and edit records. See <a href="https://todo.com">API use</a> for more information.</p>
+<h2 id="other-options">Other options</h2>
+<h3 id="records-lockable">Records lockable</h3>
+<p>Records can be locked to prevent editing. You may like to do this based on criteria e.g. once a customer order has been sent, it should be locked against further changes.</p>
+<p>To actually lock the record, a <a href="https://todo.com">workflow</a> can be used.</p>
+<p>Locked records can be manually unlocked by someone with manage privileges on the table, but only one at a time.</p>
+<h3 id="email-notifications">Email notifications</h3>
+<p>When someone adds a comment to a record, when selecting recipients, they have the option to email those recipients, as well as adding the comment to the <a href="https://todo.com">comment stream</a>. Ticking this table option sets the default to send emails for any comment added to this table. Users can override this on an individual comment basis and recipients can override in their notification preferences.</p>
+<h3 id="flag-records-with-colour">Flag records with colour</h3>
+<p>Enter a field name here and add a field with the same name to a view, to flag records. The contents of the field must be one of the colour names as given on the screen. The field added to the view can be a calculation, specifically a hidden calculation. This will flag the view without showing the colour name on screen.</p>
+<blockquote>
+<p>It&rsquo;s also possible to colour individual table fields or calculations in a view (as opposed to this option which flags the whole row). See the options for <a href="https://todo.com">field colouring</a> or <a href="https://todo.com">calculation colouring</a></p>
+</blockquote>
+<h3 id="accept-emails-to-this-address">Accept emails to this address</h3>
+<p>The system can accept incoming emails and attach them to relevant records e.g. attaching an email from a customer to that customer&rsquo;s record.</p>
+<p>A particular email address can be set up to receive emails. The system can be configured to either accept emails from anyone, or just from users. If just from users, then users can forward any emails they receive to the system to have them imported.</p>
+<p>The email text will be logged as a <a href="https://todo.com">comment</a> against the record, with the full email attached if it is HTML formatted or includes attachments. The table must have a comments field.</p>
+<p>Please <a href="https://agilechilli.com/contact-us/">contact us</a> if you&rsquo;d like to set that up.</p>
+<h2 id="information">Information</h2>
+<p>After the options, some structural information is shown, such as which tables depend on this one i.e. have a <a href="https://todo.com">relation</a> to it, how many fields and views per tile there are. See also the <a href="/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#the-dashboard">usage dashboard</a></p>
 
 	
 		<style>
@@ -797,9 +812,10 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified April 24, 2020: <a  href="https://github.com/okohll/abdocs/commit/806f3c39c943b0530c60352b0d84e910e1023550">Top level descriptions (806f3c3)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified April 24, 2020
 </div>
 </div>
+
 
           </main>
         </div>
