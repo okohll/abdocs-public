@@ -551,6 +551,38 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
     </item>
     
     <item>
+      <title>Docs: Basic Field Types</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/</guid>
+      <description>
+        
+        
+        &lt;p&gt;These are the core types of fields by which data can be entered by users (or other sources such as the API or a workflow).&lt;/p&gt;
+&lt;h2 id=&#34;text&#34;&gt;Text&lt;/h2&gt;
+&lt;p&gt;Text fields are the most commonly used. Depending on &lt;a href=&#34;https://todo.com&#34;&gt;field options&lt;/a&gt;, text can be entered into a standard data entry control, a large box allowing rich formatting (bold, italic etc.), chosen from a dropdown of options or added as tags.&lt;/p&gt;
+&lt;h2 id=&#34;number&#34;&gt;Number&lt;/h2&gt;
+&lt;p&gt;When adding a number field, select a &lt;em&gt;precision&lt;/em&gt; from the dropdown. If &lt;code&gt;0&lt;/code&gt; is chosen, then it will be a whole number (integer) field. If any other value is chosen, it will be a decimal field. The decimal precision can be changed at any time in the field options, but a whole number can&amp;rsquo;t be converted to a decimal or vice versa via field options.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;See &lt;a href=&#34;https://todo.com&#34;&gt;changing field types&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;date&#34;&gt;Date&lt;/h2&gt;
+&lt;p&gt;Represents a date or date/time, of any precision from year to second.&lt;/p&gt;
+&lt;h2 id=&#34;auto-generated-number-sequence&#34;&gt;Auto-generated number sequence&lt;/h2&gt;
+&lt;p&gt;The value of this field will be generated automatically, incremented by one each time a record is created.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sequence numbers are never rolled back, even on the deletion of a record, so they can&amp;rsquo;t be used if a gapless assignment of numbers is required.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;relation&#34;&gt;Relation&lt;/h2&gt;
+&lt;p&gt;Adding a relation creates a link from one table to another. For example, a contacts table may contain a relation linking to an organisations table, to allow a person to belong to an organisation. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; for further info.&lt;/p&gt;
+&lt;h2 id=&#34;checkbox&#34;&gt;Checkbox&lt;/h2&gt;
+&lt;p&gt;Represents a boolean (true or false) value.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Policies</title>
       <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/policies/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
@@ -705,6 +737,24 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
     </item>
     
     <item>
+      <title>Docs: Separators</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/</link>
+      <pubDate>Thu, 07 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A separator field doesn&amp;rsquo;t actually store any data, but is used as a marker of the start of a block of fields. Create a separator  and move it to just before the field which should be the first in a block.&lt;/p&gt;
+&lt;p&gt;Depending on the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/table-layouts/&#34;&gt;table layout&lt;/a&gt;, these blocks will be displayed in different ways, but in all cases will form a distinct group of fields.&lt;/p&gt;
+&lt;p&gt;Inline help can be added for separators in the same way as for normal fields, by adding a field description. This help text will apply to the whole block of fields created by a separator.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a system with&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TODO: blocks screenshot&lt;/strong&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Upwards Navigation</title>
       <link>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/upwards-navigation/</link>
       <pubDate>Mon, 04 May 2020 16:40:00 +0100</pubDate>
@@ -719,6 +769,46 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;blockquote&gt;
 &lt;p&gt;A record can have multiple &amp;lsquo;parents&amp;rsquo; of different types, e.g. a contact may belong to both an organisation and a site or department within that organisation.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Data Integrity Checks</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/data-integrity-checks/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/data-integrity-checks/</guid>
+      <description>
+        
+        
+        &lt;p&gt;It can be important to ensure that certain rules are followed when data is entered, either manually by a user, by an incoming &lt;a href=&#34;https://todo.com&#34;&gt;API request&lt;/a&gt; or someone filling in a &lt;a href=&#34;https://todo.com&#34;&gt;chaser&lt;/a&gt; response.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When designing applications, just be aware there is sometimes a trade-off between the ideal of data integrity and everyday concerns.&lt;/p&gt;
+&lt;p&gt;For example, you may like to force users to always provide an email address for contacts but in a small minority of cases, they may not have that available.&lt;/p&gt;
+&lt;p&gt;agileBase has options for handling soft validation (highlighting errors or notifying someone) as well as the hard validation (disallowing invalid data entry) options discussed here. For example, you could&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://todo.com&#34;&gt;Create a view&lt;/a&gt; to show all records with errors, for later checking&lt;/li&gt;
+&lt;li&gt;Set up a workflow or chaser to &lt;a href=&#34;https://todo.com&#34;&gt;chase someone&lt;/a&gt; when errors are found&lt;/li&gt;
+&lt;li&gt;Use the &lt;a href=&#34;https://todo.com&#34;&gt;API&lt;/a&gt; to send a message to your internal messaging system e.g. Slack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That said, these are the ways in which you can strictly enforce data integrity.&lt;/p&gt;
+&lt;h2 id=&#34;at-an-individual-field-level&#34;&gt;At an individual field level&lt;/h2&gt;
+&lt;p&gt;Basic rules can be applied with &lt;a href=&#34;https://todo.com&#34;&gt;field options&lt;/a&gt;. for example a field may be set as mandatory, or it must contain unique values (no duplicates).&lt;/p&gt;
+&lt;h2 id=&#34;advanced-field-checks&#34;&gt;Advanced field checks&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
+&lt;li&gt;Select the table you wish to add rules to&lt;/li&gt;
+&lt;li&gt;Click the pencil icon in the toolbar to edit the table, then select the table&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;Checks&lt;/em&gt; button&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here you can add more complex checks, such as the value must be longer or shorter than a certain length, be within a date range or match a &lt;a href=&#34;https://en.wikipedia.org/wiki/Regular_expression&#34;&gt;regular expression&lt;/a&gt;. The list of checks available is the same as that used in &lt;a href=&#34;https://todo.com&#34;&gt;view filters&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;multi-field-unique-constraints&#34;&gt;Multi-field unique constraints&lt;/h2&gt;
+&lt;p&gt;Access these with the &lt;em&gt;Unique&lt;/em&gt; button under the &lt;em&gt;Checks&lt;/em&gt; button.&lt;/p&gt;
+&lt;p&gt;Sometimes, fields must be unique &lt;strong&gt;in combination&lt;/strong&gt;. For example, imagine you have a system for recording customer complaints. One of the fields might be a customer&amp;rsquo;s reference number, another a relation to the customer record.&lt;/p&gt;
+&lt;p&gt;You want to avoid duplicates being entered, so could make the customer reference number unique. However it could be that two different customers could use the same reference number independently, so that wouldn&amp;rsquo;t really work.&lt;/p&gt;
+&lt;p&gt;The solution is to add a multi-field unique constraint on customer and customer reference number. That way, a reference number won&amp;rsquo;t be able to be re-used for a complaint from the same customer, but more than one customer is allowed to use the same reference.&lt;/p&gt;
 
       </description>
     </item>
@@ -772,8 +862,132 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;A particular email address can be set up to receive emails. The system can be configured to either accept emails from anyone, or just from users. If just from users, then users can forward any emails they receive to the system to have them imported.&lt;/p&gt;
 &lt;p&gt;The email text will be logged as a &lt;a href=&#34;https://todo.com&#34;&gt;comment&lt;/a&gt; against the record, with the full email attached if it is HTML formatted or includes attachments. The table must have a comments field.&lt;/p&gt;
 &lt;p&gt;Please &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; if you&amp;rsquo;d like to set that up.&lt;/p&gt;
+&lt;p&gt;Emails are matched by creating a view containing the email addresses of potential recipients. An incoming email is attached to the record from this view which matches the sender&amp;rsquo;s email address. If there is no match, it is added to a &amp;lsquo;holding bay&amp;rsquo; where users can view and manually attach emails to records.&lt;/p&gt;
 &lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
 &lt;p&gt;After the options, some structural information is shown, such as which tables depend on this one i.e. have a &lt;a href=&#34;https://todo.com&#34;&gt;relation&lt;/a&gt; to it, how many fields and views per tile there are. See also the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#the-dashboard&#34;&gt;usage dashboard&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Comment Feeds</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/</link>
+      <pubDate>Thu, 07 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Adding a comment feed to a table adds a discussion area to a form, transforming its usefulness.&lt;/p&gt;
+&lt;p&gt;Comment feeds in agileBase are quite a large topic, as one of the most often used features central to the platform. It&amp;rsquo;s common for at least one comment feed to be added to every table in the system, allowing users to collaborate and discuss data wherever they are.&lt;/p&gt;
+&lt;p&gt;The ability to discuss and comment on data can be one of the most important mechanisms used to break down silo thinking and help organisations that wish to adopt a more systematic or process orientated view of things.&lt;/p&gt;
+&lt;h2 id=&#34;comment-feeds-in-action&#34;&gt;Comment feeds in action&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of a comment feed in a table, being used to add a new comment. Previous comments can be seen underneath, with the user and date/time of each.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TODO: screenshot&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The available recipients are those people who have privileges to view data in the table (it&amp;rsquo;s no use sending a comment to someone who can&amp;rsquo;t see the data being discussed).&lt;/p&gt;
+&lt;p&gt;The user interface intelligently selects an initial list of recipients from those available, but they can be added or removed by the user.&lt;/p&gt;
+&lt;p&gt;In this example, A and B (TODO) have been set to receive email notifications as well. The email they receive will contain a link to take them directly to the record the comment was added to. They can reply to the email to log an additional comment.&lt;/p&gt;
+&lt;p&gt;People who aren&amp;rsquo;t recipients of a comment will still see the comment when they visit the record it&amp;rsquo;s been added to, they just won&amp;rsquo;t get a notification in their comments stream or elsewhere.&lt;/p&gt;
+&lt;p&gt;People who are mentioned by name in a comment (TODO in this example) will get an in-app alert as well as the comment appearing in their comment stream.&lt;/p&gt;
+&lt;p&gt;A user&amp;rsquo;s notification options affect whether they receive comments from a particular table or person by default, and how they receive those comments. The table option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#accept-emails-to-this-address&#34;&gt;email notifications&lt;/a&gt; also affects this.&lt;/p&gt;
+&lt;h2 id=&#34;the-comments-stream-tile&#34;&gt;The comments stream tile&lt;/h2&gt;
+&lt;p&gt;When someone&amp;rsquo;s the receipient of a comment, they&amp;rsquo;ll be able to see it in the comments stream tile on their homepage. Clicking on it will navigate to the related record. We won&amp;rsquo;t go into every detail of the user interface in this administrator documentation, but comments can be searched and the comments tile can be expanded to full screen like any other tile.&lt;/p&gt;
+&lt;h2 id=&#34;email-integration&#34;&gt;Email integration&lt;/h2&gt;
+&lt;p&gt;As above, anyone who receives a comment notification can reply to the email to add another comment (their email address must be their username or recorded in their user defailt), or they can click on a link to view the related record including previous comments.&lt;/p&gt;
+&lt;p&gt;However, comments are also the mechanism by which emails from external parties can be logged - see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#accept-emails-to-this-address&#34;&gt;accept emails to this address&lt;/a&gt; table option.&lt;/p&gt;
+&lt;p&gt;When a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt; or &lt;a href=&#34;https://todo.com&#34;&gt;chaser&lt;/a&gt; sends an outgoing email, that is logged as a comment (including any attachments) too.&lt;/p&gt;
+&lt;h2 id=&#34;slack-integration&#34;&gt;Slack integration&lt;/h2&gt;
+&lt;p&gt;If &lt;a href=&#34;https://www.slack.com&#34;&gt;Slack&lt;/a&gt; is integrated via &lt;a href=&#34;https://todo.com&#34;&gt;company options&lt;/a&gt;, every comment added will also be sent to your Slack workspace.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Referenced data</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/</link>
+      <pubDate>Thu, 07 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Most fields in a table allow data entry into that table, but referenced data fields allow data from &lt;strong&gt;other&lt;/strong&gt; places to be embedded, specifically &lt;a href=&#34;https://todo.com&#34;&gt;views&lt;/a&gt;, created from any table.&lt;/p&gt;
+&lt;p&gt;Optionally, the embedded data can be editable.&lt;/p&gt;
+&lt;p&gt;This can be used for many purposes, such as&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;showing calculations, e.g. when editing a recipe, you may want to show the total cost/kg of all ingredients and packaging in that recipe&lt;/li&gt;
+&lt;li&gt;embedding charts, e.g. in the record for a customer, you may want to show the last 12 months of sales data&lt;/li&gt;
+&lt;li&gt;allowing quick editing of related data, e.g. after selecting a customer contact for a sales opportunity, allow quick editing of their contact details without having to navigate away from the opportunity record&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some more esoteric uses are also possible&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;referenced data can be used as a source of data to populate standard fields in the form, i.e. to provide default values for fields - see &lt;a href=&#34;https://todo.com&#34;&gt;relation field options&lt;/a&gt; for more information&lt;/li&gt;
+&lt;li&gt;a referenced data field can be displayed as a button to &lt;a href=&#34;https://todo.com&#34;&gt;manually run a workflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;adding-a-referenced-field&#34;&gt;Adding a referenced field&lt;/h2&gt;
+&lt;p&gt;Referenced fields are based on views. The contents of a view will be displayed in the form where a field referencing data from that view is added.&lt;/p&gt;
+&lt;p&gt;The way it works is that the chosen view must contain the ID field of the table the referenced field is added to. When displaying data, the view is filtered to only show records where the ID matches that of the record being edited.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take the sales opportunity example from above. You wish to include details of a selected contact in an opportunity record.&lt;/p&gt;
+&lt;p&gt;First, create a view of contacts linked to each opportunity. It may have fields in it such as the following:&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot of example data in spreadsheet **&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note - ID fields aren&amp;rsquo;t usually displayed to the user, they&amp;rsquo;re shown here to make the explanation easier&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When a field referencing this view is added to the opportunities table, the output may display like this, when editing a particular opportunity, e.g. number 4&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot **&lt;/p&gt;
+&lt;p&gt;So to summarise, the steps are&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://todo.com&#34;&gt;Create&lt;/a&gt; or find a view containing the data you wish to embed. It must contain the ID field of the table the data is embedded in (in this case &amp;lsquo;opportunities&amp;rsquo;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#adding-a-field&#34;&gt;Add a field&lt;/a&gt; of type &lt;em&gt;referenced data&lt;/em&gt;. Select the table your target view was created from, then the target view itself, before pressing &lt;em&gt;create field&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Actually, there is one case in which the rule that the view must contain the ID of the table the referenced data is being added to. That&amp;rsquo;s when you want to show &lt;strong&gt;all&lt;/strong&gt; rows from the view, without filtering.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is typically used in a minority of cases, but can be useful when you want to embed data that isn&amp;rsquo;t related to the target table. For example, showing some global settings that may affect the functionality of a system.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;showing-one-or-more-rows&#34;&gt;Showing one or more rows&lt;/h2&gt;
+&lt;p&gt;If more than one row in the view has an ID matching the ID of the table being added to, all will be shown. There is limited space in a form, so if there are lots, then a &amp;lsquo;see more&amp;rsquo; option will appear after the first few rows. For a more compact view, &lt;a href=&#34;https://todo.com&#34;&gt;tabular display&lt;/a&gt; can be chosen in the referenced field options.&lt;/p&gt;
+&lt;h2 id=&#34;showing-charts&#34;&gt;Showing charts&lt;/h2&gt;
+&lt;p&gt;If the view used has one or more &lt;a href=&#34;https://todo.com&#34;&gt;charts&lt;/a&gt;, they will be shown instead of the data rows. The filtering acts exactly the same way, only data matching the containing table&amp;rsquo;s ID is used as the source of the chart data.&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot of embedded chart **&lt;/p&gt;
+&lt;h2 id=&#34;making-referenced-data-editable&#34;&gt;Making referenced data editable&lt;/h2&gt;
+&lt;p&gt;Optionally, referenced data can be made editable by clicking on it.&lt;/p&gt;
+&lt;p&gt;A view containing the containing table&amp;rsquo;s ID can be created one of two ways.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a view from the containing table, &lt;a href=&#34;https://todo.com&#34;&gt;joining&lt;/a&gt; to other tables&lt;/li&gt;
+&lt;li&gt;Create a view from another table, joining it to the containing table&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If a view is built the second way and embedded into the table via a referenced field, the data will be editable: clicking on an element of referenced data will turn it into a data entry form.&lt;/p&gt;
+&lt;p&gt;If it&amp;rsquo;s built the first way, data will not be editable&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Usage</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/usage/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/usage/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This panel shows a list of views that contain data from the table. Any view with data is included, not just those directly created from the table.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/&#34;&gt;usage reporting&lt;/a&gt; for more info.&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot**&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Users and Roles</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/users-and-roles/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/users-and-roles/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;em&gt;Users&lt;/em&gt; and &lt;em&gt;Roles&lt;/em&gt; panels of a table&amp;rsquo;s manage tab allow privileges to be assigned to a user or role on a table. Please see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; page for more details.&lt;/p&gt;
 
       </description>
     </item>

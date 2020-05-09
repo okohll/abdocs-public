@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.69.2" />
+<meta name="generator" content="Hugo 0.70.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/tables/options/" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-04-24T16:40:00+01:00" />
+<meta property="article:modified_time" content="2020-05-06T20:31:54+01:00" />
 <meta itemprop="name" content="Options">
 <meta itemprop="description" content="Options which alter table behaviour">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-04-24T16:40:00&#43;01:00" />
-<meta itemprop="wordCount" content="709">
+<meta itemprop="dateModified" content="2020-05-06T20:31:54&#43;01:00" />
+<meta itemprop="wordCount" content="762">
 
 
 
@@ -382,7 +382,25 @@
       
       
       
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docstablesdata-integrity-checks" href="/docs/tables/data-integrity-checks/">Data Integrity Checks</a>
+      
+      
+      
+      
+      
       <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docstablesoptions" href="/docs/tables/options/">Options</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docstablesusage" href="/docs/tables/usage/">Usage</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docstablesusers-and-roles" href="/docs/tables/users-and-roles/">Users and Roles</a>
       
       
     </li>
@@ -406,6 +424,76 @@
   <ul>
     <li class="collapse " id="docsfields">
       
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/fields/field-types/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Field Types</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsfieldsfield-types">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-typesbasic-field-types" href="/docs/fields/field-types/basic-field-types/">Basic Field Types</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/fields/field-types/special-field-types/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Special Field Types</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsfieldsfield-typesspecial-field-types">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-typesspecial-field-typesseparators" href="/docs/fields/field-types/special-field-types/separators/">Separators</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-typesspecial-field-typescomment-feeds" href="/docs/fields/field-types/special-field-types/comment-feeds/">Comment Feeds</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-typesspecial-field-typesreferenced-data" href="/docs/fields/field-types/special-field-types/referenced-data/">Referenced data</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
       
       
     </li>
@@ -747,6 +835,7 @@
 <p>A particular email address can be set up to receive emails. The system can be configured to either accept emails from anyone, or just from users. If just from users, then users can forward any emails they receive to the system to have them imported.</p>
 <p>The email text will be logged as a <a href="https://todo.com">comment</a> against the record, with the full email attached if it is HTML formatted or includes attachments. The table must have a comments field.</p>
 <p>Please <a href="https://agilechilli.com/contact-us/">contact us</a> if you&rsquo;d like to set that up.</p>
+<p>Emails are matched by creating a view containing the email addresses of potential recipients. An incoming email is attached to the record from this view which matches the sender&rsquo;s email address. If there is no match, it is added to a &lsquo;holding bay&rsquo; where users can view and manually attach emails to records.</p>
 <h2 id="information">Information</h2>
 <p>After the options, some structural information is shown, such as which tables depend on this one i.e. have a <a href="https://todo.com">relation</a> to it, how many fields and views per tile there are. See also the <a href="/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#the-dashboard">usage dashboard</a></p>
 
@@ -812,7 +901,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified April 24, 2020
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 6, 2020: <a  href="https://github.com/okohll/abdocs/commit/129802fcff2b55d16bc018e391325bd51594f6af">Table options (129802f)</a>
 </div>
 </div>
 

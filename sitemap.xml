@@ -64,7 +64,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/</loc>
-    <lastmod>2020-04-24T16:40:00+01:00</lastmod>
+    <lastmod>2020-05-06T20:31:54+01:00</lastmod>
   </url>
   
   <url>
@@ -113,6 +113,11 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/fields/field-types/</loc>
+    <lastmod>2020-04-24T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/</loc>
     <lastmod>2020-05-06T17:16:31+01:00</lastmod>
   </url>
@@ -138,6 +143,11 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/</loc>
+    <lastmod>2020-04-24T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/policies/</loc>
     <lastmod>2020-05-01T16:29:26+01:00</lastmod>
   </url>
@@ -149,7 +159,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/</loc>
-    <lastmod>2020-05-06T17:16:31+01:00</lastmod>
+    <lastmod>2020-05-06T20:31:54+01:00</lastmod>
   </url>
   
   <url>
@@ -164,7 +174,17 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/tables/sensitive-data/</loc>
+    <lastmod>2020-05-06T20:31:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/</loc>
     <lastmod>2020-04-24T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/</loc>
+    <lastmod>2020-05-07T16:40:00+01:00</lastmod>
   </url>
   
   <url>
@@ -178,13 +198,38 @@
   </url>
   
   <url>
-    <loc>https://docs.agilebase.co.uk/docs/tables/options/</loc>
+    <loc>https://docs.agilebase.co.uk/docs/tables/data-integrity-checks/</loc>
     <lastmod>2020-04-24T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/tables/options/</loc>
+    <lastmod>2020-05-06T20:31:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/</loc>
+    <lastmod>2020-05-07T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/</loc>
+    <lastmod>2020-05-07T16:40:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/adding-help/</loc>
     <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/tables/usage/</loc>
+    <lastmod>2020-04-24T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/tables/users-and-roles/</loc>
+    <lastmod>2020-04-24T16:40:00+01:00</lastmod>
   </url>
   
   <url>
@@ -204,7 +249,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/</loc>
-    <lastmod>2020-05-06T17:16:31+01:00</lastmod>
+    <lastmod>2020-05-07T16:40:00+01:00</lastmod>
   </url>
   
 </urlset>

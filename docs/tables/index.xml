@@ -211,6 +211,46 @@
     </item>
     
     <item>
+      <title>Docs: Data Integrity Checks</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/data-integrity-checks/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/data-integrity-checks/</guid>
+      <description>
+        
+        
+        &lt;p&gt;It can be important to ensure that certain rules are followed when data is entered, either manually by a user, by an incoming &lt;a href=&#34;https://todo.com&#34;&gt;API request&lt;/a&gt; or someone filling in a &lt;a href=&#34;https://todo.com&#34;&gt;chaser&lt;/a&gt; response.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When designing applications, just be aware there is sometimes a trade-off between the ideal of data integrity and everyday concerns.&lt;/p&gt;
+&lt;p&gt;For example, you may like to force users to always provide an email address for contacts but in a small minority of cases, they may not have that available.&lt;/p&gt;
+&lt;p&gt;agileBase has options for handling soft validation (highlighting errors or notifying someone) as well as the hard validation (disallowing invalid data entry) options discussed here. For example, you could&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://todo.com&#34;&gt;Create a view&lt;/a&gt; to show all records with errors, for later checking&lt;/li&gt;
+&lt;li&gt;Set up a workflow or chaser to &lt;a href=&#34;https://todo.com&#34;&gt;chase someone&lt;/a&gt; when errors are found&lt;/li&gt;
+&lt;li&gt;Use the &lt;a href=&#34;https://todo.com&#34;&gt;API&lt;/a&gt; to send a message to your internal messaging system e.g. Slack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That said, these are the ways in which you can strictly enforce data integrity.&lt;/p&gt;
+&lt;h2 id=&#34;at-an-individual-field-level&#34;&gt;At an individual field level&lt;/h2&gt;
+&lt;p&gt;Basic rules can be applied with &lt;a href=&#34;https://todo.com&#34;&gt;field options&lt;/a&gt;. for example a field may be set as mandatory, or it must contain unique values (no duplicates).&lt;/p&gt;
+&lt;h2 id=&#34;advanced-field-checks&#34;&gt;Advanced field checks&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
+&lt;li&gt;Select the table you wish to add rules to&lt;/li&gt;
+&lt;li&gt;Click the pencil icon in the toolbar to edit the table, then select the table&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;Checks&lt;/em&gt; button&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here you can add more complex checks, such as the value must be longer or shorter than a certain length, be within a date range or match a &lt;a href=&#34;https://en.wikipedia.org/wiki/Regular_expression&#34;&gt;regular expression&lt;/a&gt;. The list of checks available is the same as that used in &lt;a href=&#34;https://todo.com&#34;&gt;view filters&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;multi-field-unique-constraints&#34;&gt;Multi-field unique constraints&lt;/h2&gt;
+&lt;p&gt;Access these with the &lt;em&gt;Unique&lt;/em&gt; button under the &lt;em&gt;Checks&lt;/em&gt; button.&lt;/p&gt;
+&lt;p&gt;Sometimes, fields must be unique &lt;strong&gt;in combination&lt;/strong&gt;. For example, imagine you have a system for recording customer complaints. One of the fields might be a customer&amp;rsquo;s reference number, another a relation to the customer record.&lt;/p&gt;
+&lt;p&gt;You want to avoid duplicates being entered, so could make the customer reference number unique. However it could be that two different customers could use the same reference number independently, so that wouldn&amp;rsquo;t really work.&lt;/p&gt;
+&lt;p&gt;The solution is to add a multi-field unique constraint on customer and customer reference number. That way, a reference number won&amp;rsquo;t be able to be re-used for a complaint from the same customer, but more than one customer is allowed to use the same reference.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Options</title>
       <link>https://docs.agilebase.co.uk/docs/tables/options/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
@@ -259,8 +299,39 @@
 &lt;p&gt;A particular email address can be set up to receive emails. The system can be configured to either accept emails from anyone, or just from users. If just from users, then users can forward any emails they receive to the system to have them imported.&lt;/p&gt;
 &lt;p&gt;The email text will be logged as a &lt;a href=&#34;https://todo.com&#34;&gt;comment&lt;/a&gt; against the record, with the full email attached if it is HTML formatted or includes attachments. The table must have a comments field.&lt;/p&gt;
 &lt;p&gt;Please &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; if you&amp;rsquo;d like to set that up.&lt;/p&gt;
+&lt;p&gt;Emails are matched by creating a view containing the email addresses of potential recipients. An incoming email is attached to the record from this view which matches the sender&amp;rsquo;s email address. If there is no match, it is added to a &amp;lsquo;holding bay&amp;rsquo; where users can view and manually attach emails to records.&lt;/p&gt;
 &lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
 &lt;p&gt;After the options, some structural information is shown, such as which tables depend on this one i.e. have a &lt;a href=&#34;https://todo.com&#34;&gt;relation&lt;/a&gt; to it, how many fields and views per tile there are. See also the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#the-dashboard&#34;&gt;usage dashboard&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Usage</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/usage/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/usage/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This panel shows a list of views that contain data from the table. Any view with data is included, not just those directly created from the table.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/&#34;&gt;usage reporting&lt;/a&gt; for more info.&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot**&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Users and Roles</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/users-and-roles/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/users-and-roles/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;em&gt;Users&lt;/em&gt; and &lt;em&gt;Roles&lt;/em&gt; panels of a table&amp;rsquo;s manage tab allow privileges to be assigned to a user or role on a table. Please see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; page for more details.&lt;/p&gt;
 
       </description>
     </item>
