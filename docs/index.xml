@@ -890,6 +890,8 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;People who aren&amp;rsquo;t recipients of a comment will still see the comment when they visit the record it&amp;rsquo;s been added to, they just won&amp;rsquo;t get a notification in their comments stream or elsewhere.&lt;/p&gt;
 &lt;p&gt;People who are mentioned by name in a comment (TODO in this example) will get an in-app alert as well as the comment appearing in their comment stream.&lt;/p&gt;
 &lt;p&gt;A user&amp;rsquo;s notification options affect whether they receive comments from a particular table or person by default, and how they receive those comments. The table option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#accept-emails-to-this-address&#34;&gt;email notifications&lt;/a&gt; also affects this.&lt;/p&gt;
+&lt;h3 id=&#34;comments-to-other-fields&#34;&gt;Comments to other fields&lt;/h3&gt;
+&lt;p&gt;Although adding a comments feed field is the easiest way of allowing people to comment on data, users can at any time add a comment to &lt;strong&gt;any&lt;/strong&gt; field on the screen, by hovering over the field until an &amp;lsquo;add comment&amp;rsquo; icon appears. This opens a smaller, basic comment adding interface, without the options for choosing recipients above, rather the default set of recipients is always used.&lt;/p&gt;
 &lt;h2 id=&#34;the-comments-stream-tile&#34;&gt;The comments stream tile&lt;/h2&gt;
 &lt;p&gt;When someone&amp;rsquo;s the receipient of a comment, they&amp;rsquo;ll be able to see it in the comments stream tile on their homepage. Clicking on it will navigate to the related record. We won&amp;rsquo;t go into every detail of the user interface in this administrator documentation, but comments can be searched and the comments tile can be expanded to full screen like any other tile.&lt;/p&gt;
 &lt;h2 id=&#34;email-integration&#34;&gt;Email integration&lt;/h2&gt;
@@ -957,7 +959,8 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;Create a view from another table, joining it to the containing table&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;If a view is built the second way and embedded into the table via a referenced field, the data will be editable: clicking on an element of referenced data will turn it into a data entry form.&lt;/p&gt;
-&lt;p&gt;If it&amp;rsquo;s built the first way, data will not be editable&lt;/p&gt;
+&lt;p&gt;If it&amp;rsquo;s built the first way, data will not be editable.&lt;/p&gt;
+&lt;p&gt;In an editable referenced field, only fields directly from the table made to create the view will be editable. Other fields will be read-only.&lt;/p&gt;
 
       </description>
     </item>
@@ -988,6 +991,240 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
         
         
         &lt;p&gt;The &lt;em&gt;Users&lt;/em&gt; and &lt;em&gt;Roles&lt;/em&gt; panels of a table&amp;rsquo;s manage tab allow privileges to be assigned to a user or role on a table. Please see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; page for more details.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Automatically present fields</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/</link>
+      <pubDate>Fri, 08 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When every &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt; is created, a series of fields are automatically added. These aren&amp;rsquo;t displayed in the data entry form of a table, but are available to be added into views.&lt;/p&gt;
+&lt;h2 id=&#34;id-field&#34;&gt;ID field&lt;/h2&gt;
+&lt;p&gt;In database parlance, the table&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Primary_key&#34;&gt;primary key&lt;/a&gt; - providing a unique ID to identify each record. Values are generated in sequence.&lt;/p&gt;
+&lt;p&gt;agileBase creates and manages primary keys, using them to link related tables together automatically, however it&amp;rsquo;s useful for administrators to understand the concept and implementation. Many platform features depending on including the ID field for a particular table in a view, such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced fields&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;creation-time-auto&#34;&gt;Creation Time [Auto]&lt;/h2&gt;
+&lt;p&gt;The record&amp;rsquo;s creation time, accurate to the ms and displayed to the second by default.&lt;/p&gt;
+&lt;h2 id=&#34;created-by-auto&#34;&gt;Created By [Auto]&lt;/h2&gt;
+&lt;p&gt;The user ID of the person who created the record, in the form &lt;code&gt;Forename Surname (username)&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This format is used to identify a user everywhere in agileBase, for example when assigning a record to a user. When a user ID identifies a person in a &lt;a href=&#34;https://todo.com&#34;&gt;chaser&lt;/a&gt; or &lt;a href=&#34;https://todo.com&#34;&gt;email workflow&lt;/a&gt;, agileBase will look up and use their email address, from their account details.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When a record is created by a workflow, the Created By will be &lt;code&gt;System User (system)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When created by an API call, it will be &lt;code&gt;Public API (IP Address) (public api&lt;/code&gt;, where the IP address of the calling system is recorded.&lt;/p&gt;
+&lt;h2 id=&#34;last-modified-auto&#34;&gt;Last Modified [Auto]&lt;/h2&gt;
+&lt;p&gt;The record&amp;rsquo;s last modification time. Behaviour is similar to Creation Time [Auto], above.&lt;/p&gt;
+&lt;h2 id=&#34;modified-by-auto&#34;&gt;Modified By [Auto]&lt;/h2&gt;
+&lt;p&gt;The user ID of the person who last updated the record. Behaviour is the same as Created By [Auto].&lt;/p&gt;
+&lt;h2 id=&#34;locked-auto&#34;&gt;Locked [Auto]&lt;/h2&gt;
+&lt;p&gt;A boolean value which is true if the record has been &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#records-lockable&#34;&gt;locked&lt;/a&gt; by a workflow, to disallow further editing.&lt;/p&gt;
+&lt;h2 id=&#34;view-count-auto&#34;&gt;View Count [Auto]&lt;/h2&gt;
+&lt;p&gt;How many times a particular record has been opened or viewed by a user. A measure of popularity if you like.&lt;/p&gt;
+&lt;h2 id=&#34;activity-histogram-auto&#34;&gt;Activity Histogram [Auto]&lt;/h2&gt;
+&lt;p&gt;The activity histogram of a record shows the relative activity of each record, i.e. the number of record edits that have occurred, over a period of time. It&amp;rsquo;s displayed as a small &lt;a href=&#34;https://en.wikipedia.org/wiki/Sparkline&#34;&gt;sparkline&lt;/a&gt; chart.&lt;/p&gt;
+&lt;p&gt;The activity over the past six months is shown, one point, or &amp;lsquo;spike&amp;rsquo; per week. The more edits in a week there are, the higher the spike. Edits to &amp;lsquo;child&amp;rsquo; records in a tab of a main record are also counted, but contribute relatively less.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As an example of use, in a display of sales opportunities, you want to know which opps. are being actively worked and which haven’t had any activity for some time. The activity histogram shows the ‘shape’ of activity over a period of time, at a glance.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;With sparklines next to every record on screen, you can quickly get an idea of the relative activity of each.&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot **&lt;/p&gt;
+&lt;h2 id=&#34;comments-feed-auto&#34;&gt;Comments Feed [Auto]&lt;/h2&gt;
+&lt;p&gt;This field contains an amalagamation of all &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&#34;&gt;comments&lt;/a&gt; added to a record, newest at the top. Adding this field to a view allows recent comments to be seen for many records at once and is an easy way of making record comments searchable. As opposed to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;comments tile&lt;/a&gt;, the user sees all record comments, not just those they are a recipient for, but only those for the table in question.&lt;/p&gt;
+&lt;p&gt;Note - the Comments Feed [Auto] field combines comments from all comment fields in the table, if there&amp;rsquo;s more than one, as well as any comments added to other fields.&lt;/p&gt;
+&lt;h2 id=&#34;document-storage-mb-auto&#34;&gt;Document Storage (MB) [Auto]&lt;/h2&gt;
+&lt;p&gt;Shows the amount of storage used for all documents attached to a record (uploaded or generated), including previous versions. Adding this field to a view allows you to total up storage across all (or a subset of) records.&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot of activity histogram **&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Document templates</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/</link>
+      <pubDate>Fri, 08 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Document templates in agileBase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.&lt;/p&gt;
+&lt;p&gt;The same templating system is used for both generating documents (which can be done automatically with a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt; or manually) and displaying output to be printed.&lt;/p&gt;
+&lt;p&gt;Each template is attached to a view and given a name.&lt;/p&gt;
+&lt;h2 id=&#34;creating-a-template&#34;&gt;Creating a template&lt;/h2&gt;
+&lt;p&gt;Templates can be created using the built-in WYSIWYG editor, which allows simple presentation controls, like adding tables, headings and text formatting.&lt;/p&gt;
+&lt;p&gt;Alternatively and for complex needs, templates can be created manually. The templating language is &lt;a href=&#34;https://velocity.apache.org/&#34;&gt;Apache Velocity&lt;/a&gt;, which allows concepts such as variables, loops etc. to be used, i.e. simple programming features. The output format is HTML.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Find or create a &lt;a href=&#34;https://todo.com&#34;&gt;view&lt;/a&gt; which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in.&lt;/li&gt;
+&lt;li&gt;Press the &lt;em&gt;Print&lt;/em&gt; button in the toolbar, then the &lt;em&gt;manage&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;You will then be prompted to create a template using the WYSIWIG editor, or upload one created outside the system.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Existing templates can also be edited or downloaded. Manually created templates with complex features such as variable setting and looping can&amp;rsquo;t be edited using the WYSIWYG editor&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;including-data&#34;&gt;Including data&lt;/h2&gt;
+&lt;p&gt;Each field in the view (included calculations), or parent table, can be merged in to the template by referencing the field name, preceded by a dollar sign. For convenience, a list of available fields is listed below the WYSIWYG editor, for easy copying and pasting into the template.&lt;/p&gt;
+&lt;p&gt;For those manually creating templates, a field name becomes a variable to reference by&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;writing it in lower case&lt;/li&gt;
+&lt;li&gt;replacing spaces with underscores (_)&lt;/li&gt;
+&lt;li&gt;removing all characters that are neither letters nor numbers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of a template being updated in the WYSYWIG editor:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/template-editor.png&#34; alt=&#34;Template editing&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;using-templates&#34;&gt;Using templates&lt;/h3&gt;
+&lt;p&gt;Templates can be used when generating documents, &lt;a href=&#34;https://todo.com&#34;&gt;manually&lt;/a&gt; or using an &lt;a href=&#34;https://todo.com&#34;&gt;automated workflow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;They can also be used as printout templates to let users print data from the system formatted as you wish.&lt;/p&gt;
+&lt;h2 id=&#34;advanced-templating&#34;&gt;Advanced templating&lt;/h2&gt;
+&lt;h3 id=&#34;convenience-features&#34;&gt;Convenience features&lt;/h3&gt;
+&lt;p&gt;As well as data, various convenience features are available for insertion into a template.&lt;/p&gt;
+&lt;p&gt;Here are some of the most commonly used utility functions.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getCalendar()&lt;/td&gt;
+&lt;td&gt;Return a Java &lt;a href=&#34;https://docs.oracle.com/javase/10/docs/api/java/util/Calendar.html&#34;&gt;Calendar&lt;/a&gt; object representing the current date and time&lt;br/&gt;Also useful: $viewTools.getCalendarConstant(String name), e.g.&lt;br&gt;&lt;code&gt;#set($dayOfWeek = $viewTools.getCalendar().get($viewTools.getCalendarConstant(&amp;quot;DAY_OF_WEEK&amp;quot;)))&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getDatestampString()&lt;/td&gt;
+&lt;td&gt;Output the current date in the format 31/01/2023&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getDatestampString(&amp;ldquo;format&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;Output the current date/time in a &lt;a href=&#34;https://docs.oracle.com/javase/10/docs/api/java/text/SimpleDateFormat.html&#34;&gt;custom format&lt;/a&gt; e.g. &lt;code&gt;$viewTools.getDatestampString(&amp;quot;EEE, d MMM yyyy HH:mm:ss&amp;quot;)&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getDatestampString(calendar, &amp;ldquo;format&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;Output the given date/time (as returned by $viewTools.getCalendar() in a custom format&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getMathTool()&lt;/td&gt;
+&lt;td&gt;Return a &lt;a href=&#34;https://velocity.apache.org/tools/3.0/apidocs/org/apache/velocity/tools/generic/MathTool.html&#34;&gt;MathTool&lt;/a&gt; for doing maths&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getNumberTool()&lt;/td&gt;
+&lt;td&gt;Return a &lt;a href=&#34;https://velocity.apache.org/tools/3.0/apidocs/org/apache/velocity/tools/generic/NumberTool.html&#34;&gt;NumberTool&lt;/a&gt; for formatting and converting numbers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.getRandomInt(bound)&lt;/td&gt;
+&lt;td&gt;Return a random number &amp;gt;=0 and &amp;lt;bound&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.spelloutCurrencyFromString(&amp;ldquo;number&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;Convert e.g. &amp;ldquo;12.50&amp;rdquo; into &amp;ldquo;Twelve pounds 50 pence&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$viewTools.spelloutNumber(number)&lt;/td&gt;
+&lt;td&gt;Convert e.g. 1,200 into &amp;ldquo;One thousand, two hundred&amp;rdquo;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;complex-data-merging&#34;&gt;Complex data merging&lt;/h3&gt;
+&lt;p&gt;Here are some of the most commonly used data retrieval / formatting functions.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.getReportDataRows()&lt;/td&gt;
+&lt;td&gt;Return all rows in the current view e.g.&lt;br /&gt;&lt;code&gt;#set($rows = $view.getReportDataRows())&lt;/code&gt;&lt;br&gt;&lt;code&gt;#foreach($row in $rows)&lt;/code&gt;&lt;br&gt;&lt;code&gt;  $row.getValue(&amp;quot;name&amp;quot;)&amp;lt;br&amp;gt;&lt;/code&gt;&lt;br&gt;&lt;code&gt;#end&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.getReportDataRows(view)&lt;/td&gt;
+&lt;td&gt;Return all rows in the specified view e.g.&lt;br /&gt;&lt;code&gt;#set($myView = $view.getReport(&amp;quot;my view&amp;quot;))&lt;/code&gt;&lt;br&gt;&lt;code&gt;#set($rows = $view.getReportDataRows($myView))&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.getReportDataRows(view, n)&lt;/td&gt;
+&lt;td&gt;Return the top n rows in the specified view&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTable(view, rows)&lt;/td&gt;
+&lt;td&gt;Given a list of rows as returned by getReportDataRows, from the specified view, format them as a HTML table&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTable(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;For the given table, find the record being edited by the user. Filter the given view (which must contain the ID field for the table) by the ID of that record and output the rows as a HTML table. e.g.&lt;br&gt;&lt;code&gt;$view.htmlTable(&amp;quot;organisations&amp;quot;, &amp;quot;all contacts&amp;quot;)&lt;/code&gt;&lt;br&gt;might output the contacts belonging to the current organisation in the user&amp;rsquo;s session&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTable(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;, true/false)&lt;/td&gt;
+&lt;td&gt;As above, but if true is added, include any columns which are empty for all records (they are excluded by default)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTableTransverse(view, rows)&lt;/td&gt;
+&lt;td&gt;As per $view.htmlTable(view, rows) above, but swap the axes in the table, i.e. field names will appear down the left, each row will be output as a column&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$view.htmlTableTransverse(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;As per $view.htmlTable(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;) but again with swapped axes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;hellip;and here are some of the most commonly used session functions. Each user gets a new session when they log in, it stores information about the system&amp;rsquo;s current state for them.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$sessionData.getReport()&lt;/td&gt;
+&lt;td&gt;Return the last view the user looked at&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$sessionData.getTable()&lt;/td&gt;
+&lt;td&gt;Return the last table the user looked at&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$sessionData.getRowId()&lt;/td&gt;
+&lt;td&gt;Return the ID of the record last loaded&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$sessionData.getTile()&lt;/td&gt;
+&lt;td&gt;Return the open tile&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;There are many more functions than these available, indeed the whole of the agileBase user interface is created with templates including functions of these three types.&lt;/p&gt;
+&lt;p&gt;The entire templating API is beyond the scope of this documentation but if you do wish to create any template functionality not covered by the above, it&amp;rsquo;s probably possible. Please get in touch with us to discuss your needs and be pointed in the right direction.&lt;/p&gt;
+&lt;h3 id=&#34;using-apache-velocity-features&#34;&gt;Using Apache Velocity features&lt;/h3&gt;
+&lt;p&gt;In the examples above are some uses of simple programming code. A full reference for what you can do with the Apache Velocity language is here: &lt;a href=&#34;https://velocity.apache.org/engine/2.2/user-guide.html&#34;&gt;https://velocity.apache.org/engine/2.2/user-guide.html&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: File fields</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</link>
+      <pubDate>Fri, 08 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</guid>
+      <description>
+        
+        
+        &lt;p&gt;By default, a file field added to a table will let users upload files.&lt;/p&gt;
+&lt;p&gt;When a file field is added to a view, a link to download the file is included.&lt;/p&gt;
+&lt;p&gt;Files previews can be displayed in an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;image/document library&lt;/a&gt; tile.&lt;/p&gt;
+&lt;h2 id=&#34;version-history&#34;&gt;Version history&lt;/h2&gt;
+&lt;p&gt;When a new file is uploaded (or generated), any previous file is kept as a previous version, displayed with a timestamp, for download by users.&lt;/p&gt;
+&lt;h2 id=&#34;generating-pdf-documents&#34;&gt;Generating PDF documents&lt;/h2&gt;
+&lt;p&gt;If a template is uploaded using the &lt;a href=&#34;https://todo.com&#34;&gt;file field options&lt;/a&gt;, the file upload button in the user interface will be replaced by a generate button.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://todo.com&#34;&gt;document templates&lt;/a&gt; for more information.&lt;/p&gt;
 
       </description>
     </item>

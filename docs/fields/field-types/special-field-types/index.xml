@@ -53,6 +53,8 @@
 &lt;p&gt;People who aren&amp;rsquo;t recipients of a comment will still see the comment when they visit the record it&amp;rsquo;s been added to, they just won&amp;rsquo;t get a notification in their comments stream or elsewhere.&lt;/p&gt;
 &lt;p&gt;People who are mentioned by name in a comment (TODO in this example) will get an in-app alert as well as the comment appearing in their comment stream.&lt;/p&gt;
 &lt;p&gt;A user&amp;rsquo;s notification options affect whether they receive comments from a particular table or person by default, and how they receive those comments. The table option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#accept-emails-to-this-address&#34;&gt;email notifications&lt;/a&gt; also affects this.&lt;/p&gt;
+&lt;h3 id=&#34;comments-to-other-fields&#34;&gt;Comments to other fields&lt;/h3&gt;
+&lt;p&gt;Although adding a comments feed field is the easiest way of allowing people to comment on data, users can at any time add a comment to &lt;strong&gt;any&lt;/strong&gt; field on the screen, by hovering over the field until an &amp;lsquo;add comment&amp;rsquo; icon appears. This opens a smaller, basic comment adding interface, without the options for choosing recipients above, rather the default set of recipients is always used.&lt;/p&gt;
 &lt;h2 id=&#34;the-comments-stream-tile&#34;&gt;The comments stream tile&lt;/h2&gt;
 &lt;p&gt;When someone&amp;rsquo;s the receipient of a comment, they&amp;rsquo;ll be able to see it in the comments stream tile on their homepage. Clicking on it will navigate to the related record. We won&amp;rsquo;t go into every detail of the user interface in this administrator documentation, but comments can be searched and the comments tile can be expanded to full screen like any other tile.&lt;/p&gt;
 &lt;h2 id=&#34;email-integration&#34;&gt;Email integration&lt;/h2&gt;
@@ -120,7 +122,98 @@
 &lt;li&gt;Create a view from another table, joining it to the containing table&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;If a view is built the second way and embedded into the table via a referenced field, the data will be editable: clicking on an element of referenced data will turn it into a data entry form.&lt;/p&gt;
-&lt;p&gt;If it&amp;rsquo;s built the first way, data will not be editable&lt;/p&gt;
+&lt;p&gt;If it&amp;rsquo;s built the first way, data will not be editable.&lt;/p&gt;
+&lt;p&gt;In an editable referenced field, only fields directly from the table made to create the view will be editable. Other fields will be read-only.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Automatically present fields</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/</link>
+      <pubDate>Fri, 08 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When every &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt; is created, a series of fields are automatically added. These aren&amp;rsquo;t displayed in the data entry form of a table, but are available to be added into views.&lt;/p&gt;
+&lt;h2 id=&#34;id-field&#34;&gt;ID field&lt;/h2&gt;
+&lt;p&gt;In database parlance, the table&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Primary_key&#34;&gt;primary key&lt;/a&gt; - providing a unique ID to identify each record. Values are generated in sequence.&lt;/p&gt;
+&lt;p&gt;agileBase creates and manages primary keys, using them to link related tables together automatically, however it&amp;rsquo;s useful for administrators to understand the concept and implementation. Many platform features depending on including the ID field for a particular table in a view, such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced fields&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;creation-time-auto&#34;&gt;Creation Time [Auto]&lt;/h2&gt;
+&lt;p&gt;The record&amp;rsquo;s creation time, accurate to the ms and displayed to the second by default.&lt;/p&gt;
+&lt;h2 id=&#34;created-by-auto&#34;&gt;Created By [Auto]&lt;/h2&gt;
+&lt;p&gt;The user ID of the person who created the record, in the form &lt;code&gt;Forename Surname (username)&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This format is used to identify a user everywhere in agileBase, for example when assigning a record to a user. When a user ID identifies a person in a &lt;a href=&#34;https://todo.com&#34;&gt;chaser&lt;/a&gt; or &lt;a href=&#34;https://todo.com&#34;&gt;email workflow&lt;/a&gt;, agileBase will look up and use their email address, from their account details.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When a record is created by a workflow, the Created By will be &lt;code&gt;System User (system)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When created by an API call, it will be &lt;code&gt;Public API (IP Address) (public api&lt;/code&gt;, where the IP address of the calling system is recorded.&lt;/p&gt;
+&lt;h2 id=&#34;last-modified-auto&#34;&gt;Last Modified [Auto]&lt;/h2&gt;
+&lt;p&gt;The record&amp;rsquo;s last modification time. Behaviour is similar to Creation Time [Auto], above.&lt;/p&gt;
+&lt;h2 id=&#34;modified-by-auto&#34;&gt;Modified By [Auto]&lt;/h2&gt;
+&lt;p&gt;The user ID of the person who last updated the record. Behaviour is the same as Created By [Auto].&lt;/p&gt;
+&lt;h2 id=&#34;locked-auto&#34;&gt;Locked [Auto]&lt;/h2&gt;
+&lt;p&gt;A boolean value which is true if the record has been &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#records-lockable&#34;&gt;locked&lt;/a&gt; by a workflow, to disallow further editing.&lt;/p&gt;
+&lt;h2 id=&#34;view-count-auto&#34;&gt;View Count [Auto]&lt;/h2&gt;
+&lt;p&gt;How many times a particular record has been opened or viewed by a user. A measure of popularity if you like.&lt;/p&gt;
+&lt;h2 id=&#34;activity-histogram-auto&#34;&gt;Activity Histogram [Auto]&lt;/h2&gt;
+&lt;p&gt;The activity histogram of a record shows the relative activity of each record, i.e. the number of record edits that have occurred, over a period of time. It&amp;rsquo;s displayed as a small &lt;a href=&#34;https://en.wikipedia.org/wiki/Sparkline&#34;&gt;sparkline&lt;/a&gt; chart.&lt;/p&gt;
+&lt;p&gt;The activity over the past six months is shown, one point, or &amp;lsquo;spike&amp;rsquo; per week. The more edits in a week there are, the higher the spike. Edits to &amp;lsquo;child&amp;rsquo; records in a tab of a main record are also counted, but contribute relatively less.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As an example of use, in a display of sales opportunities, you want to know which opps. are being actively worked and which haven’t had any activity for some time. The activity histogram shows the ‘shape’ of activity over a period of time, at a glance.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;With sparklines next to every record on screen, you can quickly get an idea of the relative activity of each.&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot **&lt;/p&gt;
+&lt;h2 id=&#34;comments-feed-auto&#34;&gt;Comments Feed [Auto]&lt;/h2&gt;
+&lt;p&gt;This field contains an amalagamation of all &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&#34;&gt;comments&lt;/a&gt; added to a record, newest at the top. Adding this field to a view allows recent comments to be seen for many records at once and is an easy way of making record comments searchable. As opposed to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;comments tile&lt;/a&gt;, the user sees all record comments, not just those they are a recipient for, but only those for the table in question.&lt;/p&gt;
+&lt;p&gt;Note - the Comments Feed [Auto] field combines comments from all comment fields in the table, if there&amp;rsquo;s more than one, as well as any comments added to other fields.&lt;/p&gt;
+&lt;h2 id=&#34;document-storage-mb-auto&#34;&gt;Document Storage (MB) [Auto]&lt;/h2&gt;
+&lt;p&gt;Shows the amount of storage used for all documents attached to a record (uploaded or generated), including previous versions. Adding this field to a view allows you to total up storage across all (or a subset of) records.&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot of activity histogram **&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: File fields</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</link>
+      <pubDate>Fri, 08 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</guid>
+      <description>
+        
+        
+        &lt;p&gt;By default, a file field added to a table will let users upload files.&lt;/p&gt;
+&lt;p&gt;When a file field is added to a view, a link to download the file is included.&lt;/p&gt;
+&lt;p&gt;Files previews can be displayed in an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;image/document library&lt;/a&gt; tile.&lt;/p&gt;
+&lt;h2 id=&#34;version-history&#34;&gt;Version history&lt;/h2&gt;
+&lt;p&gt;When a new file is uploaded (or generated), any previous file is kept as a previous version, displayed with a timestamp, for download by users.&lt;/p&gt;
+&lt;h2 id=&#34;generating-pdf-documents&#34;&gt;Generating PDF documents&lt;/h2&gt;
+&lt;p&gt;If a template is uploaded using the &lt;a href=&#34;https://todo.com&#34;&gt;file field options&lt;/a&gt;, the file upload button in the user interface will be replaced by a generate button.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://todo.com&#34;&gt;document templates&lt;/a&gt; for more information.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: File fields</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</link>
+      <pubDate>Fri, 08 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</guid>
+      <description>
+        
+        
+        &lt;p&gt;By default, a file field added to a table will let users upload files.&lt;/p&gt;
+&lt;p&gt;When a file field is added to a view, a link to download the file is included.&lt;/p&gt;
+&lt;p&gt;Files previews can be displayed in an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;image/document library&lt;/a&gt; tile.&lt;/p&gt;
+&lt;h2 id=&#34;version-history&#34;&gt;Version history&lt;/h2&gt;
+&lt;p&gt;When a new file is uploaded (or generated), any previous file is kept as a previous version, displayed with a timestamp, for download by users.&lt;/p&gt;
+&lt;h2 id=&#34;generating-pdf-documents&#34;&gt;Generating PDF documents&lt;/h2&gt;
+&lt;p&gt;If a template is uploaded using the &lt;a href=&#34;https://todo.com&#34;&gt;file field options&lt;/a&gt;, the file upload button in the user interface will be replaced by a generate button.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://todo.com&#34;&gt;document templates&lt;/a&gt; for more information.&lt;/p&gt;
 
       </description>
     </item>
