@@ -466,6 +466,58 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
     </item>
     
     <item>
+      <title>Docs: Common Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/common-options/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/common-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;capitalise-field-name&#34;&gt;Capitalise field name&lt;/h2&gt;
+&lt;p&gt;By default agileBase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. &amp;lsquo;pH&amp;rsquo; or &amp;lsquo;Length (m)&#39;, which would otherwise show as &amp;lsquo;PH&amp;rsquo; and &amp;lsquo;Length (M)&#39;.&lt;/p&gt;
+&lt;h2 id=&#34;icon&#34;&gt;Icon&lt;/h2&gt;
+&lt;p&gt;Rather than displaying a field name, show an icon, chosen from &lt;a href=&#34;https://fontawesome.com/icons&#34;&gt;https://fontawesome.com/icons&lt;/a&gt;. For example, to show a phone icon for a phone number field, you could enter &lt;code&gt;phone&lt;/code&gt;, for an email field &lt;code&gt;envelope&lt;/code&gt; or a twitter handle &lt;code&gt;twitter&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;show-if-record-in-view&#34;&gt;Show if record in view&lt;/h2&gt;
+&lt;p&gt;Allow a field to be hidden or shown based on conditions. The conditions are specified by creating a view and adding filters. That view is then selected in this field option.&lt;/p&gt;
+&lt;p&gt;If a record appears in the view, the field will be visible, otherwise it won&amp;rsquo;t display to users.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As the conditions are created in a view, this mechanism is really powerful. You can create simple or very complex critera, including all of the filter options in a view, for example basing a filter on a calculation and combining multiple filters.&lt;/p&gt;
+&lt;p&gt;So you could make a field appear only when a particular point is reached in a process, or a status is changed elsewhere in a form, or perhaps it should only be visible to people who are &lt;a href=&#34;https://todo.com&#34;&gt;members of a certain role&lt;/a&gt;. See &lt;a href=&#34;https://todo.com&#34;&gt;view filters&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Two special options are available&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;show always - the default state&lt;/li&gt;
+&lt;li&gt;show never - useful for hiding fields used for internal purposes, e.g. which help the internal workings of a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;lock-when-value-set&#34;&gt;Lock when value set&lt;/h2&gt;
+&lt;p&gt;If the field is blank, allow a value to be entered, however as soon as it has a value, lock to prevent further editing. The user can manually unlock, but will be prompted for a reason for doing so, which will be logged against the field as a comment.&lt;/p&gt;
+&lt;p&gt;This can be used to prevent accidental editing of important fields which should not usually be changed, for example a product&amp;rsquo;s stock code.&lt;/p&gt;
+&lt;h2 id=&#34;unlock-if-record-in-view&#34;&gt;Unlock if record in view&lt;/h2&gt;
+&lt;p&gt;If &lt;strong&gt;Lock when value set&lt;/strong&gt; is ticked, unlock on certain criteria. Works the same way as &lt;a href=&#34;#show-if-record-in-view&#34;&gt;Show if record in view&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;required&#34;&gt;Required&lt;/h2&gt;
+&lt;p&gt;If ticked, force the user to supply a value. They won&amp;rsquo;t be able to navigate away from a record without doing so.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: although this is a strong prompt, it would still be possible for the user to close the browser window for example, leaving the field with no value. In that case a value will be prompted for again the next time the record is loaded.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;
+&lt;p&gt;Prominently highlight the field on the screen, e.g. if it&amp;rsquo;s one that is important to fill out, without actually requiring a value to be supplied.&lt;/p&gt;
+&lt;h2 id=&#34;set-from-previous-referenced-field&#34;&gt;Set from previous referenced field&lt;/h2&gt;
+&lt;p&gt;Provides a way to calculate a default option for a field. Tick this option and place a [referenced field] just before this field. The value of this field will be set from whatever value the referenced field outputs.&lt;/p&gt;
+&lt;p&gt;If the referenced field&amp;rsquo;s view has more than one field, the last one will be used, or if any have the same name as this field then that one will be.&lt;/p&gt;
+&lt;p&gt;To have a value set only at a certain point in a process, this option can be combined with the &lt;a href=&#34;#show-if-record-in-view&#34;&gt;Show if record in view&lt;/a&gt; option. When the field becomes visible, the value will be set.&lt;/p&gt;
+&lt;h2 id=&#34;unique&#34;&gt;Unique&lt;/h2&gt;
+&lt;p&gt;Disallow any duplicate values from being entered. No records in the table can have the same value as each other.&lt;/p&gt;
+&lt;h2 id=&#34;change-causes-record-refresh&#34;&gt;Change causes record refresh&lt;/h2&gt;
+&lt;p&gt;Through the use of some field options like &lt;a href=&#34;#show-if-record-in-view&#34;&gt;Show if record in view&lt;/a&gt; above, the screen can change based on what&amp;rsquo;s entered into a form. This option can work as a switch to refresh the configuration of the screen if it does change as someone enters new data.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For example, if there is a table to store sales opportunities, one field may be the status. If the status changes to &lt;code&gt;won&lt;/code&gt; or &lt;code&gt;lost&lt;/code&gt;, then you may wish to show some extra fields like &amp;lsquo;date won&amp;rsquo; or &amp;lsquo;reason why lost&amp;rsquo; for example. To allow this, tick the &amp;lsquo;change causes record refresh&amp;rsquo; option on the status field. Then whenever the status changes, these fields will automatically appear if relevant.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Reporting</title>
       <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
@@ -609,6 +661,70 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/gdpr-overview.pdf&#34;&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/gdpr-compliance-cycle.png&#34; alt=&#34;GDPR Compliance Cycle&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;data-protection-and-disaster-recovery&#34;&gt;Data Protection and Disaster Recovery&lt;/h2&gt;
 &lt;p&gt;Full details of our processes and plans are available to customers and relevant parties on request.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Text Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;colour-words&#34;&gt;Colour words&lt;/h2&gt;
+&lt;p&gt;When this field is included in a view, highlight it with a colour if the content is one of a number of words. The most up-to-date values to be highlighted are shown in the administrator interface, but as of the latest update of this page, they are&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/word-colours.png&#34; alt=&#34;Word Colours&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Text calculations can also be coloured based on the same words - see the &lt;a href=&#34;https://todo.com&#34;&gt;calculation options&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;default-value&#34;&gt;Default value&lt;/h2&gt;
+&lt;p&gt;For basic text fields, this simply provides a default value, which the field will have when a record&amp;rsquo;s created. If not provided, the field will be blank.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Field defaults can also be calculated, with a simple or arbitratily complex calculation. To do that, instead use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#set-from-previous-referenced-field&#34;&gt;Set from previous referenced field&lt;/a&gt; option.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;specifying-dropdown-lists-and-tags-fields&#34;&gt;Specifying dropdown lists and tags fields&lt;/h3&gt;
+&lt;p&gt;If either &lt;a href=&#34;#use-dropdown&#34;&gt;Use dropdown&lt;/a&gt; or &lt;a href=&#34;#use-tags&#34;&gt;Use tags&lt;/a&gt; is selected, the default value option provides a &lt;strong&gt;list&lt;/strong&gt; of options with which to populate the dropdown, or a set of tags to choose from. Enter each option here separated by commas.&lt;/p&gt;
+&lt;p&gt;If the list &lt;strong&gt;starts with&lt;/strong&gt; a comma, that means the field should be blank by default when a record is created. If not, then the default will be the first value in the comma separated list.&lt;/p&gt;
+&lt;p&gt;In the dropdown/tags list, the options will be ordered alphabetically, not shown in the order they&amp;rsquo;re entered in. If you wish to give the values a particular order, you can prefix them with a number or letter followed by a closing bracket like so: &lt;code&gt;1) cold, 2) warm, 3) hot&lt;/code&gt;. The number prefixes won&amp;rsquo;t show to the user.&lt;/p&gt;
+&lt;h4 id=&#34;lists-of-users&#34;&gt;Lists of users&lt;/h4&gt;
+&lt;p&gt;Also for dropdown lists and tags fields, agileBase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select &lt;code&gt;users&lt;/code&gt; or &lt;code&gt;users and roles&lt;/code&gt; from the &amp;lsquo;fill with&amp;rsquo; selector just below the default value input. The standard user ID format throughout the system is used, &amp;lsquo;Forename Surname (username)&#39;.&lt;/p&gt;
+&lt;p&gt;Only users/roles which have privileges to view the data in this particular table will be shown in the list. That can keep things manageable if a system has hundreds or more users.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An example use would be assigning an account manager to a customer, selecting from a list of staff members (who are users).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there&amp;rsquo;s a status change or something is overdue for example. agileBase can look up the user&amp;rsquo;s email address to accomplish this, See &lt;a href=&#34;https://todo.com&#34;&gt;email workflows&lt;/a&gt; for details.&lt;/p&gt;
+&lt;h2 id=&#34;use-dropdown&#34;&gt;Use dropdown&lt;/h2&gt;
+&lt;p&gt;Rather than a simple text entry field, display a dropdown of choices from which one can be selected. If there are only a few values, then the user interface may display options in &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio&#34;&gt;radio button&lt;/a&gt; style, but the behaviour is exactly the same.&lt;/p&gt;
+&lt;p&gt;Options can be provided with the &lt;a href=&#34;#default-value&#34;&gt;default value&lt;/a&gt; setting as above. If no options are specified, then the list of options will be automatically generated from the set of unique values &lt;strong&gt;already entered&lt;/strong&gt; into records. In this way, a set of values will gradually grow as people enter new data.&lt;/p&gt;
+&lt;p&gt;See also the &lt;a href=&#34;#use-only-given-values&#34;&gt;Use only given values&lt;/a&gt; option below to enforce the use of provided values only.&lt;/p&gt;
+&lt;h2 id=&#34;use-tags&#34;&gt;Use tags&lt;/h2&gt;
+&lt;p&gt;Similar to Use dropdown, but rather than only letting the user select one value, multiple values can be chosen at once.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An example use may be selecting countries of origin for an ingredient, where it may come from different countries (perhaps via different suppliers).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The list of available options is specified in exactly the same way as for dropdowns above.&lt;/p&gt;
+&lt;h2 id=&#34;use-only-given-values&#34;&gt;Use only given values&lt;/h2&gt;
+&lt;p&gt;If a dropdown or tags list is used as above, ticking this option enforces the use of one of the provided values.&lt;/p&gt;
+&lt;p&gt;If it&amp;rsquo;s un-ticked, then an &amp;lsquo;add new entry&amp;rsquo; option will be available for users to manually add values which aren&amp;rsquo;t yet in the list. Added values will be visible to all.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In some circumstances, it can be useful to leave this un-ticked and let options grow organically, until a certain point. Administrators can then rationalise and &amp;lsquo;hard-code&amp;rsquo; values from the most commonly entered. In other situations, it may be best to specify available options right from the start.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;text-case&#34;&gt;Text case&lt;/h2&gt;
+&lt;p&gt;Convert people&amp;rsquo;s input into the required case as it&amp;rsquo;s entered - choose from&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;lowercase&lt;/li&gt;
+&lt;li&gt;UPPERCASE&lt;/li&gt;
+&lt;li&gt;Title Case&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;size&#34;&gt;Size&lt;/h2&gt;
+&lt;p&gt;If &amp;lsquo;short&amp;rsquo; is chosen, a standard single line input box is displayed.&lt;/p&gt;
+&lt;p&gt;If &amp;lsquo;large&amp;rsquo; is chose, a multi-line text entry box is shown. This option also lets people format the text entered, such as using &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italics&lt;/em&gt; or bullet points. For data security reasons, only certain formatting is allowed.&lt;/p&gt;
+&lt;h2 id=&#34;use-as-record-title&#34;&gt;Use as record title&lt;/h2&gt;
+&lt;p&gt;The user interface has the ability to highlight the importance of certain fields by showing their contents in large font at the top of the record data. For example, a Company Name field may be the record title for an organisation record.&lt;/p&gt;
+&lt;p&gt;This option can be selected for multiple fields in a table. In that case, the first field will be the main title, others will appear as subtitles.&lt;/p&gt;
 
       </description>
     </item>
