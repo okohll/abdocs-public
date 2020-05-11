@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Text, number, date/time, auto-generated number sequence and checkbox fields">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
 <meta itemprop="dateModified" content="2020-05-09T11:24:20&#43;01:00" />
-<meta itemprop="wordCount" content="249">
+<meta itemprop="wordCount" content="259">
 
 
 
@@ -436,41 +436,6 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/fields/field-options/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Field Options</a>
-  </li>
-  <ul>
-    <li class="collapse " id="docsfieldsfield-options">
-      
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionscommon-options" href="/docs/fields/field-options/common-options/">Common Options</a>
-      
-      
-      
-      
-      
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionstext-field-options" href="/docs/fields/field-options/text-field-options/">Text Field Options</a>
-      
-      
-    </li>
-  </ul>
-</ul>
-
-      
-      
-      
-      
-
-
-
-
-
-
-<ul class="td-sidebar-nav__section pr-md-3">
-  <li class="td-sidebar-nav__section-title">
     <a  href="/docs/fields/field-types/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Field Types</a>
   </li>
   <ul>
@@ -564,6 +529,41 @@
   </ul>
 </ul>
 
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/fields/field-options/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Field Options</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsfieldsfield-options">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionscommon-options" href="/docs/fields/field-options/common-options/">Common Options</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionstext-field-options" href="/docs/fields/field-options/text-field-options/">Text Field Options</a>
       
       
     </li>
@@ -877,7 +877,7 @@
 <h2 id="auto-generated-number-sequence">Auto-generated number sequence</h2>
 <p>The value of this field will be generated automatically, incremented by one each time a record is created.</p>
 <blockquote>
-<p>Sequence numbers are never rolled back, even on the deletion of a record, so they can&rsquo;t be used if a gapless assignment of numbers is required.</p>
+<p>Sequence numbers are never rolled back, even on the deletion of a record, so they can&rsquo;t be used if a gapless assignment of numbers is required. To accomplish that, calculate a value with a <a href="/docs/fields/field-options/common-options/#set-from-previous-referenced-field">cross-referenced field</a>.</p>
 </blockquote>
 <h2 id="relation">Relation</h2>
 <p>Adding a relation creates a link from one table to another. For example, a contacts table may contain a relation linking to an organisations table, to allow a person to belong to an organisation. See <a href="/docs/tables/relational-database-concepts/">relational database concepts</a> for further info.</p>

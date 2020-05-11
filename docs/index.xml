@@ -624,7 +624,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h2 id=&#34;auto-generated-number-sequence&#34;&gt;Auto-generated number sequence&lt;/h2&gt;
 &lt;p&gt;The value of this field will be generated automatically, incremented by one each time a record is created.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Sequence numbers are never rolled back, even on the deletion of a record, so they can&amp;rsquo;t be used if a gapless assignment of numbers is required.&lt;/p&gt;
+&lt;p&gt;Sequence numbers are never rolled back, even on the deletion of a record, so they can&amp;rsquo;t be used if a gapless assignment of numbers is required. To accomplish that, calculate a value with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#set-from-previous-referenced-field&#34;&gt;cross-referenced field&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;relation&#34;&gt;Relation&lt;/h2&gt;
 &lt;p&gt;Adding a relation creates a link from one table to another. For example, a contacts table may contain a relation linking to an organisations table, to allow a person to belong to an organisation. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; for further info.&lt;/p&gt;
