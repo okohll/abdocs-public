@@ -173,6 +173,11 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/fields/field-options/relation-field-options/</loc>
+    <lastmod>2020-05-12T16:10:49+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/</loc>
     <lastmod>2020-05-06T20:31:54+01:00</lastmod>
   </url>
@@ -198,6 +203,11 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/fields/field-options/date-field-options/</loc>
+    <lastmod>2020-05-12T16:10:49+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/</loc>
     <lastmod>2020-05-09T11:24:20+01:00</lastmod>
   </url>
@@ -220,6 +230,11 @@
   <url>
     <loc>https://docs.agilebase.co.uk/docs/tables/options/</loc>
     <lastmod>2020-05-09T11:24:20+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/fields/field-options/checkbox-field-options/</loc>
+    <lastmod>2020-05-12T16:40:00+01:00</lastmod>
   </url>
   
   <url>
@@ -284,7 +299,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/</loc>
-    <lastmod>2020-05-12T15:07:04+01:00</lastmod>
+    <lastmod>2020-05-12T16:40:00+01:00</lastmod>
   </url>
   
 </urlset>
