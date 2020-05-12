@@ -982,6 +982,36 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
     </item>
     
     <item>
+      <title>Docs: Changing Field Types</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/changing-field-types/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/changing-field-types/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Once a field has been created, the type can&amp;rsquo;t be changed with the flick of a switch. However there is an easy to follow process to accomplish this.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Rename the field to &lt;code&gt;[fieldname] old&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add a new field &lt;code&gt;[fieldname]&lt;/code&gt;. This means that any calculations that reference the field won&amp;rsquo;t have to be changed and won&amp;rsquo;t break due to mis-matching field names&lt;/li&gt;
+&lt;li&gt;Copy all values from one field to another. The easiest way is to use a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Try to delete the old field. If any views reference it, the delete will fail and a list of them will be shown&lt;/li&gt;
+&lt;li&gt;Edit all those views
+&lt;ul&gt;
+&lt;li&gt;remove the old field and add the new, to all fields, filters etc.&lt;/li&gt;
+&lt;li&gt;update all calculations that reference the field e.g. add a space to the end of all of them. That will refresh them to reference the new field rather than the old&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Finally, delete the old field&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Before starting, it will be worth ensuring that data won&amp;rsquo;t change during the process, for example by making the data read-only to all users, or requesting they don&amp;rsquo;t edit field values until finished.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Data Integrity Checks</title>
       <link>https://docs.agilebase.co.uk/docs/tables/data-integrity-checks/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
