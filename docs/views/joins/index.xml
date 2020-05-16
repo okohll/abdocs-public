@@ -1,0 +1,71 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Joins</title>
+    <link>https://docs.agilebase.co.uk/docs/views/joins/</link>
+    <description>Recent content in Joins on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 13 May 2020 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/docs/views/joins/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Adding a Join</title>
+      <link>https://docs.agilebase.co.uk/docs/views/joins/adding-a-join/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/joins/adding-a-join/</guid>
+      <description>
+        
+        
+        &lt;p&gt;agileBase will automatically pick out the common tables you may wish to join to, by seeing which are related via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation fields&lt;/a&gt;. Once you get used to the concepts, you may also wish sometimes to add joins manually to tables or views not automatically suggested. That will be covered at the end of this page.&lt;/p&gt;
+&lt;h2 id=&#34;to-add-a-join&#34;&gt;To add a join&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, load the view you wish to edit (add a join to)&lt;/li&gt;
+&lt;li&gt;Click your user profile icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Joins&lt;/em&gt;, click the &lt;em&gt;Add Join&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;A list of joins you can add will appear, each representing a link to a table with related data in it. Select one and the join will add&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;the-anatomy-of-a-join&#34;&gt;The anatomy of a join&lt;/h2&gt;
+&lt;p&gt;The added join will appear graphically above the &lt;em&gt;Add Join&lt;/em&gt; button. The lefthand &amp;lsquo;blob&amp;rsquo; or part represents the table being joined from, on the right is the one joined to. In the middle is a selector for the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/types-of-join/&#34;&gt;join type&lt;/a&gt;, which we will come to.&lt;/p&gt;
+&lt;p&gt;In each part, left or right, the name of the table being joined from (on the left) or to (on the right) is shown in bold.&lt;/p&gt;
+&lt;p&gt;Underneath the table name, the name of the field used to match records is shown. When an ID field is shown, this just refers to the internal ID agileBase uses automatically to make the match. It&amp;rsquo;s only of relevance if you&amp;rsquo;re creating advanced joins manually - see below, so can be ignored otherwise.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/example-join.png&#34; alt=&#34;example join&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In this example, we have a join from the &lt;strong&gt;contacts&lt;/strong&gt; table to &lt;strong&gt;companies&lt;/strong&gt;, to allow us to add company information into our view. The link was made based on the &lt;strong&gt;organisation&lt;/strong&gt; field in the contacts table, which lets a company be assigned to a contact.&lt;/p&gt;
+&lt;h2 id=&#34;upwards-and-downwards-joins&#34;&gt;Upwards and downwards joins&lt;/h2&gt;
+&lt;p&gt;You may notice when clicking &lt;em&gt;Add Join&lt;/em&gt; and looking at the list of potential joins available, that some of them show as joining &lt;strong&gt;up&lt;/strong&gt; and others &lt;strong&gt;down&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Joins up are from a &amp;lsquo;child&amp;rsquo; to a &amp;lsquo;parent&amp;rsquo;, i.e. you can think of a contact as belonging to a organisation, so a join from contacts to organisations is an upwards join. The other way round, it would be a downwards join.&lt;/p&gt;
+&lt;p&gt;What difference does this make? Well if you join down, then the view will contain one row for every child record, with repetitions in the parent data if the parent is the same. This is easier to see with a picture - here&amp;rsquo;s what a view from an organisations table looks like when it joins down to contacts - there are three contacts for the organisation TODO.&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot **&lt;/p&gt;
+&lt;p&gt;However, joins down can be very useful when you want to aggregate child data, for example if you want to count the number of contacts each organisation has, you could add a join from organisations down to contacts, then add an &lt;a href=&#34;https://todo.com&#34;&gt;aggregate calculation&lt;/a&gt; to count the contacts. The system would then condense everything into one row per organisation, like so:&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot **&lt;/p&gt;
+&lt;p&gt;So joins upwards are the more common case, but joins downward can be useful for particular purposes.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Types of Join</title>
+      <link>https://docs.agilebase.co.uk/docs/views/joins/types-of-join/</link>
+      <pubDate>Fri, 15 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/joins/types-of-join/</guid>
+      <description>
+        
+        
+        
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/9yeOJ0ZMUYw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

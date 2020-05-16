@@ -14,5 +14,122 @@
       
     
     
+    <item>
+      <title>Docs: Creating a view</title>
+      <link>https://docs.agilebase.co.uk/docs/views/creating-a-view/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/creating-a-view/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In agileBase, a view &amp;lsquo;belongs to&amp;rsquo; a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt;. We&amp;rsquo;ll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we&amp;rsquo;ll assume we pick a contacts table.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll also assume we already have some tables and some &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;to-create-a-view&#34;&gt;To create a view&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
+&lt;li&gt;Click the table you want to create a view from&lt;/li&gt;
+&lt;li&gt;If necessary, click the pencil icon in the toolbar to edit the table and click the &lt;em&gt;manage&lt;/em&gt; tab at the bottom of the screen&lt;/li&gt;
+&lt;li&gt;Press the &amp;lsquo;Create new view&amp;rsquo; button at the top right. You&amp;rsquo;ll be prompted for a name.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is an option &lt;strong&gt;Populate the view with fields from this table&lt;/strong&gt; next to the &lt;em&gt;Create new view&lt;/em&gt; button. This is a convenience feature, which is ticked by default. When it&amp;rsquo;s ticked, the view created will contain all fields from the table - you can then remove any you don&amp;rsquo;t need. When un-ticked, the view will start with no fields so you can add just those you wish.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;organising-into-a-navigation-structure&#34;&gt;Organising into a navigation structure&lt;/h2&gt;
+&lt;p&gt;On creating a view, its manage tab will appear. One of the first things it&amp;rsquo;s useful to do is put the field in a tile - use the &lt;em&gt;Tile&lt;/em&gt; dropdown option to do so.&lt;/p&gt;
+&lt;p&gt;Within a tile, the view can be added to a menu by editing the view name. Simply prefix the view name with a menu name and a dash. So for example, naming a view &lt;code&gt;contacts - all contacts&lt;/code&gt; will create a &amp;lsquo;contacts&amp;rsquo; menu containing the view &amp;lsquo;all contacts&amp;rsquo; visible to users.&lt;/p&gt;
+&lt;p&gt;Entering a view &lt;em&gt;Purpose&lt;/em&gt; in the space underneath the name will provide help text for the view. This will be displayed in the menu underneath the view name. Here&amp;rsquo;s a screenshot of a sample menu, each with purpose completed.&lt;/p&gt;
+&lt;p&gt;** TODO: screenshot **&lt;/p&gt;
+&lt;h2 id=&#34;using-a-view&#34;&gt;Using a view&lt;/h2&gt;
+&lt;p&gt;Once the view is created, how can someone use it? We won&amp;rsquo;t work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.&lt;/p&gt;
+&lt;h3 id=&#34;finding-data&#34;&gt;Finding data&lt;/h3&gt;
+&lt;p&gt;By default a search box appears under each column heading (the system can also be configured in a simplified way with a single search box to cover all fields).&lt;/p&gt;
+&lt;p&gt;The help icon (?) to the left of the search boxes details the types of search that can be performed. There are many, allowing for e.g. date-based searches, &lt;em&gt;and&lt;/em&gt; and &lt;em&gt;or&lt;/em&gt; searching, finding empty values etc. Helper features pop up for some field types, like date range pickers for example.&lt;/p&gt;
+&lt;h3 id=&#34;seeing-summary-stats&#34;&gt;Seeing summary stats&lt;/h3&gt;
+&lt;p&gt;Hovering over a column shows summary statistics, like a total and average (of all filtered records) for numeric fields, or a breakdown of dropdown/tags fields.&lt;/p&gt;
+&lt;h3 id=&#34;loading-a-record&#34;&gt;Loading a record&lt;/h3&gt;
+&lt;p&gt;Once a record has been found, click a row in the view to load that record for viewing or editing. The record loaded comes from the table that the view belongs to (as referenced at the start of this page), even though the view may contain fields from other tables as well.&lt;/p&gt;
+&lt;p&gt;IT&amp;rsquo;s also possible to use &lt;a href=&#34;https://todo.com&#34;&gt;inline editing&lt;/a&gt; to edit the contents of fields directly in the view.&lt;/p&gt;
+&lt;p&gt;Pressing the plus button to the left of the view contents will create a new record in the view&amp;rsquo;s parent table.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Joins</title>
+      <link>https://docs.agilebase.co.uk/docs/views/joins/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/joins/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Without any joins, you can only add &lt;a href=&#34;https://todo.com&#34;&gt;fields&lt;/a&gt;, &lt;a href=&#34;https://todo.com&#34;&gt;filters&lt;/a&gt; and &lt;a href=&#34;https://todo.com&#34;&gt;calculations&lt;/a&gt; (display data in other words), from a view&amp;rsquo;s parent table - the one it was created from. When joins are added to other tables or views, you can also bring in data from any table or view joined to.&lt;/p&gt;
+&lt;p&gt;For example, a view based on the contacts table could join to organisations (as long as there is a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation field&lt;/a&gt; from contacts to organisations). You could then add in organisation name to the view, as well as fields like contact name, phone number and email address.&lt;/p&gt;
+&lt;p&gt;Or for a more complex example, if you start with a view from a recipes table, you could potentially join down to ingredients, then on again to allergens of those ingredients, allowing you to work out with a calculation the complete list of allergens in any recipe.&lt;/p&gt;
+&lt;p&gt;Any number of joins to different tables or views can be added to a view.&lt;/p&gt;
+&lt;h2 id=&#34;complex-joins&#34;&gt;Complex joins&lt;/h2&gt;
+&lt;p&gt;As above, agileBase automatically suggests joins to data that&amp;rsquo;s related to the current view&amp;rsquo;s parent table as well as any of the tables already joined to. It uses &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation field&lt;/a&gt; to see what&amp;rsquo;s related.&lt;/p&gt;
+&lt;p&gt;However, sometimes you may want to join to a table or view that&amp;rsquo;s not automatically suggested. These examples may become increasingly &amp;lsquo;niche&amp;rsquo; but they are a useful reference for similar situations you may come across.&lt;/p&gt;
+&lt;h3 id=&#34;joining-to-a-view&#34;&gt;Joining to a view&lt;/h3&gt;
+&lt;p&gt;Joins to views aren&amp;rsquo;t automatically suggested, but you can still add them.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When might this be useful? Well one example is if you have a view containing a complex calculation and you wish to include the results of that calculation in lots of other views in different places.&lt;/p&gt;
+&lt;p&gt;Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a &lt;a href=&#34;https://todo.com&#34;&gt;workflow view&lt;/a&gt; and perhaps product labels as well, using a view to send data to third party labelling equipment using an &lt;a href=&#34;https://todo.com&#34;&gt;API&lt;/a&gt;).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To add a join to a view:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, load the view you wish to edit (add a join to)&lt;/li&gt;
+&lt;li&gt;Click your user profile icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Joins&lt;/em&gt;, click the &lt;em&gt;Add Join&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Advanced Add Join&lt;/em&gt;, select the left source and field, the right source and field, then press &lt;em&gt;Add&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The last step is the only one different to the normal join addition process, and the one that needs a little explanation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;left&lt;/strong&gt; source is the table or view to join from. Often (and by default), this will be the view&amp;rsquo;s parent table&lt;/li&gt;
+&lt;li&gt;The &lt;em&gt;left field&lt;/em&gt; is the view from the lefthand table to match on. Often (and by default) this is the table&amp;rsquo;s ID field. If you&amp;rsquo;re joining on a relation, choose the relation field&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;right&lt;/strong&gt; source is the table or view to join to&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;right field&lt;/strong&gt; is the field to match. This will usually be a table ID field. If you chose an ID field for the left field, then choose the same ID field in the target view. If the left field is a relation, choose the ID of the table it relates to on the right&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;example&#34;&gt;Example&lt;/h4&gt;
+&lt;p&gt;To take the example above of the nutritional calculations, assume we have a view called &amp;lsquo;nutritional values&amp;rsquo;, built from a &amp;lsquo;recipes&amp;rsquo; table. To include nutritional data in another view &amp;lsquo;recipe details&amp;rsquo;, also built from the recipes table, we would edit recipe details and add a join as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Left source: the recipes table&lt;/li&gt;
+&lt;li&gt;Left field: the ID:recipes field&lt;/li&gt;
+&lt;li&gt;Right source: the nutritional values view&lt;/li&gt;
+&lt;li&gt;Right field: the ID:recipes field&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;joining-on-a-field-other-than-the-id&#34;&gt;Joining on a field other than the ID&lt;/h3&gt;
+&lt;p&gt;On occasion, you may wish to join to another table on data that is present in this and the other.&lt;/p&gt;
+&lt;p&gt;For an example, imagine our business opens a series of restaurants - we have a table &amp;lsquo;restaurants&amp;rsquo; listing them. We may have a table of people who&amp;rsquo;ve signed up to our newsletter, called &amp;lsquo;newsletter signups&amp;rsquo;. Some of them may have provided a postcode.&lt;/p&gt;
+&lt;p&gt;To find a list of people in the same postcode areas as each restaurant (the first half of a postcode, e.g. BS1):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;in a view &amp;lsquo;restaurant locations&amp;rsquo;, built from the restaurants table, create a calculation &amp;lsquo;postcode area&amp;rsquo;, which picks out the first part of the restaurant&amp;rsquo;s postcode (see &lt;a href=&#34;https://todo.com&#34;&gt;calculations&lt;/a&gt; for how to create a calculation)&lt;/li&gt;
+&lt;li&gt;in a view &amp;lsquo;all newsletter signups&amp;rsquo;, from the table newsletter signups, create a similar calculation, called &amp;lsquo;signup postcode area&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;from the view &amp;lsquo;all newsletter signups&amp;rsquo;, create a join with
+&lt;ul&gt;
+&lt;li&gt;left source: the &lt;strong&gt;all newsletter signups&lt;/strong&gt; view&lt;/li&gt;
+&lt;li&gt;left field: &lt;strong&gt;signup postcode area&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;right source: the &lt;strong&gt;restaurant locations&lt;/strong&gt; view&lt;/li&gt;
+&lt;li&gt;right field: &lt;strong&gt;postcode area&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You&amp;rsquo;ll then be able to add the name of the restaurant(s) in each signup&amp;rsquo;s area to the view. This could be to send them a special offer for their local restaurant for example.&lt;/p&gt;
+&lt;p&gt;As you can see, this also demonstrates creating a join on a calculation.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When you make a join on a field or calculation that isn&amp;rsquo;t an ID, be careful to ensure that the data is &lt;strong&gt;exactly the same&lt;/strong&gt; on both sides. In this example, the postcode fields on both sides must be the same case (e.g. uppercase). Otherwise they won&amp;rsquo;t be picked up in the match.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;joining-on-multiple-fields&#34;&gt;Joining on multiple fields&lt;/h3&gt;
+&lt;p&gt;Extending &amp;lsquo;creating a join on a calculation&amp;rsquo; from the above example, here we can use a calculation to create a &lt;strong&gt;composite field&lt;/strong&gt; to join on. This can be used when you want to join on a number of fields at once, not just one.&lt;/p&gt;
+&lt;p&gt;This can sometimes be useful in financial reporting. Our example here is creating a report totalling up sales by product by month. The twist is we also want to include product/month combinations in which there were no sales of a particular product for the month.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;d start by creating a view of all product/month combinations over the past 12 months. See the &lt;a href=&#34;https://todo.com&#34;&gt;series generation&lt;/a&gt; example in the calculations section for how to do this.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;d then create a calculation &amp;lsquo;product month&amp;rsquo; which would join together the product code and the month name. A similar calculation would be created in a &amp;lsquo;sales&amp;rsquo; view, which shows individual sale lines, each with a product and month.&lt;/p&gt;
+&lt;p&gt;Finally, we&amp;rsquo;d join the two views together, the product/month combinations on the left, the sales view on the right, choosing the &amp;lsquo;product month&amp;rsquo; calculations from each as the fields to match on.&lt;/p&gt;
+&lt;p&gt;That would enable us to create a calculation totalling sales for each product/month, including zeros where there were no sales.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>

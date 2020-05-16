@@ -618,6 +618,47 @@
       
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsviewscreating-a-view" href="/docs/views/creating-a-view/">Creating a view</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/views/joins/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Joins</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docsviewsjoins">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsviewsjoinsadding-a-join" href="/docs/views/joins/adding-a-join/">Adding a Join</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsviewsjoinstypes-of-join" href="/docs/views/joins/types-of-join/">Types of Join</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
     </li>
   </ul>
 </ul>
@@ -820,6 +861,16 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-a-view">What is a view?</a>
+      <ul>
+        <li><a href="#behind-the-scenes-uses">Behind the scenes uses</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -856,7 +907,26 @@
 	<h1>Views</h1>
         <div class="lead">Views allow the user to search and manipulate data</div>
 	
-	
+	<p>Along with <a href="/docs/tables/relational-database-concepts/">tables</a>, views are one of the two foundational concepts used when building applications with agileBase.</p>
+<h2 id="what-is-a-view">What is a view?</h2>
+<p>In fact, the concept of a view is not unique to agileBase, it is a core part of any database system, including the <a href="https://www.postgresql.org">PostgreSQL</a> database that agileBase uses to store, manipulate and report on data.</p>
+<p>Here are some of the advantages a view can offer, as explained by the <a href="https://en.wikipedia.org/wiki/View_(SQL)">Wikipedia Article on database views</a>, slightly shortened.</p>
+<ul>
+<li>Views can represent a subset of the data contained in a table.</li>
+<li>Views can join and simplify multiple tables into a single virtual table.</li>
+<li>Views can act as aggregated tables, where the database engine aggregates data (sum, average, etc.) and presents the calculated results as part of the data.</li>
+<li>Views can hide the complexity of data</li>
+</ul>
+<p>In a nutshell, creating a view in agileBase allows you to display information to the user in an easily searchable format. A single view of data can contain fields from many different places placed alongside each other. It can be filtered down to a subset, and/or contain summarising data like counts, totals or averages.</p>
+<p>Views can utilise the full power of the SQL language (mostly behind the scenes with complexity hidden from administrators) to create useful and advanced reports where necessary.</p>
+<p>On the screen, a view is most usually output as a series of rows of data, with field names as column headings - like a spreadsheet.</p>
+<p><strong>TODO: screenshot</strong></p>
+<p>There are also other ways of displaying the output, such as in a <a href="https://todo.com">calendar</a> or <a href="https://todo.com">document library</a> interface.</p>
+<p>Views are organised into <a href="/docs/tiles/">tiles</a>. Each tile contains a collection of views, organised into a menu system within it. Administrators can hence organise the display of data in a logical fashion.</p>
+<h3 id="behind-the-scenes-uses">Behind the scenes uses</h3>
+<p>As well as showing data to users, the power and flexibility of views allows them to be used in a multitude of different ways useful for administrators. For example, in <a href="https://todo.com">workflow</a> automations, to create <a href="https://todo.com">APIs</a> to allow third party systems to query the data, or to control <a href="/docs/fields/field-options/common-options/#show-if-record-in-view">hiding and showing fields</a> There are many other uses we&rsquo;ll come across throughout this documentation, in fact almost every major feature depends on views in some way.</p>
+<p>So it&rsquo;s a useful topic to understand comprehensively.</p>
+
         <div class="section-index">
     
     
@@ -905,9 +975,31 @@
             
         
             
+                <div class="entry">
+                    <h5>
+                        <a href="/docs/views/creating-a-view/">Creating a view</a>
+                    </h5>
+                    <p>How to create a new view and place it in a navigation structure</p>
+                </div>
+            
         
             
         
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/docs/views/joins/">Joins</a>
+                    </h5>
+                    <p>Using joins to merge data from multiple sources into one view</p>
+                </div>
             
         
             
