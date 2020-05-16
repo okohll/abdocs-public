@@ -644,12 +644,6 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsviewsjoinsadding-a-join" href="/docs/views/joins/adding-a-join/">Adding a Join</a>
-      
-      
-      
-      
-      
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsviewsjoinstypes-of-join" href="/docs/views/joins/types-of-join/">Types of Join</a>
       
       
@@ -863,6 +857,9 @@
 
 <nav id="TableOfContents">
   <ul>
+    <li><a href="#adding-a-join">Adding a join</a></li>
+    <li><a href="#the-anatomy-of-a-join">The anatomy of a join</a></li>
+    <li><a href="#upwards-and-downwards-joins">Upwards and downwards joins</a></li>
     <li><a href="#complex-joins">Complex joins</a>
       <ul>
         <li><a href="#joining-to-a-view">Joining to a view</a></li>
@@ -923,6 +920,29 @@
 <p>For example, a view based on the contacts table could join to organisations (as long as there is a <a href="/docs/fields/field-types/basic-field-types/#relation">relation field</a> from contacts to organisations). You could then add in organisation name to the view, as well as fields like contact name, phone number and email address.</p>
 <p>Or for a more complex example, if you start with a view from a recipes table, you could potentially join down to ingredients, then on again to allergens of those ingredients, allowing you to work out with a calculation the complete list of allergens in any recipe.</p>
 <p>Any number of joins to different tables or views can be added to a view.</p>
+<h2 id="adding-a-join">Adding a join</h2>
+<p>agileBase will automatically pick out the common tables you may wish to join to, by seeing which are related via <a href="/docs/fields/field-types/basic-field-types/#relation">relation fields</a>. Once you get used to the concepts, you may also wish sometimes to add joins manually to tables or views not automatically suggested. That will be covered at the end of this page.</p>
+<p>To add a join</p>
+<ol>
+<li>In the tiles interface, load the view you wish to edit (add a join to)</li>
+<li>Click your user profile icon at the top right and select <em>admin - edit view</em></li>
+<li>Under <em>Joins</em>, click the <em>Add Join</em> button</li>
+<li>A list of joins you can add will appear, each representing a link to a table with related data in it. Select one and the join will add</li>
+</ol>
+<h2 id="the-anatomy-of-a-join">The anatomy of a join</h2>
+<p>The added join will appear graphically above the <em>Add Join</em> button. The lefthand &lsquo;blob&rsquo; or part represents the table being joined from, on the right is the one joined to. In the middle is a selector for the <a href="/docs/views/joins/types-of-join/">join type</a>, which we will come to.</p>
+<p>In each part, left or right, the name of the table being joined from (on the left) or to (on the right) is shown in bold.</p>
+<p>Underneath the table name, the name of the field used to match records is shown. When an ID field is shown, this just refers to the internal ID agileBase uses automatically to make the match. It&rsquo;s only of relevance if you&rsquo;re creating advanced joins manually - see below, so can be ignored otherwise.</p>
+<p><img src="/example-join.png" alt="example join"></p>
+<p>In this example, we have a join from the <strong>contacts</strong> table to <strong>companies</strong>, to allow us to add company information into our view. The link was made based on the <strong>organisation</strong> field in the contacts table, which lets a company be assigned to a contact.</p>
+<h2 id="upwards-and-downwards-joins">Upwards and downwards joins</h2>
+<p>You may notice when clicking <em>Add Join</em> and looking at the list of potential joins available, that some of them show as joining <strong>up</strong> and others <strong>down</strong>.</p>
+<p>Joins up are from a &lsquo;child&rsquo; to a &lsquo;parent&rsquo;, i.e. you can think of a contact as belonging to a organisation, so a join from contacts to organisations is an upwards join. The other way round, it would be a downwards join.</p>
+<p>What difference does this make? Well if you join down, then the view will contain one row for every child record, with repetitions in the parent data if the parent is the same. This is easier to see with a picture - here&rsquo;s what a view from an organisations table looks like when it joins down to contacts - there are three contacts for the organisation TODO.</p>
+<p>** TODO: screenshot **</p>
+<p>However, joins down can be very useful when you want to aggregate child data, for example if you want to count the number of contacts each organisation has, you could add a join from organisations down to contacts, then add an <a href="https://todo.com">aggregate calculation</a> to count the contacts. The system would then condense everything into one row per organisation, like so:</p>
+<p>** TODO: screenshot **</p>
+<p>So joins upwards are the more common case, but joins downward can be useful for particular purposes.</p>
 <h2 id="complex-joins">Complex joins</h2>
 <p>As above, agileBase automatically suggests joins to data that&rsquo;s related to the current view&rsquo;s parent table as well as any of the tables already joined to. It uses <a href="/docs/fields/field-types/basic-field-types/#relation">relation field</a> to see what&rsquo;s related.</p>
 <p>However, sometimes you may want to join to a table or view that&rsquo;s not automatically suggested. These examples may become increasingly &lsquo;niche&rsquo; but they are a useful reference for similar situations you may come across.</p>
@@ -1057,15 +1077,6 @@
             
         
             
-                <div class="entry">
-                    <h5>
-                        <a href="/docs/views/joins/adding-a-join/">Adding a Join</a>
-                    </h5>
-                    <p>Creating a join</p>
-                </div>
-            
-        
-            
         
             
         
@@ -1181,7 +1192,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 13, 2020
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 16, 2020: <a  href="https://github.com/okohll/abdocs/commit/e665aed52c06eb008d4330f5e312f30a264937c0">Some joins pages (e665aed)</a>
 </div>
 </div>
 
