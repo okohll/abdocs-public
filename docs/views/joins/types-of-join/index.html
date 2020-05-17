@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Left outer, inner and cross joins">
 <meta itemprop="datePublished" content="2020-05-15T16:40:00&#43;01:00" />
 <meta itemprop="dateModified" content="2020-05-16T20:32:54&#43;01:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="691">
 
 
 
@@ -862,6 +862,14 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#left-outer-and-inner-joins">Left outer and inner joins</a></li>
+    <li><a href="#right-outer-and-full-outer">Right outer and full outer</a></li>
+    <li><a href="#venn-diagram">Venn diagram</a></li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -918,11 +926,34 @@
 	<h1>Types of Join</h1>
     <div class="lead">Left outer, inner and cross joins</div>
 	       
-	
+	<p>Here&rsquo;s a youtube video explaining the concept of joins and running through the various types.</p>
+
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/9yeOJ0ZMUYw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
+<p>Just rememer, when using third party resources to learn about joins (or other SQL features), you don&rsquo;t need to write the SQL code in agileBase, it&rsquo;s generated for you behind the scenes.</p>
+<h2 id="left-outer-and-inner-joins">Left outer and inner joins</h2>
+<p>The left outer join is the default type used when a join is added to a view in agileBase. It suits most cases, but can be changed after join creation if needed.</p>
+<p>A left outer join type will ensure that every row from the left source (table or view) is visible in output, whether or not the data links to a row on the right side. Conversely, when an inner join&rsquo;s used, data from the left will be hidden unless it links to data on the right.</p>
+<p>That may sound rather abstract: working with an example, we can see what it means in practice.</p>
+<p>Let&rsquo;s take the common and straightforward example of linking contacts to organisations. We start by creating a view from the contacts table, so that&rsquo;s on the left side. We then join from contacts to an organisations table, on the right. This join looks as follows:</p>
+<p><img src="/example-join.png" alt="example join"></p>
+<p>That gives us a view where we can add fields from the organisation table into the view of contacts data. The output may look something like this:</p>
+<p>** TODO: screenshot **</p>
+<p>Each row representing a contact, has the contact details (name, email address etc.) and from the organisations table, you can see the name and website of the organisation they belong to.</p>
+<p>But wait a minute, what&rsquo;s that contact with blank spaces for the organisation name and website? That represents a <strong>contact which is not yet linked to an organisation</strong>.</p>
+<p>I guess to be nit-picky, it could represent a contact joined to an organisation without a name or website address added, but here we&rsquo;ll assume all organisations have those details filled in.</p>
+<p>When the join type is <strong>left outer</strong>, then this row will be shown, as seen. However, if it&rsquo;s changed to an <strong>inner</strong> join, then it will be hidden.</p>
+<p>That&rsquo;s why left outer is the safest type to use by default. Otherwise with an inner, if a user adds a new contact, fills in all their basic details but doesn&rsquo;t link her or him to an organisation (perhaps they don&rsquo;t know the organisation or it doesn&rsquo;t exist in the system yet), then they won&rsquo;t be able to see that contact in the view. And if they can&rsquo;t see it, then they can&rsquo;t click on it to load it - it will have vanished for good (well, until the join is changed back to a left outer).</p>
+<p>Sometimes of course, inner joins are very useful - but it makes sense that there must be a conscious decision to change a join to that type.</p>
+<h2 id="right-outer-and-full-outer">Right outer and full outer</h2>
+<p>You may think, if there&rsquo;s a left outer, is there also a right outer? There is, it means all data from the right side is always visible, whether or not there&rsquo;s a match on the left. So in our contacts/organisations example, all organisations would be visible, whether or not any contacts belonged to them.</p>
+<p>Practically, this isn&rsquo;t used much, as a right outer join is just the same as a left outer join started from the other table. There&rsquo;s no difference in the data visible, but using a left outer works better in agileBase because you can be guaranteed that clicking on a row will load a record (with a right outer, if there&rsquo;s no data on the left side, then no record can be loaded when the row&rsquo;s clicked).</p>
+<p>You may also hear of a full outer join - this again has a very small number of useful cases, but you can <a href="https://stackoverflow.com/questions/2094793/when-is-a-good-situation-to-use-a-full-outer-join">read about them online</a> if interested.</p>
+<h2 id="venn-diagram">Venn diagram</h2>
+<p>Joins are often represented visually with Venn diagrams. Here&rsquo;s a left outer join visualisation, showing all the data from the left side is visible, whether or not a matching row exists on the right, and an inner join diagram showing that data from the left is excluded without a match.</p>
+<p><img src="/joins-venn.png" alt="Joins Venn diagram"></p>
 
 	
 		<style>
