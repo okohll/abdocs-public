@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/views/joins/types-of-join/" />
 <meta property="article:published_time" content="2020-05-15T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-05-16T20:32:54+01:00" />
+<meta property="article:modified_time" content="2020-05-17T10:06:55+01:00" />
 <meta itemprop="name" content="Types of Join">
 <meta itemprop="description" content="Left outer, inner and cross joins">
 <meta itemprop="datePublished" content="2020-05-15T16:40:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-05-16T20:32:54&#43;01:00" />
-<meta itemprop="wordCount" content="691">
+<meta itemprop="dateModified" content="2020-05-17T10:06:55&#43;01:00" />
+<meta itemprop="wordCount" content="1205">
 
 
 
@@ -867,6 +867,11 @@
     <li><a href="#left-outer-and-inner-joins">Left outer and inner joins</a></li>
     <li><a href="#right-outer-and-full-outer">Right outer and full outer</a></li>
     <li><a href="#venn-diagram">Venn diagram</a></li>
+    <li><a href="#cross-join">Cross join</a>
+      <ul>
+        <li><a href="#adding-a-cross-join">Adding a cross join</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -952,8 +957,41 @@
 <p>Practically, this isn&rsquo;t used much, as a right outer join is just the same as a left outer join started from the other table. There&rsquo;s no difference in the data visible, but using a left outer works better in agileBase because you can be guaranteed that clicking on a row will load a record (with a right outer, if there&rsquo;s no data on the left side, then no record can be loaded when the row&rsquo;s clicked).</p>
 <p>You may also hear of a full outer join - this again has a very small number of useful cases, but you can <a href="https://stackoverflow.com/questions/2094793/when-is-a-good-situation-to-use-a-full-outer-join">read about them online</a> if interested.</p>
 <h2 id="venn-diagram">Venn diagram</h2>
-<p>Joins are often represented visually with Venn diagrams. Here&rsquo;s a left outer join visualisation, showing all the data from the left side is visible, whether or not a matching row exists on the right, and an inner join diagram showing that data from the left is excluded without a match.</p>
+<p>Joins are often represented visually with Venn diagrams. Here&rsquo;s one, showing that for a left outer join, all the data from the left side is visible, whether or not a matching row exists on the right, and for an inner join, data from the left is excluded without a match. The results of right outer and full outer are also visualised.</p>
 <p><img src="/joins-venn.png" alt="Joins Venn diagram"></p>
+<h2 id="cross-join">Cross join</h2>
+<p>There&rsquo;s one final type to consider that can be used in agileBase. Strictly speaking, it isn&rsquo;t a join at all, but it does bring together data from left and right sides in a particular way, so we&rsquo;ll think of it as a join here and it&rsquo;s treated as such in agileBase.</p>
+<p>If you have a mathematical background, it may help to know that it produces a cartesian product, or cross product, of all rows in the left and right sides.</p>
+<p>However if you don&rsquo;t, not to worry, it can be easily explained without maths. Basically, every combination of each row on the left with each row on the right is output. So if you have three rows, A, B and C on the left and another three X, Y and Z on the right, then you would get as output data from</p>
+<ul>
+<li>Row A with row X</li>
+<li>Row A with row Y</li>
+<li>Row A with row Z</li>
+<li>Row B with row X</li>
+<li>Row B with row Y</li>
+<li>Row B with row Z</li>
+<li>Row C with row X</li>
+<li>Row C with row Y</li>
+<li>Row C with row Z</li>
+</ul>
+<blockquote>
+<p>You can see that you need to be careful when creating cross joins that results won&rsquo;t balloon up into massive numbers of rows that are hard to deal with. For example, if two tables, each with a hundred thousand rows in, are joined by cross join, then 100,000 x 100,000 = 10,000,000,000 (ten billion) rows would output.</p>
+</blockquote>
+<p>Once again, potential uses may be most easily explained by a real world example.</p>
+<p>Cross joins can be used when reporting, to find data that&rsquo;s <strong>not</strong> there (to get a bit Zen). For example, say we have two tables</p>
+<ul>
+<li>customers</li>
+<li>products</li>
+</ul>
+<p>We may want to create output representing the combination of every customer with every product - we could then further join this to sales data to find which products a customer isn&rsquo;t buying, or which products are being bought by most and fewest customers.</p>
+<p>Firstly, we need all combinations. Create a cross join between customers and products, in a &lsquo;customer products&rsquo; view.</p>
+<p>The next step is similar to our reporting example of <a href="/docs/views/joins/#joining-on-multiple-fields">joining on multiple fields</a>. Create a calculation &lsquo;customer product&rsquo; which concatenates together customer ID and product ID. Create the same calculation in a view of sales (each sale of a product to a customer). Then join this sales view into our customer products view and bingo, we can display the total sales, whether zero or more, of each product to each customer.</p>
+<blockquote>
+<p>If you haven&rsquo;t yet read up on <a href="https://todo.com">calculations</a>, you may need to do that in order to accomplish everything above</p>
+</blockquote>
+<h3 id="adding-a-cross-join">Adding a cross join</h3>
+<p>Adding a cross join is a little different to <a href="/docs/views/joins/#adding-a-join">adding a normal join</a>. The left and right fields don&rsquo;t matter (as we want to apply any exclusion rules, we just want every combination of rows possible).</p>
+<p>So <a href="/docs/views/joins/#adding-a-join">follow the normal process</a>, but just select the left and right tables (or views), leave the fields at their default values.</p>
 
 	
 		<style>
@@ -1017,7 +1055,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 16, 2020: <a  href="https://github.com/okohll/abdocs/commit/e665aed52c06eb008d4330f5e312f30a264937c0">Some joins pages (e665aed)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 17, 2020: <a  href="https://github.com/okohll/abdocs/commit/908ca8ff576415aaa3e011c740803884323a5fde">Joins content (908ca8f)</a>
 </div>
 </div>
 
