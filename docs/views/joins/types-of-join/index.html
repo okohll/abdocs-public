@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Left outer, inner and cross joins">
 <meta itemprop="datePublished" content="2020-05-15T16:40:00&#43;01:00" />
 <meta itemprop="dateModified" content="2020-05-17T10:58:08&#43;01:00" />
-<meta itemprop="wordCount" content="1205">
+<meta itemprop="wordCount" content="1209">
 
 
 
@@ -931,13 +931,13 @@
 	<h1>Types of Join</h1>
     <div class="lead">Left outer, inner and cross joins</div>
 	       
-	<p>Here&rsquo;s a youtube video explaining the concept of joins and running through the various types.</p>
+	<p>Here&rsquo;s a Youtube video explaining the concept of joins and running through the various types.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/9yeOJ0ZMUYw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<p>Just rememer, when using third party resources to learn about joins (or other SQL features), you don&rsquo;t need to write the SQL code in agileBase, it&rsquo;s generated for you behind the scenes.</p>
+<p>Just remember, when using third party resources to learn about joins (or other SQL features), you don&rsquo;t need to write the SQL code in agileBase, it&rsquo;s generated for you behind the scenes.</p>
 <h2 id="left-outer-and-inner-joins">Left outer and inner joins</h2>
 <p>The left outer join is the default type used when a join is added to a view in agileBase. It suits most cases, but can be changed after join creation if needed.</p>
 <p>A left outer join type will ensure that every row from the left source (table or view) is visible in output, whether or not the data links to a row on the right side. Conversely, when an inner join&rsquo;s used, data from the left will be hidden unless it links to data on the right.</p>
@@ -962,7 +962,7 @@
 <h2 id="cross-join">Cross join</h2>
 <p>There&rsquo;s one final type to consider that can be used in agileBase. Strictly speaking, it isn&rsquo;t a join at all, but it does bring together data from left and right sides in a particular way, so we&rsquo;ll think of it as a join here and it&rsquo;s treated as such in agileBase.</p>
 <p>If you have a mathematical background, it may help to know that it produces a cartesian product, or cross product, of all rows in the left and right sides.</p>
-<p>However if you don&rsquo;t, not to worry, it can be easily explained without maths. Basically, every combination of each row on the left with each row on the right is output. So if you have three rows, A, B and C on the left and another three X, Y and Z on the right, then you would get as output data from</p>
+<p>However if you don&rsquo;t, not to worry, it can be easily explained without maths. Basically, every combination of each row on the left with each row on the right is output. So if you have three rows, A, B and C on the left and another three X, Y and Z on the right, then you would get as output: data from</p>
 <ul>
 <li>Row A with row X</li>
 <li>Row A with row Y</li>
@@ -991,7 +991,7 @@
 </blockquote>
 <h3 id="adding-a-cross-join">Adding a cross join</h3>
 <p>Adding a cross join is a little different to <a href="/docs/views/joins/#adding-a-join">adding a normal join</a>. The left and right fields don&rsquo;t matter (as we want to apply any exclusion rules, we just want every combination of rows possible).</p>
-<p>So <a href="/docs/views/joins/#adding-a-join">follow the normal process</a>, but just select the left and right tables (or views), leave the fields at their default values.</p>
+<p>So follow the <a href="/docs/views/joins/#complex-joins">normal process for a complex join</a>, but just select the left and right tables (or views), leave the fields at their default values.</p>
 
 	
 		<style>
