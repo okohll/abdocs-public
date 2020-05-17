@@ -944,13 +944,13 @@
 <p>** TODO: screenshot **</p>
 <p>So joins upwards are the more common case, but joins downward can be useful for particular purposes.</p>
 <h2 id="complex-joins">Complex joins</h2>
-<p>As above, agileBase automatically suggests joins to data that&rsquo;s related to the current view&rsquo;s parent table as well as any of the tables already joined to. It uses <a href="/docs/fields/field-types/basic-field-types/#relation">relation field</a> to see what&rsquo;s related.</p>
+<p>As above, agileBase automatically suggests joins to data that&rsquo;s related to the current view&rsquo;s parent table as well as any of the tables already joined to. It uses <a href="/docs/fields/field-types/basic-field-types/#relation">relation fields</a> to see what&rsquo;s related.</p>
 <p>However, sometimes you may want to join to a table or view that&rsquo;s not automatically suggested. These examples may become increasingly &lsquo;niche&rsquo; but they are a useful reference for similar situations you may come across.</p>
 <h3 id="joining-to-a-view">Joining to a view</h3>
 <p>Joins to views aren&rsquo;t automatically suggested, but you can still add them.</p>
 <blockquote>
 <p>When might this be useful? Well one example is if you have a view containing a complex calculation and you wish to include the results of that calculation in lots of other views in different places.</p>
-<p>Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a <a href="https://todo.com">workflow view</a> and perhaps product labels as well, using a view to send data to third party labelling equipment using an <a href="https://todo.com">API</a>).</p>
+<p>Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a <a href="https://todo.com">workflow view</a>) and perhaps product labels as well, using a view to send data to third party labelling equipment using an <a href="https://todo.com">API</a>..</p>
 </blockquote>
 <p>To add a join to a view:</p>
 <ol>
@@ -962,7 +962,7 @@
 <p>The last step is the only one different to the normal join addition process, and the one that needs a little explanation</p>
 <ul>
 <li>The <strong>left</strong> source is the table or view to join from. Often (and by default), this will be the view&rsquo;s parent table</li>
-<li>The <em>left field</em> is the view from the lefthand table to match on. Often (and by default) this is the table&rsquo;s ID field. If you&rsquo;re joining on a relation, choose the relation field</li>
+<li>The <strong>left field</strong> is the view from the lefthand table to match on. Often (and by default) this is the table&rsquo;s ID field. If you&rsquo;re joining on a relation, choose the relation field</li>
 <li>The <strong>right</strong> source is the table or view to join to</li>
 <li>The <strong>right field</strong> is the field to match. This will usually be a table ID field. If you chose an ID field for the left field, then choose the same ID field in the target view. If the left field is a relation, choose the ID of the table it relates to on the right</li>
 </ul>
@@ -1192,7 +1192,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 17, 2020: <a  href="https://github.com/okohll/abdocs/commit/908ca8ff576415aaa3e011c740803884323a5fde">Joins content (908ca8f)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 17, 2020: <a  href="https://github.com/okohll/abdocs/commit/0c0219b1ef811044319326af04e3eeeacc79caf9">Cross joins (0c0219b)</a>
 </div>
 </div>
 

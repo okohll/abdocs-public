@@ -92,13 +92,13 @@
 &lt;p&gt;** TODO: screenshot **&lt;/p&gt;
 &lt;p&gt;So joins upwards are the more common case, but joins downward can be useful for particular purposes.&lt;/p&gt;
 &lt;h2 id=&#34;complex-joins&#34;&gt;Complex joins&lt;/h2&gt;
-&lt;p&gt;As above, agileBase automatically suggests joins to data that&amp;rsquo;s related to the current view&amp;rsquo;s parent table as well as any of the tables already joined to. It uses &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation field&lt;/a&gt; to see what&amp;rsquo;s related.&lt;/p&gt;
+&lt;p&gt;As above, agileBase automatically suggests joins to data that&amp;rsquo;s related to the current view&amp;rsquo;s parent table as well as any of the tables already joined to. It uses &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation fields&lt;/a&gt; to see what&amp;rsquo;s related.&lt;/p&gt;
 &lt;p&gt;However, sometimes you may want to join to a table or view that&amp;rsquo;s not automatically suggested. These examples may become increasingly &amp;lsquo;niche&amp;rsquo; but they are a useful reference for similar situations you may come across.&lt;/p&gt;
 &lt;h3 id=&#34;joining-to-a-view&#34;&gt;Joining to a view&lt;/h3&gt;
 &lt;p&gt;Joins to views aren&amp;rsquo;t automatically suggested, but you can still add them.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;When might this be useful? Well one example is if you have a view containing a complex calculation and you wish to include the results of that calculation in lots of other views in different places.&lt;/p&gt;
-&lt;p&gt;Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a &lt;a href=&#34;https://todo.com&#34;&gt;workflow view&lt;/a&gt; and perhaps product labels as well, using a view to send data to third party labelling equipment using an &lt;a href=&#34;https://todo.com&#34;&gt;API&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a &lt;a href=&#34;https://todo.com&#34;&gt;workflow view&lt;/a&gt;) and perhaps product labels as well, using a view to send data to third party labelling equipment using an &lt;a href=&#34;https://todo.com&#34;&gt;API&lt;/a&gt;..&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;To add a join to a view:&lt;/p&gt;
 &lt;ol&gt;
@@ -110,7 +110,7 @@
 &lt;p&gt;The last step is the only one different to the normal join addition process, and the one that needs a little explanation&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The &lt;strong&gt;left&lt;/strong&gt; source is the table or view to join from. Often (and by default), this will be the view&amp;rsquo;s parent table&lt;/li&gt;
-&lt;li&gt;The &lt;em&gt;left field&lt;/em&gt; is the view from the lefthand table to match on. Often (and by default) this is the table&amp;rsquo;s ID field. If you&amp;rsquo;re joining on a relation, choose the relation field&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;left field&lt;/strong&gt; is the view from the lefthand table to match on. Often (and by default) this is the table&amp;rsquo;s ID field. If you&amp;rsquo;re joining on a relation, choose the relation field&lt;/li&gt;
 &lt;li&gt;The &lt;strong&gt;right&lt;/strong&gt; source is the table or view to join to&lt;/li&gt;
 &lt;li&gt;The &lt;strong&gt;right field&lt;/strong&gt; is the field to match. This will usually be a table ID field. If you chose an ID field for the left field, then choose the same ID field in the target view. If the left field is a relation, choose the ID of the table it relates to on the right&lt;/li&gt;
 &lt;/ul&gt;
