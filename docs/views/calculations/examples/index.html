@@ -982,12 +982,18 @@ end
 <h3 id="number-functions">Number functions</h3>
 <p>Common mathematical functions can be found here: <a href="https://www.postgresql.org/docs/current/functions-math.html">https://www.postgresql.org/docs/current/functions-math.html</a></p>
 <h3 id="text-functions">Text functions</h3>
-<p><code>{field 1} || ' ' || {field 2}</code><br>
-Two vertical bars are used to join bits of text together. A literal piece of text is surrounded by single quotes.</p>
-<p><code>substring({text field} FROM 1 FOR 1)</code><br>
-Extracts the first letter (or other character e.g. number) from some text.</p>
-<p><code>regexp_replace({full name}, '\\s.*', '')</code><br>
-A simplistic way of extracting a person&rsquo;s first name from a full name - strip out everything from the first space onwards.</p>
+<p><code>{field 1} || ' ' || {field 2}</code></p>
+<ul>
+<li>Two vertical bars are used to join bits of text together. A literal piece of text is surrounded by single quotes.</li>
+</ul>
+<p><code>substring({text field} FROM 1 FOR 1)</code></p>
+<ul>
+<li>Extracts the first letter (or other character e.g. number) from some text.</li>
+</ul>
+<p><code>regexp_replace({full name}, '\\s.*', '')</code></p>
+<ul>
+<li>A simplistic way of extracting a person&rsquo;s first name from a full name - strip out everything from the first space onwards.</li>
+</ul>
 <p>This one is slightly more complex because it uses a powerful text matching/search and replace facility called <strong>regular expressions</strong>, or regexes for short. Again, this is a standard facility and there&rsquo;s lots of documentation available on the <a href="https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP">PostgreSQL website</a> and elsewhere if you&rsquo;d like to learn more.</p>
 <blockquote>
 <p>The only difference from standard to be aware of is that when entering a regex into a calculation in agileBase, you must use two backslashes instead of one.</p>
