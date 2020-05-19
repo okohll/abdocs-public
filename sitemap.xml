@@ -213,6 +213,11 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/views/calculations/</loc>
+    <lastmod>2020-05-13T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/docs/fields/field-options/date-field-options/</loc>
     <lastmod>2020-05-12T16:10:49+01:00</lastmod>
   </url>
@@ -249,7 +254,12 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/views/joins/types-of-join/</loc>
-    <lastmod>2020-05-17T10:58:08+01:00</lastmod>
+    <lastmod>2020-05-17T11:15:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/views/calculations/examples/</loc>
+    <lastmod>2020-05-13T16:40:00+01:00</lastmod>
   </url>
   
   <url>
@@ -324,7 +334,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/</loc>
-    <lastmod>2020-05-17T11:05:22+01:00</lastmod>
+    <lastmod>2020-05-17T11:15:25+01:00</lastmod>
   </url>
   
 </urlset>

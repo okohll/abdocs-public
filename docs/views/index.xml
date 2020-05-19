@@ -154,5 +154,55 @@
       </description>
     </item>
     
+    <item>
+      <title>Docs: Calculations</title>
+      <link>https://docs.agilebase.co.uk/docs/views/calculations/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/calculations/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The ability to add calculations to a view opens up a world of possibilities. Within the confines of the SQL language, there&amp;rsquo;s no limit to what you can do, and those confines contain a pretty large space.&lt;/p&gt;
+&lt;p&gt;This is the only area of agileBase which requires some &amp;lsquo;semi-programming&amp;rsquo; to use - using snippets of SQL. SQL is a standard, widely popular and easy to learn &amp;lsquo;language&amp;rsquo; and there are lots of resources available on the internet.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll start with some simple examples, then move on to some more advanced ones, but even then we won&amp;rsquo;t cover every capability so will point you to specific further resources and references.&lt;/p&gt;
+&lt;p&gt;But first, what are the mechanics of creating a calculation and adding it to a view?&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-calculation&#34;&gt;Adding a calculation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, open the view you want to edit&lt;/li&gt;
+&lt;li&gt;Click your user icon at the top right of the screen and select &lt;em&gt;admin - edit view&lt;/em&gt; from the menu. The view editing interface will open&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;Add Field&amp;hellip;&lt;/em&gt; button.&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Add Calculation&lt;/em&gt;, choose a type (text, number etc.), give it a name and press &lt;em&gt;Add&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The calculation editing screen panel now open to the right and you can type in your calculation.&lt;/p&gt;
+&lt;p&gt;Before doing that, we&amp;rsquo;ll quickly review the main areas of the calculation editing panel. There are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt; - you can rename the calculation at any time&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Type&lt;/strong&gt; - as opposed to a standard field, you can change the type of a calculation at any time, e.g. from text to numeric or vice versa&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Calculation definition (SQL)&lt;/strong&gt; - the actual contents of the calculation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Comments or description&lt;/strong&gt; - a place for you to enter your own notes about the calculation, maybe as an explanation of how a particularly complex calculation works for example&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The other options available we will cover below.&lt;/p&gt;
+&lt;p&gt;Now we can get to the fun stuff and think of a calculation.&lt;/p&gt;
+&lt;h2 id=&#34;basic-examples&#34;&gt;Basic examples&lt;/h2&gt;
+&lt;p&gt;Firstly, we can of course do maths. So in the calculation definition, you can enter things like&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;1 + 2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;2 * 3&lt;/code&gt; (multiplication)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;10 / 2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;5 ^ 3&lt;/code&gt; (five to the power 3)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;referencing-fields&#34;&gt;Referencing fields&lt;/h2&gt;
+&lt;p&gt;Calculations normally need to act on existing data. We can included references to other fields, including other calculations, in the view by writing out the field name surrounded by curly brackets.&lt;/p&gt;
+&lt;p&gt;Some examples might be&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;{net price} * 0.2&lt;/code&gt; (calculate VAT amount)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;(({sale price} - {cost}) / {cost}) * 100&lt;/code&gt; (calculate the profit of an item as a percentage)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can reference not only other fields and calculations in the view, but also fields and calculations from any view or table joined to the view. The syntax for that is &lt;code&gt;{source name.field name}&lt;/code&gt;. Underneath the calculation editing space is a list of all fields that are available to be added, for reference. You can just copy and paste them into your calculation.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>

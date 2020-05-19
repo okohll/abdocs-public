@@ -1223,6 +1223,57 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
     </item>
     
     <item>
+      <title>Docs: Calculation Examples</title>
+      <link>https://docs.agilebase.co.uk/docs/views/calculations/examples/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/calculations/examples/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;general-functions&#34;&gt;General functions&lt;/h2&gt;
+&lt;p&gt;There are a couple of functions that are particularly useful to know about, to keep in your calculations toolkit. These are&lt;/p&gt;
+&lt;h3 id=&#34;general-functions-1&#34;&gt;General functions&lt;/h3&gt;
+&lt;h4 id=&#34;coalesce&#34;&gt;Coalesce&lt;/h4&gt;
+&lt;p&gt;The coalesce function lets you deal sensibly with empty values, which we call &amp;lsquo;null&amp;rsquo; values. Normally, if any field you reference is null, then the result of the calculation is also null. It&amp;rsquo;s a way to provide a default value. So for example, if a view of customer order lines has a quantity and a price field, but the quantity may be blank, then&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;coalesce({quantity}, 0) * {price}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;would calculate the line value, outputting zero if the quantity is not filled in.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Coalesce can be used with more than two arguments - the first non-null value it encounters, from left to right, will be output to be used in further calculation steps&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;case&#34;&gt;Case&lt;/h4&gt;
+&lt;p&gt;A case statement can be used to add &amp;lsquo;if/then/else&amp;rsquo; logic. An example is&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;case
+  when {due date} &amp;lt; now() then &#39;overdue&#39;
+  when {due date} &amp;lt; now() + interval &#39;7 days&#39; then &#39;due soon&#39;
+  else &#39;not due yet&#39;
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(We&amp;rsquo;ll cover date calculations more below).&lt;/p&gt;
+&lt;h3 id=&#34;number-functions&#34;&gt;Number functions&lt;/h3&gt;
+&lt;p&gt;Common mathematical functions can be found here: &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-math.html&#34;&gt;https://www.postgresql.org/docs/current/functions-math.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;text-functions&#34;&gt;Text functions&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;{field 1} || &#39; &#39; || {field 2}&lt;/code&gt;&lt;br&gt;
+Two vertical bars are used to join bits of text together. A literal piece of text is surrounded by single quotes.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;substring({text field} FROM 1 FOR 1)&lt;/code&gt;&lt;br&gt;
+Extracts the first letter (or other character e.g. number) from some text.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;regexp_replace({full name}, &#39;\\s.*&#39;, &#39;&#39;)&lt;/code&gt;&lt;br&gt;
+A simplistic way of extracting a person&amp;rsquo;s first name from a full name - strip out everything from the first space onwards.&lt;/p&gt;
+&lt;p&gt;This one is slightly more complex because it uses a powerful text matching/search and replace facility called &lt;strong&gt;regular expressions&lt;/strong&gt;, or regexes for short. Again, this is a standard facility and there&amp;rsquo;s lots of documentation available on the &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP&#34;&gt;PostgreSQL website&lt;/a&gt; and elsewhere if you&amp;rsquo;d like to learn more.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The only difference from standard to be aware of is that when entering a regex into a calculation in agileBase, you must use two backslashes instead of one.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;date-functions&#34;&gt;Date functions&lt;/h3&gt;
+&lt;p&gt;The database has very strong support for working with dates and time - you can do many calculations on them. Here are a few examples.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{date field} + &#39;1 year&#39;::interval&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;general-reference-documentation&#34;&gt;General reference documentation&lt;/h2&gt;
+&lt;p&gt;The database which underpins agileBase is &lt;a href=&#34;https://www.postgresql.org&#34;&gt;PostgreSQL&lt;/a&gt; - &amp;lsquo;The World&amp;rsquo;s Most Advanced Open Source Relational Database&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;There is comprehensive documentation for it available. A full definition and reference for all of the functions above, along with many others can be found here: &lt;a href=&#34;https://www.postgresql.org/docs/current/functions.html&#34;&gt;https://www.postgresql.org/docs/current/functions.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As you can see, there really are plenty of things you can do with it.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Checkbox Field Options</title>
       <link>https://docs.agilebase.co.uk/docs/fields/field-options/checkbox-field-options/</link>
       <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
