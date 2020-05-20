@@ -24,13 +24,13 @@
 <meta property="og:description" content="Some examples of useful calculations for each type of field (text, number etc.)" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/views/calculations/examples/" />
-<meta property="article:published_time" content="2020-05-13T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-05-13T16:40:00+01:00" />
+<meta property="article:published_time" content="2020-05-19T16:40:00+01:00" />
+<meta property="article:modified_time" content="2020-05-19T16:40:00+01:00" />
 <meta itemprop="name" content="Calculation Examples">
 <meta itemprop="description" content="Some examples of useful calculations for each type of field (text, number etc.)">
-<meta itemprop="datePublished" content="2020-05-13T16:40:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-05-13T16:40:00&#43;01:00" />
-<meta itemprop="wordCount" content="436">
+<meta itemprop="datePublished" content="2020-05-19T16:40:00&#43;01:00" />
+<meta itemprop="dateModified" content="2020-05-19T16:40:00&#43;01:00" />
+<meta itemprop="wordCount" content="1361">
 
 
 
@@ -893,15 +893,24 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#general-functions">General functions</a>
+    <li><a href="#example-functions-for-each-type-of-field">Example functions for each type of field</a>
       <ul>
-        <li><a href="#general-functions-1">General functions</a></li>
+        <li><a href="#general-functions">General functions</a></li>
         <li><a href="#number-functions">Number functions</a></li>
         <li><a href="#text-functions">Text functions</a></li>
         <li><a href="#date-functions">Date functions</a></li>
       </ul>
     </li>
-    <li><a href="#general-reference-documentation">General reference documentation</a></li>
+    <li><a href="#aggregate-calculations">Aggregate calculations</a>
+      <ul>
+        <li><a href="#aggregates-of-child-rows">Aggregates of child rows</a></li>
+        <li><a href="#aggregates-without-child-rows">Aggregates without child rows</a></li>
+        <li><a href="#expanding-rows">Expanding rows</a></li>
+        <li><a href="#window-functions">Window functions</a></li>
+        <li><a href="#series-generation">Series generation</a></li>
+      </ul>
+    </li>
+    <li><a href="#summary">Summary</a></li>
   </ul>
 </nav>
 
@@ -961,11 +970,15 @@
 	<h1>Calculation Examples</h1>
     <div class="lead">Some examples of useful calculations for each type of field (text, number etc.)</div>
 	       
-	<h2 id="general-functions">General functions</h2>
+	<p>The database which underpins agileBase is <a href="https://www.postgresql.org">PostgreSQL</a> - &lsquo;The World&rsquo;s Most Advanced Open Source Relational Database&rsquo;.</p>
+<p>This page will just be an introduction to some of the things you can do with calculations.</p>
+<p>A comprehensive definition and reference for all of the functions possible can be found here: <a href="https://www.postgresql.org/docs/current/functions.html">https://www.postgresql.org/docs/current/functions.html</a></p>
+<h2 id="example-functions-for-each-type-of-field">Example functions for each type of field</h2>
+<p>Here are some &lsquo;starters for 10&rsquo; that may be useful day to day.</p>
+<h3 id="general-functions">General functions</h3>
 <p>There are a couple of functions that are particularly useful to know about, to keep in your calculations toolkit. These are</p>
-<h3 id="general-functions-1">General functions</h3>
 <h4 id="coalesce">Coalesce</h4>
-<p>The coalesce function lets you deal sensibly with empty values, which we call &lsquo;null&rsquo; values. Normally, if any field you reference is null, then the result of the calculation is also null. It&rsquo;s a way to provide a default value. So for example, if a view of customer order lines has a quantity and a price field, but the quantity may be blank, then</p>
+<p>The coalesce function lets you deal sensibly with empty values, which we call &lsquo;null&rsquo; values. Normally, if any field you reference is null, then the result of the calculation is also null. Coalesce is a way to provide a default value. So for example, if a view of customer order lines has a quantity and a price field, but the quantity may be blank, then</p>
 <p><code>coalesce({quantity}, 0) * {price}</code></p>
 <p>would calculate the line value, outputting zero if the quantity is not filled in.</p>
 <blockquote>
@@ -974,6 +987,7 @@
 <h4 id="case">Case</h4>
 <p>A case statement can be used to add &lsquo;if/then/else&rsquo; logic. An example is</p>
 <pre><code>case
+  when {due date} is null then 'unknown'
   when {due date} &lt; now() then 'overdue'
   when {due date} &lt; now() + interval '7 days' then 'due soon'
   else 'not due yet'
@@ -984,7 +998,7 @@ end
 <h3 id="text-functions">Text functions</h3>
 <p><code>{field 1} || ' ' || {field 2}</code></p>
 <ul>
-<li>Two vertical bars are used to join bits of text together. A literal piece of text is surrounded by single quotes.</li>
+<li>Two vertical bars are used to join bits of text together (this seems an odd choice to use rather than something like an ampersand or + sign, but there you go, that&rsquo;s what it is). A literal piece of text is surrounded by single quotes.</li>
 </ul>
 <p><code>substring({text field} FROM 1 FOR 1)</code></p>
 <ul>
@@ -1001,10 +1015,97 @@ end
 <h3 id="date-functions">Date functions</h3>
 <p>The database has very strong support for working with dates and time - you can do many calculations on them. Here are a few examples.</p>
 <p><code>{date field} + '1 year'::interval</code></p>
-<h2 id="general-reference-documentation">General reference documentation</h2>
-<p>The database which underpins agileBase is <a href="https://www.postgresql.org">PostgreSQL</a> - &lsquo;The World&rsquo;s Most Advanced Open Source Relational Database&rsquo;.</p>
-<p>There is comprehensive documentation for it available. A full definition and reference for all of the functions above, along with many others can be found here: <a href="https://www.postgresql.org/docs/current/functions.html">https://www.postgresql.org/docs/current/functions.html</a></p>
-<p>As you can see, there really are plenty of things you can do with it.</p>
+<ul>
+<li>adds a year on to the given date</li>
+</ul>
+<blockquote>
+<p>You can do the same with months, week, days etc. and combinations like &lsquo;1 week 1 day&rsquo;</p>
+</blockquote>
+<p><code>date_part('year', {date field})</code></p>
+<p><code>date_part('dow', {$date field})</code></p>
+<ul>
+<li>These two extract different parts of the date - the first just the year, the second the day of the week as a number 0 - 6. More info is available in the <a href="https://www.postgresql.org/docs/current/static/functions-datetime.html#FUNCTIONS-DATETIME-EXTRACT%22">PostgreSQL documentation</a></li>
+</ul>
+<p><code>date_part('days', ((date_trunc('month', now()) + '1 month'::interval) - now()))</code></p>
+<ul>
+<li>Works out how many days are left in the current month. This example introduces a couple more date functions:
+<ul>
+<li><code>now()</code> gives the current date and time</li>
+<li><code>date_trunc</code> &lsquo;truncates&rsquo; a date to the month in this case (in other words rounding it down to the nearest month)</li>
+</ul>
+</li>
+</ul>
+<p><code>to_char('19 May 2020'::timestamp, 'Day')</code> - outputs &lsquo;Tuesday&rsquo;</p>
+<p><code>to_char('19 May 2020'::timestamp, 'Mon yyyy')</code> - outputs &lsquo;May 2020&rsquo;</p>
+<ul>
+<li><a href="https://www.postgresql.org/docs/current/functions-formatting.html">to_char</a> formats a date (it also works with numbers)</li>
+</ul>
+<p><code>date_part('weeks',{date field 1} - {date field 2})</code></p>
+<ul>
+<li>Counts the number of weeks between two dates</li>
+</ul>
+<h2 id="aggregate-calculations">Aggregate calculations</h2>
+<p>All of the examples above work within one row, or record, of data. Aggregate calculations are different, the take many rows of data and condense them down into one result - one number, or piece of text, etc.</p>
+<p>They&rsquo;re very useful for creating summaries of data, such as total sales per product, counts of complaints per month per category, total value of an order (summing individual order lines) etc.</p>
+<h3 id="aggregates-of-child-rows">Aggregates of child rows</h3>
+<p>To make an aggregate you have to have something to summarise by and something to aggregate. The easiest way of doing this is to create a view with a <a href="/docs/views/joins/#upwards-and-downwards-joins">join down</a> from a parent table to a child. You can then summarise, or group by each parent row and aggregate one (or more) of the fields in the child table.</p>
+<p>For example, if we have an invoices table and an invoice lines table, assuming there is a relation linking each invoice line to its parent invoice:</p>
+<ol>
+<li><a href="/docs/views/creating-a-view/">create a view</a> from the invoices table - we&rsquo;ll call it &lsquo;invoice totals&rsquo;</li>
+<li><a href="/docs/views/joins/">add a join</a> down to invoice lines</li>
+<li>Add the calculation <code>sum({line total})</code> to the view</li>
+</ol>
+<p>You should then have a view with just one row per invoice line, showing the invoice total. <strong>sum</strong> is an example of an aggregate calculation. Another common example is <strong>count</strong>. If you replaced <code>sum({line total})</code> with <code>count(*)</code>, that would count the number of invoice lines in the invoice, instead of totalling the values up.</p>
+<blockquote>
+<p>Note - the aggregate calculation groups by all non-aggregate fields in a view. For example, if you added the product name into ou invoice totals view, you&rsquo;d get a total per product per invoice, rather than a total for each whole invoice.</p>
+</blockquote>
+<h3 id="aggregates-without-child-rows">Aggregates without child rows</h3>
+<p>There&rsquo;s another way to create aggregates, which can be used without joining down to a child table or view.</p>
+<ol>
+<li>In the tiles interface, open the view you wish to edit</li>
+<li>Click your user icon at the top right and select <em>admin - edit view</em> from the menu</li>
+<li>Tick <em>Group by all non-aggregate fields</em></li>
+<li>Add any fields you wish to group by to the view. Remove any you don&rsquo;t wish to group by <strong>including any hidden fields</strong> such as the IDs of joined tables</li>
+<li>Add the aggregate calculation e.g. <code>sum{my field}</code></li>
+</ol>
+<h3 id="expanding-rows">Expanding rows</h3>
+<p>Some functions do the opposite of an aggregate function - rather than condensing and summarising many rows into one, they split one row up into many. For example, if one of your fields is a comma separated list, you could split that up into many rows, one per item in the list.</p>
+<p>** TODO: real world example</p>
+<p>Adding the calculation</p>
+<p><code>regexp_split_to_table({comma separated list}, ',')</code></p>
+<p>would produce one output row per item in the list.</p>
+<h3 id="window-functions">Window functions</h3>
+<p>Window functions are somewhat like aggregate functions in that they can act on many rows, not just one. However, they don&rsquo;t condense down into a single row. An example would be calculating a rolling average or cumulative total as each row is shown.</p>
+<p>Effectively, they look at a &lsquo;window&rsquo;, also called a partition, of rows around the current row and calculate a result based on those. That could be for example</p>
+<ul>
+<li>the current row, the one before and the one after it</li>
+<li>every row up to the current row</li>
+<li>every row</li>
+<li>every row which is similar in some way e.g. has the same value for a &lsquo;category&rsquo; field</li>
+<li>etc.</li>
+</ul>
+<p>As an example,</p>
+<p><code>{price} - avg({price}) over (partition by {category})</code></p>
+<p>would calculate for each item, the difference from the average price of items with the same category.</p>
+<p>This again is much too large a topic to cover in one page, there&rsquo;s much documentation here: <a href="https://www.postgresql.org/docs/current/tutorial-window.html">https://www.postgresql.org/docs/current/tutorial-window.html</a>
+and a video introduction to the concept here:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/blHEnrYwySE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="series-generation">Series generation</h3>
+<p>Sometimes you need to <strong>generate</strong> a set of rows, as opposed to having the data stored in the database. Here are some quick examples:</p>
+<p><code>generate_series(1,10)</code></p>
+<ul>
+<li>generates the numbers 1 to 10, each one in a different row</li>
+</ul>
+<p><code>generate_series(now() - '10 years'::interval, now(), '1 month'::interval)</code></p>
+<ul>
+<li>generates one row per month, from 10 years ago up until this month</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The functions above highlight just a few of the many possibilities. Please feel free to read up on PostgreSQL some more and if you come up with any neat calculations yourself in your everyday work, please do send them to <a href="mailto:support@agilebase.co.uk">support@agilebase.co.uk</a> and we&rsquo;ll add them to this page.</p>
 
 	
 		<style>
@@ -1068,7 +1169,7 @@ end
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 13, 2020
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 19, 2020
 </div>
 </div>
 
