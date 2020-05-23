@@ -200,6 +200,26 @@
 &lt;li&gt;&lt;code&gt;(({sale price} - {cost}) / {cost}) * 100&lt;/code&gt; (calculate the profit of an item as a percentage)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can reference not only other fields and calculations in the view, but also fields and calculations from any view or table joined to the view. The syntax for that is &lt;code&gt;{source name.field name}&lt;/code&gt;. Underneath the calculation editing space is a list of all fields that are available to be added, for reference. You can just copy and paste them into your calculation.&lt;/p&gt;
+&lt;h2 id=&#34;best-practices&#34;&gt;Best practices&lt;/h2&gt;
+&lt;p&gt;A few tips for working with calculations.&lt;/p&gt;
+&lt;h3 id=&#34;centralise-calculations&#34;&gt;Centralise calculations&lt;/h3&gt;
+&lt;p&gt;If a particular calculation is used in a number of different views, then it&amp;rsquo;s a good idea to create it once in a &amp;lsquo;utility&amp;rsquo; view, then &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#joining-to-a-view&#34;&gt;join to that view&lt;/a&gt; from any others that want to include it.&lt;/p&gt;
+&lt;p&gt;To take a simple example, a VAT calculation &lt;code&gt;{net price} * 0.2&lt;/code&gt; may be created in a &amp;lsquo;vat calculation&amp;rsquo; view. Then any view wanting to display the VAT can just join to it and include the field. If any changes to the calculation need to be made in future, they then only need to be done in one place. The benefits of this increase as calculations become more complex.&lt;/p&gt;
+&lt;h3 id=&#34;avoid-mixing-aggregates-and-non-aggregates&#34;&gt;Avoid mixing aggregates and non-aggregates&lt;/h3&gt;
+&lt;p&gt;Avoid mixing an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#aggregate-calculations&#34;&gt;aggregate&lt;/a&gt; and non-aggrete parts in a single calculation. E.g. calculations of the form &lt;code&gt;sum({field 1}) + {field 2}&lt;/code&gt; should be avoided. You may find they cause errors.&lt;/p&gt;
+&lt;p&gt;The recommended way to create a calculation like this is to make the aggregate part in a separate view, then join to it, as described under &lt;a href=&#34;#centralise-calculations&#34;&gt;centralise calculations&lt;/a&gt; above.&lt;/p&gt;
+&lt;h3 id=&#34;splitting-complex-calculations-into-parts&#34;&gt;Splitting complex calculations into parts&lt;/h3&gt;
+&lt;p&gt;If a calculation is particularly complex, you can if you like split apart into multiple calculations, to improve readability. A final calculation can then reference the parts, like e.g.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;({really complex calculation 1} + {really complex calculation 2}) / {really complex calculation 3}&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The rule not to mix aggregate parts and non-aggregate parts, as above, still holds.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Just be aware that if you update one of the composite parts, you then need to update any calculations that depend on it. The system won&amp;rsquo;t automatically update them to reference the new version. This is due to the way the database works under the hood - it doesn&amp;rsquo;t natively support referencing one calculation from another, so we add that layer in agileBase functionality.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;troubleshooting-errors&#34;&gt;Troubleshooting errors&lt;/h3&gt;
+&lt;p&gt;If there is an error in a view, it&amp;rsquo;s more than likely the culprit is a calculation, as they are one of the more complex facilities of agileBase and the only one where SQL can be entered by the user, as opposed to be automatically generated. You may see messages like &lt;strong&gt;view broken&lt;/strong&gt; or errors when you try to change a view e.g. move a field.&lt;/p&gt;
+&lt;p&gt;Errors can occur due to data changing. Division by zero errors are automatically handled by agileBase (null is returned), but other types of calculation can also cause errors in certain circumstances. For example if a calculation squares a field, if someone enters a really large number into that field in a particular record, then an overflow error may occur.&lt;/p&gt;
+&lt;p&gt;This can be resolved by temporarily filtering out the problem data, then the view can be edited to handle the issue, or perhaps a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/data-integrity-checks/&#34;&gt;data integrity check&lt;/a&gt; can be added to disallow problem data in future.&lt;/p&gt;
+&lt;p&gt;If there is a persistent issue, one way of dealing with it is to temporarily delete all the calculation definitions - you can copy and paste them somewhere else for record-keeping, perhaps into each calculation&amp;rsquo;s notes entry. Then once the view is working again, add the calculation definitions back one by one until you find the problem.&lt;/p&gt;
 
       </description>
     </item>

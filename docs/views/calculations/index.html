@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.70.0" />
+<meta name="generator" content="Hugo 0.71.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -25,7 +25,7 @@
 <meta property="og:description" content="Adding calculations to a view" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/views/calculations/" />
-<meta property="og:updated_time" content="2020-05-13T16:40:00+01:00" />
+<meta property="og:updated_time" content="2020-05-20T14:40:16+01:00" />
 <meta itemprop="name" content="Calculations">
 <meta itemprop="description" content="Adding calculations to a view"><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Calculations"/>
@@ -889,6 +889,14 @@
     <li><a href="#adding-a-calculation">Adding a calculation</a></li>
     <li><a href="#basic-examples">Basic examples</a></li>
     <li><a href="#referencing-fields">Referencing fields</a></li>
+    <li><a href="#best-practices">Best practices</a>
+      <ul>
+        <li><a href="#centralise-calculations">Centralise calculations</a></li>
+        <li><a href="#avoid-mixing-aggregates-and-non-aggregates">Avoid mixing aggregates and non-aggregates</a></li>
+        <li><a href="#splitting-complex-calculations-into-parts">Splitting complex calculations into parts</a></li>
+        <li><a href="#troubleshooting-errors">Troubleshooting errors</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -975,6 +983,26 @@
 <li><code>(({sale price} - {cost}) / {cost}) * 100</code> (calculate the profit of an item as a percentage)</li>
 </ul>
 <p>You can reference not only other fields and calculations in the view, but also fields and calculations from any view or table joined to the view. The syntax for that is <code>{source name.field name}</code>. Underneath the calculation editing space is a list of all fields that are available to be added, for reference. You can just copy and paste them into your calculation.</p>
+<h2 id="best-practices">Best practices</h2>
+<p>A few tips for working with calculations.</p>
+<h3 id="centralise-calculations">Centralise calculations</h3>
+<p>If a particular calculation is used in a number of different views, then it&rsquo;s a good idea to create it once in a &lsquo;utility&rsquo; view, then <a href="/docs/views/joins/#joining-to-a-view">join to that view</a> from any others that want to include it.</p>
+<p>To take a simple example, a VAT calculation <code>{net price} * 0.2</code> may be created in a &lsquo;vat calculation&rsquo; view. Then any view wanting to display the VAT can just join to it and include the field. If any changes to the calculation need to be made in future, they then only need to be done in one place. The benefits of this increase as calculations become more complex.</p>
+<h3 id="avoid-mixing-aggregates-and-non-aggregates">Avoid mixing aggregates and non-aggregates</h3>
+<p>Avoid mixing an <a href="/docs/views/calculations/examples/#aggregate-calculations">aggregate</a> and non-aggrete parts in a single calculation. E.g. calculations of the form <code>sum({field 1}) + {field 2}</code> should be avoided. You may find they cause errors.</p>
+<p>The recommended way to create a calculation like this is to make the aggregate part in a separate view, then join to it, as described under <a href="#centralise-calculations">centralise calculations</a> above.</p>
+<h3 id="splitting-complex-calculations-into-parts">Splitting complex calculations into parts</h3>
+<p>If a calculation is particularly complex, you can if you like split apart into multiple calculations, to improve readability. A final calculation can then reference the parts, like e.g.</p>
+<p><code>({really complex calculation 1} + {really complex calculation 2}) / {really complex calculation 3}</code></p>
+<p>The rule not to mix aggregate parts and non-aggregate parts, as above, still holds.</p>
+<blockquote>
+<p>Just be aware that if you update one of the composite parts, you then need to update any calculations that depend on it. The system won&rsquo;t automatically update them to reference the new version. This is due to the way the database works under the hood - it doesn&rsquo;t natively support referencing one calculation from another, so we add that layer in agileBase functionality.</p>
+</blockquote>
+<h3 id="troubleshooting-errors">Troubleshooting errors</h3>
+<p>If there is an error in a view, it&rsquo;s more than likely the culprit is a calculation, as they are one of the more complex facilities of agileBase and the only one where SQL can be entered by the user, as opposed to be automatically generated. You may see messages like <strong>view broken</strong> or errors when you try to change a view e.g. move a field.</p>
+<p>Errors can occur due to data changing. Division by zero errors are automatically handled by agileBase (null is returned), but other types of calculation can also cause errors in certain circumstances. For example if a calculation squares a field, if someone enters a really large number into that field in a particular record, then an overflow error may occur.</p>
+<p>This can be resolved by temporarily filtering out the problem data, then the view can be edited to handle the issue, or perhaps a <a href="/docs/tables/data-integrity-checks/">data integrity check</a> can be added to disallow problem data in future.</p>
+<p>If there is a persistent issue, one way of dealing with it is to temporarily delete all the calculation definitions - you can copy and paste them somewhere else for record-keeping, perhaps into each calculation&rsquo;s notes entry. Then once the view is working again, add the calculation definitions back one by one until you find the problem.</p>
 
         <div class="section-index">
     
@@ -1169,7 +1197,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 13, 2020
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 20, 2020: <a  href="https://github.com/okohll/abdocs/commit/85a3f39a8a454b14254c97bed94b72d44114868a">Calculation examples (85a3f39)</a>
 </div>
 </div>
 

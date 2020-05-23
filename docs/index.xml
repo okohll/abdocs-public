@@ -1209,7 +1209,7 @@ end
 &lt;p&gt;You can do the same with months, week, days etc. and combinations like &amp;lsquo;1 week 1 day&amp;rsquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;date_part(&#39;year&#39;, {date field})&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;date_part(&#39;dow&#39;, {$date field})&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;date_part(&#39;dow&#39;, {date field})&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;These two extract different parts of the date - the first just the year, the second the day of the week as a number 0 - 6. More info is available in the &lt;a href=&#34;https://www.postgresql.org/docs/current/static/functions-datetime.html#FUNCTIONS-DATETIME-EXTRACT%22&#34;&gt;PostgreSQL documentation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -1253,14 +1253,14 @@ end
 &lt;li&gt;Click your user icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt; from the menu&lt;/li&gt;
 &lt;li&gt;Tick &lt;em&gt;Group by all non-aggregate fields&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;Add any fields you wish to group by to the view. Remove any you don&amp;rsquo;t wish to group by &lt;strong&gt;including any hidden fields&lt;/strong&gt; such as the IDs of joined tables&lt;/li&gt;
-&lt;li&gt;Add the aggregate calculation e.g. &lt;code&gt;sum{my field}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add the aggregate calculation e.g. &lt;code&gt;sum({my field})&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;expanding-rows&#34;&gt;Expanding rows&lt;/h3&gt;
 &lt;p&gt;Some functions do the opposite of an aggregate function - rather than condensing and summarising many rows into one, they split one row up into many. For example, if one of your fields is a comma separated list, you could split that up into many rows, one per item in the list.&lt;/p&gt;
-&lt;p&gt;** TODO: real world example&lt;/p&gt;
+&lt;p&gt;Say for example you import data from a form on a website which produces a comma separated list of products ordered.&lt;/p&gt;
 &lt;p&gt;Adding the calculation&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;regexp_split_to_table({comma separated list}, &#39;,&#39;)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;would produce one output row per item in the list.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;regexp_split_to_table({products ordered}, &#39;,&#39;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;would produce one output row per product in the list. That could then be joined to other data in the system such as pricing.&lt;/p&gt;
 &lt;h3 id=&#34;window-functions&#34;&gt;Window functions&lt;/h3&gt;
 &lt;p&gt;Window functions are somewhat like aggregate functions in that they can act on many rows, not just one. However, they don&amp;rsquo;t condense down into a single row. An example would be calculating a rolling average or cumulative total as each row is shown.&lt;/p&gt;
 &lt;p&gt;Effectively, they look at a &amp;lsquo;window&amp;rsquo;, also called a partition, of rows around the current row and calculate a result based on those. That could be for example&lt;/p&gt;
@@ -1274,7 +1274,7 @@ end
 &lt;p&gt;As an example,&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;{price} - avg({price}) over (partition by {category})&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;would calculate for each item, the difference from the average price of items with the same category.&lt;/p&gt;
-&lt;p&gt;This again is much too large a topic to cover in one page, there&amp;rsquo;s much documentation here: &lt;a href=&#34;https://www.postgresql.org/docs/current/tutorial-window.html&#34;&gt;https://www.postgresql.org/docs/current/tutorial-window.html&lt;/a&gt;
+&lt;p&gt;This again is much too large a topic to cover in an introductory page, there&amp;rsquo;s plenty of documentation here: &lt;a href=&#34;https://www.postgresql.org/docs/current/tutorial-window.html&#34;&gt;https://www.postgresql.org/docs/current/tutorial-window.html&lt;/a&gt;
 and a video introduction to the concept here:&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;

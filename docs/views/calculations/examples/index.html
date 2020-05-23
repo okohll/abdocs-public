@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.70.0" />
+<meta name="generator" content="Hugo 0.71.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/views/calculations/examples/" />
 <meta property="article:published_time" content="2020-05-19T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-05-19T16:40:00+01:00" />
+<meta property="article:modified_time" content="2020-05-20T14:40:16+01:00" />
 <meta itemprop="name" content="Calculation Examples">
 <meta itemprop="description" content="Some examples of useful calculations for each type of field (text, number etc.)">
 <meta itemprop="datePublished" content="2020-05-19T16:40:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-05-19T16:40:00&#43;01:00" />
-<meta itemprop="wordCount" content="1361">
+<meta itemprop="dateModified" content="2020-05-20T14:40:16&#43;01:00" />
+<meta itemprop="wordCount" content="1392">
 
 
 
@@ -1022,7 +1022,7 @@ end
 <p>You can do the same with months, week, days etc. and combinations like &lsquo;1 week 1 day&rsquo;</p>
 </blockquote>
 <p><code>date_part('year', {date field})</code></p>
-<p><code>date_part('dow', {$date field})</code></p>
+<p><code>date_part('dow', {date field})</code></p>
 <ul>
 <li>These two extract different parts of the date - the first just the year, the second the day of the week as a number 0 - 6. More info is available in the <a href="https://www.postgresql.org/docs/current/static/functions-datetime.html#FUNCTIONS-DATETIME-EXTRACT%22">PostgreSQL documentation</a></li>
 </ul>
@@ -1066,14 +1066,14 @@ end
 <li>Click your user icon at the top right and select <em>admin - edit view</em> from the menu</li>
 <li>Tick <em>Group by all non-aggregate fields</em></li>
 <li>Add any fields you wish to group by to the view. Remove any you don&rsquo;t wish to group by <strong>including any hidden fields</strong> such as the IDs of joined tables</li>
-<li>Add the aggregate calculation e.g. <code>sum{my field}</code></li>
+<li>Add the aggregate calculation e.g. <code>sum({my field})</code></li>
 </ol>
 <h3 id="expanding-rows">Expanding rows</h3>
 <p>Some functions do the opposite of an aggregate function - rather than condensing and summarising many rows into one, they split one row up into many. For example, if one of your fields is a comma separated list, you could split that up into many rows, one per item in the list.</p>
-<p>** TODO: real world example</p>
+<p>Say for example you import data from a form on a website which produces a comma separated list of products ordered.</p>
 <p>Adding the calculation</p>
-<p><code>regexp_split_to_table({comma separated list}, ',')</code></p>
-<p>would produce one output row per item in the list.</p>
+<p><code>regexp_split_to_table({products ordered}, ',')</code></p>
+<p>would produce one output row per product in the list. That could then be joined to other data in the system such as pricing.</p>
 <h3 id="window-functions">Window functions</h3>
 <p>Window functions are somewhat like aggregate functions in that they can act on many rows, not just one. However, they don&rsquo;t condense down into a single row. An example would be calculating a rolling average or cumulative total as each row is shown.</p>
 <p>Effectively, they look at a &lsquo;window&rsquo;, also called a partition, of rows around the current row and calculate a result based on those. That could be for example</p>
@@ -1087,7 +1087,7 @@ end
 <p>As an example,</p>
 <p><code>{price} - avg({price}) over (partition by {category})</code></p>
 <p>would calculate for each item, the difference from the average price of items with the same category.</p>
-<p>This again is much too large a topic to cover in one page, there&rsquo;s much documentation here: <a href="https://www.postgresql.org/docs/current/tutorial-window.html">https://www.postgresql.org/docs/current/tutorial-window.html</a>
+<p>This again is much too large a topic to cover in an introductory page, there&rsquo;s plenty of documentation here: <a href="https://www.postgresql.org/docs/current/tutorial-window.html">https://www.postgresql.org/docs/current/tutorial-window.html</a>
 and a video introduction to the concept here:</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -1169,7 +1169,7 @@ and a video introduction to the concept here:</p>
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 19, 2020
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 20, 2020: <a  href="https://github.com/okohll/abdocs/commit/85a3f39a8a454b14254c97bed94b72d44114868a">Calculation examples (85a3f39)</a>
 </div>
 </div>
 
