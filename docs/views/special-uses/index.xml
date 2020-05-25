@@ -90,5 +90,21 @@
       </description>
     </item>
     
+    <item>
+      <title>Docs: Related Record Chooser</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/related-record-pickers/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/related-record-pickers/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation field&lt;/a&gt; is part of a form, the user can choose a record to link to from a view of items in the related table.&lt;/p&gt;
+&lt;p&gt;That way, a subset of records can be shown relevant to the situation. For example, imagine there is a table of company records, which store customers and suppliers. When selecting a customer for a new invoice record, the user should be able to select only from companies which are customers, so a filtered view can be used.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/relation-field-options/#view-to-use&#34;&gt;view to use&lt;/a&gt; relation field option.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
