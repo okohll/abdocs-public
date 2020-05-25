@@ -1180,6 +1180,9 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
   else &#39;not due yet&#39;
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(We&amp;rsquo;ll cover date calculations more below).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note the top clauses of a case statement are evaluated first, so put more specific things at the top if multiple lines may match.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;number-functions&#34;&gt;Number functions&lt;/h3&gt;
 &lt;p&gt;Common mathematical functions can be found here: &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-math.html&#34;&gt;https://www.postgresql.org/docs/current/functions-math.html&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;text-functions&#34;&gt;Text functions&lt;/h3&gt;
@@ -1199,6 +1202,14 @@ end
 &lt;blockquote&gt;
 &lt;p&gt;The only difference from standard to be aware of is that when entering a regex into a calculation in agileBase, you must use two backslashes instead of one.&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;like&lt;/code&gt; compares two elements of text and &lt;code&gt;ilike&lt;/code&gt; does so case-insensitively. A percentage sign means &amp;lsquo;match any text&amp;rsquo;. So for example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;case
+  when {postcode} ilike &#39;bs%&#39; then &#39;Bristol&#39;
+  else &#39;elsewhere&#39;
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Outputs &amp;lsquo;Bristol&amp;rsquo; if the postcode field starts with &amp;lsquo;BS&amp;rsquo; (or &amp;lsquo;bs&amp;rsquo;).&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;date-functions&#34;&gt;Date functions&lt;/h3&gt;
 &lt;p&gt;The database has very strong support for working with dates and time - you can do many calculations on them. Here are a few examples.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;{date field} + &#39;1 year&#39;::interval&lt;/code&gt;&lt;/p&gt;
@@ -1292,7 +1303,7 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;li&gt;generates one row per month, from 10 years ago up until this month&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;The functions above highlight just a few of the many possibilities. Please feel free to read up on PostgreSQL some more and if you come up with any neat calculations yourself in your everyday work, please do send them to &lt;a href=&#34;mailto:support@agilebase.co.uk&#34;&gt;support@agilebase.co.uk&lt;/a&gt; and we&amp;rsquo;ll add them to this page.&lt;/p&gt;
+&lt;p&gt;The functions above highlight just a few of the many possibilities. Please feel free to read up on PostgreSQL some more and if you come up with any neat calculations yourself in your everyday work, please do send them to &lt;a href=&#34;mailto:support@agilebase.co.uk&#34;&gt;support@agilebase.co.uk&lt;/a&gt; so we can add them to this page (with credit).&lt;/p&gt;
 
       </description>
     </item>
@@ -1367,6 +1378,41 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;h3 id=&#34;adding-a-cross-join&#34;&gt;Adding a cross join&lt;/h3&gt;
 &lt;p&gt;Adding a cross join is a little different to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#adding-a-join&#34;&gt;adding a normal join&lt;/a&gt;. The left and right fields don&amp;rsquo;t matter (as we want to apply any exclusion rules, we just want every combination of rows possible).&lt;/p&gt;
 &lt;p&gt;So follow the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#complex-joins&#34;&gt;normal process for a complex join&lt;/a&gt;, but just select the left and right tables (or views), leave the fields at their default values.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Filters</title>
+      <link>https://docs.agilebase.co.uk/docs/views/filters/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/filters/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Filters can be applied permanently to a view, allowing an administrator to specify the subset of records that should be displayed. This is often for convenience and to create more useful systems. For example, if you have a database of suppliers, you may want to create views showing those which are approved, those which aren&amp;rsquo;t, those which are local etc. Each view would have a different set of filters applied.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Remember people can apply additional &amp;lsquo;ad-hoc&amp;rsquo; or temporary filters to a view at any time using the filter boxes at the top of the screen, so it may not be necessary to create filtered views for every eventuality.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A filter can act on any field or calculation in the view, as well as on any in joined tables or views.&lt;/p&gt;
+&lt;p&gt;Multiple filters act like they have AND between them, i.e. they are applied additively. If you wish to apply a filters with OR between them, or if you wish to apply a filter on the reult of the comparison of fields, then simply create the relevant &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculation&lt;/a&gt;. For example, if you added two filters to a suppliers view&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;status equals approved&lt;/strong&gt; and &lt;strong&gt;status equals pending&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;then you would get no records showing - a status can&amp;rsquo;t be both one thing and another. However if you created a boolean calculation &amp;lsquo;pending or approved&amp;rsquo;, with definition&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{status} like &#39;approved&#39; or {status} like &#39;pending&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;you could then add a filter on that calculation&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pending or approved equals true&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-filter&#34;&gt;Adding a filter&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, load the view you wish to edit&lt;/li&gt;
+&lt;li&gt;Click your user profile icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Filters&lt;/em&gt;, click the &lt;em&gt;Add Filter&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;Choose relevant options and press &lt;em&gt;Add&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are 26 types of filter to choose from, from the simple &amp;lsquo;equals&amp;rsquo; and &amp;lsquo;not equal to&amp;rsquo;, to more complex pattern matching using &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP&#34;&gt;regular expressions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some filters apply to multiple data types, others only to specific types. For example, &amp;lsquo;newer than X days ago&amp;rsquo; only applies to date fields.&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;ve added a filter, you&amp;rsquo;ll be able to type in a description for it. If no description is entered, the system will automatically generate one, which you&amp;rsquo;ll be able to see.&lt;/p&gt;
+&lt;p&gt;This description is shown to users as help in particular circumstances, e.g. when the view is used as a &lt;a href=&#34;https://todo.com&#34;&gt;chaser&lt;/a&gt;, so it&amp;rsquo;s a good idea to check it makes sense.&lt;/p&gt;
 
       </description>
     </item>
@@ -1780,6 +1826,82 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;h2 id=&#34;generating-pdf-documents&#34;&gt;Generating PDF documents&lt;/h2&gt;
 &lt;p&gt;If a template is uploaded using the &lt;a href=&#34;https://todo.com&#34;&gt;file field options&lt;/a&gt;, the file upload button in the user interface will be replaced by a generate button.&lt;/p&gt;
 &lt;p&gt;See &lt;a href=&#34;https://todo.com&#34;&gt;document templates&lt;/a&gt; for more information.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: APIs</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/apis/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/apis/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Any view can be used to generate an API - a unique URL which third party services can call in order to extract data, or which can be used to push data to those services and applications.&lt;/p&gt;
+&lt;p&gt;The view created in this case is used to define the set of records to send and the fields to include.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;https://todo.com&#34;&gt;APIs&lt;/a&gt; topic, which contains full details of how to set up and use APIs.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This topic also includes information about APIs which receive data from third party systems, as opposed to sending to them, for which a view isn&amp;rsquo;t necessary.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A workflow can be used to edit data in the system automatically.&lt;/p&gt;
+&lt;p&gt;The view created in this case is used to define the set of records to act on (others can be excluded via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; and also the data to use - each calculation or field in the view can be a source of data to create or update.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;https://todo.com&#34;&gt;workflows&lt;/a&gt; topic, which contains full details of how to set up and use workflows.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Referenced Data Panels</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/referenced-data-panels/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/referenced-data-panels/</guid>
+      <description>
+        
+        
+        &lt;p&gt;It can be useful to include calculations and data from other parts of the system in a form, to add context and optionally allow editing of that related data.&lt;/p&gt;
+&lt;p&gt;To do that, a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data field&lt;/a&gt; can be &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;added to the form&lt;/a&gt;. When adding this field, the administrator can choose a view to reference, the data from which will display in the form.&lt;/p&gt;
+&lt;p&gt;The way it works that a when a particular record is shown on screen in a form, the row ID of the record being edited is used to filter the results of that view. Records from the view that include that ID are displayed in a panel.&lt;/p&gt;
+&lt;p&gt;Referenced data can also be used to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;display charts&lt;/li&gt;
+&lt;li&gt;provide default values for form fields&lt;/li&gt;
+&lt;li&gt;show a workflow button - if the referenced view is a workflow, a button to run it will display&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full details of all of these features can be found on the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data panel&lt;/a&gt; page.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Tabs</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/tabs/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/tabs/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Where there is &amp;lsquo;child&amp;rsquo; data related to a parent table, e.g. a contact belonging to an organisation, a list of child records can be shown in a tab in the parent record.&lt;/p&gt;
+&lt;p&gt;A view can specify which records are shown. Perhaps some should be filtered out, like e.g. contacts who no longer work at the organisation - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; can accomplish that.&lt;/p&gt;
+&lt;p&gt;The fields of the view are what&amp;rsquo;s shown in data rows in the tab.&lt;/p&gt;
+&lt;p&gt;Additionally, a separate view can be set in the tab options, to allow for creating records to populate the tab with an initial set of data.&lt;/p&gt;
+&lt;p&gt;For more information on setting this all up, see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/&#34;&gt;table tabs&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>

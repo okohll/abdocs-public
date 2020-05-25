@@ -214,7 +214,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/views/calculations/</loc>
-    <lastmod>2020-05-20T14:40:16+01:00</lastmod>
+    <lastmod>2020-05-23T20:11:08+01:00</lastmod>
   </url>
   
   <url>
@@ -254,12 +254,17 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/views/calculations/examples/</loc>
-    <lastmod>2020-05-20T14:40:16+01:00</lastmod>
+    <lastmod>2020-05-23T20:11:08+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/views/joins/types-of-join/</loc>
     <lastmod>2020-05-17T11:15:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/views/filters/</loc>
+    <lastmod>2020-05-13T16:40:00+01:00</lastmod>
   </url>
   
   <url>
@@ -293,6 +298,11 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/views/special-uses/</loc>
+    <lastmod>2020-05-13T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/docs/fields/field-options/number-field-options/</loc>
     <lastmod>2020-05-12T19:34:54+01:00</lastmod>
   </url>
@@ -323,8 +333,28 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/views/special-uses/apis/</loc>
+    <lastmod>2020-05-13T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</loc>
+    <lastmod>2020-05-13T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/docs/advanced-usage/</loc>
     <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/views/special-uses/referenced-data-panels/</loc>
+    <lastmod>2020-05-13T16:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/views/special-uses/tabs/</loc>
+    <lastmod>2020-05-13T16:40:00+01:00</lastmod>
   </url>
   
   <url>
@@ -334,7 +364,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/</loc>
-    <lastmod>2020-05-20T14:40:16+01:00</lastmod>
+    <lastmod>2020-05-23T20:11:08+01:00</lastmod>
   </url>
   
 </urlset>

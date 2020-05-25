@@ -164,7 +164,7 @@
         
         
         &lt;p&gt;The ability to add calculations to a view opens up a world of possibilities. Within the confines of the SQL language, there&amp;rsquo;s no limit to what you can do, and those confines contain a pretty large space.&lt;/p&gt;
-&lt;p&gt;This is the only area of agileBase which requires some &amp;lsquo;semi-programming&amp;rsquo; to use - using snippets of SQL. SQL is a standard, widely popular and easy to learn &amp;lsquo;language&amp;rsquo; and there are lots of resources available on the internet.&lt;/p&gt;
+&lt;p&gt;This is the only area of agileBase which requires some &amp;lsquo;semi-programming&amp;rsquo; to use - using snippets of SQL. SQL is a standard, widely popular and easy to learn language and there are lots of resources available on the internet.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ll start with some simple examples, then move on to some more advanced ones, but even then we won&amp;rsquo;t cover every capability so will point you to specific further resources and references.&lt;/p&gt;
 &lt;p&gt;But first, what are the mechanics of creating a calculation and adding it to a view?&lt;/p&gt;
 &lt;h2 id=&#34;adding-a-calculation&#34;&gt;Adding a calculation&lt;/h2&gt;
@@ -200,6 +200,9 @@
 &lt;li&gt;&lt;code&gt;(({sale price} - {cost}) / {cost}) * 100&lt;/code&gt; (calculate the profit of an item as a percentage)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can reference not only other fields and calculations in the view, but also fields and calculations from any view or table joined to the view. The syntax for that is &lt;code&gt;{source name.field name}&lt;/code&gt;. Underneath the calculation editing space is a list of all fields that are available to be added, for reference. You can just copy and paste them into your calculation.&lt;/p&gt;
+&lt;h2 id=&#34;colouring&#34;&gt;Colouring&lt;/h2&gt;
+&lt;p&gt;Text calculations can be coloured in the same way as text fields. Underneath the calculation definition and words, tick &lt;em&gt;colour words&lt;/em&gt;. If a calculation outputs one of the following words, they cell in the view be coloured.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/word-colours.png&#34; alt=&#34;Word Colours&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;best-practices&#34;&gt;Best practices&lt;/h2&gt;
 &lt;p&gt;A few tips for working with calculations.&lt;/p&gt;
 &lt;h3 id=&#34;centralise-calculations&#34;&gt;Centralise calculations&lt;/h3&gt;
@@ -220,6 +223,58 @@
 &lt;p&gt;Errors can occur due to data changing. Division by zero errors are automatically handled by agileBase (null is returned), but other types of calculation can also cause errors in certain circumstances. For example if a calculation squares a field, if someone enters a really large number into that field in a particular record, then an overflow error may occur.&lt;/p&gt;
 &lt;p&gt;This can be resolved by temporarily filtering out the problem data, then the view can be edited to handle the issue, or perhaps a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/data-integrity-checks/&#34;&gt;data integrity check&lt;/a&gt; can be added to disallow problem data in future.&lt;/p&gt;
 &lt;p&gt;If there is a persistent issue, one way of dealing with it is to temporarily delete all the calculation definitions - you can copy and paste them somewhere else for record-keeping, perhaps into each calculation&amp;rsquo;s notes entry. Then once the view is working again, add the calculation definitions back one by one until you find the problem.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Filters</title>
+      <link>https://docs.agilebase.co.uk/docs/views/filters/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/filters/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Filters can be applied permanently to a view, allowing an administrator to specify the subset of records that should be displayed. This is often for convenience and to create more useful systems. For example, if you have a database of suppliers, you may want to create views showing those which are approved, those which aren&amp;rsquo;t, those which are local etc. Each view would have a different set of filters applied.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Remember people can apply additional &amp;lsquo;ad-hoc&amp;rsquo; or temporary filters to a view at any time using the filter boxes at the top of the screen, so it may not be necessary to create filtered views for every eventuality.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A filter can act on any field or calculation in the view, as well as on any in joined tables or views.&lt;/p&gt;
+&lt;p&gt;Multiple filters act like they have AND between them, i.e. they are applied additively. If you wish to apply a filters with OR between them, or if you wish to apply a filter on the reult of the comparison of fields, then simply create the relevant &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculation&lt;/a&gt;. For example, if you added two filters to a suppliers view&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;status equals approved&lt;/strong&gt; and &lt;strong&gt;status equals pending&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;then you would get no records showing - a status can&amp;rsquo;t be both one thing and another. However if you created a boolean calculation &amp;lsquo;pending or approved&amp;rsquo;, with definition&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{status} like &#39;approved&#39; or {status} like &#39;pending&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;you could then add a filter on that calculation&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pending or approved equals true&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-filter&#34;&gt;Adding a filter&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, load the view you wish to edit&lt;/li&gt;
+&lt;li&gt;Click your user profile icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;Filters&lt;/em&gt;, click the &lt;em&gt;Add Filter&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;Choose relevant options and press &lt;em&gt;Add&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are 26 types of filter to choose from, from the simple &amp;lsquo;equals&amp;rsquo; and &amp;lsquo;not equal to&amp;rsquo;, to more complex pattern matching using &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP&#34;&gt;regular expressions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some filters apply to multiple data types, others only to specific types. For example, &amp;lsquo;newer than X days ago&amp;rsquo; only applies to date fields.&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;ve added a filter, you&amp;rsquo;ll be able to type in a description for it. If no description is entered, the system will automatically generate one, which you&amp;rsquo;ll be able to see.&lt;/p&gt;
+&lt;p&gt;This description is shown to users as help in particular circumstances, e.g. when the view is used as a &lt;a href=&#34;https://todo.com&#34;&gt;chaser&lt;/a&gt;, so it&amp;rsquo;s a good idea to check it makes sense.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Special Uses</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The primary purpose of a view is to show data to users. To let them see, search and report on it, or find individual records to edit.&lt;/p&gt;
+&lt;p&gt;However, some fundamental aspects of a view make it a very useful feature that can power many core capabilities of agileBase, such as &lt;a href=&#34;https://todo.com&#34;&gt;chasers&lt;/a&gt;, &lt;a href=&#34;https://todo.com&#34;&gt;workflows&lt;/a&gt; and &lt;a href=&#34;https://todo.com&#34;&gt;APIs&lt;/a&gt;, as well as being useful to administrators in many more minor ways.&lt;/p&gt;
+&lt;p&gt;A view being a filtered list of records, it can be used to specify those records to act on, i.e. those representing emails to send, workflow actions or data to send to a third party system with an API.&lt;/p&gt;
+&lt;p&gt;A view is commonly created for the task you wish to accomplish, placing it in a System tile to hide it from users. Then it can be turned to the required purpose in any of the following ways.&lt;/p&gt;
 
       </description>
     </item>

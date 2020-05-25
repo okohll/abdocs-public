@@ -25,7 +25,7 @@
 <meta property="og:description" content="Adding calculations to a view" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/views/calculations/" />
-<meta property="og:updated_time" content="2020-05-20T14:40:16+01:00" />
+<meta property="og:updated_time" content="2020-05-23T20:11:08+01:00" />
 <meta itemprop="name" content="Calculations">
 <meta itemprop="description" content="Adding calculations to a view"><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Calculations"/>
@@ -682,6 +682,59 @@
 
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsviewsfilters" href="/docs/views/filters/">Filters</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/views/special-uses/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Special Uses</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docsviewsspecial-uses">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsviewsspecial-usesapis" href="/docs/views/special-uses/apis/">APIs</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsviewsspecial-usesworkflows" href="/docs/views/special-uses/workflows/">Workflows</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsviewsspecial-usesreferenced-data-panels" href="/docs/views/special-uses/referenced-data-panels/">Referenced Data Panels</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsviewsspecial-usestabs" href="/docs/views/special-uses/tabs/">Tabs</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
     </li>
   </ul>
 </ul>
@@ -889,6 +942,7 @@
     <li><a href="#adding-a-calculation">Adding a calculation</a></li>
     <li><a href="#basic-examples">Basic examples</a></li>
     <li><a href="#referencing-fields">Referencing fields</a></li>
+    <li><a href="#colouring">Colouring</a></li>
     <li><a href="#best-practices">Best practices</a>
       <ul>
         <li><a href="#centralise-calculations">Centralise calculations</a></li>
@@ -947,7 +1001,7 @@
         <div class="lead">Adding calculations to a view</div>
 	
 	<p>The ability to add calculations to a view opens up a world of possibilities. Within the confines of the SQL language, there&rsquo;s no limit to what you can do, and those confines contain a pretty large space.</p>
-<p>This is the only area of agileBase which requires some &lsquo;semi-programming&rsquo; to use - using snippets of SQL. SQL is a standard, widely popular and easy to learn &lsquo;language&rsquo; and there are lots of resources available on the internet.</p>
+<p>This is the only area of agileBase which requires some &lsquo;semi-programming&rsquo; to use - using snippets of SQL. SQL is a standard, widely popular and easy to learn language and there are lots of resources available on the internet.</p>
 <p>We&rsquo;ll start with some simple examples, then move on to some more advanced ones, but even then we won&rsquo;t cover every capability so will point you to specific further resources and references.</p>
 <p>But first, what are the mechanics of creating a calculation and adding it to a view?</p>
 <h2 id="adding-a-calculation">Adding a calculation</h2>
@@ -983,6 +1037,9 @@
 <li><code>(({sale price} - {cost}) / {cost}) * 100</code> (calculate the profit of an item as a percentage)</li>
 </ul>
 <p>You can reference not only other fields and calculations in the view, but also fields and calculations from any view or table joined to the view. The syntax for that is <code>{source name.field name}</code>. Underneath the calculation editing space is a list of all fields that are available to be added, for reference. You can just copy and paste them into your calculation.</p>
+<h2 id="colouring">Colouring</h2>
+<p>Text calculations can be coloured in the same way as text fields. Underneath the calculation definition and words, tick <em>colour words</em>. If a calculation outputs one of the following words, they cell in the view be coloured.</p>
+<p><img src="/word-colours.png" alt="Word Colours"></p>
 <h2 id="best-practices">Best practices</h2>
 <p>A few tips for working with calculations.</p>
 <h3 id="centralise-calculations">Centralise calculations</h3>
@@ -1132,6 +1189,18 @@
         
             
         
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
     
 </div>
 
@@ -1197,7 +1266,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 20, 2020: <a  href="https://github.com/okohll/abdocs/commit/85a3f39a8a454b14254c97bed94b72d44114868a">Calculation examples (85a3f39)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 23, 2020: <a  href="https://github.com/okohll/abdocs/commit/2c6c3700b86ec9b0a18c571d7be08b01da2e1322">Calculation best practices (2c6c370)</a>
 </div>
 </div>
 
