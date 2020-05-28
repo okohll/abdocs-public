@@ -279,5 +279,105 @@
       </description>
     </item>
     
+    <item>
+      <title>Docs: Options</title>
+      <link>https://docs.agilebase.co.uk/docs/views/options/</link>
+      <pubDate>Thu, 28 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/options/</guid>
+      <description>
+        
+        
+        &lt;p&gt;These options can be seen and edited as follows&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, open a view&lt;/li&gt;
+&lt;li&gt;Click your user icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt; from the menu&lt;/li&gt;
+&lt;li&gt;Some options are visible under &lt;em&gt;advanced options&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;group-by-all-non-aggregate-fields&#34;&gt;Group by all non-aggregate fields&lt;/h2&gt;
+&lt;p&gt;Affects how some calculation aggregates worked - documented in &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#aggregates-of-child-rows&#34;&gt;calculations -&amp;gt; aggregates of child rows&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;show-charts-by-default&#34;&gt;Show charts by default&lt;/h2&gt;
+&lt;p&gt;When a user opens this view, immediately show charts rather than data rows&lt;/p&gt;
+&lt;h2 id=&#34;allow-exports&#34;&gt;Allow exports&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/&#34;&gt;Security And Compliance -&amp;gt; Exporting&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;inline-editing&#34;&gt;Inline editing&lt;/h2&gt;
+&lt;p&gt;The goal of this feature is to allow rapid and efficient editing of data when in the list view so there’s no need to drill down into a record to edit and back to the list again after each.&lt;/p&gt;
+&lt;p&gt;Some examples of where this might be useful would be when working through a list of milestones to update statuses, or when in a list of stock items to update quantities.&lt;/p&gt;
+&lt;p&gt;In inline editing mode, the list view changes from something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-off.png&#34; alt=&#34;inline editing off&#34;&gt;&lt;/p&gt;
+&lt;p&gt;into this editable version:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-on.png&#34; alt=&#34;inline editing on&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Certain fields will be editable&lt;/strong&gt;, but others will be read-only. Fields that can be editable are all those which are from the view’s parent table, except for&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;large text fields: we want the UI to remain compact and it’s not usually required to edit large amounts of text in inline editing scenarios&lt;/li&gt;
+&lt;li&gt;calculations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The inline editing option has three states:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Disallow: the view can’t be inline edited&lt;/li&gt;
+&lt;li&gt;Allow but turn off by default&lt;/li&gt;
+&lt;li&gt;On by default&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;style-layout-options&#34;&gt;Style (layout options)&lt;/h2&gt;
+&lt;p&gt;The visual style affects whether the view is shown as&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;spreadsheet format - standard output in rows (the default option)&lt;/li&gt;
+&lt;li&gt;headings and rows&lt;/li&gt;
+&lt;li&gt;long headings and rows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When &lt;strong&gt;headings and rows&lt;/strong&gt; is selected, the first field in the view will be used as a heading for the rows below. A new heading appears every time the field value changes.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/headings.png&#34; alt=&#34;headings and rows&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;record-limit&#34;&gt;Record limit&lt;/h2&gt;
+&lt;p&gt;Only return the top N rows of data from the view, even if there are more available. This is equivalent to adding a &lt;a href=&#34;https://www.postgresql.org/docs/current/sql-select.html#SQL-LIMIT&#34;&gt;LIMIT clause&lt;/a&gt; in SQL.&lt;/p&gt;
+&lt;h2 id=&#34;distinct-fields&#34;&gt;Distinct fields&lt;/h2&gt;
+&lt;p&gt;If many rows in the view have the same values for a particular field, then reduce the number shown to only one row for every distinct (unique) value of that field. The top row is returned.&lt;/p&gt;
+&lt;p&gt;Multiple distinct fields can be added, in which case the rows reduce based on their values unique in combination.&lt;/p&gt;
+&lt;p&gt;For example, imagine you have a view showing countries, cities and populations, sorted by population descending, with data like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Japan, Tokyo, 13,515,271&lt;/li&gt;
+&lt;li&gt;Japan, Nagoya, 2,283,289&lt;/li&gt;
+&lt;li&gt;UK, London, 8,908,081&lt;/li&gt;
+&lt;li&gt;UK, Bristol, 463,400&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Adding a distinct field on the country would reduce this to the most populated city in each country, i.e.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Japan, Tokyo, 13,515,271&lt;/li&gt;
+&lt;li&gt;UK, London, 8,908,081&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;DISTINCT is an &lt;a href=&#34;https://www.postgresql.org/docs/current/sql-select.html#SQL-DISTINCT&#34;&gt;SQL feature&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;amalgamate-with&#34;&gt;Amalgamate with&lt;/h2&gt;
+&lt;p&gt;If you have two views with fields of the same type in the same order, then you can merge them together into one. The field names don&amp;rsquo;t necessarily need to be the same.&lt;/p&gt;
+&lt;p&gt;This is done using an &lt;a href=&#34;https://www.sqltutorial.org/sql-union/&#34;&gt;SQL UNION&lt;/a&gt; clause.&lt;/p&gt;
+&lt;h2 id=&#34;cache-view-rows&#34;&gt;Cache view rows&lt;/h2&gt;
+&lt;p&gt;Caching can speed up views. It doesn&amp;rsquo;t need to be used often a the underlying database PostgreSQL is great at dealing with large data problems, but when it is necessary it can significantly speed up access, allowing faster loading and searching. Caching works well when&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a view is complex and slow to load&lt;/li&gt;
+&lt;li&gt;it doesn&amp;rsquo;t contain a massive number of rows - in this case the issue is likely to be the raw volume of data, rather than the complexity of calculations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If both those criteria are met, then turning on caching can significantly speed a view up, allowing faster loading and searching. There are three options&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;no caching (the default)&lt;/li&gt;
+&lt;li&gt;cache view, update on record save
+&lt;ul&gt;
+&lt;li&gt;this means when a view is opened or searched, if there have been changes to data in any tables used by the view since it was last opened, then the cache will be updated&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;cache view, update once a day
+&lt;ul&gt;
+&lt;li&gt;useful for views that don&amp;rsquo;t need to be updated often, e.g. monthly reporting figures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If a view is cached and other views reference it, those other views will also speed up too.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Caching is implemented using &lt;a href=&#34;https://en.wikipedia.org/wiki/Materialized_view&#34;&gt;materialized views&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you find a view is slow, feel free to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; for support before trying options like caching, there are many other targetted options we can look at first, such as adding indexes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>

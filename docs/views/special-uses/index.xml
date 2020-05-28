@@ -91,6 +91,30 @@
     </item>
     
     <item>
+      <title>Docs: Controlling Form User Interfaces</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/controlling-form-user-interfaces/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/controlling-form-user-interfaces/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The record editing form on screen can be programatically controlled to hide or show various elements, like tabs and individual fields. Fields can also be locked for editing and tabs can be coloured.&lt;/p&gt;
+&lt;p&gt;This allows relevant information to be shown/highlighted on screen - what is shown at any one time can change depending on the state of the data in the system. As a brief example, when a sales opportunity is closed, additional fields could appear asking for the outcome details to be recorded.&lt;/p&gt;
+&lt;p&gt;In a similar way to most other view uses in this section, the ID of the record being edited is used to filter the view chosen for the form element. If that ID appears in the view, the element is shown/unlocked etc., if not it isn&amp;rsquo;t.&lt;/p&gt;
+&lt;p&gt;Here are some references for how to accomplish each feature:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;Controlling field visibility&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#unlock-if-record-in-view&#34;&gt;Locking and unlocking fields&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/separator-options/&#34;&gt;Initially expanding or contracting blocks of fields&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#show-only-if-in-view&#34;&gt;Hiding or showing tabs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#colour-from-view&#34;&gt;Colouring tabs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Related Record Chooser</title>
       <link>https://docs.agilebase.co.uk/docs/views/special-uses/related-record-pickers/</link>
       <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
