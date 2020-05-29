@@ -38,7 +38,7 @@ Options are:&lt;/p&gt;
 &lt;li&gt;Lock record - This will apply a record level lock on the item.&lt;/li&gt;
 &lt;li&gt;Delete record - This will totally remove the record.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow_manage.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-manage.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;sending-data&#34;&gt;Sending Data&lt;/h3&gt;
 &lt;p&gt;The options to send data are contained within the &lt;em&gt;send&lt;/em&gt; section of the &lt;em&gt;workflow&lt;/em&gt; tab. Matching records will be sent to the appropriate &lt;strong&gt;function&lt;/strong&gt;.&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
@@ -48,7 +48,7 @@ Options are:&lt;/p&gt;
 &lt;li&gt;Send data to a calendar&lt;/li&gt;
 &lt;li&gt;Send to document generator&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow_send.png&#34; alt=&#34;Workflow functions that send data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-send.png&#34; alt=&#34;Workflow functions that send data&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -140,11 +140,9 @@ Options are:&lt;/p&gt;
 That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.&lt;/p&gt;
 &lt;h3 id=&#34;setting-up&#34;&gt;Setting up&lt;/h3&gt;
 &lt;p&gt;Set up an email notification workflow as normal (in a view, use the manage -&amp;gt; send tab).&lt;/p&gt;
-&lt;p&gt;For the body of the email, simply start it with&lt;/p&gt;
-&lt;html&gt;
-and end with
-&lt;/html&gt;
-The email will then be interpreted as HTML, i.e. formatted.
+&lt;p&gt;For the body of the email, simply start it with
+`&lt;html&gt; and end with &lt;/html&gt;&lt;/p&gt;
+&lt;p&gt;The email will then be interpreted as HTML, i.e. formatted.&lt;/p&gt;
 &lt;p&gt;For the moment, you do need to know some basic HTML. If you’d like to get started there are plenty of great tutorials on the web – here’s an example: &lt;a href=&#34;http://www.htmldog.com&#34;&gt;www.htmldog.com&lt;/a&gt;&lt;/p&gt;
 
       </description>
