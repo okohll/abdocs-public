@@ -14,5 +14,188 @@
       
     
     
+    <item>
+      <title>Docs: Setting up the PUSH API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Firstly, identify the Table into which you wish to recieve incoming data.
+Go to that table&amp;rsquo;s manage taband press ‘options’. Tick ‘public data entry’.&lt;/p&gt;
+&lt;p&gt;To protect the system from spam input, we also suggest you tick ‘Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
+&lt;p&gt;Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming_data_api.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;creating-new-records&#34;&gt;Creating new records&lt;/h2&gt;
+&lt;p&gt;Clicking the ‘sample form’ link will then show a sample form which can be used for testing or to copy code from.&lt;/p&gt;
+&lt;p&gt;If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:&lt;/p&gt;
+&lt;p&gt;save_new_record=true
+c=[internalcompanyid]
+t=[internaltableid]
+The post URL is&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;
+The form needs to be posted using the method POST&lt;/p&gt;
+&lt;p&gt;Remember also to set the ‘Authorization’ HTTP header if that option has been selected.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NB: To get the details of data posted into the database, please also supply the parameter &lt;em&gt;return=posted_json&lt;/em&gt; This will include the internal row ID of the newly inserted record.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;API use can be tested using the Postman extension for Google Chrome. Note that forms have to be posted with encoding type ‘application/x-www-form-urlencoded’.&lt;/p&gt;
+&lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
+&lt;p&gt;The process is similar, but instead of &lt;em&gt;save_new_record=true&lt;/em&gt; supply
+&lt;em&gt;update_record=true&lt;/em&gt;
+&lt;em&gt;row_id=[internal id of the record]&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The internal record ID can be got from a JSON feed or by using the &lt;em&gt;return=posted_json&lt;/em&gt; as above if editing a record previously created using the API.&lt;/p&gt;
+&lt;h3 id=&#34;http-response-codes&#34;&gt;HTTP response codes&lt;/h3&gt;
+&lt;p&gt;401: unauthorised: the API key is missing or invalid&lt;/p&gt;
+&lt;p&gt;429: too many requests: the daily limit of requests to this table has been reached. Contact us to purchase additional capacity&lt;/p&gt;
+&lt;p&gt;507: insufficient storage: the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity&lt;/p&gt;
+&lt;p&gt;500: some other server error&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Setting up the PUSH API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</guid>
+      <description>
+        
+        
+        &lt;ol&gt;
+&lt;li&gt;Firstly, set up a view to operate as a standard ‘pull’ API&lt;/li&gt;
+&lt;li&gt;Enter a URL into the &lt;em&gt;Push URL (optional)&lt;/em&gt; area below the other details on that screen. This is the URL that agileBase will POST to when there’s new data.&lt;/li&gt;
+&lt;li&gt;In the table that the API view was created from, add a new date/time field, accurate to the second, for the system to record when the API push was last used&lt;/li&gt;
+&lt;li&gt;Go to the ‘workflow’ section under the view’s ‘manage’ tab.
+for ‘workflow action’, select ‘send data to a third party system using the API’
+for ‘recording the time of the last action’, choose the date/time field created above
+choose a minimum interval to wait between pushes&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The system will now make a POST to the URL specified in step 2 whenever there’s new data to send. It will contain one parameter, ‘json’, which is a JSON representation of all the data in the view.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow_push.png&#34; alt=&#34;Configuring the PUSH API&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;selecting-data-to-push&#34;&gt;Selecting data to push&lt;/h3&gt;
+&lt;p&gt;How do we know which data is new and wants to be sent out via the API?&lt;/p&gt;
+&lt;p&gt;That’s up to you – any filters can be added to the view to select data you want. Commonly, you’d use the date/time field set up in step 3. When a push successfully completes, every record in the view has this field set to the current time.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: if the push encounters an error for any reason, say the third party system returns a HTTP error code rather than the expected ‘200’ code for success, the timestamp won’t be set.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A few common scenarios would be:&lt;/p&gt;
+&lt;h4 id=&#34;pushing-any-data-modified-since-it-was-last-pushed&#34;&gt;Pushing any data modified since it was last pushed&lt;/h4&gt;
+&lt;p&gt;To do this, add a boolean calculation to your view, something like&lt;/p&gt;
+&lt;p&gt;` needs pushing = {last modified [auto]} &amp;gt; {last pushed}&lt;/p&gt;
+&lt;p&gt;where ‘last pushed’ is the name of the timestamp field you added in step 3 above.&lt;/p&gt;
+&lt;p&gt;Then add a filter on the view ‘needs pushing equals true’&lt;/p&gt;
+&lt;h4 id=&#34;pushing-any-new-rows-that-have-never-been-pushed-before&#34;&gt;Pushing any new rows that have never been pushed before&lt;/h4&gt;
+&lt;p&gt;For this scenario, simply add a filter to the view ‘last pushed is empty’&lt;/p&gt;
+&lt;h4 id=&#34;pushing-only-rows-not-yet-marked-as-received&#34;&gt;Pushing only rows not yet marked as received&lt;/h4&gt;
+&lt;p&gt;In some cases, you may want to be even more prudent than using the internal timestamp. The third party system could make a separate API call to agileBase for every row that’s received, telling it to update the row with an ID to prove receipt. That’s more API calls of course, but some situations may warrant it.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Setting up the PULL API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Connections to agileBase are made using standard HTTP calls. This makes it easy for developers in any language, so PHP, Java, even JavaScript in a browser can be used.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The first step is to create a view in agileBase that contains the data you want to make available to other apps. You can use the standard view creation features of the administrator interface, including adding fields and calculations, sorts and filters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Secondly, turn on the ability for the view to be accessed via a PULL API by going to the &lt;em&gt;manage&lt;/em&gt; tab,and within the &lt;em&gt;send&lt;/em&gt; section choosing &lt;em&gt;Send daya to a third party system using the API&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally Tick the &lt;em&gt;Allow access from third party software using an API key&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The remainder of this article explains how to PULL the data.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow_pull.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The most important piece of information is the URL that the third party will access your data via. This will be:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you host on your own cloud or on premises, this may be different.&lt;/p&gt;
+&lt;p&gt;Requests can contain a number of parameters, the one which must be supplied to use the JSON API is &lt;em&gt;get_report_json=true&lt;/em&gt;
+Other parameters to control various options are detailed below.&lt;/p&gt;
+&lt;p&gt;HTTP requests can be submitted as GET or POST.&lt;/p&gt;
+&lt;p&gt;Three parameters for the view also need to be submitted as parameters to the request. These are ‘c’, ‘t’ and ‘r’, the values are displayed in the administrator interface (see screenshot above). Together, these identify the view from which to extract data.&lt;/p&gt;
+&lt;p&gt;Finally, the API key provided needs to be submitted not as a HTTP request parameter, but as a header named ‘Authorization’. This is to reduce the change of it being cached or used in a browser string where it can be easily retained and read by unauthorised users.&lt;/p&gt;
+&lt;p&gt;Here’s a complete example of making a request, using PHP in WordPress&lt;/p&gt;
+&lt;p&gt;[php]&lt;/p&gt;
+&lt;p&gt;$url = &amp;lsquo;&lt;a href=&#34;http://appserver.gtportalbase.com/agileBase/Public.ab?get_report_json=true&amp;amp;simple_format=true&amp;amp;t=mytablecode&amp;amp;r=myreportcode&amp;amp;c=mycompanycode&amp;amp;json_format=json&#39;;&#34;&gt;http://appserver.gtportalbase.com/agileBase/Public.ab?get_report_json=true&amp;amp;simple_format=true&amp;amp;t=mytablecode&amp;amp;r=myreportcode&amp;amp;c=mycompanycode&amp;amp;json_format=json&#39;;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;$args = array(&amp;lsquo;headers&amp;rsquo; =&amp;gt; array( &amp;lsquo;Authorization&amp;rsquo; =&amp;gt; &amp;lsquo;myauthorisationkey&amp;rsquo;));&lt;/p&gt;
+&lt;p&gt;$response = wp_remote_get( $url, $args );&lt;/p&gt;
+&lt;p&gt;var_dump($response);&lt;/p&gt;
+&lt;p&gt;[/php]&lt;/p&gt;
+&lt;p&gt;Sample output would look like&lt;/p&gt;
+&lt;p&gt;[
+{
+forename: &amp;ldquo;Oliver&amp;rdquo;,
+surname: &amp;ldquo;Kohll&amp;rdquo;,
+email_address: &amp;ldquo;oliver@
+agilebase.co.uk&lt;/p&gt;
+&lt;p&gt;&amp;quot;
+},
+{
+forename: &amp;ldquo;Simon&amp;rdquo;,
+surname: &amp;ldquo;Minton&amp;rdquo;,
+email_address: &amp;ldquo;simon@
+agilebase.co.uk&lt;/p&gt;
+&lt;p&gt;&amp;quot;
+},
+{
+forename: &amp;ldquo;Cliff&amp;rdquo;,
+surname: &amp;ldquo;Calcutt&amp;rdquo;,
+email_address: &amp;ldquo;cliff@
+agilebase.co.uk&lt;/p&gt;
+&lt;p&gt;&amp;quot;
+}
+]&lt;/p&gt;
+&lt;p&gt;of course the fields being those returned for the particular view chosen.&lt;/p&gt;
+&lt;h3 id=&#34;request-options&#34;&gt;Request options&lt;/h3&gt;
+&lt;p&gt;Here are the options that can be provided as parameters to the request, along with the c, t and r identifiers and in addition to get_report_json=true.&lt;/p&gt;
+&lt;h4 id=&#34;simple_formattruefalse-default-false&#34;&gt;simple_format=true/false (default false)&lt;/h4&gt;
+&lt;p&gt;This option controls the JSON format returned. With simple_format=true, the response will be a simple array of objects, each containing keys for the field namesm as above. Keys are basically lowercase field names with spaces replaced by underscores, so “Email address” would become “email_address”
+With simple_format=false, a more complex but more robust format it used. Rather than field names, internal agileBase field identifiers are used as keys. This has the advantage that if the field names are changed (easy for an agileBase administrator to do), the JSON will remain the same. The first object in the JSON will be a dictionary mapping internal identifier to field name&lt;/p&gt;
+&lt;h4 id=&#34;json_formatjson&#34;&gt;json_format=json&lt;/h4&gt;
+&lt;p&gt;With this option, just the JSON will be returned. This is the usual case required. Without it, complete Javascript will be returned defining the JSON as an object, i.e.var abJson=[…]which can be useful if you want to run the result as Javascript&lt;/p&gt;
+&lt;h4 id=&#34;returnposted_json&#34;&gt;return=posted_json&lt;/h4&gt;
+&lt;p&gt;Optional, if this is included, the return content will be JSON including the ID of the record as well as the full content of the data&lt;/p&gt;
+&lt;h4 id=&#34;cache_secondsseconds&#34;&gt;cache_seconds=[seconds]&lt;/h4&gt;
+&lt;p&gt;How long to cache the results for (default 600 seconds or 10 minutes). Only un-filtered results are cached&lt;/p&gt;
+&lt;h4 id=&#34;unencode_htmltrue&#34;&gt;unencode_html=true&lt;/h4&gt;
+&lt;p&gt;Causes characters which would normally be encoded as HTML entities (e.g. &amp;amp; -&amp;gt; &amp;amp;) to be returned unencoded&lt;/p&gt;
+&lt;h4 id=&#34;exact_filterstruefalse-default-false&#34;&gt;exact_filters=true/false (default false)&lt;/h4&gt;
+&lt;p&gt;If true, filters (see below) will be need to match results exactly instead of using the default ‘contains’ filtering&lt;/p&gt;
+&lt;h3 id=&#34;filtering&#34;&gt;Filtering&lt;/h3&gt;
+&lt;p&gt;By specifying exact_filters=true, filters can be supplied to search for a particular record or set of records. For HTTP parameter names, just use the internal agileBase field identifiers. The easiest way of finding these is to right click on a field in the administrator interface using a browser like Chrome, Safari or Firefox and select ‘inspect element’. The identifier will look something like ‘a467b03e93435a25e’.&lt;/p&gt;
+&lt;p&gt;Standard agileBase filtering techniques can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, &amp;gt; and &amp;lt; for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.&lt;/p&gt;
+&lt;h3 id=&#34;response-codes&#34;&gt;Response codes&lt;/h3&gt;
+&lt;p&gt;200: request successful&lt;/p&gt;
+&lt;p&gt;401: unauthorised: the API key is missing or incorrect&lt;/p&gt;
+&lt;p&gt;404: not found: an object identifier (company ID, table ID or report ID) was supplied that wasn’t found in the system&lt;/p&gt;
+&lt;p&gt;429: too many requests: the daily API request limit has been exceeded for the view being queried&lt;/p&gt;
+&lt;p&gt;500: some other server error&lt;/p&gt;
+&lt;h3 id=&#34;generate-api-descriptions&#34;&gt;Generate API descriptions&lt;/h3&gt;
+&lt;p&gt;For developers who use the agileBase API to create and update data within agileBase from a third party product, there’s now a way to further automate the process.&lt;/p&gt;
+&lt;p&gt;agileBase will now generate a swagger.io compatible API description of any table you want to post to – that means if you deal with accounts for many agileBase customers, you can with a common query get the API details needed to interact with them.&lt;/p&gt;
+&lt;p&gt;Just make a POST request to&lt;/p&gt;
+&lt;p&gt;/agileBase/Public.ab with parameters&lt;/p&gt;
+&lt;p&gt;c = the company identifier (the table options screen will show this)
+t = the table identifier (similarly shown by the options screen)
+describe_table = true
+and the ‘Authorization’ header set to the API key (if the table requires one).&lt;/p&gt;
+&lt;p&gt;This also makes testing with Postman easier, since Postman can import a Swagger API description – so you don’t have to write a single line of code to test out an API.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>

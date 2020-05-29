@@ -25,7 +25,7 @@
 <meta property="og:description" content="A powerful set of automation features" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/workflows/" />
-<meta property="og:updated_time" content="2020-04-24T21:16:11+01:00" />
+<meta property="og:updated_time" content="2020-05-29T14:56:22+01:00" />
 <meta itemprop="name" content="Workflows">
 <meta itemprop="description" content="A powerful set of automation features"><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Workflows"/>
@@ -782,6 +782,18 @@
       
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsworkflowssend-data-to-a-third-party-via-api" href="/docs/workflows/send-data-to-a-third-party-via-api/">Send Data to a third party via API</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsworkflowstypes-of-actions" href="/docs/workflows/types-of-actions/">Workflow Actions</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -872,6 +884,24 @@
   <ul>
     <li class="collapse " id="docsintegrations">
       
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsintegrationssetting-up-the-post-api" href="/docs/integrations/setting-up-the-post-api/">Setting up the PUSH API</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsintegrationssetting-up-the-push-api" href="/docs/integrations/setting-up-the-push-api/">Setting up the PUSH API</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsintegrationssetting-up-the-pull-api" href="/docs/integrations/setting-up-the-pull-api/">Setting up the PULL API</a>
       
       
     </li>
@@ -997,13 +1027,63 @@
 	<h1>Workflows</h1>
         <div class="lead">A powerful set of automation features</div>
 	
-	
+	<p>A workflow is a task that processes data to acheive a particular function. AgileBase has a number of workflow functions that can be used to automate or simplify the activities users would otherwise need to perform manually. Workflows are performed by agileBot.</p>
+<p><strong>Meet agileBot!</strong> It can automatically edit records and create new records, saving a lot of manual typing. agileBot can be set up to follow rules for creating new records, editing values in existing records or taking other actions. The rules can be simple or complex, in fact anything that can be represented by a standard view, which makes it really powerful.</p>
+<p><strong>agileBot!</strong> also has the ability to send email notifications, generate documents and push data to 3rd parties. Importantly steps can be chained together. Many business processes can therefore be fully automated. As an example if the system stores recipes, whenever an allergen is changed, a product specification doc can be generated and emailed to significant customers.</p>
+<h2 id="creating-a-rule">Creating a rule</h2>
+<p>Here are the basics.</p>
+<ol>
+<li>
+<p>A rule is represented by a view. First create the view to represent the rule. Choose what <strong>action</strong> you want the rule to perform</p>
+</li>
+<li>
+<p>Any records which become visible in your rule view will trigger the action selected. So add filters (on a calculation if necessary) to select only the records you wish to trigger the action.</p>
+</li>
+<li>
+<p>If creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.</p>
+</li>
+<li>
+<p>Once the view’s created, you finish setting up by going to manage -&gt; workflow. Fill in the options for ‘Recording the time of the last action’ by selecting a date field in the table the view’s based on. This date will be updated every time the workflow runs. If there’s no relevant date field existing, add one to the table.</p>
+</li>
+<li>
+<p>Choose when the Workflow should be run. Use the option <em>manually only</em> if for example you want the Workflow to run on a Button press. Alternatively, set the frequency you wish the Workflow to attempt to run. N.b. By clever use of filters the frequency becomes &ldquo;how often do you want to check whether there are records to process&rdquo;.</p>
+</li>
+</ol>
+<blockquote>
+<p>Using <em>24 hours</em> with a <em>DOW</em> (Day of the Week) calculation allows you to run weekly workflows.</p>
+</blockquote>
+<p><img src="/workflow.png" alt="Screenshot of workflow action"></p>
+
         <div class="section-index">
     
     
     
     
     <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/docs/workflows/send-data-to-a-third-party-via-api/">Send Data to a third party via API</a>
+                    </h5>
+                    <p>Each workflow can perform a single specific action</p>
+                </div>
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/docs/workflows/types-of-actions/">Workflow Actions</a>
+                    </h5>
+                    <p>Each workflow can perform a single specific action</p>
+                </div>
+            
+        
+            
         
             
         
@@ -1204,7 +1284,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified April 24, 2020: <a  href="https://github.com/okohll/abdocs/commit/67d84f3f9fa1495ad714edb2988d54a0d69e2fef">Domain name change (67d84f3)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 29, 2020: <a  href="https://github.com/okohll/abdocs/commit/fd97e0091e5411fd3bbc628f6bb21259ee60541e">Started creating Workflow and integrations sections (fd97e00)</a>
 </div>
 </div>
 
