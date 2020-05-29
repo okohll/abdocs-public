@@ -53,18 +53,8 @@
   </url>
   
   <url>
-    <loc>https://docs.agilebase.co.uk/docs/workflows/</loc>
-    <lastmod>2020-05-29T14:59:27+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://docs.agilebase.co.uk/quickstart/tables/</loc>
     <lastmod>2020-04-21T17:09:43+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.agilebase.co.uk/docs/workflows/types-of-actions/</loc>
-    <lastmod>2020-05-29T15:35:11+01:00</lastmod>
   </url>
   
   <url>
@@ -90,11 +80,6 @@
   <url>
     <loc>https://docs.agilebase.co.uk/quickstart/fields/</loc>
     <lastmod>2020-04-21T17:09:43+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://docs.agilebase.co.uk/docs/workflows/altering-data/</loc>
-    <lastmod>2020-05-29T15:40:52+01:00</lastmod>
   </url>
   
   <url>
@@ -363,8 +348,13 @@
   </url>
   
   <url>
-    <loc>https://docs.agilebase.co.uk/docs/workflows/send-email/</loc>
-    <lastmod>2020-05-29T15:35:11+01:00</lastmod>
+    <loc>https://docs.agilebase.co.uk/docs/workflows/</loc>
+    <lastmod>2020-05-29T17:21:41+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/workflows/types-of-actions/</loc>
+    <lastmod>2020-05-29T17:25:34+01:00</lastmod>
   </url>
   
   <url>
@@ -393,6 +383,11 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/workflows/altering-data/</loc>
+    <lastmod>2020-05-29T17:21:41+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/docs/views/special-uses/referenced-data-panels/</loc>
     <lastmod>2020-05-25T19:17:36+01:00</lastmod>
   </url>
@@ -403,8 +398,18 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/workflows/send-email/</loc>
+    <lastmod>2020-05-29T17:21:41+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/docs/views/special-uses/tabs/</loc>
     <lastmod>2020-05-25T21:36:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/workflows/send-chaser/</loc>
+    <lastmod>2020-05-29T17:21:41+01:00</lastmod>
   </url>
   
   <url>
@@ -418,13 +423,38 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/workflows/send-document-generator/</loc>
+    <lastmod>2020-05-29T17:21:41+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/workflows/advanced/</loc>
+    <lastmod>2020-05-29T17:21:41+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/</loc>
+    <lastmod>2020-05-29T17:21:41+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/workflows/advanced/recursive-workflows/</loc>
+    <lastmod>2020-05-29T17:21:41+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/</loc>
+    <lastmod>2020-05-29T17:21:41+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/</loc>
-    <lastmod>2020-05-29T15:43:32+01:00</lastmod>
+    <lastmod>2020-05-29T17:25:34+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/</loc>
-    <lastmod>2020-05-29T15:35:11+01:00</lastmod>
+    <lastmod>2020-05-29T17:21:41+01:00</lastmod>
   </url>
   
 </urlset>

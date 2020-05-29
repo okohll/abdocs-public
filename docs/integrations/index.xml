@@ -242,6 +242,9 @@ t = the table identifier (similarly shown by the options screen)
 describe_table = true
 and the ‘Authorization’ header set to the API key (if the table requires one).&lt;/p&gt;
 &lt;p&gt;This also makes testing with Postman easier, since Postman can import a Swagger API description – so you don’t have to write a single line of code to test out an API.&lt;/p&gt;
+&lt;h2 id=&#34;rss-feed&#34;&gt;RSS Feed&lt;/h2&gt;
+&lt;p&gt;If your PULL API has been enabled for Public access then you can offer 3rd parties the option of accessing the feed via an RSS feed. The link is visible just below the tick box for public access&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-send-rss.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
