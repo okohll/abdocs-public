@@ -15,49 +15,7 @@
     
     
     <item>
-      <title>Docs: Setting up the POST API</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Firstly, identify the Table into which you wish to recieve incoming data.
-Go to that table&amp;rsquo;s manage taband press ‘options’. Tick ‘public data entry’.&lt;/p&gt;
-&lt;p&gt;To protect the system from spam input, we also suggest you tick ‘Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
-&lt;p&gt;Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming_data_api.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;creating-new-records&#34;&gt;Creating new records&lt;/h2&gt;
-&lt;p&gt;Clicking the ‘sample form’ link will then show a sample form which can be used for testing or to copy code from.&lt;/p&gt;
-&lt;p&gt;If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:&lt;/p&gt;
-&lt;p&gt;save_new_record=true
-c=[internalcompanyid]
-t=[internaltableid]
-The post URL is&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;
-The form needs to be posted using the method POST&lt;/p&gt;
-&lt;p&gt;Remember also to set the ‘Authorization’ HTTP header if that option has been selected.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;NB: To get the details of data posted into the database, please also supply the parameter &lt;em&gt;return=posted_json&lt;/em&gt; This will include the internal row ID of the newly inserted record.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;API use can be tested using the Postman extension for Google Chrome. Note that forms have to be posted with encoding type ‘application/x-www-form-urlencoded’.&lt;/p&gt;
-&lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
-&lt;p&gt;The process is similar, but instead of &lt;em&gt;save_new_record=true&lt;/em&gt; supply
-&lt;em&gt;update_record=true&lt;/em&gt;
-&lt;em&gt;row_id=[internal id of the record]&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The internal record ID can be got from a JSON feed or by using the &lt;em&gt;return=posted_json&lt;/em&gt; as above if editing a record previously created using the API.&lt;/p&gt;
-&lt;h3 id=&#34;http-response-codes&#34;&gt;HTTP response codes&lt;/h3&gt;
-&lt;p&gt;401: unauthorised: the API key is missing or invalid&lt;/p&gt;
-&lt;p&gt;429: too many requests: the daily limit of requests to this table has been reached. Contact us to purchase additional capacity&lt;/p&gt;
-&lt;p&gt;507: insufficient storage: the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity&lt;/p&gt;
-&lt;p&gt;500: some other server error&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Setting up the PUSH API</title>
+      <title>Docs: Setting up the Calendar API</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-calandar-push/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       
@@ -106,6 +64,48 @@ Finally, create a new record, wait up to 10 minutes then take a look at your Goo
     </item>
     
     <item>
+      <title>Docs: Setting up the POST API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Firstly, identify the Table into which you wish to recieve incoming data.
+Go to that table&amp;rsquo;s manage taband press ‘options’. Tick ‘public data entry’.&lt;/p&gt;
+&lt;p&gt;To protect the system from spam input, we also suggest you tick ‘Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
+&lt;p&gt;Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming_data_api.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;creating-new-records&#34;&gt;Creating new records&lt;/h2&gt;
+&lt;p&gt;Clicking the ‘sample form’ link will then show a sample form which can be used for testing or to copy code from.&lt;/p&gt;
+&lt;p&gt;If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:&lt;/p&gt;
+&lt;p&gt;save_new_record=true
+c=[internalcompanyid]
+t=[internaltableid]
+The post URL is&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;
+The form needs to be posted using the method POST&lt;/p&gt;
+&lt;p&gt;Remember also to set the ‘Authorization’ HTTP header if that option has been selected.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NB: To get the details of data posted into the database, please also supply the parameter &lt;em&gt;return=posted_json&lt;/em&gt; This will include the internal row ID of the newly inserted record.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;API use can be tested using the Postman extension for Google Chrome. Note that forms have to be posted with encoding type ‘application/x-www-form-urlencoded’.&lt;/p&gt;
+&lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
+&lt;p&gt;The process is similar, but instead of &lt;em&gt;save_new_record=true&lt;/em&gt; supply
+&lt;em&gt;update_record=true&lt;/em&gt;
+&lt;em&gt;row_id=[internal id of the record]&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The internal record ID can be got from a JSON feed or by using the &lt;em&gt;return=posted_json&lt;/em&gt; as above if editing a record previously created using the API.&lt;/p&gt;
+&lt;h3 id=&#34;http-response-codes&#34;&gt;HTTP response codes&lt;/h3&gt;
+&lt;p&gt;401: unauthorised: the API key is missing or invalid&lt;/p&gt;
+&lt;p&gt;429: too many requests: the daily limit of requests to this table has been reached. Contact us to purchase additional capacity&lt;/p&gt;
+&lt;p&gt;507: insufficient storage: the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity&lt;/p&gt;
+&lt;p&gt;500: some other server error&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Setting up the PUSH API</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
@@ -134,7 +134,7 @@ choose a minimum interval to wait between pushes&lt;/li&gt;
 &lt;p&gt;A few common scenarios would be:&lt;/p&gt;
 &lt;h4 id=&#34;pushing-any-data-modified-since-it-was-last-pushed&#34;&gt;Pushing any data modified since it was last pushed&lt;/h4&gt;
 &lt;p&gt;To do this, add a boolean calculation to your view, something like&lt;/p&gt;
-&lt;p&gt;` needs pushing = {last modified [auto]} &amp;gt; {last pushed}&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;needs pushing = {last modified [auto]} &amp;gt; {last pushed}&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;where ‘last pushed’ is the name of the timestamp field you added in step 3 above.&lt;/p&gt;
 &lt;p&gt;Then add a filter on the view ‘needs pushing equals true’&lt;/p&gt;
 &lt;h4 id=&#34;pushing-any-new-rows-that-have-never-been-pushed-before&#34;&gt;Pushing any new rows that have never been pushed before&lt;/h4&gt;
