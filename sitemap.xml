@@ -293,11 +293,6 @@
   </url>
   
   <url>
-    <loc>https://docs.agilebase.co.uk/docs/workflows/send-data-to-a-third-party-via-api/</loc>
-    <lastmod>2020-05-29T14:59:27+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://docs.agilebase.co.uk/docs/views/special-uses/</loc>
     <lastmod>2020-05-25T19:17:36+01:00</lastmod>
   </url>
@@ -398,13 +393,18 @@
   </url>
   
   <url>
-    <loc>https://docs.agilebase.co.uk/docs/workflows/send-email/</loc>
-    <lastmod>2020-05-29T17:21:41+01:00</lastmod>
+    <loc>https://docs.agilebase.co.uk/docs/workflows/send-data-to-a-third-party-via-api/</loc>
+    <lastmod>2020-05-29T17:34:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/views/special-uses/tabs/</loc>
     <lastmod>2020-05-25T21:36:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/workflows/send-email/</loc>
+    <lastmod>2020-05-29T17:34:00+01:00</lastmod>
   </url>
   
   <url>
@@ -429,7 +429,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/workflows/advanced/</loc>
-    <lastmod>2020-05-29T17:21:41+01:00</lastmod>
+    <lastmod>2020-05-29T17:34:00+01:00</lastmod>
   </url>
   
   <url>
@@ -449,7 +449,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/</loc>
-    <lastmod>2020-05-29T17:25:34+01:00</lastmod>
+    <lastmod>2020-05-29T17:34:00+01:00</lastmod>
   </url>
   
   <url>
