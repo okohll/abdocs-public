@@ -997,7 +997,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
         &lt;p&gt;A separator field doesn&amp;rsquo;t actually store any data, but is used as a marker of the start of a block of fields. Create a separator  and move it to just before the field which should be the first in a block.&lt;/p&gt;
 &lt;p&gt;Depending on the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/table-layouts/&#34;&gt;table layout&lt;/a&gt;, these blocks will be displayed in different ways, but in all cases will form a distinct group of fields.&lt;/p&gt;
 &lt;p&gt;Inline help can be added for separators in the same way as for normal fields, by adding a field description. This help text will apply to the whole block of fields created by a separator.&lt;/p&gt;
-&lt;p&gt;Here&amp;rsquo;s a system with&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a system with several&amp;hellip;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TODO: blocks screenshot&lt;/strong&gt;&lt;/p&gt;
 
       </description>
