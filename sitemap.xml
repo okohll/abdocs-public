@@ -64,7 +64,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/workflows/types-of-actions/</loc>
-    <lastmod>2020-05-29T14:59:27+01:00</lastmod>
+    <lastmod>2020-05-29T15:30:30+01:00</lastmod>
   </url>
   
   <url>
@@ -94,7 +94,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/workflows/altering-data/</loc>
-    <lastmod>2020-05-29T15:09:22+01:00</lastmod>
+    <lastmod>2020-05-29T15:30:30+01:00</lastmod>
   </url>
   
   <url>
@@ -348,18 +348,23 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</loc>
+    <lastmod>2020-05-29T15:30:30+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-calandar-push/</loc>
     <lastmod>2020-05-29T15:09:22+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</loc>
+    <loc>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</loc>
     <lastmod>2020-05-29T14:56:22+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</loc>
-    <lastmod>2020-05-29T14:56:22+01:00</lastmod>
+    <loc>https://docs.agilebase.co.uk/docs/workflows/send-email/</loc>
+    <lastmod>2020-05-29T15:30:30+01:00</lastmod>
   </url>
   
   <url>
@@ -414,7 +419,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/</loc>
-    <lastmod>2020-05-29T15:09:22+01:00</lastmod>
+    <lastmod>2020-05-29T15:30:30+01:00</lastmod>
   </url>
   
   <url>

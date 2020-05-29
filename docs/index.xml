@@ -152,8 +152,8 @@ Options are:&lt;/p&gt;
 &lt;p&gt;The options to send data are contained within the &lt;em&gt;send&lt;/em&gt; section of the &lt;em&gt;workflow&lt;/em&gt; tab. Matching records will be sent to the appropriate &lt;strong&gt;function&lt;/strong&gt;.&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-data-to-a-third-party-via-api/&#34;&gt;Send data to a third party via API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Send an email&lt;/li&gt;
 &lt;li&gt;Send an email Chaser&lt;/li&gt;
-&lt;li&gt;Send an Email&lt;/li&gt;
 &lt;li&gt;Send data to a calendar&lt;/li&gt;
 &lt;li&gt;Send to document generator&lt;/li&gt;
 &lt;/ol&gt;
@@ -334,13 +334,21 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;Options are:&lt;/p&gt;
+        &lt;p&gt;The following Workflows alter data within the system&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Create record - This will create a new item in the nominated table&lt;/li&gt;
 &lt;li&gt;Update record - This will alter the values of the record.&lt;/li&gt;
 &lt;li&gt;Lock record - This will apply a record level lock on the item.&lt;/li&gt;
 &lt;li&gt;Delete record - This will totally remove the record.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;When creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.&lt;/p&gt;
+&lt;h3 id=&#34;relation-fields&#34;&gt;Relation fields&lt;/h3&gt;
+&lt;p&gt;If you want your workflow to set the value of a relation find, i.e. link to a particular record, there’s no need to create a calculation for it, just include the ID field for the record you want to link to in the view.&lt;/p&gt;
+&lt;p&gt;If creating a calculation is easier, you can still do that. Either create a numeric calculation which outputs the internal row ID of the record to link to, or the text of the primary value for the relation. If the latter case, the field for the primary value in the related table should be unique and marked as such in the field options.&lt;/p&gt;
+&lt;p&gt;To set a relation field to blank, add a numeric calculation with the name of the field as normal, but set it to output the value -1.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Deleting records is not reversible. Please use with caution.&lt;/p&gt;
+&lt;/blockquote&gt;
 
       </description>
     </item>
@@ -1913,6 +1921,48 @@ and a video introduction to the concept here:&lt;/p&gt;
     </item>
     
     <item>
+      <title>Docs: Setting up the POST API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Firstly, identify the Table into which you wish to recieve incoming data.
+Go to that table&amp;rsquo;s manage taband press ‘options’. Tick ‘public data entry’.&lt;/p&gt;
+&lt;p&gt;To protect the system from spam input, we also suggest you tick ‘Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
+&lt;p&gt;Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming_data_api.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;creating-new-records&#34;&gt;Creating new records&lt;/h2&gt;
+&lt;p&gt;Clicking the ‘sample form’ link will then show a sample form which can be used for testing or to copy code from.&lt;/p&gt;
+&lt;p&gt;If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:&lt;/p&gt;
+&lt;p&gt;save_new_record=true
+c=[internalcompanyid]
+t=[internaltableid]
+The post URL is&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;
+The form needs to be posted using the method POST&lt;/p&gt;
+&lt;p&gt;Remember also to set the ‘Authorization’ HTTP header if that option has been selected.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NB: To get the details of data posted into the database, please also supply the parameter &lt;em&gt;return=posted_json&lt;/em&gt; This will include the internal row ID of the newly inserted record.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;API use can be tested using the Postman extension for Google Chrome. Note that forms have to be posted with encoding type ‘application/x-www-form-urlencoded’.&lt;/p&gt;
+&lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
+&lt;p&gt;The process is similar, but instead of &lt;em&gt;save_new_record=true&lt;/em&gt; supply
+&lt;em&gt;update_record=true&lt;/em&gt;
+&lt;em&gt;row_id=[internal id of the record]&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The internal record ID can be got from a JSON feed or by using the &lt;em&gt;return=posted_json&lt;/em&gt; as above if editing a record previously created using the API.&lt;/p&gt;
+&lt;h3 id=&#34;http-response-codes&#34;&gt;HTTP response codes&lt;/h3&gt;
+&lt;p&gt;401: unauthorised: the API key is missing or invalid&lt;/p&gt;
+&lt;p&gt;429: too many requests: the daily limit of requests to this table has been reached. Contact us to purchase additional capacity&lt;/p&gt;
+&lt;p&gt;507: insufficient storage: the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity&lt;/p&gt;
+&lt;p&gt;500: some other server error&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Setting up the PUSH API</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-calandar-push/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
@@ -1963,48 +2013,6 @@ Finally, create a new record, wait up to 10 minutes then take a look at your Goo
     
     <item>
       <title>Docs: Setting up the PUSH API</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Firstly, identify the Table into which you wish to recieve incoming data.
-Go to that table&amp;rsquo;s manage taband press ‘options’. Tick ‘public data entry’.&lt;/p&gt;
-&lt;p&gt;To protect the system from spam input, we also suggest you tick ‘Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
-&lt;p&gt;Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming_data_api.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;creating-new-records&#34;&gt;Creating new records&lt;/h2&gt;
-&lt;p&gt;Clicking the ‘sample form’ link will then show a sample form which can be used for testing or to copy code from.&lt;/p&gt;
-&lt;p&gt;If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:&lt;/p&gt;
-&lt;p&gt;save_new_record=true
-c=[internalcompanyid]
-t=[internaltableid]
-The post URL is&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;
-The form needs to be posted using the method POST&lt;/p&gt;
-&lt;p&gt;Remember also to set the ‘Authorization’ HTTP header if that option has been selected.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;NB: To get the details of data posted into the database, please also supply the parameter &lt;em&gt;return=posted_json&lt;/em&gt; This will include the internal row ID of the newly inserted record.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;API use can be tested using the Postman extension for Google Chrome. Note that forms have to be posted with encoding type ‘application/x-www-form-urlencoded’.&lt;/p&gt;
-&lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
-&lt;p&gt;The process is similar, but instead of &lt;em&gt;save_new_record=true&lt;/em&gt; supply
-&lt;em&gt;update_record=true&lt;/em&gt;
-&lt;em&gt;row_id=[internal id of the record]&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The internal record ID can be got from a JSON feed or by using the &lt;em&gt;return=posted_json&lt;/em&gt; as above if editing a record previously created using the API.&lt;/p&gt;
-&lt;h3 id=&#34;http-response-codes&#34;&gt;HTTP response codes&lt;/h3&gt;
-&lt;p&gt;401: unauthorised: the API key is missing or invalid&lt;/p&gt;
-&lt;p&gt;429: too many requests: the daily limit of requests to this table has been reached. Contact us to purchase additional capacity&lt;/p&gt;
-&lt;p&gt;507: insufficient storage: the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity&lt;/p&gt;
-&lt;p&gt;500: some other server error&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Setting up the PUSH API</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       
@@ -2039,6 +2047,52 @@ choose a minimum interval to wait between pushes&lt;/li&gt;
 &lt;p&gt;For this scenario, simply add a filter to the view ‘last pushed is empty’&lt;/p&gt;
 &lt;h4 id=&#34;pushing-only-rows-not-yet-marked-as-received&#34;&gt;Pushing only rows not yet marked as received&lt;/h4&gt;
 &lt;p&gt;In some cases, you may want to be even more prudent than using the internal timestamp. The third party system could make a separate API call to agileBase for every row that’s received, telling it to update the row with an ID to prove receipt. That’s more API calls of course, but some situations may warrant it.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Send an email</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/send-email/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/send-email/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Agilebase can be used to send emails. This facility should &lt;strong&gt;NOT&lt;/strong&gt; be used for marketing purposes, rather as a method to notify people about data associated to the system.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: When setting up an email alert, the system needs to know the email address of the recipient. Sometimes this may be very simple, when you always want to send the alert to the same person. For some alerts though you may wish to change who gets it depending on the data, e.g. each salesperson may get the leads assigned to them. In this case, the system will need to know the email address, so it needs to be stored somewhere. For agileBase users, if they use their email address as their username, the system can pick this up when a user’s assigned to a record, either manually or as part of the automatic ‘created by’ and ‘modified by’ fields&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;step-1-add-a-necessary-field&#34;&gt;Step 1: add a necessary field&lt;/h2&gt;
+&lt;p&gt;Select the table which has the alert data in it and add a date/time field with SECOND accuracy called e.g. “Last notified”. This will be used by the system to store when the last notification was sent for each record.&lt;/p&gt;
+&lt;h2 id=&#34;step-2-create-a-new-view&#34;&gt;Step 2: create a new view&lt;/h2&gt;
+&lt;p&gt;Create a view from the table above, containing all the information you want to send in the email. Sort it by “last modified [auto]” descending, so new items appear at the top.&lt;/p&gt;
+&lt;h2 id=&#34;step-3-add-filters&#34;&gt;Step 3: add filters&lt;/h2&gt;
+&lt;p&gt;Add filters so that only records that need an email notification to be sent appear. It’s important that records must disappear once a notification’s been sent otherwise the recipient will be bombarded with repeat alerts.&lt;/p&gt;
+&lt;p&gt;For simple alerts of new items, add a filter “Last notified IS NULL”. That way, a notification will only ever be sent once for a record.&lt;/p&gt;
+&lt;p&gt;To set up a repeating monthly alert, you could add a calculation:&lt;/p&gt;
+&lt;p&gt;` Send Alert (boolean): {last notified} is null OR {last notified} &amp;lt; (now() - interval &amp;lsquo;1 month&amp;rsquo;)&lt;/p&gt;
+&lt;p&gt;and filter on “Send Alert = true”&lt;/p&gt;
+&lt;p&gt;If you have any difficulty thinking up what criteria you need for your purpose, please get in touch.&lt;/p&gt;
+&lt;h2 id=&#34;step-4-fill-in-an-email-template&#34;&gt;Step 4: fill in an email template&lt;/h2&gt;
+&lt;p&gt;In the view’s &lt;em&gt;manage&lt;/em&gt; tab, under &lt;em&gt;send&lt;/em&gt;, fill in the subject, to and body of the email. To merge in data from the view, use field names in lowercase surrounded by curly brackets. A typical template would look something like this:&lt;/p&gt;
+&lt;p&gt;IMAGE&lt;/p&gt;
+&lt;p&gt;You can attach documents to the email by including the field name for a file in the message.&lt;/p&gt;
+&lt;p&gt;Under the email template, set “Notification time field” to the field that you created in step 1, e.g. “Last notified”&lt;/p&gt;
+&lt;p&gt;Note in the To: field, you can include email addresses manually (as above), or merge them in from the view. If you are assigning records to users in agileBase, you can use that field and the system will automatically pick out the email address for them, as long as their username is their email address.&lt;/p&gt;
+&lt;p&gt;That’s it! Note when testing, we recommend setting the “To:” value to your own email address, just until you’re sure everything’s working properly.&lt;/p&gt;
+&lt;h2 id=&#34;rich-text-html-emails&#34;&gt;Rich text (HTML) emails&lt;/h2&gt;
+&lt;p&gt;HTML emails can now be sent by apps built on the agileBase platform.
+That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.&lt;/p&gt;
+&lt;h3 id=&#34;setting-up&#34;&gt;Setting up&lt;/h3&gt;
+&lt;p&gt;Set up an email notification workflow as normal (in a view, use the manage -&amp;gt; send tab).&lt;/p&gt;
+&lt;p&gt;For the body of the email, simply start it with&lt;/p&gt;
+&lt;html&gt;
+and end with
+&lt;/html&gt;
+The email will then be interpreted as HTML, i.e. formatted.
+&lt;p&gt;For the moment, you do need to know some basic HTML. If you’d like to get started there are plenty of great tutorials on the web – here’s an example: &lt;a href=&#34;http://www.htmldog.com&#34;&gt;www.htmldog.com&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -2167,25 +2221,6 @@ choose a minimum interval to wait between pushes&lt;/li&gt;
 &lt;li&gt;expand never&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Remember, these just set the initial state of the block when a record is first opened, blocks can be expanded and contracted by the user at any time.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: APIs</title>
-      <link>https://docs.agilebase.co.uk/docs/views/special-uses/apis/</link>
-      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/apis/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Any view can be used to generate an API - a unique URL which third party services can call in order to extract data, or which can be used to push data to those services and applications.&lt;/p&gt;
-&lt;p&gt;The view created in this case is used to define the set of records to send and the fields to include.&lt;/p&gt;
-&lt;p&gt;For more information, see the &lt;a href=&#34;https://todo.com&#34;&gt;APIs&lt;/a&gt; topic, which contains full details of how to set up and use APIs.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This topic also includes information about APIs which receive data from third party systems, as opposed to sending to them, for which a view isn&amp;rsquo;t necessary.&lt;/p&gt;
-&lt;/blockquote&gt;
 
       </description>
     </item>
