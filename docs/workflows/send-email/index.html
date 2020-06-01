@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Workflows can be used to send an email">
 <meta itemprop="datePublished" content="2020-05-29T12:35:00&#43;01:00" />
 <meta itemprop="dateModified" content="2020-05-29T17:34:00&#43;01:00" />
-<meta itemprop="wordCount" content="629">
+<meta itemprop="wordCount" content="612">
 
 
 
@@ -1141,7 +1141,7 @@
 <p>Add filters so that only records that need an email notification to be sent appear. It’s important that records must disappear once a notification’s been sent otherwise the recipient will be bombarded with repeat alerts.</p>
 <p>For simple alerts of new items, add a filter “Last notified IS NULL”. That way, a notification will only ever be sent once for a record.</p>
 <p>To set up a repeating monthly alert, you could add a calculation:</p>
-<p>` Send Alert (boolean): {last notified} is null OR {last notified} &lt; (now() - interval &lsquo;1 month&rsquo;) '</p>
+<p><code>Send Alert (boolean): {last notified} is null OR {last notified} &lt; (now() - interval '1 month')</code></p>
 <p>and filter on “Send Alert = true”</p>
 <p>If you have any difficulty thinking up what criteria you need for your purpose, please get in touch.</p>
 <h2 id="step-4-fill-in-an-email-template">Step 4: fill in an email template</h2>
@@ -1149,17 +1149,18 @@
 <p><img src="/send-email.png" alt="Workflow actions that alter data"></p>
 <p>You can attach documents to the email by including the field name for a file in the message.</p>
 <p>Under the email template, set “Notification time field” to the field that you created in step 1, e.g. “Last notified”</p>
-<p>Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in agileBase, you can use that field and the system will automatically pick out the email address for them, as long as their username is their email address.</p>
+<p>Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in agileBase, you can use that field and the system will automatically pick out the email address for them.</p>
+<blockquote>
 <p>That’s it! Note when testing, we recommend setting the “To:” value to your own email address, just until you’re sure everything’s working properly.</p>
+</blockquote>
 <h2 id="rich-text-html-emails">Rich text (HTML) emails</h2>
 <p>HTML emails can now be sent by apps built on the agileBase platform.
 That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.</p>
 <h3 id="setting-up">Setting up</h3>
 <p>Set up an email notification workflow as normal (in a view, use the manage -&gt; send tab).</p>
-<p>For the body of the email, simply start it with
-`<html> and end with </html> '</p>
+<p>Start the body of the email with <code>&lt;html&gt;</code> and end with <code>&lt;/html&gt;</code>.</p>
 <p>The email will then be interpreted as HTML, i.e. formatted.</p>
-<p>For the moment, you do need to know some basic HTML. If you’d like to get started there are plenty of great tutorials on the web – here’s an example: <a href="http://www.htmldog.com">www.htmldog.com</a></p>
+<p>You do need to know some basic HTML. If you’d like to get started there are plenty of great tutorials on the web - here’s an example: <a href="http://www.htmldog.com">www.htmldog.com</a></p>
 
 	
 		<style>

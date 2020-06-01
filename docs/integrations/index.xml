@@ -80,26 +80,30 @@ Go to that table&amp;rsquo;s manage taband press ‘options’. Tick ‘public d
 &lt;h2 id=&#34;creating-new-records&#34;&gt;Creating new records&lt;/h2&gt;
 &lt;p&gt;Clicking the ‘sample form’ link will then show a sample form which can be used for testing or to copy code from.&lt;/p&gt;
 &lt;p&gt;If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:&lt;/p&gt;
-&lt;p&gt;save_new_record=true
-c=[internalcompanyid]
-t=[internaltableid]
-The post URL is&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;
-The form needs to be posted using the method POST&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;save_new_record=true&lt;/li&gt;
+&lt;li&gt;c=[internalcompanyid]&lt;/li&gt;
+&lt;li&gt;t=[internaltableid]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The post URL is&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The form needs to be posted using the method POST.&lt;/p&gt;
 &lt;p&gt;Remember also to set the ‘Authorization’ HTTP header if that option has been selected.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;NB: To get the details of data posted into the database, please also supply the parameter &lt;em&gt;return=posted_json&lt;/em&gt; This will include the internal row ID of the newly inserted record.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;API use can be tested using the Postman extension for Google Chrome. Note that forms have to be posted with encoding type ‘application/x-www-form-urlencoded’.&lt;/p&gt;
+&lt;p&gt;API use can be tested using a tool such as &lt;a href=&#34;https://www.postman.com&#34;&gt;Postman&lt;/a&gt; tool.&lt;/p&gt;
 &lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
-&lt;p&gt;The process is similar, but instead of &lt;em&gt;save_new_record=true&lt;/em&gt; supply
-&lt;em&gt;update_record=true&lt;/em&gt;
-&lt;em&gt;row_id=[internal id of the record]&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The process is similar, but instead of &lt;em&gt;save_new_record=true&lt;/em&gt;, supply&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;update_record=true&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;row_id=[internal id of the record]&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;The internal record ID can be got from a JSON feed or by using the &lt;em&gt;return=posted_json&lt;/em&gt; as above if editing a record previously created using the API.&lt;/p&gt;
 &lt;h3 id=&#34;http-response-codes&#34;&gt;HTTP response codes&lt;/h3&gt;
 &lt;p&gt;401: unauthorised: the API key is missing or invalid&lt;/p&gt;
-&lt;p&gt;429: too many requests: the daily limit of requests to this table has been reached. Contact us to purchase additional capacity&lt;/p&gt;
-&lt;p&gt;507: insufficient storage: the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity&lt;/p&gt;
+&lt;p&gt;429: too many requests: the frequency of requests is too high, please throttle them back&lt;/p&gt;
+&lt;p&gt;507: insufficient storage: when creating a record, the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity.&lt;/p&gt;
 &lt;p&gt;500: some other server error&lt;/p&gt;
 
       </description>
@@ -160,7 +164,7 @@ choose a minimum interval to wait between pushes&lt;/li&gt;
 &lt;p&gt;The first step is to create a view in agileBase that contains the data you want to make available to other apps. You can use the standard view creation features of the administrator interface, including adding fields and calculations, sorts and filters.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Secondly, turn on the ability for the view to be accessed via a PULL API by going to the &lt;em&gt;manage&lt;/em&gt; tab,and within the &lt;em&gt;send&lt;/em&gt; section choosing &lt;em&gt;Send daya to a third party system using the API&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Secondly, turn on the ability for the view to be accessed via a PULL API by going to the &lt;em&gt;manage&lt;/em&gt; tab,and within the &lt;em&gt;send&lt;/em&gt; section choosing &lt;em&gt;Send data to a third party system using the API&lt;/em&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Finally Tick the &lt;em&gt;Allow access from third party software using an API key&lt;/em&gt;.&lt;/p&gt;
@@ -178,72 +182,73 @@ Other parameters to control various options are detailed below.&lt;/p&gt;
 &lt;p&gt;Finally, the API key provided needs to be submitted not as a HTTP request parameter, but as a header named ‘Authorization’. This is to reduce the change of it being cached or used in a browser string where it can be easily retained and read by unauthorised users.&lt;/p&gt;
 &lt;p&gt;Here’s a complete example of making a request, using PHP in WordPress&lt;/p&gt;
 &lt;p&gt;[php]&lt;/p&gt;
-&lt;p&gt;$url = &amp;lsquo;&lt;a href=&#34;http://appserver.gtportalbase.com/agileBase/Public.ab?get_report_json=true&amp;amp;simple_format=true&amp;amp;t=mytablecode&amp;amp;r=myreportcode&amp;amp;c=mycompanycode&amp;amp;json_format=json&#39;;&#34;&gt;http://appserver.gtportalbase.com/agileBase/Public.ab?get_report_json=true&amp;amp;simple_format=true&amp;amp;t=mytablecode&amp;amp;r=myreportcode&amp;amp;c=mycompanycode&amp;amp;json_format=json&#39;;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;$args = array(&amp;lsquo;headers&amp;rsquo; =&amp;gt; array( &amp;lsquo;Authorization&amp;rsquo; =&amp;gt; &amp;lsquo;myauthorisationkey&amp;rsquo;));&lt;/p&gt;
-&lt;p&gt;$response = wp_remote_get( $url, $args );&lt;/p&gt;
-&lt;p&gt;var_dump($response);&lt;/p&gt;
-&lt;p&gt;[/php]&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$url = &#39;http://appserver.gtportalbase.com/agileBase/Public.ab?get_report_json=true&amp;amp;simple_format=true&amp;amp;t=mytablecode&amp;amp;r=myreportcode&amp;amp;c=mycompanycode&amp;amp;json_format=json&#39;;
+
+$args = array(&#39;headers&#39; =&amp;gt; array( &#39;Authorization&#39; =&amp;gt; &#39;myauthorisationkey&#39;));
+
+$response = wp_remote_get( $url, $args );
+
+var_dump($response);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;[/php]&lt;/p&gt;
 &lt;p&gt;Sample output would look like&lt;/p&gt;
-&lt;p&gt;[
-{
-forename: &amp;ldquo;Oliver&amp;rdquo;,
-surname: &amp;ldquo;Kohll&amp;rdquo;,
-email_address: &amp;ldquo;oliver@
-agilebase.co.uk&lt;/p&gt;
-&lt;p&gt;&amp;quot;
-},
-{
-forename: &amp;ldquo;Simon&amp;rdquo;,
-surname: &amp;ldquo;Minton&amp;rdquo;,
-email_address: &amp;ldquo;simon@
-agilebase.co.uk&lt;/p&gt;
-&lt;p&gt;&amp;quot;
-},
-{
-forename: &amp;ldquo;Cliff&amp;rdquo;,
-surname: &amp;ldquo;Calcutt&amp;rdquo;,
-email_address: &amp;ldquo;cliff@
-agilebase.co.uk&lt;/p&gt;
-&lt;p&gt;&amp;quot;
-}
-]&lt;/p&gt;
-&lt;p&gt;of course the fields being those returned for the particular view chosen.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+  {
+    forename: &amp;quot;Oliver&amp;quot;,
+    surname: &amp;quot;Kohll&amp;quot;,
+    email_address: &amp;quot;oliver@agilebase.co.uk&amp;quot;
+  },
+  {
+    forename: &amp;quot;Simon&amp;quot;,
+    surname: &amp;quot;Minton&amp;quot;,
+    email_address: &amp;quot;simon@agilebase.co.uk&amp;quot;
+  },
+  {
+    forename: &amp;quot;Cliff&amp;quot;,
+    surname: &amp;quot;Calcutt&amp;quot;,
+    email_address: &amp;quot;cliff@agilebase.co.uk&amp;quot;
+  }
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;of course the fields being those returned for the particular view chosen.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;request-options&#34;&gt;Request options&lt;/h3&gt;
 &lt;p&gt;Here are the options that can be provided as parameters to the request, along with the c, t and r identifiers and in addition to get_report_json=true.&lt;/p&gt;
 &lt;h4 id=&#34;simple_formattruefalse-default-false&#34;&gt;simple_format=true/false (default false)&lt;/h4&gt;
 &lt;p&gt;This option controls the JSON format returned. With simple_format=true, the response will be a simple array of objects, each containing keys for the field namesm as above. Keys are basically lowercase field names with spaces replaced by underscores, so “Email address” would become “email_address”
-With simple_format=false, a more complex but more robust format it used. Rather than field names, internal agileBase field identifiers are used as keys. This has the advantage that if the field names are changed (easy for an agileBase administrator to do), the JSON will remain the same. The first object in the JSON will be a dictionary mapping internal identifier to field name&lt;/p&gt;
+With simple_format=false, a more complex but more robust format it used. Rather than field names, internal agileBase field identifiers are used as keys. This has the advantage that if the field names are changed (easy for an agileBase administrator to do), the JSON will remain the same. The first object in the JSON will be a dictionary mapping internal identifier to field name.&lt;/p&gt;
 &lt;h4 id=&#34;json_formatjson&#34;&gt;json_format=json&lt;/h4&gt;
-&lt;p&gt;With this option, just the JSON will be returned. This is the usual case required. Without it, complete Javascript will be returned defining the JSON as an object, i.e.var abJson=[…]which can be useful if you want to run the result as Javascript&lt;/p&gt;
+&lt;p&gt;With this option, just the JSON will be returned. This is the usual case required. Without it, complete Javascript will be returned defining the JSON as an object, i.e. &lt;code&gt;var abJson=[…]&lt;/code&gt; which can be useful if you want to run the result as Javascript.&lt;/p&gt;
 &lt;h4 id=&#34;returnposted_json&#34;&gt;return=posted_json&lt;/h4&gt;
-&lt;p&gt;Optional, if this is included, the return content will be JSON including the ID of the record as well as the full content of the data&lt;/p&gt;
+&lt;p&gt;Optional, if this is included, the return content will be JSON including the ID of the record as well as the full content of the data.&lt;/p&gt;
 &lt;h4 id=&#34;cache_secondsseconds&#34;&gt;cache_seconds=[seconds]&lt;/h4&gt;
-&lt;p&gt;How long to cache the results for (default 600 seconds or 10 minutes). Only un-filtered results are cached&lt;/p&gt;
+&lt;p&gt;How long to cache the results for (default 600 seconds or 10 minutes). Only un-filtered results are cached.&lt;/p&gt;
 &lt;h4 id=&#34;unencode_htmltrue&#34;&gt;unencode_html=true&lt;/h4&gt;
-&lt;p&gt;Causes characters which would normally be encoded as HTML entities (e.g. &amp;amp; -&amp;gt; &amp;amp;) to be returned unencoded&lt;/p&gt;
+&lt;p&gt;Causes characters which would normally be encoded as HTML entities (e.g. &lt;code&gt;&amp;amp;&lt;/code&gt; -&amp;gt; &lt;code&gt;&amp;amp;amp;&lt;/code&gt;) to be returned unencoded&lt;/p&gt;
 &lt;h4 id=&#34;exact_filterstruefalse-default-false&#34;&gt;exact_filters=true/false (default false)&lt;/h4&gt;
-&lt;p&gt;If true, filters (see below) will be need to match results exactly instead of using the default ‘contains’ filtering&lt;/p&gt;
+&lt;p&gt;If true, filters (see below) will be need to match results exactly instead of using the default &amp;lsquo;contains&amp;rsquo; filtering&lt;/p&gt;
 &lt;h3 id=&#34;filtering&#34;&gt;Filtering&lt;/h3&gt;
-&lt;p&gt;By specifying exact_filters=true, filters can be supplied to search for a particular record or set of records. For HTTP parameter names, just use the internal agileBase field identifiers. The easiest way of finding these is to right click on a field in the administrator interface using a browser like Chrome, Safari or Firefox and select ‘inspect element’. The identifier will look something like ‘a467b03e93435a25e’.&lt;/p&gt;
-&lt;p&gt;Standard agileBase filtering techniques can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, &amp;gt; and &amp;lt; for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.&lt;/p&gt;
+&lt;p&gt;By specifying exact_filters=true, filters can be supplied to search for a particular record or set of records. For HTTP parameter names, just use the internal agileBase field identifiers. The easiest way of finding these is to right click on a field in the administrator interface using a browser like Chrome, Safari or Firefox and select ‘inspect element’.&lt;/p&gt;
+&lt;p&gt;Standard agileBase quick filters can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, &amp;gt; and &amp;lt; for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.&lt;/p&gt;
 &lt;h3 id=&#34;response-codes&#34;&gt;Response codes&lt;/h3&gt;
 &lt;p&gt;200: request successful&lt;/p&gt;
 &lt;p&gt;401: unauthorised: the API key is missing or incorrect&lt;/p&gt;
 &lt;p&gt;404: not found: an object identifier (company ID, table ID or report ID) was supplied that wasn’t found in the system&lt;/p&gt;
-&lt;p&gt;429: too many requests: the daily API request limit has been exceeded for the view being queried&lt;/p&gt;
+&lt;p&gt;429: too many requests: the frequency of requests is too high, please throttle them back&lt;/p&gt;
 &lt;p&gt;500: some other server error&lt;/p&gt;
 &lt;h3 id=&#34;generate-api-descriptions&#34;&gt;Generate API descriptions&lt;/h3&gt;
 &lt;p&gt;For developers who use the agileBase API to create and update data within agileBase from a third party product, there’s now a way to further automate the process.&lt;/p&gt;
-&lt;p&gt;agileBase will now generate a swagger.io compatible API description of any table you want to post to – that means if you deal with accounts for many agileBase customers, you can with a common query get the API details needed to interact with them.&lt;/p&gt;
+&lt;p&gt;agileBase will now generate a &lt;a href=&#34;https://swagger.io/&#34;&gt;swagger.io&lt;/a&gt; compatible API description of any table you want to post to. That means if you deal with accounts for many agileBase customers, you can with a common query get the API details needed to interact with them.&lt;/p&gt;
 &lt;p&gt;Just make a POST request to&lt;/p&gt;
 &lt;p&gt;/agileBase/Public.ab with parameters&lt;/p&gt;
-&lt;p&gt;c = the company identifier (the table options screen will show this)
-t = the table identifier (similarly shown by the options screen)
-describe_table = true
-and the ‘Authorization’ header set to the API key (if the table requires one).&lt;/p&gt;
-&lt;p&gt;This also makes testing with Postman easier, since Postman can import a Swagger API description – so you don’t have to write a single line of code to test out an API.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;c = the company identifier (the table options screen will show this)&lt;/li&gt;
+&lt;li&gt;t = the table identifier (similarly shown by the options screen)&lt;/li&gt;
+&lt;li&gt;describe_table = true&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and the ‘Authorization’ header set to the API key (if the table requires one).&lt;/p&gt;
+&lt;p&gt;This also makes testing with &lt;a href=&#34;https://www.postman.com/&#34;&gt;Postman&lt;/a&gt; easier, since Postman can import a Swagger API description – so you don’t have to write a single line of code to test out an API.&lt;/p&gt;
 &lt;h2 id=&#34;rss-feed&#34;&gt;RSS Feed&lt;/h2&gt;
-&lt;p&gt;If your PULL API has been enabled for Public access then you can offer 3rd parties the option of accessing the feed via an RSS feed. The link is visible just below the tick box for public access&lt;/p&gt;
+&lt;p&gt;If your PULL API has been enabled for Public access then you can offer 3rd parties the option of accessing the feed via an RSS feed. The link is visible just below the tick box for public access.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-send-rss.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
 
       </description>

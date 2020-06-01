@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Control how third party systems read data from agileBase">
 <meta itemprop="datePublished" content="2020-05-29T12:35:00&#43;01:00" />
 <meta itemprop="dateModified" content="2020-05-29T17:21:41&#43;01:00" />
-<meta itemprop="wordCount" content="1014">
+<meta itemprop="wordCount" content="1000">
 
 
 
@@ -1135,7 +1135,7 @@
 <p>The first step is to create a view in agileBase that contains the data you want to make available to other apps. You can use the standard view creation features of the administrator interface, including adding fields and calculations, sorts and filters.</p>
 </li>
 <li>
-<p>Secondly, turn on the ability for the view to be accessed via a PULL API by going to the <em>manage</em> tab,and within the <em>send</em> section choosing <em>Send daya to a third party system using the API</em>.</p>
+<p>Secondly, turn on the ability for the view to be accessed via a PULL API by going to the <em>manage</em> tab,and within the <em>send</em> section choosing <em>Send data to a third party system using the API</em>.</p>
 </li>
 <li>
 <p>Finally Tick the <em>Allow access from third party software using an API key</em>.</p>
@@ -1153,72 +1153,73 @@ Other parameters to control various options are detailed below.</p>
 <p>Finally, the API key provided needs to be submitted not as a HTTP request parameter, but as a header named ‘Authorization’. This is to reduce the change of it being cached or used in a browser string where it can be easily retained and read by unauthorised users.</p>
 <p>Here’s a complete example of making a request, using PHP in WordPress</p>
 <p>[php]</p>
-<p>$url = &lsquo;<a href="http://appserver.gtportalbase.com/agileBase/Public.ab?get_report_json=true&amp;simple_format=true&amp;t=mytablecode&amp;r=myreportcode&amp;c=mycompanycode&amp;json_format=json';">http://appserver.gtportalbase.com/agileBase/Public.ab?get_report_json=true&amp;simple_format=true&amp;t=mytablecode&amp;r=myreportcode&amp;c=mycompanycode&amp;json_format=json';</a></p>
-<p>$args = array(&lsquo;headers&rsquo; =&gt; array( &lsquo;Authorization&rsquo; =&gt; &lsquo;myauthorisationkey&rsquo;));</p>
-<p>$response = wp_remote_get( $url, $args );</p>
-<p>var_dump($response);</p>
-<p>[/php]</p>
+<pre><code>$url = 'http://appserver.gtportalbase.com/agileBase/Public.ab?get_report_json=true&amp;simple_format=true&amp;t=mytablecode&amp;r=myreportcode&amp;c=mycompanycode&amp;json_format=json';
+
+$args = array('headers' =&gt; array( 'Authorization' =&gt; 'myauthorisationkey'));
+
+$response = wp_remote_get( $url, $args );
+
+var_dump($response);
+</code></pre><p>[/php]</p>
 <p>Sample output would look like</p>
-<p>[
-{
-forename: &ldquo;Oliver&rdquo;,
-surname: &ldquo;Kohll&rdquo;,
-email_address: &ldquo;oliver@
-agilebase.co.uk</p>
-<p>&quot;
-},
-{
-forename: &ldquo;Simon&rdquo;,
-surname: &ldquo;Minton&rdquo;,
-email_address: &ldquo;simon@
-agilebase.co.uk</p>
-<p>&quot;
-},
-{
-forename: &ldquo;Cliff&rdquo;,
-surname: &ldquo;Calcutt&rdquo;,
-email_address: &ldquo;cliff@
-agilebase.co.uk</p>
-<p>&quot;
-}
-]</p>
-<p>of course the fields being those returned for the particular view chosen.</p>
+<pre><code>[
+  {
+    forename: &quot;Oliver&quot;,
+    surname: &quot;Kohll&quot;,
+    email_address: &quot;oliver@agilebase.co.uk&quot;
+  },
+  {
+    forename: &quot;Simon&quot;,
+    surname: &quot;Minton&quot;,
+    email_address: &quot;simon@agilebase.co.uk&quot;
+  },
+  {
+    forename: &quot;Cliff&quot;,
+    surname: &quot;Calcutt&quot;,
+    email_address: &quot;cliff@agilebase.co.uk&quot;
+  }
+]
+</code></pre><ul>
+<li>of course the fields being those returned for the particular view chosen.</li>
+</ul>
 <h3 id="request-options">Request options</h3>
 <p>Here are the options that can be provided as parameters to the request, along with the c, t and r identifiers and in addition to get_report_json=true.</p>
 <h4 id="simple_formattruefalse-default-false">simple_format=true/false (default false)</h4>
 <p>This option controls the JSON format returned. With simple_format=true, the response will be a simple array of objects, each containing keys for the field namesm as above. Keys are basically lowercase field names with spaces replaced by underscores, so “Email address” would become “email_address”
-With simple_format=false, a more complex but more robust format it used. Rather than field names, internal agileBase field identifiers are used as keys. This has the advantage that if the field names are changed (easy for an agileBase administrator to do), the JSON will remain the same. The first object in the JSON will be a dictionary mapping internal identifier to field name</p>
+With simple_format=false, a more complex but more robust format it used. Rather than field names, internal agileBase field identifiers are used as keys. This has the advantage that if the field names are changed (easy for an agileBase administrator to do), the JSON will remain the same. The first object in the JSON will be a dictionary mapping internal identifier to field name.</p>
 <h4 id="json_formatjson">json_format=json</h4>
-<p>With this option, just the JSON will be returned. This is the usual case required. Without it, complete Javascript will be returned defining the JSON as an object, i.e.var abJson=[…]which can be useful if you want to run the result as Javascript</p>
+<p>With this option, just the JSON will be returned. This is the usual case required. Without it, complete Javascript will be returned defining the JSON as an object, i.e. <code>var abJson=[…]</code> which can be useful if you want to run the result as Javascript.</p>
 <h4 id="returnposted_json">return=posted_json</h4>
-<p>Optional, if this is included, the return content will be JSON including the ID of the record as well as the full content of the data</p>
+<p>Optional, if this is included, the return content will be JSON including the ID of the record as well as the full content of the data.</p>
 <h4 id="cache_secondsseconds">cache_seconds=[seconds]</h4>
-<p>How long to cache the results for (default 600 seconds or 10 minutes). Only un-filtered results are cached</p>
+<p>How long to cache the results for (default 600 seconds or 10 minutes). Only un-filtered results are cached.</p>
 <h4 id="unencode_htmltrue">unencode_html=true</h4>
-<p>Causes characters which would normally be encoded as HTML entities (e.g. &amp; -&gt; &amp;) to be returned unencoded</p>
+<p>Causes characters which would normally be encoded as HTML entities (e.g. <code>&amp;</code> -&gt; <code>&amp;amp;</code>) to be returned unencoded</p>
 <h4 id="exact_filterstruefalse-default-false">exact_filters=true/false (default false)</h4>
-<p>If true, filters (see below) will be need to match results exactly instead of using the default ‘contains’ filtering</p>
+<p>If true, filters (see below) will be need to match results exactly instead of using the default &lsquo;contains&rsquo; filtering</p>
 <h3 id="filtering">Filtering</h3>
-<p>By specifying exact_filters=true, filters can be supplied to search for a particular record or set of records. For HTTP parameter names, just use the internal agileBase field identifiers. The easiest way of finding these is to right click on a field in the administrator interface using a browser like Chrome, Safari or Firefox and select ‘inspect element’. The identifier will look something like ‘a467b03e93435a25e’.</p>
-<p>Standard agileBase filtering techniques can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, &gt; and &lt; for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.</p>
+<p>By specifying exact_filters=true, filters can be supplied to search for a particular record or set of records. For HTTP parameter names, just use the internal agileBase field identifiers. The easiest way of finding these is to right click on a field in the administrator interface using a browser like Chrome, Safari or Firefox and select ‘inspect element’.</p>
+<p>Standard agileBase quick filters can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, &gt; and &lt; for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.</p>
 <h3 id="response-codes">Response codes</h3>
 <p>200: request successful</p>
 <p>401: unauthorised: the API key is missing or incorrect</p>
 <p>404: not found: an object identifier (company ID, table ID or report ID) was supplied that wasn’t found in the system</p>
-<p>429: too many requests: the daily API request limit has been exceeded for the view being queried</p>
+<p>429: too many requests: the frequency of requests is too high, please throttle them back</p>
 <p>500: some other server error</p>
 <h3 id="generate-api-descriptions">Generate API descriptions</h3>
 <p>For developers who use the agileBase API to create and update data within agileBase from a third party product, there’s now a way to further automate the process.</p>
-<p>agileBase will now generate a swagger.io compatible API description of any table you want to post to – that means if you deal with accounts for many agileBase customers, you can with a common query get the API details needed to interact with them.</p>
+<p>agileBase will now generate a <a href="https://swagger.io/">swagger.io</a> compatible API description of any table you want to post to. That means if you deal with accounts for many agileBase customers, you can with a common query get the API details needed to interact with them.</p>
 <p>Just make a POST request to</p>
 <p>/agileBase/Public.ab with parameters</p>
-<p>c = the company identifier (the table options screen will show this)
-t = the table identifier (similarly shown by the options screen)
-describe_table = true
-and the ‘Authorization’ header set to the API key (if the table requires one).</p>
-<p>This also makes testing with Postman easier, since Postman can import a Swagger API description – so you don’t have to write a single line of code to test out an API.</p>
+<ul>
+<li>c = the company identifier (the table options screen will show this)</li>
+<li>t = the table identifier (similarly shown by the options screen)</li>
+<li>describe_table = true</li>
+</ul>
+<p>and the ‘Authorization’ header set to the API key (if the table requires one).</p>
+<p>This also makes testing with <a href="https://www.postman.com/">Postman</a> easier, since Postman can import a Swagger API description – so you don’t have to write a single line of code to test out an API.</p>
 <h2 id="rss-feed">RSS Feed</h2>
-<p>If your PULL API has been enabled for Public access then you can offer 3rd parties the option of accessing the feed via an RSS feed. The link is visible just below the tick box for public access</p>
+<p>If your PULL API has been enabled for Public access then you can offer 3rd parties the option of accessing the feed via an RSS feed. The link is visible just below the tick box for public access.</p>
 <p><img src="/workflow-send-rss.png" alt="Configuring the PULL API"></p>
 
 	
