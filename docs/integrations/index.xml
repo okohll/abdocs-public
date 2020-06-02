@@ -393,5 +393,20 @@ With simple_format=false, a more complex but more robust format it used. Rather 
       </description>
     </item>
     
+    <item>
+      <title>Docs: Slack integration</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/slack-integration/</link>
+      <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/slack-integration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When a comment is added to a record in agileBase, a copy can be sent to your Slack workspace, to a specific channel appropriate to the tile. Instructions are in progress, in the meantime please &lt;a href=&#34;mailto:support@agilechilli.com&#34;&gt;contact us&lt;/a&gt; for help setting this up.&lt;/p&gt;
+&lt;p&gt;Integration with Microsoft Teams or other similar services is also possible should a customer wish - please get in touch if so.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
