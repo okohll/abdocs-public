@@ -1128,18 +1128,18 @@ choose a minimum interval to wait between pushes</li>
 <p><img src="/workflow-push.png" alt="Configuring the PUSH API"></p>
 <h3 id="selecting-data-to-push">Selecting data to push</h3>
 <p>How do we know which data is new and wants to be sent out via the API?</p>
-<p>That’s up to you – any filters can be added to the view to select data you want. Commonly, you’d use the date/time field set up in step 3. When a push successfully completes, every record in the view has this field set to the current time.</p>
+<p>That’s up to you - any filters can be added to the view to select data you want. Commonly, you’d use the date/time field set up in step 3. When a push successfully completes, every record in the view has this field set to the current time.</p>
 <blockquote>
 <p>Note: if the push encounters an error for any reason, say the third party system returns a HTTP error code rather than the expected ‘200’ code for success, the timestamp won’t be set.</p>
 </blockquote>
 <p>A few common scenarios would be:</p>
 <h4 id="pushing-any-data-modified-since-it-was-last-pushed">Pushing any data modified since it was last pushed</h4>
 <p>To do this, add a boolean calculation to your view, something like</p>
-<p><code>needs pushing = {last modified [auto]} &gt; {last pushed}</code></p>
+<p>needs pushing = <code>{last modified [auto]} &gt; {last pushed}</code></p>
 <p>where ‘last pushed’ is the name of the timestamp field you added in step 3 above.</p>
-<p>Then add a filter on the view ‘needs pushing equals true’</p>
+<p>Then add a filter on the view ‘needs pushing equals true’.</p>
 <h4 id="pushing-any-new-rows-that-have-never-been-pushed-before">Pushing any new rows that have never been pushed before</h4>
-<p>For this scenario, simply add a filter to the view ‘last pushed is empty’</p>
+<p>For this scenario, simply add a filter to the view ‘last pushed is empty’.</p>
 <h4 id="pushing-only-rows-not-yet-marked-as-received">Pushing only rows not yet marked as received</h4>
 <p>In some cases, you may want to be even more prudent than using the internal timestamp. The third party system could make a separate API call to agileBase for every row that’s received, telling it to update the row with an ID to prove receipt. That’s more API calls of course, but some situations may warrant it.</p>
 

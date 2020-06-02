@@ -30,7 +30,7 @@
 <meta itemprop="description" content="A powerful automation feature that can synchronise data with a third party calendar.">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
 <meta itemprop="dateModified" content="2020-05-29T15:40:52&#43;01:00" />
-<meta itemprop="wordCount" content="992">
+<meta itemprop="wordCount" content="1035">
 
 
 
@@ -1069,6 +1069,14 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-requisites">Pre-requisites</a></li>
+    <li><a href="#incoming-data">Incoming data</a></li>
+    <li><a href="#outgoing-data">Outgoing data</a></li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -1115,42 +1123,68 @@
 	<h1>Setting up the Calendar API</h1>
     <div class="lead">A powerful automation feature that can synchronise data with a third party calendar.</div>
 	       
-	<p>If a view contains a date field, the data in it can by synchronised with an external calendar application, e.g. Google Calendar, a mobile phone calendar, Outlook or the iPad.</p>
-<p>If it contains two date fields, the first will be used for the start date/time, the second for the  finish.</p>
-<p>Once set up, the link will be maintained and the calendar will update whenever the data in agileBase is updated. The synchonisation is one way, i.e. updating agileBase will change the calendar view but you can’t edit the calendar to update agileBase. In other words, agileBase is the ‘master’ copy.</p>
-<p>To set up a link, in the admin interface, go to a view’s manage tab, tick the checkbox to allow synchronisation and follow the instructions.</p>
-<h2 id="direct-google-calendar-synchronisation">Direct Google Calendar synchronisation</h2>
-<p>When people want to synchronise events to their Google calendars, we usually use the third party <a href="http://www.zapier.com">http://www.zapier.com</a> who we have a built in integration with. They have a great service which allows you to push data to hundreds of other cloud apps, including Google calendars.</p>
-<p>The only downside is that it’s a one-time sync only: once an event has gone across, any changes made in agileBase won’t be reflected in Google, say if the date/time or any other details of the event change.</p>
-<p>To combat that, we’ve now made a more fully featured direct integration between the two services. With the new system, not only will changes made in agileBase synchronise to Google whenever an event is updated, but the event in Google will also contain a link back to the record that created it in agileBase. Just clicking on the event will take you to the right meeting, lead, sale, document or whatever created the calendar entry.</p>
-<p>Updating an event in agileBase will trigger a push notification to Google calendar. This can happen between ‘immediately’ and up to ten minutes after the event (for demand levelling) but should take no longer than that.</p>
-<p>How to set up a direct calendar integration</p>
-<p>Firstly, contact us to enable the service. Although you’ll no longer need to pay Zapier integration fees, you will need to agree a contract that covers your usage as regular push notifications require resources and potentially Google fees. You will also need a ‘Google Apps for my domain’ account.</p>
-<p>Once enabled, the configuration has a number of steps but is reasonably straightforward. If you like, we’d be happy to set up your calendars on your behalf as consultancy/support, please contact us if you’d like us to do this. If you’d like to crack on yourselves, here are the steps:</p>
-<p>Add some necessary fields to the table
-In the table that the events come from, create a text field called “Google Event ID” (the name needs to be exact). This will be used by the system to store internal IDs to help with the synchronisation process.
-Create a date/time field (with accuracy SECOND) to store the synchronisation time. Call it something like “Last synchronised”. This will be used by the system to record when the event was last sync’d, also to help with the details of the process.
-Set up a new view
-Create a new view from the table. This view will be configured to show all events that need to be synchronised with a single Google calendar
-We recommend creating a new module e.g. “Google Calendars” to store views that sync with Google.
-Add a date field or calculation into the view. The first date field in the view will be used as the event’s start date
-Optionally, add a second date/time field to be used as an end date. If you don’t, the end date will be set to the start date for whole day events, or the start date plus an hour for events with a time
-Add a text field / calc to be used as the event title in Google
-Optionally, add a text field / calc for the location. Any postal address recognisable to Google can be used. The simplest option is just to use a postcode.
-Optionally add a text field for the event description
-Finally, add the field “Google Event ID” that you created (see above) to the view
-Add some filters to choose the events to sync
-Typically, add a filter to hide events in the past. There’s not often any point in updating events which have already come and gone. Excessive updates may incur additional fees from Google.
-e.g. Start Date newer than 0 days ago
-Only show events which need to be created or updated in Google. Reference the “Last Notified” field you created in step 1. The easiest way is to create a calculation likeTo Sync (boolean) = {last notified} IS NULL OR {last modified [auto]} &gt; {last notified}Then add the filter “To Sync = true”
-This will ensure only newly created events, or events which have been modified since the last sync, will be included
-Connect to a Google calendar
-In the view’s manage tab, click Sync
-Under Google Account Integration, type in your email address (this address must be associated with a “Google Apps for my domain” account. Refresh the screen
-Under your email address, a dropdown list of your Google calendars will appear. Select the one you want to send events to and refresh the screen.
-For the setting “Synchronisation time field”, select the field that you set up in step 1, e.g. “Last Synchronised”
-Refreshing the screen will now show a list of which fields will be used for which parts of the event, e.g. start, location, description etc. so you can check all the fields are in the right order in the view
-Finally, create a new record, wait up to 10 minutes then take a look at your Google calendar to check that it’s gone across! Note, when looking at the event details in Google, you’ll be able to click the agileBase source link which will take you directly to the original record.</p>
+	<p>If a view contains a date field, the data in it can by synchronised with an external calendar application, e.g. Google Calendar, Microsoft Office 365, Apple calendars etc.</p>
+<p>If it contains two date fields, the first will be used for the start date/time, the second for the finish.</p>
+<p>Once set up, the link will be maintained and the calendar will update whenever the data in agileBase is updated, or vice versa. The synchonisation can be set up to be two-way (to and from agileBase), or just one way (either two or from agileBase)</p>
+<h2 id="pre-requisites">Pre-requisites</h2>
+<p>agileBase uses <a href="https://oauth.net/">OAuth</a>, an industry standard protocol, to synchronize with your calendar system of choice.</p>
+<p>Under this protocol, each person will need to individually grant agileBase permission to send data to, and view events in their calendar. Luckily, this is a straightforward process: as a user,</p>
+<ol>
+<li>Click on your user icon at the top right of the screen</li>
+<li>Click the <em>connect calendar</em> link</li>
+</ol>
+<p>You will see a calendar selector screen like this:</p>
+<p><img src="/cronofy.png" alt="Cronofy"></p>
+<p>Choose the calendar system you use and follow through the prompt to allow access.</p>
+<h2 id="incoming-data">Incoming data</h2>
+<p>Once users have connected their calendars, data can be received into agileBase whenever an event is created, edited or deleted in the external calendar. We need to set up two new tables so the system can receive these events. One is a table for the event data itself, the other stores the list of calendars in the user&rsquo;s account. One calendar account may contain multiple calendars, e.g. a user may have separate calendars set up for bookings, sales visits, holidays etc. - typically they display in different colours on the screen.</p>
+<p>The main reason for recording the calendar list is so that the correct calendar can be chosen to send events to, when we come to send events from agileBase (see below).</p>
+<p>To set up these tables, follow this process:</p>
+<ol>
+<li>Create a table called <code>ab calendar intray</code>. It can have a prefix if you like, e.g. <code>z) ab calendar intray</code></li>
+<li>Add the following <strong>text</strong> fields: <code>person</code>, <code>calendar id</code>, <code>calendar name</code>, <code>event id</code>, <code>summary</code>, <code>description</code>, <code>location</code>, <code>participation status</code>, <code>event status</code>, <code>categories</code>, <code>attendees</code></li>
+<li>Add the following <strong>date</strong> fields: <code>start</code>, <code>end</code>, <code>created</code> (accurate to the second), <code>updated</code> (accurate to the second)</li>
+<li>Add a <strong>checkbox</strong> field, <code>deleted</code></li>
+</ol>
+<p>and for the calendar mapping table:</p>
+<ol>
+<li>Create a table called <code>ab calendar mapping</code>. Again, you can prefix it, e.g. <code>z) ab calendar mapping</code></li>
+<li>Add <strong>text</strong> fields: <code>username</code>, <code>calendar id</code>, <code>owner</code>, <code>calendar name</code>, <code>provider</code>, <code>profile id</code>, <code>profile name</code>, <code>permission level</code></li>
+<li>Add two <strong>checkbox</strong> fields called: <code>read only</code>, <code>primary</code></li>
+</ol>
+<p>The easiest way to understand the meaning of all the fields is simply to connect your calendar as above, create these tables and add some events to your third party calendar - create new events, update them and delete them, watching the data flow into the tables. New data will usually take no more than a few seconds to appear.</p>
+<blockquote>
+<p>Different third party calendar systems may use some fields in slighlty different ways. For example, at the time of writing, Google Calendar does not support the <code>categories</code> field but some other calendar systems do use this to show tags you may have added to your events.</p>
+</blockquote>
+<p>Once you have data successfully flowing into the system, a common next step is to move the incoming events into tables which make sense for your particular business needs. For example, if you have a team of salespeople, you may move incoming bookings into a &lsquo;leads&rsquo; table. What you do with the data will depend on your particular circumstances.</p>
+<p>You can use <a href="/docs/workflows/">automated worflows</a> to copy data from one table to another if necessary.</p>
+<p>However, you could also simply create views from the &lsquo;ab calendar intray&rsquo; table to allow users to view these events directly. Adding a filter to the user on the &lsquo;person&rsquo; field will ensure a user will only see their own events -see [users -&gt; restrict data access]({{relref &ldquo;/docs/security-and-compliance/security-features/users#restrict-data-access&rdquo;}})</p>
+<blockquote>
+<p>Please be aware of potential data privacy concerns when setting up calendar synchronisation. All events a user creates or modifies in any of the calendars in their connected account will send to agileBase. As an administrator, you may wish to set up specific work calendar accounts for your users, distinct from any personal accounts they may use.</p>
+</blockquote>
+<h2 id="outgoing-data">Outgoing data</h2>
+<p>As well as receiving data in, you can send either new or modified events from agileBase to users&rsquo; connected calendars.</p>
+<p>New events are those created in agileBase, modified events are those created externally which have come into the system via the incoming data method above, but which have then been updated in agileBase.</p>
+<p>To set this up</p>
+<ol>
+<li><a href="/docs/views/">Create a view</a> to show the events to send to the calendar.</li>
+<li>Add any relevant <a href="/docs/views/filters/">filters</a> to the view, so it only shows events which need to be sent, not <strong>all</strong> events.</li>
+<li>In the view&rsquo;s <em>manage</em> tab, show the <em>Send</em> panel. Select <em>send data to an external calendar</em></li>
+<li>Tick <em>Send events to calendar</em> to activate the view and add the fields shown. These are
+<ul>
+<li><strong>text fields</strong>: <code>calendar id</code>, <code>event id</code>, <code>calendar owner</code>, <code>title</code>, <code>description</code>, <code>location</code>, <code>attendees</code></li>
+<li>a <strong>whole number field</strong>: <code>reminder minutes</code> - a number of minutes before the event when the calendar should alert you</li>
+<li>two <strong>date fields</strong>: the first date/time field in the view will be used as the event&rsquo;s start date/time, the next the end date/time (if applicable)</li>
+</ul>
+</li>
+</ol>
+<p>Some of these fields deserve additional explanations:</p>
+<ul>
+<li><strong>calendar id</strong>: identifies the particular calendar within the user&rsquo;s connected account to send events to. This is the same calendar ID used in the &lsquo;ab calendar mapping&rsquo; table above, so can be looked up from there, perhaps by joining to the table.</li>
+<li><strong>event id</strong>: if you&rsquo;re creating a new event, leave this blank. If the event was created externally, or you&rsquo;re updating an existing event, use the event ID as listed in the &lsquo;ab calendar intray&rsquo; record for it.</li>
+<li><strong>calendar owner</strong>: the ID of the agileBase user - this will be used to determine the person who&rsquo;se linked calendar the event should be sent to. The standarg agileBase format is used &lsquo;Forename Surname (username)', so you can use the automatic field &lsquo;Created By [auto]&rsquo; if you like.</li>
+<li><strong>attendees</strong>: a comma separated list of email addresses of people who should be invited</li>
+</ul>
 
 	
 		<style>
