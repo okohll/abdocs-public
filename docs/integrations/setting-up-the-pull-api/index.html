@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.71.1" />
+<meta name="generator" content="Hugo 0.72.0" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Control how third party systems read data from agileBase">
 <meta itemprop="datePublished" content="2020-05-29T12:35:00&#43;01:00" />
 <meta itemprop="dateModified" content="2020-06-01T18:56:53&#43;01:00" />
-<meta itemprop="wordCount" content="1000">
+<meta itemprop="wordCount" content="1027">
 
 
 
@@ -882,6 +882,18 @@
       <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsintegrationssetting-up-the-pull-api" href="/docs/integrations/setting-up-the-pull-api/">Setting up the PULL API</a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsintegrationspush-example-zapier" href="/docs/integrations/push-example-zapier/">PUSH API worked example - Zapier</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsintegrationspull-example-power-bi" href="/docs/integrations/pull-example-power-bi/">PULL API worked example - Power BI</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -1197,6 +1209,8 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 <p>Causes characters which would normally be encoded as HTML entities (e.g. <code>&amp;</code> -&gt; <code>&amp;amp;</code>) to be returned unencoded</p>
 <h4 id="exact_filterstruefalse-default-false">exact_filters=true/false (default false)</h4>
 <p>If true, filters (see below) will be need to match results exactly instead of using the default &lsquo;contains&rsquo; filtering</p>
+<h4 id="row_limitrow-limit">row_limit=[row limit]</h4>
+<p>The default limit on the number of records to ruturn is 10,000. Add this parameter to change this. Note the hard maximum allowed is 100,000.</p>
 <h3 id="filtering">Filtering</h3>
 <p>By specifying exact_filters=true, filters can be supplied to search for a particular record or set of records. For HTTP parameter names, just use the internal agileBase field identifiers. The easiest way of finding these is to right click on a field in the administrator interface using a browser like Chrome, Safari or Firefox and select ‘inspect element’.</p>
 <p>Standard agileBase quick filters can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, &gt; and &lt; for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.</p>

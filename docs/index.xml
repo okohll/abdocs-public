@@ -480,7 +480,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
         
         
         &lt;h2 id=&#34;capitalise-field-name&#34;&gt;Capitalise field name&lt;/h2&gt;
-&lt;p&gt;By default agileBase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. &amp;lsquo;pH&amp;rsquo; or &amp;lsquo;Length (m)&#39;, which would otherwise show as &amp;lsquo;PH&amp;rsquo; and &amp;lsquo;Length (M)&#39;.&lt;/p&gt;
+&lt;p&gt;By default agileBase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. &amp;lsquo;pH&amp;rsquo; or &amp;lsquo;Length (m)&amp;rsquo;, which would otherwise show as &amp;lsquo;PH&amp;rsquo; and &amp;lsquo;Length (M)&amp;rsquo;.&lt;/p&gt;
 &lt;h2 id=&#34;icon&#34;&gt;Icon&lt;/h2&gt;
 &lt;p&gt;Rather than displaying a field name, show an icon, chosen from &lt;a href=&#34;https://fontawesome.com/icons&#34;&gt;https://fontawesome.com/icons&lt;/a&gt;. For example, to show a phone icon for a phone number field, you could enter &lt;code&gt;phone&lt;/code&gt;, for an email field &lt;code&gt;envelope&lt;/code&gt; or a twitter handle &lt;code&gt;twitter&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;show-if-record-in-view&#34;&gt;Show if record in view&lt;/h2&gt;
@@ -736,7 +736,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;If the list &lt;strong&gt;starts with&lt;/strong&gt; a comma, that means the field should be blank by default when a record is created. If not, then the default will be the first value in the comma separated list.&lt;/p&gt;
 &lt;p&gt;In the dropdown/tags list, the options will be ordered alphabetically, not shown in the order they&amp;rsquo;re entered in. If you wish to give the values a particular order, you can prefix them with a number or letter followed by a closing bracket like so: &lt;code&gt;1) cold, 2) warm, 3) hot&lt;/code&gt;. The number prefixes won&amp;rsquo;t show to the user.&lt;/p&gt;
 &lt;h4 id=&#34;lists-of-users&#34;&gt;Lists of users&lt;/h4&gt;
-&lt;p&gt;Also for dropdown lists and tags fields, agileBase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select &lt;code&gt;users&lt;/code&gt; or &lt;code&gt;users and roles&lt;/code&gt; from the &amp;lsquo;fill with&amp;rsquo; selector just below the default value input. The standard user ID format throughout the system is used, &amp;lsquo;Forename Surname (username)&#39;.&lt;/p&gt;
+&lt;p&gt;Also for dropdown lists and tags fields, agileBase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select &lt;code&gt;users&lt;/code&gt; or &lt;code&gt;users and roles&lt;/code&gt; from the &amp;lsquo;fill with&amp;rsquo; selector just below the default value input. The standard user ID format throughout the system is used, &amp;lsquo;Forename Surname (username)&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;Only users/roles which have privileges to view the data in this particular table will be shown in the list. That can keep things manageable if a system has hundreds or more users.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;An example use would be assigning an account manager to a customer, selecting from a list of staff members (who are users).&lt;/p&gt;
@@ -1836,168 +1836,6 @@ and a video introduction to the concept here:&lt;/p&gt;
     </item>
     
     <item>
-      <title>Docs: Setting up the Calendar API</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-calandar-push/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-calandar-push/</guid>
-      <description>
-        
-        
-        &lt;p&gt;If a view contains a date field, the data in it can by synchronised with an external calendar application, e.g. Google Calendar, Microsoft Office 365, Apple calendars etc.&lt;/p&gt;
-&lt;p&gt;If it contains two date fields, the first will be used for the start date/time, the second for the finish.&lt;/p&gt;
-&lt;p&gt;Once set up, the link will be maintained and the calendar will update whenever the data in agileBase is updated, or vice versa. The synchonisation can be set up to be two-way (to and from agileBase), or just one way (either two or from agileBase)&lt;/p&gt;
-&lt;h2 id=&#34;pre-requisites&#34;&gt;Pre-requisites&lt;/h2&gt;
-&lt;p&gt;agileBase uses &lt;a href=&#34;https://oauth.net/&#34;&gt;OAuth&lt;/a&gt;, an industry standard protocol, to synchronize with your calendar system of choice.&lt;/p&gt;
-&lt;p&gt;Under this protocol, each person will need to individually grant agileBase permission to send data to, and view events in their calendar. This is a straightforward process: as a user,&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Click on your user icon at the top right of the screen&lt;/li&gt;
-&lt;li&gt;Select &lt;em&gt;edit profile&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Click the &lt;em&gt;connect calendar&lt;/em&gt; link&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;You will see a calendar selector screen like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/cronofy.png&#34; alt=&#34;Cronofy&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Choose the calendar system you use and follow through the prompt to allow access.&lt;/p&gt;
-&lt;h2 id=&#34;incoming-data&#34;&gt;Incoming data&lt;/h2&gt;
-&lt;p&gt;Once users have connected their calendars, data can be received into agileBase whenever an event is created, edited or deleted in the external calendar. We need to set up two new tables so the system can receive these events. One is a table for the event data itself, the other stores the list of calendars in the user&amp;rsquo;s account. One calendar account may contain multiple calendars, e.g. a user may have separate calendars set up for bookings, sales visits, holidays etc. - typically they display in different colours on the screen.&lt;/p&gt;
-&lt;p&gt;The main reason for recording the calendar list is so that the correct calendar can be chosen to send events to, when we come to send events from agileBase (see below).&lt;/p&gt;
-&lt;p&gt;To set up these tables, follow this process:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create a table called &lt;code&gt;ab calendar intray&lt;/code&gt;. It can have a prefix if you like, e.g. &lt;code&gt;z) ab calendar intray&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add the following &lt;strong&gt;text&lt;/strong&gt; fields: &lt;code&gt;person&lt;/code&gt;, &lt;code&gt;calendar id&lt;/code&gt;, &lt;code&gt;calendar name&lt;/code&gt;, &lt;code&gt;event id&lt;/code&gt;, &lt;code&gt;summary&lt;/code&gt;, &lt;code&gt;description&lt;/code&gt;, &lt;code&gt;location&lt;/code&gt;, &lt;code&gt;participation status&lt;/code&gt;, &lt;code&gt;event status&lt;/code&gt;, &lt;code&gt;categories&lt;/code&gt;, &lt;code&gt;attendees&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add the following &lt;strong&gt;date&lt;/strong&gt; fields: &lt;code&gt;start&lt;/code&gt;, &lt;code&gt;end&lt;/code&gt;, &lt;code&gt;created&lt;/code&gt; (accurate to the second), &lt;code&gt;updated&lt;/code&gt; (accurate to the second)&lt;/li&gt;
-&lt;li&gt;Add a &lt;strong&gt;checkbox&lt;/strong&gt; field, &lt;code&gt;deleted&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;and for the calendar mapping table:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create a table called &lt;code&gt;ab calendar mapping&lt;/code&gt;. Again, you can prefix it, e.g. &lt;code&gt;z) ab calendar mapping&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add &lt;strong&gt;text&lt;/strong&gt; fields: &lt;code&gt;username&lt;/code&gt;, &lt;code&gt;calendar id&lt;/code&gt;, &lt;code&gt;owner&lt;/code&gt;, &lt;code&gt;calendar name&lt;/code&gt;, &lt;code&gt;provider&lt;/code&gt;, &lt;code&gt;profile id&lt;/code&gt;, &lt;code&gt;profile name&lt;/code&gt;, &lt;code&gt;permission level&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add two &lt;strong&gt;checkbox&lt;/strong&gt; fields called: &lt;code&gt;read only&lt;/code&gt;, &lt;code&gt;primary&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The easiest way to understand the meaning of all the fields is simply to connect your calendar as above, create these tables and add some events to your third party calendar - create new events, update them and delete them, watching the data flow into the tables. New data will usually take no more than a few seconds to appear.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Different third party calendar systems may use some fields in slighlty different ways. For example, at the time of writing, Google Calendar does not support the &lt;code&gt;categories&lt;/code&gt; field but some other calendar systems do use this to show tags you may have added to your events.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Once you have data successfully flowing into the system, a common next step is to move the incoming events into tables which make sense for your particular business needs. For example, if you have a team of salespeople, you may move incoming bookings into a &amp;lsquo;leads&amp;rsquo; table. What you do with the data will depend on your particular circumstances.&lt;/p&gt;
-&lt;p&gt;You can use &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;automated worflows&lt;/a&gt; to copy data from one table to another if necessary.&lt;/p&gt;
-&lt;p&gt;However, you could also simply create views from the &amp;lsquo;ab calendar intray&amp;rsquo; table to allow users to view these events directly. Adding a filter to the user on the &amp;lsquo;person&amp;rsquo; field will ensure a user will only see their own events -see [users - restrict data access]({{relref &amp;ldquo;/docs/security-and-compliance/security-features/users#restrict-data-access&amp;rdquo;}})&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Please be aware of potential data privacy concerns when setting up calendar synchronisation. All events a user creates or modifies in any of the calendars in their connected account will send to agileBase. As an administrator, you may wish to set up specific work calendar accounts for your users, distinct from any personal accounts they may use.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;outgoing-data&#34;&gt;Outgoing data&lt;/h2&gt;
-&lt;p&gt;As well as receiving data in, you can send either new or modified events from agileBase to users&amp;rsquo; connected calendars.&lt;/p&gt;
-&lt;p&gt;New events are those created in agileBase, modified events are those created externally which have come into the system via the incoming data method above, but which have then been updated in agileBase.&lt;/p&gt;
-&lt;p&gt;To set this up&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;Create a view&lt;/a&gt; to show the events to send to the calendar.&lt;/li&gt;
-&lt;li&gt;Add any relevant &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;filters&lt;/a&gt; to the view, so it only shows events which need to be sent, not &lt;strong&gt;all&lt;/strong&gt; events.&lt;/li&gt;
-&lt;li&gt;In the view&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab, show the &lt;em&gt;Send&lt;/em&gt; panel. Select &lt;em&gt;send data to an external calendar&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Tick &lt;em&gt;Send events to calendar&lt;/em&gt; to activate the view and add the fields shown. These are
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;text fields&lt;/strong&gt;: &lt;code&gt;calendar id&lt;/code&gt;, &lt;code&gt;event id&lt;/code&gt;, &lt;code&gt;calendar owner&lt;/code&gt;, &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;description&lt;/code&gt;, &lt;code&gt;location&lt;/code&gt;, &lt;code&gt;attendees&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;a &lt;strong&gt;whole number field&lt;/strong&gt;: &lt;code&gt;reminder minutes&lt;/code&gt; - a number of minutes before the event when the calendar should alert you&lt;/li&gt;
-&lt;li&gt;two &lt;strong&gt;date fields&lt;/strong&gt;: the first date/time field in the view will be used as the event&amp;rsquo;s start date/time, the next the end date/time (if applicable)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Some of these fields deserve additional explanations:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;calendar id&lt;/strong&gt;: identifies the particular calendar within the user&amp;rsquo;s connected account to send events to. This is the same calendar ID used in the &amp;lsquo;ab calendar mapping&amp;rsquo; table above, so can be looked up from there, perhaps by joining to the table.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;event id&lt;/strong&gt;: if you&amp;rsquo;re creating a new event, leave this blank. If the event was created externally, or you&amp;rsquo;re updating an existing event, use the event ID as listed in the &amp;lsquo;ab calendar intray&amp;rsquo; record for it.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;calendar owner&lt;/strong&gt;: the ID of the agileBase user - this will be used to determine the person who&amp;rsquo;se linked calendar the event should be sent to. The standard agileBase format is used &amp;lsquo;Forename Surname (username)&#39;, so you can use the automatic field &amp;lsquo;Created By [auto]&amp;rsquo; if you like.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;attendees&lt;/strong&gt;: a comma separated list of email addresses of people who should be invited&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Setting up the POST API</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Firstly, identify the Table into which you wish to recieve incoming data.
-Go to that table&amp;rsquo;s manage taband press ‘options’. Tick ‘public data entry’.&lt;/p&gt;
-&lt;p&gt;To protect the system from spam input, we also suggest you tick ‘Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
-&lt;p&gt;Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming-data-api.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;creating-new-records&#34;&gt;Creating new records&lt;/h2&gt;
-&lt;p&gt;Clicking the ‘sample form’ link will then show a sample form which can be used for testing or to copy code from.&lt;/p&gt;
-&lt;p&gt;If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;save_new_record=true&lt;/li&gt;
-&lt;li&gt;c=[internalcompanyid]&lt;/li&gt;
-&lt;li&gt;t=[internaltableid]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The post URL is&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The form needs to be posted using the method POST.&lt;/p&gt;
-&lt;p&gt;Remember also to set the ‘Authorization’ HTTP header if that option has been selected.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;NB: To get the details of data posted into the database, please also supply the parameter &lt;em&gt;return=posted_json&lt;/em&gt; This will include the internal row ID of the newly inserted record.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;API use can be tested using a tool such as &lt;a href=&#34;https://www.postman.com&#34;&gt;Postman&lt;/a&gt; tool.&lt;/p&gt;
-&lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
-&lt;p&gt;The process is similar, but instead of &lt;em&gt;save_new_record=true&lt;/em&gt;, supply&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;update_record=true&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;row_id=[internal id of the record]&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The internal record ID can be got from a JSON feed or by using the &lt;em&gt;return=posted_json&lt;/em&gt; as above if editing a record previously created using the API.&lt;/p&gt;
-&lt;h3 id=&#34;http-response-codes&#34;&gt;HTTP response codes&lt;/h3&gt;
-&lt;p&gt;401: unauthorised: the API key is missing or invalid&lt;/p&gt;
-&lt;p&gt;429: too many requests: the frequency of requests is too high, please throttle them back&lt;/p&gt;
-&lt;p&gt;507: insufficient storage: when creating a record, the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity.&lt;/p&gt;
-&lt;p&gt;500: some other server error&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Setting up the PUSH API</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</guid>
-      <description>
-        
-        
-        &lt;ol&gt;
-&lt;li&gt;Firstly, set up a view to operate as a standard ‘pull’ API&lt;/li&gt;
-&lt;li&gt;Enter a URL into the &lt;em&gt;Push URL (optional)&lt;/em&gt; area below the other details on that screen. This is the URL that agileBase will POST to when there’s new data.&lt;/li&gt;
-&lt;li&gt;In the table that the API view was created from, add a new date/time field, accurate to the second, for the system to record when the API push was last used&lt;/li&gt;
-&lt;li&gt;Go to the ‘workflow’ section under the view’s ‘manage’ tab.
-for ‘workflow action’, select ‘send data to a third party system using the API’
-for ‘recording the time of the last action’, choose the date/time field created above
-choose a minimum interval to wait between pushes&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The system will now make a POST to the URL specified in step 2 whenever there’s new data to send. It will contain one parameter, ‘json’, which is a JSON representation of all the data in the view.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-push.png&#34; alt=&#34;Configuring the PUSH API&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;selecting-data-to-push&#34;&gt;Selecting data to push&lt;/h3&gt;
-&lt;p&gt;How do we know which data is new and wants to be sent out via the API?&lt;/p&gt;
-&lt;p&gt;That’s up to you - any filters can be added to the view to select data you want. Commonly, you’d use the date/time field set up in step 3. When a push successfully completes, every record in the view has this field set to the current time.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Note: if the push encounters an error for any reason, say the third party system returns a HTTP error code rather than the expected ‘200’ code for success, the timestamp won’t be set.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;A few common scenarios would be:&lt;/p&gt;
-&lt;h4 id=&#34;pushing-any-data-modified-since-it-was-last-pushed&#34;&gt;Pushing any data modified since it was last pushed&lt;/h4&gt;
-&lt;p&gt;To do this, add a boolean calculation to your view, something like&lt;/p&gt;
-&lt;p&gt;needs pushing = &lt;code&gt;{last modified [auto]} &amp;gt; {last pushed}&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;where ‘last pushed’ is the name of the timestamp field you added in step 3 above.&lt;/p&gt;
-&lt;p&gt;Then add a filter on the view ‘needs pushing equals true’.&lt;/p&gt;
-&lt;h4 id=&#34;pushing-any-new-rows-that-have-never-been-pushed-before&#34;&gt;Pushing any new rows that have never been pushed before&lt;/h4&gt;
-&lt;p&gt;For this scenario, simply add a filter to the view ‘last pushed is empty’.&lt;/p&gt;
-&lt;h4 id=&#34;pushing-only-rows-not-yet-marked-as-received&#34;&gt;Pushing only rows not yet marked as received&lt;/h4&gt;
-&lt;p&gt;In some cases, you may want to be even more prudent than using the internal timestamp. The third party system could make a separate API call to agileBase for every row that’s received, telling it to update the row with an ID to prove receipt. That’s more API calls of course, but some situations may warrant it.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Docs: Types of Workflow Actions</title>
       <link>https://docs.agilebase.co.uk/docs/workflows/types-of-actions/</link>
       <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
@@ -2201,6 +2039,82 @@ Options are:&lt;/p&gt;
     </item>
     
     <item>
+      <title>Docs: Setting up the Calendar API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-calandar-push/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-calandar-push/</guid>
+      <description>
+        
+        
+        &lt;p&gt;If a view contains a date field, the data in it can by synchronised with an external calendar application, e.g. Google Calendar, Microsoft Office 365, Apple calendars etc.&lt;/p&gt;
+&lt;p&gt;If it contains two date fields, the first will be used for the start date/time, the second for the finish.&lt;/p&gt;
+&lt;p&gt;Once set up, the link will be maintained and the calendar will update whenever the data in agileBase is updated, or vice versa. The synchonisation can be set up to be two-way (to and from agileBase), or just one way (either two or from agileBase)&lt;/p&gt;
+&lt;h2 id=&#34;pre-requisites&#34;&gt;Pre-requisites&lt;/h2&gt;
+&lt;p&gt;agileBase uses &lt;a href=&#34;https://oauth.net/&#34;&gt;OAuth&lt;/a&gt;, an industry standard protocol, to synchronize with your calendar system of choice.&lt;/p&gt;
+&lt;p&gt;Under this protocol, each person will need to individually grant agileBase permission to send data to, and view events in their calendar. This is a straightforward process: as a user,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click on your user icon at the top right of the screen&lt;/li&gt;
+&lt;li&gt;Select &lt;em&gt;edit profile&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;connect calendar&lt;/em&gt; link&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You will see a calendar selector screen like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/cronofy.png&#34; alt=&#34;Cronofy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Choose the calendar system you use and follow through the prompt to allow access.&lt;/p&gt;
+&lt;h2 id=&#34;incoming-data&#34;&gt;Incoming data&lt;/h2&gt;
+&lt;p&gt;Once users have connected their calendars, data can be received into agileBase whenever an event is created, edited or deleted in the external calendar. We need to set up two new tables so the system can receive these events. One is a table for the event data itself, the other stores the list of calendars in the user&amp;rsquo;s account. One calendar account may contain multiple calendars, e.g. a user may have separate calendars set up for bookings, sales visits, holidays etc. - typically they display in different colours on the screen.&lt;/p&gt;
+&lt;p&gt;The main reason for recording the calendar list is so that the correct calendar can be chosen to send events to, when we come to send events from agileBase (see below).&lt;/p&gt;
+&lt;p&gt;To set up these tables, follow this process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a table called &lt;code&gt;ab calendar intray&lt;/code&gt;. It can have a prefix if you like, e.g. &lt;code&gt;z) ab calendar intray&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add the following &lt;strong&gt;text&lt;/strong&gt; fields: &lt;code&gt;person&lt;/code&gt;, &lt;code&gt;calendar id&lt;/code&gt;, &lt;code&gt;calendar name&lt;/code&gt;, &lt;code&gt;event id&lt;/code&gt;, &lt;code&gt;summary&lt;/code&gt;, &lt;code&gt;description&lt;/code&gt;, &lt;code&gt;location&lt;/code&gt;, &lt;code&gt;participation status&lt;/code&gt;, &lt;code&gt;event status&lt;/code&gt;, &lt;code&gt;categories&lt;/code&gt;, &lt;code&gt;attendees&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add the following &lt;strong&gt;date&lt;/strong&gt; fields: &lt;code&gt;start&lt;/code&gt;, &lt;code&gt;end&lt;/code&gt;, &lt;code&gt;created&lt;/code&gt; (accurate to the second), &lt;code&gt;updated&lt;/code&gt; (accurate to the second)&lt;/li&gt;
+&lt;li&gt;Add a &lt;strong&gt;checkbox&lt;/strong&gt; field, &lt;code&gt;deleted&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;and for the calendar mapping table:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a table called &lt;code&gt;ab calendar mapping&lt;/code&gt;. Again, you can prefix it, e.g. &lt;code&gt;z) ab calendar mapping&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add &lt;strong&gt;text&lt;/strong&gt; fields: &lt;code&gt;username&lt;/code&gt;, &lt;code&gt;calendar id&lt;/code&gt;, &lt;code&gt;owner&lt;/code&gt;, &lt;code&gt;calendar name&lt;/code&gt;, &lt;code&gt;provider&lt;/code&gt;, &lt;code&gt;profile id&lt;/code&gt;, &lt;code&gt;profile name&lt;/code&gt;, &lt;code&gt;permission level&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add two &lt;strong&gt;checkbox&lt;/strong&gt; fields called: &lt;code&gt;read only&lt;/code&gt;, &lt;code&gt;primary&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The easiest way to understand the meaning of all the fields is simply to connect your calendar as above, create these tables and add some events to your third party calendar - create new events, update them and delete them, watching the data flow into the tables. New data will usually take no more than a few seconds to appear.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Different third party calendar systems may use some fields in slighlty different ways. For example, at the time of writing, Google Calendar does not support the &lt;code&gt;categories&lt;/code&gt; field but some other calendar systems do use this to show tags you may have added to your events.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Once you have data successfully flowing into the system, a common next step is to move the incoming events into tables which make sense for your particular business needs. For example, if you have a team of salespeople, you may move incoming bookings into a &amp;lsquo;leads&amp;rsquo; table. What you do with the data will depend on your particular circumstances.&lt;/p&gt;
+&lt;p&gt;You can use &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;automated worflows&lt;/a&gt; to copy data from one table to another if necessary.&lt;/p&gt;
+&lt;p&gt;However, you could also simply create views from the &amp;lsquo;ab calendar intray&amp;rsquo; table to allow users to view these events directly. Adding a filter to the user on the &amp;lsquo;person&amp;rsquo; field will ensure a user will only see their own events -see [users - restrict data access]({{relref &amp;ldquo;/docs/security-and-compliance/security-features/users#restrict-data-access&amp;rdquo;}})&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Please be aware of potential data privacy concerns when setting up calendar synchronisation. All events a user creates or modifies in any of the calendars in their connected account will send to agileBase. As an administrator, you may wish to set up specific work calendar accounts for your users, distinct from any personal accounts they may use.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;outgoing-data&#34;&gt;Outgoing data&lt;/h2&gt;
+&lt;p&gt;As well as receiving data in, you can send either new or modified events from agileBase to users&amp;rsquo; connected calendars.&lt;/p&gt;
+&lt;p&gt;New events are those created in agileBase, modified events are those created externally which have come into the system via the incoming data method above, but which have then been updated in agileBase.&lt;/p&gt;
+&lt;p&gt;To set this up&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;Create a view&lt;/a&gt; to show the events to send to the calendar.&lt;/li&gt;
+&lt;li&gt;Add any relevant &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;filters&lt;/a&gt; to the view, so it only shows events which need to be sent, not &lt;strong&gt;all&lt;/strong&gt; events.&lt;/li&gt;
+&lt;li&gt;In the view&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab, show the &lt;em&gt;Send&lt;/em&gt; panel. Select &lt;em&gt;send data to an external calendar&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Tick &lt;em&gt;Send events to calendar&lt;/em&gt; to activate the view and add the fields shown. These are
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;text fields&lt;/strong&gt;: &lt;code&gt;calendar id&lt;/code&gt;, &lt;code&gt;event id&lt;/code&gt;, &lt;code&gt;calendar owner&lt;/code&gt;, &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;description&lt;/code&gt;, &lt;code&gt;location&lt;/code&gt;, &lt;code&gt;attendees&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;a &lt;strong&gt;whole number field&lt;/strong&gt;: &lt;code&gt;reminder minutes&lt;/code&gt; - a number of minutes before the event when the calendar should alert you&lt;/li&gt;
+&lt;li&gt;two &lt;strong&gt;date fields&lt;/strong&gt;: the first date/time field in the view will be used as the event&amp;rsquo;s start date/time, the next the end date/time (if applicable)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Some of these fields deserve additional explanations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;calendar id&lt;/strong&gt;: identifies the particular calendar within the user&amp;rsquo;s connected account to send events to. This is the same calendar ID used in the &amp;lsquo;ab calendar mapping&amp;rsquo; table above, so can be looked up from there, perhaps by joining to the table.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;event id&lt;/strong&gt;: if you&amp;rsquo;re creating a new event, leave this blank. If the event was created externally, or you&amp;rsquo;re updating an existing event, use the event ID as listed in the &amp;lsquo;ab calendar intray&amp;rsquo; record for it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;calendar owner&lt;/strong&gt;: the ID of the agileBase user - this will be used to determine the person who&amp;rsquo;se linked calendar the event should be sent to. The standard agileBase format is used &amp;lsquo;Forename Surname (username)&amp;rsquo;, so you can use the automatic field &amp;lsquo;Created By [auto]&amp;rsquo; if you like.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;attendees&lt;/strong&gt;: a comma separated list of email addresses of people who should be invited&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Altering Data</title>
       <link>https://docs.agilebase.co.uk/docs/workflows/altering-data/</link>
       <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
@@ -2224,6 +2138,75 @@ Options are:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Deleting records is not reversible. Please use with caution.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Referenced Data Panels</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/referenced-data-panels/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/referenced-data-panels/</guid>
+      <description>
+        
+        
+        &lt;p&gt;It can be useful to include calculations and data from other parts of the system in a form, to add context and optionally allow editing of that related data.&lt;/p&gt;
+&lt;p&gt;To do that, a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data field&lt;/a&gt; can be &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;added to the form&lt;/a&gt;. When adding this field, the administrator can choose a view to reference, the data from which will display in the form.&lt;/p&gt;
+&lt;p&gt;The way it works that a when a particular record is shown on screen in a form, the row ID of the record being edited is used to filter the results of that view. Records from the view that include that ID are displayed in a panel.&lt;/p&gt;
+&lt;p&gt;Referenced data can also be used to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;display charts&lt;/li&gt;
+&lt;li&gt;provide default values for form fields&lt;/li&gt;
+&lt;li&gt;show a workflow button - if the referenced view is a workflow, a button to run it will display&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full details of all of these features can be found on the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data panel&lt;/a&gt; page.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Setting up the POST API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Firstly, identify the Table into which you wish to recieve incoming data.
+Go to that table&amp;rsquo;s manage taband press ‘options’. Tick ‘public data entry’.&lt;/p&gt;
+&lt;p&gt;To protect the system from spam input, we also suggest you tick ‘Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
+&lt;p&gt;Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming-data-api.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;creating-new-records&#34;&gt;Creating new records&lt;/h2&gt;
+&lt;p&gt;Clicking the ‘sample form’ link will then show a sample form which can be used for testing or to copy code from.&lt;/p&gt;
+&lt;p&gt;If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;save_new_record=true&lt;/li&gt;
+&lt;li&gt;c=[internalcompanyid]&lt;/li&gt;
+&lt;li&gt;t=[internaltableid]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The post URL is&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The form needs to be posted using the method POST.&lt;/p&gt;
+&lt;p&gt;Remember also to set the ‘Authorization’ HTTP header if that option has been selected.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NB: To get the details of data posted into the database, please also supply the parameter &lt;em&gt;return=posted_json&lt;/em&gt; This will include the internal row ID of the newly inserted record.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;API use can be tested using a tool such as &lt;a href=&#34;https://www.postman.com&#34;&gt;Postman&lt;/a&gt; tool.&lt;/p&gt;
+&lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
+&lt;p&gt;The process is similar, but instead of &lt;em&gt;save_new_record=true&lt;/em&gt;, supply&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;update_record=true&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;row_id=[internal id of the record]&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The internal record ID can be got from a JSON feed or by using the &lt;em&gt;return=posted_json&lt;/em&gt; as above if editing a record previously created using the API.&lt;/p&gt;
+&lt;h3 id=&#34;http-response-codes&#34;&gt;HTTP response codes&lt;/h3&gt;
+&lt;p&gt;401: unauthorised: the API key is missing or invalid&lt;/p&gt;
+&lt;p&gt;429: too many requests: the frequency of requests is too high, please throttle them back&lt;/p&gt;
+&lt;p&gt;507: insufficient storage: when creating a record, the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity.&lt;/p&gt;
+&lt;p&gt;500: some other server error&lt;/p&gt;
 
       </description>
     </item>

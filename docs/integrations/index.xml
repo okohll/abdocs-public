@@ -83,7 +83,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;calendar id&lt;/strong&gt;: identifies the particular calendar within the user&amp;rsquo;s connected account to send events to. This is the same calendar ID used in the &amp;lsquo;ab calendar mapping&amp;rsquo; table above, so can be looked up from there, perhaps by joining to the table.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;event id&lt;/strong&gt;: if you&amp;rsquo;re creating a new event, leave this blank. If the event was created externally, or you&amp;rsquo;re updating an existing event, use the event ID as listed in the &amp;lsquo;ab calendar intray&amp;rsquo; record for it.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;calendar owner&lt;/strong&gt;: the ID of the agileBase user - this will be used to determine the person who&amp;rsquo;se linked calendar the event should be sent to. The standard agileBase format is used &amp;lsquo;Forename Surname (username)&#39;, so you can use the automatic field &amp;lsquo;Created By [auto]&amp;rsquo; if you like.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;calendar owner&lt;/strong&gt;: the ID of the agileBase user - this will be used to determine the person who&amp;rsquo;se linked calendar the event should be sent to. The standard agileBase format is used &amp;lsquo;Forename Surname (username)&amp;rsquo;, so you can use the automatic field &amp;lsquo;Created By [auto]&amp;rsquo; if you like.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;attendees&lt;/strong&gt;: a comma separated list of email addresses of people who should be invited&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -139,7 +139,7 @@ Go to that table&amp;rsquo;s manage taband press ‘options’. Tick ‘public d
     <item>
       <title>Docs: Setting up the PUSH API</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      <pubDate>Mon, 01 Jun 2020 16:40:00 +0100</pubDate>
       
       <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</guid>
       <description>
@@ -253,6 +253,8 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;p&gt;Causes characters which would normally be encoded as HTML entities (e.g. &lt;code&gt;&amp;amp;&lt;/code&gt; -&amp;gt; &lt;code&gt;&amp;amp;amp;&lt;/code&gt;) to be returned unencoded&lt;/p&gt;
 &lt;h4 id=&#34;exact_filterstruefalse-default-false&#34;&gt;exact_filters=true/false (default false)&lt;/h4&gt;
 &lt;p&gt;If true, filters (see below) will be need to match results exactly instead of using the default &amp;lsquo;contains&amp;rsquo; filtering&lt;/p&gt;
+&lt;h4 id=&#34;row_limitrow-limit&#34;&gt;row_limit=[row limit]&lt;/h4&gt;
+&lt;p&gt;The default limit on the number of records to ruturn is 10,000. Add this parameter to change this. Note the hard maximum allowed is 100,000.&lt;/p&gt;
 &lt;h3 id=&#34;filtering&#34;&gt;Filtering&lt;/h3&gt;
 &lt;p&gt;By specifying exact_filters=true, filters can be supplied to search for a particular record or set of records. For HTTP parameter names, just use the internal agileBase field identifiers. The easiest way of finding these is to right click on a field in the administrator interface using a browser like Chrome, Safari or Firefox and select ‘inspect element’.&lt;/p&gt;
 &lt;p&gt;Standard agileBase quick filters can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, &amp;gt; and &amp;lt; for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.&lt;/p&gt;
@@ -277,6 +279,116 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;h2 id=&#34;rss-feed&#34;&gt;RSS Feed&lt;/h2&gt;
 &lt;p&gt;If your PULL API has been enabled for Public access then you can offer 3rd parties the option of accessing the feed via an RSS feed. The link is visible just below the tick box for public access.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-send-rss.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: PUSH API worked example - Zapier</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/push-example-zapier/</link>
+      <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/push-example-zapier/</guid>
+      <description>
+        
+        
+        &lt;p&gt;One of the most common methods of pushing data into other systems is to use &lt;a href=&#34;https://zapier.com&#34;&gt;Zapier&lt;/a&gt;, which is a ‘drag and drop’ integration tool that requires no programming (just like agileBase itself).&lt;/p&gt;
+&lt;p&gt;We will use a worked example: building a system to send a ‘hello’ SMS message whenever a new contact is added to our database. In real life, you may send appointment reminders or other notifications by text. Of course Zapier integrations aren&amp;rsquo;t limited to sending text messages, there are tons of third party systems you can use, under many different categories, but text messages are a nice simple example to work through.&lt;/p&gt;
+&lt;p&gt;For this example we’ll use&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://agilebase.co.uk&#34;&gt;agileBase&lt;/a&gt; as a source of data&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zapier.com&#34;&gt;Zapier&lt;/a&gt; to collect the data and send it to…&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twilio.com&#34;&gt;Twilio&lt;/a&gt; to send the text messages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;agilebase-setup&#34;&gt;agileBase setup&lt;/h2&gt;
+&lt;p&gt;First, some preparatory work in agileBase. Assuming we already have a contacts database, each person with a name and mobile phone number, there’s just one extra thing we need to do.&lt;/p&gt;
+&lt;p&gt;The system will need to know when a contact has been sent a text, so it can filter them out and prevent them being repeatedly texted. To allow this, we need to add a field, call it &lt;code&gt;intro text sent&lt;/code&gt;. Make it a date and time field, accurate to the second.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/zapier-sent-field.png&#34; alt=&#34;Zapier sent field&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We can set it to ‘show never’, as this information’s unlikely to be useful to the average user.&lt;/p&gt;
+&lt;p&gt;Next, we &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;create a view&lt;/a&gt; to provide the data to send to the text messaging service. Here’s such a view. It’s very simple, containing just the info necessary, i.e. a message calculation and the mobile phone number to send it to. We’ve put it in a tile called ‘System – Integration’. It’s a good idea to put views used for system purposes somewhere like this so they’ll be hidden from everyday users, but administrators can still easily find them.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/zapier-view.png&#34; alt=&#34;Zapier view&#34;&gt;&lt;/p&gt;
+&lt;p&gt;We’ve added a couple of [filters]((/docs/views/filters/), firstly to make sure we only pick up people who have a phone number entered and secondly to filter out any who’ve already been sent the message (using the Intro Text Sent field we created above). You’ll notice for initial testing only, I’ve added a third filter here so only one contact is listed - myself. When we’ve confirmed the system works as expected, this filter can be removed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/zapier-view-filters.png&#34; alt=&#34;Zapier view filters&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;One small note to do with this specific example only – Twilio likes to receive phone numbers in international format but without the leading +, i.e. rather than “07891 123456”, use “447891123456”. In real life we’d probably create a calculation field to format them this way, for now we’ll just make sure to enter test numbers like that.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;zapier-setup---receiving-data-from-agilebase&#34;&gt;Zapier Setup - receiving data from agileBase&lt;/h2&gt;
+&lt;p&gt;That’s the agileBase side of things prepared, now to Zapier.&lt;/p&gt;
+&lt;p&gt;Log into your Zapier account and press the &lt;em&gt;Make a Zap!&lt;/em&gt; button.&lt;/p&gt;
+&lt;p&gt;Under &lt;em&gt;choose app&lt;/em&gt;, select &lt;em&gt;Webhooks by Zapier&lt;/em&gt;. Webhooks are the way to communicate with agileBase. At the time of writing you’ll need a paid Zapier account to use them.&lt;/p&gt;
+&lt;p&gt;Under &lt;em&gt;choose trigger event&lt;/em&gt; two options will be shown - &lt;em&gt;Retrieve Poll&lt;/em&gt; and &lt;em&gt;Catch Hook&lt;/em&gt;. In brief, if you select &lt;em&gt;Retrieve Poll&lt;/em&gt;, Zapier will regularly poll agileBase (say every 5 minutes) to check if there’s any new data to retrieve. If you select &lt;em&gt;Catch Hook&lt;/em&gt;, communication will instead be started by agileBase, which will ‘push’ data to Zapier only when there is something new to send.&lt;/p&gt;
+&lt;p&gt;Here, we’ll use Catch Hook, which is generally recommended. It’s more efficient and a bit easier to set up, as agileBase will automatically record the time each record is sent to Zapier. Otherwise, you’ll have to set up additional steps in Zapier to send this information back.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/zapier-catch-hook.png&#34; alt=&#34;Zapier catch hook&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When you press Continue, Zapier will provide you with a custom URL and some additional options which can be left unchanged. Copy this URL and record it in agileBase: go to the view’s &lt;em&gt;manage&lt;/em&gt; tab, show the &lt;em&gt;Send&lt;/em&gt; panel and select &lt;em&gt;send data to a third party system using the API&lt;/em&gt;. Paste the Zapier URL into the space provided:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/zapier-ab-push.png&#34; alt=&#34;Zapier aB push&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Secondly, select the date &amp;amp; time field ‘Intro Text Sent’ (created above) in the dropdown. That means whenever a record is sent to Zapier, the timestamp will be recorded in that field. All other settings can be left on their defaults.&lt;/p&gt;
+&lt;p&gt;Finally, press the &lt;em&gt;Run Workflow Now&lt;/em&gt; button to send a test record to Zapier.&lt;/p&gt;
+&lt;p&gt;Back in Zapier, just press &lt;em&gt;Test and Continue&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;finishing-zapier-setup&#34;&gt;Finishing Zapier setup&lt;/h3&gt;
+&lt;p&gt;Zapier now has our data, at least a test record. The next step is to set up actually sending the text message.&lt;/p&gt;
+&lt;p&gt;There are dozens of Zapier-compatible services that can send text messages. We use Twilio but the process is similar whatever you choose. In fact the process is similar whatever you’re doing with the data, be that sending a text, sending the data to a Google Spreadsheet or Mailchimp, to name just three examples.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/zapier-select-twilio.png&#34; alt=&#34;Zapier select Twilio&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When you press Continue, you’ll be asked to sign into Twilio (in this example). Do that as prompted, then you’ll be able to set the options below. The important ones are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;From Number&lt;/strong&gt;: just select, this will automatically show any phone numbers you’ve set up in Twilio&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;To Number&lt;/strong&gt;: here, click the selector on the right and select the phone number field from agileBase. By this stage, Zapier, knows which fields are in agileBase&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Message&lt;/strong&gt;: similarly, click the selctor and choose the message field from agileBase&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/zapier-send-sms.png&#34; alt=&#34;Zapier send SMS&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Press &lt;em&gt;Test and Continue&lt;/em&gt;. If all goes well, a text message will be sent and you’ll get the option to turn the integration on permanently!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/zapier-success.png&#34; alt=&#34;Zapier success&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Then, you can remove the test filters from the view in agileBase and everything will be live.&lt;/p&gt;
+&lt;p&gt;Although today we used the example of sending a text message, the process is very similar whichever service you decide to connect to with Zapier - you should be able to follow along the example replacing the SMS-specific steps with your own.&lt;/p&gt;
+&lt;p&gt;Good luck and please let us know what cool things you do with your data. Also if anything can be improved in this walkthrough, we’d be very keen to hear about that too.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: PULL API worked example - Power BI</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/pull-example-power-bi/</link>
+      <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/pull-example-power-bi/</guid>
+      <description>
+        
+        
+        &lt;p&gt;agileBase has built in charting which is great for quickly analysing and answering questions about data in your system, but specialist business intelligence apps can be particularly useful if you want to join data from multiple sources (perhaps an accounting package or marketing automation system too) in one place.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi.gif&#34; alt=&#34;Power BI&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;setting-up&#34;&gt;Setting up&lt;/h2&gt;
+&lt;p&gt;The below may look like lots of steps but that’s just because we’ve split it up into very small, simple parts to make it as easy as possible to follow.&lt;/p&gt;
+&lt;h3 id=&#34;step-1-set-up-a-view-in-agilebase-to-use-as-a-data-source&#34;&gt;Step 1: set up a view in agileBase to use as a data source&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Use a view bringing in as many possible variables into one place. For example, if you want to analyse sales, you might include totals by customer, product, salesperson, region, category, price banding and date. That way you have plenty of dimensions to analyse in multiple ways later on.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;step-2-turn-on-the-api-for-the-view-to-make-data-available&#34;&gt;Step 2: turn on the API for the view to make data available&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-ab.png&#34; alt=&#34;Power BI - aB view setup&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In the view&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab, select the &lt;em&gt;send&lt;/em&gt; panel.&lt;/p&gt;
+&lt;p&gt;Select &lt;em&gt;send data to a third party system using the API&lt;/em&gt; in the dropdown list and make sure you tick &lt;em&gt;allow access from third party software using an API key&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Refresh the view to show your API key needed for the next step.&lt;/p&gt;
+&lt;h3 id=&#34;step-3-within-power-bi-press-_get-data_-and-select-_web_-as-the-data-source&#34;&gt;Step 3: within Power BI press &lt;em&gt;get data&lt;/em&gt; and select &lt;em&gt;Web&lt;/em&gt; as the data source.&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-web.png&#34; alt=&#34;Power BI - web&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-4-enter-the-sync-details-provided-by-ab-into-power-bi&#34;&gt;Step 4: enter the sync details provided by AB into Power BI&lt;/h3&gt;
+&lt;p&gt;Select the advanced option and fill in the following URL parts provided from the AB view setup in the first point. These are the parameters to add:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;?get_report_json=true
+&amp;amp;c=[your ‘c’ value here from AB]
+&amp;amp;t=[your ‘t’ value here from AB]
+&amp;amp;r=[your ‘r’ value here from AB]
+&amp;amp;json_format=json
+&amp;amp;simple_format=true
+&amp;amp;row_limit=100000 [or however many rows you need]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-web-entry.png&#34; alt=&#34;Power BI - web setup&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-5-enter-the-authorisation-key-into-power-bi&#34;&gt;Step 5: enter the authorisation key into Power BI&lt;/h3&gt;
+&lt;p&gt;Select &lt;em&gt;authorization&lt;/em&gt; from the dropdown options under ‘HTTP request hear parameters (optional)’ and press &lt;em&gt;OK&lt;/em&gt;. The authorisation key is provided in the agileBase view.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-auth.png&#34; alt=&#34;Power BI - auth setup&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-6-make-data-visible-in-power-bi&#34;&gt;Step 6: make data visible in Power BI&lt;/h3&gt;
+&lt;p&gt;Once the data has pulled through and the connection is set up you will need to convert the dataset into a table.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-convert-to-table.png&#34; alt=&#34;Power BI - convert to table&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-7-expand-the-colums&#34;&gt;Step 7: expand the colums&lt;/h3&gt;
+&lt;p&gt;Once converted to a table you will then need to expand the data into columns and your view will be presented to manipulate.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-expand.png&#34; alt=&#34;Power BI - expand&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-8-create-your-visualisations&#34;&gt;Step 8: create your visualisations!&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-visualisations.png&#34; alt=&#34;Power BI - visualisations&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
