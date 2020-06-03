@@ -423,5 +423,47 @@ With simple_format=false, a more complex but more robust format it used. Rather 
       </description>
     </item>
     
+    <item>
+      <title>Docs: Importing from spreadsheet</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/importing/</link>
+      <pubDate>Wed, 03 Jun 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/importing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;agileBase allows data to be imported from CSV (Comma Separated Variable) files. All popular spreadsheet software can save data in this format.&lt;/p&gt;
+&lt;p&gt;Anyone with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;&lt;strong&gt;manage&lt;/strong&gt; privileges&lt;/a&gt; on a table can import data into it.&lt;/p&gt;
+&lt;p&gt;In the tiles interface, load any view created from the table to import into. Scroll to the bottom of the rows and press the cloud import icon, then follow through the prompts.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/import-link.png&#34; alt=&#34;import link&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Data can be imported in two ways.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;insert all new records&lt;/li&gt;
+&lt;li&gt;update existing records&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Inserting new records will create a new record in the database for every line in the CSV file. Updating existing records will attempt to match each line in the file with an existing record and update all field values from the CSV. This can be useful when merging in data from an external source, or exporting, altering with a third party system and re-importing. Another use can be updating one field based on another - you can &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/&#34;&gt;export&lt;/a&gt;, update the fields as necessary and re-import.&lt;/p&gt;
+&lt;p&gt;In either case, the CSV file must contain fields in the same order as they are in the table being imported into. The column titles don’t need to be the same though, it’s the order which is important. The import screen will show you the column order which is necessary.&lt;/p&gt;
+&lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
+&lt;p&gt;When updating records, a key field must be selected to match records up. This can be any field that has the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#unique&#34;&gt;unique&lt;/a&gt; property set. Alternatively the internal agileBase rowID can be used. This field is included as the first field in any data export.&lt;/p&gt;
+&lt;p&gt;Sometimes, admins will want to do an export -&amp;gt; modify spreadsheet -&amp;gt; re-import workflow. This is straightforward:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Export from the admin interface by clicking the table containing the data you want to modify and clicking the &lt;em&gt;export&lt;/em&gt; button in the top toolbar.&lt;/li&gt;
+&lt;li&gt;Open the spreadsheet, making any modifications you need. The first column will be the internal ID for each record, keep this, it will be needed when re-importing.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note it will be hidden - you can un-hide it in the spreadsheet for clarity&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Blank out (remove content from) any columns which you haven’t updated. Otherwise if people have updated them since your export, you will overwrite their changes.&lt;/li&gt;
+&lt;li&gt;Re-import using an ‘update’ type import as above. Select &lt;em&gt;use internal agileBase row IDs to identify records&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;notes-on-special-fields&#34;&gt;Notes on special fields&lt;/h2&gt;
+&lt;p&gt;For a file field, please leave an empty column in the spreadsheet in that position. If you wish to do a bulk upload of many images or documents, please contact &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;support&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Columns for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;separator&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data&lt;/a&gt; fields should not be included in the import spreadsheet as these field types don&amp;rsquo;t store data.&lt;/p&gt;
+&lt;p&gt;Data can be imported into &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&#34;&gt;comment fields&lt;/a&gt; as per any other field.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>

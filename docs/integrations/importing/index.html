@@ -7,7 +7,6 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,15 +20,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Hierarchy Navigation | agileBase docs</title><meta property="og:title" content="Hierarchy Navigation" />
-<meta property="og:description" content="Customising how the user navigates an application" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/" />
-<meta property="og:updated_time" content="2020-05-06T17:16:31+01:00" />
-<meta itemprop="name" content="Hierarchy Navigation">
-<meta itemprop="description" content="Customising how the user navigates an application"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hierarchy Navigation"/>
-<meta name="twitter:description" content="Customising how the user navigates an application"/>
+<title>Importing from spreadsheet | agileBase docs</title><meta property="og:title" content="Importing from spreadsheet" />
+<meta property="og:description" content="Adding to or updating existing data in a table using a spreadsheet import" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://docs.agilebase.co.uk/docs/integrations/importing/" />
+<meta property="article:published_time" content="2020-06-03T16:40:00+01:00" />
+<meta property="article:modified_time" content="2020-06-03T08:34:11+01:00" />
+<meta itemprop="name" content="Importing from spreadsheet">
+<meta itemprop="description" content="Adding to or updating existing data in a table using a spreadsheet import">
+<meta itemprop="datePublished" content="2020-06-03T16:40:00&#43;01:00" />
+<meta itemprop="dateModified" content="2020-06-03T08:34:11&#43;01:00" />
+<meta itemprop="wordCount" content="457">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Importing from spreadsheet"/>
+<meta name="twitter:description" content="Adding to or updating existing data in a table using a spreadsheet import"/>
 
 
 
@@ -46,7 +53,7 @@
 
 
   </head>
-  <body class="td-section">
+  <body class="td-page">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -300,10 +307,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/tables/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Tables</a>
+    <a  href="/docs/tables/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tables</a>
   </li>
   <ul>
-    <li class="collapse show" id="docstables">
+    <li class="collapse " id="docstables">
       
       
       
@@ -335,10 +342,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/tables/hierarchy-navigation/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Hierarchy Navigation</a>
+    <a  href="/docs/tables/hierarchy-navigation/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Hierarchy Navigation</a>
   </li>
   <ul>
-    <li class="collapse show" id="docstableshierarchy-navigation">
+    <li class="collapse " id="docstableshierarchy-navigation">
       
       
       
@@ -850,10 +857,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/integrations/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Integrations</a>
+    <a  href="/docs/integrations/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Integrations</a>
   </li>
   <ul>
-    <li class="collapse " id="docsintegrations">
+    <li class="collapse show" id="docsintegrations">
       
       
       
@@ -908,7 +915,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsintegrationsimporting" href="/docs/integrations/importing/">Importing from spreadsheet</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsintegrationsimporting" href="/docs/integrations/importing/">Importing from spreadsheet</a>
       
       
     </li>
@@ -1106,8 +1113,8 @@
 
 
 
-<a href="https://github.com/okohll/abdocs/edit/master/content/en/docs/tables/hierarchy-navigation/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/okohll/abdocs/issues/new?title=Hierarchy%20Navigation" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/okohll/abdocs/edit/master/content/en/docs/integrations/importing.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/okohll/abdocs/issues/new?title=Importing%20from%20spreadsheet" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
 
@@ -1115,6 +1122,13 @@
 
 
 
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#updating-existing-records">Updating existing records</a></li>
+    <li><a href="#notes-on-special-fields">Notes on special fields</a></li>
+  </ul>
+</nav>
 
 
 
@@ -1144,14 +1158,14 @@
 
 
 <li class="breadcrumb-item" >
-	<a href="https://docs.agilebase.co.uk/docs/tables/">Tables</a>
+	<a href="https://docs.agilebase.co.uk/docs/integrations/">Integrations</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/">Hierarchy Navigation</a>
+	<a href="https://docs.agilebase.co.uk/docs/integrations/importing/">Importing from spreadsheet</a>
 </li>
 
 	</ol>
@@ -1159,222 +1173,38 @@
 
             
 <div class="td-content">
-	<h1>Hierarchy Navigation</h1>
-        <div class="lead">Customising how the user navigates an application</div>
-	
-	<p>agileBase does its best with sensible defaults to create a friendly user interface.</p>
-<p>It&rsquo;s useful for an administrator to know how to configure and tweak the system to allow the to user navigate the structure of an application in the most intuitive way possible.</p>
-
-        <div class="section-index">
-    
-    
-    
-    
-    <hr class="panel-line">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/docs/tables/hierarchy-navigation/tabs/">Tabs</a>
-                    </h5>
-                    <p>Tabs allow navigation from a parent record to a related child record</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/docs/tables/hierarchy-navigation/to-grandchild-records/">To grandchild records</a>
-                    </h5>
-                    <p>agileBase automatically exposes three-tier navigation structures</p>
-                </div>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/docs/tables/hierarchy-navigation/upwards-navigation/">Upwards Navigation</a>
-                    </h5>
-                    <p>Relations allow navigation from a child record to its parent</p>
-                </div>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    
-</div>
+	<h1>Importing from spreadsheet</h1>
+    <div class="lead">Adding to or updating existing data in a table using a spreadsheet import</div>
+	       
+	<p>agileBase allows data to be imported from CSV (Comma Separated Variable) files. All popular spreadsheet software can save data in this format.</p>
+<p>Anyone with <a href="/docs/security-and-compliance/security-features/privileges/"><strong>manage</strong> privileges</a> on a table can import data into it.</p>
+<p>In the tiles interface, load any view created from the table to import into. Scroll to the bottom of the rows and press the cloud import icon, then follow through the prompts.</p>
+<p><img src="/import-link.png" alt="import link"></p>
+<p>Data can be imported in two ways.</p>
+<ul>
+<li>insert all new records</li>
+<li>update existing records</li>
+</ul>
+<p>Inserting new records will create a new record in the database for every line in the CSV file. Updating existing records will attempt to match each line in the file with an existing record and update all field values from the CSV. This can be useful when merging in data from an external source, or exporting, altering with a third party system and re-importing. Another use can be updating one field based on another - you can <a href="/docs/security-and-compliance/security-features/exporting/">export</a>, update the fields as necessary and re-import.</p>
+<p>In either case, the CSV file must contain fields in the same order as they are in the table being imported into. The column titles don’t need to be the same though, it’s the order which is important. The import screen will show you the column order which is necessary.</p>
+<h2 id="updating-existing-records">Updating existing records</h2>
+<p>When updating records, a key field must be selected to match records up. This can be any field that has the <a href="/docs/fields/field-options/common-options/#unique">unique</a> property set. Alternatively the internal agileBase rowID can be used. This field is included as the first field in any data export.</p>
+<p>Sometimes, admins will want to do an export -&gt; modify spreadsheet -&gt; re-import workflow. This is straightforward:</p>
+<ol>
+<li>Export from the admin interface by clicking the table containing the data you want to modify and clicking the <em>export</em> button in the top toolbar.</li>
+<li>Open the spreadsheet, making any modifications you need. The first column will be the internal ID for each record, keep this, it will be needed when re-importing.</li>
+</ol>
+<blockquote>
+<p>Note it will be hidden - you can un-hide it in the spreadsheet for clarity</p>
+</blockquote>
+<ol start="3">
+<li>Blank out (remove content from) any columns which you haven’t updated. Otherwise if people have updated them since your export, you will overwrite their changes.</li>
+<li>Re-import using an ‘update’ type import as above. Select <em>use internal agileBase row IDs to identify records</em></li>
+</ol>
+<h2 id="notes-on-special-fields">Notes on special fields</h2>
+<p>For a file field, please leave an empty column in the spreadsheet in that position. If you wish to do a bulk upload of many images or documents, please contact <a href="https://agilechilli.com/contact-us/">support</a>.</p>
+<p>Columns for <a href="/docs/fields/field-types/special-field-types/separators/">separator</a> and <a href="/docs/fields/field-types/special-field-types/referenced-data/">referenced data</a> fields should not be included in the import spreadsheet as these field types don&rsquo;t store data.</p>
+<p>Data can be imported into <a href="/docs/fields/field-types/special-field-types/comment-feeds/">comment fields</a> as per any other field.</p>
 
 	
 		<style>
@@ -1438,9 +1268,10 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 6, 2020: <a  href="https://github.com/okohll/abdocs/commit/0195efeb0b7ee54af6a69a981920d2de5eb52108">Hierarchy navigation (0195efe)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified June 3, 2020: <a  href="https://github.com/okohll/abdocs/commit/eb09e89508bbf7db878788972189515a0db87c47">Importing (eb09e89)</a>
 </div>
 </div>
+
 
           </main>
         </div>

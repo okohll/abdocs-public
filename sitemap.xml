@@ -109,7 +109,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/fields/</loc>
-    <lastmod>2020-05-09T11:24:20+01:00</lastmod>
+    <lastmod>2020-06-03T17:04:06+01:00</lastmod>
   </url>
   
   <url>
@@ -279,7 +279,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/adding-help/</loc>
-    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+    <lastmod>2020-06-03T17:04:06+01:00</lastmod>
   </url>
   
   <url>
@@ -359,7 +359,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/advanced-usage/</loc>
-    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+    <lastmod>2020-06-03T17:04:06+01:00</lastmod>
   </url>
   
   <url>
@@ -379,7 +379,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/</loc>
-    <lastmod>2020-05-12T16:40:00+01:00</lastmod>
+    <lastmod>2020-06-03T14:54:52+01:00</lastmod>
   </url>
   
   <url>
@@ -389,7 +389,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</loc>
-    <lastmod>2020-04-24T16:40:00+01:00</lastmod>
+    <lastmod>2020-06-03T14:54:52+01:00</lastmod>
   </url>
   
   <url>
@@ -414,12 +414,12 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/</loc>
-    <lastmod>2020-04-24T16:40:00+01:00</lastmod>
+    <lastmod>2020-06-03T14:54:52+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/</loc>
-    <lastmod>2020-04-24T16:40:00+01:00</lastmod>
+    <lastmod>2020-06-03T14:54:52+01:00</lastmod>
   </url>
   
   <url>
@@ -473,6 +473,11 @@
   </url>
   
   <url>
+    <loc>https://docs.agilebase.co.uk/docs/integrations/importing/</loc>
+    <lastmod>2020-06-03T08:34:11+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://docs.agilebase.co.uk/docs/workflows/advanced/</loc>
     <lastmod>2020-05-29T17:34:00+01:00</lastmod>
   </url>
@@ -494,7 +499,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/</loc>
-    <lastmod>2020-06-03T08:34:11+01:00</lastmod>
+    <lastmod>2020-06-03T17:04:06+01:00</lastmod>
   </url>
   
 </urlset>
