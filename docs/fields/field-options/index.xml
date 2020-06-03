@@ -303,5 +303,28 @@
       </description>
     </item>
     
+    <item>
+      <title>Docs: Cross Reference Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/</link>
+      <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;tabular-display&#34;&gt;Tabular display&lt;/h2&gt;
+&lt;p&gt;Rather than displaying rows from the referenced view as panels&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://todo.com&#34; alt=&#34;Panels screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;show a table&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://todo.com&#34; alt=&#34;Table screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;which is a more compact form allowing a greater volume of data to be shown in a smaller area.&lt;/p&gt;
+&lt;h2 id=&#34;use-as-a-filter-for-relations&#34;&gt;Use as a filter for relations&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#custom-filtering-when-choosing-a-relation&#34;&gt;Common build patters - custom filtering when using a relation&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;
+&lt;p&gt;Make the background of the referenced panel bright red - useful for showing warnings on screen.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>

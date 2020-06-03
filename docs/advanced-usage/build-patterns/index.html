@@ -20,23 +20,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Workflows Buttons | agileBase docs</title><meta property="og:title" content="Workflows Buttons" />
-<meta property="og:description" content="How to setup a Workflow to fire from a Button" />
+<title>Build Patterns | agileBase docs</title><meta property="og:title" content="Build Patterns" />
+<meta property="og:description" content="Common patterns, or recipes for accomplishing useful tasks" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/" />
+<meta property="og:url" content="https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-05-29T17:21:41+01:00" />
-<meta itemprop="name" content="Workflows Buttons">
-<meta itemprop="description" content="How to setup a Workflow to fire from a Button">
+<meta property="article:modified_time" content="2020-04-24T16:40:00+01:00" />
+<meta itemprop="name" content="Build Patterns">
+<meta itemprop="description" content="Common patterns, or recipes for accomplishing useful tasks">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-05-29T17:21:41&#43;01:00" />
-<meta itemprop="wordCount" content="201">
+<meta itemprop="dateModified" content="2020-04-24T16:40:00&#43;01:00" />
+<meta itemprop="wordCount" content="1101">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Workflows Buttons"/>
-<meta name="twitter:description" content="How to setup a Workflow to fire from a Button"/>
+<meta name="twitter:title" content="Build Patterns"/>
+<meta name="twitter:description" content="Common patterns, or recipes for accomplishing useful tasks"/>
 
 
 
@@ -928,10 +928,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/workflows/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Workflows</a>
+    <a  href="/docs/workflows/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Workflows</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsworkflows">
+    <li class="collapse " id="docsworkflows">
       
       
       
@@ -981,10 +981,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/workflows/advanced/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Advanced information on Workflows</a>
+    <a  href="/docs/workflows/advanced/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Advanced information on Workflows</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsworkflowsadvanced">
+    <li class="collapse " id="docsworkflowsadvanced">
       
       
       
@@ -1003,7 +1003,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsworkflowsadvancedworkflow-buttons" href="/docs/workflows/advanced/workflow-buttons/">Workflows Buttons</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsworkflowsadvancedworkflow-buttons" href="/docs/workflows/advanced/workflow-buttons/">Workflows Buttons</a>
       
       
     </li>
@@ -1028,10 +1028,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/advanced-usage/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Advanced Usage</a>
+    <a  href="/docs/advanced-usage/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Advanced Usage</a>
   </li>
   <ul>
-    <li class="collapse " id="docsadvanced-usage">
+    <li class="collapse show" id="docsadvanced-usage">
       
       
       
@@ -1044,7 +1044,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsadvanced-usagebuild-patterns" href="/docs/advanced-usage/build-patterns/">Build Patterns</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsadvanced-usagebuild-patterns" href="/docs/advanced-usage/build-patterns/">Build Patterns</a>
       
       
       
@@ -1107,8 +1107,8 @@
 
 
 
-<a href="https://github.com/okohll/abdocs/edit/master/content/en/docs/workflows/advanced/workflow-buttons.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/okohll/abdocs/issues/new?title=Workflows%20Buttons" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/okohll/abdocs/edit/master/content/en/docs/advanced-usage/build-patterns.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/okohll/abdocs/issues/new?title=Build%20Patterns" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
 
@@ -1119,8 +1119,19 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#workflow-buttons-on-a-form">Workflow Buttons on a Form</a></li>
-    <li><a href="#workflow-buttons-on-views">Workflow Buttons on Views</a></li>
+    <li><a href="#settings-table-idea">Settings table idea</a></li>
+    <li><a href="#snapshots-idea">Snapshots idea</a></li>
+    <li><a href="#gap-filling-in-monthly-or-other-period-reporting">Gap filling in monthly (or other period) reporting</a></li>
+    <li><a href="#joining-on-compound-keys">Joining on compound keys</a></li>
+    <li><a href="#including-multiple-aggregates-from-different-sources">Including multiple aggregates from different sources</a></li>
+    <li><a href="#calculating-the-number-of-weekdays-or-weekends-between-two-dates">Calculating the number of weekdays or weekends between two dates</a></li>
+    <li><a href="#outputting-a-pivoted-view-in-a-printout">Outputting a ‘pivoted’ view in a printout</a></li>
+    <li><a href="#capturing-dates-of-status-changes-on-lookup-list">Capturing dates of status changes on lookup list</a></li>
+    <li><a href="#record-builder">Record Builder</a></li>
+    <li><a href="#de-duplicating-a-comma-separated-list">De-duplicating a comma separated list</a></li>
+    <li><a href="#custom-filtering-when-choosing-a-relation">Custom filtering when choosing a relation</a></li>
+    <li><a href="#switching-a-field-from-one-type-to-another">Switching a field from one type to another</a></li>
+    <li><a href="#finding-the-latest-child-record">Finding the &lsquo;latest&rsquo; child record</a></li>
   </ul>
 </nav>
 
@@ -1144,9 +1155,6 @@
 
 
 
-
-
-
 <li class="breadcrumb-item" >
 	<a href="https://docs.agilebase.co.uk/docs/">Docs</a>
 </li>
@@ -1155,21 +1163,14 @@
 
 
 <li class="breadcrumb-item" >
-	<a href="https://docs.agilebase.co.uk/docs/workflows/">Workflows</a>
-</li>
-
-
-
-
-<li class="breadcrumb-item" >
-	<a href="https://docs.agilebase.co.uk/docs/workflows/advanced/">Advanced information on Workflows</a>
+	<a href="https://docs.agilebase.co.uk/docs/advanced-usage/">Advanced Usage</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/">Workflows Buttons</a>
+	<a href="https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/">Build Patterns</a>
 </li>
 
 	</ol>
@@ -1177,24 +1178,96 @@
 
             
 <div class="td-content">
-	<h1>Workflows Buttons</h1>
-    <div class="lead">How to setup a Workflow to fire from a Button</div>
+	<h1>Build Patterns</h1>
+    <div class="lead">Common patterns, or recipes for accomplishing useful tasks</div>
 	       
-	<p>Some workflows need to be run on an adhoc basis, initiated by a user.
-In these instances it can be useful to assign the Workflow to run behind a Button.</p>
+	<p>Some of these are just useful ideas, some are tips and tricks and some are larger-scale build patterns for more complex tasks commonly undertaken by customers.</p>
+<p>These tips will link to various other places in the documentation, but it will still be useful to have some experience of building in agileBase before reading.</p>
+<h2 id="settings-table-idea">Settings table idea</h2>
+<p>To use a single store of a common setting throughout the application. When a setting is changed it will then automatically take effect throught the whole application.</p>
 <blockquote>
-<p>N.b. In both cases below it is necessary for the Workflow to marked as Manual.</p>
+<p>Example: VAT rate</p>
 </blockquote>
-<h2 id="workflow-buttons-on-a-form">Workflow Buttons on a Form</h2>
-<p>To add the Workflow button to a Table&rsquo;s form simply create a new field of type Cross Reference with the workflow as the source.
-When the Workflow is run, it will be filtered by the Id of the record. (You may wish read up about <a href="/docs/workflows/advanced/chaining-workflows/">Chaining Workflows</a> )
-It is often necessary to put some thought in to the visibility of the button - it can be confusing to the user that a button is present when it does nothing due to filters they cann not know about.</p>
-<h2 id="workflow-buttons-on-views">Workflow Buttons on Views</h2>
-<p>Some Manual workflows are more appropriately run on a number of records. As such the ability to run them is likely to be associated to a list presented in a view.</p>
+<h2 id="snapshots-idea">Snapshots idea</h2>
+<p>Taking snapshots of a set of rows from a table at a point in time allows a comparison of earlier snapshots with later ones, or the current state, to show differences.</p>
+<blockquote>
+<p>Example: delivery van loading reports. An initial snapshot of tomorrow’s orders shows what product quantities to load onto the vans. Later snapshots, taken at any point, will show any additions/removals needed at that time, by subtracting the current order lines from previous ones.</p>
+</blockquote>
+<h2 id="gap-filling-in-monthly-or-other-period-reporting">Gap filling in monthly (or other period) reporting</h2>
+<p>When reporting monthly figures in a view (e.g. quantities sold per product per month), if there may be some gaps, they can be filled with zeros.</p>
+<p>In outline, the solution is to</p>
 <ol>
-<li>Find the view that displays the most appropriate list of records.</li>
-<li>Use the <a href="/docs/workflows/advanced/chaining-workflows/">Chain Workflows</a> functionality and set the Workflow you wish to be run as a button.</li>
+<li>Create a table containing one and only one record. Once a record has been created, disallow adding or removing records using <a href="/docs/tables/options/">table options</a>.</li>
+<li>From that table create a view called e.g. &lsquo;month series&rsquo;</li>
+<li>Add a <a href="/docs/views/calculations/examples/#series-generation"><code>generate_series</code></a> calculation to that view to generate the list of months required.</li>
 </ol>
+<p>A report can then be created by joining from &lsquo;month series&rsquo; to the actual data you want to report. You may need to join on a calculation, e.g. a text representation of the month (using the <a href="/docs/views/calculations/examples/#date-functions"><code>to_char</code></a> function) or an amalgamation of a month and product code.</p>
+<h2 id="joining-on-compound-keys">Joining on compound keys</h2>
+<p>Extending the above, what about when you want to summarise by two factors, e.g. ‘by customer by product’. In that case create calculations to make a unique key per combination e.g.</p>
+<p><code>{customers.id:customers} || ‘_’ || {products.id:products}</code></p>
+<p>Use the same calculation in views you want to join to and join on it.</p>
+<p>This is much better than the &lsquo;naive&rsquo; idea of creating separate joins to each table, which won’t work.</p>
+<h2 id="including-multiple-aggregates-from-different-sources">Including multiple aggregates from different sources</h2>
+<p>Joining from one table down to multiple child tables in order to perform aggregates will not work - you&rsquo;ll experience double counting.</p>
+<p>For example, if a customers table joins down to both &lsquo;customer invoices&rsquo; and &lsquo;customer complaints&rsquo;, then a <code>count(*)</code> calculation will return neither the number of invoices or complaints, but the product of the two i.e. the number of invoices times the number of complaints.</p>
+<p>To solve this,</p>
+<ol>
+<li>Create one view dedicated to each aggregate calculation, created from the parent table. The view will then have one row per parent record i.e. customer in this case</li>
+<li>From a final view created from the parent table, join to these views in order to include the results</li>
+</ol>
+<h2 id="calculating-the-number-of-weekdays-or-weekends-between-two-dates">Calculating the number of weekdays or weekends between two dates</h2>
+<ol>
+<li>Generate a series of all the dates between two dates, calculate the day of the week for each</li>
+<li>From a separate view, join to this series and count up all the cases where it&rsquo;s not a weekend</li>
+</ol>
+<blockquote>
+<p>This is necessary as calculations on the results of a generate_series often need to be done from a separate view</p>
+</blockquote>
+<h2 id="outputting-a-pivoted-view-in-a-printout">Outputting a ‘pivoted’ view in a printout</h2>
+<p>In a template, <code>$view.htmlTable(“table name”, “view name”)</code> outputs the contents of the view.</p>
+<p>Use <code>$view.htmlTableTransverse(“table name”, “view name”)</code> instead for a pivoted version with columns and rows swapped.</p>
+<h2 id="capturing-dates-of-status-changes-on-lookup-list">Capturing dates of status changes on lookup list</h2>
+<p>Show a date field only when the dropdown reaches the desired status, using <a href="/docs/fields/field-options/common-options/#show-if-record-in-view">field options</a>. Use a <a href="/docs/fields/field-options/common-options/#set-from-previous-referenced-field">referenced data field</a> to populate it with the current time.</p>
+<h2 id="record-builder">Record Builder</h2>
+<p>Scenario: A customer tends to order the same products every time. Have an option for the system to auto fill the “standard” order every time an order is placed.</p>
+<p>Use the tab option <a href="/docs/tables/hierarchy-navigation/tabs/#populate-from-template">Populate from template</a>.</p>
+<h2 id="de-duplicating-a-comma-separated-list">De-duplicating a comma separated list</h2>
+<p>Calculation template:</p>
+<pre><code>array_to_string(
+  array(select distinct unnest(
+    regexp_split_to_array(‘my,comma,separated,list’, ',')
+  ))
+,',')
+</code></pre><p>Example:</p>
+<pre><code>array_to_string(
+  array(select distinct unnest(
+    regexp_split_to_array(
+      string_agg({b2.2) ingredient suppliers.ingredient supplier's countries of origin}, ',')
+    ,',')
+  ))
+,',')
+</code></pre><h2 id="custom-filtering-when-choosing-a-relation">Custom filtering when choosing a relation</h2>
+<p>When choosing a relation, either in a <a href="/docs/tables/relational-database-concepts/">junction table</a> or otherwise, the system will automatically filter on the ID of any related parent record. For example, when adding order lines to a customer order, if each product is related to a customer, then the system will automatically only let the user choose products for that customer.</p>
+<p>However it won’t filter on anything that’s more than one direct relationship away. If you want to do that, or indeed filter on anything else at all, you can create a filter calculation.</p>
+<ol>
+<li>In the relation chooser view, create a calculation e.g. ‘my relation filter’ and set it to contain the contents of what you want to filter on e.g. some other field. The calculation can be hidden.</li>
+<li>From the main table, create a new view. In that view, create a calculation with the same name and contents.</li>
+<li>Add that a cross-reference field into the main table, utilising that view. In the field options, tick [<em>use as filter</em>]</li>
+</ol>
+<h2 id="switching-a-field-from-one-type-to-another">Switching a field from one type to another</h2>
+<p>For example, converting a whole number field into a decimal number</p>
+<ol>
+<li>Rename the field to &lsquo;{fieldname} old&rsquo;</li>
+<li>Add a new field &lsquo;{fieldname}&rsquo;. This means that any calcs updated won&rsquo;t have to be changed and won&rsquo;t break due to mis-matching field names</li>
+<li>Copy all values from one field to another. The easiest way to do that is to use a <a href="/docs/workflows/">workflow</a></li>
+<li>Try to delete the old field. It will show a list of views that contain it</li>
+<li>Edit all those views to remove references to the field and add the new field. That includes updating all calculations that reference the field to trigger the system to realise that the calc. no longer references eht old field</li>
+<li>Remove the old field</li>
+</ol>
+<h2 id="finding-the-latest-child-record">Finding the &lsquo;latest&rsquo; child record</h2>
+<p>A common scenario occurs when you have a one to many relationship. You want a view which shows precise info from the &lsquo;latest&rsquo; child record.</p>
+<p>Start with parent table and join to child, add the controlling field and set the correct order. For example, sorting by &lsquo;created on [auto]&rsquo; descending will give you the newest child record. Then go to <em>manage</em> tab of the view and set the <em>Distinct Field</em> option to the Parent table’s ID field.</p>
+<p>You can now freely add what ever fields from the child record happy in the knowledge you’ll only have the one line per parent.</p>
 
 	
 		<style>
@@ -1258,7 +1331,7 @@ It is often necessary to put some thought in to the visibility of the button - i
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 29, 2020: <a  href="https://github.com/okohll/abdocs/commit/48d09a6507deb471e04d6aa4a7b435e43a41986c">Update to advanced Workflows (48d09a6)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified April 24, 2020
 </div>
 </div>
 
