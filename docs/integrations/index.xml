@@ -417,7 +417,7 @@ With simple_format=false, a more complex but more robust format it used. Rather 
       <description>
         
         
-        &lt;p&gt;When a comment is added to a record in agileBase, a copy can be sent to your Slack workspace, to a specific channel appropriate to the tile. Instructions are in progress, in the meantime please &lt;a href=&#34;mailto:support@agilechilli.com&#34;&gt;contact us&lt;/a&gt; for help setting this up.&lt;/p&gt;
+        &lt;p&gt;When a comment is added to a record in agileBase, a copy can be sent to your Slack workspace, to a specific channel appropriate to the tile. Instructions are in progress, in the meantime please &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; for help setting this up.&lt;/p&gt;
 &lt;p&gt;Integration with Microsoft Teams or other similar services is also possible should a customer wish - please get in touch if so.&lt;/p&gt;
 
       </description>
