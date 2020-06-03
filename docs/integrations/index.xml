@@ -394,6 +394,21 @@ With simple_format=false, a more complex but more robust format it used. Rather 
     </item>
     
     <item>
+      <title>Docs: Exporting to spreadsheet</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/exporting-to-spreadsheet/</link>
+      <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/exporting-to-spreadsheet/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A spreadsheet export is the simplest way for everyday users to get data out of agileBase without requiring that an administrator sets up an integration.&lt;/p&gt;
+&lt;p&gt;Details of how to allow this are in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/&#34;&gt;security and compliance&lt;/a&gt; section.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Slack integration</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/slack-integration/</link>
       <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
