@@ -20,23 +20,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Changing Field Types | agileBase docs</title><meta property="og:title" content="Changing Field Types" />
-<meta property="og:description" content="How to change a field from one type to another" />
+<title>Setting up the Calendar API | agileBase docs</title><meta property="og:title" content="Setting up the Calendar API" />
+<meta property="og:description" content="A powerful automation feature that can synchronise data with a third party calendar." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://docs.agilebase.co.uk/docs/fields/field-types/changing-field-types/" />
+<meta property="og:url" content="https://docs.agilebase.co.uk/docs/integrations/calendar/" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-05-12T23:06:29+01:00" />
-<meta itemprop="name" content="Changing Field Types">
-<meta itemprop="description" content="How to change a field from one type to another">
+<meta property="article:modified_time" content="2020-04-24T16:40:00+01:00" />
+<meta itemprop="name" content="Setting up the Calendar API">
+<meta itemprop="description" content="A powerful automation feature that can synchronise data with a third party calendar.">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-05-12T23:06:29&#43;01:00" />
-<meta itemprop="wordCount" content="186">
+<meta itemprop="dateModified" content="2020-04-24T16:40:00&#43;01:00" />
+<meta itemprop="wordCount" content="1037">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Changing Field Types"/>
-<meta name="twitter:description" content="How to change a field from one type to another"/>
+<meta name="twitter:title" content="Setting up the Calendar API"/>
+<meta name="twitter:description" content="A powerful automation feature that can synchronise data with a third party calendar."/>
 
 
 
@@ -419,10 +419,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/fields/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Fields</a>
+    <a  href="/docs/fields/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Fields</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsfields">
+    <li class="collapse " id="docsfields">
       
       
       
@@ -436,10 +436,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/fields/field-types/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Field Types</a>
+    <a  href="/docs/fields/field-types/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Field Types</a>
   </li>
   <ul>
-    <li class="collapse show" id="docsfieldsfield-types">
+    <li class="collapse " id="docsfieldsfield-types">
       
       
       
@@ -534,7 +534,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsfieldsfield-typeschanging-field-types" href="/docs/fields/field-types/changing-field-types/">Changing Field Types</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-typeschanging-field-types" href="/docs/fields/field-types/changing-field-types/">Changing Field Types</a>
       
       
     </li>
@@ -857,17 +857,17 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/integrations/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Integrations</a>
+    <a  href="/docs/integrations/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Integrations</a>
   </li>
   <ul>
-    <li class="collapse " id="docsintegrations">
+    <li class="collapse show" id="docsintegrations">
       
       
       
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsintegrationscalendar" href="/docs/integrations/calendar/">Setting up the Calendar API</a>
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docsintegrationscalendar" href="/docs/integrations/calendar/">Setting up the Calendar API</a>
       
       
       
@@ -1113,8 +1113,8 @@
 
 
 
-<a href="https://github.com/okohll/abdocs/edit/master/content/en/docs/fields/field-types/changing-field-types.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/okohll/abdocs/issues/new?title=Changing%20Field%20Types" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/okohll/abdocs/edit/master/content/en/docs/integrations/calendar.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/okohll/abdocs/issues/new?title=Setting%20up%20the%20Calendar%20API" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
 
@@ -1122,6 +1122,14 @@
 
 
 
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-requisites">Pre-requisites</a></li>
+    <li><a href="#incoming-data">Incoming data</a></li>
+    <li><a href="#outgoing-data">Outgoing data</a></li>
+  </ul>
+</nav>
 
 
 
@@ -1143,9 +1151,6 @@
 
 
 
-
-
-
 <li class="breadcrumb-item" >
 	<a href="https://docs.agilebase.co.uk/docs/">Docs</a>
 </li>
@@ -1154,21 +1159,14 @@
 
 
 <li class="breadcrumb-item" >
-	<a href="https://docs.agilebase.co.uk/docs/fields/">Fields</a>
-</li>
-
-
-
-
-<li class="breadcrumb-item" >
-	<a href="https://docs.agilebase.co.uk/docs/fields/field-types/">Field Types</a>
+	<a href="https://docs.agilebase.co.uk/docs/integrations/">Integrations</a>
 </li>
 
 
 
 
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://docs.agilebase.co.uk/docs/fields/field-types/changing-field-types/">Changing Field Types</a>
+	<a href="https://docs.agilebase.co.uk/docs/integrations/calendar/">Setting up the Calendar API</a>
 </li>
 
 	</ol>
@@ -1176,26 +1174,72 @@
 
             
 <div class="td-content">
-	<h1>Changing Field Types</h1>
-    <div class="lead">How to change a field from one type to another</div>
+	<h1>Setting up the Calendar API</h1>
+    <div class="lead">A powerful automation feature that can synchronise data with a third party calendar.</div>
 	       
-	<p>Once a field has been created, the type can&rsquo;t be changed with the flick of a switch. However there is an easy to follow process to accomplish this.</p>
+	<p>If a view contains a date field, the data in it can by synchronised with an external calendar application, e.g. Google Calendar, Microsoft Office 365, Apple calendars etc.</p>
+<p>If it contains two date fields, the first will be used for the start date/time, the second for the finish.</p>
+<p>Once set up, the link will be maintained and the calendar will update whenever the data in agileBase is updated, or vice versa. The synchonisation can be set up to be two-way (to and from agileBase), or just one way (either two or from agileBase)</p>
+<h2 id="pre-requisites">Pre-requisites</h2>
+<p>agileBase uses <a href="https://oauth.net/">OAuth</a>, an industry standard protocol, to synchronize with your calendar system of choice.</p>
+<p>Under this protocol, each person will need to individually grant agileBase permission to send data to, and view events in their calendar. This is a straightforward process: as a user,</p>
 <ol>
-<li>Rename the field to <code>[fieldname] old</code></li>
-<li>Add a new field <code>[fieldname]</code>. This means that any calculations that reference the field won&rsquo;t have to be changed and won&rsquo;t break due to mis-matching field names</li>
-<li>Copy all values from one field to another. The easiest way is to use a <a href="https://todo.com">workflow</a></li>
-<li>Try to delete the old field. If any views reference it, the delete will fail and a list of them will be shown</li>
-<li>Edit all those views
+<li>Click on your user icon at the top right of the screen</li>
+<li>Select <em>edit profile</em></li>
+<li>Click the <em>connect calendar</em> link</li>
+</ol>
+<p>You will see a calendar selector screen like this:</p>
+<p><img src="/cronofy.png" alt="Cronofy"></p>
+<p>Choose the calendar system you use and follow through the prompt to allow access.</p>
+<h2 id="incoming-data">Incoming data</h2>
+<p>Once users have connected their calendars, data can be received into agileBase whenever an event is created, edited or deleted in the external calendar. We need to set up two new tables so the system can receive these events. One is a table for the event data itself, the other stores the list of calendars in the user&rsquo;s account. One calendar account may contain multiple calendars, e.g. a user may have separate calendars set up for bookings, sales visits, holidays etc. - typically they display in different colours on the screen.</p>
+<p>The main reason for recording the calendar list is so that the correct calendar can be chosen to send events to, when we come to send events from agileBase (see below).</p>
+<p>To set up these tables, follow this process:</p>
+<ol>
+<li>Create a table called <code>ab calendar intray</code>. It can have a prefix if you like, e.g. <code>z) ab calendar intray</code></li>
+<li>Add the following <strong>text</strong> fields: <code>person</code>, <code>calendar id</code>, <code>calendar name</code>, <code>event id</code>, <code>summary</code>, <code>description</code>, <code>location</code>, <code>participation status</code>, <code>event status</code>, <code>categories</code>, <code>attendees</code></li>
+<li>Add the following <strong>date</strong> fields: <code>start</code>, <code>end</code>, <code>created</code> (accurate to the second), <code>updated</code> (accurate to the second)</li>
+<li>Add a <strong>checkbox</strong> field, <code>deleted</code></li>
+</ol>
+<p>and for the calendar mapping table:</p>
+<ol>
+<li>Create a table called <code>ab calendar mapping</code>. Again, you can prefix it, e.g. <code>z) ab calendar mapping</code></li>
+<li>Add <strong>text</strong> fields: <code>username</code>, <code>calendar id</code>, <code>owner</code>, <code>calendar name</code>, <code>provider</code>, <code>profile id</code>, <code>profile name</code>, <code>permission level</code></li>
+<li>Add two <strong>checkbox</strong> fields called: <code>read only</code>, <code>primary</code></li>
+</ol>
+<p>The easiest way to understand the meaning of all the fields is simply to connect your calendar as above, create these tables and add some events to your third party calendar - create new events, update them and delete them, watching the data flow into the tables. New data will usually take no more than a few seconds to appear.</p>
+<blockquote>
+<p>Different third party calendar systems may use some fields in slighlty different ways. For example, at the time of writing, Google Calendar does not support the <code>categories</code> field but some other calendar systems do use this to show tags you may have added to your events.</p>
+</blockquote>
+<p>Once you have data successfully flowing into the system, a common next step is to move the incoming events into tables which make sense for your particular business needs. For example, if you have a team of salespeople, you may move incoming bookings into a &lsquo;leads&rsquo; table. What you do with the data will depend on your particular circumstances.</p>
+<p>You can use <a href="/docs/workflows/">automated worflows</a> to copy data from one table to another if necessary.</p>
+<p>However, you could also simply create views from the &lsquo;ab calendar intray&rsquo; table to allow users to view these events directly. Adding a filter to the user on the &lsquo;person&rsquo; field will ensure a user will only see their own events -see [users - restrict data access]({{relref &ldquo;/docs/security-and-compliance/security-features/users#restrict-data-access&rdquo;}})</p>
+<blockquote>
+<p>Please be aware of potential data privacy concerns when setting up calendar synchronisation. All events a user creates or modifies in any of the calendars in their connected account will send to agileBase. As an administrator, you may wish to set up specific work calendar accounts for your users, distinct from any personal accounts they may use.</p>
+</blockquote>
+<h2 id="outgoing-data">Outgoing data</h2>
+<p>As well as receiving data in, you can send either new or modified events from agileBase to users&rsquo; connected calendars.</p>
+<p>New events are those created in agileBase, modified events are those created externally which have come into the system via the incoming data method above, but which have then been updated in agileBase.</p>
+<p>To set this up</p>
+<ol>
+<li><a href="/docs/views/">Create a view</a> to show the events to send to the calendar.</li>
+<li>Add any relevant <a href="/docs/views/filters/">filters</a> to the view, so it only shows events which need to be sent, not <strong>all</strong> events.</li>
+<li>In the view&rsquo;s <em>manage</em> tab, show the <em>Send</em> panel. Select <em>send data to an external calendar</em></li>
+<li>Tick <em>Send events to calendar</em> to activate the view and add the fields shown. These are
 <ul>
-<li>remove the old field and add the new, to all fields, filters etc.</li>
-<li>update all calculations that reference the field e.g. add a space to the end of all of them. That will refresh them to reference the new field rather than the old</li>
+<li><strong>text fields</strong>: <code>calendar id</code>, <code>event id</code>, <code>calendar owner</code>, <code>title</code>, <code>description</code>, <code>location</code>, <code>attendees</code></li>
+<li>a <strong>whole number field</strong>: <code>reminder minutes</code> - a number of minutes before the event when the calendar should alert you</li>
+<li>two <strong>date fields</strong>: the first date/time field in the view will be used as the event&rsquo;s start date/time, the next the end date/time (if applicable)</li>
 </ul>
 </li>
-<li>Finally, delete the old field</li>
 </ol>
-<blockquote>
-<p>Before starting, it will be worth ensuring that data won&rsquo;t change during the process, for example by making the data read-only to all users, or requesting they don&rsquo;t edit field values until finished.</p>
-</blockquote>
+<p>Some of these fields deserve additional explanations:</p>
+<ul>
+<li><strong>calendar id</strong>: identifies the particular calendar within the user&rsquo;s connected account to send events to. This is the same calendar ID used in the &lsquo;ab calendar mapping&rsquo; table above, so can be looked up from there, perhaps by joining to the table.</li>
+<li><strong>event id</strong>: if you&rsquo;re creating a new event, leave this blank. If the event was created externally, or you&rsquo;re updating an existing event, use the event ID as listed in the &lsquo;ab calendar intray&rsquo; record for it.</li>
+<li><strong>calendar owner</strong>: the ID of the agileBase user - this will be used to determine the person who&rsquo;se linked calendar the event should be sent to. The standard agileBase format is used &lsquo;Forename Surname (username)&rsquo;, so you can use the automatic field &lsquo;Created By [auto]&rsquo; if you like.</li>
+<li><strong>attendees</strong>: a comma separated list of email addresses of people who should be invited</li>
+</ul>
 
 	
 		<style>
@@ -1259,7 +1303,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 12, 2020: <a  href="https://github.com/okohll/abdocs/commit/672bc1f3f3a59633cfe3f87ee8231858721a559f">Changing field types (672bc1f)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified April 24, 2020
 </div>
 </div>
 

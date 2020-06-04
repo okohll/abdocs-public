@@ -860,7 +860,7 @@
       
       
       
-      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsintegrationssetting-up-the-calandar-push" href="/docs/integrations/setting-up-the-calandar-push/">Setting up the Calendar API</a>
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsintegrationscalendar" href="/docs/integrations/calendar/">Setting up the Calendar API</a>
       
       
       
@@ -1116,6 +1116,14 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#default-views">Default views</a></li>
+    <li><a href="#splitting-a-view-into-tracks">Splitting a view into tracks</a></li>
+    <li><a href="#colouring-events">Colouring events</a></li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -1152,7 +1160,21 @@
 	<h1>Calendar</h1>
         <div class="lead">Using the built in calendar and integrating with third party calendars</div>
 	
-	
+	<p>Any view with one or more date/time fields can have it&rsquo;s data displayed in calendar form. If there are two date/time fields, the first will be the start time, the second the end time. If there&rsquo;s only one, events will last 1 hour by default, unless the field is a date only, in which case they will be all day.</p>
+<p>Data can also <a href="/docs/integrations/calendar/">sync to and from external calendars</a>.</p>
+<p>Any user can add the calendar tile to their homepage, then select views containing dates to display in it. Data can be displayed in a number of formats, like standard month/week/day views but also timeline views for a gantt-style format, with each view in its own swim-lane.</p>
+<h2 id="default-views">Default views</h2>
+<p>Any views which are in a tile with the word &lsquo;calendar&rsquo; in the name will show by default when a user first opens the calendar tile.</p>
+<h2 id="splitting-a-view-into-tracks">Splitting a view into tracks</h2>
+<p>In a timeline grid display, each view will become a swim-lane or track down the left hand side of the screen. However it&rsquo;s also possible to create multiple tracks from a single view, choosing a field to split on. Each distinct value of that field will become a separate track.</p>
+<p>For example, here&rsquo;s a view of recipe development milestones split on the product name:</p>
+<p><img src="/calendar-timeline.png" alt="calendar timeline"></p>
+<p>To set this up, add a text calculation to the view called &lsquo;calendar splitter&rsquo;. The calculation should output the value to split on, in this case the product name.</p>
+<h2 id="colouring-events">Colouring events</h2>
+<p>By default, each view used in the calendar will be assigned a different colour.</p>
+<p>Alternatively, you can choose to colour individual events, for example based on whether they&rsquo;re overdue or not.</p>
+<p>To do this, add a text field to the view which has the <a href="/docs/fields/field-options/text-field-options/#colour-words">colour words</a> option set, or a calculation with the <a href="/docs/views/calculations/#colouring">colour words</a> option.</p>
+
         <div class="section-index">
     
     

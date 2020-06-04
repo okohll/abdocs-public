@@ -1866,7 +1866,7 @@ Options are:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-data-to-a-third-party-via-api/&#34;&gt;Send data to a third party via API&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;Send an email&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;Send an email Chaser&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-calandar-push/&#34;&gt;Send data to a calendar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/calendar/&#34;&gt;Send data to a calendar&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;Send to document generator&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;RSS feed - See facility with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/&#34;&gt;PULL API&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -2040,10 +2040,10 @@ Options are:&lt;/p&gt;
     
     <item>
       <title>Docs: Setting up the Calendar API</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-calandar-push/</link>
+      <link>https://docs.agilebase.co.uk/docs/integrations/calendar/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-calandar-push/</guid>
+      <guid>https://docs.agilebase.co.uk/docs/integrations/calendar/</guid>
       <description>
         
         
