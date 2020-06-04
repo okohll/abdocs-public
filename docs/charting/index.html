@@ -1116,6 +1116,16 @@
 
 
 
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#creating-a-chart">Creating a chart</a></li>
+    <li><a href="#embedding-charts-in-forms">Embedding charts in forms</a></li>
+    <li><a href="#the-visualisations-tile">The visualisations tile</a></li>
+    <li><a href="#subscribing-users-or-roles-to-charts">Subscribing users or roles to charts</a></li>
+    <li><a href="#going-further">Going further</a></li>
+  </ul>
+</nav>
+
 
 
           </div>
@@ -1152,7 +1162,43 @@
 	<h1>Charting</h1>
         <div class="lead">Building and working with charts</div>
 	
-	
+	<p>Charting is not strictly an administrator function, as any user can create charts and other data visualisations, such as maps and word clouds.</p>
+<p>However, it&rsquo;s useful for administrators to know how the system works in outline, so they can support users and also because creating charts may be a key part of building an application.</p>
+<p>In agileBase, charts &lsquo;belong to&rsquo; a view. Each view can have a collection of charts. Users can toggle between viewing data rows and looking at charts based on those rows. When a user filters data using the quick filter boxes at the top of the screen, the data or charts (whichever is shown) will update to match the filtered results.</p>
+<h2 id="creating-a-chart">Creating a chart</h2>
+<ol>
+<li>In the tiles interface, open the tile and view to use as a source of chart data</li>
+<li>Click the charts button to the left of the data rows displayed</li>
+<li>Click the <em>add/edit chart or map</em> button</li>
+<li>Follow each of the steps (1 - 3) on screen to build the chart</li>
+<li>In the last step, give a name to the chart and press <em>save</em></li>
+</ol>
+<p>When choosing a type of chart in step 3, small previews will be displayed based on some of the chart data. However some chart types may display a message rather than a preview. In this case, the chart data selected in step 1 is not applicable for this chart type.</p>
+<p>For example, if in step 1 we have a count of items per year:</p>
+<p>1<a href="/chart-1.png">Chart - step 1</a></p>
+<p>then the scatter diagram will work but the bubble chart won&rsquo;t. For the bubble chart, <strong>two</strong> y-axis measurements are required, one to specify the position of the bubble on the y-axis, plus another to determine the relative size of the bubble.</p>
+<p>1<a href="/chart-bubble.png">Chart - step 3</a></p>
+<h2 id="embedding-charts-in-forms">Embedding charts in forms</h2>
+<p>Charts can be embedded into tables. When the user opens a record, the chart will automatically filter to show data pertaining to that record only.</p>
+<p>So for example if you have a chart of sales per month per customer, which you embed into a customer table, it will show as sales per month, only for the customer on screen.</p>
+<p>This is accomplished by using a view with chart(s) as a <a href="/docs/fields/field-types/special-field-types/referenced-data/">cross-referenced panel</a> - see that page for setup information.</p>
+<h2 id="the-visualisations-tile">The visualisations tile</h2>
+<p>Once a few charts have been created in different views and tiles, a user can add a <a href="/docs/tiles/">visualisations tile</a> to their screen and select charts to include in it. The contents of the visualisation tile are personal to each user.</p>
+<p>Only one visualisations tile can be added to a user&rsquo;s homepage, but that tile can include as many charts as necessary collected from anywhere in the system.</p>
+<h2 id="subscribing-users-or-roles-to-charts">Subscribing users or roles to charts</h2>
+<p>Users can be subscribed to charts (or subscribe themselves) to receive them by email.</p>
+<ol>
+<li>In a view with some charts, open the charts</li>
+<li>Next to &lsquo;Send these charts to me&rsquo;, select a frequency, e.g. monthly.</li>
+<li>Under &lsquo;Include data too&rsquo;, select tabular data to include in the email too - various options will be displayed e.g. all new rows since the last email</li>
+<li>Next to &lsquo;roles&rsquo;, select a role to send the charts and data to. All users in the role will be subscribed. Multiple roles can be added</li>
+</ol>
+<blockquote>
+<p>If the view has no charts, this function can be used to send tabular data only</p>
+</blockquote>
+<h2 id="going-further">Going further</h2>
+<p>agileBase can also integrate with third party business intelligence and reporting tools, using the API. A worked example is <a href="/docs/integrations/pull-example-power-bi/">here for Power BI</a>.</p>
+
         <div class="section-index">
     
     
