@@ -1254,7 +1254,7 @@
 <p>Firstly, we need all combinations. Create a cross join between customers and products, in a &lsquo;customer products&rsquo; view.</p>
 <p>The next step is similar to our reporting example of <a href="/docs/views/joins/#joining-on-multiple-fields">joining on multiple fields</a>. Create a calculation &lsquo;customer product&rsquo; which concatenates together customer ID and product ID. Create the same calculation in a view of sales (each sale of a product to a customer). Then join this sales view into our customer products view and bingo, we can display the total sales, whether zero or more, of each product to each customer.</p>
 <blockquote>
-<p>If you haven&rsquo;t yet read up on <a href="https://todo.com">calculations</a>, you may need to do that in order to accomplish everything above</p>
+<p>If you haven&rsquo;t yet read up on <a href="/docs/views/calculations/">calculations</a>, you may need to do that in order to accomplish everything above</p>
 </blockquote>
 <h3 id="adding-a-cross-join">Adding a cross join</h3>
 <p>Adding a cross join is a little different to <a href="/docs/views/joins/#adding-a-join">adding a normal join</a>. The left and right fields don&rsquo;t matter (as we want to apply any exclusion rules, we just want every combination of rows possible).</p>

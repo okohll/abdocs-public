@@ -79,7 +79,7 @@
 &lt;p&gt;Firstly, we need all combinations. Create a cross join between customers and products, in a &amp;lsquo;customer products&amp;rsquo; view.&lt;/p&gt;
 &lt;p&gt;The next step is similar to our reporting example of &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#joining-on-multiple-fields&#34;&gt;joining on multiple fields&lt;/a&gt;. Create a calculation &amp;lsquo;customer product&amp;rsquo; which concatenates together customer ID and product ID. Create the same calculation in a view of sales (each sale of a product to a customer). Then join this sales view into our customer products view and bingo, we can display the total sales, whether zero or more, of each product to each customer.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;If you haven&amp;rsquo;t yet read up on &lt;a href=&#34;https://todo.com&#34;&gt;calculations&lt;/a&gt;, you may need to do that in order to accomplish everything above&lt;/p&gt;
+&lt;p&gt;If you haven&amp;rsquo;t yet read up on &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculations&lt;/a&gt;, you may need to do that in order to accomplish everything above&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;adding-a-cross-join&#34;&gt;Adding a cross join&lt;/h3&gt;
 &lt;p&gt;Adding a cross join is a little different to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#adding-a-join&#34;&gt;adding a normal join&lt;/a&gt;. The left and right fields don&amp;rsquo;t matter (as we want to apply any exclusion rules, we just want every combination of rows possible).&lt;/p&gt;

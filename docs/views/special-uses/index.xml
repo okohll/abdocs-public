@@ -25,7 +25,7 @@
         
         &lt;p&gt;Any view can be used to generate an API - a unique URL which third party services can call in order to extract data, or which can be used to push data to those services and applications.&lt;/p&gt;
 &lt;p&gt;The view created in this case is used to define the set of records to send and the fields to include.&lt;/p&gt;
-&lt;p&gt;For more information, see the &lt;a href=&#34;https://todo.com&#34;&gt;APIs&lt;/a&gt; topic, which contains full details of how to set up and use APIs.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;integrations&lt;/a&gt; topic, which contains full details of how to set up and use APIs.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This topic also includes information about APIs which receive data from third party systems, as opposed to sending to them, for which a view isn&amp;rsquo;t necessary.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -44,7 +44,7 @@
         
         &lt;p&gt;A workflow can be used to edit data in the system automatically.&lt;/p&gt;
 &lt;p&gt;The view created in this case is used to define the set of records to act on (others can be excluded via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; and also the data to use - each calculation or field in the view can be a source of data to create or update.&lt;/p&gt;
-&lt;p&gt;For more information, see the &lt;a href=&#34;https://todo.com&#34;&gt;workflows&lt;/a&gt; topic, which contains full details of how to set up and use workflows.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; topic, which contains full details of how to set up and use workflows.&lt;/p&gt;
 
       </description>
     </item>

@@ -64,7 +64,7 @@
       <description>
         
         
-        &lt;p&gt;Without any joins, you can only add &lt;a href=&#34;https://todo.com&#34;&gt;fields&lt;/a&gt;, &lt;a href=&#34;https://todo.com&#34;&gt;filters&lt;/a&gt; and &lt;a href=&#34;https://todo.com&#34;&gt;calculations&lt;/a&gt; (display data in other words), from a view&amp;rsquo;s parent table - the one it was created from. When joins are added to other tables or views, you can also bring in data from any table or view joined to.&lt;/p&gt;
+        &lt;p&gt;Without any joins, you can only add &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;fields&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;filters&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculations&lt;/a&gt; (display data in other words), from a view&amp;rsquo;s parent table - the one it was created from. When joins are added to other tables or views, you can also bring in data from any table or view joined to.&lt;/p&gt;
 &lt;p&gt;For example, a view based on the contacts table could join to organisations (as long as there is a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation field&lt;/a&gt; from contacts to organisations). You could then add in organisation name to the view, as well as fields like contact name, phone number and email address.&lt;/p&gt;
 &lt;p&gt;Or for a more complex example, if you start with a view from a recipes table, you could potentially join down to ingredients, then on again to allergens of those ingredients, allowing you to work out with a calculation the complete list of allergens in any recipe.&lt;/p&gt;
 &lt;p&gt;Any number of joins to different tables or views can be added to a view.&lt;/p&gt;
@@ -88,7 +88,7 @@
 &lt;p&gt;Joins up are from a &amp;lsquo;child&amp;rsquo; to a &amp;lsquo;parent&amp;rsquo;, i.e. you can think of a contact as belonging to a organisation, so a join from contacts to organisations is an upwards join. The other way round, it would be a downwards join.&lt;/p&gt;
 &lt;p&gt;What difference does this make? Well if you join down, then the view will contain one row for every child record, with repetitions in the parent data if the parent is the same. This is easier to see with a picture - here&amp;rsquo;s what a view from an organisations table looks like when it joins down to contacts - there are three contacts for the organisation TODO.&lt;/p&gt;
 &lt;p&gt;** TODO: screenshot **&lt;/p&gt;
-&lt;p&gt;However, joins down can be very useful when you want to aggregate child data, for example if you want to count the number of contacts each organisation has, you could add a join from organisations down to contacts, then add an &lt;a href=&#34;https://todo.com&#34;&gt;aggregate calculation&lt;/a&gt; to count the contacts. The system would then condense everything into one row per organisation, like so:&lt;/p&gt;
+&lt;p&gt;However, joins down can be very useful when you want to aggregate child data, for example if you want to count the number of contacts each organisation has, you could add a join from organisations down to contacts, then add an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#aggregate-calculations&#34;&gt;aggregate calculation&lt;/a&gt; to count the contacts. The system would then condense everything into one row per organisation, like so:&lt;/p&gt;
 &lt;p&gt;** TODO: screenshot **&lt;/p&gt;
 &lt;p&gt;So joins upwards are the more common case, but joins downward can be useful for particular purposes.&lt;/p&gt;
 &lt;h2 id=&#34;complex-joins&#34;&gt;Complex joins&lt;/h2&gt;
@@ -98,7 +98,7 @@
 &lt;p&gt;Joins to views aren&amp;rsquo;t automatically suggested, but you can still add them.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;When might this be useful? Well one example is if you have a view containing a complex calculation and you wish to include the results of that calculation in lots of other views in different places.&lt;/p&gt;
-&lt;p&gt;Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a &lt;a href=&#34;https://todo.com&#34;&gt;workflow view&lt;/a&gt;) and perhaps product labels as well, using a view to send data to third party labelling equipment using an &lt;a href=&#34;https://todo.com&#34;&gt;API&lt;/a&gt;..&lt;/p&gt;
+&lt;p&gt;Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow view&lt;/a&gt;) and perhaps product labels as well, using a view to send data to third party labelling equipment using an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;To add a join to a view:&lt;/p&gt;
 &lt;ol&gt;
@@ -127,7 +127,7 @@
 &lt;p&gt;For an example, imagine our business opens a series of restaurants - we have a table &amp;lsquo;restaurants&amp;rsquo; listing them. We may have a table of people who&amp;rsquo;ve signed up to our newsletter, called &amp;lsquo;newsletter signups&amp;rsquo;. Some of them may have provided a postcode.&lt;/p&gt;
 &lt;p&gt;To find a list of people in the same postcode areas as each restaurant (the first half of a postcode, e.g. BS1):&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;in a view &amp;lsquo;restaurant locations&amp;rsquo;, built from the restaurants table, create a calculation &amp;lsquo;postcode area&amp;rsquo;, which picks out the first part of the restaurant&amp;rsquo;s postcode (see &lt;a href=&#34;https://todo.com&#34;&gt;calculations&lt;/a&gt; for how to create a calculation)&lt;/li&gt;
+&lt;li&gt;in a view &amp;lsquo;restaurant locations&amp;rsquo;, built from the restaurants table, create a calculation &amp;lsquo;postcode area&amp;rsquo;, which picks out the first part of the restaurant&amp;rsquo;s postcode (see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculations&lt;/a&gt; for how to create a calculation)&lt;/li&gt;
 &lt;li&gt;in a view &amp;lsquo;all newsletter signups&amp;rsquo;, from the table newsletter signups, create a similar calculation, called &amp;lsquo;signup postcode area&amp;rsquo;&lt;/li&gt;
 &lt;li&gt;from the view &amp;lsquo;all newsletter signups&amp;rsquo;, create a join with
 &lt;ul&gt;
@@ -146,7 +146,7 @@
 &lt;h3 id=&#34;joining-on-multiple-fields&#34;&gt;Joining on multiple fields&lt;/h3&gt;
 &lt;p&gt;Extending &amp;lsquo;creating a join on a calculation&amp;rsquo; from the above example, here we can use a calculation to create a &lt;strong&gt;composite field&lt;/strong&gt; to join on. This can be used when you want to join on a number of fields at once, not just one.&lt;/p&gt;
 &lt;p&gt;This can sometimes be useful in financial reporting. Our example here is creating a report totalling up sales by product by month. The twist is we also want to include product/month combinations in which there were no sales of a particular product for the month.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;d start by creating a view of all product/month combinations over the past 12 months. See the &lt;a href=&#34;https://todo.com&#34;&gt;series generation&lt;/a&gt; example in the calculations section for how to do this.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;d start by creating a view of all product/month combinations over the past 12 months. See the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#series-generation&#34;&gt;series generation&lt;/a&gt; example in the calculations section for how to do this.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;d then create a calculation &amp;lsquo;product month&amp;rsquo; which would merge the product code and the month name. A similar calculation would be created in a &amp;lsquo;sales&amp;rsquo; view, which shows individual sale lines, each with a product and month.&lt;/p&gt;
 &lt;p&gt;Finally, we&amp;rsquo;d join the two views together, the product/month combinations on the left, the sales view on the right, choosing the &amp;lsquo;product month&amp;rsquo; calculations from each as the fields to match on.&lt;/p&gt;
 &lt;p&gt;That would enable us to create a calculation totalling sales for each product/month, including zeros where there were no sales.&lt;/p&gt;
@@ -272,7 +272,7 @@
         
         
         &lt;p&gt;The primary purpose of a view is to show data to users. To let them see, search and report on it, or find individual records to edit.&lt;/p&gt;
-&lt;p&gt;However, some fundamental aspects of a view make it a very useful feature that can power many core capabilities of agileBase, such as &lt;a href=&#34;https://todo.com&#34;&gt;chasers&lt;/a&gt;, &lt;a href=&#34;https://todo.com&#34;&gt;workflows&lt;/a&gt; and &lt;a href=&#34;https://todo.com&#34;&gt;APIs&lt;/a&gt;, as well as being useful to administrators in many more minor ways.&lt;/p&gt;
+&lt;p&gt;However, some fundamental aspects of a view make it a very useful feature that can power many core capabilities of agileBase, such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chasers&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt;, as well as being useful to administrators in many more minor ways.&lt;/p&gt;
 &lt;p&gt;A view being a filtered list of records, it can be used to specify those records to act on, i.e. those representing emails to send, workflow actions or data to send to a third party system with an API.&lt;/p&gt;
 &lt;p&gt;A view is commonly created for the task you wish to accomplish, placing it in a System tile to hide it from users. Then it can be turned to the required purpose in any of the following ways.&lt;/p&gt;
 
