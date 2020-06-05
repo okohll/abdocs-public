@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Enforcing the correctness of data entered into the system">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
 <meta itemprop="dateModified" content="2020-05-09T11:24:20&#43;01:00" />
-<meta itemprop="wordCount" content="407">
+<meta itemprop="wordCount" content="406">
 
 
 
@@ -608,6 +608,12 @@
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionsreferenced-field-options" href="/docs/fields/field-options/referenced-field-options/">Cross Reference Field Options</a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionsfile-field-options" href="/docs/fields/field-options/file-field-options/">File Field Options</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -1177,20 +1183,20 @@
 	<h1>Data Integrity Checks</h1>
     <div class="lead">Enforcing the correctness of data entered into the system</div>
 	       
-	<p>It can be important to ensure that certain rules are followed when data is entered, either manually by a user, by an incoming <a href="https://todo.com">API request</a> or someone filling in a <a href="https://todo.com">chaser</a> response.</p>
+	<p>It can be important to ensure that certain rules are followed when data is entered, either manually by a user, by an incoming <a href="/docs/integrations/">API request</a> or someone filling in a <a href="/docs/workflows/send-chaser/">chaser</a> response.</p>
 <blockquote>
 <p>When designing applications, just be aware there is sometimes a trade-off between the ideal of data integrity and everyday concerns.</p>
 <p>For example, you may like to force users to always provide an email address for contacts but in a small minority of cases, they may not have that available.</p>
 <p>agileBase has options for handling soft validation (highlighting errors or notifying someone) as well as the hard validation (disallowing invalid data entry) options discussed here. For example, you could</p>
 <ul>
-<li><a href="https://todo.com">Create a view</a> to show all records with errors, for later checking</li>
-<li>Set up a workflow or chaser to <a href="https://todo.com">chase someone</a> when errors are found</li>
-<li>Use the <a href="https://todo.com">API</a> to send a message to your internal messaging system e.g. Slack</li>
+<li><a href="/docs/views/">Create a view</a>to show all records with errors, for later checking</li>
+<li>Set up a workflow or chaser to <a href="/docs/workflows/send-chaser/">chase someone</a> when errors are found</li>
+<li>Use the <a href="/docs/integrations/">API</a> to send a message to your internal messaging system e.g. Slack</li>
 </ul>
 </blockquote>
 <p>That said, these are the ways in which you can strictly enforce data integrity.</p>
 <h2 id="at-an-individual-field-level">At an individual field level</h2>
-<p>Basic rules can be applied with <a href="https://todo.com">field options</a>. for example a field may be set as mandatory, or it must contain unique values (no duplicates).</p>
+<p>Basic rules can be applied with <a href="/docs/fields/field-options/common-options/">field options</a>. for example a field may be set as mandatory, or it must contain unique values (no duplicates).</p>
 <h2 id="advanced-field-checks">Advanced field checks</h2>
 <ol>
 <li>Expand the <em>Build Tables</em> menu in the lefthand sidebar</li>
@@ -1198,7 +1204,7 @@
 <li>Click the pencil icon in the toolbar to edit the table, then select the table&rsquo;s <em>manage</em> tab</li>
 <li>Click the <em>Checks</em> button</li>
 </ol>
-<p>Here you can add more complex checks, such as the value must be longer or shorter than a certain length, be within a date range or match a <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expression</a>. The list of checks available is the same as that used in <a href="https://todo.com">view filters</a>.</p>
+<p>Here you can add more complex checks, such as the value must be longer or shorter than a certain length, be within a date range or match a <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expression</a>. The list of checks available is the same as that used in <a href="/docs/views/filters/">view filters</a>.</p>
 <h2 id="multi-field-unique-constraints">Multi-field unique constraints</h2>
 <p>Access these with the <em>Unique</em> button under the <em>Checks</em> button.</p>
 <p>Sometimes, fields must be unique <strong>in combination</strong>. For example, imagine you have a system for recording customer complaints. One of the fields might be a customer&rsquo;s reference number, another a relation to the customer record.</p>

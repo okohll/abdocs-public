@@ -74,9 +74,9 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 &lt;p&gt;We recommend the adoption of a password wallet service like &lt;a href=&#34;https://1password.com/&#34;&gt;1Password&lt;/a&gt;, &lt;a href=&#34;https://lastpass.com&#34;&gt;LastPass&lt;/a&gt; or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;two-factor-authentication&#34;&gt;Two factor authentication&lt;/h3&gt;
-&lt;p&gt;Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can&amp;rsquo;t do for them, but luckily it is quick and easy to do: &lt;a href=&#34;https://todo.com&#34;&gt;here&amp;rsquo;s how&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can&amp;rsquo;t do for them, but luckily it is quick and easy to do: &lt;a href=&#34;https://agilechilli.com/help-centre/agilebase/account-settings-agilebase/how-to-set-up-two-factor-authentication-2fa/&#34;&gt;here&amp;rsquo;s how&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Users without 2FA will be prompted to do so in the user interface and by email.&lt;/p&gt;
-&lt;p&gt;2FA is mandatory for &lt;a href=&#34;#roles&#34;&gt;administrators&lt;/a&gt; and necessary for a user to have before &lt;a href=&#34;https://todo.com&#34;&gt;manage&lt;/a&gt; privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.&lt;/p&gt;
+&lt;p&gt;2FA is mandatory for &lt;a href=&#34;#roles&#34;&gt;administrators&lt;/a&gt; and necessary for a user to have before &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;manage&lt;/a&gt; privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.&lt;/p&gt;
 &lt;p&gt;When enabled, a user will be prompted for the 2FA code as well as their password when they log in from a device or location they haven&amp;rsquo;t used in the past 30 days.&lt;/p&gt;
 &lt;p&gt;If a user encounters any problems with 2FA, e.g. they lose the device for generating their codes, you can temporarily disable 2FA on their account by going to their user details screen and un-ticking &amp;lsquo;use 2FA&amp;rsquo;. Of course, you need to be aware of the risks, for example double checking that a user who contacts you is really who they say they are. Once they can log in, they&amp;rsquo;ll be able to enable 2FA themselves again.&lt;/p&gt;
 &lt;p&gt;If someone can&amp;rsquo;t use app-based 2FA for some reason, then a fallback option is to use text-message (SMS) based authentication. This is not recommended as there are known insecurities in this method, but it&amp;rsquo;s still better than having no 2FA at all. To enable that, just type in the user&amp;rsquo;s mobile phone number when editing their user details. That phone number isn&amp;rsquo;t used for any other purposes.&lt;/p&gt;
@@ -91,18 +91,18 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 &lt;p&gt;For example, if you set &lt;code&gt;created by [auto] = Oliver Kohll (oliver@agilechilli.com)&lt;/code&gt;, then (assuming &lt;code&gt;Oliver Kohll (oliver@agilechilli.com)&lt;/code&gt; is their username), the user will only see records they created, as long as the &amp;lsquo;created by [auto]&amp;rsquo; field appears in the view.&lt;/p&gt;
 &lt;p&gt;A similar feature exists to add filters to roles - useful when you may want to apply the same filter to multiple users. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;roles&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;roles&#34;&gt;Roles&lt;/h4&gt;
-&lt;p&gt;Tick a role to assign the user to it. The primary purpose of roles is to apply privileges to groups of users, see &lt;a href=&#34;https://todo.com&#34;&gt;roles&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;Tick a role to assign the user to it. The primary purpose of roles is to apply privileges to groups of users, see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/&#34;&gt;roles&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;p&gt;There&amp;rsquo;s one special role which can be assigned. It will be marked &lt;strong&gt;grants administrative privileges&lt;/strong&gt;. Assigning that role will make a user an administrator, with full permissions over the complete system. They can create/remove users, roles, tables etc., as well as assign themselves privileges on any table.&lt;/p&gt;
-&lt;p&gt;Next to each role listed is a list of tiles that will be added to their screen if that role is assigned to them. This is a convenience feature to speed up setting up their home screen. The tiles shown for a role are those which more than half of the members of that role have. Tiles can be manually added and removed by an &lt;a href=&#34;https://todo.com&#34;&gt;administrator&lt;/a&gt; or the user themselves.&lt;/p&gt;
-&lt;p&gt;If any role is a &lt;a href=&#34;https://todo.com&#34;&gt;filtering role&lt;/a&gt;, the filter applied is also displayed.&lt;/p&gt;
+&lt;p&gt;Next to each role listed is a list of tiles that will be added to their screen if that role is assigned to them. This is a convenience feature to speed up setting up their home screen. The tiles shown for a role are those which more than half of the members of that role have. Tiles can be manually added and removed by an [administrator] or the user themselves.&lt;/p&gt;
+&lt;p&gt;If any role is a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;filtering role&lt;/a&gt;, the filter applied is also displayed.&lt;/p&gt;
 &lt;h4 id=&#34;privileges&#34;&gt;Privileges&lt;/h4&gt;
-&lt;p&gt;Assign individual table &lt;a href=&#34;https://todo.com&#34;&gt;privileges&lt;/a&gt; to a user.&lt;/p&gt;
+&lt;p&gt;Assign individual table &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; to a user.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;When dealing with larger numbers of users it&amp;rsquo;s usually more manageable if you use roles to assign privileges.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;If a user has a privilege due to being a member of a role, that privilege is shown with a shaded blue background. Any additional privileges individually assigned to them are shown in green.&lt;/p&gt;
 &lt;h4 id=&#34;tiles&#34;&gt;Tiles&lt;/h4&gt;
-&lt;p&gt;Allows an admin to add/remove &lt;a href=&#34;https://todo.com&#34;&gt;tiles&lt;/a&gt; for a user. By default users can add/remove tiles themselves too, although this can be disabled through the use of a &lt;a href=&#34;#other-options&#34;&gt;custom UI&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Allows an admin to add/remove &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt; for a user. By default users can add/remove tiles themselves too, although this can be disabled through the use of a &lt;a href=&#34;#other-options&#34;&gt;custom UI&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;viewing-users&#34;&gt;Viewing users&lt;/h2&gt;
 &lt;p&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; menu in the lefthand sidebar and click users. You&amp;rsquo;ll see a list of existing user accounts. Their details are listed including 2FA status (whether they&amp;rsquo;re using app-based 2FA, text message codes or none) and when they last logged in.&lt;/p&gt;
 &lt;p&gt;Each user&amp;rsquo;s roles are shown. Any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; roles are marked in bold.&lt;/p&gt;
@@ -237,13 +237,13 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 &lt;p&gt;You should now see an editing screen with the details of the role you just created. You can give it a name and there are a couple of options:
 &lt;img src=&#34;https://docs.agilebase.co.uk/role-details.png&#34; alt=&#34;Role details&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Allow Export&lt;/strong&gt;&lt;br&gt;
-Referrs to exporting to spreadsheet - see &lt;a href=&#34;https://todo.com&#34;&gt;spreadsheet exports&lt;/a&gt;&lt;/p&gt;
+Referrs to exporting to spreadsheet - see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/exporting-to-spreadsheet/&#34;&gt;spreadsheet exports&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;User Visibility&lt;/strong&gt; and &lt;strong&gt;Restrict Data Access&lt;/strong&gt;&lt;br&gt;
 These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;members&#34;&gt;Members&lt;/h3&gt;
 &lt;p&gt;Tick each user to add them to the role. Users will gain all the privileges defined by the role.&lt;/p&gt;
 &lt;h3 id=&#34;privileges&#34;&gt;Privileges&lt;/h3&gt;
-&lt;p&gt;Select the &lt;a href=&#34;https://todo.com&#34;&gt;table privileges&lt;/a&gt; which will apply to members.&lt;/p&gt;
+&lt;p&gt;Select the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;table privileges&lt;/a&gt; which will apply to members.&lt;/p&gt;
 &lt;p&gt;Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together.&lt;/p&gt;
 &lt;h2 id=&#34;multi-tenanting&#34;&gt;Multi-tenanting&lt;/h2&gt;
 &lt;p&gt;Multi-tenanting is the ability to separate users into groups who can’t see each other’s data. This can be used for example to allow different sets of companies, clubs, or membership groups (or whatever the organisational group is) to use the same system features whilst remaining separate from each other.&lt;/p&gt;
@@ -253,7 +253,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;/blockquote&gt;
 &lt;p&gt;To set up multi-tenanting:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;first &lt;a href=&#34;https://todo.com&#34;&gt;add a text field&lt;/a&gt; to all tables in the system for which you want data to be segragated. The field must be named the same in every table, for example&amp;rsquo;s sake here let&amp;rsquo;s assume it&amp;rsquo;s called &amp;lsquo;account name&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;first &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;add a text field&lt;/a&gt; to all tables in the system for which you want data to be segragated. The field must be named the same in every table, for example&amp;rsquo;s sake here let&amp;rsquo;s assume it&amp;rsquo;s called &amp;lsquo;account name&amp;rsquo;.&lt;/li&gt;
 &lt;li&gt;Then create one role for each set of users who you want to segregate. We&amp;rsquo;ll assume there&amp;rsquo;s one called &amp;lsquo;Customer A&amp;rsquo;.&lt;/li&gt;
 &lt;li&gt;In the role details screen for the Customer A role, tick &lt;em&gt;user visibility&lt;/em&gt;. That means that users in this role won&amp;rsquo;t see users in other roles with the same option ticked. In other words, users from Customer A won&amp;rsquo;t be able to select Customer B or Customer C users when doing things like adding comments or assigning users to records.&lt;/li&gt;
 &lt;li&gt;Under &lt;em&gt;restrict data access&lt;/em&gt; in the role details, enter &lt;code&gt;account name = Customer A&lt;/code&gt;&lt;/li&gt;
@@ -364,7 +364,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;/ol&gt;
 &lt;h2 id=&#34;related-to-privileges&#34;&gt;Related to privileges&lt;/h2&gt;
 &lt;p&gt;Database systems often have the concept of row level privileges. The equivalent in agileBase is the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; system.&lt;/p&gt;
-&lt;p&gt;Individual fields in a table can be locked or hidden, see the &lt;a href=&#34;https://todo.com&#34;&gt;field options&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Individual fields in a table can be locked or hidden, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;field options&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -430,7 +430,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;Exporting to spreadsheet is only one way of getting data out of agileBase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the &lt;a href=&#34;https://todo.com&#34;&gt;API&lt;/a&gt; can be used.&lt;/p&gt;
+        &lt;p&gt;Exporting to spreadsheet is only one way of getting data out of agileBase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt; can be used.&lt;/p&gt;
 &lt;h2 id=&#34;allowing-exports&#34;&gt;Allowing exports&lt;/h2&gt;
 &lt;p&gt;In order for a user to be allowed to export to spreadsheet, a number of critieria have to be matched, to suitably protect your organisation&amp;rsquo;s data.&lt;/p&gt;
 &lt;ol&gt;
@@ -453,19 +453,19 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h2 id=&#34;exporting&#34;&gt;Exporting&lt;/h2&gt;
 &lt;p&gt;A user with the ability to export can do so by opening the view, clicking the print icon to the left and selecting &lt;em&gt;export to spreadsheet&lt;/em&gt; from the options at the top of the screen.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;If the user &lt;a href=&#34;https://todo.com&#34;&gt;filters&lt;/a&gt; the data on screen before doing this, only the filtered data will be exported.&lt;/p&gt;
+&lt;p&gt;If the user &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;filters&lt;/a&gt; the data on screen before doing this, only the filtered data will be exported.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The resulting spreadsheet will be in Microsoft Excel format. The first sheet will be some metadata about the export, such as a timestamp, the name of the exporter and any filters applied. The second sheet will be the actual data.&lt;/p&gt;
 &lt;p&gt;Column A in the data sheet will be hidden. It holds the internal row ID of each record. This is useful for matching purposes if you&amp;rsquo;re going to be modifying then re-importing the data.&lt;/p&gt;
 &lt;h3 id=&#34;charts&#34;&gt;Charts&lt;/h3&gt;
-&lt;p&gt;If the view has &lt;a href=&#34;https://todo.com&#34;&gt;charts&lt;/a&gt; attached, one sheet per chart will also be included in the spreadsheet. The contents will be the chart data, not the chart visualisation itself, but the visualisation can easily be re-created in the spreadsheet from the data if necessary.&lt;/p&gt;
+&lt;p&gt;If the view has &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;charts&lt;/a&gt; attached, one sheet per chart will also be included in the spreadsheet. The contents will be the chart data, not the chart visualisation itself, but the visualisation can easily be re-created in the spreadsheet from the data if necessary.&lt;/p&gt;
 &lt;h2 id=&#34;limits-and-notifications&#34;&gt;Limits and notifications&lt;/h2&gt;
 &lt;p&gt;An administrator can log whether each table contains commercially sensitive data (ticked by default) and/or personal data (see &lt;a href=&#34;https://gdpr-info.eu/art-4-gdpr/)&#34;&gt;https://gdpr-info.eu/art-4-gdpr/)&lt;/a&gt;. If either of these options is ticked for a view&amp;rsquo;s parent table, you’ll have additional options for&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;notifying all administrators if an export of more than a certain number of rows is done&lt;/li&gt;
 &lt;li&gt;setting a hard limit to completely disallow exports of more than a certain number of rows&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;To configure these options, see &lt;a href=&#34;https://todo.com&#34;&gt;tables&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To configure these options, see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/&#34;&gt;tables&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -488,12 +488,12 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;If a record appears in the view, the field will be visible, otherwise it won&amp;rsquo;t display to users.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;As the conditions are created in a view, this mechanism is really powerful. You can create simple or very complex critera, including all of the filter options in a view, for example basing a filter on a calculation and combining multiple filters.&lt;/p&gt;
-&lt;p&gt;So you could make a field appear only when a particular point is reached in a process, or a status is changed elsewhere in a form, or perhaps it should only be visible to people who are &lt;a href=&#34;https://todo.com&#34;&gt;members of a certain role&lt;/a&gt;. See &lt;a href=&#34;https://todo.com&#34;&gt;view filters&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;So you could make a field appear only when a particular point is reached in a process, or a status is changed elsewhere in a form, or perhaps it should only be visible to people who are &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/&#34;&gt;members of a certain role&lt;/a&gt;. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Two special options are available&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;show always - the default state&lt;/li&gt;
-&lt;li&gt;show never - useful for hiding fields used for internal purposes, e.g. which help the internal workings of a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;show never - useful for hiding fields used for internal purposes, e.g. which help the internal workings of a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;lock-when-value-set&#34;&gt;Lock when value set&lt;/h2&gt;
 &lt;p&gt;If the field is blank, allow a value to be entered, however as soon as it has a value, lock to prevent further editing. The user can manually unlock, but will be prompted for a reason for doing so, which will be logged against the field as a comment.&lt;/p&gt;
@@ -508,7 +508,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;
 &lt;p&gt;Prominently highlight the field on the screen, e.g. if it&amp;rsquo;s one that is important to fill out, without actually requiring a value to be supplied.&lt;/p&gt;
 &lt;h2 id=&#34;set-from-previous-referenced-field&#34;&gt;Set from previous referenced field&lt;/h2&gt;
-&lt;p&gt;Provides a way to calculate a default option for a field. Tick this option and place a [referenced field] just before this field. The value of this field will be set from whatever value the referenced field outputs.&lt;/p&gt;
+&lt;p&gt;Provides a way to calculate a default option for a field. Tick this option and place a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced field&lt;/a&gt; just before this field. The value of this field will be set from whatever value the referenced field outputs.&lt;/p&gt;
 &lt;p&gt;If the referenced field&amp;rsquo;s view has more than one field, the last one will be used, or if any have the same name as this field then that one will be.&lt;/p&gt;
 &lt;p&gt;To have a value set only at a certain point in a process, this option can be combined with the &lt;a href=&#34;#show-if-record-in-view&#34;&gt;Show if record in view&lt;/a&gt; option. When the field becomes visible, the value will be set.&lt;/p&gt;
 &lt;h2 id=&#34;unique&#34;&gt;Unique&lt;/h2&gt;
@@ -548,7 +548,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h4 id=&#34;capacity&#34;&gt;Capacity&lt;/h4&gt;
 &lt;p&gt;As well as actual usage, the dashboard shows total capacity i.e. how many users, records, tables etc. are present in the system, along with purchased capacity (if relevant). These elements affect billing.&lt;/p&gt;
 &lt;h4 id=&#34;workflows&#34;&gt;Workflows&lt;/h4&gt;
-&lt;p&gt;A convenience view of all workflows which carry out automated data modifications, see &lt;a href=&#34;https://todo.com&#34;&gt;workflows&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A convenience view of all workflows which carry out automated data modifications, see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;database-graph&#34;&gt;Database graph&lt;/h4&gt;
 &lt;p&gt;Finally, for background on what the data structure looks like and how tables are connected, the database graph shows relations between tables is visual form. This can provide a fuller understaning of the system.&lt;/p&gt;
 &lt;h3 id=&#34;table-and-view-usage&#34;&gt;Table and view usage&lt;/h3&gt;
@@ -598,11 +598,13 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;&lt;strong&gt;process flow&lt;/strong&gt; - blocks of fields are arranged vertically one after each other, works well when there the data entry form maps to a set process&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Here&amp;rsquo;s what the same data entry form looks like in each of the three configurations&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TODO: image&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/layout-single.png&#34; alt=&#34;single column layout&#34;&gt; &amp;ldquo;single column&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/layout-two-column.png&#34; alt=&#34;two column layout&#34;&gt; &amp;ldquo;two columns&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/layout-process.png&#34; alt=&#34;process flow layout&#34;&gt; &amp;ldquo;process flow&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;and here&amp;rsquo;s an example of &lt;strong&gt;2. blocks in two columns&lt;/strong&gt; with tabs.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TODO: image&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/layout-tabs.png&#34; alt=&#34;form with tabs&#34;&gt; &amp;ldquo;form with tabs&amp;rdquo;&lt;/p&gt;
 &lt;h2 id=&#34;separators&#34;&gt;Separators&lt;/h2&gt;
-&lt;p&gt;To form a block, click on the &lt;em&gt;fields&lt;/em&gt; tab of a table and add a field of type &amp;lsquo;separator&amp;rsquo; - see the &lt;a href=&#34;https://todo.com&#34;&gt;fields reference&lt;/a&gt;. Move it to where the start of the block should be i.e. before the first field in the block.&lt;/p&gt;
+&lt;p&gt;To form a block, click on the &lt;em&gt;fields&lt;/em&gt; tab of a table and add a field of type &amp;lsquo;separator&amp;rsquo; - see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;fields reference&lt;/a&gt;. Move it to where the start of the block should be i.e. before the first field in the block.&lt;/p&gt;
 
       </description>
     </item>
@@ -659,11 +661,11 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
         
         &lt;p&gt;These are the core types of fields by which data can be entered by users (or other sources such as the API or a workflow).&lt;/p&gt;
 &lt;h2 id=&#34;text&#34;&gt;Text&lt;/h2&gt;
-&lt;p&gt;Text fields are the most commonly used. Depending on &lt;a href=&#34;https://todo.com&#34;&gt;field options&lt;/a&gt;, text can be entered into a standard data entry control, a large box allowing rich formatting (bold, italic etc.), chosen from a dropdown of options or added as tags.&lt;/p&gt;
+&lt;p&gt;Text fields are the most commonly used. Depending on &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/&#34;&gt;field options&lt;/a&gt;, text can be entered into a standard data entry control, a large box allowing rich formatting (bold, italic etc.), chosen from a dropdown of options or added as tags.&lt;/p&gt;
 &lt;h2 id=&#34;number&#34;&gt;Number&lt;/h2&gt;
 &lt;p&gt;When adding a number field, select a &lt;em&gt;precision&lt;/em&gt; from the dropdown. If &lt;code&gt;0&lt;/code&gt; is chosen, then it will be a whole number (integer) field. If any other value is chosen, it will be a decimal field. The decimal precision can be changed at any time in the field options, but a whole number can&amp;rsquo;t be converted to a decimal or vice versa via field options.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;See &lt;a href=&#34;https://todo.com&#34;&gt;changing field types&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#switching-a-field-from-one-type-to-another&#34;&gt;changing field types&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;date&#34;&gt;Date&lt;/h2&gt;
 &lt;p&gt;Represents a date or date/time, of any precision from year to second.&lt;/p&gt;
@@ -724,7 +726,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;When this field is included in a view, highlight it with a colour if the content is one of a number of words. The most up-to-date values to be highlighted are shown in the administrator interface, but as of the latest update of this page, they are&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/word-colours.png&#34; alt=&#34;Word Colours&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Text calculations can also be coloured based on the same words - see the &lt;a href=&#34;https://todo.com&#34;&gt;calculation options&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Text calculations can also be coloured based on the same words - see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/#colouring&#34;&gt;calculation options&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;default-value&#34;&gt;Default value&lt;/h2&gt;
 &lt;p&gt;For basic text fields, this simply provides a default value, which the field will have when a record&amp;rsquo;s created. If not provided, the field will be blank.&lt;/p&gt;
@@ -741,7 +743,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;blockquote&gt;
 &lt;p&gt;An example use would be assigning an account manager to a customer, selecting from a list of staff members (who are users).&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there&amp;rsquo;s a status change or something is overdue for example. agileBase can look up the user&amp;rsquo;s email address to accomplish this, See &lt;a href=&#34;https://todo.com&#34;&gt;email workflows&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there&amp;rsquo;s a status change or something is overdue for example. agileBase can look up the user&amp;rsquo;s email address to accomplish this, See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email workflows&lt;/a&gt; for details.&lt;/p&gt;
 &lt;h2 id=&#34;use-dropdown&#34;&gt;Use dropdown&lt;/h2&gt;
 &lt;p&gt;Rather than a simple text entry field, display a dropdown of choices from which one can be selected. If there are only a few values, then the user interface may display options in &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio&#34;&gt;radio button&lt;/a&gt; style, but the behaviour is exactly the same.&lt;/p&gt;
 &lt;p&gt;Options can be provided with the &lt;a href=&#34;#default-value&#34;&gt;default value&lt;/a&gt; setting as above. If no options are specified, then the list of options will be automatically generated from the set of unique values &lt;strong&gt;already entered&lt;/strong&gt; into records. In this way, a set of values will gradually grow as people enter new data.&lt;/p&gt;
@@ -835,7 +837,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;When the user is selecting a parent record to link to a particular child, they will be able to use this view to show a list of parent records to choose from. Therefore the view must be created from the parent table.&lt;/p&gt;
 &lt;p&gt;They will be able to filter on any field in the view to search for a record.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Using pre-set &lt;a href=&#34;https://todo.com&#34;&gt;view filters&lt;/a&gt; to narrow down the list of relevant records can be helpful, e.g. if only records of a certain category are required.&lt;/p&gt;
+&lt;p&gt;Using pre-set &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; to narrow down the list of relevant records can be helpful, e.g. if only records of a certain category are required.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;use-only-given-values&#34;&gt;Use only given values&lt;/h2&gt;
 &lt;p&gt;When this is un-ticked, allow the user to create a new parent record directly from the child record&amp;rsquo;s editing screen. Relation fields allow you to type the name of a parent record to find and select one. If no matches are found, a prompt will appear allowing the user to create one.&lt;/p&gt;
@@ -866,33 +868,33 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;/ol&gt;
 &lt;h2 id=&#34;tab-types&#34;&gt;Tab types&lt;/h2&gt;
 &lt;p&gt;There are two types of tab, those which show a &lt;strong&gt;single record&lt;/strong&gt; and those which show &lt;strong&gt;multiple records&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;The type used depends on the relation field in the child table used in the tab, which links to the main table. If it is &lt;a href=&#34;https://todo.com&#34;&gt;one-to-one&lt;/a&gt;, then a single record is shown in the tab. If it&amp;rsquo;s &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/table-layouts/&#34;&gt;one to many&lt;/a&gt;, then a view appears embedded in the tab, with which the user can choose a record to edit.&lt;/p&gt;
+&lt;p&gt;The type used depends on the relation field in the child table used in the tab, which links to the main table. If it is &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/relation-field-options/#one-to-one-only&#34;&gt;one-to-one&lt;/a&gt;, then a single record is shown in the tab. If it&amp;rsquo;s &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/table-layouts/&#34;&gt;one to many&lt;/a&gt;, then a view appears embedded in the tab, with which the user can choose a record to edit.&lt;/p&gt;
 &lt;p&gt;A one to one example may be showing a tab of specification information against an ingredient for example.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TODO: screenshot of spec tab&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/tab-one-to-one.png&#34; alt=&#34;one to one tab&#34;&gt;&lt;/p&gt;
 &lt;p&gt;A one to many may be a list of suppliers who supply that ingredient.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TODO: screenshot&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/tab-one-to-many.png&#34; alt=&#34;one to many tab&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;tab-options&#34;&gt;Tab options&lt;/h2&gt;
 &lt;p&gt;Typically, these options are only needed to finnesse an application. They can be useful to look at once the core of the structure is built.&lt;/p&gt;
 &lt;h3 id=&#34;tab-view&#34;&gt;Tab view&lt;/h3&gt;
-&lt;p&gt;For one to many tabs, which &lt;a href=&#34;https://todo.com&#34;&gt;view&lt;/a&gt; to use to show items. By creating a specific view to use for the tab, you can control which fields are displayed in which order, add calculations, filter those which are shown etc.&lt;/p&gt;
+&lt;p&gt;For one to many tabs, which &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; to use to show items. By creating a specific view to use for the tab, you can control which fields are displayed in which order, add calculations, filter those which are shown etc.&lt;/p&gt;
 &lt;h3 id=&#34;populate-from-template&#34;&gt;Populate from template&lt;/h3&gt;
 &lt;p&gt;Under a tab, a button allows the user to add records. For example in the contacts tab of an organisation, they would be able to add a new contact.&lt;/p&gt;
 &lt;p&gt;However, in some situations you want to pre-populate the tab with records, rather than make the user create each one manually. An example might be order lines for a customer order in a telesales system. The order lines could be initially pre-populated with regular items the customer orders.&lt;/p&gt;
 &lt;p&gt;One way of doing that is to use the &amp;lsquo;Populate from template&amp;rsquo; view, first creating a new view to use for this purpose. The view must contain the record ID field of the parent table (e.g. customer orders in our example). When the user clicks on the tab, if there are no records present yet, it will prompt to populate the tab. Each row from the view where the record ID matches that of the parent record (cutomer order) will be used to create a record in the tab.&lt;/p&gt;
 &lt;p&gt;Any calculations in the view &lt;strong&gt;with the same name&lt;/strong&gt; as a field in the tab table will be used to populate values in the records.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Another way of auto-populating data is to use a &lt;a href=&#34;https://todo.com&#34;&gt;workflow which runs on record creation&lt;/a&gt; or in the background. You can choose whichever method works best for a particular purpose.&lt;/p&gt;
+&lt;p&gt;Another way of auto-populating data is to use a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#when-a-records-created-run-this-workflow&#34;&gt;workflow which runs on record creation&lt;/a&gt; or in the background. You can choose whichever method works best for a particular purpose.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;show-only-if-in-view&#34;&gt;Show only if in view&lt;/h3&gt;
-&lt;p&gt;This option allows you to control tab visibility - whether the tab is visible on screen or not at any time depends on whether the main record appears in the view chosen. This works exactly the same way as &lt;a href=&#34;https://todo.com&#34;&gt;field visibility&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This option allows you to control tab visibility - whether the tab is visible on screen or not at any time depends on whether the main record appears in the view chosen. This works exactly the same way as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;field visibility&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;colour-from-view&#34;&gt;Colour from view&lt;/h3&gt;
 &lt;p&gt;The colour of each tab can be chosen. For example, different steps of a process may each be represented by a tab. Once a step is complete, the tab may be coloured green.&lt;/p&gt;
-&lt;p&gt;To set this up, create a view from the main (parent) table. It should contain a text calculation called &amp;lsquo;colour&amp;rsquo; which outputs the name of a colour e.g. green, or a blank value for no colour. The colour names are the same as those for &lt;a href=&#34;https://todo.com&#34;&gt;record flagging&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To set this up, create a view from the main (parent) table. It should contain a text calculation called &amp;lsquo;colour&amp;rsquo; which outputs the name of a colour e.g. green, or a blank value for no colour. The colour names are the same as those for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#flag-records-with-colour&#34;&gt;record flagging&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;name&#34;&gt;Name&lt;/h3&gt;
 &lt;p&gt;By default the tab is named the same as the table used. However, you can override that here.&lt;/p&gt;
 &lt;h3 id=&#34;use-inline-editing&#34;&gt;Use inline editing&lt;/h3&gt;
 &lt;p&gt;Speed up intensive data entry by allowing each field in the tab view to be edited inline. Here&amp;rsquo;s an example using an order processing system.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TODO: example screenshot&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/tab-inline-edit.png&#34; alt=&#34;tab inline editing&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;show-relation-fields&#34;&gt;Show relation fields&lt;/h3&gt;
 &lt;p&gt;If this is un-ticked (which it is by default), any relation fields in the tab table will be hidden. This can be useful if you want to reduce the complexity exposed to the user. They can load all data including relations by navigating to the full record.&lt;/p&gt;
 &lt;h3 id=&#34;choose-a-record-when-a-new-item-is-added&#34;&gt;Choose a record when a new item is added&lt;/h3&gt;
@@ -1040,7 +1042,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;ol&gt;
 &lt;li&gt;Rename the field to &lt;code&gt;[fieldname] old&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Add a new field &lt;code&gt;[fieldname]&lt;/code&gt;. This means that any calculations that reference the field won&amp;rsquo;t have to be changed and won&amp;rsquo;t break due to mis-matching field names&lt;/li&gt;
-&lt;li&gt;Copy all values from one field to another. The easiest way is to use a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Copy all values from one field to another. The easiest way is to use a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Try to delete the old field. If any views reference it, the delete will fail and a list of them will be shown&lt;/li&gt;
 &lt;li&gt;Edit all those views
 &lt;ul&gt;
@@ -1066,20 +1068,20 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;It can be important to ensure that certain rules are followed when data is entered, either manually by a user, by an incoming &lt;a href=&#34;https://todo.com&#34;&gt;API request&lt;/a&gt; or someone filling in a &lt;a href=&#34;https://todo.com&#34;&gt;chaser&lt;/a&gt; response.&lt;/p&gt;
+        &lt;p&gt;It can be important to ensure that certain rules are followed when data is entered, either manually by a user, by an incoming &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API request&lt;/a&gt; or someone filling in a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt; response.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;When designing applications, just be aware there is sometimes a trade-off between the ideal of data integrity and everyday concerns.&lt;/p&gt;
 &lt;p&gt;For example, you may like to force users to always provide an email address for contacts but in a small minority of cases, they may not have that available.&lt;/p&gt;
 &lt;p&gt;agileBase has options for handling soft validation (highlighting errors or notifying someone) as well as the hard validation (disallowing invalid data entry) options discussed here. For example, you could&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://todo.com&#34;&gt;Create a view&lt;/a&gt; to show all records with errors, for later checking&lt;/li&gt;
-&lt;li&gt;Set up a workflow or chaser to &lt;a href=&#34;https://todo.com&#34;&gt;chase someone&lt;/a&gt; when errors are found&lt;/li&gt;
-&lt;li&gt;Use the &lt;a href=&#34;https://todo.com&#34;&gt;API&lt;/a&gt; to send a message to your internal messaging system e.g. Slack&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;Create a view&lt;/a&gt;to show all records with errors, for later checking&lt;/li&gt;
+&lt;li&gt;Set up a workflow or chaser to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chase someone&lt;/a&gt; when errors are found&lt;/li&gt;
+&lt;li&gt;Use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt; to send a message to your internal messaging system e.g. Slack&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;That said, these are the ways in which you can strictly enforce data integrity.&lt;/p&gt;
 &lt;h2 id=&#34;at-an-individual-field-level&#34;&gt;At an individual field level&lt;/h2&gt;
-&lt;p&gt;Basic rules can be applied with &lt;a href=&#34;https://todo.com&#34;&gt;field options&lt;/a&gt;. for example a field may be set as mandatory, or it must contain unique values (no duplicates).&lt;/p&gt;
+&lt;p&gt;Basic rules can be applied with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/&#34;&gt;field options&lt;/a&gt;. for example a field may be set as mandatory, or it must contain unique values (no duplicates).&lt;/p&gt;
 &lt;h2 id=&#34;advanced-field-checks&#34;&gt;Advanced field checks&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
@@ -1087,7 +1089,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;Click the pencil icon in the toolbar to edit the table, then select the table&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab&lt;/li&gt;
 &lt;li&gt;Click the &lt;em&gt;Checks&lt;/em&gt; button&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Here you can add more complex checks, such as the value must be longer or shorter than a certain length, be within a date range or match a &lt;a href=&#34;https://en.wikipedia.org/wiki/Regular_expression&#34;&gt;regular expression&lt;/a&gt;. The list of checks available is the same as that used in &lt;a href=&#34;https://todo.com&#34;&gt;view filters&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here you can add more complex checks, such as the value must be longer or shorter than a certain length, be within a date range or match a &lt;a href=&#34;https://en.wikipedia.org/wiki/Regular_expression&#34;&gt;regular expression&lt;/a&gt;. The list of checks available is the same as that used in &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;multi-field-unique-constraints&#34;&gt;Multi-field unique constraints&lt;/h2&gt;
 &lt;p&gt;Access these with the &lt;em&gt;Unique&lt;/em&gt; button under the &lt;em&gt;Checks&lt;/em&gt; button.&lt;/p&gt;
 &lt;p&gt;Sometimes, fields must be unique &lt;strong&gt;in combination&lt;/strong&gt;. For example, imagine you have a system for recording customer complaints. One of the fields might be a customer&amp;rsquo;s reference number, another a relation to the customer record.&lt;/p&gt;
@@ -1118,37 +1120,37 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h3 id=&#34;only-from-within-tab&#34;&gt;Only from within tab&lt;/h3&gt;
 &lt;p&gt;If this is ticked, users can add records but only when accessing this table&amp;rsquo;s form from within a tab of a parent record. This can help ensure that child records are always connected to a parent and aren&amp;rsquo;t created as &amp;lsquo;orphans&amp;rsquo;.&lt;/p&gt;
 &lt;h2 id=&#34;allow-clone&#34;&gt;Allow clone&lt;/h2&gt;
-&lt;p&gt;(Off by default). Show a clone record button when a user is viewing a record. This makes a simple copy of all data in the record. The contents of tabs are not cloned. A more advanced clone facility can be created with a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt; if desired.&lt;/p&gt;
+&lt;p&gt;(Off by default). Show a clone record button when a user is viewing a record. This makes a simple copy of all data in the record. The contents of tabs are not cloned. A more advanced clone facility can be created with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; if desired.&lt;/p&gt;
 &lt;h2 id=&#34;allow-remove&#34;&gt;Allow remove&lt;/h2&gt;
 &lt;p&gt;(On by default). Allow records to be deleted by people with EDIT privileges as well as people with MANAGE privileges, who can always delete.&lt;/p&gt;
 &lt;h2 id=&#34;allow-share&#34;&gt;Allow share&lt;/h2&gt;
 &lt;p&gt;Showa button which allows links to individual records to be shared between users using email. Note - recipients still need a login and relevant privileges to see the record.&lt;/p&gt;
 &lt;h2 id=&#34;when-a-records-created-run-this-workflow&#34;&gt;When a record&amp;rsquo;s created, run this workflow&lt;/h2&gt;
-&lt;p&gt;Run a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt; immediately after the creation of a record. The workflow runs after any field default values have been set.&lt;/p&gt;
+&lt;p&gt;Run a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; immediately after the creation of a record. The workflow runs after any field default values have been set.&lt;/p&gt;
 &lt;h3 id=&#34;run-this-workflow-whenever-each-record-is-viewed&#34;&gt;Run this workflow whenever each record is viewed&lt;/h3&gt;
 &lt;p&gt;As well as running the workflow on record creation, also run it whenever a user views a record in this table. Be aware this may have a performance impact for users, if the workflow is resource intensive and/or multi-step.&lt;/p&gt;
 &lt;h2 id=&#34;data-entry-from-external-sources&#34;&gt;Data entry from external sources&lt;/h2&gt;
-&lt;p&gt;The options in this section are for configuring the table to allow an API request from an external source to create and edit records. See &lt;a href=&#34;https://todo.com&#34;&gt;API use&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;The options in this section are for configuring the table to allow an API request from an external source to create and edit records. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API use&lt;/a&gt;for more information.&lt;/p&gt;
 &lt;h2 id=&#34;other-options&#34;&gt;Other options&lt;/h2&gt;
 &lt;h3 id=&#34;records-lockable&#34;&gt;Records lockable&lt;/h3&gt;
 &lt;p&gt;Records can be locked to prevent editing. You may like to do this based on criteria e.g. once a customer order has been sent, it should be locked against further changes.&lt;/p&gt;
-&lt;p&gt;To actually lock the record, a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt; can be used.&lt;/p&gt;
+&lt;p&gt;To actually lock the record, a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; can be used.&lt;/p&gt;
 &lt;p&gt;Locked records can be manually unlocked by someone with manage privileges on the table, but only one at a time.&lt;/p&gt;
 &lt;h3 id=&#34;email-notifications&#34;&gt;Email notifications&lt;/h3&gt;
-&lt;p&gt;When someone adds a comment to a record, when selecting recipients, they have the option to email those recipients, as well as adding the comment to the &lt;a href=&#34;https://todo.com&#34;&gt;comment stream&lt;/a&gt;. Ticking this table option sets the default to send emails for any comment added to this table. Users can override this on an individual comment basis and recipients can override in their notification preferences.&lt;/p&gt;
+&lt;p&gt;When someone adds a comment to a record, when selecting recipients, they have the option to email those recipients, as well as adding the comment to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;comment stream&lt;/a&gt;. Ticking this table option sets the default to send emails for any comment added to this table. Users can override this on an individual comment basis and recipients can override in their notification preferences.&lt;/p&gt;
 &lt;h3 id=&#34;flag-records-with-colour&#34;&gt;Flag records with colour&lt;/h3&gt;
 &lt;p&gt;Enter a field name here and add a field with the same name to a view, to flag records. The contents of the field must be one of the colour names as given on the screen. The field added to the view can be a calculation, specifically a hidden calculation. This will flag the view without showing the colour name on screen.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;It&amp;rsquo;s also possible to colour individual table fields or calculations in a view (as opposed to this option which flags the whole row). See the options for &lt;a href=&#34;https://todo.com&#34;&gt;field colouring&lt;/a&gt; or &lt;a href=&#34;https://todo.com&#34;&gt;calculation colouring&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also possible to colour individual table fields or calculations in a view (as opposed to this option which flags the whole row). See the options for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#colour-words&#34;&gt;field colouring&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/#colouring&#34;&gt;calculation colouring&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;accept-emails-to-this-address&#34;&gt;Accept emails to this address&lt;/h3&gt;
 &lt;p&gt;The system can accept incoming emails and attach them to relevant records e.g. attaching an email from a customer to that customer&amp;rsquo;s record.&lt;/p&gt;
 &lt;p&gt;A particular email address can be set up to receive emails. The system can be configured to either accept emails from anyone, or just from users. If just from users, then users can forward any emails they receive to the system to have them imported.&lt;/p&gt;
-&lt;p&gt;The email text will be logged as a &lt;a href=&#34;https://todo.com&#34;&gt;comment&lt;/a&gt; against the record, with the full email attached if it is HTML formatted or includes attachments. The table must have a comments field.&lt;/p&gt;
+&lt;p&gt;The email text will be logged as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&#34;&gt;comment&lt;/a&gt; against the record, with the full email attached if it is HTML formatted or includes attachments. The table must have a comments field.&lt;/p&gt;
 &lt;p&gt;Please &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; if you&amp;rsquo;d like to set that up.&lt;/p&gt;
 &lt;p&gt;Emails are matched by creating a view containing the email addresses of potential recipients. An incoming email is attached to the record from this view which matches the sender&amp;rsquo;s email address. If there is no match, it is added to a &amp;lsquo;holding bay&amp;rsquo; where users can view and manually attach emails to records.&lt;/p&gt;
 &lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
-&lt;p&gt;After the options, some structural information is shown, such as which tables depend on this one i.e. have a &lt;a href=&#34;https://todo.com&#34;&gt;relation&lt;/a&gt; to it, how many fields and views per tile there are. See also the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#the-dashboard&#34;&gt;usage dashboard&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After the options, some structural information is shown, such as which tables depend on this one i.e. have a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation&lt;/a&gt; to it, how many fields and views per tile there are. See also the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#the-dashboard&#34;&gt;usage dashboard&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -1472,9 +1474,9 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;h2 id=&#34;email-integration&#34;&gt;Email integration&lt;/h2&gt;
 &lt;p&gt;As above, anyone who receives a comment notification can reply to the email to add another comment (their email address must be their username or recorded in their user defailt), or they can click on a link to view the related record including previous comments.&lt;/p&gt;
 &lt;p&gt;However, comments are also the mechanism by which emails from external parties can be logged - see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#accept-emails-to-this-address&#34;&gt;accept emails to this address&lt;/a&gt; table option.&lt;/p&gt;
-&lt;p&gt;When a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt; or &lt;a href=&#34;https://todo.com&#34;&gt;chaser&lt;/a&gt; sends an outgoing email, that is logged as a comment (including any attachments) too.&lt;/p&gt;
+&lt;p&gt;When a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;workflow&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt; sends an outgoing email, that is logged as a comment (including any attachments) too.&lt;/p&gt;
 &lt;h2 id=&#34;slack-integration&#34;&gt;Slack integration&lt;/h2&gt;
-&lt;p&gt;If &lt;a href=&#34;https://www.slack.com&#34;&gt;Slack&lt;/a&gt; is integrated via &lt;a href=&#34;https://todo.com&#34;&gt;company options&lt;/a&gt;, every comment added will also be sent to your Slack workspace.&lt;/p&gt;
+&lt;p&gt;If &lt;a href=&#34;https://www.slack.com&#34;&gt;Slack&lt;/a&gt; is integrated via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/&#34;&gt;company options&lt;/a&gt;, every comment added will also be sent to your Slack workspace.&lt;/p&gt;
 
       </description>
     </item>
@@ -1488,7 +1490,7 @@ and a video introduction to the concept here:&lt;/p&gt;
       <description>
         
         
-        &lt;p&gt;Most fields in a table allow data entry into that table, but referenced data fields allow data from &lt;strong&gt;other&lt;/strong&gt; places to be embedded, specifically &lt;a href=&#34;https://todo.com&#34;&gt;views&lt;/a&gt;, created from any table.&lt;/p&gt;
+        &lt;p&gt;Most fields in a table allow data entry into that table, but referenced data fields allow data from &lt;strong&gt;other&lt;/strong&gt; places to be embedded, specifically &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;views&lt;/a&gt;, created from any table.&lt;/p&gt;
 &lt;p&gt;Optionally, the embedded data can be editable.&lt;/p&gt;
 &lt;p&gt;This can be used for many purposes, such as&lt;/p&gt;
 &lt;ul&gt;
@@ -1498,8 +1500,8 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Some more esoteric uses are also possible&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;referenced data can be used as a source of data to populate standard fields in the form, i.e. to provide default values for fields - see &lt;a href=&#34;https://todo.com&#34;&gt;relation field options&lt;/a&gt; for more information&lt;/li&gt;
-&lt;li&gt;a referenced data field can be displayed as a button to &lt;a href=&#34;https://todo.com&#34;&gt;manually run a workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;referenced data can be used as a source of data to populate standard fields in the form, i.e. to provide default values for fields - see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#set-from-previous-referenced-field&#34;&gt;relation field options&lt;/a&gt; for more information&lt;/li&gt;
+&lt;li&gt;a referenced data field can be displayed as a button to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;manually run a workflow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;adding-a-referenced-field&#34;&gt;Adding a referenced field&lt;/h2&gt;
 &lt;p&gt;Referenced fields are based on views. The contents of a view will be displayed in the form where a field referencing data from that view is added.&lt;/p&gt;
@@ -1514,7 +1516,7 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;p&gt;** TODO: screenshot **&lt;/p&gt;
 &lt;p&gt;So to summarise, the steps are&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://todo.com&#34;&gt;Create&lt;/a&gt; or find a view containing the data you wish to embed. It must contain the ID field of the table the data is embedded in (in this case &amp;lsquo;opportunities&amp;rsquo;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;Create&lt;/a&gt; or find a view containing the data you wish to embed. It must contain the ID field of the table the data is embedded in (in this case &amp;lsquo;opportunities&amp;rsquo;).&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#adding-a-field&#34;&gt;Add a field&lt;/a&gt; of type &lt;em&gt;referenced data&lt;/em&gt;. Select the table your target view was created from, then the target view itself, before pressing &lt;em&gt;create field&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Actually, there is one case in which the rule that the view must contain the ID of the table the referenced data is being added to. That&amp;rsquo;s when you want to show &lt;strong&gt;all&lt;/strong&gt; rows from the view, without filtering.&lt;/p&gt;
@@ -1522,15 +1524,15 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;p&gt;This is typically used in a minority of cases, but can be useful when you want to embed data that isn&amp;rsquo;t related to the target table. For example, showing some global settings that may affect the functionality of a system.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;showing-one-or-more-rows&#34;&gt;Showing one or more rows&lt;/h2&gt;
-&lt;p&gt;If more than one row in the view has an ID matching the ID of the table being added to, all will be shown. There is limited space in a form, so if there are lots, then a &amp;lsquo;see more&amp;rsquo; option will appear after the first few rows. For a more compact view, &lt;a href=&#34;https://todo.com&#34;&gt;tabular display&lt;/a&gt; can be chosen in the referenced field options.&lt;/p&gt;
+&lt;p&gt;If more than one row in the view has an ID matching the ID of the table being added to, all will be shown. There is limited space in a form, so if there are lots, then a &amp;lsquo;see more&amp;rsquo; option will appear after the first few rows. For a more compact view, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/#tabular-display&#34;&gt;tabular display&lt;/a&gt; can be chosen in the referenced field options.&lt;/p&gt;
 &lt;h2 id=&#34;showing-charts&#34;&gt;Showing charts&lt;/h2&gt;
-&lt;p&gt;If the view used has one or more &lt;a href=&#34;https://todo.com&#34;&gt;charts&lt;/a&gt;, they will be shown instead of the data rows. The filtering acts exactly the same way, only data matching the containing table&amp;rsquo;s ID is used as the source of the chart data.&lt;/p&gt;
+&lt;p&gt;If the view used has one or more &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;charts&lt;/a&gt;, they will be shown instead of the data rows. The filtering acts exactly the same way, only data matching the containing table&amp;rsquo;s ID is used as the source of the chart data.&lt;/p&gt;
 &lt;p&gt;** TODO: screenshot of embedded chart **&lt;/p&gt;
 &lt;h2 id=&#34;making-referenced-data-editable&#34;&gt;Making referenced data editable&lt;/h2&gt;
 &lt;p&gt;Optionally, referenced data can be made editable by clicking on it.&lt;/p&gt;
 &lt;p&gt;A view containing the containing table&amp;rsquo;s ID can be created one of two ways.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Create a view from the containing table, &lt;a href=&#34;https://todo.com&#34;&gt;joining&lt;/a&gt; to other tables&lt;/li&gt;
+&lt;li&gt;Create a view from the containing table, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/&#34;&gt;joining&lt;/a&gt; to other tables&lt;/li&gt;
 &lt;li&gt;Create a view from another table, joining it to the containing table&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;If a view is built the second way and embedded into the table via a referenced field, the data will be editable: clicking on an element of referenced data will turn it into a data entry form.&lt;/p&gt;
@@ -1591,7 +1593,7 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;p&gt;The number of decimal places to show numbers to.&lt;/p&gt;
 &lt;p&gt;his affects display only, so for example if 1.543 is entered into a field with 1 decimal place, it will display as 1.5 but will still be stored as 1.543 and any maths done on the field operate on the higher precision value.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Note - integer and floating fields are actually different field types in the underlying database, so if a number is created with 0dp i.e. as a whole number, it can&amp;rsquo;t later be converted to floating point by changing the dp. There is a process that can be followed for &lt;a href=&#34;https://todo.com&#34;&gt;converting fields from one type to another&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note - integer and floating fields are actually different field types in the underlying database, so if a number is created with 0dp i.e. as a whole number, it can&amp;rsquo;t later be converted to floating point by changing the dp. There is a process that can be followed for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#switching-a-field-from-one-type-to-another&#34;&gt;converting fields from one type to another&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Whole number fields can store integer values from -2,147,483,648 to +2,147,483,647, i.e. approx. -2 billion to +2 billion. Decimal number fields have a range of around 1E-307 to 1E+308. See notes for &lt;em&gt;integer&lt;/em&gt; and &lt;em&gt;double precision&lt;/em&gt; types here: &lt;a href=&#34;https://www.postgresql.org/docs/current/datatype-numeric.html&#34;&gt;https://www.postgresql.org/docs/current/datatype-numeric.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If you need to store values of greater range or accuracy, please let us know.&lt;/p&gt;
@@ -1619,7 +1621,7 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;h2 id=&#34;created-by-auto&#34;&gt;Created By [Auto]&lt;/h2&gt;
 &lt;p&gt;The user ID of the person who created the record, in the form &lt;code&gt;Forename Surname (username)&lt;/code&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This format is used to identify a user everywhere in agileBase, for example when assigning a record to a user. When a user ID identifies a person in a &lt;a href=&#34;https://todo.com&#34;&gt;chaser&lt;/a&gt; or &lt;a href=&#34;https://todo.com&#34;&gt;email workflow&lt;/a&gt;, agileBase will look up and use their email address, from their account details.&lt;/p&gt;
+&lt;p&gt;This format is used to identify a user everywhere in agileBase, for example when assigning a record to a user. When a user ID identifies a person in a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email workflow&lt;/a&gt;, agileBase will look up and use their email address, from their account details.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;When a record is created by a workflow, the Created By will be &lt;code&gt;System User (system)&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;When created by an API call, it will be &lt;code&gt;Public API (IP Address) (public api&lt;/code&gt;, where the IP address of the calling system is recorded.&lt;/p&gt;
@@ -1659,13 +1661,13 @@ and a video introduction to the concept here:&lt;/p&gt;
         
         
         &lt;p&gt;Document templates in agileBase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.&lt;/p&gt;
-&lt;p&gt;The same templating system is used for both generating documents (which can be done automatically with a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt; or manually) and displaying output to be printed.&lt;/p&gt;
+&lt;p&gt;The same templating system is used for both generating documents (which can be done automatically with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;workflow&lt;/a&gt; or manually) and displaying output to be printed.&lt;/p&gt;
 &lt;p&gt;Each template is attached to a view and given a name.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-template&#34;&gt;Creating a template&lt;/h2&gt;
 &lt;p&gt;Templates can be created using the built-in WYSIWYG editor, which allows simple presentation controls, like adding tables, headings and text formatting.&lt;/p&gt;
 &lt;p&gt;Alternatively and for complex needs, templates can be created manually. The templating language is &lt;a href=&#34;https://velocity.apache.org/&#34;&gt;Apache Velocity&lt;/a&gt;, which allows concepts such as variables, loops etc. to be used, i.e. simple programming features. The output format is HTML.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Find or create a &lt;a href=&#34;https://todo.com&#34;&gt;view&lt;/a&gt; which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in.&lt;/li&gt;
+&lt;li&gt;Find or create a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in.&lt;/li&gt;
 &lt;li&gt;Press the &lt;em&gt;Print&lt;/em&gt; button in the toolbar, then the &lt;em&gt;manage&lt;/em&gt; button&lt;/li&gt;
 &lt;li&gt;You will then be prompted to create a template using the WYSIWIG editor, or upload one created outside the system.&lt;/li&gt;
 &lt;/ol&gt;
@@ -1683,7 +1685,7 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s an example of a template being updated in the WYSYWIG editor:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/template-editor.png&#34; alt=&#34;Template editing&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;using-templates&#34;&gt;Using templates&lt;/h3&gt;
-&lt;p&gt;Templates can be used when generating documents, &lt;a href=&#34;https://todo.com&#34;&gt;manually&lt;/a&gt; or using an &lt;a href=&#34;https://todo.com&#34;&gt;automated workflow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Templates can be used when generating documents, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/#template&#34;&gt;manually&lt;/a&gt; or using an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;automated workflow&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;They can also be used as printout templates to let users print data from the system formatted as you wish.&lt;/p&gt;
 &lt;h2 id=&#34;advanced-templating&#34;&gt;Advanced templating&lt;/h2&gt;
 &lt;h3 id=&#34;convenience-features&#34;&gt;Convenience features&lt;/h3&gt;
@@ -1829,8 +1831,8 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;h2 id=&#34;version-history&#34;&gt;Version history&lt;/h2&gt;
 &lt;p&gt;When a new file is uploaded (or generated), any previous file is kept as a previous version, displayed with a timestamp, for download by users.&lt;/p&gt;
 &lt;h2 id=&#34;generating-pdf-documents&#34;&gt;Generating PDF documents&lt;/h2&gt;
-&lt;p&gt;If a template is uploaded using the &lt;a href=&#34;https://todo.com&#34;&gt;file field options&lt;/a&gt;, the file upload button in the user interface will be replaced by a generate button.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;https://todo.com&#34;&gt;document templates&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;If a template is uploaded using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/&#34;&gt;file field options&lt;/a&gt;, the file upload button in the user interface will be replaced by a generate button.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/&#34;&gt;document templates&lt;/a&gt; for more information.&lt;/p&gt;
 
       </description>
     </item>
@@ -2176,9 +2178,9 @@ Options are:&lt;/p&gt;
         
         &lt;h2 id=&#34;tabular-display&#34;&gt;Tabular display&lt;/h2&gt;
 &lt;p&gt;Rather than displaying rows from the referenced view as panels&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://todo.com&#34; alt=&#34;Panels screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panels.png&#34; alt=&#34;Panels screenshot&#34;&gt;&lt;/p&gt;
 &lt;p&gt;show a table&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://todo.com&#34; alt=&#34;Table screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-tabular.png&#34; alt=&#34;Table screenshot&#34;&gt;&lt;/p&gt;
 &lt;p&gt;which is a more compact form allowing a greater volume of data to be shown in a smaller area.&lt;/p&gt;
 &lt;h2 id=&#34;use-as-a-filter-for-relations&#34;&gt;Use as a filter for relations&lt;/h2&gt;
 &lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#custom-filtering-when-choosing-a-relation&#34;&gt;Common build patters - custom filtering when using a relation&lt;/a&gt;&lt;/p&gt;

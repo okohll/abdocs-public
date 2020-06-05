@@ -608,6 +608,12 @@
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionsreferenced-field-options" href="/docs/fields/field-options/referenced-field-options/">Cross Reference Field Options</a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionsfile-field-options" href="/docs/fields/field-options/file-field-options/">File Field Options</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -1215,9 +1221,9 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 <p>We recommend the adoption of a password wallet service like <a href="https://1password.com/">1Password</a>, <a href="https://lastpass.com">LastPass</a> or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.</p>
 </blockquote>
 <h3 id="two-factor-authentication">Two factor authentication</h3>
-<p>Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can&rsquo;t do for them, but luckily it is quick and easy to do: <a href="https://todo.com">here&rsquo;s how</a>.</p>
+<p>Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can&rsquo;t do for them, but luckily it is quick and easy to do: <a href="https://agilechilli.com/help-centre/agilebase/account-settings-agilebase/how-to-set-up-two-factor-authentication-2fa/">here&rsquo;s how</a>.</p>
 <p>Users without 2FA will be prompted to do so in the user interface and by email.</p>
-<p>2FA is mandatory for <a href="#roles">administrators</a> and necessary for a user to have before <a href="https://todo.com">manage</a> privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.</p>
+<p>2FA is mandatory for <a href="#roles">administrators</a> and necessary for a user to have before <a href="/docs/security-and-compliance/security-features/privileges/">manage</a> privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.</p>
 <p>When enabled, a user will be prompted for the 2FA code as well as their password when they log in from a device or location they haven&rsquo;t used in the past 30 days.</p>
 <p>If a user encounters any problems with 2FA, e.g. they lose the device for generating their codes, you can temporarily disable 2FA on their account by going to their user details screen and un-ticking &lsquo;use 2FA&rsquo;. Of course, you need to be aware of the risks, for example double checking that a user who contacts you is really who they say they are. Once they can log in, they&rsquo;ll be able to enable 2FA themselves again.</p>
 <p>If someone can&rsquo;t use app-based 2FA for some reason, then a fallback option is to use text-message (SMS) based authentication. This is not recommended as there are known insecurities in this method, but it&rsquo;s still better than having no 2FA at all. To enable that, just type in the user&rsquo;s mobile phone number when editing their user details. That phone number isn&rsquo;t used for any other purposes.</p>
@@ -1232,18 +1238,18 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 <p>For example, if you set <code>created by [auto] = Oliver Kohll (oliver@agilechilli.com)</code>, then (assuming <code>Oliver Kohll (oliver@agilechilli.com)</code> is their username), the user will only see records they created, as long as the &lsquo;created by [auto]&rsquo; field appears in the view.</p>
 <p>A similar feature exists to add filters to roles - useful when you may want to apply the same filter to multiple users. See <a href="/docs/security-and-compliance/security-features/roles/#multi-tenanting">roles</a></p>
 <h4 id="roles">Roles</h4>
-<p>Tick a role to assign the user to it. The primary purpose of roles is to apply privileges to groups of users, see <a href="https://todo.com">roles</a> for more information.</p>
+<p>Tick a role to assign the user to it. The primary purpose of roles is to apply privileges to groups of users, see <a href="/docs/security-and-compliance/security-features/roles/">roles</a> for more information.</p>
 <p>There&rsquo;s one special role which can be assigned. It will be marked <strong>grants administrative privileges</strong>. Assigning that role will make a user an administrator, with full permissions over the complete system. They can create/remove users, roles, tables etc., as well as assign themselves privileges on any table.</p>
-<p>Next to each role listed is a list of tiles that will be added to their screen if that role is assigned to them. This is a convenience feature to speed up setting up their home screen. The tiles shown for a role are those which more than half of the members of that role have. Tiles can be manually added and removed by an <a href="https://todo.com">administrator</a> or the user themselves.</p>
-<p>If any role is a <a href="https://todo.com">filtering role</a>, the filter applied is also displayed.</p>
+<p>Next to each role listed is a list of tiles that will be added to their screen if that role is assigned to them. This is a convenience feature to speed up setting up their home screen. The tiles shown for a role are those which more than half of the members of that role have. Tiles can be manually added and removed by an [administrator] or the user themselves.</p>
+<p>If any role is a <a href="/docs/security-and-compliance/security-features/roles/#multi-tenanting">filtering role</a>, the filter applied is also displayed.</p>
 <h4 id="privileges">Privileges</h4>
-<p>Assign individual table <a href="https://todo.com">privileges</a> to a user.</p>
+<p>Assign individual table <a href="/docs/security-and-compliance/security-features/privileges/">privileges</a> to a user.</p>
 <blockquote>
 <p>When dealing with larger numbers of users it&rsquo;s usually more manageable if you use roles to assign privileges.</p>
 </blockquote>
 <p>If a user has a privilege due to being a member of a role, that privilege is shown with a shaded blue background. Any additional privileges individually assigned to them are shown in green.</p>
 <h4 id="tiles">Tiles</h4>
-<p>Allows an admin to add/remove <a href="https://todo.com">tiles</a> for a user. By default users can add/remove tiles themselves too, although this can be disabled through the use of a <a href="#other-options">custom UI</a>.</p>
+<p>Allows an admin to add/remove <a href="/docs/tiles/">tiles</a> for a user. By default users can add/remove tiles themselves too, although this can be disabled through the use of a <a href="#other-options">custom UI</a>.</p>
 <h2 id="viewing-users">Viewing users</h2>
 <p>Expand the <em>Administration</em> menu in the lefthand sidebar and click users. You&rsquo;ll see a list of existing user accounts. Their details are listed including 2FA status (whether they&rsquo;re using app-based 2FA, text message codes or none) and when they last logged in.</p>
 <p>Each user&rsquo;s roles are shown. Any <a href="/docs/security-and-compliance/security-features/roles/#multi-tenanting">multi-tenanting</a> roles are marked in bold.</p>

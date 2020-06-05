@@ -40,7 +40,7 @@
 &lt;h4 id=&#34;capacity&#34;&gt;Capacity&lt;/h4&gt;
 &lt;p&gt;As well as actual usage, the dashboard shows total capacity i.e. how many users, records, tables etc. are present in the system, along with purchased capacity (if relevant). These elements affect billing.&lt;/p&gt;
 &lt;h4 id=&#34;workflows&#34;&gt;Workflows&lt;/h4&gt;
-&lt;p&gt;A convenience view of all workflows which carry out automated data modifications, see &lt;a href=&#34;https://todo.com&#34;&gt;workflows&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A convenience view of all workflows which carry out automated data modifications, see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;database-graph&#34;&gt;Database graph&lt;/h4&gt;
 &lt;p&gt;Finally, for background on what the data structure looks like and how tables are connected, the database graph shows relations between tables is visual form. This can provide a fuller understaning of the system.&lt;/p&gt;
 &lt;h3 id=&#34;table-and-view-usage&#34;&gt;Table and view usage&lt;/h3&gt;

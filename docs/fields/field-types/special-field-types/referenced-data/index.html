@@ -608,6 +608,12 @@
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionsreferenced-field-options" href="/docs/fields/field-options/referenced-field-options/">Cross Reference Field Options</a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionsfile-field-options" href="/docs/fields/field-options/file-field-options/">File Field Options</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -1198,7 +1204,7 @@
 	<h1>Referenced data</h1>
     <div class="lead">Embed data or charts from elsewhere in the system into a form</div>
 	       
-	<p>Most fields in a table allow data entry into that table, but referenced data fields allow data from <strong>other</strong> places to be embedded, specifically <a href="https://todo.com">views</a>, created from any table.</p>
+	<p>Most fields in a table allow data entry into that table, but referenced data fields allow data from <strong>other</strong> places to be embedded, specifically <a href="/docs/views/">views</a>, created from any table.</p>
 <p>Optionally, the embedded data can be editable.</p>
 <p>This can be used for many purposes, such as</p>
 <ul>
@@ -1208,8 +1214,8 @@
 </ul>
 <p>Some more esoteric uses are also possible</p>
 <ul>
-<li>referenced data can be used as a source of data to populate standard fields in the form, i.e. to provide default values for fields - see <a href="https://todo.com">relation field options</a> for more information</li>
-<li>a referenced data field can be displayed as a button to <a href="https://todo.com">manually run a workflow</a></li>
+<li>referenced data can be used as a source of data to populate standard fields in the form, i.e. to provide default values for fields - see <a href="/docs/fields/field-options/common-options/#set-from-previous-referenced-field">relation field options</a> for more information</li>
+<li>a referenced data field can be displayed as a button to <a href="/docs/workflows/advanced/workflow-buttons/">manually run a workflow</a></li>
 </ul>
 <h2 id="adding-a-referenced-field">Adding a referenced field</h2>
 <p>Referenced fields are based on views. The contents of a view will be displayed in the form where a field referencing data from that view is added.</p>
@@ -1224,7 +1230,7 @@
 <p>** TODO: screenshot **</p>
 <p>So to summarise, the steps are</p>
 <ol>
-<li><a href="https://todo.com">Create</a> or find a view containing the data you wish to embed. It must contain the ID field of the table the data is embedded in (in this case &lsquo;opportunities&rsquo;).</li>
+<li><a href="/docs/views/creating-a-view/">Create</a> or find a view containing the data you wish to embed. It must contain the ID field of the table the data is embedded in (in this case &lsquo;opportunities&rsquo;).</li>
 <li><a href="/docs/fields/#adding-a-field">Add a field</a> of type <em>referenced data</em>. Select the table your target view was created from, then the target view itself, before pressing <em>create field</em></li>
 </ol>
 <p>Actually, there is one case in which the rule that the view must contain the ID of the table the referenced data is being added to. That&rsquo;s when you want to show <strong>all</strong> rows from the view, without filtering.</p>
@@ -1232,15 +1238,15 @@
 <p>This is typically used in a minority of cases, but can be useful when you want to embed data that isn&rsquo;t related to the target table. For example, showing some global settings that may affect the functionality of a system.</p>
 </blockquote>
 <h2 id="showing-one-or-more-rows">Showing one or more rows</h2>
-<p>If more than one row in the view has an ID matching the ID of the table being added to, all will be shown. There is limited space in a form, so if there are lots, then a &lsquo;see more&rsquo; option will appear after the first few rows. For a more compact view, <a href="https://todo.com">tabular display</a> can be chosen in the referenced field options.</p>
+<p>If more than one row in the view has an ID matching the ID of the table being added to, all will be shown. There is limited space in a form, so if there are lots, then a &lsquo;see more&rsquo; option will appear after the first few rows. For a more compact view, <a href="/docs/fields/field-options/referenced-field-options/#tabular-display">tabular display</a> can be chosen in the referenced field options.</p>
 <h2 id="showing-charts">Showing charts</h2>
-<p>If the view used has one or more <a href="https://todo.com">charts</a>, they will be shown instead of the data rows. The filtering acts exactly the same way, only data matching the containing table&rsquo;s ID is used as the source of the chart data.</p>
+<p>If the view used has one or more <a href="/docs/charting/">charts</a>, they will be shown instead of the data rows. The filtering acts exactly the same way, only data matching the containing table&rsquo;s ID is used as the source of the chart data.</p>
 <p>** TODO: screenshot of embedded chart **</p>
 <h2 id="making-referenced-data-editable">Making referenced data editable</h2>
 <p>Optionally, referenced data can be made editable by clicking on it.</p>
 <p>A view containing the containing table&rsquo;s ID can be created one of two ways.</p>
 <ol>
-<li>Create a view from the containing table, <a href="https://todo.com">joining</a> to other tables</li>
+<li>Create a view from the containing table, <a href="/docs/views/joins/">joining</a> to other tables</li>
 <li>Create a view from another table, joining it to the containing table</li>
 </ol>
 <p>If a view is built the second way and embedded into the table via a referenced field, the data will be editable: clicking on an element of referenced data will turn it into a data entry form.</p>

@@ -32,12 +32,12 @@
 &lt;p&gt;If a record appears in the view, the field will be visible, otherwise it won&amp;rsquo;t display to users.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;As the conditions are created in a view, this mechanism is really powerful. You can create simple or very complex critera, including all of the filter options in a view, for example basing a filter on a calculation and combining multiple filters.&lt;/p&gt;
-&lt;p&gt;So you could make a field appear only when a particular point is reached in a process, or a status is changed elsewhere in a form, or perhaps it should only be visible to people who are &lt;a href=&#34;https://todo.com&#34;&gt;members of a certain role&lt;/a&gt;. See &lt;a href=&#34;https://todo.com&#34;&gt;view filters&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;So you could make a field appear only when a particular point is reached in a process, or a status is changed elsewhere in a form, or perhaps it should only be visible to people who are &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/&#34;&gt;members of a certain role&lt;/a&gt;. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Two special options are available&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;show always - the default state&lt;/li&gt;
-&lt;li&gt;show never - useful for hiding fields used for internal purposes, e.g. which help the internal workings of a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;show never - useful for hiding fields used for internal purposes, e.g. which help the internal workings of a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;lock-when-value-set&#34;&gt;Lock when value set&lt;/h2&gt;
 &lt;p&gt;If the field is blank, allow a value to be entered, however as soon as it has a value, lock to prevent further editing. The user can manually unlock, but will be prompted for a reason for doing so, which will be logged against the field as a comment.&lt;/p&gt;
@@ -52,7 +52,7 @@
 &lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;
 &lt;p&gt;Prominently highlight the field on the screen, e.g. if it&amp;rsquo;s one that is important to fill out, without actually requiring a value to be supplied.&lt;/p&gt;
 &lt;h2 id=&#34;set-from-previous-referenced-field&#34;&gt;Set from previous referenced field&lt;/h2&gt;
-&lt;p&gt;Provides a way to calculate a default option for a field. Tick this option and place a [referenced field] just before this field. The value of this field will be set from whatever value the referenced field outputs.&lt;/p&gt;
+&lt;p&gt;Provides a way to calculate a default option for a field. Tick this option and place a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced field&lt;/a&gt; just before this field. The value of this field will be set from whatever value the referenced field outputs.&lt;/p&gt;
 &lt;p&gt;If the referenced field&amp;rsquo;s view has more than one field, the last one will be used, or if any have the same name as this field then that one will be.&lt;/p&gt;
 &lt;p&gt;To have a value set only at a certain point in a process, this option can be combined with the &lt;a href=&#34;#show-if-record-in-view&#34;&gt;Show if record in view&lt;/a&gt; option. When the field becomes visible, the value will be set.&lt;/p&gt;
 &lt;h2 id=&#34;unique&#34;&gt;Unique&lt;/h2&gt;
@@ -79,7 +79,7 @@
 &lt;p&gt;When this field is included in a view, highlight it with a colour if the content is one of a number of words. The most up-to-date values to be highlighted are shown in the administrator interface, but as of the latest update of this page, they are&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/word-colours.png&#34; alt=&#34;Word Colours&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Text calculations can also be coloured based on the same words - see the &lt;a href=&#34;https://todo.com&#34;&gt;calculation options&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Text calculations can also be coloured based on the same words - see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/#colouring&#34;&gt;calculation options&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;default-value&#34;&gt;Default value&lt;/h2&gt;
 &lt;p&gt;For basic text fields, this simply provides a default value, which the field will have when a record&amp;rsquo;s created. If not provided, the field will be blank.&lt;/p&gt;
@@ -96,7 +96,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;An example use would be assigning an account manager to a customer, selecting from a list of staff members (who are users).&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there&amp;rsquo;s a status change or something is overdue for example. agileBase can look up the user&amp;rsquo;s email address to accomplish this, See &lt;a href=&#34;https://todo.com&#34;&gt;email workflows&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there&amp;rsquo;s a status change or something is overdue for example. agileBase can look up the user&amp;rsquo;s email address to accomplish this, See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email workflows&lt;/a&gt; for details.&lt;/p&gt;
 &lt;h2 id=&#34;use-dropdown&#34;&gt;Use dropdown&lt;/h2&gt;
 &lt;p&gt;Rather than a simple text entry field, display a dropdown of choices from which one can be selected. If there are only a few values, then the user interface may display options in &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio&#34;&gt;radio button&lt;/a&gt; style, but the behaviour is exactly the same.&lt;/p&gt;
 &lt;p&gt;Options can be provided with the &lt;a href=&#34;#default-value&#34;&gt;default value&lt;/a&gt; setting as above. If no options are specified, then the list of options will be automatically generated from the set of unique values &lt;strong&gt;already entered&lt;/strong&gt; into records. In this way, a set of values will gradually grow as people enter new data.&lt;/p&gt;
@@ -190,7 +190,7 @@
 &lt;p&gt;When the user is selecting a parent record to link to a particular child, they will be able to use this view to show a list of parent records to choose from. Therefore the view must be created from the parent table.&lt;/p&gt;
 &lt;p&gt;They will be able to filter on any field in the view to search for a record.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Using pre-set &lt;a href=&#34;https://todo.com&#34;&gt;view filters&lt;/a&gt; to narrow down the list of relevant records can be helpful, e.g. if only records of a certain category are required.&lt;/p&gt;
+&lt;p&gt;Using pre-set &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; to narrow down the list of relevant records can be helpful, e.g. if only records of a certain category are required.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;use-only-given-values&#34;&gt;Use only given values&lt;/h2&gt;
 &lt;p&gt;When this is un-ticked, allow the user to create a new parent record directly from the child record&amp;rsquo;s editing screen. Relation fields allow you to type the name of a parent record to find and select one. If no matches are found, a prompt will appear allowing the user to create one.&lt;/p&gt;
@@ -265,7 +265,7 @@
 &lt;p&gt;The number of decimal places to show numbers to.&lt;/p&gt;
 &lt;p&gt;his affects display only, so for example if 1.543 is entered into a field with 1 decimal place, it will display as 1.5 but will still be stored as 1.543 and any maths done on the field operate on the higher precision value.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Note - integer and floating fields are actually different field types in the underlying database, so if a number is created with 0dp i.e. as a whole number, it can&amp;rsquo;t later be converted to floating point by changing the dp. There is a process that can be followed for &lt;a href=&#34;https://todo.com&#34;&gt;converting fields from one type to another&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note - integer and floating fields are actually different field types in the underlying database, so if a number is created with 0dp i.e. as a whole number, it can&amp;rsquo;t later be converted to floating point by changing the dp. There is a process that can be followed for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#switching-a-field-from-one-type-to-another&#34;&gt;converting fields from one type to another&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Whole number fields can store integer values from -2,147,483,648 to +2,147,483,647, i.e. approx. -2 billion to +2 billion. Decimal number fields have a range of around 1E-307 to 1E+308. See notes for &lt;em&gt;integer&lt;/em&gt; and &lt;em&gt;double precision&lt;/em&gt; types here: &lt;a href=&#34;https://www.postgresql.org/docs/current/datatype-numeric.html&#34;&gt;https://www.postgresql.org/docs/current/datatype-numeric.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If you need to store values of greater range or accuracy, please let us know.&lt;/p&gt;
@@ -314,14 +314,48 @@
         
         &lt;h2 id=&#34;tabular-display&#34;&gt;Tabular display&lt;/h2&gt;
 &lt;p&gt;Rather than displaying rows from the referenced view as panels&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://todo.com&#34; alt=&#34;Panels screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panels.png&#34; alt=&#34;Panels screenshot&#34;&gt;&lt;/p&gt;
 &lt;p&gt;show a table&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://todo.com&#34; alt=&#34;Table screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-tabular.png&#34; alt=&#34;Table screenshot&#34;&gt;&lt;/p&gt;
 &lt;p&gt;which is a more compact form allowing a greater volume of data to be shown in a smaller area.&lt;/p&gt;
 &lt;h2 id=&#34;use-as-a-filter-for-relations&#34;&gt;Use as a filter for relations&lt;/h2&gt;
 &lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#custom-filtering-when-choosing-a-relation&#34;&gt;Common build patters - custom filtering when using a relation&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;
 &lt;p&gt;Make the background of the referenced panel bright red - useful for showing warnings on screen.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: File Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/</link>
+      <pubDate>Thu, 04 Jun 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;type&#34;&gt;Type&lt;/h2&gt;
+&lt;p&gt;The type of document typically stored by this field. Can be&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Document - such as a PDF file or spreadsheet for example&lt;/li&gt;
+&lt;li&gt;Image/photo&lt;/li&gt;
+&lt;li&gt;Profile photo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The selection affects the display in the user interface in some ways. In particular when a profile photo field is moved to the start of the record, it is displayed as part of the record header.&lt;/p&gt;
+&lt;h2 id=&#34;image-resolution&#34;&gt;Image resolution&lt;/h2&gt;
+&lt;p&gt;This option allows you to specify that the system should automatically down-size any large images uploaded. This could be to save storage space (for which there is a cost), or it may be appropriate if these files are going to be attached to emails sent by the system.&lt;/p&gt;
+&lt;h2 id=&#34;template&#34;&gt;Template&lt;/h2&gt;
+&lt;p&gt;Type the name of a template to be used for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/&#34;&gt;generating PDF documents&lt;/a&gt; to be stored in this field.&lt;/p&gt;
+&lt;h2 id=&#34;view-to-use&#34;&gt;View to use&lt;/h2&gt;
+&lt;p&gt;The system will look in this view for a template with the name specified above.&lt;/p&gt;
+&lt;h2 id=&#34;paper-size&#34;&gt;Paper size&lt;/h2&gt;
+&lt;p&gt;When a PDF is generated, base it on this size of paper. The default is A4, changing this can be useful if e.g. you want to use the system to print labels.&lt;/p&gt;
+&lt;h2 id=&#34;footer&#34;&gt;Footer&lt;/h2&gt;
+&lt;p&gt;Optionally, add a footer to every page of a generated document, including the name of the document, page number and total number of pages.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The document name is set to be the contents of the first (non-ID) field in the &amp;lsquo;view to use&amp;rsquo; (see above), so you can set it to whatever you like. A calculation can be used if required.&lt;/p&gt;
+&lt;/blockquote&gt;
 
       </description>
     </item>

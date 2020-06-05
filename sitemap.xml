@@ -194,7 +194,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/charting/</loc>
-    <lastmod>2020-06-04T14:02:57+01:00</lastmod>
+    <lastmod>2020-06-04T15:18:09+01:00</lastmod>
   </url>
   
   <url>
@@ -229,7 +229,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/calendar/</loc>
-    <lastmod>2020-04-24T20:48:55+01:00</lastmod>
+    <lastmod>2020-06-04T15:18:09+01:00</lastmod>
   </url>
   
   <url>
@@ -334,7 +334,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/workflows/types-of-actions/</loc>
-    <lastmod>2020-05-29T17:25:34+01:00</lastmod>
+    <lastmod>2020-06-04T15:18:09+01:00</lastmod>
   </url>
   
   <url>
@@ -364,7 +364,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/docs/integrations/calendar/</loc>
-    <lastmod>2020-04-24T16:40:00+01:00</lastmod>
+    <lastmod>2020-06-04T15:18:09+01:00</lastmod>
   </url>
   
   <url>
@@ -395,6 +395,11 @@
   <url>
     <loc>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</loc>
     <lastmod>2020-06-02T18:49:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/</loc>
+    <lastmod>2020-06-04T16:40:00+01:00</lastmod>
   </url>
   
   <url>
@@ -499,7 +504,7 @@
   
   <url>
     <loc>https://docs.agilebase.co.uk/</loc>
-    <lastmod>2020-06-04T14:02:57+01:00</lastmod>
+    <lastmod>2020-06-04T16:40:00+01:00</lastmod>
   </url>
   
 </urlset>

@@ -25,11 +25,11 @@
         
         &lt;p&gt;These are the core types of fields by which data can be entered by users (or other sources such as the API or a workflow).&lt;/p&gt;
 &lt;h2 id=&#34;text&#34;&gt;Text&lt;/h2&gt;
-&lt;p&gt;Text fields are the most commonly used. Depending on &lt;a href=&#34;https://todo.com&#34;&gt;field options&lt;/a&gt;, text can be entered into a standard data entry control, a large box allowing rich formatting (bold, italic etc.), chosen from a dropdown of options or added as tags.&lt;/p&gt;
+&lt;p&gt;Text fields are the most commonly used. Depending on &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/&#34;&gt;field options&lt;/a&gt;, text can be entered into a standard data entry control, a large box allowing rich formatting (bold, italic etc.), chosen from a dropdown of options or added as tags.&lt;/p&gt;
 &lt;h2 id=&#34;number&#34;&gt;Number&lt;/h2&gt;
 &lt;p&gt;When adding a number field, select a &lt;em&gt;precision&lt;/em&gt; from the dropdown. If &lt;code&gt;0&lt;/code&gt; is chosen, then it will be a whole number (integer) field. If any other value is chosen, it will be a decimal field. The decimal precision can be changed at any time in the field options, but a whole number can&amp;rsquo;t be converted to a decimal or vice versa via field options.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;See &lt;a href=&#34;https://todo.com&#34;&gt;changing field types&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#switching-a-field-from-one-type-to-another&#34;&gt;changing field types&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;date&#34;&gt;Date&lt;/h2&gt;
 &lt;p&gt;Represents a date or date/time, of any precision from year to second.&lt;/p&gt;
@@ -73,7 +73,7 @@
 &lt;ol&gt;
 &lt;li&gt;Rename the field to &lt;code&gt;[fieldname] old&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Add a new field &lt;code&gt;[fieldname]&lt;/code&gt;. This means that any calculations that reference the field won&amp;rsquo;t have to be changed and won&amp;rsquo;t break due to mis-matching field names&lt;/li&gt;
-&lt;li&gt;Copy all values from one field to another. The easiest way is to use a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Copy all values from one field to another. The easiest way is to use a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Try to delete the old field. If any views reference it, the delete will fail and a list of them will be shown&lt;/li&gt;
 &lt;li&gt;Edit all those views
 &lt;ul&gt;

@@ -24,13 +24,13 @@
         
         
         &lt;p&gt;Document templates in agileBase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.&lt;/p&gt;
-&lt;p&gt;The same templating system is used for both generating documents (which can be done automatically with a &lt;a href=&#34;https://todo.com&#34;&gt;workflow&lt;/a&gt; or manually) and displaying output to be printed.&lt;/p&gt;
+&lt;p&gt;The same templating system is used for both generating documents (which can be done automatically with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;workflow&lt;/a&gt; or manually) and displaying output to be printed.&lt;/p&gt;
 &lt;p&gt;Each template is attached to a view and given a name.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-template&#34;&gt;Creating a template&lt;/h2&gt;
 &lt;p&gt;Templates can be created using the built-in WYSIWYG editor, which allows simple presentation controls, like adding tables, headings and text formatting.&lt;/p&gt;
 &lt;p&gt;Alternatively and for complex needs, templates can be created manually. The templating language is &lt;a href=&#34;https://velocity.apache.org/&#34;&gt;Apache Velocity&lt;/a&gt;, which allows concepts such as variables, loops etc. to be used, i.e. simple programming features. The output format is HTML.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Find or create a &lt;a href=&#34;https://todo.com&#34;&gt;view&lt;/a&gt; which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in.&lt;/li&gt;
+&lt;li&gt;Find or create a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in.&lt;/li&gt;
 &lt;li&gt;Press the &lt;em&gt;Print&lt;/em&gt; button in the toolbar, then the &lt;em&gt;manage&lt;/em&gt; button&lt;/li&gt;
 &lt;li&gt;You will then be prompted to create a template using the WYSIWIG editor, or upload one created outside the system.&lt;/li&gt;
 &lt;/ol&gt;
@@ -48,7 +48,7 @@
 &lt;p&gt;Here&amp;rsquo;s an example of a template being updated in the WYSYWIG editor:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/template-editor.png&#34; alt=&#34;Template editing&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;using-templates&#34;&gt;Using templates&lt;/h3&gt;
-&lt;p&gt;Templates can be used when generating documents, &lt;a href=&#34;https://todo.com&#34;&gt;manually&lt;/a&gt; or using an &lt;a href=&#34;https://todo.com&#34;&gt;automated workflow&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Templates can be used when generating documents, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/#template&#34;&gt;manually&lt;/a&gt; or using an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;automated workflow&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;They can also be used as printout templates to let users print data from the system formatted as you wish.&lt;/p&gt;
 &lt;h2 id=&#34;advanced-templating&#34;&gt;Advanced templating&lt;/h2&gt;
 &lt;h3 id=&#34;convenience-features&#34;&gt;Convenience features&lt;/h3&gt;

@@ -608,6 +608,12 @@
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionsreferenced-field-options" href="/docs/fields/field-options/referenced-field-options/">Cross Reference Field Options</a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionsfile-field-options" href="/docs/fields/field-options/file-field-options/">File Field Options</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -1191,7 +1197,7 @@
 	<h1>Exporting</h1>
     <div class="lead">Allowing users to export data to spreadsheet</div>
 	       
-	<p>Exporting to spreadsheet is only one way of getting data out of agileBase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the <a href="https://todo.com">API</a> can be used.</p>
+	<p>Exporting to spreadsheet is only one way of getting data out of agileBase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the <a href="/docs/integrations/">API</a> can be used.</p>
 <h2 id="allowing-exports">Allowing exports</h2>
 <p>In order for a user to be allowed to export to spreadsheet, a number of critieria have to be matched, to suitably protect your organisation&rsquo;s data.</p>
 <ol>
@@ -1214,19 +1220,19 @@
 <h2 id="exporting">Exporting</h2>
 <p>A user with the ability to export can do so by opening the view, clicking the print icon to the left and selecting <em>export to spreadsheet</em> from the options at the top of the screen.</p>
 <blockquote>
-<p>If the user <a href="https://todo.com">filters</a> the data on screen before doing this, only the filtered data will be exported.</p>
+<p>If the user <a href="/docs/views/filters/">filters</a> the data on screen before doing this, only the filtered data will be exported.</p>
 </blockquote>
 <p>The resulting spreadsheet will be in Microsoft Excel format. The first sheet will be some metadata about the export, such as a timestamp, the name of the exporter and any filters applied. The second sheet will be the actual data.</p>
 <p>Column A in the data sheet will be hidden. It holds the internal row ID of each record. This is useful for matching purposes if you&rsquo;re going to be modifying then re-importing the data.</p>
 <h3 id="charts">Charts</h3>
-<p>If the view has <a href="https://todo.com">charts</a> attached, one sheet per chart will also be included in the spreadsheet. The contents will be the chart data, not the chart visualisation itself, but the visualisation can easily be re-created in the spreadsheet from the data if necessary.</p>
+<p>If the view has <a href="/docs/charting/">charts</a> attached, one sheet per chart will also be included in the spreadsheet. The contents will be the chart data, not the chart visualisation itself, but the visualisation can easily be re-created in the spreadsheet from the data if necessary.</p>
 <h2 id="limits-and-notifications">Limits and notifications</h2>
 <p>An administrator can log whether each table contains commercially sensitive data (ticked by default) and/or personal data (see <a href="https://gdpr-info.eu/art-4-gdpr/)">https://gdpr-info.eu/art-4-gdpr/)</a>. If either of these options is ticked for a view&rsquo;s parent table, you’ll have additional options for</p>
 <ul>
 <li>notifying all administrators if an export of more than a certain number of rows is done</li>
 <li>setting a hard limit to completely disallow exports of more than a certain number of rows</li>
 </ul>
-<p>To configure these options, see <a href="https://todo.com">tables</a></p>
+<p>To configure these options, see <a href="/docs/tables/options/">tables</a></p>
 
 	
 		<style>

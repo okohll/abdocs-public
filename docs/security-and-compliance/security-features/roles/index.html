@@ -608,6 +608,12 @@
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionsreferenced-field-options" href="/docs/fields/field-options/referenced-field-options/">Cross Reference Field Options</a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionsfile-field-options" href="/docs/fields/field-options/file-field-options/">File Field Options</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -1206,13 +1212,13 @@
 <p>You should now see an editing screen with the details of the role you just created. You can give it a name and there are a couple of options:
 <img src="/role-details.png" alt="Role details"></p>
 <p><strong>Allow Export</strong><br>
-Referrs to exporting to spreadsheet - see <a href="https://todo.com">spreadsheet exports</a></p>
+Referrs to exporting to spreadsheet - see <a href="/docs/integrations/exporting-to-spreadsheet/">spreadsheet exports</a></p>
 <p><strong>User Visibility</strong> and <strong>Restrict Data Access</strong><br>
 These are used to set up <a href="#multi-tenanting">multi-tenanting</a></p>
 <h3 id="members">Members</h3>
 <p>Tick each user to add them to the role. Users will gain all the privileges defined by the role.</p>
 <h3 id="privileges">Privileges</h3>
-<p>Select the <a href="https://todo.com">table privileges</a> which will apply to members.</p>
+<p>Select the <a href="/docs/security-and-compliance/security-features/privileges/">table privileges</a> which will apply to members.</p>
 <p>Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together.</p>
 <h2 id="multi-tenanting">Multi-tenanting</h2>
 <p>Multi-tenanting is the ability to separate users into groups who can’t see each other’s data. This can be used for example to allow different sets of companies, clubs, or membership groups (or whatever the organisational group is) to use the same system features whilst remaining separate from each other.</p>
@@ -1222,7 +1228,7 @@ These are used to set up <a href="#multi-tenanting">multi-tenanting</a></p>
 </blockquote>
 <p>To set up multi-tenanting:</p>
 <ol>
-<li>first <a href="https://todo.com">add a text field</a> to all tables in the system for which you want data to be segragated. The field must be named the same in every table, for example&rsquo;s sake here let&rsquo;s assume it&rsquo;s called &lsquo;account name&rsquo;.</li>
+<li>first <a href="/docs/fields/">add a text field</a> to all tables in the system for which you want data to be segragated. The field must be named the same in every table, for example&rsquo;s sake here let&rsquo;s assume it&rsquo;s called &lsquo;account name&rsquo;.</li>
 <li>Then create one role for each set of users who you want to segregate. We&rsquo;ll assume there&rsquo;s one called &lsquo;Customer A&rsquo;.</li>
 <li>In the role details screen for the Customer A role, tick <em>user visibility</em>. That means that users in this role won&rsquo;t see users in other roles with the same option ticked. In other words, users from Customer A won&rsquo;t be able to select Customer B or Customer C users when doing things like adding comments or assigning users to records.</li>
 <li>Under <em>restrict data access</em> in the role details, enter <code>account name = Customer A</code></li>

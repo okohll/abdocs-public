@@ -608,6 +608,12 @@
       <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionsreferenced-field-options" href="/docs/fields/field-options/referenced-field-options/">Cross Reference Field Options</a>
       
       
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docsfieldsfield-optionsfile-field-options" href="/docs/fields/field-options/file-field-options/">File Field Options</a>
+      
+      
     </li>
   </ul>
 </ul>
@@ -1203,12 +1209,12 @@
 <p>If a record appears in the view, the field will be visible, otherwise it won&rsquo;t display to users.</p>
 <blockquote>
 <p>As the conditions are created in a view, this mechanism is really powerful. You can create simple or very complex critera, including all of the filter options in a view, for example basing a filter on a calculation and combining multiple filters.</p>
-<p>So you could make a field appear only when a particular point is reached in a process, or a status is changed elsewhere in a form, or perhaps it should only be visible to people who are <a href="https://todo.com">members of a certain role</a>. See <a href="https://todo.com">view filters</a> for more information.</p>
+<p>So you could make a field appear only when a particular point is reached in a process, or a status is changed elsewhere in a form, or perhaps it should only be visible to people who are <a href="/docs/security-and-compliance/security-features/roles/">members of a certain role</a>. See <a href="/docs/views/filters/">view filters</a> for more information.</p>
 </blockquote>
 <p>Two special options are available</p>
 <ul>
 <li>show always - the default state</li>
-<li>show never - useful for hiding fields used for internal purposes, e.g. which help the internal workings of a <a href="https://todo.com">workflow</a></li>
+<li>show never - useful for hiding fields used for internal purposes, e.g. which help the internal workings of a <a href="/docs/workflows/">workflow</a></li>
 </ul>
 <h2 id="lock-when-value-set">Lock when value set</h2>
 <p>If the field is blank, allow a value to be entered, however as soon as it has a value, lock to prevent further editing. The user can manually unlock, but will be prompted for a reason for doing so, which will be logged against the field as a comment.</p>
@@ -1223,7 +1229,7 @@
 <h2 id="prominent">Prominent</h2>
 <p>Prominently highlight the field on the screen, e.g. if it&rsquo;s one that is important to fill out, without actually requiring a value to be supplied.</p>
 <h2 id="set-from-previous-referenced-field">Set from previous referenced field</h2>
-<p>Provides a way to calculate a default option for a field. Tick this option and place a [referenced field] just before this field. The value of this field will be set from whatever value the referenced field outputs.</p>
+<p>Provides a way to calculate a default option for a field. Tick this option and place a <a href="/docs/fields/field-types/special-field-types/referenced-data/">referenced field</a> just before this field. The value of this field will be set from whatever value the referenced field outputs.</p>
 <p>If the referenced field&rsquo;s view has more than one field, the last one will be used, or if any have the same name as this field then that one will be.</p>
 <p>To have a value set only at a certain point in a process, this option can be combined with the <a href="#show-if-record-in-view">Show if record in view</a> option. When the field becomes visible, the value will be set.</p>
 <h2 id="unique">Unique</h2>
