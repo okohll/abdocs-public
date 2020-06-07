@@ -27,7 +27,7 @@
 &lt;p&gt;Depending on the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/table-layouts/&#34;&gt;table layout&lt;/a&gt;, these blocks will be displayed in different ways, but in all cases will form a distinct group of fields.&lt;/p&gt;
 &lt;p&gt;Inline help can be added for separators in the same way as for normal fields, by adding a field description. This help text will apply to the whole block of fields created by a separator.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a system with several&amp;hellip;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TODO: blocks screenshot&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/blocks-one-expanded.png&#34; alt=&#34;blocks&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -46,12 +46,12 @@
 &lt;p&gt;The ability to discuss and comment on data can be one of the most important mechanisms used to break down silo thinking and help organisations that wish to adopt a more systematic or process orientated view of things.&lt;/p&gt;
 &lt;h2 id=&#34;comment-feeds-in-action&#34;&gt;Comment feeds in action&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s an example of a comment feed in a table, being used to add a new comment. Previous comments can be seen underneath, with the user and date/time of each.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TODO: screenshot&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-comment.png&#34; alt=&#34;add comment&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The available recipients are those people who have privileges to view data in the table (it&amp;rsquo;s no use sending a comment to someone who can&amp;rsquo;t see the data being discussed).&lt;/p&gt;
 &lt;p&gt;The user interface intelligently selects an initial list of recipients from those available, but they can be added or removed by the user.&lt;/p&gt;
-&lt;p&gt;In this example, A and B (TODO) have been set to receive email notifications as well. The email they receive will contain a link to take them directly to the record the comment was added to. They can reply to the email to log an additional comment.&lt;/p&gt;
+&lt;p&gt;In this example, Cliff, Gemma and Mark have been set to receive email notifications as well. The email they receive will contain a link to take them directly to the record the comment was added to. They can reply to the email to log an additional comment.&lt;/p&gt;
 &lt;p&gt;People who aren&amp;rsquo;t recipients of a comment will still see the comment when they visit the record it&amp;rsquo;s been added to, they just won&amp;rsquo;t get a notification in their comments stream or elsewhere.&lt;/p&gt;
-&lt;p&gt;People who are mentioned by name in a comment (TODO in this example) will get an in-app alert as well as the comment appearing in their comment stream.&lt;/p&gt;
+&lt;p&gt;People who are mentioned by name in a comment (Mark in this example) will get an in-app alert as well as the comment appearing in their comment stream.&lt;/p&gt;
 &lt;p&gt;A user&amp;rsquo;s notification options affect whether they receive comments from a particular table or person by default, and how they receive those comments. The table option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#accept-emails-to-this-address&#34;&gt;email notifications&lt;/a&gt; also affects this.&lt;/p&gt;
 &lt;h3 id=&#34;comments-to-other-fields&#34;&gt;Comments to other fields&lt;/h3&gt;
 &lt;p&gt;Although adding a comments feed field is the easiest way of allowing people to comment on data, users can at any time add a comment to &lt;strong&gt;any&lt;/strong&gt; field on the screen, by hovering over the field until an &amp;lsquo;add comment&amp;rsquo; icon appears. This opens a smaller, basic comment adding interface, without the options for choosing recipients above, rather the default set of recipients is always used.&lt;/p&gt;
@@ -92,14 +92,14 @@
 &lt;h2 id=&#34;adding-a-referenced-field&#34;&gt;Adding a referenced field&lt;/h2&gt;
 &lt;p&gt;Referenced fields are based on views. The contents of a view will be displayed in the form where a field referencing data from that view is added.&lt;/p&gt;
 &lt;p&gt;The way it works is that the chosen view must contain the ID field of the table the referenced field is added to. When displaying data, the view is filtered to only show records where the ID matches that of the record being edited.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s take the sales opportunity example from above. You wish to include details of a selected contact in an opportunity record.&lt;/p&gt;
-&lt;p&gt;First, create a view of contacts linked to each opportunity. It may have fields in it such as the following:&lt;/p&gt;
-&lt;p&gt;** TODO: screenshot of example data in spreadsheet **&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take an example - you wish to include details of any ingredients supplied by a company in a supplier details screen.&lt;/p&gt;
+&lt;p&gt;First, create a view of ingredients linked to each supplier. It may have data in it such as the following:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-source-view.png&#34; alt=&#34;referenced source view&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Note - ID fields aren&amp;rsquo;t usually displayed to the user, they&amp;rsquo;re shown here to make the explanation easier&lt;/p&gt;
+&lt;p&gt;There is some repetition in this view because each ingredient can be supplied by more than one supplier. Each line represents an ingredient/supplier combination. The supplier names aren&amp;rsquo;t included in this particular view.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;When a field referencing this view is added to the opportunities table, the output may display like this, when editing a particular opportunity, e.g. number 4&lt;/p&gt;
-&lt;p&gt;** TODO: screenshot **&lt;/p&gt;
+&lt;p&gt;When a field referencing this view is added to the suppliers table, the output may display like this, when editing a particular supplier:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panels.png&#34; alt=&#34;referenced panels&#34;&gt;&lt;/p&gt;
 &lt;p&gt;So to summarise, the steps are&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;Create&lt;/a&gt; or find a view containing the data you wish to embed. It must contain the ID field of the table the data is embedded in (in this case &amp;lsquo;opportunities&amp;rsquo;).&lt;/li&gt;
@@ -113,7 +113,7 @@
 &lt;p&gt;If more than one row in the view has an ID matching the ID of the table being added to, all will be shown. There is limited space in a form, so if there are lots, then a &amp;lsquo;see more&amp;rsquo; option will appear after the first few rows. For a more compact view, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/#tabular-display&#34;&gt;tabular display&lt;/a&gt; can be chosen in the referenced field options.&lt;/p&gt;
 &lt;h2 id=&#34;showing-charts&#34;&gt;Showing charts&lt;/h2&gt;
 &lt;p&gt;If the view used has one or more &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;charts&lt;/a&gt;, they will be shown instead of the data rows. The filtering acts exactly the same way, only data matching the containing table&amp;rsquo;s ID is used as the source of the chart data.&lt;/p&gt;
-&lt;p&gt;** TODO: screenshot of embedded chart **&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/embedded-chart.png&#34; alt=&#34;embedded chart&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;making-referenced-data-editable&#34;&gt;Making referenced data editable&lt;/h2&gt;
 &lt;p&gt;Optionally, referenced data can be made editable by clicking on it.&lt;/p&gt;
 &lt;p&gt;A view containing the containing table&amp;rsquo;s ID can be created one of two ways.&lt;/p&gt;
@@ -165,13 +165,12 @@
 &lt;p&gt;As an example of use, in a display of sales opportunities, you want to know which opps. are being actively worked and which haven’t had any activity for some time. The activity histogram shows the ‘shape’ of activity over a period of time, at a glance.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;With sparklines next to every record on screen, you can quickly get an idea of the relative activity of each.&lt;/p&gt;
-&lt;p&gt;** TODO: screenshot **&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/activity-histogram.png&#34; alt=&#34;activity histogram&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;comments-feed-auto&#34;&gt;Comments Feed [Auto]&lt;/h2&gt;
 &lt;p&gt;This field contains an amalagamation of all &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&#34;&gt;comments&lt;/a&gt; added to a record, newest at the top. Adding this field to a view allows recent comments to be seen for many records at once and is an easy way of making record comments searchable. As opposed to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;comments tile&lt;/a&gt;, the user sees all record comments, not just those they are a recipient for, but only those for the table in question.&lt;/p&gt;
 &lt;p&gt;Note - the Comments Feed [Auto] field combines comments from all comment fields in the table, if there&amp;rsquo;s more than one, as well as any comments added to other fields.&lt;/p&gt;
 &lt;h2 id=&#34;document-storage-mb-auto&#34;&gt;Document Storage (MB) [Auto]&lt;/h2&gt;
 &lt;p&gt;Shows the amount of storage used for all documents attached to a record (uploaded or generated), including previous versions. Adding this field to a view allows you to total up storage across all (or a subset of) records.&lt;/p&gt;
-&lt;p&gt;** TODO: screenshot of activity histogram **&lt;/p&gt;
 
       </description>
     </item>

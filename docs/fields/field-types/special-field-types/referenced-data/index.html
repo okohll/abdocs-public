@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Embed data or charts from elsewhere in the system into a form">
 <meta itemprop="datePublished" content="2020-05-07T16:40:00&#43;01:00" />
 <meta itemprop="dateModified" content="2020-06-05T11:30:08&#43;01:00" />
-<meta itemprop="wordCount" content="730">
+<meta itemprop="wordCount" content="723">
 
 
 
@@ -1212,14 +1212,14 @@
 <h2 id="adding-a-referenced-field">Adding a referenced field</h2>
 <p>Referenced fields are based on views. The contents of a view will be displayed in the form where a field referencing data from that view is added.</p>
 <p>The way it works is that the chosen view must contain the ID field of the table the referenced field is added to. When displaying data, the view is filtered to only show records where the ID matches that of the record being edited.</p>
-<p>Let&rsquo;s take the sales opportunity example from above. You wish to include details of a selected contact in an opportunity record.</p>
-<p>First, create a view of contacts linked to each opportunity. It may have fields in it such as the following:</p>
-<p>** TODO: screenshot of example data in spreadsheet **</p>
+<p>Let&rsquo;s take an example - you wish to include details of any ingredients supplied by a company in a supplier details screen.</p>
+<p>First, create a view of ingredients linked to each supplier. It may have data in it such as the following:</p>
+<p><img src="/referenced-source-view.png" alt="referenced source view"></p>
 <blockquote>
-<p>Note - ID fields aren&rsquo;t usually displayed to the user, they&rsquo;re shown here to make the explanation easier</p>
+<p>There is some repetition in this view because each ingredient can be supplied by more than one supplier. Each line represents an ingredient/supplier combination. The supplier names aren&rsquo;t included in this particular view.</p>
 </blockquote>
-<p>When a field referencing this view is added to the opportunities table, the output may display like this, when editing a particular opportunity, e.g. number 4</p>
-<p>** TODO: screenshot **</p>
+<p>When a field referencing this view is added to the suppliers table, the output may display like this, when editing a particular supplier:</p>
+<p><img src="/referenced-panels.png" alt="referenced panels"></p>
 <p>So to summarise, the steps are</p>
 <ol>
 <li><a href="/docs/views/creating-a-view/">Create</a> or find a view containing the data you wish to embed. It must contain the ID field of the table the data is embedded in (in this case &lsquo;opportunities&rsquo;).</li>
@@ -1233,7 +1233,7 @@
 <p>If more than one row in the view has an ID matching the ID of the table being added to, all will be shown. There is limited space in a form, so if there are lots, then a &lsquo;see more&rsquo; option will appear after the first few rows. For a more compact view, <a href="/docs/fields/field-options/referenced-field-options/#tabular-display">tabular display</a> can be chosen in the referenced field options.</p>
 <h2 id="showing-charts">Showing charts</h2>
 <p>If the view used has one or more <a href="/docs/charting/">charts</a>, they will be shown instead of the data rows. The filtering acts exactly the same way, only data matching the containing table&rsquo;s ID is used as the source of the chart data.</p>
-<p>** TODO: screenshot of embedded chart **</p>
+<p><img src="/embedded-chart.png" alt="embedded chart"></p>
 <h2 id="making-referenced-data-editable">Making referenced data editable</h2>
 <p>Optionally, referenced data can be made editable by clicking on it.</p>
 <p>A view containing the containing table&rsquo;s ID can be created one of two ways.</p>

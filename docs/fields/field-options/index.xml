@@ -286,7 +286,7 @@
         
         &lt;p&gt;A &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;field separator&lt;/a&gt; creates a block of fields, starting with the separator and ending at the next one (or the last field in the table).&lt;/p&gt;
 &lt;p&gt;These blocks can either be initially contracted, or expanded. Here&amp;rsquo;s a screenshot showing a number of contracted blocks, with one expanded.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TODO: screenshot&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/blocks-one-expanded.png&#34; alt=&#34;blocks one expanded&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;to-program-the-initial-state-of-the-block&#34;&gt;To program the initial state of the block&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;Create a view&lt;/a&gt; from the table the separator is in&lt;/li&gt;
