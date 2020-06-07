@@ -57,7 +57,7 @@
 &lt;p&gt;etc.&lt;/p&gt;
 &lt;p&gt;To connect them we add another field of a special type, called a &lt;em&gt;relation&lt;/em&gt;. It can be called Company, but rather than storing the company name again (we already have stored the company name in the suppliers table), it will be a link to a particular company. Don&amp;rsquo;t worry about how that works behind the scenes, just know that the Company relation links to a supplier.&lt;/p&gt;
 &lt;p&gt;So now we have&lt;/p&gt;
-&lt;p&gt;** TODO: diagram **&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/join.png&#34; alt=&#34;join&#34;&gt;&lt;/p&gt;
 &lt;p&gt;We can now add as many contacts as we like to a supplier. And if we decide to store some more data about each contact, maybe a link to their LinkedIn profile for example, we can add that field to the contacts table and it will automatically be there for all contacts (as opposed to our naive spreadsheet example).&lt;/p&gt;
 &lt;h2 id=&#34;a-more-complex-example&#34;&gt;A more complex example&lt;/h2&gt;
 &lt;p&gt;That&amp;rsquo;s a good start. Moving on, there&amp;rsquo;s one more type of relation it&amp;rsquo;s useful to understand - the &amp;lsquo;many to many&amp;rsquo;.&lt;/p&gt;
@@ -68,9 +68,9 @@
 &lt;p&gt;We&amp;rsquo;d have to create a new raw material record for each supplier. That would be ok if our raw material record consisted of nothing more than a name and maybe a price, but there could be dozens or hundreds of fields added as we build up our system - to store nutritional information, chemical properties, allergens, etc. etc. That would mean lots of duplication to keep track of. And if we want to later build recipes which use our raw materials, we&amp;rsquo;d probably just want a recipe to refer to &amp;lsquo;flour&amp;rsquo;, not &amp;lsquo;flour from Supplier X&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;The solution is to create a &lt;strong&gt;many to many&lt;/strong&gt; relation, where one supplier can provide many raw materials but also a single raw material can be linked to many different suppliers.&lt;/p&gt;
 &lt;p&gt;There&amp;rsquo;s no new field type to get to know, we just use the standard one to many relation we&amp;rsquo;ve already learned about in a clever new way - we use two of them, plus a join table. The structure looks like this:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TODO: diagram of junction table&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/junction-table.png&#34; alt=&#34;junction table&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The table in the middle, Links, is called a join table, or junction table.&lt;/p&gt;
-&lt;p&gt;It has a normal relation field linking it to suppliers, and also one linking to ingredients. By adding a record to the links table, we can join any ingredient to any supplier. A supplier can then have lots of ingredients, but an ingredient can also have lots of suppliers.&lt;/p&gt;
+&lt;p&gt;It has a normal relation field linking it to suppliers, and also one linking to raw materials. By adding a record to the links table, we can join any raw material to any supplier. A supplier can then have lots of raw materials, but an raw material can also have lots of suppliers.&lt;/p&gt;
 &lt;p&gt;The video above also explains this type of relation if you&amp;rsquo;ve not already watched it.&lt;/p&gt;
 &lt;h3 id=&#34;when-to-use-the-many-to-many&#34;&gt;When to use the many to many&lt;/h3&gt;
 &lt;p&gt;You may have a niggling thought at the back of your mind: how do I know whether it&amp;rsquo;s best to use a simple one to many relation, or a more complex many to many setup? Surely I could use many to many for contacts and suppliers too? A single contact may be associated with more than one supplier, for example if they&amp;rsquo;re a contractor, or if they move jobs.&lt;/p&gt;
@@ -319,7 +319,7 @@
         
         &lt;p&gt;This panel shows a list of views that contain data from the table. Any view with data is included, not just those directly created from the table.&lt;/p&gt;
 &lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/&#34;&gt;usage reporting&lt;/a&gt; for more info.&lt;/p&gt;
-&lt;p&gt;** TODO: screenshot**&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/table-usage.png&#34; alt=&#34;table usage&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
