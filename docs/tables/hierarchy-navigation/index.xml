@@ -95,7 +95,7 @@
 &lt;p&gt;If a child links to the parent with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/relation-field-options/#one-to-one-only&#34;&gt;one-to-one relation&lt;/a&gt; then links to &amp;lsquo;grandchildren&amp;rsquo; are displayed by a menu in a tab. Here&amp;rsquo;s a menu showing the various grandchild items under a product&amp;rsquo;s specification.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/tab-menu.png&#34; alt=&#34;tab menu&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If it&amp;rsquo;s a many-to-one, then grandchildren are represented by blocks at the end of the record.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;TODO: screenshot&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/grandchild-blocks.png&#34; alt=&#34;grandchild blocks&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Finally, in the special case when a grandchild tab&amp;rsquo;s tab view contains the ID of both its immediate parent and the parent above that, then the grandchild contents are shown directly, underneath the child record. Here&amp;rsquo;s an example where there&amp;rsquo;s a three tier structure of&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;supplier approval -&amp;gt; risk assessment -&amp;gt; risk assessment scores.&lt;/li&gt;

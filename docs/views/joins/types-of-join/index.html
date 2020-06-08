@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Left outer, inner and cross joins">
 <meta itemprop="datePublished" content="2020-05-15T16:40:00&#43;01:00" />
 <meta itemprop="dateModified" content="2020-06-07T17:25:11&#43;01:00" />
-<meta itemprop="wordCount" content="1209">
+<meta itemprop="wordCount" content="1205">
 
 
 
@@ -1204,7 +1204,7 @@
 <p>Let&rsquo;s take the common and straightforward example of linking contacts to organisations. We start by creating a view from the contacts table, so that&rsquo;s on the left side. We then join from contacts to an organisations table, on the right. This join looks as follows:</p>
 <p><img src="/example-join.png" alt="example join"></p>
 <p>That gives us a view where we can add fields from the organisation table into the view of contacts data. The output may look something like this:</p>
-<p>** TODO: screenshot **</p>
+<p><img src="/view-contacts.png" alt="contacts view"></p>
 <p>Each row representing a contact, has the contact details (name, email address etc.) and from the organisations table, you can see the name and website of the organisation they belong to.</p>
 <p>But wait a minute, what&rsquo;s that contact with blank spaces for the organisation name and website? That represents a <strong>contact which is not yet linked to an organisation</strong>.</p>
 <p>I guess to be nit-picky, it could represent a contact joined to an organisation without a name or website address added, but here we&rsquo;ll assume all organisations have those details filled in.</p>

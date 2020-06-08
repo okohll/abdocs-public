@@ -24,10 +24,10 @@
         
         
         &lt;h2 id=&#34;how-to-chain-workflows&#34;&gt;How to chain Workflows&lt;/h2&gt;
-&lt;p&gt;Simply set the appropriate view in the Chain workflow section of the &lt;em&gt;workflow&lt;/em&gt; page of the &lt;em&gt;manage&lt;/em&gt; tab.
-&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-chain.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Simply set the appropriate view in the Chain workflow section of the &lt;em&gt;workflow&lt;/em&gt; page of the &lt;em&gt;manage&lt;/em&gt; tab.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-chain.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;passing-the-current-record-id-through-chained-workflows&#34;&gt;Passing the Current record ID through chained workflows&lt;/h2&gt;
-&lt;p&gt;TODO&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;using-hidden-flagging-fields&#34;&gt;Using hidden &amp;ldquo;flagging&amp;rdquo; fields&lt;/h2&gt;
 &lt;p&gt;It is often necessary to &lt;strong&gt;find&lt;/strong&gt; the source record when chaining workflows. This is especially true when creating records in other tables.
 A trick to allow you to find the appropriate record is to use and set a flag field in the source table.&lt;/p&gt;
