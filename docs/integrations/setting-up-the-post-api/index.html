@@ -30,7 +30,7 @@
 <meta itemprop="description" content="A powerful automation feature that can allow a third party system to POST data in to agileBase.">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
 <meta itemprop="dateModified" content="2020-06-02T18:49:12&#43;01:00" />
-<meta itemprop="wordCount" content="362">
+<meta itemprop="wordCount" content="542">
 
 
 
@@ -1124,7 +1124,8 @@
 <nav id="TableOfContents">
   <ul>
     <li><a href="#creating-new-records">Creating new records</a></li>
-    <li><a href="#updating-existing-records">Updating existing records</a>
+    <li><a href="#updating-existing-records">Updating existing records</a></li>
+    <li><a href="#response">Response</a>
       <ul>
         <li><a href="#http-response-codes">HTTP response codes</a></li>
       </ul>
@@ -1195,9 +1196,6 @@ Go to that table&rsquo;s manage taband press ‘options’. Tick ‘public data 
 <p><a href="https://appserver.gtportalbase.com/agileBase/Public.ab">https://appserver.gtportalbase.com/agileBase/Public.ab</a></p>
 <p>The form needs to be posted using the method POST.</p>
 <p>Remember also to set the ‘Authorization’ HTTP header if that option has been selected.</p>
-<blockquote>
-<p>NB: To get the details of data posted into the database, please also supply the parameter <em>return=posted_json</em> This will include the internal row ID of the newly inserted record.</p>
-</blockquote>
 <p>API use can be tested using a tool such as <a href="https://www.postman.com">Postman</a> tool.</p>
 <h2 id="updating-existing-records">Updating existing records</h2>
 <p>The process is similar, but instead of <em>save_new_record=true</em>, supply</p>
@@ -1206,11 +1204,25 @@ Go to that table&rsquo;s manage taband press ‘options’. Tick ‘public data 
 <li><em>row_id=[internal id of the record]</em></li>
 </ul>
 <p>The internal record ID can be got from a JSON feed or by using the <em>return=posted_json</em> as above if editing a record previously created using the API.</p>
-<h3 id="http-response-codes">HTTP response codes</h3>
-<p>401: unauthorised: the API key is missing or invalid</p>
-<p>429: too many requests: the frequency of requests is too high, please throttle them back</p>
-<p>507: insufficient storage: when creating a record, the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity.</p>
-<p>500: some other server error</p>
+<h2 id="response">Response</h2>
+<p>The response to the successful request will be a JSON representation of the complete record created or updated, after the update has taken place. An object of key-value pairs is returned, the key being the internal field name.</p>
+<p>The row ID is returned with the key <code>rowId</code> - this is often useful to identify a record when performing multiple actions. For example, when a new record is created, the calling system may want to store its row ID in order to be able to make future updates to the same record.</p>
+<p>If there is an error, an appropriate HTTP response code is returned (see below) along with JSON explaining the error, containing three keys. For example if an incorrect Authorization header is supplied, the response may be</p>
+<pre><code>{
+  &quot;error&quot;: true,
+  &quot;type&quot;: &quot;DisallowedException&quot;,
+  &quot;message&quot;: &quot;User public api is not allowed to edit delete data in table my table. An administrator can set up privileges so this can be allowed&quot;
+}
+</code></pre><h3 id="http-response-codes">HTTP response codes</h3>
+<ul>
+<li>200: success</li>
+<li>401: unauthorised: the API key is missing or invalid</li>
+<li>404: not found: an object identified in the request was not found e.g. no match was found for a table ID specified with the &rsquo;t&rsquo; parameter</li>
+<li>429: too many requests: the frequency of requests is too high, please throttle them back</li>
+<li>507: insufficient storage: when creating a record, the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity.</li>
+<li>500: some other server error</li>
+</ul>
+<p>When there is an error, a response header X-AB-error is also set with the type and content of the error message.</p>
 
 	
 		<style>

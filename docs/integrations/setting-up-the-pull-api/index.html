@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Control how third party systems read data from agileBase">
 <meta itemprop="datePublished" content="2020-05-29T12:35:00&#43;01:00" />
 <meta itemprop="dateModified" content="2020-06-02T18:49:12&#43;01:00" />
-<meta itemprop="wordCount" content="1027">
+<meta itemprop="wordCount" content="1050">
 
 
 
@@ -1255,11 +1255,14 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 <p>By specifying exact_filters=true, filters can be supplied to search for a particular record or set of records. For HTTP parameter names, just use the internal agileBase field identifiers. The easiest way of finding these is to right click on a field in the administrator interface using a browser like Chrome, Safari or Firefox and select ‘inspect element’.</p>
 <p>Standard agileBase quick filters can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, &gt; and &lt; for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.</p>
 <h3 id="response-codes">Response codes</h3>
-<p>200: request successful</p>
-<p>401: unauthorised: the API key is missing or incorrect</p>
-<p>404: not found: an object identifier (company ID, table ID or report ID) was supplied that wasn’t found in the system</p>
-<p>429: too many requests: the frequency of requests is too high, please throttle them back</p>
-<p>500: some other server error</p>
+<ul>
+<li>200: request successful</li>
+<li>401: unauthorised: the API key is missing or incorrect</li>
+<li>404: not found: an object identifier (company ID, table ID or report ID) was supplied that wasn’t found in the system</li>
+<li>429: too many requests: the frequency of requests is too high, please throttle them back</li>
+<li>500: some other server error</li>
+</ul>
+<p>When there is an error, the X-AB-error header will be set and JSON returned representing the error, as happens with the <a href="/docs/integrations/setting-up-the-post-api/#response">POST API</a>.</p>
 <h3 id="generate-api-descriptions">Generate API descriptions</h3>
 <p>For developers who use the agileBase API to create and update data within agileBase from a third party product, there’s now a way to further automate the process.</p>
 <p>agileBase will now generate a <a href="https://swagger.io/">swagger.io</a> compatible API description of any table you want to post to. That means if you deal with accounts for many agileBase customers, you can with a common query get the API details needed to interact with them.</p>

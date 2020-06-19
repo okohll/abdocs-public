@@ -116,9 +116,6 @@ Go to that table&amp;rsquo;s manage taband press ‘options’. Tick ‘public d
 &lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The form needs to be posted using the method POST.&lt;/p&gt;
 &lt;p&gt;Remember also to set the ‘Authorization’ HTTP header if that option has been selected.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;NB: To get the details of data posted into the database, please also supply the parameter &lt;em&gt;return=posted_json&lt;/em&gt; This will include the internal row ID of the newly inserted record.&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;p&gt;API use can be tested using a tool such as &lt;a href=&#34;https://www.postman.com&#34;&gt;Postman&lt;/a&gt; tool.&lt;/p&gt;
 &lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
 &lt;p&gt;The process is similar, but instead of &lt;em&gt;save_new_record=true&lt;/em&gt;, supply&lt;/p&gt;
@@ -127,11 +124,25 @@ Go to that table&amp;rsquo;s manage taband press ‘options’. Tick ‘public d
 &lt;li&gt;&lt;em&gt;row_id=[internal id of the record]&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The internal record ID can be got from a JSON feed or by using the &lt;em&gt;return=posted_json&lt;/em&gt; as above if editing a record previously created using the API.&lt;/p&gt;
-&lt;h3 id=&#34;http-response-codes&#34;&gt;HTTP response codes&lt;/h3&gt;
-&lt;p&gt;401: unauthorised: the API key is missing or invalid&lt;/p&gt;
-&lt;p&gt;429: too many requests: the frequency of requests is too high, please throttle them back&lt;/p&gt;
-&lt;p&gt;507: insufficient storage: when creating a record, the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity.&lt;/p&gt;
-&lt;p&gt;500: some other server error&lt;/p&gt;
+&lt;h2 id=&#34;response&#34;&gt;Response&lt;/h2&gt;
+&lt;p&gt;The response to the successful request will be a JSON representation of the complete record created or updated, after the update has taken place. An object of key-value pairs is returned, the key being the internal field name.&lt;/p&gt;
+&lt;p&gt;The row ID is returned with the key &lt;code&gt;rowId&lt;/code&gt; - this is often useful to identify a record when performing multiple actions. For example, when a new record is created, the calling system may want to store its row ID in order to be able to make future updates to the same record.&lt;/p&gt;
+&lt;p&gt;If there is an error, an appropriate HTTP response code is returned (see below) along with JSON explaining the error, containing three keys. For example if an incorrect Authorization header is supplied, the response may be&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+  &amp;quot;error&amp;quot;: true,
+  &amp;quot;type&amp;quot;: &amp;quot;DisallowedException&amp;quot;,
+  &amp;quot;message&amp;quot;: &amp;quot;User public api is not allowed to edit delete data in table my table. An administrator can set up privileges so this can be allowed&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;http-response-codes&#34;&gt;HTTP response codes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;200: success&lt;/li&gt;
+&lt;li&gt;401: unauthorised: the API key is missing or invalid&lt;/li&gt;
+&lt;li&gt;404: not found: an object identified in the request was not found e.g. no match was found for a table ID specified with the &amp;rsquo;t&amp;rsquo; parameter&lt;/li&gt;
+&lt;li&gt;429: too many requests: the frequency of requests is too high, please throttle them back&lt;/li&gt;
+&lt;li&gt;507: insufficient storage: when creating a record, the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity.&lt;/li&gt;
+&lt;li&gt;500: some other server error&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When there is an error, a response header X-AB-error is also set with the type and content of the error message.&lt;/p&gt;
 
       </description>
     </item>
@@ -259,11 +270,14 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;p&gt;By specifying exact_filters=true, filters can be supplied to search for a particular record or set of records. For HTTP parameter names, just use the internal agileBase field identifiers. The easiest way of finding these is to right click on a field in the administrator interface using a browser like Chrome, Safari or Firefox and select ‘inspect element’.&lt;/p&gt;
 &lt;p&gt;Standard agileBase quick filters can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, &amp;gt; and &amp;lt; for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.&lt;/p&gt;
 &lt;h3 id=&#34;response-codes&#34;&gt;Response codes&lt;/h3&gt;
-&lt;p&gt;200: request successful&lt;/p&gt;
-&lt;p&gt;401: unauthorised: the API key is missing or incorrect&lt;/p&gt;
-&lt;p&gt;404: not found: an object identifier (company ID, table ID or report ID) was supplied that wasn’t found in the system&lt;/p&gt;
-&lt;p&gt;429: too many requests: the frequency of requests is too high, please throttle them back&lt;/p&gt;
-&lt;p&gt;500: some other server error&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;200: request successful&lt;/li&gt;
+&lt;li&gt;401: unauthorised: the API key is missing or incorrect&lt;/li&gt;
+&lt;li&gt;404: not found: an object identifier (company ID, table ID or report ID) was supplied that wasn’t found in the system&lt;/li&gt;
+&lt;li&gt;429: too many requests: the frequency of requests is too high, please throttle them back&lt;/li&gt;
+&lt;li&gt;500: some other server error&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When there is an error, the X-AB-error header will be set and JSON returned representing the error, as happens with the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/#response&#34;&gt;POST API&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;generate-api-descriptions&#34;&gt;Generate API descriptions&lt;/h3&gt;
 &lt;p&gt;For developers who use the agileBase API to create and update data within agileBase from a third party product, there’s now a way to further automate the process.&lt;/p&gt;
 &lt;p&gt;agileBase will now generate a &lt;a href=&#34;https://swagger.io/&#34;&gt;swagger.io&lt;/a&gt; compatible API description of any table you want to post to. That means if you deal with accounts for many agileBase customers, you can with a common query get the API details needed to interact with them.&lt;/p&gt;
