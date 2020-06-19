@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-06-02T18:49:12+01:00" />
+<meta property="article:modified_time" content="2020-06-19T09:57:48+01:00" />
 <meta itemprop="name" content="Setting up the POST API">
 <meta itemprop="description" content="A powerful automation feature that can allow a third party system to POST data in to agileBase.">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-06-02T18:49:12&#43;01:00" />
-<meta itemprop="wordCount" content="542">
+<meta itemprop="dateModified" content="2020-06-19T09:57:48&#43;01:00" />
+<meta itemprop="wordCount" content="672">
 
 
 
@@ -1125,6 +1125,7 @@
   <ul>
     <li><a href="#creating-new-records">Creating new records</a></li>
     <li><a href="#updating-existing-records">Updating existing records</a></li>
+    <li><a href="#posting-files">Posting files</a></li>
     <li><a href="#response">Response</a>
       <ul>
         <li><a href="#http-response-codes">HTTP response codes</a></li>
@@ -1179,9 +1180,8 @@
 	<h1>Setting up the POST API</h1>
     <div class="lead">A powerful automation feature that can allow a third party system to POST data in to agileBase.</div>
 	       
-	<p>Firstly, identify the Table into which you wish to recieve incoming data.
-Go to that table&rsquo;s manage taband press ‘options’. Tick ‘public data entry’.</p>
-<p>To protect the system from spam input, we also suggest you tick ‘Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.</p>
+	<p>Firstly, identify the Table into which you wish to recieve incoming data. Go to that table&rsquo;s manage taband press &lsquo;options’. Tick &lsquo;Public form or API data entry’.</p>
+<p>To protect the system from spam input, we also suggest you tick &lsquo;Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.</p>
 <p>Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.</p>
 <p><img src="/incoming-data-api.png" alt="Configuring the POST API"></p>
 <h2 id="creating-new-records">Creating new records</h2>
@@ -1195,8 +1195,11 @@ Go to that table&rsquo;s manage taband press ‘options’. Tick ‘public data 
 <p>The post URL is</p>
 <p><a href="https://appserver.gtportalbase.com/agileBase/Public.ab">https://appserver.gtportalbase.com/agileBase/Public.ab</a></p>
 <p>The form needs to be posted using the method POST.</p>
-<p>Remember also to set the ‘Authorization’ HTTP header if that option has been selected.</p>
-<p>API use can be tested using a tool such as <a href="https://www.postman.com">Postman</a> tool.</p>
+<p>Remember also to set the &lsquo;Authorization&rsquo; HTTP header if that option has been selected.</p>
+<p>To specify the contents of each field to be saved, add parameters for the internal field names of each field you want to send data to. The internal field names necessary will be shown on screen when API use is enabled.</p>
+<blockquote>
+<p>The API can be tested using a tool such as <a href="https://www.postman.com">Postman</a>.</p>
+</blockquote>
 <h2 id="updating-existing-records">Updating existing records</h2>
 <p>The process is similar, but instead of <em>save_new_record=true</em>, supply</p>
 <ul>
@@ -1204,6 +1207,15 @@ Go to that table&rsquo;s manage taband press ‘options’. Tick ‘public data 
 <li><em>row_id=[internal id of the record]</em></li>
 </ul>
 <p>The internal record ID can be got from a JSON feed or by using the <em>return=posted_json</em> as above if editing a record previously created using the API.</p>
+<h2 id="posting-files">Posting files</h2>
+<p>As well as &lsquo;standard&rsquo; data, agileBase can accept documents posted into a <a href="/docs/fields/field-types/special-field-types/file/">file field</a>. This can be done in two ways:</p>
+<ol>
+<li>Make sure the form is posted with encoding type <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST">multipart/form-data</a>. Then simply post the contents of the file with the form parameter specifying the internal name of the file field.</li>
+<li>Post the form normally (not as multipart/form-data), and provide a URL value for the file field. That URL will be downloaded by agileBase and the contents saved as a file.</li>
+</ol>
+<blockquote>
+<p>This method is <a href="https://www.zapier.com">Zapier</a>-compatible.</p>
+</blockquote>
 <h2 id="response">Response</h2>
 <p>The response to the successful request will be a JSON representation of the complete record created or updated, after the update has taken place. An object of key-value pairs is returned, the key being the internal field name.</p>
 <p>The row ID is returned with the key <code>rowId</code> - this is often useful to identify a record when performing multiple actions. For example, when a new record is created, the calling system may want to store its row ID in order to be able to make future updates to the same record.</p>
@@ -1286,7 +1298,7 @@ Go to that table&rsquo;s manage taband press ‘options’. Tick ‘public data 
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified June 2, 2020: <a  href="https://github.com/okohll/abdocs/commit/bcb8eceecb5cd3c9cca7403fc348ad69703f1d27">API examples (bcb8ece)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified June 19, 2020: <a  href="https://github.com/okohll/abdocs/commit/25051ef55084fb36b25efbd19b56d3e9ca463a2b">API error handling (25051ef)</a>
 </div>
 </div>
 

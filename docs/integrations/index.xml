@@ -99,9 +99,8 @@
       <description>
         
         
-        &lt;p&gt;Firstly, identify the Table into which you wish to recieve incoming data.
-Go to that table&amp;rsquo;s manage taband press ‘options’. Tick ‘public data entry’.&lt;/p&gt;
-&lt;p&gt;To protect the system from spam input, we also suggest you tick ‘Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
+        &lt;p&gt;Firstly, identify the Table into which you wish to recieve incoming data. Go to that table&amp;rsquo;s manage taband press &amp;lsquo;options’. Tick &amp;lsquo;Public form or API data entry’.&lt;/p&gt;
+&lt;p&gt;To protect the system from spam input, we also suggest you tick &amp;lsquo;Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
 &lt;p&gt;Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming-data-api.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;creating-new-records&#34;&gt;Creating new records&lt;/h2&gt;
@@ -115,8 +114,11 @@ Go to that table&amp;rsquo;s manage taband press ‘options’. Tick ‘public d
 &lt;p&gt;The post URL is&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The form needs to be posted using the method POST.&lt;/p&gt;
-&lt;p&gt;Remember also to set the ‘Authorization’ HTTP header if that option has been selected.&lt;/p&gt;
-&lt;p&gt;API use can be tested using a tool such as &lt;a href=&#34;https://www.postman.com&#34;&gt;Postman&lt;/a&gt; tool.&lt;/p&gt;
+&lt;p&gt;Remember also to set the &amp;lsquo;Authorization&amp;rsquo; HTTP header if that option has been selected.&lt;/p&gt;
+&lt;p&gt;To specify the contents of each field to be saved, add parameters for the internal field names of each field you want to send data to. The internal field names necessary will be shown on screen when API use is enabled.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The API can be tested using a tool such as &lt;a href=&#34;https://www.postman.com&#34;&gt;Postman&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
 &lt;p&gt;The process is similar, but instead of &lt;em&gt;save_new_record=true&lt;/em&gt;, supply&lt;/p&gt;
 &lt;ul&gt;
@@ -124,6 +126,15 @@ Go to that table&amp;rsquo;s manage taband press ‘options’. Tick ‘public d
 &lt;li&gt;&lt;em&gt;row_id=[internal id of the record]&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The internal record ID can be got from a JSON feed or by using the &lt;em&gt;return=posted_json&lt;/em&gt; as above if editing a record previously created using the API.&lt;/p&gt;
+&lt;h2 id=&#34;posting-files&#34;&gt;Posting files&lt;/h2&gt;
+&lt;p&gt;As well as &amp;lsquo;standard&amp;rsquo; data, agileBase can accept documents posted into a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/&#34;&gt;file field&lt;/a&gt;. This can be done in two ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make sure the form is posted with encoding type &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST&#34;&gt;multipart/form-data&lt;/a&gt;. Then simply post the contents of the file with the form parameter specifying the internal name of the file field.&lt;/li&gt;
+&lt;li&gt;Post the form normally (not as multipart/form-data), and provide a URL value for the file field. That URL will be downloaded by agileBase and the contents saved as a file.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This method is &lt;a href=&#34;https://www.zapier.com&#34;&gt;Zapier&lt;/a&gt;-compatible.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;response&#34;&gt;Response&lt;/h2&gt;
 &lt;p&gt;The response to the successful request will be a JSON representation of the complete record created or updated, after the update has taken place. An object of key-value pairs is returned, the key being the internal field name.&lt;/p&gt;
 &lt;p&gt;The row ID is returned with the key &lt;code&gt;rowId&lt;/code&gt; - this is often useful to identify a record when performing multiple actions. For example, when a new record is created, the calling system may want to store its row ID in order to be able to make future updates to the same record.&lt;/p&gt;
