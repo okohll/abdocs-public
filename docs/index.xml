@@ -52,6 +52,21 @@
     </item>
     
     <item>
+      <title>Introduction: What is a back office system?</title>
+      <link>https://docs.agilebase.co.uk/introduction/what-is-a-back-office-system/</link>
+      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/introduction/what-is-a-back-office-system/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Users</title>
       <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
@@ -129,6 +144,20 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
       <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
       
       <guid>https://docs.agilebase.co.uk/quickstart/tables/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Introduction: Why use agileBase?</title>
+      <link>https://docs.agilebase.co.uk/introduction/why-use-agilebase/</link>
+      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/introduction/why-use-agilebase/</guid>
       <description>
         
         
@@ -394,6 +423,23 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
     </item>
     
     <item>
+      <title>Introduction: Who can use is?</title>
+      <link>https://docs.agilebase.co.uk/introduction/who-can-use-it/</link>
+      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/introduction/who-can-use-it/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;citizen-developers&#34;&gt;Citizen Developers&lt;/h2&gt;
+&lt;h2 id=&#34;partners&#34;&gt;Partners&lt;/h2&gt;
+&lt;h3 id=&#34;multi-tenanting&#34;&gt;Multi-tenanting&lt;/h3&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Adding and removing</title>
       <link>https://docs.agilebase.co.uk/docs/tables/adding-and-removing/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
@@ -477,6 +523,22 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;setting a hard limit to completely disallow exports of more than a certain number of rows&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;To configure these options, see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/&#34;&gt;tables&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Introduction: Scaling potential</title>
+      <link>https://docs.agilebase.co.uk/introduction/scaling-potential/</link>
+      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/introduction/scaling-potential/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;database---postgresql&#34;&gt;Database - PostgreSQL&lt;/h2&gt;
+&lt;h2 id=&#34;engine---api-creator&#34;&gt;Engine - API Creator&lt;/h2&gt;
 
       </description>
     </item>
@@ -616,6 +678,20 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/layout-tabs.png&#34; alt=&#34;form with tabs&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;separators&#34;&gt;Separators&lt;/h2&gt;
 &lt;p&gt;To form a block, click on the &lt;em&gt;fields&lt;/em&gt; tab of a table and add a field of type &amp;lsquo;separator&amp;rsquo; - see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;fields reference&lt;/a&gt;. Move it to where the start of the block should be i.e. before the first field in the block.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Introduction: Costing structure</title>
+      <link>https://docs.agilebase.co.uk/introduction/costing-structure/</link>
+      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/introduction/costing-structure/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -2030,172 +2106,6 @@ Options are:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This topic also includes information about APIs which receive data from third party systems, as opposed to sending to them, for which a view isn&amp;rsquo;t necessary.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Workflows</title>
-      <link>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</link>
-      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</guid>
-      <description>
-        
-        
-        &lt;p&gt;A workflow can be used to edit data in the system automatically.&lt;/p&gt;
-&lt;p&gt;The view created in this case is used to define the set of records to act on (others can be excluded via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; and also the data to use - each calculation or field in the view can be a source of data to create or update.&lt;/p&gt;
-&lt;p&gt;For more information, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; topic, which contains full details of how to set up and use workflows.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Setting up the Calendar API</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/calendar/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/integrations/calendar/</guid>
-      <description>
-        
-        
-        &lt;p&gt;If a view contains a date field, the data in it can by synchronised with an external calendar application, e.g. Google Calendar, Microsoft Office 365, Apple calendars etc.&lt;/p&gt;
-&lt;p&gt;If it contains two date fields, the first will be used for the start date/time, the second for the finish.&lt;/p&gt;
-&lt;p&gt;Once set up, the link will be maintained and the calendar will update whenever the data in agileBase is updated, or vice versa. The synchonisation can be set up to be two-way (to and from agileBase), or just one way (either two or from agileBase)&lt;/p&gt;
-&lt;h2 id=&#34;pre-requisites&#34;&gt;Pre-requisites&lt;/h2&gt;
-&lt;p&gt;agileBase uses &lt;a href=&#34;https://oauth.net/&#34;&gt;OAuth&lt;/a&gt;, an industry standard protocol, to synchronize with your calendar system of choice.&lt;/p&gt;
-&lt;p&gt;Under this protocol, each person will need to individually grant agileBase permission to send data to, and view events in their calendar. This is a straightforward process: as a user,&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Click on your user icon at the top right of the screen&lt;/li&gt;
-&lt;li&gt;Select &lt;em&gt;edit profile&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Click the &lt;em&gt;connect calendar&lt;/em&gt; link&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;You will see a calendar selector screen like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/cronofy.png&#34; alt=&#34;Cronofy&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Choose the calendar system you use and follow through the prompt to allow access.&lt;/p&gt;
-&lt;h2 id=&#34;incoming-data&#34;&gt;Incoming data&lt;/h2&gt;
-&lt;p&gt;Once users have connected their calendars, data can be received into agileBase whenever an event is created, edited or deleted in the external calendar. We need to set up two new tables so the system can receive these events. One is a table for the event data itself, the other stores the list of calendars in the user&amp;rsquo;s account. One calendar account may contain multiple calendars, e.g. a user may have separate calendars set up for bookings, sales visits, holidays etc. - typically they display in different colours on the screen.&lt;/p&gt;
-&lt;p&gt;The main reason for recording the calendar list is so that the correct calendar can be chosen to send events to, when we come to send events from agileBase (see below).&lt;/p&gt;
-&lt;p&gt;To set up these tables, follow this process:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create a table called &lt;code&gt;ab calendar intray&lt;/code&gt;. It can have a prefix if you like, e.g. &lt;code&gt;z) ab calendar intray&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add the following &lt;strong&gt;text&lt;/strong&gt; fields: &lt;code&gt;person&lt;/code&gt;, &lt;code&gt;calendar id&lt;/code&gt;, &lt;code&gt;calendar name&lt;/code&gt;, &lt;code&gt;event id&lt;/code&gt;, &lt;code&gt;summary&lt;/code&gt;, &lt;code&gt;description&lt;/code&gt;, &lt;code&gt;location&lt;/code&gt;, &lt;code&gt;participation status&lt;/code&gt;, &lt;code&gt;event status&lt;/code&gt;, &lt;code&gt;categories&lt;/code&gt;, &lt;code&gt;attendees&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add the following &lt;strong&gt;date&lt;/strong&gt; fields: &lt;code&gt;start&lt;/code&gt;, &lt;code&gt;end&lt;/code&gt;, &lt;code&gt;created&lt;/code&gt; (accurate to the second), &lt;code&gt;updated&lt;/code&gt; (accurate to the second)&lt;/li&gt;
-&lt;li&gt;Add a &lt;strong&gt;checkbox&lt;/strong&gt; field, &lt;code&gt;deleted&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;and for the calendar mapping table:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create a table called &lt;code&gt;ab calendar mapping&lt;/code&gt;. Again, you can prefix it, e.g. &lt;code&gt;z) ab calendar mapping&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add &lt;strong&gt;text&lt;/strong&gt; fields: &lt;code&gt;username&lt;/code&gt;, &lt;code&gt;calendar id&lt;/code&gt;, &lt;code&gt;owner&lt;/code&gt;, &lt;code&gt;calendar name&lt;/code&gt;, &lt;code&gt;provider&lt;/code&gt;, &lt;code&gt;profile id&lt;/code&gt;, &lt;code&gt;profile name&lt;/code&gt;, &lt;code&gt;permission level&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add two &lt;strong&gt;checkbox&lt;/strong&gt; fields called: &lt;code&gt;read only&lt;/code&gt;, &lt;code&gt;primary&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The easiest way to understand the meaning of all the fields is simply to connect your calendar as above, create these tables and add some events to your third party calendar - create new events, update them and delete them, watching the data flow into the tables. New data will usually take no more than a few seconds to appear.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Different third party calendar systems may use some fields in slighlty different ways. For example, at the time of writing, Google Calendar does not support the &lt;code&gt;categories&lt;/code&gt; field but some other calendar systems do use this to show tags you may have added to your events.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Once you have data successfully flowing into the system, a common next step is to move the incoming events into tables which make sense for your particular business needs. For example, if you have a team of salespeople, you may move incoming bookings into a &amp;lsquo;leads&amp;rsquo; table. What you do with the data will depend on your particular circumstances.&lt;/p&gt;
-&lt;p&gt;You can use &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;automated worflows&lt;/a&gt; to copy data from one table to another if necessary.&lt;/p&gt;
-&lt;p&gt;However, you could also simply create views from the &amp;lsquo;ab calendar intray&amp;rsquo; table to allow users to view these events directly. Adding a filter to the user on the &amp;lsquo;person&amp;rsquo; field will ensure a user will only see their own events -see [users - restrict data access]({{relref &amp;ldquo;/docs/security-and-compliance/security-features/users#restrict-data-access&amp;rdquo;}})&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Please be aware of potential data privacy concerns when setting up calendar synchronisation. All events a user creates or modifies in any of the calendars in their connected account will send to agileBase. As an administrator, you may wish to set up specific work calendar accounts for your users, distinct from any personal accounts they may use.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;outgoing-data&#34;&gt;Outgoing data&lt;/h2&gt;
-&lt;p&gt;As well as receiving data in, you can send either new or modified events from agileBase to users&amp;rsquo; connected calendars.&lt;/p&gt;
-&lt;p&gt;New events are those created in agileBase, modified events are those created externally which have come into the system via the incoming data method above, but which have then been updated in agileBase.&lt;/p&gt;
-&lt;p&gt;To set this up&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;Create a view&lt;/a&gt; to show the events to send to the calendar.&lt;/li&gt;
-&lt;li&gt;Add any relevant &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;filters&lt;/a&gt; to the view, so it only shows events which need to be sent, not &lt;strong&gt;all&lt;/strong&gt; events.&lt;/li&gt;
-&lt;li&gt;In the view&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab, show the &lt;em&gt;Send&lt;/em&gt; panel. Select &lt;em&gt;send data to an external calendar&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Tick &lt;em&gt;Send events to calendar&lt;/em&gt; to activate the view and add the fields shown. These are
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;text fields&lt;/strong&gt;: &lt;code&gt;calendar id&lt;/code&gt;, &lt;code&gt;event id&lt;/code&gt;, &lt;code&gt;calendar owner&lt;/code&gt;, &lt;code&gt;title&lt;/code&gt;, &lt;code&gt;description&lt;/code&gt;, &lt;code&gt;location&lt;/code&gt;, &lt;code&gt;attendees&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;a &lt;strong&gt;whole number field&lt;/strong&gt;: &lt;code&gt;reminder minutes&lt;/code&gt; - a number of minutes before the event when the calendar should alert you&lt;/li&gt;
-&lt;li&gt;two &lt;strong&gt;date fields&lt;/strong&gt;: the first date/time field in the view will be used as the event&amp;rsquo;s start date/time, the next the end date/time (if applicable)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Some of these fields deserve additional explanations:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;calendar id&lt;/strong&gt;: identifies the particular calendar within the user&amp;rsquo;s connected account to send events to. This is the same calendar ID used in the &amp;lsquo;ab calendar mapping&amp;rsquo; table above, so can be looked up from there, perhaps by joining to the table.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;event id&lt;/strong&gt;: if you&amp;rsquo;re creating a new event, leave this blank. If the event was created externally, or you&amp;rsquo;re updating an existing event, use the event ID as listed in the &amp;lsquo;ab calendar intray&amp;rsquo; record for it.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;calendar owner&lt;/strong&gt;: the ID of the agileBase user - this will be used to determine the person who&amp;rsquo;se linked calendar the event should be sent to. The standard agileBase format is used &amp;lsquo;Forename Surname (username)&amp;rsquo;, so you can use the automatic field &amp;lsquo;Created By [auto]&amp;rsquo; if you like.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;attendees&lt;/strong&gt;: a comma separated list of email addresses of people who should be invited&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Altering Data</title>
-      <link>https://docs.agilebase.co.uk/docs/workflows/altering-data/</link>
-      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/workflows/altering-data/</guid>
-      <description>
-        
-        
-        &lt;p&gt;The following Workflows alter data within the system&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create record - This will create a new item in the nominated table&lt;/li&gt;
-&lt;li&gt;Update record - This will alter the values of the record.&lt;/li&gt;
-&lt;li&gt;Lock record - This will apply a record level lock on the item.&lt;/li&gt;
-&lt;li&gt;Delete record - This will totally remove the record.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;When creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.&lt;/p&gt;
-&lt;h3 id=&#34;relation-fields&#34;&gt;Relation fields&lt;/h3&gt;
-&lt;p&gt;If you want your workflow to set the value of a relation find, i.e. link to a particular record, there’s no need to create a calculation for it, just include the ID field for the record you want to link to in the view.&lt;/p&gt;
-&lt;p&gt;If creating a calculation is easier, you can still do that. Either create a numeric calculation which outputs the internal row ID of the record to link to, or the text of the primary value for the relation. If the latter case, the field for the primary value in the related table should be unique and marked as such in the field options.&lt;/p&gt;
-&lt;p&gt;To set a relation field to blank, add a numeric calculation with the name of the field as normal, but set it to output the value -1.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Deleting records is not reversible. Please use with caution.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Referenced Data Panels</title>
-      <link>https://docs.agilebase.co.uk/docs/views/special-uses/referenced-data-panels/</link>
-      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/referenced-data-panels/</guid>
-      <description>
-        
-        
-        &lt;p&gt;It can be useful to include calculations and data from other parts of the system in a form, to add context and optionally allow editing of that related data.&lt;/p&gt;
-&lt;p&gt;To do that, a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data field&lt;/a&gt; can be &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;added to the form&lt;/a&gt;. When adding this field, the administrator can choose a view to reference, the data from which will display in the form.&lt;/p&gt;
-&lt;p&gt;The way it works that a when a particular record is shown on screen in a form, the row ID of the record being edited is used to filter the results of that view. Records from the view that include that ID are displayed in a panel.&lt;/p&gt;
-&lt;p&gt;Referenced data can also be used to&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;display charts&lt;/li&gt;
-&lt;li&gt;provide default values for form fields&lt;/li&gt;
-&lt;li&gt;show a workflow button - if the referenced view is a workflow, a button to run it will display&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Full details of all of these features can be found on the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data panel&lt;/a&gt; page.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Cross Reference Field Options</title>
-      <link>https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/</link>
-      <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;tabular-display&#34;&gt;Tabular display&lt;/h2&gt;
-&lt;p&gt;Rather than displaying rows from the referenced view as panels&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panels.png&#34; alt=&#34;Panels screenshot&#34;&gt;&lt;/p&gt;
-&lt;p&gt;show a table&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-tabular.png&#34; alt=&#34;Table screenshot&#34;&gt;&lt;/p&gt;
-&lt;p&gt;which is a more compact form allowing a greater volume of data to be shown in a smaller area.&lt;/p&gt;
-&lt;h2 id=&#34;use-as-a-filter-for-relations&#34;&gt;Use as a filter for relations&lt;/h2&gt;
-&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#custom-filtering-when-choosing-a-relation&#34;&gt;Common build patters - custom filtering when using a relation&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;
-&lt;p&gt;Make the background of the referenced panel bright red - useful for showing warnings on screen.&lt;/p&gt;
 
       </description>
     </item>
