@@ -91,7 +91,7 @@
     </item>
     
     <item>
-      <title>Docs: Setting up the POST API</title>
+      <title>Docs: Creating a POST API</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       
@@ -99,7 +99,7 @@
       <description>
         
         
-        &lt;p&gt;Firstly, identify the Table into which you wish to recieve incoming data. Go to that table&amp;rsquo;s manage taband press &amp;lsquo;options’. Tick &amp;lsquo;Public form or API data entry’.&lt;/p&gt;
+        &lt;p&gt;Firstly, identify the table into which you wish to recieve incoming data. Go to that table&amp;rsquo;s manage taband press &amp;lsquo;options’. Tick &amp;lsquo;Public form or API data entry’, which will create an API for the table.&lt;/p&gt;
 &lt;p&gt;To protect the system from spam input, we also suggest you tick &amp;lsquo;Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
 &lt;p&gt;Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming-data-api.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
@@ -159,7 +159,7 @@
     </item>
     
     <item>
-      <title>Docs: Setting up the PUSH API</title>
+      <title>Docs: Creating a PUSH API</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</link>
       <pubDate>Mon, 01 Jun 2020 16:40:00 +0100</pubDate>
       
@@ -199,7 +199,7 @@ choose a minimum interval to wait between pushes&lt;/li&gt;
     </item>
     
     <item>
-      <title>Docs: Setting up the PULL API</title>
+      <title>Docs: Creating a PULL API</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/</link>
       <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
       
