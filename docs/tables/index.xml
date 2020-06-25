@@ -161,6 +161,11 @@
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/layout-tabs.png&#34; alt=&#34;form with tabs&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;separators&#34;&gt;Separators&lt;/h2&gt;
 &lt;p&gt;To form a block, click on the &lt;em&gt;fields&lt;/em&gt; tab of a table and add a field of type &amp;lsquo;separator&amp;rsquo; - see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;fields reference&lt;/a&gt;. Move it to where the start of the block should be i.e. before the first field in the block.&lt;/p&gt;
+&lt;h2 id=&#34;record-titles&#34;&gt;Record titles&lt;/h2&gt;
+&lt;p&gt;In the screenshots above, you can see that each record has a heading, or title. drawn from the data.&lt;/p&gt;
+&lt;p&gt;To set one or more fields to include in the title, use the field option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#use-as-record-title&#34;&gt;use as record title&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
+&lt;p&gt;When a relation field is near the top of the form, it&amp;rsquo;s also moved to the record title level to become a title link, allowing navigation upwards to the &amp;lsquo;parent&amp;rsquo; record. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/&#34;&gt;hierarchy navigation&lt;/a&gt; for info about upwards, and downwards, navigation.&lt;/p&gt;
 
       </description>
     </item>
