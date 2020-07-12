@@ -103,10 +103,19 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 &lt;li&gt;Click &lt;em&gt;roles&lt;/em&gt;. You&amp;rsquo;ll see a list of existing roles&lt;/li&gt;
 &lt;li&gt;Click the plus button in the toolbar at the top&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;You should now see an editing screen with the details of the role you just created. You can give it a name and there are a couple of options:
+&lt;p&gt;You should now see an editing screen with the details of the role you just created. You can give it a name and there are a few options:
 &lt;img src=&#34;https://docs.agilebase.co.uk/role-details.png&#34; alt=&#34;Role details&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Allow Export&lt;/strong&gt;&lt;br&gt;
 Referrs to exporting to spreadsheet - see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/exporting-to-spreadsheet/&#34;&gt;spreadsheet exports&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Allow global editing&lt;/strong&gt;
+Users with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;edit privileges&lt;/a&gt; on a particular table, when added to this role, will be able to perform global edits on the data.&lt;/p&gt;
+&lt;p&gt;To perform a global edit, the user should&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;filter the view (by typing into the filter boxes at the top of each column) to narrow down the rows to those which should be edited&lt;/li&gt;
+&lt;li&gt;double click on a column header in a view, to edit the data in that field. The field must be from the view&amp;rsquo;s parent table.&lt;/li&gt;
+&lt;li&gt;click the &amp;lsquo;edit filtered&amp;rsquo; button which appears&lt;/li&gt;
+&lt;li&gt;type in the value you want to apply and follow through the prompts&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;User Visibility&lt;/strong&gt; and &lt;strong&gt;Restrict Data Access&lt;/strong&gt;&lt;br&gt;
 These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;members&#34;&gt;Members&lt;/h3&gt;
@@ -176,7 +185,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;override table options which would normally disallow adding/removing records from a table&lt;/li&gt;
 &lt;li&gt;override options which would normally disallow exporting data to a spreadsheet&lt;/li&gt;
 &lt;li&gt;import data from spreadsheet&lt;/li&gt;
-&lt;li&gt;global edit (bulk edit) data in the table&lt;/li&gt;
+&lt;li&gt;override options which would normally disallow global editing of data in the table&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
