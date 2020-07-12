@@ -7,6 +7,7 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
+<link rel="alternate" type="application/rss&#43;xml" href="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -22,19 +23,11 @@
 
 <title>Users | agileBase docs</title><meta property="og:title" content="Users" />
 <meta property="og:description" content="Adding, viewing and removing users" />
-<meta property="og:type" content="article" />
+<meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/" />
-<meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-06-05T11:30:08+01:00" />
+<meta property="og:updated_time" content="2020-07-12T10:09:34+01:00" />
 <meta itemprop="name" content="Users">
-<meta itemprop="description" content="Adding, viewing and removing users">
-<meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-06-05T11:30:08&#43;01:00" />
-<meta itemprop="wordCount" content="1209">
-
-
-
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="Adding, viewing and removing users"><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Users"/>
 <meta name="twitter:description" content="Adding, viewing and removing users"/>
 
@@ -54,7 +47,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
   </head>
-  <body class="td-page">
+  <body class="td-section">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -182,7 +175,7 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/security-and-compliance/security-features/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Security Features</a>
+    <a  href="/docs/security-and-compliance/security-features/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Security Features</a>
   </li>
   <ul>
     <li class="collapse show" id="docssecurity-and-compliancesecurity-features">
@@ -191,8 +184,31 @@
       
       
       
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs/security-and-compliance/security-features/users/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Users</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docssecurity-and-compliancesecurity-featuresusers">
       
-      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docssecurity-and-compliancesecurity-featuresusers" href="/docs/security-and-compliance/security-features/users/">Users</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docssecurity-and-compliancesecurity-featuresusers2fa-setup" href="/docs/security-and-compliance/security-features/users/2fa-setup/">2FA setup</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
       
       
       
@@ -1109,7 +1125,7 @@
 
 
 
-<a href="https://github.com/okohll/abdocs/edit/master/content/docs/security-and-compliance/security-features/users.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/okohll/abdocs/edit/master/content/docs/security-and-compliance/security-features/users/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
 <a href="https://github.com/okohll/abdocs/issues/new?title=Users" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
@@ -1186,8 +1202,8 @@
             
 <div class="td-content">
 	<h1>Users</h1>
-    <div class="lead">Adding, viewing and removing users</div>
-	       
+        <div class="lead">Adding, viewing and removing users</div>
+	
 	<h2 id="adding-a-user">Adding a user</h2>
 <ol>
 <li>Expand the <em>Administration</em> menu in the lefthand sidebar</li>
@@ -1210,7 +1226,7 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 <p>We recommend the adoption of a password wallet service like <a href="https://1password.com/">1Password</a>, <a href="https://lastpass.com">LastPass</a> or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.</p>
 </blockquote>
 <h3 id="two-factor-authentication">Two factor authentication</h3>
-<p>Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can&rsquo;t do for them, but luckily it is quick and easy to do: <a href="https://agilechilli.com/help-centre/agilebase/account-settings-agilebase/how-to-set-up-two-factor-authentication-2fa/">here&rsquo;s how</a>.</p>
+<p>Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can&rsquo;t do for them, but luckily it is quick and easy to do: <a href="/docs/security-and-compliance/security-features/users/2fa-setup/">here&rsquo;s how</a>.</p>
 <p>Users without 2FA will be prompted to do so in the user interface and by email.</p>
 <p>2FA is mandatory for <a href="#roles">administrators</a> and necessary for a user to have before <a href="/docs/security-and-compliance/security-features/privileges/">manage</a> privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.</p>
 <p>When enabled, a user will be prompted for the 2FA code as well as their password when they log in from a device or location they haven&rsquo;t used in the past 30 days.</p>
@@ -1247,6 +1263,207 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 <p>A user removal will have no effect on any data stored in the system. The user&rsquo;s previous comments will still be visible for example and their username will still be logged against any records they&rsquo;re marked as owner of. Their changes will still be in the audit trail and they will be marked as the creator/last editor of records where relevant.</p>
 <p>You may want to take some other actions after deletion e.g. to re-assign records they are assigned to.</p>
 <p>A deleted user&rsquo;s profile image will be replaced with a standard icon representing a deleted user, when displayed in comment streams etc.</p>
+
+        <div class="section-index">
+    
+    
+    
+    
+    <hr class="panel-line">
+        
+            
+        
+            
+        
+            
+                <div class="entry">
+                    <h5>
+                        <a href="/docs/security-and-compliance/security-features/users/2fa-setup/">2FA setup</a>
+                    </h5>
+                    <p>Setting up two factor authentication - a guide for all users</p>
+                </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    
+</div>
 
 	
 		<style>
@@ -1310,10 +1527,9 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified June 5, 2020: <a  href="https://github.com/okohll/abdocs/commit/81237916a6ceed7e6d65c4c652e9b29a2bff7541">TODOs (8123791)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified July 12, 2020: <a  href="https://github.com/okohll/abdocs/commit/d3bc7ce3742c73dda9935be09121d3a82cad5c30">2FA setup page (d3bc7ce)</a>
 </div>
 </div>
-
 
           </main>
         </div>
