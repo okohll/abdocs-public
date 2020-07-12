@@ -159,7 +159,7 @@ That means that your company can send out branded, rich-text emails (with attach
       <description>
         
         
-        &lt;p&gt;Agilebase email facility is often used to remind people to send information. This facility is a dedicated tool, optimised to this purpose.&lt;/p&gt;
+        &lt;p&gt;The Chaser email facility is often used to remind people to send information. This facility is a dedicated tool, optimised to this purpose.&lt;/p&gt;
 &lt;p&gt;In a nutshell, the system comprises three parts&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -174,37 +174,30 @@ That means that your company can send out branded, rich-text emails (with attach
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/chaser2.png&#34; alt=&#34;Screenshot of Chaser user interface&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
-&lt;p&gt;The first uses have been in our agile:SA Supplier Approval software. We have a few chasers, for example&lt;/p&gt;
-&lt;p&gt;non-conformances: whenever a non-conformance is raised against a supplier, whether as a result of an audit or ad hoc, the supplier will be chased if they don’t respond in a timely manner. Likewise, your staff can be chased if an internal non-conformance is not resolved
-ingredient risk assessment: a member of staff must risk assess new ingredients
-ingredient specification: a supplier will be chased for any missing specification documents
-supplier audit questionnaires (SAQs): suppliers must respond to these and will be chased if they don’t
-There are many more but hopefully you get the idea. The same principles can be applied whenever you need a third party to supply you with information or documents of a known type.&lt;/p&gt;
+&lt;p&gt;The system can be applied whenever you need a third party to supply you with information or documents of a known type.&lt;/p&gt;
+&lt;p&gt;For example, a food manufacturer who receives ingredients from suppliers may occasionally need to raise a non-conformance where something isn&amp;rsquo;t up to standard.&lt;/p&gt;
+&lt;p&gt;Whenever a non-conformance is raised against a supplier, whether as a result of an audit or ad hoc, the supplier can be chased for information about a resolution of the issue. Likewise, staff can be chased if an internal non-conformance is not resolved.&lt;/p&gt;
 &lt;h2 id=&#34;technical-setup&#34;&gt;Technical setup&lt;/h2&gt;
-&lt;p&gt;As an agileBase administrator, if you want to set up your own chaser, here’s how to do so.
-The process has been made as simple as possible so setup should be a breeze.&lt;/p&gt;
+&lt;p&gt;As an agileBase administrator, if you want to set up your own chaser, here’s how to do so.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Create a view with a list of people (email addresses) to chase. In the view’s &lt;em&gt;manage&lt;/em&gt; tab, under &lt;em&gt;Send&lt;/em&gt;, choose &lt;em&gt;send email chasers&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Create a view with a list of people to chase. In the view’s &lt;em&gt;manage&lt;/em&gt; tab, under &lt;em&gt;Send&lt;/em&gt;, choose &lt;em&gt;send email chasers&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;The screen will show a list of fields you need, e.g. ‘to’ which is the email address of the recipient, ‘subject’ etc. Edit or Create all of these as calculations&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The list will also include a couple of fields you’ll need added to the table: count (a number) and last chased (a date). These will be used internally by the system.&lt;/p&gt;
+&lt;p&gt;Tick &amp;lsquo;enable this chaser&amp;rsquo;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;That will set up the system to send emails. Now make sure that only things you want to chase are chased, by adding any relevant filters to the view. e.g. to show anything out of date&lt;/p&gt;
+&lt;p&gt;The system will add a number of calculations to the view and a couple of fields to the underlying table, to help manage chasing. These will be listed on the screen after ticking &amp;lsquo;enable this chaser&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;Please edit the calculations to fill in the details required, such as the email address to send messages to, the frequency with which to send messages etc.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Now make sure that only things you want to chase are chased, by adding any relevant filters to the view. e.g. to show anything out of date&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;That will be enough to get emails sending out. What about receiving the information back?&lt;/p&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;Simply add any fields you want the recipient to supply to the view, from the parent table.
 The system will automatically create a form containing these fields (excluding any of the chaser fields above such as ‘to’ and ‘subject’). When the recipient receives an email, it will have a link in it that takes them to this form.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;If you want the content that the chaser sends out to be visible to users, add the chaser view into a form as a cross referenced field. It will show information such as the email to be sent, how many times the record’s been chased, when the last time was etc. If the record doesn’t need to be chased it will instead show the reasons why (the filters from the view).&lt;/p&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;Finally tick ‘enable this chaser’ at the bottom of the view’s Send section, in the manage tab. That’s it!&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Please let us know what uses you find for the chaser, or of course if you come across any issues or can think of any further enhancements.&lt;/p&gt;
+&lt;p&gt;If you want the content that the chaser sends out to be visible to users, add the chaser view into a form as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data field&lt;/a&gt;. The panel displayed to users will show information such as the email to be sent, how many times the record’s been chased, when the last time was etc. If the record doesn’t need to be chased it will instead show the reasons why (the filters from the view).&lt;/p&gt;
 
       </description>
     </item>

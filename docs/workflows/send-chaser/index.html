@@ -21,22 +21,22 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Send a Chaser email | agileBase docs</title><meta property="og:title" content="Send a Chaser email" />
-<meta property="og:description" content="Chasers are dedicated functionality that use email to ask 3rd parties for relevant information" />
+<meta property="og:description" content="Chasers are dedicated functionality that use email to ask third parties for relevant information" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/workflows/send-chaser/" />
 <meta property="article:published_time" content="2020-05-29T12:35:00+01:00" />
-<meta property="article:modified_time" content="2020-05-29T17:21:41+01:00" />
+<meta property="article:modified_time" content="2020-07-12T09:49:05+01:00" />
 <meta itemprop="name" content="Send a Chaser email">
-<meta itemprop="description" content="Chasers are dedicated functionality that use email to ask 3rd parties for relevant information">
+<meta itemprop="description" content="Chasers are dedicated functionality that use email to ask third parties for relevant information">
 <meta itemprop="datePublished" content="2020-05-29T12:35:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-05-29T17:21:41&#43;01:00" />
-<meta itemprop="wordCount" content="571">
+<meta itemprop="dateModified" content="2020-07-12T09:49:05&#43;01:00" />
+<meta itemprop="wordCount" content="462">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Send a Chaser email"/>
-<meta name="twitter:description" content="Chasers are dedicated functionality that use email to ask 3rd parties for relevant information"/>
+<meta name="twitter:description" content="Chasers are dedicated functionality that use email to ask third parties for relevant information"/>
 
 
 
@@ -1162,9 +1162,9 @@
             
 <div class="td-content">
 	<h1>Send a Chaser email</h1>
-    <div class="lead">Chasers are dedicated functionality that use email to ask 3rd parties for relevant information</div>
+    <div class="lead">Chasers are dedicated functionality that use email to ask third parties for relevant information</div>
 	       
-	<p>Agilebase email facility is often used to remind people to send information. This facility is a dedicated tool, optimised to this purpose.</p>
+	<p>The Chaser email facility is often used to remind people to send information. This facility is a dedicated tool, optimised to this purpose.</p>
 <p>In a nutshell, the system comprises three parts</p>
 <ol>
 <li>
@@ -1179,37 +1179,30 @@
 </ol>
 <p><img src="/chaser2.png" alt="Screenshot of Chaser user interface"></p>
 <h2 id="example">Example</h2>
-<p>The first uses have been in our agile:SA Supplier Approval software. We have a few chasers, for example</p>
-<p>non-conformances: whenever a non-conformance is raised against a supplier, whether as a result of an audit or ad hoc, the supplier will be chased if they don’t respond in a timely manner. Likewise, your staff can be chased if an internal non-conformance is not resolved
-ingredient risk assessment: a member of staff must risk assess new ingredients
-ingredient specification: a supplier will be chased for any missing specification documents
-supplier audit questionnaires (SAQs): suppliers must respond to these and will be chased if they don’t
-There are many more but hopefully you get the idea. The same principles can be applied whenever you need a third party to supply you with information or documents of a known type.</p>
+<p>The system can be applied whenever you need a third party to supply you with information or documents of a known type.</p>
+<p>For example, a food manufacturer who receives ingredients from suppliers may occasionally need to raise a non-conformance where something isn&rsquo;t up to standard.</p>
+<p>Whenever a non-conformance is raised against a supplier, whether as a result of an audit or ad hoc, the supplier can be chased for information about a resolution of the issue. Likewise, staff can be chased if an internal non-conformance is not resolved.</p>
 <h2 id="technical-setup">Technical setup</h2>
-<p>As an agileBase administrator, if you want to set up your own chaser, here’s how to do so.
-The process has been made as simple as possible so setup should be a breeze.</p>
+<p>As an agileBase administrator, if you want to set up your own chaser, here’s how to do so.</p>
 <ol>
 <li>
-<p>Create a view with a list of people (email addresses) to chase. In the view’s <em>manage</em> tab, under <em>Send</em>, choose <em>send email chasers</em></p>
+<p>Create a view with a list of people to chase. In the view’s <em>manage</em> tab, under <em>Send</em>, choose <em>send email chasers</em></p>
 </li>
 <li>
-<p>The screen will show a list of fields you need, e.g. ‘to’ which is the email address of the recipient, ‘subject’ etc. Edit or Create all of these as calculations</p>
-</li>
-<li>
-<p>The list will also include a couple of fields you’ll need added to the table: count (a number) and last chased (a date). These will be used internally by the system.</p>
+<p>Tick &lsquo;enable this chaser&rsquo;</p>
 </li>
 </ol>
-<p>That will set up the system to send emails. Now make sure that only things you want to chase are chased, by adding any relevant filters to the view. e.g. to show anything out of date</p>
+<p>The system will add a number of calculations to the view and a couple of fields to the underlying table, to help manage chasing. These will be listed on the screen after ticking &lsquo;enable this chaser&rsquo;.</p>
+<p>Please edit the calculations to fill in the details required, such as the email address to send messages to, the frequency with which to send messages etc.</p>
+<ol start="3">
+<li>Now make sure that only things you want to chase are chased, by adding any relevant filters to the view. e.g. to show anything out of date</li>
+</ol>
 <p>That will be enough to get emails sending out. What about receiving the information back?</p>
 <ol start="4">
 <li>Simply add any fields you want the recipient to supply to the view, from the parent table.
 The system will automatically create a form containing these fields (excluding any of the chaser fields above such as ‘to’ and ‘subject’). When the recipient receives an email, it will have a link in it that takes them to this form.</li>
 </ol>
-<p>If you want the content that the chaser sends out to be visible to users, add the chaser view into a form as a cross referenced field. It will show information such as the email to be sent, how many times the record’s been chased, when the last time was etc. If the record doesn’t need to be chased it will instead show the reasons why (the filters from the view).</p>
-<ol start="5">
-<li>Finally tick ‘enable this chaser’ at the bottom of the view’s Send section, in the manage tab. That’s it!</li>
-</ol>
-<p>Please let us know what uses you find for the chaser, or of course if you come across any issues or can think of any further enhancements.</p>
+<p>If you want the content that the chaser sends out to be visible to users, add the chaser view into a form as a <a href="/docs/fields/field-types/special-field-types/referenced-data/">referenced data field</a>. The panel displayed to users will show information such as the email to be sent, how many times the record’s been chased, when the last time was etc. If the record doesn’t need to be chased it will instead show the reasons why (the filters from the view).</p>
 
 	
 		<style>
@@ -1273,7 +1266,7 @@ The system will automatically create a form containing these fields (excluding a
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 29, 2020: <a  href="https://github.com/okohll/abdocs/commit/48d09a6507deb471e04d6aa4a7b435e43a41986c">Update to advanced Workflows (48d09a6)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified July 12, 2020: <a  href="https://github.com/okohll/abdocs/commit/728dcefb4a500a35e00c3a4832d168ee01ce4eca">Update chaser page (728dcef)</a>
 </div>
 </div>
 
