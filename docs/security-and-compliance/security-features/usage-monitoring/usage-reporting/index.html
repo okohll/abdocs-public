@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.73.0" />
+<meta name="generator" content="Hugo 0.74.2" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-06-05T11:30:08+01:00" />
+<meta property="article:modified_time" content="2020-07-21T16:39:53+01:00" />
 <meta itemprop="name" content="Reporting">
 <meta itemprop="description" content="Viewing, querying and reporting on log data">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-06-05T11:30:08&#43;01:00" />
-<meta itemprop="wordCount" content="556">
+<meta itemprop="dateModified" content="2020-07-21T16:39:53&#43;01:00" />
+<meta itemprop="wordCount" content="1044">
 
 
 
@@ -1143,7 +1143,12 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#enhanced-audit-trail">Enhanced audit trail</a></li>
+    <li><a href="#enhanced-audit-trail">Enhanced audit trail</a>
+      <ul>
+        <li><a href="#data-stored">Data stored</a></li>
+      </ul>
+    </li>
+    <li><a href="#authentication-changes">Authentication changes</a></li>
     <li><a href="#standard-reporting">Standard reporting</a>
       <ul>
         <li><a href="#the-dashboard">The dashboard</a></li>
@@ -1226,6 +1231,67 @@
 <p>So for example, you could analyse how many changes were made per month by each user, count the volume of logins from various locations or see what the most common fields are to search on. All actions listed on the <a href="/docs/security-and-compliance/security-features/usage-monitoring/">usage monitoring</a> page are available to query.</p>
 <p>Data is also retained for an extended period, see <a href="/docs/security-and-compliance/security-features/usage-monitoring/#retention-periods">retention periods</a></p>
 <p>If interested in activating this feature, please <a href="https://agilechilli.com/contact-us/">get in touch</a>. There will be a small recurring charge added to your bill.</p>
+<h3 id="data-stored">Data stored</h3>
+<h4 id="logins">Logins</h4>
+<ul>
+<li>Username</li>
+<li>Date and time</li>
+<li>IP Address</li>
+<li>Country</li>
+<li>Internet Service Provider organisation name and location</li>
+<li>Client web browser (both summary and exact version details)</li>
+<li>Client operating system</li>
+</ul>
+<h4 id="data-changes-record-creation--update--delete">Data changes (record creation / update / delete)</h4>
+<ul>
+<li>Username (in the case of an API call, will be &lsquo;Public API [IP address]&rsquo;. In the case of a system workflow, &lsquo;System&rsquo;)</li>
+<li>Date and time</li>
+<li>Action (e.g. update or delete)</li>
+<li>Table</li>
+<li>Field (if a single field is updated)</li>
+<li>Row ID - internal identifier of the record updated</li>
+<li>Saved data</li>
+</ul>
+<h4 id="view-access">View access</h4>
+<p>This covers any time a view is opened or filtered, either by a user, or an API call</p>
+<ul>
+<li>Username (in the case of an API call, will be &lsquo;Public API [IP address]')</li>
+<li>Date and time</li>
+<li>Tile and view name</li>
+<li>Details - any filters and row limit applied</li>
+<li>Rows - the number of records returned to the user or API</li>
+<li>Processing time - the total server-side processing time in milliseconds needed to retrieve the data, and if for an API, transform it into JSON format</li>
+<li>Of which Q time (API calls only) - to achieve a fair level of load balancing, agileBase operates a separate API request queue for each customer. If a request arrives and the system is still busy processing a previous request, the new one gets held in a queue. This field shows how much of the total processing time, in ms was spent waiting for previous requests to complete</li>
+<li>Bytes (API calls only) - the number of bytes of JSON data returned via the API</li>
+<li>Count - if many similar requests or API calls (to a particular view) reach the server in quick succession, they will be amalgamated together into one log line. The count then shows the number of requests the log line refers to, otherwise it will be 1. If more than one, then the <strong>rows</strong>, <strong>processing time</strong>, <strong>of which q time</strong> and <strong>bytes</strong> will represent the totals for all requests</li>
+</ul>
+<h4 id="table-schema-changes">Table schema changes</h4>
+<p>These are changes made to a table structure by someone with <a href="/docs/security-and-compliance/security-features/privileges/">manage</a> privileges, such as adding or removing a field.</p>
+<ul>
+<li>Date and time</li>
+<li>Username</li>
+<li>Table name</li>
+<li>Action e.g. &lsquo;add field&rsquo;, &lsquo;remove field&rsquo;</li>
+<li>Details - e.g. the name of the field</li>
+</ul>
+<h4 id="view-schema-changes">View schema changes</h4>
+<p>Changes made to a view structure, such as adding fields, filters, calculations or charts</p>
+<ul>
+<li>Date and time</li>
+<li>Username</li>
+<li>Tile and view name</li>
+<li>Action</li>
+<li>Details - additional data related to the action, e.g. if adding a field, the field name</li>
+</ul>
+<h2 id="authentication-changes">Authentication changes</h2>
+<p>A log of administrative actions such as assigning a user to a role, assigning privileges, or user actions such as requesting a password reset</p>
+<ul>
+<li>Date and time</li>
+<li>Username (of the user making the change)</li>
+<li>Action - e.g. add privilege</li>
+<li>Table name - only if the action relates to a particular table, e.g. assigning a role to a table</li>
+<li>Details - additional data related to the action, e.g. if adding a role to the table, the role name</li>
+</ul>
 <h2 id="standard-reporting">Standard reporting</h2>
 <p>Built in reports are available in a number of areas, whether using the enhanced audit trail or standard logging.</p>
 <h3 id="the-dashboard">The dashboard</h3>
@@ -1321,7 +1387,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified June 5, 2020: <a  href="https://github.com/okohll/abdocs/commit/81237916a6ceed7e6d65c4c652e9b29a2bff7541">TODOs (8123791)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified July 21, 2020: <a  href="https://github.com/okohll/abdocs/commit/f324681147239f7bd9e57c11a456952be70a06d1">Add detail to usage reporting page (f324681)</a>
 </div>
 </div>
 
