@@ -1261,9 +1261,9 @@
 <li>Details - any filters and row limit applied</li>
 <li>Rows - the number of records returned to the user or API</li>
 <li>Processing time - the total server-side processing time in milliseconds needed to retrieve the data, and if for an API, transform it into JSON format</li>
-<li>Of which Q time (API calls only) - to achieve a fair level of load balancing, agileBase operates a separate API request queue for each customer. If a request arrives and the system is still busy processing a previous request, the new one gets held in a queue. This field shows how much of the total processing time, in ms was spent waiting for previous requests to complete</li>
-<li>Bytes (API calls only) - the number of bytes of JSON data returned via the API</li>
-<li>Count - if many similar requests or API calls (to a particular view) reach the server in quick succession, they will be amalgamated together into one log line. The count then shows the number of requests the log line refers to, otherwise it will be 1. If more than one, then the <strong>rows</strong>, <strong>processing time</strong>, <strong>of which q time</strong> and <strong>bytes</strong> will represent the totals for all requests</li>
+<li>Of which Q time <strong>(API calls only)</strong> - to achieve a fair level of load balancing, agileBase operates a separate API request queue for each customer. If a request arrives and the system is still busy processing a previous request, the new one gets held in a queue. This field shows how much of the total processing time, in ms was spent waiting for previous requests to complete</li>
+<li>Bytes <strong>(API calls only)</strong> - the number of bytes of JSON data returned via the API</li>
+<li>Count - if many similar requests or API calls (to a particular view) reach the server in quick succession, they will be amalgamated together into one log line. The count then shows the number of requests the log line refers to, otherwise it will be 1. If more than one, then the <em>rows</em>, <em>processing time</em>, <em>of which q time</em> and <em>bytes</em> will represent the totals for all requests</li>
 </ul>
 <h4 id="table-schema-changes">Table schema changes</h4>
 <p>These are changes made to a table structure by someone with <a href="/docs/security-and-compliance/security-features/privileges/">manage</a> privileges, such as adding or removing a field.</p>
