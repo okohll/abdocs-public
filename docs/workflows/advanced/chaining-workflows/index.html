@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-06-10T10:34:19+01:00" />
+<meta property="article:modified_time" content="2020-08-10T17:51:25+01:00" />
 <meta itemprop="name" content="Chaining Workflows">
 <meta itemprop="description" content="Chaining Workflows">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-06-10T10:34:19&#43;01:00" />
-<meta itemprop="wordCount" content="205">
+<meta itemprop="dateModified" content="2020-08-10T17:51:25&#43;01:00" />
+<meta itemprop="wordCount" content="559">
 
 
 
@@ -1144,7 +1144,8 @@
 <nav id="TableOfContents">
   <ul>
     <li><a href="#how-to-chain-workflows">How to chain Workflows</a></li>
-    <li><a href="#passing-the-current-record-id-through-chained-workflows">Passing the Current record ID through chained workflows</a></li>
+    <li><a href="#auto-connect-new-records-to-records-created-in-previous-chained-workflow-steps">Auto-connect new records to records created in previous chained workflow steps</a></li>
+    <li><a href="#workflow-buttons-and-chained-workflows">Workflow buttons and chained workflows</a></li>
     <li><a href="#using-hidden-flagging-fields">Using hidden &ldquo;flagging&rdquo; fields</a></li>
     <li><a href="#visualising-linked-workflows">Visualising linked workflows</a></li>
   </ul>
@@ -1207,20 +1208,43 @@
     <div class="lead">Chaining Workflows</div>
 	       
 	<h2 id="how-to-chain-workflows">How to chain Workflows</h2>
-<p>Simply set the appropriate view in the Chain workflow section of the <em>workflow</em> page of the <em>manage</em> tab.</p>
+<p>To set the next workflow in a chain, simply set the appropriate view in the Chain workflow section of the <em>workflow</em> page of the <em>manage</em> tab. The next workflow in the chain will run as soon as the previous finishes.</p>
 <p><img src="/workflow-chain.png" alt="Configuring the PULL API"></p>
-<h2 id="passing-the-current-record-id-through-chained-workflows">Passing the Current record ID through chained workflows</h2>
-<p><strong>TODO</strong></p>
-<h2 id="using-hidden-flagging-fields">Using hidden &ldquo;flagging&rdquo; fields</h2>
-<p>It is often necessary to <strong>find</strong> the source record when chaining workflows. This is especially true when creating records in other tables.
-A trick to allow you to find the appropriate record is to use and set a flag field in the source table.</p>
+<h2 id="auto-connect-new-records-to-records-created-in-previous-chained-workflow-steps">Auto-connect new records to records created in previous chained workflow steps</h2>
+<p>This option is available when using a workflow that creates new records. Say for example a workflow consists of two steps</p>
 <ol>
-<li>Step 1 - Use an Update Workflow to set the flag to True</li>
-<li>Step 2 - Other workflows can join to this table and filter by <em>flag=true</em></li>
-<li>Final Step - Remember to set the flag to false as the last step in the chain, so that it is not inadvertently included in its next running.</li>
+<li>Create an organisation</li>
+<li>Create a contact belonging to that organisation (assume there&rsquo;s a <a href="/docs/fields/field-types/basic-field-types/#relation">relation field</a> linking contacts to organisations)</li>
+</ol>
+<p>When &lsquo;auto-connect new records&rsquo; is ticked on the workflow for step 2, the contact will automatically be linked to the organisation previously created by setting the relation field appropriately.</p>
+<p>This mechanism works no matter how many steps there are in a workflow - any records created are remembered and can be used to set values in subsequent steps. So for example</p>
+<ol>
+<li>Create an organisation</li>
+<li>Create a site for the organisation, linked to it</li>
+<li>Create a contact linked to both site and organisation</li>
+</ol>
+<p>would work too, so long as &lsquo;auto-connect new records&rsquo; is ticked for workflow steps 2 and 3.</p>
+<h2 id="workflow-buttons-and-chained-workflows">Workflow buttons and chained workflows</h2>
+<p>When a record is kicked off from a <a href="/docs/workflows/advanced/workflow-buttons/">manual workflow button</a>, it will only run on the single record the user has open on the screen, i.e. the record that the workflow button is in.</p>
+<p>If the workflow has further steps chained from it, you&rsquo;ll most likely want those to only run on that record too.</p>
+<p>For example, imagine a workflow is made up of two chained steps</p>
+<ol>
+<li>generate a document e.g. an invoice</li>
+<li>send that document to a recipient</li>
+</ol>
+<p>The workflow view may contain many records which could theoretically have a document generated for them. When the button is pressed to run step 1, it will only run on the single record on screen.</p>
+<p>agileBase will then pass the ID of that record through to the next workflow step to act as a filter. i.e. &lsquo;send that document to a receipient&rsquo; will only send the individual document which has just been created.</p>
+<p>This mechanism works until any workflow step creates a new record. When that happens, it&rsquo;s unclear whether subsequent steps should run on the original record or the newly created one, so the ID won&rsquo;t be passed through to following steps and you&rsquo;ll have to manage things manually, e.g. using flagging as below.</p>
+<h2 id="using-hidden-flagging-fields">Using hidden &ldquo;flagging&rdquo; fields</h2>
+<p>It is sometimes necessary to <strong>find</strong> the source record when chaining workflows.</p>
+<p>A trick to allow you to find the appropriate record is to use and set a flag field in the source table.</p>
+<ol>
+<li>Use an Update Workflow to set the flag to True</li>
+<li>Other workflows can join to this table and filter by <em>flag=true</em></li>
+<li>Finally, remember to set the flag to false as the last step in the chain, so that it is not inadvertently included in the next run.</li>
 </ol>
 <h2 id="visualising-linked-workflows">Visualising linked workflows</h2>
-<p>We’ve added one more thing to the system to make working with these multi-step workflows easier. When you click on a workflow step in the admin interface, it will colour all preceding steps (if any) in green – fading to lighter green the further back they go. Similarly all future chained steps are marked in blue, fading to light blue the further forward they are in the chain.</p>
+<p>We’ve added one more thing to the system to make working with these multi-step workflows easier. When you click on a workflow step in the admin interface, it will colour all preceding steps (if any) in green, fading to lighter green the further back they go. Similarly all future chained steps are marked in blue, fading to light blue the further forward they are in the chain.</p>
 <p><img src="/workflow-recursive.png" alt="Configuring the PULL API"></p>
 
 	
@@ -1285,7 +1309,7 @@ A trick to allow you to find the appropriate record is to use and set a flag fie
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified June 10, 2020: <a  href="https://github.com/okohll/abdocs/commit/9e8b6db2d3eec49d185c378494587e0bcffbcb64">Wording tweak (9e8b6db)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified August 10, 2020: <a  href="https://github.com/okohll/abdocs/commit/7ce6a387167f458be9ad755eb6c9e7fa15817c45">New workflow options (7ce6a38)</a>
 </div>
 </div>
 

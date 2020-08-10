@@ -24,20 +24,43 @@
         
         
         &lt;h2 id=&#34;how-to-chain-workflows&#34;&gt;How to chain Workflows&lt;/h2&gt;
-&lt;p&gt;Simply set the appropriate view in the Chain workflow section of the &lt;em&gt;workflow&lt;/em&gt; page of the &lt;em&gt;manage&lt;/em&gt; tab.&lt;/p&gt;
+&lt;p&gt;To set the next workflow in a chain, simply set the appropriate view in the Chain workflow section of the &lt;em&gt;workflow&lt;/em&gt; page of the &lt;em&gt;manage&lt;/em&gt; tab. The next workflow in the chain will run as soon as the previous finishes.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-chain.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;passing-the-current-record-id-through-chained-workflows&#34;&gt;Passing the Current record ID through chained workflows&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;using-hidden-flagging-fields&#34;&gt;Using hidden &amp;ldquo;flagging&amp;rdquo; fields&lt;/h2&gt;
-&lt;p&gt;It is often necessary to &lt;strong&gt;find&lt;/strong&gt; the source record when chaining workflows. This is especially true when creating records in other tables.
-A trick to allow you to find the appropriate record is to use and set a flag field in the source table.&lt;/p&gt;
+&lt;h2 id=&#34;auto-connect-new-records-to-records-created-in-previous-chained-workflow-steps&#34;&gt;Auto-connect new records to records created in previous chained workflow steps&lt;/h2&gt;
+&lt;p&gt;This option is available when using a workflow that creates new records. Say for example a workflow consists of two steps&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Step 1 - Use an Update Workflow to set the flag to True&lt;/li&gt;
-&lt;li&gt;Step 2 - Other workflows can join to this table and filter by &lt;em&gt;flag=true&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Final Step - Remember to set the flag to false as the last step in the chain, so that it is not inadvertently included in its next running.&lt;/li&gt;
+&lt;li&gt;Create an organisation&lt;/li&gt;
+&lt;li&gt;Create a contact belonging to that organisation (assume there&amp;rsquo;s a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation field&lt;/a&gt; linking contacts to organisations)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When &amp;lsquo;auto-connect new records&amp;rsquo; is ticked on the workflow for step 2, the contact will automatically be linked to the organisation previously created by setting the relation field appropriately.&lt;/p&gt;
+&lt;p&gt;This mechanism works no matter how many steps there are in a workflow - any records created are remembered and can be used to set values in subsequent steps. So for example&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create an organisation&lt;/li&gt;
+&lt;li&gt;Create a site for the organisation, linked to it&lt;/li&gt;
+&lt;li&gt;Create a contact linked to both site and organisation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;would work too, so long as &amp;lsquo;auto-connect new records&amp;rsquo; is ticked for workflow steps 2 and 3.&lt;/p&gt;
+&lt;h2 id=&#34;workflow-buttons-and-chained-workflows&#34;&gt;Workflow buttons and chained workflows&lt;/h2&gt;
+&lt;p&gt;When a record is kicked off from a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;manual workflow button&lt;/a&gt;, it will only run on the single record the user has open on the screen, i.e. the record that the workflow button is in.&lt;/p&gt;
+&lt;p&gt;If the workflow has further steps chained from it, you&amp;rsquo;ll most likely want those to only run on that record too.&lt;/p&gt;
+&lt;p&gt;For example, imagine a workflow is made up of two chained steps&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;generate a document e.g. an invoice&lt;/li&gt;
+&lt;li&gt;send that document to a recipient&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The workflow view may contain many records which could theoretically have a document generated for them. When the button is pressed to run step 1, it will only run on the single record on screen.&lt;/p&gt;
+&lt;p&gt;agileBase will then pass the ID of that record through to the next workflow step to act as a filter. i.e. &amp;lsquo;send that document to a receipient&amp;rsquo; will only send the individual document which has just been created.&lt;/p&gt;
+&lt;p&gt;This mechanism works until any workflow step creates a new record. When that happens, it&amp;rsquo;s unclear whether subsequent steps should run on the original record or the newly created one, so the ID won&amp;rsquo;t be passed through to following steps and you&amp;rsquo;ll have to manage things manually, e.g. using flagging as below.&lt;/p&gt;
+&lt;h2 id=&#34;using-hidden-flagging-fields&#34;&gt;Using hidden &amp;ldquo;flagging&amp;rdquo; fields&lt;/h2&gt;
+&lt;p&gt;It is sometimes necessary to &lt;strong&gt;find&lt;/strong&gt; the source record when chaining workflows.&lt;/p&gt;
+&lt;p&gt;A trick to allow you to find the appropriate record is to use and set a flag field in the source table.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use an Update Workflow to set the flag to True&lt;/li&gt;
+&lt;li&gt;Other workflows can join to this table and filter by &lt;em&gt;flag=true&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Finally, remember to set the flag to false as the last step in the chain, so that it is not inadvertently included in the next run.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;visualising-linked-workflows&#34;&gt;Visualising linked workflows&lt;/h2&gt;
-&lt;p&gt;We’ve added one more thing to the system to make working with these multi-step workflows easier. When you click on a workflow step in the admin interface, it will colour all preceding steps (if any) in green – fading to lighter green the further back they go. Similarly all future chained steps are marked in blue, fading to light blue the further forward they are in the chain.&lt;/p&gt;
+&lt;p&gt;We’ve added one more thing to the system to make working with these multi-step workflows easier. When you click on a workflow step in the admin interface, it will colour all preceding steps (if any) in green, fading to lighter green the further back they go. Similarly all future chained steps are marked in blue, fading to light blue the further forward they are in the chain.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-recursive.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
 
       </description>
