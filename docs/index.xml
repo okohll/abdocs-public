@@ -88,6 +88,12 @@
 
 &lt;p&gt;This example shows an iPhone but it’s the same process with an Android phone - just install the Authenticator app from the Google Play store.&lt;/p&gt;
 &lt;p&gt;Setup only needs to be done once. From then on you don’t need to do anything apart from open the app when asked. The app will automatically generate and display a code without any need for you to do anything.&lt;/p&gt;
+&lt;p&gt;To kick off the process&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click your user icon at the top right of the screen&lt;/li&gt;
+&lt;li&gt;Select &amp;lsquo;edit profile&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;Tick &amp;lsquo;enable two factor authentication&amp;rsquo;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;what-if-i-cant-use-a-smartphone&#34;&gt;What if I can’t use a smartphone?&lt;/h2&gt;
 &lt;p&gt;If you don’t use a smartphone at work, that’s no problem. You can use an app on your computer - in fact many people find that more convenient than using a phone. Please ask your system administrator how to set things up and they’ll give you a hand.&lt;/p&gt;
 &lt;h2 id=&#34;when-should-i-set-this-up&#34;&gt;When should I set this up?&lt;/h2&gt;

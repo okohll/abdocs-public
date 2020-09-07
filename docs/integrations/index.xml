@@ -126,14 +126,14 @@
 &lt;li&gt;&lt;em&gt;row_id=[internal id of the record]&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The internal record ID can be got from a JSON feed or by using the &lt;em&gt;return=posted_json&lt;/em&gt; as above if editing a record previously created using the API.&lt;/p&gt;
-&lt;h2 id=&#34;posting-files&#34;&gt;Posting files&lt;/h2&gt;
+&lt;h2 id=&#34;uploading-files&#34;&gt;Uploading files&lt;/h2&gt;
 &lt;p&gt;As well as &amp;lsquo;standard&amp;rsquo; data, agileBase can accept documents posted into a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/&#34;&gt;file field&lt;/a&gt;. This can be done in two ways:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Make sure the form is posted with encoding type &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST&#34;&gt;multipart/form-data&lt;/a&gt;. Then simply post the contents of the file with the form parameter specifying the internal name of the file field.&lt;/li&gt;
 &lt;li&gt;Post the form normally (not as multipart/form-data), and provide a URL value for the file field. That URL will be downloaded by agileBase and the contents saved as a file.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This method is &lt;a href=&#34;https://www.zapier.com&#34;&gt;Zapier&lt;/a&gt;-compatible.&lt;/p&gt;
+&lt;p&gt;Method 2 is &lt;a href=&#34;https://www.zapier.com&#34;&gt;Zapier&lt;/a&gt;-compatible.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;response&#34;&gt;Response&lt;/h2&gt;
 &lt;p&gt;The response to the successful request will be a JSON representation of the complete record created or updated, after the update has taken place. An object of key-value pairs is returned, the key being the internal field name.&lt;/p&gt;
