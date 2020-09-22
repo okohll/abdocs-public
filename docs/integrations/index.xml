@@ -64,7 +64,7 @@
 &lt;p&gt;Please be aware of potential data privacy concerns when setting up calendar synchronisation. All events a user creates or modifies in any of the calendars in their connected account will send to agileBase. As an administrator, you may wish to set up specific work calendar accounts for your users, distinct from any personal accounts they may use.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;outgoing-data&#34;&gt;Outgoing data&lt;/h2&gt;
-&lt;p&gt;As well as receiving data in, you can send either new or modified events from agileBase to users&amp;rsquo; connected calendars.&lt;/p&gt;
+&lt;p&gt;As well as receiving data in, you can send either new or modified events from agileBase to users&#39; connected calendars.&lt;/p&gt;
 &lt;p&gt;New events are those created in agileBase, modified events are those created externally which have come into the system via the incoming data method above, but which have then been updated in agileBase.&lt;/p&gt;
 &lt;p&gt;To set this up&lt;/p&gt;
 &lt;ol&gt;
