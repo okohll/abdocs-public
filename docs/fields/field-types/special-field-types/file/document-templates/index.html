@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/" />
 <meta property="article:published_time" content="2020-05-08T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-06-05T11:30:08+01:00" />
+<meta property="article:modified_time" content="2020-10-01T13:27:58+01:00" />
 <meta itemprop="name" content="Document templates">
 <meta itemprop="description" content="Templates allow the automatic generation of PDF documents, or printouts">
 <meta itemprop="datePublished" content="2020-05-08T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2020-06-05T11:30:08+01:00" />
-<meta itemprop="wordCount" content="903">
+<meta itemprop="dateModified" content="2020-10-01T13:27:58+01:00" />
+<meta itemprop="wordCount" content="936">
 
 
 
@@ -1336,8 +1336,12 @@
 <td>Return the top n rows in the specified view</td>
 </tr>
 <tr>
+<td>$view.htmlTable()</td>
+<td>Output a HTML table containing the rows of the current session view (the last one the user opened), with session filters applied</td>
+</tr>
+<tr>
 <td>$view.htmlTable(view, rows)</td>
-<td>Given a list of rows as returned by getReportDataRows, from the specified view, format them as a HTML table</td>
+<td>Given a list of rows as returned by getReportDataRows, from the specified view, format them as a HTML table e.g.<br><code>#set($myView = $view.getReport(&quot;my view&quot;))</code><br><code>#set($rows = $view.getReportDataRows($myView))</code><br><code>$view.htmlTable($myView, $rows)</code></td>
 </tr>
 <tr>
 <td>$view.htmlTable(&ldquo;table name&rdquo;, &ldquo;child view name&rdquo;)</td>
@@ -1451,7 +1455,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified June 5, 2020: <a  href="https://github.com/okohll/abdocs/commit/81237916a6ceed7e6d65c4c652e9b29a2bff7541">TODOs (8123791)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified October 1, 2020: <a  href="https://github.com/okohll/abdocs/commit/d371935bde46b9e945e7c0091ef2c5ca724f58af">Add .htmlTable() to doc templating (d371935)</a>
 </div>
 </div>
 
