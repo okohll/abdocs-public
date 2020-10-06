@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-09-22T16:52:17+01:00" />
+<meta property="article:modified_time" content="2020-10-06T16:54:23+01:00" />
 <meta itemprop="name" content="Text Field Options">
 <meta itemprop="description" content="Options specific to text fields">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2020-09-22T16:52:17+01:00" />
-<meta itemprop="wordCount" content="900">
+<meta itemprop="dateModified" content="2020-10-06T16:54:23+01:00" />
+<meta itemprop="wordCount" content="1013">
 
 
 
@@ -1155,7 +1155,11 @@
     </li>
     <li><a href="#text-case">Text case</a></li>
     <li><a href="#size">Size</a></li>
-    <li><a href="#use-as-record-title">Use as record title</a></li>
+    <li><a href="#use-as-record-title">Use as record title</a>
+      <ul>
+        <li><a href="#preventing-duplicates">Preventing duplicates</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -1269,6 +1273,10 @@
 <h2 id="use-as-record-title">Use as record title</h2>
 <p>The user interface has the ability to highlight the importance of certain fields by showing their contents in large font at the top of the record data. For example, a Company Name field may be the record title for an organisation record.</p>
 <p>This option can be selected for multiple fields in a table. In that case, the first field will be the main title, others will appear as subtitles.</p>
+<h3 id="preventing-duplicates">Preventing duplicates</h3>
+<p>Enabling the &lsquo;use as record title&rsquo; option also has the effect of enabling duplicate detection. The system will detect when a value is entered that is close to an existing value in the system. Any &lsquo;close&rsquo; values that are found are displayed as links to the relevant records.</p>
+<p>This can be useful when e.g. entering company names. Although a field can be marked [unique]({{relref &ldquo;common-options#unique&rdquo;}}) to prevent exact duplicates, that won&rsquo;t pick up near matches, which this duplicate detection will. For example, &lsquo;The Universoty Of Bristol&rsquo; and &lsquo;University Of Bristol (UOB)&rsquo; will be detected as close matches, or &lsquo;agileBase&rsquo; and &lsquo;agileBase Ltd&rsquo;.</p>
+<p>The system uses <a href="https://www.postgresql.org/docs/current/pgtrgm.html">trigram matching</a> to detect similar values.</p>
 
 	
 		<style>
@@ -1332,7 +1340,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified September 22, 2020: <a  href="https://github.com/okohll/abdocs/commit/df1b76b4b5f5edb1cf223982baaf6bda086e2022">When using &#39;fill with users&#39;, the list of users to appear in the dropdown can further be narrowed down by role if required (df1b76b)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified October 6, 2020: <a  href="https://github.com/okohll/abdocs/commit/42385d652996eedca794ffb19bf9d8acbe4e5148">Preventing duplicates (42385d6)</a>
 </div>
 </div>
 

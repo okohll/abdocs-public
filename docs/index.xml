@@ -923,6 +923,10 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h2 id=&#34;use-as-record-title&#34;&gt;Use as record title&lt;/h2&gt;
 &lt;p&gt;The user interface has the ability to highlight the importance of certain fields by showing their contents in large font at the top of the record data. For example, a Company Name field may be the record title for an organisation record.&lt;/p&gt;
 &lt;p&gt;This option can be selected for multiple fields in a table. In that case, the first field will be the main title, others will appear as subtitles.&lt;/p&gt;
+&lt;h3 id=&#34;preventing-duplicates&#34;&gt;Preventing duplicates&lt;/h3&gt;
+&lt;p&gt;Enabling the &amp;lsquo;use as record title&amp;rsquo; option also has the effect of enabling duplicate detection. The system will detect when a value is entered that is close to an existing value in the system. Any &amp;lsquo;close&amp;rsquo; values that are found are displayed as links to the relevant records.&lt;/p&gt;
+&lt;p&gt;This can be useful when e.g. entering company names. Although a field can be marked [unique]({{relref &amp;ldquo;common-options#unique&amp;rdquo;}}) to prevent exact duplicates, that won&amp;rsquo;t pick up near matches, which this duplicate detection will. For example, &amp;lsquo;The Universoty Of Bristol&amp;rsquo; and &amp;lsquo;University Of Bristol (UOB)&amp;rsquo; will be detected as close matches, or &amp;lsquo;agileBase&amp;rsquo; and &amp;lsquo;agileBase Ltd&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;The system uses &lt;a href=&#34;https://www.postgresql.org/docs/current/pgtrgm.html&#34;&gt;trigram matching&lt;/a&gt; to detect similar values.&lt;/p&gt;
 
       </description>
     </item>
