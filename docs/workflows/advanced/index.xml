@@ -136,9 +136,12 @@ It is often necessary to put some thought in to the visibility of the button - i
 &lt;h2 id=&#34;workflow-buttons-on-views&#34;&gt;Workflow Buttons on Views&lt;/h2&gt;
 &lt;p&gt;Some Manual workflows are more appropriately run on a number of records. As such the ability to run them is likely to be associated to a list presented in a view.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Find the view that displays the most appropriate list of records.&lt;/li&gt;
-&lt;li&gt;Use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;Chain Workflows&lt;/a&gt; functionality and set the Workflow you wish to be run as a button.&lt;/li&gt;
+&lt;li&gt;Create the workflow view&lt;/li&gt;
+&lt;li&gt;Find or create a view we&amp;rsquo;ll call &amp;lsquo;display view&amp;rsquo;, which displays an appropriate list of records - most likely this will show contain the same filters as the workflow view, so it shows the same records to the user.&lt;/li&gt;
+&lt;li&gt;In the display view, use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;Chain Workflows&lt;/a&gt; functionality. Choose the workflow view.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;When the user opens the display view, a workflow button will appear at the top of the screen. Pressing this will run the workflow.&lt;/p&gt;
+&lt;p&gt;On completion, the user will be shown the number of records that were affected by the workflow run e.g. created or updated, along with an option to see the any log messages, which can be useful to check for errors.&lt;/p&gt;
 
       </description>
     </item>

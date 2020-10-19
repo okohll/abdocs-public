@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.75.1" />
+<meta name="generator" content="Hugo 0.76.5" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2020-05-29T17:21:41+01:00" />
+<meta property="article:modified_time" content="2020-10-19T15:11:03+01:00" />
 <meta itemprop="name" content="Workflows Buttons">
 <meta itemprop="description" content="How to setup a Workflow to fire from a Button">
 <meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2020-05-29T17:21:41+01:00" />
-<meta itemprop="wordCount" content="201">
+<meta itemprop="dateModified" content="2020-10-19T15:11:03+01:00" />
+<meta itemprop="wordCount" content="293">
 
 
 
@@ -1217,9 +1217,12 @@ It is often necessary to put some thought in to the visibility of the button - i
 <h2 id="workflow-buttons-on-views">Workflow Buttons on Views</h2>
 <p>Some Manual workflows are more appropriately run on a number of records. As such the ability to run them is likely to be associated to a list presented in a view.</p>
 <ol>
-<li>Find the view that displays the most appropriate list of records.</li>
-<li>Use the <a href="/docs/workflows/advanced/chaining-workflows/">Chain Workflows</a> functionality and set the Workflow you wish to be run as a button.</li>
+<li>Create the workflow view</li>
+<li>Find or create a view we&rsquo;ll call &lsquo;display view&rsquo;, which displays an appropriate list of records - most likely this will show contain the same filters as the workflow view, so it shows the same records to the user.</li>
+<li>In the display view, use the <a href="/docs/workflows/advanced/chaining-workflows/">Chain Workflows</a> functionality. Choose the workflow view.</li>
 </ol>
+<p>When the user opens the display view, a workflow button will appear at the top of the screen. Pressing this will run the workflow.</p>
+<p>On completion, the user will be shown the number of records that were affected by the workflow run e.g. created or updated, along with an option to see the any log messages, which can be useful to check for errors.</p>
 
 	
 		<style>
@@ -1283,7 +1286,7 @@ It is often necessary to put some thought in to the visibility of the button - i
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 29, 2020: <a  href="https://github.com/okohll/abdocs/commit/48d09a6507deb471e04d6aa4a7b435e43a41986c">Update to advanced Workflows (48d09a6)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified October 19, 2020: <a  href="https://github.com/okohll/abdocs/commit/cdf5610012e1b5195010b45e82dcfbb552b3fb68">Workflow button explanation (cdf5610)</a>
 </div>
 </div>
 
