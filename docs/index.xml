@@ -143,7 +143,13 @@
       <description>
         
         
-        &lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/ab-platform.jpg&#34; alt=&#34;agileBase banner&#34;&gt;&lt;/p&gt;
+&lt;p&gt;agileBase has been created with some important aims in mind&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;to create software that people find enjoyable to use, which manifests in many ways, most obviously the attractive and colourful user interface, but also because it can match user&amp;rsquo;s requirements exactly&lt;/li&gt;
+&lt;li&gt;to support the full ambitions of business owners. It&amp;rsquo;s simple to get started but the platform has a very high &lt;em&gt;technical ceiling&lt;/em&gt; - there&amp;rsquo;s not much you can&amp;rsquo;t accomplish&lt;/li&gt;
+&lt;li&gt;to make the most out of an organisation workforce&amp;rsquo;s perhaps un-tapped skills and experience, allowing people to take full ownership of their own areas of their business&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
@@ -414,7 +420,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
     </item>
     
     <item>
-      <title>Introduction: Who can use is?</title>
+      <title>Introduction: Who can use it?</title>
       <link>https://docs.agilebase.co.uk/introduction/who-can-use-it/</link>
       <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
       
