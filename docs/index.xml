@@ -23,10 +23,8 @@
       <description>
         
         
-        &lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;adding-and-removing&#34;&gt;Adding and removing&lt;/h2&gt;
-&lt;h2 id=&#34;colours-and-icons&#34;&gt;Colours and icons&lt;/h2&gt;
-&lt;h2 id=&#34;system-tiles&#34;&gt;System tiles&lt;/h2&gt;
+        &lt;p&gt;The first thing we&amp;rsquo;ll do is create a &amp;lsquo;CRM&amp;rsquo; tile which will act as the entry point to our simple application.&lt;/p&gt;
+&lt;p&gt;Follow the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/#creating-a-tile&#34;&gt;creating a tile&lt;/a&gt; section to do so.&lt;/p&gt;
 
       </description>
     </item>
@@ -122,7 +120,7 @@
     </item>
     
     <item>
-      <title>Quickstart: Adding a table</title>
+      <title>Quickstart: Adding tables</title>
       <link>https://docs.agilebase.co.uk/quickstart/tables/</link>
       <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
       
@@ -130,7 +128,20 @@
       <description>
         
         
-        
+        &lt;p&gt;Now we will create three tables to store our data, called&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;organisations&lt;/li&gt;
+&lt;li&gt;sites&lt;/li&gt;
+&lt;li&gt;contacts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This demonstrates that you can use tables to link related data (we&amp;rsquo;ll get to the links in a bit).&lt;/p&gt;
+&lt;p&gt;Organisations will contain company names and basic details&lt;/p&gt;
+&lt;p&gt;Sites will contain a list of addresses, because we may want allow an organisation to have more than one address&lt;/p&gt;
+&lt;p&gt;Contacts will contain a list of people, each linked to an organisation and optionally a site.&lt;/p&gt;
+&lt;p&gt;Separating the data into three tables lets us create these &amp;lsquo;one-to-many&amp;rsquo; relationships, where one organisation can have many sites and contacts.&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t worry about the relationships between tables at this stage, the first thing to do is just to create those three tables and leave them empty for now.&lt;/p&gt;
+&lt;p&gt;Use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/&#34;&gt;tables&lt;/a&gt; page for instructions on creating a table.&lt;/p&gt;
+
       </description>
     </item>
     
@@ -322,7 +333,21 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;Now we have out three tables - organisations, sites and contacts, lets add some relevant fields to each.&lt;/p&gt;
+&lt;p&gt;For example, in the organisations table, a text field &amp;lsquo;organisation name&amp;rsquo; would be an obvious starter. You could also add things like &amp;lsquo;website&amp;rsquo; and perhaps a number field to record annual turnover, should you be interested in that.&lt;/p&gt;
+&lt;p&gt;Sites should include a few address fields and contacts can include a full name (or separate forename and surname fields) along with various fields for email address and other contact details.&lt;/p&gt;
+&lt;p&gt;To add a field to a table, follow the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;fields&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;Once the basic fields are added, here&amp;rsquo;s a key step: linking the tables together, so that the system knows that a contact belongs to an organisation &amp;amp; site and a site belongs to an organisation.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sites table, add a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation&lt;/a&gt; field, linking to the organisations table. For the display field, choose the &amp;lsquo;organisation name&amp;rsquo; or your equivalent.&lt;/li&gt;
+&lt;li&gt;In the contacts table, add a relation field linking to the organisations table in a similar way&lt;/li&gt;
+&lt;li&gt;Also in the contacts table, ad a relation field linking to the sites table. Use postcode or zip code as the display field.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Finally and optionally, we can add some tabs to the organisation table, so that the user can add view and edit sites and contacts when looking at an organisation:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the organisations table, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/&#34;&gt;add a tab&lt;/a&gt;. When selecting a table to use for the tab, choose sites&lt;/li&gt;
+&lt;li&gt;Again in the organisations table, add another tab for contacts&lt;/li&gt;
+&lt;/ol&gt;
 
       </description>
     </item>
@@ -414,7 +439,11 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;The last step is to add some views so users can add and edit data in our tables.&lt;/p&gt;
+&lt;p&gt;From each of the three tables, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;create a view&lt;/a&gt; and place it in the CRM tile.&lt;/p&gt;
+&lt;p&gt;We don&amp;rsquo;t need to do anything complex with the view or even edit any options. The simple act of creating it will allow users to see and edit all of the data.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s it. Enter the user interface (as opposed to the admin interface) and you&amp;rsquo;ll be able to add organisation, site and contact details to your heart&amp;rsquo;s content. Of course, to do anything really interesting with this data you will likely want to create extra tables to suit your own needs - maybe to add sales opportunities or invoices for example.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll leave that as an exercise for the reader, but please do get in touch for help and advice on your journey.&lt;/p&gt;
 
       </description>
     </item>
@@ -428,10 +457,14 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;Firstly, no formal programming experience is necessary.&lt;/p&gt;
+&lt;p&gt;Often, people who are interested in building applications tend to be those who have created spreadsheets to run business processes but have become aware of the limitations and want to move to the next level.&lt;/p&gt;
+&lt;p&gt;Following training, anyone with the requisite interest, ability and ambition can progress from making simple changes and additions to existing applications, to building complex applications&lt;/p&gt;
 &lt;h2 id=&#34;citizen-developers&#34;&gt;Citizen Developers&lt;/h2&gt;
+&lt;p&gt;People working within an organisation at any level can be trained in the technology and thought patterns necessary to build useful applications. Companies can therefore make the most of the abilities of their staff, that may currently be un-tapped.&lt;/p&gt;
 &lt;h2 id=&#34;partners&#34;&gt;Partners&lt;/h2&gt;
-&lt;h3 id=&#34;multi-tenanting&#34;&gt;Multi-tenanting&lt;/h3&gt;
+&lt;p&gt;We are also building a network of partners who can act as consultants to organisations, kick-starting the application building process within an organisation and taking ownership of any large scale application(s).&lt;/p&gt;
+&lt;p&gt;Partners can also use the platform to build their own multi-tenanted apps. These are applications which many different customers can log into and use. Each company&amp;rsquo;s data is of course separated from others, but the application itself is shared.&lt;/p&gt;
 
       </description>
     </item>
@@ -773,7 +806,17 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;&lt;strong&gt;TODO&lt;/strong&gt;&lt;/p&gt;
+        &lt;p&gt;A large variety of applications can be built using the agileBase platform. Customers can start small (perhaps in one team or department, or a new startup business) and build apps iteratively to encompass a constantly widening range of business requirements.&lt;/p&gt;
+&lt;p&gt;Our costing structure has been developed to ensure fairness and affordability however far along an organisation is in their growth.&lt;/p&gt;
+&lt;p&gt;Costing is controlled by five factors&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Users - the number of people who can log in&lt;/li&gt;
+&lt;li&gt;Tables - a measure of the size of an application - how many capabilities does it cover?&lt;/li&gt;
+&lt;li&gt;Document storage - used if a company uploads or generates documents, images or videos&lt;/li&gt;
+&lt;li&gt;Quantity of data - the number of records stored in a system&lt;/li&gt;
+&lt;li&gt;Optional API charges - when integrating with third party software&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each element has a sliding scale - the larger the number of units, the lower the per-unit cost, to allow large scale use while remaining affordable.&lt;/p&gt;
 
       </description>
     </item>
