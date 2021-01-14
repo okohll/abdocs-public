@@ -270,13 +270,13 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;h4 id=&#34;returnposted_json&#34;&gt;return=posted_json&lt;/h4&gt;
 &lt;p&gt;Optional, if this is included, the return content will be JSON including the ID of the record as well as the full content of the data.&lt;/p&gt;
 &lt;h4 id=&#34;cache_secondsseconds&#34;&gt;cache_seconds=[seconds]&lt;/h4&gt;
-&lt;p&gt;How long to cache the results for (default 600 seconds or 10 minutes). Only un-filtered results are cached.&lt;/p&gt;
+&lt;p&gt;How long to cache the results for (default 600 seconds i.e 10 minutes). Only un-filtered results are cached.&lt;/p&gt;
 &lt;h4 id=&#34;unencode_htmltrue&#34;&gt;unencode_html=true&lt;/h4&gt;
 &lt;p&gt;Causes characters which would normally be encoded as HTML entities (e.g. &lt;code&gt;&amp;amp;&lt;/code&gt; -&amp;gt; &lt;code&gt;&amp;amp;amp;&lt;/code&gt;) to be returned unencoded&lt;/p&gt;
 &lt;h4 id=&#34;exact_filterstruefalse-default-false&#34;&gt;exact_filters=true/false (default false)&lt;/h4&gt;
 &lt;p&gt;If true, filters (see below) will be need to match results exactly instead of using the default &amp;lsquo;contains&amp;rsquo; filtering&lt;/p&gt;
 &lt;h4 id=&#34;row_limitrow-limit&#34;&gt;row_limit=[row limit]&lt;/h4&gt;
-&lt;p&gt;The default limit on the number of records to ruturn is 10,000. Add this parameter to change this. Note the hard maximum allowed is 100,000.&lt;/p&gt;
+&lt;p&gt;The default limit on the number of records to return is 10,000. Add this parameter to change this. Note the hard maximum allowed is 100,000.&lt;/p&gt;
 &lt;h3 id=&#34;filtering&#34;&gt;Filtering&lt;/h3&gt;
 &lt;p&gt;By specifying exact_filters=true, filters can be supplied to search for a particular record or set of records. For HTTP parameter names, just use the internal agileBase field identifiers. The easiest way of finding these is to right click on a field in the administrator interface using a browser like Chrome, Safari or Firefox and select ‘inspect element’.&lt;/p&gt;
 &lt;p&gt;Standard agileBase quick filters can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, &amp;gt; and &amp;lt; for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.&lt;/p&gt;
