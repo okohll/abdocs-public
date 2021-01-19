@@ -513,7 +513,8 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;p&gt;See section &lt;strong&gt;Form Login with Cookies&lt;/strong&gt; of &lt;a href=&#34;https://www.tutorialspoint.com/apache_httpclient/apache_httpclient_form_based_login.htm&#34;&gt;https://www.tutorialspoint.com/apache_httpclient/apache_httpclient_form_based_login.htm&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;react&#34;&gt;React&lt;/h3&gt;
 &lt;p&gt;Use the &amp;lsquo;react-cookie&amp;rsquo; package: &lt;a href=&#34;https://www.npmjs.com/package/react-cookies&#34;&gt;https://www.npmjs.com/package/react-cookies&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
+&lt;p&gt;Use the &amp;lsquo;urllib2&amp;rsquo; library: &lt;a href=&#34;https://stackoverflow.com/questions/301924/python-urllib-urllib2-httplib-confusion&#39;&#34;&gt;https://stackoverflow.com/questions/301924/python-urllib-urllib2-httplib-confusion&#39;&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
