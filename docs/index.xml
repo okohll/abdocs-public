@@ -1060,6 +1060,8 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;use-only-given-values&#34;&gt;Use only given values&lt;/h2&gt;
 &lt;p&gt;When this is un-ticked, allow the user to create a new parent record directly from the child record&amp;rsquo;s editing screen. Relation fields allow you to type the name of a parent record to find and select one. If no matches are found, a prompt will appear allowing the user to create one.&lt;/p&gt;
+&lt;h2 id=&#34;show-navigation-link&#34;&gt;Show navigation link&lt;/h2&gt;
+&lt;p&gt;When this is ticked (as it is by default), allow the user to navigate from a record containing this field to the one that the relation links to. For example, if a contacts table contains a relation to the organisations table, then when a user views a contact, allow them to navigate to the related organisation by clicking a navigation icon next to the field.&lt;/p&gt;
 
       </description>
     </item>
