@@ -304,10 +304,17 @@
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;accept-emails-to-this-address&#34;&gt;Accept emails to this address&lt;/h3&gt;
 &lt;p&gt;The system can accept incoming emails and attach them to relevant records e.g. attaching an email from a customer to that customer&amp;rsquo;s record.&lt;/p&gt;
-&lt;p&gt;A particular email address can be set up to receive emails. The system can be configured to either accept emails from anyone, or just from users. If just from users, then users can forward any emails they receive to the system to have them imported.&lt;/p&gt;
+&lt;p&gt;A particular email address can be set up to receive emails. The system can be configured to either accept emails from anyone, or just from users. If just from users, then users can forward any emails they receive to the system to have them imported, or BCC the address when sending to people.&lt;/p&gt;
 &lt;p&gt;The email text will be logged as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&#34;&gt;comment&lt;/a&gt; against the record, with the full email attached if it is HTML formatted or includes attachments. The table must have a comments field.&lt;/p&gt;
 &lt;p&gt;Please &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; if you&amp;rsquo;d like to set that up.&lt;/p&gt;
 &lt;p&gt;Emails are matched by creating a view containing the email addresses of potential recipients. An incoming email is attached to the record from this view which matches the sender&amp;rsquo;s email address. If there is no match, it is added to a &amp;lsquo;holding bay&amp;rsquo; where users can view and manually attach emails to records.&lt;/p&gt;
+&lt;h4 id=&#34;configuring-the-email-address-used&#34;&gt;Configuring the email address used&lt;/h4&gt;
+&lt;p&gt;An email address of the form &lt;a href=&#34;mailto:viewname@accountname.domainname&#34;&gt;viewname@accountname.domainname&lt;/a&gt; will be set up, e.g. &lt;a href=&#34;mailto:contacts@mycompany.agilebase.co.uk&#34;&gt;contacts@mycompany.agilebase.co.uk&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;viewname&lt;/em&gt; determines the view which agileBase queries to find the recipient email address. The comment will be added to the matching record in the view&amp;rsquo;s parent table, or a tab of the table, if &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#accept-emails-from-parent-table&#34;&gt;Accept emails from parent table&lt;/a&gt; is enabled in a tab. If multiple tabs have this option enabled, then the tab with a name also matching &lt;em&gt;viewname&lt;/em&gt; is used&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;accountname&lt;/em&gt; determines the company account to look in&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;domainname&lt;/em&gt; is the domain name of the agileBase server&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
 &lt;p&gt;After the options, some structural information is shown, such as which tables depend on this one i.e. have a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation&lt;/a&gt; to it, how many fields and views per tile there are. See also the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#the-dashboard&#34;&gt;usage dashboard&lt;/a&gt;&lt;/p&gt;
 
