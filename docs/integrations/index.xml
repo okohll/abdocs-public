@@ -583,7 +583,18 @@ With simple_format=false, a more complex but more robust format it used. Rather 
     }
   ]
 }
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On a successful call, the JSON&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+&amp;quot;result&amp;quot;: &amp;quot;ok&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;will be returned, with a 200 HTTP status code. If there is an error,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+&amp;quot;error&amp;quot;: true,
+&amp;quot;type&amp;quot;: &amp;quot;[class of error]&amp;quot;,
+&amp;quot;message&amp;quot;: &amp;quot;[error message]&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;will be returned and the HTTP status code will reflect the error.&lt;/p&gt;
+
       </description>
     </item>
     
