@@ -491,7 +491,7 @@ With simple_format=false, a more complex but more robust format it used. Rather 
     </item>
     
     <item>
-      <title>Docs: Checking logins</title>
+      <title>Docs: Authenticating users via the API</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/testing-a-login/</link>
       <pubDate>Tue, 19 Jan 2021 12:41:00 +0100</pubDate>
       
@@ -516,6 +516,73 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
 &lt;p&gt;Use the &amp;lsquo;urllib2&amp;rsquo; library: &lt;a href=&#34;https://stackoverflow.com/questions/301924/python-urllib-urllib2-httplib-confusion&#39;&#34;&gt;https://stackoverflow.com/questions/301924/python-urllib-urllib2-httplib-confusion&#39;&lt;/a&gt;&lt;/p&gt;
 
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Creating user accounts with the API</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/</link>
+      <pubDate>Wed, 14 Apr 2021 10:41:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Normally, a user account can only be created by a system administrator - see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#adding-a-user&#34;&gt;adding a user&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;However there&amp;rsquo;s one special case in which the organisation runs a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanted&lt;/a&gt; agileBase account. In that case, you can use an API call to create a new tenant in the account and new user(s) for that tenant.&lt;/p&gt;
+&lt;p&gt;For example, imagine your organisation is a body for football clubs around the country, where each club was a tenant, i.e. each club had users who could log in, but only see data from their own club. In that case, the user creation API could be called to&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;create a new club&lt;/li&gt;
+&lt;li&gt;create an initial user (or users) for that club&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
+&lt;p&gt;Before calling the API, you have to configure the system to allow it to be used. In the administrator user interface:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;company&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click your company name then the pencil icon in the toolbar to edit the details&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In &lt;em&gt;Multi-tenanting field name (optional)&lt;/em&gt;, type in the field name that your system uses to differentiate tenants, e.g. &amp;ldquo;account name&amp;rdquo;. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Refresh the page and an API key will appear. We will need this to call the API as below.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To disable the API at any point, just delete the value you entered into &lt;em&gt;Multi-tenanting field name (optional)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;calling-the-api&#34;&gt;Calling the API&lt;/h2&gt;
+&lt;p&gt;Use URL &lt;a href=&#34;https://ab.agilechilli.com/agileBase/Public.ab&#34;&gt;https://ab.agilechilli.com/agileBase/Public.ab&lt;/a&gt;. You should make a &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST&#34;&gt;POST&lt;/a&gt; request with encoding &lt;code&gt;application/x-www-form-urlencoded&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;Authorization&lt;/code&gt; header needs to be set to the API key as above.&lt;/p&gt;
+&lt;p&gt;The following paramaters are required&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;c: this identifies your company account and will always be the same. It will be shown in the company editing screen used in preparation, above&lt;/li&gt;
+&lt;li&gt;create_tenant: true&lt;/li&gt;
+&lt;li&gt;json&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The value of the json parameter is a JSON object. In the below format, &lt;code&gt;multi-tenanting fieldname&lt;/code&gt; is the name of the field used to differentiate tenants, e.g. &amp;lsquo;account name&amp;rsquo;. The &lt;code&gt;multi-tenanting value&lt;/code&gt; is the name of the tenant you wish to create with this particular API call. A multi-tenanting role will be created named &amp;lsquo;cust &lt;code&gt;multi-tenanting value&lt;/code&gt;&amp;rsquo;. E.g. if the value is &amp;lsquo;spurs&amp;rsquo;, the role will be named &amp;lsquo;cust spurs&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;users&lt;/code&gt; property is an array of users. Each user will be created and assigned to the above multi-tenanting role, so they can only see data belonging to them and other users of that role. The user will need a valid &lt;code&gt;email address&lt;/code&gt; in order to perform a password reset so they can log in.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;customui&lt;/code&gt; property refers to the option to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#use-the-custom-agilechilli-ui-rather-than-agilebases&#34;&gt;apply a custom logo and login screen&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For each user, the &lt;code&gt;roles&lt;/code&gt; parameter is a comma separated list of internal role IDs, or role names. In addition to the multi-tenanting role, they will also be assigned these roles. They could be e.g. &amp;lsquo;manager&amp;rsquo;, &amp;lsquo;sales rep&amp;rsquo; or &amp;lsquo;accounts dept&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;For each user, &lt;code&gt;tiles&lt;/code&gt; is an array of the tiles the user should see on screen when they log in.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+  &amp;quot;[multi-tenanting fieldname]&amp;quot;: &amp;quot;[multi-tenanting value]&amp;quot;,
+  &amp;quot;users&amp;quot;: [
+    {
+      &amp;quot;username&amp;quot;: &amp;quot;[username&amp;quot;,
+      &amp;quot;forename&amp;quot;: &amp;quot;[forename]&amp;quot;,
+      &amp;quot;surname&amp;quot;: &amp;quot;[surname]&amp;quot;,
+      &amp;quot;email&amp;quot;: &amp;quot;[email address]&amp;quot;,
+      &amp;quot;customui&amp;quot;: [true/false],
+      &amp;quot;roles&amp;quot;: &amp;quot;[comma separated list of role names]&amp;quot;,
+      &amp;quot;tiles&amp;quot;: [
+        {
+          &amp;quot;tiletype&amp;quot;: &amp;quot;comment_stream / calendar / data_link / files&amp;quot;,
+          &amp;quot;colour&amp;quot;: &amp;quot;blue / yellow / green / purple / pink / turquoise / blue2 / yellow2 / green2 / purple2 / pink2 / turquoise2&amp;quot;,
+          &amp;quot;internaltilename&amp;quot;: &amp;quot;[for data_link or files tiles, identifies the tile to add]&amp;quot;
+        },
+        { ... }
+      ]
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;
       </description>
     </item>
     
