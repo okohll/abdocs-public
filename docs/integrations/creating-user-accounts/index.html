@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.82.0" />
+<meta name="generator" content="Hugo 0.82.1" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2021-04-14T10:41:00&#43;01:00" />
-<meta property="article:modified_time" content="2021-04-14T13:54:36&#43;01:00" />
+<meta property="article:modified_time" content="2021-04-22T15:55:38&#43;01:00" />
 
 <meta itemprop="name" content="Creating user accounts with the API">
 <meta itemprop="description" content="Creating a user account in a multi-tenanted system with an API request"><meta itemprop="datePublished" content="2021-04-14T10:41:00&#43;01:00" />
-<meta itemprop="dateModified" content="2021-04-14T13:54:36&#43;01:00" />
-<meta itemprop="wordCount" content="630">
+<meta itemprop="dateModified" content="2021-04-22T15:55:38&#43;01:00" />
+<meta itemprop="wordCount" content="634">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Creating user accounts with the API"/>
 <meta name="twitter:description" content="Creating a user account in a multi-tenanted system with an API request"/>
@@ -1225,7 +1225,7 @@
 <li>json</li>
 </ol>
 <p>The value of the json parameter is a JSON object, defined below.</p>
-<p>In the below format, <code>multi-tenanting fieldname</code> is the name of the field used to differentiate tenants, e.g. &lsquo;account name&rsquo;. The <code>multi-tenanting value</code> is the name of the tenant you wish to create with this particular API call. A multi-tenanting role will be created named &lsquo;cust <code>multi-tenanting value</code>&rsquo;. E.g. if the value is &lsquo;spurs&rsquo;, the role will be named &lsquo;cust spurs&rsquo;. The value should be a lowercase string consisting only of letters from a through to z and numbers.</p>
+<p>In the below format, <code>multi-tenanting fieldname</code> is the name of the field used to differentiate tenants with spaces replaced with underscores, e.g. &lsquo;account_name&rsquo;. The <code>multi-tenanting value</code> is the name of the tenant you wish to create with this particular API call. A multi-tenanting role will be created named &lsquo;cust <code>multi-tenanting value</code>&rsquo;. E.g. if the value is &lsquo;spurs&rsquo;, the role will be named &lsquo;cust spurs&rsquo;. The value should be a lowercase string consisting only of letters from a through to z and numbers.</p>
 <p>The <code>users</code> property is an array of users. Each user will be created and assigned to the above multi-tenanting role, so they can only see data belonging to them and other users of that role. The user will need a valid <code>email address</code> in order to perform a password reset so they can log in.</p>
 <p>The <code>customui</code> property refers to the option to <a href="/docs/security-and-compliance/security-features/users/#use-the-custom-agilechilli-ui-rather-than-agilebases">apply a custom logo and login screen</a></p>
 <p>For each user, the <code>roles</code> parameter is a comma separated list of internal role IDs, or role names. In addition to the multi-tenanting role, they will also be assigned these roles. They could be e.g. &lsquo;manager&rsquo;, &lsquo;sales rep&rsquo; or &lsquo;accounts dept&rsquo;.</p>
@@ -1325,7 +1325,7 @@
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified April 14, 2021: <a  href="https://github.com/okohll/abdocs/commit/c996926f04d5c9b90cfb2ada8f2baba52bfb4c2c">API for creating multi-tenanted users - errors (c996926)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified April 22, 2021: <a  href="https://github.com/okohll/abdocs/commit/d03e4e88772f1da821aab935d412704a8914ceaa">API for creating multi-tenanted users - link (d03e4e8)</a>
 </div>
 </div>
 

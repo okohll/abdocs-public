@@ -152,6 +152,8 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;This works best when the user has read-only privileges on the data, e.g. for a manager reporting on those two companies. They can view records but not add new records, as the system is unable to determine the value of the account name field to use.&lt;/p&gt;
 &lt;h4 id=&#34;multi-account-via-_contains_-filtering&#34;&gt;Multi-account (via &lt;em&gt;contains&lt;/em&gt; filtering)&lt;/h4&gt;
 &lt;p&gt;It&amp;rsquo;s also possible to define a role filter under &lt;em&gt;restrict data access&lt;/em&gt; with a &amp;lsquo;contains&amp;rsquo; rather than an &amp;lsquo;=&amp;rsquo; filter. You can then use a naming convension for your account name values to allow members of this role to see multiple accounts. As above, users of this role will need to be read-only on the data.&lt;/p&gt;
+&lt;h4 id=&#34;api-setup&#34;&gt;API setup&lt;/h4&gt;
+&lt;p&gt;In a multi-tenanting account, it&amp;rsquo;s possible to create new tenants, with users, by API, as opposed to the manual actions of an administrator. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/&#34;&gt;Creating user accounts with the API&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
