@@ -1241,7 +1241,7 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 <h3 id="notes-about-password-security">Notes about password security</h3>
 <p>Passwords must be a minimum of 8 characters.</p>
 <p>When someone sets or changes their password, it&rsquo;s checked against <a href="https://haveibeenpwned.com/Passwords">https://haveibeenpwned.com/Passwords</a> to ensure it&rsquo;s not a common one and is suitable for ongoing use.</p>
-<p>Passwords are stored in our system <a href="https://www.okta.com/blog/2019/03/what-are-salted-passwords-and-password-hashing/">salted and hashed</a> using the <a href="https://en.wikipedia.org/wiki/Bcrypt">bcrypt</a> scheme, with 13 rounds.</p>
+<p>Passwords are stored in our system <a href="https://www.okta.com/blog/2019/03/what-are-salted-passwords-and-password-hashing/">salted and hashed</a> using the <a href="https://en.wikipedia.org/wiki/Bcrypt">bcrypt</a> scheme, with 13 rounds. This means that we do not know what your passwords are and in the unfortunate event of our passwords database being hacked, the original passwords would still not be able to be retrieved.</p>
 <h3 id="two-factor-authentication">Two factor authentication</h3>
 <p>Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can&rsquo;t do for them, but luckily it is quick and easy to do: <a href="/docs/security-and-compliance/security-features/users/2fa-setup/">here&rsquo;s how</a>.</p>
 <p>Users without 2FA will be prompted to do so in the user interface and by email.</p>
@@ -1548,7 +1548,7 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified May 30, 2021: <a  href="https://github.com/okohll/abdocs/commit/180a2d5038bda5dd063a53afca9b353829efe3b6">Notes about password security (180a2d5)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 30, 2021: <a  href="https://github.com/okohll/abdocs/commit/782a181c56822767980bb859fbcf9dbc517eaddc">Notes about password security (782a181)</a>
 </div>
 </div>
 
