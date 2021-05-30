@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.82.1" />
+<meta name="generator" content="Hugo 0.83.1" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -35,8 +35,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.ab9054955f9386b61208d8eeec4167209e68f66929de22e3a16326c198e9da9b.css" as="style">
-<link href="/scss/main.min.ab9054955f9386b61208d8eeec4167209e68f66929de22e3a16326c198e9da9b.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.f3cfa16716c3b1a235c317724392e1fb6123d9503766e4532c15020cce186581.css" as="style">
+<link href="/scss/main.min.f3cfa16716c3b1a235c317724392e1fb6123d9503766e4532c15020cce186581.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -1151,6 +1151,7 @@
     <li><a href="#adding-a-user">Adding a user</a>
       <ul>
         <li><a href="#passwords">Passwords</a></li>
+        <li><a href="#notes-about-password-security">Notes about password security</a></li>
         <li><a href="#two-factor-authentication">Two factor authentication</a></li>
         <li><a href="#other-options">Other options</a></li>
       </ul>
@@ -1237,6 +1238,10 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 <blockquote>
 <p>We recommend the adoption of a password wallet service like <a href="https://1password.com/">1Password</a>, <a href="https://lastpass.com">LastPass</a> or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.</p>
 </blockquote>
+<h3 id="notes-about-password-security">Notes about password security</h3>
+<p>Passwords must be a minimum of 8 characters.</p>
+<p>When someone sets or changes their password, it&rsquo;s checked against <a href="https://haveibeenpwned.com/Passwords">https://haveibeenpwned.com/Passwords</a> to ensure it&rsquo;s not a common one and is suitable for ongoing use.</p>
+<p>Passwords are stored in our system <a href="https://www.okta.com/blog/2019/03/what-are-salted-passwords-and-password-hashing/">salted and hashed</a> using the <a href="https://en.wikipedia.org/wiki/Bcrypt">bcrypt</a> scheme, with 13 rounds.</p>
 <h3 id="two-factor-authentication">Two factor authentication</h3>
 <p>Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can&rsquo;t do for them, but luckily it is quick and easy to do: <a href="/docs/security-and-compliance/security-features/users/2fa-setup/">here&rsquo;s how</a>.</p>
 <p>Users without 2FA will be prompted to do so in the user interface and by email.</p>
@@ -1543,7 +1548,7 @@ Passwords are required to be at least 8 characaters long. Apart from that, there
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified July 12, 2020: <a  href="https://github.com/okohll/abdocs/commit/d3bc7ce3742c73dda9935be09121d3a82cad5c30">2FA setup page (d3bc7ce)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 30, 2021: <a  href="https://github.com/okohll/abdocs/commit/180a2d5038bda5dd063a53afca9b353829efe3b6">Notes about password security (180a2d5)</a>
 </div>
 </div>
 
