@@ -38,9 +38,8 @@
 &lt;li&gt;as various features allow a user to be assigned to a record. Workflows can be set up to email those users. E.g. if an account manager is assigned to a customer, you may want to email them when a complaint is received from that customer.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;passwords&#34;&gt;Passwords&lt;/h3&gt;
-&lt;p&gt;The recommended way to set passwords is for the user to choose their own, which they can do once they have a username and email address filled in. They will need to visit the login page, click the &amp;lsquo;forgotten password&amp;rsquo; link and type in their username. They will be emailed a link which will let them set a password.&lt;/p&gt;
-&lt;p&gt;As an administrator, you can also manually reset a user&amp;rsquo;s password by clicking &amp;lsquo;change password&amp;rsquo; in their user details screen.
-Passwords are required to be at least 8 characaters long. Apart from that, there are no rules. However, all passwords entered are checked against the &lt;a href=&#34;https://haveibeenpwned.com/&#34;&gt;https://haveibeenpwned.com/&lt;/a&gt; website. Any password that is found in their database of &amp;lsquo;breaches&amp;rsquo; is not allowed to be used.&lt;/p&gt;
+&lt;p&gt;The recommended way to set passwords is for the user to choose their own, which they can do once they have a username and email address filled in. They will need to visit the login page, click the &amp;lsquo;reset password&amp;rsquo; link and type in their username. They will be emailed a link which will let them set a password.&lt;/p&gt;
+&lt;p&gt;As an administrator, you can also manually reset someone&amp;rsquo;s password by clicking &amp;lsquo;change password&amp;rsquo; in their user details screen.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;We recommend the adoption of a password wallet service like &lt;a href=&#34;https://1password.com/&#34;&gt;1Password&lt;/a&gt;, &lt;a href=&#34;https://lastpass.com&#34;&gt;LastPass&lt;/a&gt; or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.&lt;/p&gt;
 &lt;/blockquote&gt;
