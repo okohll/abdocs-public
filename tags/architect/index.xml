@@ -1,0 +1,66 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Architect</title>
+    <link>https://docs.agilebase.co.uk/tags/architect/</link>
+    <description>Recent content in Architect on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 24 Apr 2020 16:40:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/architect/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Adding Help</title>
+      <link>https://docs.agilebase.co.uk/docs/adding-help/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/adding-help/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Help for the application you build can be added in at many levels of the user interface&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;at the individual field level
+&lt;ul&gt;
+&lt;li&gt;add the help for each field in the &lt;em&gt;fields&lt;/em&gt; tab of a table&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;for a block of fields
+&lt;ul&gt;
+&lt;li&gt;add the help for the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;separator&lt;/a&gt; field marking the start of the block&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;for a table
+&lt;ul&gt;
+&lt;li&gt;add the help in the &lt;em&gt;manage&lt;/em&gt; tab for the table&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;for a tab within a table
+&lt;ul&gt;
+&lt;li&gt;the help for the tab view is used, falling back to the help for the tab table&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;for a view
+&lt;ul&gt;
+&lt;li&gt;add the help when &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;creating or editing&lt;/a&gt; a view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;for a tile
+&lt;ul&gt;
+&lt;li&gt;add the help when &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/#creating-a-tile&#34;&gt;creating or editing&lt;/a&gt; a tile&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If help exists for a particular area, a link is generally displayed on screen as a question mark icon. Users can click on this to show the help content. Where an icon is less appropriate, it is shown in other ways, for example on hover-over of an element. In the case of views, help is shown in the menu item for each view.&lt;/p&gt;
+&lt;p&gt;Help content can contain URLs, which are converted into links. Links to &lt;a href=&#34;https://www.youtube.com&#34;&gt;YouTube&lt;/a&gt; URLs are shown as videos in place.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
