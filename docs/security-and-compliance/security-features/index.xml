@@ -156,6 +156,15 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;It&amp;rsquo;s also possible to define a role filter under &lt;em&gt;restrict data access&lt;/em&gt; with a &amp;lsquo;contains&amp;rsquo; rather than an &amp;lsquo;=&amp;rsquo; filter. You can then use a naming convension for your account name values to allow members of this role to see multiple accounts. As above, users of this role will need to be read-only on the data.&lt;/p&gt;
 &lt;h4 id=&#34;api-setup&#34;&gt;API setup&lt;/h4&gt;
 &lt;p&gt;In a multi-tenanting account, it&amp;rsquo;s possible to create new tenants, with users, by API, as opposed to the manual actions of an administrator. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/&#34;&gt;Creating user accounts with the API&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;role-properties&#34;&gt;Role properties&lt;/h2&gt;
+&lt;h3 id=&#34;brand-name-and-domain&#34;&gt;Brand name and domain&lt;/h3&gt;
+&lt;p&gt;These two options allow system emails (password reset notification etc.) to come from a domain name of your choice and branded with a particular &amp;lsquo;app&amp;rsquo; name. This can be useful if you&amp;rsquo;re creating a public-facing app using agileBase, rather than applications for your own staff.&lt;/p&gt;
+&lt;p&gt;To allow the domain name to work, you&amp;rsquo;ll need to contact us to set it up - our server will need to be authorised to send email from your domain.&lt;/p&gt;
+&lt;h3 id=&#34;custom-menus&#34;&gt;Custom menus&lt;/h3&gt;
+&lt;p&gt;It’s possible to add custom menu items into the user menu (the one at the top right that appears if you click your user icon). That means if your company has specific help pages or process documentation relevant to your organisation or application, you can make them available from within agileBase.&lt;/p&gt;
+&lt;p&gt;Each custom menu has a title, description and URL, which will be opened in a new tab when the menu item’s chosen.&lt;/p&gt;
+&lt;p&gt;Simply add these into the &lt;strong&gt;menu title&lt;/strong&gt;, &lt;strong&gt;menu description&lt;/strong&gt; and &lt;strong&gt;menu URL&lt;/strong&gt; properties of a role. Assigning that role to a user will add the menu item to their profile menu.&lt;/p&gt;
+&lt;p&gt;To add multiple menu items to a user or users, assign multiple roles, each with one menu item defined.&lt;/p&gt;
 
       </description>
     </item>
