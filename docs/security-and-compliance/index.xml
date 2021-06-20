@@ -36,7 +36,25 @@
       <description>
         
         
-        
+        &lt;h2 id=&#34;backups&#34;&gt;Backups&lt;/h2&gt;
+&lt;p&gt;Data backups are performed across the stack of technology, from server down to databases and file storage.&lt;/p&gt;
+&lt;p&gt;Database and agileBase content (uploaded files, custom templates etc.) backups are taken daily and hosted in the European Union by Amazon. Older backups transition to &lt;a href=&#34;https://aws.amazon.com/glacier/&#34;&gt;Amazon Glacier&lt;/a&gt; and are kept for 200 days - this allows a balance between the practical necessity of allowing rollbacks to a certain point in time, whilst not storing data for an unnecessarily long period, to comply with the GDPR.&lt;/p&gt;
+&lt;p&gt;These backups are encrypted so that Amazon has no access to the data within then.&lt;/p&gt;
+&lt;p&gt;The backup and recovery process is monitored and tested regularly.&lt;/p&gt;
+&lt;h3 id=&#34;retrieval&#34;&gt;Retrieval&lt;/h3&gt;
+&lt;p&gt;There may be a charge for retrieval of customer data from backup, to cover our costs. The data will be restored to a separate instance of agileBase available at a different URL, which a customer can look at to compare data. If necessary, data can then be extracted from one and loaded into the other.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Please be aware that depending on needs, this may be a complex process due to the fact that other data in the live system may have changed since the backup. A simple overwrite of existing data may not be the best option.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy policy&lt;/h2&gt;
+&lt;p&gt;agileBase Ltd is funded directly by the customers we provide services to, we do not have any other business model, particularly we do not resell any data.&lt;/p&gt;
+&lt;p&gt;Our privacy policy is available here: &lt;a href=&#34;https://agilechilli.com/help-centre/agilebase/privacy-policy/&#34;&gt;https://agilechilli.com/help-centre/agilebase/privacy-policy/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;gdpr-policy&#34;&gt;GDPR Policy&lt;/h2&gt;
+&lt;p&gt;An overview of our GDPR policy is available &lt;a href=&#34;https://docs.agilebase.co.uk/gdpr-overview.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/gdpr-overview.pdf&#34;&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/gdpr-compliance-cycle.png&#34; alt=&#34;GDPR Compliance Cycle&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;data-protection-and-disaster-recovery&#34;&gt;Data Protection and Disaster Recovery&lt;/h2&gt;
+&lt;p&gt;Full details of our processes and plans are available to customers and relevant parties on request.&lt;/p&gt;
+
       </description>
     </item>
     

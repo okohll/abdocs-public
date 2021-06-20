@@ -174,7 +174,25 @@
       <description>
         
         
-        
+        &lt;h2 id=&#34;backups&#34;&gt;Backups&lt;/h2&gt;
+&lt;p&gt;Data backups are performed across the stack of technology, from server down to databases and file storage.&lt;/p&gt;
+&lt;p&gt;Database and agileBase content (uploaded files, custom templates etc.) backups are taken daily and hosted in the European Union by Amazon. Older backups transition to &lt;a href=&#34;https://aws.amazon.com/glacier/&#34;&gt;Amazon Glacier&lt;/a&gt; and are kept for 200 days - this allows a balance between the practical necessity of allowing rollbacks to a certain point in time, whilst not storing data for an unnecessarily long period, to comply with the GDPR.&lt;/p&gt;
+&lt;p&gt;These backups are encrypted so that Amazon has no access to the data within then.&lt;/p&gt;
+&lt;p&gt;The backup and recovery process is monitored and tested regularly.&lt;/p&gt;
+&lt;h3 id=&#34;retrieval&#34;&gt;Retrieval&lt;/h3&gt;
+&lt;p&gt;There may be a charge for retrieval of customer data from backup, to cover our costs. The data will be restored to a separate instance of agileBase available at a different URL, which a customer can look at to compare data. If necessary, data can then be extracted from one and loaded into the other.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Please be aware that depending on needs, this may be a complex process due to the fact that other data in the live system may have changed since the backup. A simple overwrite of existing data may not be the best option.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy policy&lt;/h2&gt;
+&lt;p&gt;agileBase Ltd is funded directly by the customers we provide services to, we do not have any other business model, particularly we do not resell any data.&lt;/p&gt;
+&lt;p&gt;Our privacy policy is available here: &lt;a href=&#34;https://agilechilli.com/help-centre/agilebase/privacy-policy/&#34;&gt;https://agilechilli.com/help-centre/agilebase/privacy-policy/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;gdpr-policy&#34;&gt;GDPR Policy&lt;/h2&gt;
+&lt;p&gt;An overview of our GDPR policy is available &lt;a href=&#34;https://docs.agilebase.co.uk/gdpr-overview.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/gdpr-overview.pdf&#34;&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/gdpr-compliance-cycle.png&#34; alt=&#34;GDPR Compliance Cycle&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;data-protection-and-disaster-recovery&#34;&gt;Data Protection and Disaster Recovery&lt;/h2&gt;
+&lt;p&gt;Full details of our processes and plans are available to customers and relevant parties on request.&lt;/p&gt;
+
       </description>
     </item>
     
@@ -324,7 +342,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;In a multi-tenanting account, it&amp;rsquo;s possible to create new tenants, with users, by API, as opposed to the manual actions of an administrator. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/&#34;&gt;Creating user accounts with the API&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;role-properties&#34;&gt;Role properties&lt;/h2&gt;
 &lt;h3 id=&#34;brand-name-and-domain&#34;&gt;Brand name and domain&lt;/h3&gt;
-&lt;p&gt;These two options allow system emails (password reset notification etc.) to come from a domain name of your choice and branded with a particular &amp;lsquo;app&amp;rsquo; name. This can be useful if you&amp;rsquo;re creating a public-facing app using agileBase, rather than applications for your own staff.&lt;/p&gt;
+&lt;p&gt;These two options allow system emails (password reset notification etc.) to come from a domain name of your choice and be branded with a particular &amp;lsquo;app&amp;rsquo; name. This can be useful if you&amp;rsquo;re creating a public-facing app using agileBase, rather than applications for your own staff.&lt;/p&gt;
 &lt;p&gt;To allow the domain name to work, you&amp;rsquo;ll need to contact us to set it up - our server will need to be authorised to send email from your domain.&lt;/p&gt;
 &lt;h3 id=&#34;custom-menus&#34;&gt;Custom menus&lt;/h3&gt;
 &lt;p&gt;It’s possible to add custom menu items into the user menu (the one at the top right that appears if you click your user icon). That means if your company has specific help pages or process documentation relevant to your organisation or application, you can make them available from within agileBase.&lt;/p&gt;
@@ -901,37 +919,6 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;Adding a relation creates a link from one table to another. For example, a contacts table may contain a relation linking to an organisations table, to allow a person to belong to an organisation. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; for further info.&lt;/p&gt;
 &lt;h2 id=&#34;checkbox&#34;&gt;Checkbox&lt;/h2&gt;
 &lt;p&gt;Represents a boolean (true or false) value.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Policies</title>
-      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/policies/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/policies/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;backups&#34;&gt;Backups&lt;/h2&gt;
-&lt;p&gt;Data backups are performed across the stack of technology, from server down to databases and file storage.&lt;/p&gt;
-&lt;p&gt;Database and agileBase content (uploaded files, custom templates etc.) backups are taken daily and hosted in the European Union by Amazon. Older backups transition to &lt;a href=&#34;https://aws.amazon.com/glacier/&#34;&gt;Amazon Glacier&lt;/a&gt; and are kept for 200 days - this allows a balance between the practical necessity of allowing rollbacks to a certain point in time, whilst not storing data for an unnecessarily long period, to comply with the GDPR.&lt;/p&gt;
-&lt;p&gt;These backups are encrypted so that Amazon has no access to the data within then.&lt;/p&gt;
-&lt;p&gt;The backup and recovery process is monitored and tested regularly.&lt;/p&gt;
-&lt;h3 id=&#34;retrieval&#34;&gt;Retrieval&lt;/h3&gt;
-&lt;p&gt;There may be a charge for retrieval of customer data from backup, to cover our costs. The data will be restored to a separate instance of agileBase available at a different URL, which a customer can look at to compare data. If necessary, data can then be extracted from one and loaded into the other.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Please be aware that depending on needs, this may be a complex process due to the fact that other data in the live system may have changed since the backup. A simple overwrite of existing data may not be the best option.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy policy&lt;/h2&gt;
-&lt;p&gt;agileBase Ltd is funded directly by the customers we provide services to, we do not have any other business model, particularly we do not resell any data.&lt;/p&gt;
-&lt;p&gt;Our privacy policy is available here: &lt;a href=&#34;https://agilechilli.com/help-centre/agilebase/privacy-policy/&#34;&gt;https://agilechilli.com/help-centre/agilebase/privacy-policy/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;gdpr-policy&#34;&gt;GDPR Policy&lt;/h2&gt;
-&lt;p&gt;An overview of our GDPR policy is available &lt;a href=&#34;https://docs.agilebase.co.uk/gdpr-overview.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/gdpr-overview.pdf&#34;&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/gdpr-compliance-cycle.png&#34; alt=&#34;GDPR Compliance Cycle&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;data-protection-and-disaster-recovery&#34;&gt;Data Protection and Disaster Recovery&lt;/h2&gt;
-&lt;p&gt;Full details of our processes and plans are available to customers and relevant parties on request.&lt;/p&gt;
 
       </description>
     </item>
@@ -2269,6 +2256,22 @@ Options are:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This topic also includes information about APIs which receive data from third party systems, as opposed to sending to them, for which a view isn&amp;rsquo;t necessary.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</link>
+      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A workflow can be used to edit data in the system automatically.&lt;/p&gt;
+&lt;p&gt;The view created in this case is used to define the set of records to act on (others can be excluded via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; and also the data to use - each calculation or field in the view can be a source of data to create or update.&lt;/p&gt;
+&lt;p&gt;For more information, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; topic, which contains full details of how to set up and use workflows.&lt;/p&gt;
 
       </description>
     </item>
