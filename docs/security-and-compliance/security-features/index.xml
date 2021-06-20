@@ -353,7 +353,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;It&amp;rsquo;s possible for a developer to create a third party application, for example a phone or tablet app, that communicates with agileBase via the API.&lt;/p&gt;
+        &lt;p&gt;It&amp;rsquo;s possible for a developer to create a third party application, for example a phone or tablet app, that communicates with agileBase via the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations&#34;&gt;API&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Now to use the API, you don&amp;rsquo;t need to authenticate as a user, as long as the app has the correct Authorization key(s), it can read and write data to agileBase.&lt;/p&gt;
 &lt;p&gt;However, in some cases the app may need to confirm that someone has a valid agileBase account before allowing them to use the app. This may or may not be necessary depending on the use case, for example depending on whether the app is free to use for anyone, or must be limited to paying customers.&lt;/p&gt;
 &lt;p&gt;To validate a user, the app must redirect them to the agileBase login page, let them log in and confirm that was successful. Therefore, a HTTP client is necessary - this can be a &amp;lsquo;web view component&amp;rsquo; or a programmatic client such as the &lt;a href=&#34;https://hc.apache.org/&#34;&gt;Apache HTTP Client&lt;/a&gt; for &lt;a href=&#34;https://en.wikipedia.org/wiki/Java_%28programming_language%29&#34;&gt;Java&lt;/a&gt;.&lt;/p&gt;
