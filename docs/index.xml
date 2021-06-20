@@ -827,6 +827,116 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
     </item>
     
     <item>
+      <title>Docs: Logging in from an app</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/app_login/</link>
+      <pubDate>Sun, 20 Jun 2021 09:20:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/app_login/</guid>
+      <description>
+        
+        
+        &lt;p&gt;It&amp;rsquo;s possible for a developer to create a third party application, for example a phone or tablet app, that communicates with agileBase via the API.&lt;/p&gt;
+&lt;p&gt;Now to use the API, you don&amp;rsquo;t need to authenticate as a user, as long as the app has the correct Authorization key(s), it can read and write data to agileBase.&lt;/p&gt;
+&lt;p&gt;However, in some cases the app may need to confirm that someone has a valid agileBase account before allowing them to use the app. This may or may not be necessary depending on the use case, for example depending on whether the app is free to use for anyone, or must be limited to paying customers.&lt;/p&gt;
+&lt;p&gt;To validate a user, the app must redirect them to the agileBase login page, let them log in and confirm that was successful. Therefore, a HTTP client is necessary - this can be a &amp;lsquo;web view component&amp;rsquo; or a programmatic client such as the &lt;a href=&#34;https://hc.apache.org/&#34;&gt;Apache HTTP Client&lt;/a&gt; for &lt;a href=&#34;https://en.wikipedia.org/wiki/Java_%28programming_language%29&#34;&gt;Java&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In this example, we&amp;rsquo;ll use the &lt;a href=&#34;https://reactjs.org/&#34;&gt;React&lt;/a&gt; &lt;a href=&#34;https://www.npmjs.com/package/react-native-webview&#34;&gt;Native Web View&lt;/a&gt; but the principle is the same for any programming language or library.&lt;/p&gt;
+&lt;h2 id=&#34;general-principle&#34;&gt;General Principle&lt;/h2&gt;
+&lt;p&gt;The application must reproduce the same login process as a human would, using a HTTP client. Importantly, the HTTP client must support cookies, as the login process depends on them, in particular setting a &lt;code&gt;JSESSIONID&lt;/code&gt; cookie.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make a request to load the page &lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&#34;&gt;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&lt;/a&gt;. This will return the login page and set the cookie value.&lt;/li&gt;
+&lt;li&gt;Submit the login form using the user&amp;rsquo;s username and password. If using a programattic process i.e. making the calls from code rather than using a web view, this means making a form POST to &lt;code&gt;/agileBase/j_security_check&lt;/code&gt; with the parameters &lt;code&gt;j_username&lt;/code&gt; and &lt;code&gt;j_password&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Detect whether the login&amp;rsquo;s successful. If not, the standard agileBase login failure page will be returned&lt;/li&gt;
+&lt;li&gt;If successful, a HTML page will be returned containing three hidden input fields, &lt;code&gt;username&lt;/code&gt;, &lt;code&gt;forename&lt;/code&gt;, &lt;code&gt;surname&lt;/code&gt; containing relevant details for the logged in user. If being called from a React Native Web View, the page will also post back messages to React using this JavaScript:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;if (window.ReactNativeWebView) {
+    window.ReactNativeWebView.postMessage(&amp;quot;username:&amp;quot; + username);
+    window.ReactNativeWebView.postMessage(&amp;quot;forename:&amp;quot; + forename);
+    window.ReactNativeWebView.postMessage(&amp;quot;surname:&amp;quot; + surname);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here&amp;rsquo;s a full example of a login.js page using the React Native Web View. NB this is an example taken from a full application, so you will need to modify it / strip it back to suit your needs, before it can be run.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//Node imports
+import React, {useEffect, useRef, useState} from &#39;react&#39;;
+import {View, StatusBar, Image, ImageBackground, ScrollView} from &#39;react-native&#39;;
+
+//Local imports
+import {styles} from &#39;../../../styles/loginStyles&#39;;
+import {Images, Colors, Constants, Language} from &#39;../../../common&#39;;
+import {useNetInfo} from &amp;quot;@react-native-community/netinfo&amp;quot;;
+import { WebView } from &#39;react-native-webview&#39;;
+import {useDispatch, useSelector} from &#39;react-redux&#39;;
+import {updateUserData} from &#39;../../../redux/actions/commonAction&#39;;
+import commonFunctions from &#39;../../../common/commonFunctions&#39;;
+import SplashScreen from &#39;react-native-splash-screen&#39;
+const {fontSize, fontFamily, Window} = Constants;
+
+const LoginScreen = (props) =&amp;gt; {
+    const dispatch = useDispatch();
+    const {user_data} = useSelector(state =&amp;gt; state);
+    const netInfo = useNetInfo();
+
+    useEffect(function () {
+        SplashScreen.hide();
+        console.log(&#39;netInfo==============&#39;, netInfo)
+        if(netInfo?.isInternetReachable || netInfo?.details != null){
+            checkUser();
+        }
+    }, [netInfo, user_data]);
+
+    const checkUser = () =&amp;gt; {
+        if(user_data &amp;amp;&amp;amp; user_data?.forename &amp;amp;&amp;amp; user_data?.surname &amp;amp;&amp;amp; user_data?.username){
+            goToNextPage();
+        }
+        console.log(&#39;user_data&#39;, user_data)
+    }
+
+    const goToNextPage = async () =&amp;gt; {
+        await commonFunctions.removeTimeStamp();
+        navigateToNextPage();
+    }
+
+    const onResponseFromWebView = (event) =&amp;gt; {
+        const eventData = event.nativeEvent.data;
+        console.log(&#39;eventData&#39;, eventData);
+        if (eventData.includes(&#39;username&#39;)) {
+            dispatch(updateUserData({username: eventData.split(&#39;username:&#39;)[1]}));
+        } else if (eventData.includes(&#39;forename&#39;)) {
+            dispatch(updateUserData({forename: eventData.split(&#39;forename:&#39;)[1]}));
+        } else if (eventData.includes(&#39;surname&#39;)) {
+            dispatch(updateUserData({surname: eventData.split(&#39;surname:&#39;)[1]}));
+        }
+    }
+
+    const navigateToNextPage = () =&amp;gt; {
+        if (netInfo?.isInternetReachable) {
+            return props.navigation.navigate(&#39;Loading&#39;);
+        }
+        return props.navigation.navigate(&#39;MyApplicationPage&#39;);
+    }
+
+    return (
+        &amp;lt;View style={styles.container}&amp;gt;
+            &amp;lt;StatusBar backgroundColor={Colors.black} barStyle={&#39;dark-content&#39;}/&amp;gt;
+            {(netInfo?.isInternetReachable &amp;amp;&amp;amp; !user_data?.surname) ?
+                &amp;lt;WebView
+                    source={{uri: &#39;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&#39;}}
+                    onMessage={onResponseFromWebView}
+                    textZoom={100}
+                    sharedCookiesEnabled={true}
+                /&amp;gt; :
+                &amp;lt;View style={styles.loadingImage}&amp;gt;
+                    &amp;lt;Image source={Images.logo}/&amp;gt;
+                &amp;lt;/View&amp;gt;
+            }
+        &amp;lt;/View&amp;gt;
+    );
+};
+
+export default LoginScreen;
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
       <title>Introduction: Costing structure</title>
       <link>https://docs.agilebase.co.uk/introduction/costing-structure/</link>
       <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
@@ -2256,22 +2366,6 @@ Options are:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This topic also includes information about APIs which receive data from third party systems, as opposed to sending to them, for which a view isn&amp;rsquo;t necessary.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Workflows</title>
-      <link>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</link>
-      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/views/special-uses/workflows/</guid>
-      <description>
-        
-        
-        &lt;p&gt;A workflow can be used to edit data in the system automatically.&lt;/p&gt;
-&lt;p&gt;The view created in this case is used to define the set of records to act on (others can be excluded via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; and also the data to use - each calculation or field in the view can be a source of data to create or update.&lt;/p&gt;
-&lt;p&gt;For more information, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; topic, which contains full details of how to set up and use workflows.&lt;/p&gt;
 
       </description>
     </item>
