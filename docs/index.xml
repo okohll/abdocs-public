@@ -853,7 +853,8 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
     window.ReactNativeWebView.postMessage(&amp;quot;forename:&amp;quot; + forename);
     window.ReactNativeWebView.postMessage(&amp;quot;surname:&amp;quot; + surname);
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here&amp;rsquo;s a full example of a login.js page using the React Native Web View. NB this is an example taken from a full application, so you will need to modify it / strip it back to suit your needs, before it can be run.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s a full example of a login.js page using the React Native Web View. NB this is an example taken from a full application, so you will need to modify it / strip it back to suit your needs, before it can be run.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;//Node imports
 import React, {useEffect, useRef, useState} from &#39;react&#39;;
 import {View, StatusBar, Image, ImageBackground, ScrollView} from &#39;react-native&#39;;
