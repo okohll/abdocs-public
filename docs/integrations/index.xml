@@ -224,7 +224,7 @@ choose a minimum interval to wait between pushes&lt;/li&gt;
 &lt;p&gt;The most important piece of information is the URL that the third party will access your data via. This will be:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If you host on your own cloud or on premises, this may be different.&lt;/p&gt;
-&lt;p&gt;Requests can contain a number of parameters, the one which must be supplied to use the JSON API is &lt;em&gt;get_report_json=true&lt;/em&gt;
+&lt;p&gt;Requests can contain a number of parameters, the one which must be supplied to use the JSON API is &lt;em&gt;get_report_json=true&lt;/em&gt;.
 Other parameters to control various options are detailed below.&lt;/p&gt;
 &lt;p&gt;HTTP requests can be submitted as GET or POST.&lt;/p&gt;
 &lt;p&gt;Three parameters for the view also need to be submitted as parameters to the request. These are ‘c’, ‘t’ and ‘r’, the values are displayed in the administrator interface (see screenshot above). Together, these identify the view from which to extract data.&lt;/p&gt;
@@ -263,7 +263,7 @@ var_dump($response);
 &lt;h3 id=&#34;request-options&#34;&gt;Request options&lt;/h3&gt;
 &lt;p&gt;Here are the options that can be provided as parameters to the request, along with the c, t and r identifiers and in addition to get_report_json=true.&lt;/p&gt;
 &lt;h4 id=&#34;simple_formattruefalse-default-false&#34;&gt;simple_format=true/false (default false)&lt;/h4&gt;
-&lt;p&gt;This option controls the JSON format returned. With simple_format=true, the response will be a simple array of objects, each containing keys for the field namesm as above. Keys are basically lowercase field names with spaces replaced by underscores, so “Email address” would become “email_address”
+&lt;p&gt;This option controls the JSON format returned. With simple_format=true, the response will be a simple array of objects, each containing keys for the field names as above. Keys are basically lowercase field names with spaces replaced by underscores, so “Email address” would become “email_address”
 With simple_format=false, a more complex but more robust format it used. Rather than field names, internal agileBase field identifiers are used as keys. This has the advantage that if the field names are changed (easy for an agileBase administrator to do), the JSON will remain the same. The first object in the JSON will be a dictionary mapping internal identifier to field name.&lt;/p&gt;
 &lt;h4 id=&#34;json_formatjson&#34;&gt;json_format=json&lt;/h4&gt;
 &lt;p&gt;With this option, just the JSON will be returned. This is the usual case required. Without it, complete Javascript will be returned defining the JSON as an object, i.e. &lt;code&gt;var abJson=[…]&lt;/code&gt; which can be useful if you want to run the result as Javascript.&lt;/p&gt;
