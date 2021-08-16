@@ -29,6 +29,10 @@
 &lt;li&gt;Select &lt;em&gt;company&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;Click the pencil icon in the top toolbar to edit&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h3 id=&#34;mandate-2fa&#34;&gt;Mandate 2FA&lt;/h3&gt;
+&lt;p&gt;When this is ticked, all users in the organisation will be required to set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/2fa-setup/&#34;&gt;Two Factor Authentication&lt;/a&gt; before they can see or use any features of the application.&lt;/p&gt;
+&lt;p&gt;We recommend that all administrators enable this if possible. Even when 2FA is mandated, admins can still &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#two-factor-authentication&#34;&gt;disable it temporarily&lt;/a&gt; on a per-user basis. The next time they log in they will be prompted to set it up again.&lt;/p&gt;
+&lt;p&gt;When this is off, users will still be prompted to set up 2FA, it just won&amp;rsquo;t be mandatory.&lt;/p&gt;
 &lt;h3 id=&#34;smtp-server&#34;&gt;SMTP server&lt;/h3&gt;
 &lt;p&gt;agileBase &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;workflows&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chasers&lt;/a&gt; that send emails use an @notifications.agilebase.co.uk email address by default.&lt;/p&gt;
 &lt;p&gt;You may wish to instead use email addresses from your own domain name, especially if the system sends emails to people outside your organisation, like customers or suppliers.&lt;/p&gt;
