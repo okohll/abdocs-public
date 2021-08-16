@@ -81,6 +81,8 @@
 &lt;p&gt;2FA is mandatory for &lt;a href=&#34;#roles&#34;&gt;administrators&lt;/a&gt; and necessary for a user to have before &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;manage&lt;/a&gt; privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.&lt;/p&gt;
 &lt;p&gt;When enabled, a user will be prompted for the 2FA code as well as their password when they log in from a device or location they haven&amp;rsquo;t used in the past 30 days.&lt;/p&gt;
 &lt;p&gt;If a user encounters any problems with 2FA, e.g. they lose the device for generating their codes, you can temporarily disable 2FA on their account by going to their user details screen and un-ticking &amp;lsquo;use 2FA&amp;rsquo;. Of course, you need to be aware of the risks, for example double checking that a user who contacts you is really who they say they are. Once they can log in, they&amp;rsquo;ll be able to enable 2FA themselves again.&lt;/p&gt;
+&lt;h4 id=&#34;mandating-2fa-for-everyone&#34;&gt;Mandating 2FA for everyone&lt;/h4&gt;
+&lt;p&gt;This can be done in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/#mandate-2fa&#34;&gt;company settings&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;other-options&#34;&gt;Other options&lt;/h3&gt;
 &lt;h4 id=&#34;use-the-custom-agilechilli-ui-rather-than-agilebases&#34;&gt;Use the custom AgileChilli UI rather than agileBase&amp;rsquo;s&lt;/h4&gt;
 &lt;p&gt;It&amp;rsquo;s possible for companies to apply their logo and custom login screen to the system. Please contact us if you&amp;rsquo;d like to set this up.&lt;/p&gt;
