@@ -23,12 +23,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/workflows/send-email/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-29T12:35:00+01:00" />
-<meta property="article:modified_time" content="2021-06-22T17:43:36+01:00" />
+<meta property="article:modified_time" content="2021-08-19T11:30:00+01:00" />
 
 <meta itemprop="name" content="Send an email">
 <meta itemprop="description" content="Workflows can be used to send an email"><meta itemprop="datePublished" content="2020-05-29T12:35:00+01:00" />
-<meta itemprop="dateModified" content="2021-06-22T17:43:36+01:00" />
-<meta itemprop="wordCount" content="612">
+<meta itemprop="dateModified" content="2021-08-19T11:30:00+01:00" />
+<meta itemprop="wordCount" content="602">
 <meta itemprop="keywords" content="Certified Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Send an email"/>
 <meta name="twitter:description" content="Workflows can be used to send an email"/>
@@ -2971,9 +2971,7 @@
 <h2 id="step-3-add-filters">Step 3: add filters</h2>
 <p>Add filters so that only records that need an email notification to be sent appear. It’s important that records must disappear once a notification’s been sent otherwise the recipient will be bombarded with repeat alerts.</p>
 <p>For simple alerts of new items, add a filter “Last notified IS NULL”. That way, a notification will only ever be sent once for a record.</p>
-<p>To set up a repeating monthly alert, you could add a calculation:</p>
-<p><code>Send Alert (boolean): {last notified} is null OR {last notified} &lt; (now() - interval '1 month')</code></p>
-<p>and filter on “Send Alert = true”</p>
+<p>To set up a repeating monthly alert, you could add a filter &ldquo;last notified is more than 1 month ago&rdquo;, with <a href="/docs/views/filters/#including-blank-values">or is blank</a> ticked:</p>
 <p>If you have any difficulty thinking up what criteria you need for your purpose, please get in touch.</p>
 <h2 id="step-4-fill-in-an-email-template">Step 4: fill in an email template</h2>
 <p>In the view’s <em>manage</em> tab, under <em>send</em>, fill in the subject, to and body of the email. To merge in data from the view, use field names in lowercase surrounded by curly brackets. A typical template would look something like this:</p>
@@ -3060,8 +3058,8 @@ That means that your company can send out branded, rich-text emails (with attach
 	<div class="text-muted mt-5 pt-3 border-top">
 
     Last modified
-    June 22, 2021
-    : <a  href="https://github.com/okohll/abdocs/commit/c49ef8f324b093200f9219cbe41d1246eae15ee3">Tag all docs pages (c49ef8f)</a>
+    August 19, 2021
+    : <a  href="https://github.com/okohll/abdocs/commit/5eb720ea017e70b829a429f0e44f720581fdbc01">Filtering &#39;or is blank&#39; setting (5eb720e)</a>
 
 </div>
 

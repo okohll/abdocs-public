@@ -258,6 +258,14 @@
 &lt;p&gt;Some filters apply to multiple data types, others only to specific types. For example, &amp;lsquo;newer than X days ago&amp;rsquo; only applies to date fields.&lt;/p&gt;
 &lt;p&gt;Once you&amp;rsquo;ve added a filter, you&amp;rsquo;ll be able to type in a description for it. If no description is entered, the system will automatically generate one, which you&amp;rsquo;ll be able to see.&lt;/p&gt;
 &lt;p&gt;This description is shown to users as help in particular circumstances, e.g. when the view is used as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt;, so it&amp;rsquo;s a good idea to check it makes sense.&lt;/p&gt;
+&lt;h3 id=&#34;including-blank-values&#34;&gt;Including blank values&lt;/h3&gt;
+&lt;p&gt;Once a filter has been created, when you hover over it you&amp;rsquo;ll see an option to tick &amp;lsquo;or is blank&amp;rsquo;. This is useful to ensure blank values aren&amp;rsquo;t excluded by your filter, which they typically would be otherwise.&lt;/p&gt;
+&lt;p&gt;For example, imaging you&amp;rsquo;re setting up an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email notification workflow&lt;/a&gt; to send a notification to people once a week of any outstanding tasks. You&amp;rsquo;d likely need two filters, the first to find any tasks with an &amp;lsquo;outstanding&amp;rsquo; status and the second to only include tasks for which no notifications have been sent within the last 7 days.&lt;/p&gt;
+&lt;p&gt;For that second filter, you would set it up as&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&#39;last notified&#39; is more than 7 days ago
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, as it stands, that would exclude any tasks which have &lt;strong&gt;never&lt;/strong&gt; had a notification sent for them, i.e. where the last notified field is blank.&lt;/p&gt;
+&lt;p&gt;To include those, just tick &amp;lsquo;or is blank&amp;rsquo; after creating the filter.&lt;/p&gt;
 
       </description>
     </item>
