@@ -309,7 +309,7 @@ export default LoginScreen;
 &lt;ol&gt;
 &lt;li&gt;In the relation chooser view, create a calculation e.g. ‘my relation filter’ and set it to contain the contents of what you want to filter on e.g. some other field. The calculation can be hidden.&lt;/li&gt;
 &lt;li&gt;From the main table, create a new view. In that view, create a calculation with the same name and contents.&lt;/li&gt;
-&lt;li&gt;Add that a cross-reference field into the main table, utilising that view. In the field options, tick [&lt;em&gt;use as filter&lt;/em&gt;]&lt;/li&gt;
+&lt;li&gt;Add that a cross-reference field into the main table, utilising that view. In the field options, tick &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/#use-as-a-filter-for-relations&#34;&gt;use as filter&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;switching-a-field-from-one-type-to-another&#34;&gt;Switching a field from one type to another&lt;/h2&gt;
 &lt;p&gt;For example, converting a whole number field into a decimal number&lt;/p&gt;

@@ -331,6 +331,17 @@
 &lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#custom-filtering-when-choosing-a-relation&#34;&gt;Common build patters - custom filtering when using a relation&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;
 &lt;p&gt;Make the background of the referenced panel bright red - useful for showing warnings on screen.&lt;/p&gt;
+&lt;h2 id=&#34;display-of-fields&#34;&gt;Display of fields&lt;/h2&gt;
+&lt;p&gt;Controls whether field names are displayed in the panel as well as values. Hiding the field name can be useful if for example you wish to create a referenced panel showing a warning message. You may want to just show the contents of the warning. In other cases, you may wish to hide the field if it&amp;rsquo;s not necessary as it&amp;rsquo;s obvious what the values are without additional context.&lt;/p&gt;
+&lt;p&gt;This option actually controls two types of field name, that of the referenced panel itself and also those of fields displayed inside the panel.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panel-fields.png&#34; alt=&#34;Panel field names&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The options are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Content fieldnames - show the names of fields inside the panel, but not the fieldname of the panel itself (the default)&lt;/li&gt;
+&lt;li&gt;Panel fieldnames and content fieldnames - show all, as per the above screenshot&lt;/li&gt;
+&lt;li&gt;Panel fieldname, no content fieldnames&lt;/li&gt;
+&lt;li&gt;No fieldnames - show only the field values, useful particularly when there is only one value and when the context is obvious&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
