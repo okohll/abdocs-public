@@ -1263,6 +1263,14 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;&lt;code&gt;(({sale price} - {cost}) / {cost}) * 100&lt;/code&gt; (calculate the profit of an item as a percentage)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can reference not only other fields and calculations in the view, but also fields and calculations from any view or table joined to the view. The syntax for that is &lt;code&gt;{source name.field name}&lt;/code&gt;. Underneath the calculation editing space is a list of all fields that are available to be added, for reference. You can just copy and paste them into your calculation.&lt;/p&gt;
+&lt;h2 id=&#34;special-functions&#34;&gt;Special functions&lt;/h2&gt;
+&lt;p&gt;In the same way that you reference fields, you can also reference some special functions that output other information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ab_tile()&lt;/code&gt; - the name of the tile the user has open (not necessarily the same as the tile the workflow view is in)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ab_view()&lt;/code&gt; - the name of the view the user has open (again, not the name of the workflow view that is running)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ab_userid()&lt;/code&gt; - the currently logged in user, in the format &amp;lsquo;Forename Surname (username)&amp;rsquo; i.e. the same format used for logging record creation metadata etc.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ab_userroles()&lt;/code&gt; - a comma separated list of rolenames the logged in user belongs to&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;colouring&#34;&gt;Colouring&lt;/h2&gt;
 &lt;p&gt;Text calculations can be coloured in the same way as text fields. Underneath the calculation definition and words, tick &lt;em&gt;colour words&lt;/em&gt;. If a calculation outputs one of the following words, they cell in the view be coloured.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/word-colours.png&#34; alt=&#34;Word Colours&#34;&gt;&lt;/p&gt;
@@ -1419,6 +1427,9 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;Showa button which allows links to individual records to be shared between users using email. Note - recipients still need a login and relevant privileges to see the record.&lt;/p&gt;
 &lt;h2 id=&#34;when-a-records-created-run-this-workflow&#34;&gt;When a record&amp;rsquo;s created, run this workflow&lt;/h2&gt;
 &lt;p&gt;Run a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; immediately after the creation of a record. The workflow runs after any field default values have been set.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The workflow &amp;lsquo;knows&amp;rsquo; metadata such as which user is logged in, which tile is open etc., so if you want to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/#special-functions&#34;&gt;use those in a calculation&lt;/a&gt; in the workflow, you can do.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;run-this-workflow-whenever-each-record-is-viewed&#34;&gt;Run this workflow whenever each record is viewed&lt;/h3&gt;
 &lt;p&gt;As well as running the workflow on record creation, also run it whenever a user views a record in this table. Be aware this may have a performance impact for users, if the workflow is resource intensive and/or multi-step.&lt;/p&gt;
 &lt;h2 id=&#34;data-entry-from-external-sources&#34;&gt;Data entry from external sources&lt;/h2&gt;

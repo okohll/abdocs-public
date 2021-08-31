@@ -200,6 +200,14 @@
 &lt;li&gt;&lt;code&gt;(({sale price} - {cost}) / {cost}) * 100&lt;/code&gt; (calculate the profit of an item as a percentage)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can reference not only other fields and calculations in the view, but also fields and calculations from any view or table joined to the view. The syntax for that is &lt;code&gt;{source name.field name}&lt;/code&gt;. Underneath the calculation editing space is a list of all fields that are available to be added, for reference. You can just copy and paste them into your calculation.&lt;/p&gt;
+&lt;h2 id=&#34;special-functions&#34;&gt;Special functions&lt;/h2&gt;
+&lt;p&gt;In the same way that you reference fields, you can also reference some special functions that output other information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ab_tile()&lt;/code&gt; - the name of the tile the user has open (not necessarily the same as the tile the workflow view is in)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ab_view()&lt;/code&gt; - the name of the view the user has open (again, not the name of the workflow view that is running)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ab_userid()&lt;/code&gt; - the currently logged in user, in the format &amp;lsquo;Forename Surname (username)&amp;rsquo; i.e. the same format used for logging record creation metadata etc.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ab_userroles()&lt;/code&gt; - a comma separated list of rolenames the logged in user belongs to&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;colouring&#34;&gt;Colouring&lt;/h2&gt;
 &lt;p&gt;Text calculations can be coloured in the same way as text fields. Underneath the calculation definition and words, tick &lt;em&gt;colour words&lt;/em&gt;. If a calculation outputs one of the following words, they cell in the view be coloured.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/word-colours.png&#34; alt=&#34;Word Colours&#34;&gt;&lt;/p&gt;

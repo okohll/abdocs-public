@@ -2632,6 +2632,33 @@
   
   
   
+  <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowsadvancedworkflow-on-create-li">
+    
+      <a href="/docs/workflows/advanced/workflow-on-create/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsadvancedworkflow-on-create"><span class="">Running on record creation or load</span></a>
+    
+    
+  </li>
+
+          
+        
+          
+            
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowsadvancedworkflow-buttons-li">
     
       <a href="/docs/workflows/advanced/workflow-buttons/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsadvancedworkflow-buttons"><span class="">Workflows Buttons</span></a>
@@ -2831,6 +2858,7 @@
     <li><a href="#adding-a-calculation">Adding a calculation</a></li>
     <li><a href="#basic-examples">Basic examples</a></li>
     <li><a href="#referencing-fields">Referencing fields</a></li>
+    <li><a href="#special-functions">Special functions</a></li>
     <li><a href="#colouring">Colouring</a></li>
     <li><a href="#best-practices">Best practices</a>
       <ul>
@@ -2876,7 +2904,7 @@
         
           <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/architect/" data-taxonomy-term="architect"><span class="taxonomy-label">Architect</span><span class="taxonomy-count">60</span></a></li>
         
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/certified-architect/" data-taxonomy-term="certified-architect"><span class="taxonomy-label">Certified Architect</span><span class="taxonomy-count">15</span></a></li>
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/certified-architect/" data-taxonomy-term="certified-architect"><span class="taxonomy-label">Certified Architect</span><span class="taxonomy-count">16</span></a></li>
         
           <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/core-user/" data-taxonomy-term="core-user"><span class="taxonomy-label">Core User</span><span class="taxonomy-count">1</span></a></li>
         
@@ -2996,6 +3024,14 @@
 <li><code>(({sale price} - {cost}) / {cost}) * 100</code> (calculate the profit of an item as a percentage)</li>
 </ul>
 <p>You can reference not only other fields and calculations in the view, but also fields and calculations from any view or table joined to the view. The syntax for that is <code>{source name.field name}</code>. Underneath the calculation editing space is a list of all fields that are available to be added, for reference. You can just copy and paste them into your calculation.</p>
+<h2 id="special-functions">Special functions</h2>
+<p>In the same way that you reference fields, you can also reference some special functions that output other information:</p>
+<ul>
+<li><code>ab_tile()</code> - the name of the tile the user has open (not necessarily the same as the tile the workflow view is in)</li>
+<li><code>ab_view()</code> - the name of the view the user has open (again, not the name of the workflow view that is running)</li>
+<li><code>ab_userid()</code> - the currently logged in user, in the format &lsquo;Forename Surname (username)&rsquo; i.e. the same format used for logging record creation metadata etc.</li>
+<li><code>ab_userroles()</code> - a comma separated list of rolenames the logged in user belongs to</li>
+</ul>
 <h2 id="colouring">Colouring</h2>
 <p>Text calculations can be coloured in the same way as text fields. Underneath the calculation definition and words, tick <em>colour words</em>. If a calculation outputs one of the following words, they cell in the view be coloured.</p>
 <p><img src="/word-colours.png" alt="Word Colours"></p>
@@ -3224,6 +3260,8 @@
         
             
         
+            
+        
     
 </div>
 
@@ -3294,8 +3332,8 @@
 	<div class="text-muted mt-5 pt-3 border-top">
 
     Last modified
-    June 22, 2021
-    : <a  href="https://github.com/okohll/abdocs/commit/c49ef8f324b093200f9219cbe41d1246eae15ee3">Tag all docs pages (c49ef8f)</a>
+    August 31, 2021
+    : <a  href="https://github.com/okohll/abdocs/commit/992bf2708575faec7efece080c260d010672a00f">Calc special functions (992bf27)</a>
 
 </div>
 
