@@ -1804,6 +1804,8 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;h2 id=&#34;showing-charts&#34;&gt;Showing charts&lt;/h2&gt;
 &lt;p&gt;If the view used has one or more &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;charts&lt;/a&gt;, they will be shown instead of the data rows. The filtering acts exactly the same way, only data matching the containing table&amp;rsquo;s ID is used as the source of the chart data.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/embedded-chart.png&#34; alt=&#34;embedded chart&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;showing-images-and-documents&#34;&gt;Showing images and documents&lt;/h2&gt;
+&lt;p&gt;Images and documents can be included in referenced panels too. Just include a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/&#34;&gt;file field&lt;/a&gt; in the view used for the panel.&lt;/p&gt;
 &lt;h2 id=&#34;making-referenced-data-editable&#34;&gt;Making referenced data editable&lt;/h2&gt;
 &lt;p&gt;Optionally, referenced data can be made editable by clicking on it.&lt;/p&gt;
 &lt;p&gt;A view containing the containing table&amp;rsquo;s ID can be created one of two ways.&lt;/p&gt;
