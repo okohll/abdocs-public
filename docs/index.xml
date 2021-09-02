@@ -670,6 +670,9 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;Add the internal row ID for the company to the referenced field&amp;rsquo;s view. This should be the &lt;strong&gt;last&lt;/strong&gt; field in the view&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note that another way of setting a value on record creation is to use a workflow set to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#when-a-records-created-run-this-workflow &#34;&gt;run on record creation&lt;/a&gt;. If you need to set the value on record creation, using a workflow is the best way - it will seem slightly quicker to the user. However if you need to be able to wait a while before automatically setting the value of a field, perhaps until another field has been filled in, then using this referenced field option is the way to go.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;unique&#34;&gt;Unique&lt;/h2&gt;
 &lt;p&gt;Disallow any duplicate values from being entered. No records in the table can have the same value as each other.&lt;/p&gt;
 &lt;h2 id=&#34;change-causes-record-refresh&#34;&gt;Change causes record refresh&lt;/h2&gt;
