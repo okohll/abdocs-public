@@ -23,12 +23,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/fields/field-options/common-options/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2021-06-22T17:43:36+01:00" />
+<meta property="article:modified_time" content="2021-09-02T16:16:34+01:00" />
 
 <meta itemprop="name" content="Common Options">
 <meta itemprop="description" content="Options common to all fields of any type"><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2021-06-22T17:43:36+01:00" />
-<meta itemprop="wordCount" content="701">
+<meta itemprop="dateModified" content="2021-09-02T16:16:34+01:00" />
+<meta itemprop="wordCount" content="830">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Common Options"/>
 <meta name="twitter:description" content="Options common to all fields of any type"/>
@@ -3030,6 +3030,13 @@
 <p>Provides a way to calculate a default option for a field. Tick this option and place a <a href="/docs/fields/field-types/special-field-types/referenced-data/">referenced field</a> just before this field. The value of this field will be set from whatever value the referenced field outputs.</p>
 <p>If the referenced field&rsquo;s view has more than one field, the last one will be used, or if any have the same name as this field then that one will be.</p>
 <p>To have a value set only at a certain point in a process, this option can be combined with the <a href="#show-if-record-in-view">Show if record in view</a> option. When the field becomes visible, the value will be set.</p>
+<blockquote>
+<p>Setting the value of a relation field is a special case because you need to set both the actual relation value, which is the numeric ID of the record you wish to relate to, and the display value i.e. what the user should see. The way to do this is:</p>
+<ul>
+<li>Add a field or calculation with the same name as the display field for the relation. For example in a contact record, if you have a relation field &lsquo;Company&rsquo; with its display field set to &lsquo;Company Name&rsquo;, then you could create a calculation called Company Name and set it to output the name of the relevant company.</li>
+<li>Add the internal row ID for the company to the referenced field&rsquo;s view. This should be the <strong>last</strong> field in the view</li>
+</ul>
+</blockquote>
 <h2 id="unique">Unique</h2>
 <p>Disallow any duplicate values from being entered. No records in the table can have the same value as each other.</p>
 <h2 id="change-causes-record-refresh">Change causes record refresh</h2>
@@ -3105,8 +3112,8 @@
 	<div class="text-muted mt-5 pt-3 border-top">
 
     Last modified
-    June 22, 2021
-    : <a  href="https://github.com/okohll/abdocs/commit/c49ef8f324b093200f9219cbe41d1246eae15ee3">Tag all docs pages (c49ef8f)</a>
+    September 2, 2021
+    : <a  href="https://github.com/okohll/abdocs/commit/275fe9490e10167df1cfffde61eb8537f6a3d986">Setting the value of a relation field from a referenced field is a special case (275fe94)</a>
 
 </div>
 
