@@ -23,11 +23,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/security-and-compliance/policies/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2021-09-23T10:21:13+01:00" />
+<meta property="article:modified_time" content="2021-09-23T10:22:55+01:00" />
 
 <meta itemprop="name" content="Policies">
 <meta itemprop="description" content="Policies and further information"><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2021-09-23T10:21:13+01:00" />
+<meta itemprop="dateModified" content="2021-09-23T10:22:55+01:00" />
 <meta itemprop="wordCount" content="351">
 <meta itemprop="keywords" content="System Owner," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Policies"/>
@@ -2989,11 +2989,11 @@
 	<h2 id="backups">Backups</h2>
 <p>Data backups are performed across the stack of technology, from server down to databases and file storage.</p>
 <ol>
-<li>Database backups are taken daily and hosted in the European Union by Amazon. Older backups transition to <a href="https://aws.amazon.com/glacier/">Amazon Glacier</a> and are kept for 200 days - this allows a balance between the practical necessity of allowing rollbacks to a certain point in time, whilst not storing data for an unnecessarily long period, to comply with the GDPR.</li>
-</ol>
-<p>By policy, backups under 100 days old are read-only and un-deletable, so will always be available in the case of attacks like ransomware.</p>
-<p>These backups are also encrypted so that Amazon has no access to the data within then.</p>
-<ol start="2">
+<li>
+<p>Database backups are taken daily and hosted in the European Union by Amazon. Older backups transition to <a href="https://aws.amazon.com/glacier/">Amazon Glacier</a> and are kept for 200 days - this allows a balance between the practical necessity of allowing rollbacks to a certain point in time, whilst not storing data for an unnecessarily long period, to comply with the GDPR.
+By policy, backups under 100 days old are read-only and un-deletable, so will always be available in the case of attacks like ransomware.
+These backups are also encrypted so that Amazon has no access to the data within then.</p>
+</li>
 <li>
 <p>agileBase content (uploaded files, custom templates etc.) also have snapshots taken daily, kept for 200 days in a separate location. Live data in the UK is copied to a snapshot server in Frankfurt.</p>
 </li>
@@ -3084,7 +3084,7 @@
 
     Last modified
     September 23, 2021
-    : <a  href="https://github.com/okohll/abdocs/commit/aa4d84b22bb482c13b6f6a147fbd7fd1143249b5">Update backup info (aa4d84b)</a>
+    : <a  href="https://github.com/okohll/abdocs/commit/2b50337cccbe9d50ab729b5b3ed576de236e16e7">Update backup info (2b50337)</a>
 
 </div>
 
