@@ -112,13 +112,13 @@
 &lt;p&gt;Use the tab option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#populate-from-template&#34;&gt;Populate from template&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;de-duplicating-a-comma-separated-list&#34;&gt;De-duplicating a comma separated list&lt;/h2&gt;
 &lt;p&gt;Calculation template:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;array_to_string(
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;array_to_string(
   array(select distinct unnest(
     regexp_split_to_array(‘my,comma,separated,list’, &#39;,&#39;)
   ))
 ,&#39;,&#39;)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Example:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;array_to_string(
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;array_to_string(
   array(select distinct unnest(
     regexp_split_to_array(
       string_agg({b2.2) ingredient suppliers.ingredient supplier&#39;s countries of origin}, &#39;,&#39;)

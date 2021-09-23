@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.87.0" /><META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<meta name="generator" content="Hugo 0.88.1" /><META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -3007,7 +3007,7 @@
 <p>The <code>customui</code> property refers to the option to <a href="/docs/security-and-compliance/security-features/users/#use-the-custom-agilechilli-ui-rather-than-agilebases">apply a custom logo and login screen</a></p>
 <p>For each user, the <code>roles</code> parameter is a comma separated list of internal role IDs, or role names. In addition to the multi-tenanting role, they will also be assigned these roles. They could be e.g. &lsquo;manager&rsquo;, &lsquo;sales rep&rsquo; or &lsquo;accounts dept&rsquo;.</p>
 <p>For each user, <code>tiles</code> is an array of the tiles the user should see on screen when they log in.</p>
-<pre><code>{
+<pre tabindex="0"><code>{
   &quot;[multi-tenanting fieldname]&quot;: &quot;[multi-tenanting value]&quot;,
   &quot;users&quot;: [
     {
@@ -3029,11 +3029,11 @@
   ]
 }
 </code></pre><p>On a successful call, the JSON</p>
-<pre><code>{
+<pre tabindex="0"><code>{
 &quot;result&quot;: &quot;ok&quot;
 }
 </code></pre><p>will be returned, with a 200 HTTP status code. If there is an error,</p>
-<pre><code>{
+<pre tabindex="0"><code>{
 &quot;error&quot;: true,
 &quot;type&quot;: &quot;[class of error]&quot;,
 &quot;message&quot;: &quot;[error message]&quot;

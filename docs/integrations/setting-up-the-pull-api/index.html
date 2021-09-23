@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.87.0" /><META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<meta name="generator" content="Hugo 0.88.1" /><META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -3011,7 +3011,7 @@ Other parameters to control various options are detailed below.</p>
 <p>Finally, the API key provided needs to be submitted not as a HTTP request parameter, but as a header named ‘Authorization’. This is to reduce the change of it being cached or used in a browser string where it can be easily retained and read by unauthorised users.</p>
 <p>Here’s a complete example of making a request, using PHP in WordPress</p>
 <p>[php]</p>
-<pre><code>$url = 'http://appserver.gtportalbase.com/agileBase/Public.ab?get_report_json=true&amp;simple_format=true&amp;t=mytablecode&amp;r=myreportcode&amp;c=mycompanycode&amp;json_format=json';
+<pre tabindex="0"><code>$url = 'http://appserver.gtportalbase.com/agileBase/Public.ab?get_report_json=true&amp;simple_format=true&amp;t=mytablecode&amp;r=myreportcode&amp;c=mycompanycode&amp;json_format=json';
 
 $args = array('headers' =&gt; array( 'Authorization' =&gt; 'myauthorisationkey'));
 
@@ -3020,7 +3020,7 @@ $response = wp_remote_get( $url, $args );
 var_dump($response);
 </code></pre><p>[/php]</p>
 <p>Sample output would look like</p>
-<pre><code>[
+<pre tabindex="0"><code>[
   {
     forename: &quot;Oliver&quot;,
     surname: &quot;Kohll&quot;,

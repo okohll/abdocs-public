@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.87.0" /><META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<meta name="generator" content="Hugo 0.88.1" /><META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -2996,14 +2996,14 @@
 <li>Detect whether the login&rsquo;s successful. If not, the standard agileBase login failure page will be returned</li>
 <li>If successful, a HTML page will be returned containing three hidden input fields, <code>username</code>, <code>forename</code>, <code>surname</code> containing relevant details for the logged in user. If being called from a React Native Web View, the page will also post back messages to React using this JavaScript:</li>
 </ol>
-<pre><code>if (window.ReactNativeWebView) {
+<pre tabindex="0"><code>if (window.ReactNativeWebView) {
     window.ReactNativeWebView.postMessage(&quot;username:&quot; + username);
     window.ReactNativeWebView.postMessage(&quot;forename:&quot; + forename);
     window.ReactNativeWebView.postMessage(&quot;surname:&quot; + surname);
 }
 </code></pre><h2 id="example">Example</h2>
 <p>Here&rsquo;s a full example of a login.js page using the React Native Web View. NB this is an example taken from a full application, so you will need to modify it / strip it back to suit your needs, before it can be run.</p>
-<pre><code>//Node imports
+<pre tabindex="0"><code>//Node imports
 import React, {useEffect, useRef, useState} from 'react';
 import {View, StatusBar, Image, ImageBackground, ScrollView} from 'react-native';
 

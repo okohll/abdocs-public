@@ -369,14 +369,14 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;Detect whether the login&amp;rsquo;s successful. If not, the standard agileBase login failure page will be returned&lt;/li&gt;
 &lt;li&gt;If successful, a HTML page will be returned containing three hidden input fields, &lt;code&gt;username&lt;/code&gt;, &lt;code&gt;forename&lt;/code&gt;, &lt;code&gt;surname&lt;/code&gt; containing relevant details for the logged in user. If being called from a React Native Web View, the page will also post back messages to React using this JavaScript:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;if (window.ReactNativeWebView) {
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (window.ReactNativeWebView) {
     window.ReactNativeWebView.postMessage(&amp;quot;username:&amp;quot; + username);
     window.ReactNativeWebView.postMessage(&amp;quot;forename:&amp;quot; + forename);
     window.ReactNativeWebView.postMessage(&amp;quot;surname:&amp;quot; + surname);
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s a full example of a login.js page using the React Native Web View. NB this is an example taken from a full application, so you will need to modify it / strip it back to suit your needs, before it can be run.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;//Node imports
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;//Node imports
 import React, {useEffect, useRef, useState} from &#39;react&#39;;
 import {View, StatusBar, Image, ImageBackground, ScrollView} from &#39;react-native&#39;;
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.87.0" /><META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<meta name="generator" content="Hugo 0.88.1" /><META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -3043,13 +3043,13 @@
 <p>Use the tab option <a href="/docs/tables/hierarchy-navigation/tabs/#populate-from-template">Populate from template</a>.</p>
 <h2 id="de-duplicating-a-comma-separated-list">De-duplicating a comma separated list</h2>
 <p>Calculation template:</p>
-<pre><code>array_to_string(
+<pre tabindex="0"><code>array_to_string(
   array(select distinct unnest(
     regexp_split_to_array(‘my,comma,separated,list’, ',')
   ))
 ,',')
 </code></pre><p>Example:</p>
-<pre><code>array_to_string(
+<pre tabindex="0"><code>array_to_string(
   array(select distinct unnest(
     regexp_split_to_array(
       string_agg({b2.2) ingredient suppliers.ingredient supplier's countries of origin}, ',')

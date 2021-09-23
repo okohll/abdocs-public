@@ -129,8 +129,19 @@
         
         &lt;h2 id=&#34;backups&#34;&gt;Backups&lt;/h2&gt;
 &lt;p&gt;Data backups are performed across the stack of technology, from server down to databases and file storage.&lt;/p&gt;
-&lt;p&gt;Database and agileBase content (uploaded files, custom templates etc.) backups are taken daily and hosted in the European Union by Amazon. Older backups transition to &lt;a href=&#34;https://aws.amazon.com/glacier/&#34;&gt;Amazon Glacier&lt;/a&gt; and are kept for 200 days - this allows a balance between the practical necessity of allowing rollbacks to a certain point in time, whilst not storing data for an unnecessarily long period, to comply with the GDPR.&lt;/p&gt;
-&lt;p&gt;These backups are encrypted so that Amazon has no access to the data within then.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Database backups are taken daily and hosted in the European Union by Amazon. Older backups transition to &lt;a href=&#34;https://aws.amazon.com/glacier/&#34;&gt;Amazon Glacier&lt;/a&gt; and are kept for 200 days - this allows a balance between the practical necessity of allowing rollbacks to a certain point in time, whilst not storing data for an unnecessarily long period, to comply with the GDPR.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;By policy, backups under 100 days old are read-only and un-deletable, so will always be available in the case of attacks like ransomware.&lt;/p&gt;
+&lt;p&gt;These backups are also encrypted so that Amazon has no access to the data within then.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;agileBase content (uploaded files, custom templates etc.) also have snapshots taken daily, kept for 200 days in a separate location. Live data in the UK is copied to a snapshot server in Frankfurt.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In addition to these content-only backups, snapshots of the totality of each key server in the infrastructure (including configuration), are run daily using the Linode backup service &lt;a href=&#34;https://www.linode.com/products/backups/&#34;&gt;https://www.linode.com/products/backups/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;The backup and recovery process is monitored and tested regularly.&lt;/p&gt;
 &lt;h3 id=&#34;retrieval&#34;&gt;Retrieval&lt;/h3&gt;
 &lt;p&gt;There may be a charge for retrieval of customer data from backup, to cover our costs. The data will be restored to a separate instance of agileBase available at a different URL, which a customer can look at to compare data. If necessary, data can then be extracted from one and loaded into the other.&lt;/p&gt;

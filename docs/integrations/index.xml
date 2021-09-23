@@ -139,7 +139,7 @@
 &lt;p&gt;The response to the successful request will be a JSON representation of the complete record created or updated, after the update has taken place. An object of key-value pairs is returned, the key being the internal field name.&lt;/p&gt;
 &lt;p&gt;The row ID is returned with the key &lt;code&gt;rowId&lt;/code&gt; - this is often useful to identify a record when performing multiple actions. For example, when a new record is created, the calling system may want to store its row ID in order to be able to make future updates to the same record.&lt;/p&gt;
 &lt;p&gt;If there is an error, an appropriate HTTP response code is returned (see below) along with JSON explaining the error, containing three keys. For example if an incorrect Authorization header is supplied, the response may be&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
   &amp;quot;error&amp;quot;: true,
   &amp;quot;type&amp;quot;: &amp;quot;DisallowedException&amp;quot;,
   &amp;quot;message&amp;quot;: &amp;quot;User public api is not allowed to edit delete data in table my table. An administrator can set up privileges so this can be allowed&amp;quot;
@@ -231,7 +231,7 @@ Other parameters to control various options are detailed below.&lt;/p&gt;
 &lt;p&gt;Finally, the API key provided needs to be submitted not as a HTTP request parameter, but as a header named ‘Authorization’. This is to reduce the change of it being cached or used in a browser string where it can be easily retained and read by unauthorised users.&lt;/p&gt;
 &lt;p&gt;Here’s a complete example of making a request, using PHP in WordPress&lt;/p&gt;
 &lt;p&gt;[php]&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$url = &#39;http://appserver.gtportalbase.com/agileBase/Public.ab?get_report_json=true&amp;amp;simple_format=true&amp;amp;t=mytablecode&amp;amp;r=myreportcode&amp;amp;c=mycompanycode&amp;amp;json_format=json&#39;;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$url = &#39;http://appserver.gtportalbase.com/agileBase/Public.ab?get_report_json=true&amp;amp;simple_format=true&amp;amp;t=mytablecode&amp;amp;r=myreportcode&amp;amp;c=mycompanycode&amp;amp;json_format=json&#39;;
 
 $args = array(&#39;headers&#39; =&amp;gt; array( &#39;Authorization&#39; =&amp;gt; &#39;myauthorisationkey&#39;));
 
@@ -240,7 +240,7 @@ $response = wp_remote_get( $url, $args );
 var_dump($response);
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;[/php]&lt;/p&gt;
 &lt;p&gt;Sample output would look like&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;[
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[
   {
     forename: &amp;quot;Oliver&amp;quot;,
     surname: &amp;quot;Kohll&amp;quot;,
@@ -395,7 +395,7 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-web.png&#34; alt=&#34;Power BI - web&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;step-4-enter-the-sync-details-provided-by-ab-into-power-bi&#34;&gt;Step 4: enter the sync details provided by AB into Power BI&lt;/h3&gt;
 &lt;p&gt;Select the advanced option and fill in the following URL parts provided from the AB view setup in the first point. These are the parameters to add:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;?get_report_json=true
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;?get_report_json=true
 &amp;amp;c=[your ‘c’ value here from AB]
 &amp;amp;t=[your ‘t’ value here from AB]
 &amp;amp;r=[your ‘r’ value here from AB]
@@ -562,7 +562,7 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;p&gt;The &lt;code&gt;customui&lt;/code&gt; property refers to the option to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#use-the-custom-agilechilli-ui-rather-than-agilebases&#34;&gt;apply a custom logo and login screen&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;For each user, the &lt;code&gt;roles&lt;/code&gt; parameter is a comma separated list of internal role IDs, or role names. In addition to the multi-tenanting role, they will also be assigned these roles. They could be e.g. &amp;lsquo;manager&amp;rsquo;, &amp;lsquo;sales rep&amp;rsquo; or &amp;lsquo;accounts dept&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;For each user, &lt;code&gt;tiles&lt;/code&gt; is an array of the tiles the user should see on screen when they log in.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
   &amp;quot;[multi-tenanting fieldname]&amp;quot;: &amp;quot;[multi-tenanting value]&amp;quot;,
   &amp;quot;users&amp;quot;: [
     {
@@ -584,11 +584,11 @@ With simple_format=false, a more complex but more robust format it used. Rather 
   ]
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On a successful call, the JSON&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
 &amp;quot;result&amp;quot;: &amp;quot;ok&amp;quot;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;will be returned, with a 200 HTTP status code. If there is an error,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
 &amp;quot;error&amp;quot;: true,
 &amp;quot;type&amp;quot;: &amp;quot;[class of error]&amp;quot;,
 &amp;quot;message&amp;quot;: &amp;quot;[error message]&amp;quot;

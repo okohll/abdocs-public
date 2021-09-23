@@ -176,8 +176,19 @@
         
         &lt;h2 id=&#34;backups&#34;&gt;Backups&lt;/h2&gt;
 &lt;p&gt;Data backups are performed across the stack of technology, from server down to databases and file storage.&lt;/p&gt;
-&lt;p&gt;Database and agileBase content (uploaded files, custom templates etc.) backups are taken daily and hosted in the European Union by Amazon. Older backups transition to &lt;a href=&#34;https://aws.amazon.com/glacier/&#34;&gt;Amazon Glacier&lt;/a&gt; and are kept for 200 days - this allows a balance between the practical necessity of allowing rollbacks to a certain point in time, whilst not storing data for an unnecessarily long period, to comply with the GDPR.&lt;/p&gt;
-&lt;p&gt;These backups are encrypted so that Amazon has no access to the data within then.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Database backups are taken daily and hosted in the European Union by Amazon. Older backups transition to &lt;a href=&#34;https://aws.amazon.com/glacier/&#34;&gt;Amazon Glacier&lt;/a&gt; and are kept for 200 days - this allows a balance between the practical necessity of allowing rollbacks to a certain point in time, whilst not storing data for an unnecessarily long period, to comply with the GDPR.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;By policy, backups under 100 days old are read-only and un-deletable, so will always be available in the case of attacks like ransomware.&lt;/p&gt;
+&lt;p&gt;These backups are also encrypted so that Amazon has no access to the data within then.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;agileBase content (uploaded files, custom templates etc.) also have snapshots taken daily, kept for 200 days in a separate location. Live data in the UK is copied to a snapshot server in Frankfurt.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;In addition to these content-only backups, snapshots of the totality of each key server in the infrastructure (including configuration), are run daily using the Linode backup service &lt;a href=&#34;https://www.linode.com/products/backups/&#34;&gt;https://www.linode.com/products/backups/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;The backup and recovery process is monitored and tested regularly.&lt;/p&gt;
 &lt;h3 id=&#34;retrieval&#34;&gt;Retrieval&lt;/h3&gt;
 &lt;p&gt;There may be a charge for retrieval of customer data from backup, to cover our costs. The data will be restored to a separate instance of agileBase available at a different URL, which a customer can look at to compare data. If necessary, data can then be extracted from one and loaded into the other.&lt;/p&gt;
@@ -857,14 +868,14 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;Detect whether the login&amp;rsquo;s successful. If not, the standard agileBase login failure page will be returned&lt;/li&gt;
 &lt;li&gt;If successful, a HTML page will be returned containing three hidden input fields, &lt;code&gt;username&lt;/code&gt;, &lt;code&gt;forename&lt;/code&gt;, &lt;code&gt;surname&lt;/code&gt; containing relevant details for the logged in user. If being called from a React Native Web View, the page will also post back messages to React using this JavaScript:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;if (window.ReactNativeWebView) {
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (window.ReactNativeWebView) {
     window.ReactNativeWebView.postMessage(&amp;quot;username:&amp;quot; + username);
     window.ReactNativeWebView.postMessage(&amp;quot;forename:&amp;quot; + forename);
     window.ReactNativeWebView.postMessage(&amp;quot;surname:&amp;quot; + surname);
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s a full example of a login.js page using the React Native Web View. NB this is an example taken from a full application, so you will need to modify it / strip it back to suit your needs, before it can be run.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;//Node imports
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;//Node imports
 import React, {useEffect, useRef, useState} from &#39;react&#39;;
 import {View, StatusBar, Image, ImageBackground, ScrollView} from &#39;react-native&#39;;
 
@@ -1530,7 +1541,7 @@ export default LoginScreen;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;case&#34;&gt;Case&lt;/h4&gt;
 &lt;p&gt;A case statement can be used to add &amp;lsquo;if/then/else&amp;rsquo; logic. An example is&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;case
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;case
   when {due date} is null then &#39;unknown&#39;
   when {due date} &amp;lt; now() then &#39;overdue&#39;
   when {due date} &amp;lt; now() + interval &#39;7 days&#39; then &#39;due soon&#39;
@@ -1560,7 +1571,7 @@ end
 &lt;p&gt;The only difference from standard to be aware of is that when entering a regex into a calculation in agileBase, you must use two backslashes instead of one.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;like&lt;/code&gt; compares two elements of text and &lt;code&gt;ilike&lt;/code&gt; does so case-insensitively. A percentage sign means &amp;lsquo;match any text&amp;rsquo;. So for example:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;case
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;case
   when {postcode} ilike &#39;bs%&#39; then &#39;Bristol&#39;
   else &#39;elsewhere&#39;
 end
