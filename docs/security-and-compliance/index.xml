@@ -45,7 +45,7 @@ By policy, backups under 100 days old are read-only and un-deletable, so will al
 These backups are also encrypted so that Amazon has no access to the data within then.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;agileBase content (uploaded files, custom templates etc.) also have snapshots taken daily, kept for 200 days in a separate location. Live data in the UK is copied to a snapshot server in Frankfurt.&lt;/p&gt;
+&lt;p&gt;agileBase content (uploaded files, custom templates etc.) also have snapshots taken daily, kept for 200 days in a separate EU location.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;In addition to these content-only backups, snapshots of the totality of each key server in the infrastructure (including configuration), are run daily using the Linode backup service &lt;a href=&#34;https://www.linode.com/products/backups/&#34;&gt;https://www.linode.com/products/backups/&lt;/a&gt;&lt;/p&gt;
