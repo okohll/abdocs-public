@@ -370,6 +370,64 @@ With simple_format=false, a more complex but more robust format it used. Rather 
     </item>
     
     <item>
+      <title>Docs: Multi-step API worked example</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/complex-example/</link>
+      <pubDate>Fri, 29 Oct 2021 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/complex-example/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Here&amp;rsquo;s a great example of using an API to provide business benefits, that we use ourselves here at agileChilli.&lt;/p&gt;
+&lt;p&gt;The scenario is that we want to be able to look up and store multiple years worth of financial data for any UK company we hold in our CRM system. It can be useful to be able to have this data to hand to aid sales, when considering partnering or when doing competitor/market analysis for example - see our &lt;a href=&#34;&#34;&gt;CEO&amp;rsquo;s blog post&lt;/a&gt; on the subject.&lt;/p&gt;
+&lt;p&gt;Firstly, we need to find a provider of this data who have an API - we use &lt;a href=&#34;https://www.endole.co.uk/&#34;&gt;Endole&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then we need to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;create a table&lt;/a&gt; to store the figures. We created a &amp;lsquo;financial data&amp;rsquo; table containing the following fields:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/financial-fields.png&#34; alt=&#34;financial fields&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The first field is a link to the organisation we&amp;rsquo;re looking up financial data about.&lt;/p&gt;
+&lt;p&gt;The second is a text field which stores the date that figures are reported for. The reason that it&amp;rsquo;s a text field is that our service, Endole, uses the format YYYYMM to represent the date, e.g. 202110 for October 2021. agileBase doesn&amp;rsquo;t recognise this date format for incoming data via the API but not to worry, we can save it as text, then create a workflow in agileBase to transform it into an actual date as the data comes in. That&amp;rsquo;s the next field and we&amp;rsquo;ll cover the process below. This being a real example, we get to show this type of thing, which would be left out of a more theoretical case.&lt;/p&gt;
+&lt;p&gt;The bulk of the remaining fields are to store the particular figures we&amp;rsquo;re most interested in and wish to receive from Endole.&lt;/p&gt;
+&lt;p&gt;Once that&amp;rsquo;s there, we can add the financial data &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/&#34;&gt;as a tab&lt;/a&gt; under the organisation.&lt;/p&gt;
+&lt;p&gt;So now we have the data structure fully set up in agileBase, but no figures to see. Let&amp;rsquo;s get on and set up the integration with some API work.&lt;/p&gt;
+&lt;p&gt;This integration will comprise a three step process.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Send the company number for the organisation we&amp;rsquo;re interested in to Endole&lt;/li&gt;
+&lt;li&gt;Use that number to look up the financial data for the organisation&lt;/li&gt;
+&lt;li&gt;Finally, send the information back into our financial data table, one record per year&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;** Setting up the API calls&lt;/p&gt;
+&lt;p&gt;The integration is relatively easy to set up using &lt;a href=&#34;https://zapier.com&#34;&gt;Zapier&lt;/a&gt;. There&amp;rsquo;s one Zapier action for each step in the process:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/endole-zapier-overview.png&#34; alt=&#34;Endole Zapier Overview&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Each step is created using Zapier&amp;rsquo;s Webhooks integration - this is a flexible, general purpose integration suitable for communicating with many different companies&#39; APIs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt; is what Zapier calls a &amp;lsquo;catch hook&amp;rsquo;. It&amp;rsquo;s a single purpose URL they will generate to allow you to push data to them. Once that step is created, we can create a matching workflow view in agileBase which contains the company number we wish to query Endole for. We created a simple view with just one field, the company number. We then turned on a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/&#34;&gt;PUSH API&lt;/a&gt; using the URL Zapier provided. That&amp;rsquo;s as simple as pasting in the URL into the provided space in the agileBase view:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/endole-push-url.png&#34; alt=&#34;Endole Zapier push link&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt; in Zapier queries Endole with that company number. Here&amp;rsquo;s the meat of the process:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/endole-zapier-query.png&#34; alt=&#34;Endole Zapier query&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Endole will come back with the figures for that company and in &lt;strong&gt;step 3&lt;/strong&gt; we can send them to agileBase as a new &amp;lsquo;financial data&amp;rsquo; record attached to the organisation, using a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/&#34;&gt;POST API&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/endole-zapier-details.png&#34; alt=&#34;Endole Zapier details&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Note that the value for the Organisation relation field we mentioned in the start is given as an ID. This is the internal ID of the organisation which the company number belongs to. Zapier can find this as agileBase includes it in every push or pull API request as the &amp;lsquo;id&amp;rsquo; parameter, whether we ask for it or not. It can be really useful for linking data in different tables together, as we&amp;rsquo;re doing here.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;You may be thinking that this data looks like it represents one year&#39;s worth of financial data, but we want a full history covering multiple years. How do we get that?
+In short, we don&#39;t need to worry about it. Endole provides the data to Zapier as an array, one entry for each year. Zapier transparenty handles that, sending one PUSH request to agileBase per entry.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now we have everything we need regarding the integration! We could set the workflow to run in the background, so whenever a new organisation with a company number is entered into the CRM, the integration goes off and finds the financial data. However, because we have many thousands of organistions in our database, we want to be a bit more judicious about our use. Each API request to Endole costs only a small amount, but costs could add up if we were to automatically run it for every organisation, particularly if we include historical records.&lt;/p&gt;
+&lt;p&gt;So in this case, we&amp;rsquo;ll add a &amp;lsquo;retrieve financials&amp;rsquo; &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;workflow button&lt;/a&gt; to the organisation screen to kick off the workflow on demand. It looks like this on the screen:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/retrieve-financials.png&#34; alt=&#34;Retrieve Financials&#34;&gt;&lt;/p&gt;
+&lt;p&gt;** Final tweaks&lt;/p&gt;
+&lt;p&gt;Above, we mentioned creating a workflow to transform the YYYYMM date format (stored as text) into a proper date field. To do this we create a [workflow](/docs/workflows/altering-data/ which will update our Date field. It contains a calculation called Date with the definition&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;to_date(
+    {1.4) financial data.date representation},
+    &#39;YYYYMM&#39;
+  )
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The workflow can be set to run whenever a financial details record is created, i.e. as data comes in, using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-on-create/&#34;&gt;run workflow on record creation&lt;/a&gt; option of a table.&lt;/p&gt;
+&lt;p&gt;** Charting the data&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s one more thing we can do to add some polish. When opening the financial details tab of the record, we can show a chart of the data for that organisation.&lt;/p&gt;
+&lt;p&gt;To do that, just add a chart to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#tab-view&#34;&gt;tab view&lt;/a&gt;, with each metric you&amp;rsquo;re interested in. When the tab&amp;rsquo;s opened, the chart will automatically be filtered to show just the details for the organisation on screen.&lt;/p&gt;
+&lt;p&gt;Once complete, the screen will look something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/endole-example.png&#34; alt=&#34;Endole example&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: PULL API worked example - Power BI</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/pull-example-power-bi/</link>
       <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
