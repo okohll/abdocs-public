@@ -370,6 +370,55 @@ With simple_format=false, a more complex but more robust format it used. Rather 
     </item>
     
     <item>
+      <title>Docs: PULL API worked example - Power BI</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/pull-example-power-bi/</link>
+      <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/pull-example-power-bi/</guid>
+      <description>
+        
+        
+        &lt;p&gt;agileBase has built in charting which is great for quickly analysing and answering questions about data in your system, but specialist business intelligence apps can be particularly useful if you want to join data from multiple sources (perhaps an accounting package or marketing automation system too) in one place.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi.gif&#34; alt=&#34;Power BI&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;setting-up&#34;&gt;Setting up&lt;/h2&gt;
+&lt;p&gt;The below may look like lots of steps but that’s just because we’ve split it up into very small, simple parts to make it as easy as possible to follow.&lt;/p&gt;
+&lt;h3 id=&#34;step-1-set-up-a-view-in-agilebase-to-use-as-a-data-source&#34;&gt;Step 1: set up a view in agileBase to use as a data source&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Use a view bringing in as many possible variables into one place. For example, if you want to analyse sales, you might include totals by customer, product, salesperson, region, category, price banding and date. That way you have plenty of dimensions to analyse in multiple ways later on.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;step-2-turn-on-the-api-for-the-view-to-make-data-available&#34;&gt;Step 2: turn on the API for the view to make data available&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-ab.png&#34; alt=&#34;Power BI - aB view setup&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In the view&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab, select the &lt;em&gt;send&lt;/em&gt; panel.&lt;/p&gt;
+&lt;p&gt;Select &lt;em&gt;send data to a third party system using the API&lt;/em&gt; in the dropdown list and make sure you tick &lt;em&gt;allow access from third party software using an API key&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Refresh the view to show your API key needed for the next step.&lt;/p&gt;
+&lt;h3 id=&#34;step-3-within-power-bi-press-_get-data_-and-select-_web_-as-the-data-source&#34;&gt;Step 3: within Power BI press &lt;em&gt;get data&lt;/em&gt; and select &lt;em&gt;Web&lt;/em&gt; as the data source.&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-web.png&#34; alt=&#34;Power BI - web&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-4-enter-the-sync-details-provided-by-ab-into-power-bi&#34;&gt;Step 4: enter the sync details provided by AB into Power BI&lt;/h3&gt;
+&lt;p&gt;Select the advanced option and fill in the following URL parts provided from the AB view setup in the first point. These are the parameters to add:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;?get_report_json=true
+&amp;amp;c=[your ‘c’ value here from AB]
+&amp;amp;t=[your ‘t’ value here from AB]
+&amp;amp;r=[your ‘r’ value here from AB]
+&amp;amp;json_format=json
+&amp;amp;simple_format=true
+&amp;amp;row_limit=100000 [or however many rows you need]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-web-entry.png&#34; alt=&#34;Power BI - web setup&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-5-enter-the-authorisation-key-into-power-bi&#34;&gt;Step 5: enter the authorisation key into Power BI&lt;/h3&gt;
+&lt;p&gt;Select &lt;em&gt;authorization&lt;/em&gt; from the dropdown options under ‘HTTP request hear parameters (optional)’ and press &lt;em&gt;OK&lt;/em&gt;. The authorisation key is provided in the agileBase view.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-auth.png&#34; alt=&#34;Power BI - auth setup&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-6-make-data-visible-in-power-bi&#34;&gt;Step 6: make data visible in Power BI&lt;/h3&gt;
+&lt;p&gt;Once the data has pulled through and the connection is set up you will need to convert the dataset into a table.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-convert-to-table.png&#34; alt=&#34;Power BI - convert to table&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-7-expand-the-colums&#34;&gt;Step 7: expand the colums&lt;/h3&gt;
+&lt;p&gt;Once converted to a table you will then need to expand the data into columns and your view will be presented to manipulate.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-expand.png&#34; alt=&#34;Power BI - expand&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-8-create-your-visualisations&#34;&gt;Step 8: create your visualisations!&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-visualisations.png&#34; alt=&#34;Power BI - visualisations&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Multi-step API worked example</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/complex-example/</link>
       <pubDate>Fri, 29 Oct 2021 16:40:00 +0100</pubDate>
@@ -423,55 +472,6 @@ In short, we don&#39;t need to worry about it. Endole provides the data to Zapie
 &lt;p&gt;To do that, just add a chart to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#tab-view&#34;&gt;tab view&lt;/a&gt;, with each metric you&amp;rsquo;re interested in. When the tab&amp;rsquo;s opened, the chart will automatically be filtered to show just the details for the organisation on screen.&lt;/p&gt;
 &lt;p&gt;Once complete, the screen will look something like this:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/endole-example.png&#34; alt=&#34;Endole example&#34;&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: PULL API worked example - Power BI</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/pull-example-power-bi/</link>
-      <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/integrations/pull-example-power-bi/</guid>
-      <description>
-        
-        
-        &lt;p&gt;agileBase has built in charting which is great for quickly analysing and answering questions about data in your system, but specialist business intelligence apps can be particularly useful if you want to join data from multiple sources (perhaps an accounting package or marketing automation system too) in one place.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi.gif&#34; alt=&#34;Power BI&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;setting-up&#34;&gt;Setting up&lt;/h2&gt;
-&lt;p&gt;The below may look like lots of steps but that’s just because we’ve split it up into very small, simple parts to make it as easy as possible to follow.&lt;/p&gt;
-&lt;h3 id=&#34;step-1-set-up-a-view-in-agilebase-to-use-as-a-data-source&#34;&gt;Step 1: set up a view in agileBase to use as a data source&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Use a view bringing in as many possible variables into one place. For example, if you want to analyse sales, you might include totals by customer, product, salesperson, region, category, price banding and date. That way you have plenty of dimensions to analyse in multiple ways later on.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;step-2-turn-on-the-api-for-the-view-to-make-data-available&#34;&gt;Step 2: turn on the API for the view to make data available&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-ab.png&#34; alt=&#34;Power BI - aB view setup&#34;&gt;&lt;/p&gt;
-&lt;p&gt;In the view&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab, select the &lt;em&gt;send&lt;/em&gt; panel.&lt;/p&gt;
-&lt;p&gt;Select &lt;em&gt;send data to a third party system using the API&lt;/em&gt; in the dropdown list and make sure you tick &lt;em&gt;allow access from third party software using an API key&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Refresh the view to show your API key needed for the next step.&lt;/p&gt;
-&lt;h3 id=&#34;step-3-within-power-bi-press-_get-data_-and-select-_web_-as-the-data-source&#34;&gt;Step 3: within Power BI press &lt;em&gt;get data&lt;/em&gt; and select &lt;em&gt;Web&lt;/em&gt; as the data source.&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-web.png&#34; alt=&#34;Power BI - web&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;step-4-enter-the-sync-details-provided-by-ab-into-power-bi&#34;&gt;Step 4: enter the sync details provided by AB into Power BI&lt;/h3&gt;
-&lt;p&gt;Select the advanced option and fill in the following URL parts provided from the AB view setup in the first point. These are the parameters to add:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;?get_report_json=true
-&amp;amp;c=[your ‘c’ value here from AB]
-&amp;amp;t=[your ‘t’ value here from AB]
-&amp;amp;r=[your ‘r’ value here from AB]
-&amp;amp;json_format=json
-&amp;amp;simple_format=true
-&amp;amp;row_limit=100000 [or however many rows you need]
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-web-entry.png&#34; alt=&#34;Power BI - web setup&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;step-5-enter-the-authorisation-key-into-power-bi&#34;&gt;Step 5: enter the authorisation key into Power BI&lt;/h3&gt;
-&lt;p&gt;Select &lt;em&gt;authorization&lt;/em&gt; from the dropdown options under ‘HTTP request hear parameters (optional)’ and press &lt;em&gt;OK&lt;/em&gt;. The authorisation key is provided in the agileBase view.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-auth.png&#34; alt=&#34;Power BI - auth setup&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;step-6-make-data-visible-in-power-bi&#34;&gt;Step 6: make data visible in Power BI&lt;/h3&gt;
-&lt;p&gt;Once the data has pulled through and the connection is set up you will need to convert the dataset into a table.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-convert-to-table.png&#34; alt=&#34;Power BI - convert to table&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;step-7-expand-the-colums&#34;&gt;Step 7: expand the colums&lt;/h3&gt;
-&lt;p&gt;Once converted to a table you will then need to expand the data into columns and your view will be presented to manipulate.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-expand.png&#34; alt=&#34;Power BI - expand&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;step-8-create-your-visualisations&#34;&gt;Step 8: create your visualisations!&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/powerbi-visualisations.png&#34; alt=&#34;Power BI - visualisations&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
