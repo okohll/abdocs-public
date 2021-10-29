@@ -443,7 +443,7 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;li&gt;Use that number to look up the financial data for the organisation&lt;/li&gt;
 &lt;li&gt;Finally, send the information back into our financial data table, one record per year&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;** Setting up the API calls&lt;/p&gt;
+&lt;h2 id=&#34;setting-up-the-api-calls&#34;&gt;Setting up the API calls&lt;/h2&gt;
 &lt;p&gt;The integration is relatively easy to set up using &lt;a href=&#34;https://zapier.com&#34;&gt;Zapier&lt;/a&gt;. There&amp;rsquo;s one Zapier action for each step in the process:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/endole-zapier-overview.png&#34; alt=&#34;Endole Zapier Overview&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Each step is created using Zapier&amp;rsquo;s Webhooks integration - this is a flexible, general purpose integration suitable for communicating with many different companies&#39; APIs.&lt;/p&gt;
@@ -460,14 +460,14 @@ In short, we don&#39;t need to worry about it. Endole provides the data to Zapie
 &lt;p&gt;Now we have everything we need regarding the integration! We could set the workflow to run in the background, so whenever a new organisation with a company number is entered into the CRM, the integration goes off and finds the financial data. However, because we have many thousands of organistions in our database, we want to be a bit more judicious about our use. Each API request to Endole costs only a small amount, but costs could add up if we were to automatically run it for every organisation, particularly if we include historical records.&lt;/p&gt;
 &lt;p&gt;So in this case, we&amp;rsquo;ll add a &amp;lsquo;retrieve financials&amp;rsquo; &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;workflow button&lt;/a&gt; to the organisation screen to kick off the workflow on demand. It looks like this on the screen:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/retrieve-financials.png&#34; alt=&#34;Retrieve Financials&#34;&gt;&lt;/p&gt;
-&lt;p&gt;** Final tweaks&lt;/p&gt;
+&lt;h2 id=&#34;final-tweaks&#34;&gt;Final tweaks&lt;/h2&gt;
 &lt;p&gt;Above, we mentioned creating a workflow to transform the YYYYMM date format (stored as text) into a proper date field. To do this we create a [workflow](/docs/workflows/altering-data/ which will update our Date field. It contains a calculation called Date with the definition&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;to_date(
     {1.4) financial data.date representation},
     &#39;YYYYMM&#39;
   )
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The workflow can be set to run whenever a financial details record is created, i.e. as data comes in, using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-on-create/&#34;&gt;run workflow on record creation&lt;/a&gt; option of a table.&lt;/p&gt;
-&lt;p&gt;** Charting the data&lt;/p&gt;
+&lt;h2 id=&#34;charting-the-data&#34;&gt;Charting the data&lt;/h2&gt;
 &lt;p&gt;There&amp;rsquo;s one more thing we can do to add some polish. When opening the financial details tab of the record, we can show a chart of the data for that organisation.&lt;/p&gt;
 &lt;p&gt;To do that, just add a chart to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#tab-view&#34;&gt;tab view&lt;/a&gt;, with each metric you&amp;rsquo;re interested in. When the tab&amp;rsquo;s opened, the chart will automatically be filtered to show just the details for the organisation on screen.&lt;/p&gt;
 &lt;p&gt;Once complete, the screen will look something like this:&lt;/p&gt;

@@ -27,12 +27,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/integrations/complex-example/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2021-10-29T16:40:00+01:00" />
-<meta property="article:modified_time" content="2021-10-29T19:30:21+01:00" />
+<meta property="article:modified_time" content="2021-10-29T19:31:36+01:00" />
 
 <meta itemprop="name" content="Multi-step API worked example">
 <meta itemprop="description" content="A more complex API example showing a real world integration consisting of multiple steps"><meta itemprop="datePublished" content="2021-10-29T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2021-10-29T19:30:21+01:00" />
-<meta itemprop="wordCount" content="981">
+<meta itemprop="dateModified" content="2021-10-29T19:31:36+01:00" />
+<meta itemprop="wordCount" content="978">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Multi-step API worked example"/>
 <meta name="twitter:description" content="A more complex API example showing a real world integration consisting of multiple steps"/>
@@ -447,6 +447,14 @@ if (!doNotTrack) {
             
 
 
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#setting-up-the-api-calls">Setting up the API calls</a></li>
+    <li><a href="#final-tweaks">Final tweaks</a></li>
+    <li><a href="#charting-the-data">Charting the data</a></li>
+  </ul>
+</nav></div>
+
 
 
             
@@ -579,7 +587,7 @@ if (!doNotTrack) {
 <li>Use that number to look up the financial data for the organisation</li>
 <li>Finally, send the information back into our financial data table, one record per year</li>
 </ol>
-<p>** Setting up the API calls</p>
+<h2 id="setting-up-the-api-calls">Setting up the API calls</h2>
 <p>The integration is relatively easy to set up using <a href="https://zapier.com">Zapier</a>. There&rsquo;s one Zapier action for each step in the process:</p>
 <p><img src="/endole-zapier-overview.png" alt="Endole Zapier Overview"></p>
 <p>Each step is created using Zapier&rsquo;s Webhooks integration - this is a flexible, general purpose integration suitable for communicating with many different companies' APIs.</p>
@@ -596,14 +604,14 @@ In short, we don't need to worry about it. Endole provides the data to Zapier as
 <p>Now we have everything we need regarding the integration! We could set the workflow to run in the background, so whenever a new organisation with a company number is entered into the CRM, the integration goes off and finds the financial data. However, because we have many thousands of organistions in our database, we want to be a bit more judicious about our use. Each API request to Endole costs only a small amount, but costs could add up if we were to automatically run it for every organisation, particularly if we include historical records.</p>
 <p>So in this case, we&rsquo;ll add a &lsquo;retrieve financials&rsquo; <a href="/docs/workflows/advanced/workflow-buttons/">workflow button</a> to the organisation screen to kick off the workflow on demand. It looks like this on the screen:</p>
 <p><img src="/retrieve-financials.png" alt="Retrieve Financials"></p>
-<p>** Final tweaks</p>
+<h2 id="final-tweaks">Final tweaks</h2>
 <p>Above, we mentioned creating a workflow to transform the YYYYMM date format (stored as text) into a proper date field. To do this we create a [workflow](/docs/workflows/altering-data/ which will update our Date field. It contains a calculation called Date with the definition</p>
 <pre tabindex="0"><code>to_date(
     {1.4) financial data.date representation},
     'YYYYMM'
   )
 </code></pre><p>The workflow can be set to run whenever a financial details record is created, i.e. as data comes in, using the <a href="/docs/workflows/advanced/workflow-on-create/">run workflow on record creation</a> option of a table.</p>
-<p>** Charting the data</p>
+<h2 id="charting-the-data">Charting the data</h2>
 <p>There&rsquo;s one more thing we can do to add some polish. When opening the financial details tab of the record, we can show a chart of the data for that organisation.</p>
 <p>To do that, just add a chart to the <a href="/docs/tables/hierarchy-navigation/tabs/#tab-view">tab view</a>, with each metric you&rsquo;re interested in. When the tab&rsquo;s opened, the chart will automatically be filtered to show just the details for the organisation on screen.</p>
 <p>Once complete, the screen will look something like this:</p>
@@ -674,7 +682,7 @@ In short, we don't need to worry about it. Endole provides the data to Zapier as
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified October 29, 2021: <a href="https://github.com/okohll/abdocs/commit/371cddd13e2e5d270cd2141f2a6031df4df6affd">Endole example (371cddd)</a>
+  Last modified October 29, 2021: <a href="https://github.com/okohll/abdocs/commit/e8fad9040b864ddb21b6b5a1e49d982cc961fe78">Endole example headings (e8fad90)</a>
 </div>
 
 </div>
