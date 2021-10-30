@@ -419,7 +419,7 @@ With simple_format=false, a more complex but more robust format it used. Rather 
     </item>
     
     <item>
-      <title>Docs: Multi-step API worked example</title>
+      <title>Docs: Complete API worked example</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/complex-example/</link>
       <pubDate>Fri, 29 Oct 2021 16:40:00 +0100</pubDate>
       
@@ -427,7 +427,7 @@ With simple_format=false, a more complex but more robust format it used. Rather 
       <description>
         
         
-        &lt;p&gt;Here&amp;rsquo;s a great example of using an API to provide business benefits, that we use ourselves here at agileChilli.&lt;/p&gt;
+        &lt;p&gt;Here&amp;rsquo;s a great example of using an API to provide business benefits, that we use ourselves here at agileChilli. As well as outlining the steps necessary to set up the API, with links to other documentation pages where relevant, we also include other elements of the solution, like workflows and charting, which often form a part of integrations.&lt;/p&gt;
 &lt;p&gt;The scenario is that we want to be able to look up and store multiple years worth of financial data for any UK company we hold in our CRM system. It can be useful to be able to have this data to hand to aid sales, when considering partnering or when doing competitor/market analysis for example - see our &lt;a href=&#34;&#34;&gt;CEO&amp;rsquo;s blog post&lt;/a&gt; on the subject.&lt;/p&gt;
 &lt;p&gt;Firstly, we need to find a provider of this data who have an API - we use &lt;a href=&#34;https://www.endole.co.uk/&#34;&gt;Endole&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We need to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;create a table&lt;/a&gt; to store the figures. We created a &amp;lsquo;financial data&amp;rsquo; table containing the following fields:&lt;/p&gt;
