@@ -447,7 +447,7 @@ if (!doNotTrack) {
   <ul>
     <li><a href="#creating-a-chart">Creating a chart</a></li>
     <li><a href="#embedding-charts-in-forms">Embedding charts in forms</a></li>
-    <li><a href="#the-visualisations-tile">The visualisations tile</a></li>
+    <li><a href="#embedding-charts-in-tabs">Embedding charts in tabs</a></li>
     <li><a href="#subscribing-users-or-roles-to-charts">Subscribing users or roles to charts</a></li>
     <li><a href="#going-further">Going further</a></li>
   </ul>
@@ -579,9 +579,9 @@ if (!doNotTrack) {
 <p>Charts can be embedded into tables. When the user opens a record, the chart will automatically filter to show data pertaining to that record only.</p>
 <p>So for example if you have a chart of sales per month per customer, which you embed into a customer table, it will show as sales per month, only for the customer on screen.</p>
 <p>This is accomplished by using a view with chart(s) as a <a href="/docs/fields/field-types/special-field-types/referenced-data/">cross-referenced panel</a> - see that page for setup information.</p>
-<h2 id="the-visualisations-tile">The visualisations tile</h2>
-<p>Once a few charts have been created in different views and tiles, a user can add a <a href="/docs/tiles/">visualisations tile</a> to their screen and select charts to include in it. The contents of the visualisation tile are personal to each user.</p>
-<p>Only one visualisations tile can be added to a user&rsquo;s homepage, but that tile can include as many charts as necessary collected from anywhere in the system.</p>
+<h2 id="embedding-charts-in-tabs">Embedding charts in tabs</h2>
+<p>When a tab contains many &lsquo;child&rsquo; records, e.g. an organisation may have a tab which contains financial data for the past 10 years, then charts can display above the rows of data when the tab&rsquo;s opened.</p>
+<p>To accomplish this, simply add a chart to the <a href="/docs/tables/hierarchy-navigation/tabs/#tab-view">view used by the tab</a>. When the tab is opened, the chart will automatically be filtered to only show data pertaining to the parent table, in a similar fashion to how charts embedded using cross-referenced panels are filtered, as above.</p>
 <h2 id="subscribing-users-or-roles-to-charts">Subscribing users or roles to charts</h2>
 <p>Users can be subscribed to charts (or subscribe themselves) to receive them by email.</p>
 <ol>
@@ -673,7 +673,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified June 22, 2021: <a href="https://github.com/okohll/abdocs/commit/c49ef8f324b093200f9219cbe41d1246eae15ee3">Tag all docs pages (c49ef8f)</a>
+  Last modified November 3, 2021: <a href="https://github.com/okohll/abdocs/commit/e4f9dd3da959ca03b2313b056190e08cc9beb022">Embedding charts in tabs (e4f9dd3)</a>
 </div>
 
 </div>

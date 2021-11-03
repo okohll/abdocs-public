@@ -27,12 +27,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-04T16:40:00+01:00" />
-<meta property="article:modified_time" content="2021-06-22T17:43:36+01:00" />
+<meta property="article:modified_time" content="2021-11-03T15:06:05+00:00" />
 
 <meta itemprop="name" content="Tabs">
 <meta itemprop="description" content="Tabs allow navigation from a parent record to a related child record"><meta itemprop="datePublished" content="2020-05-04T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2021-06-22T17:43:36+01:00" />
-<meta itemprop="wordCount" content="1005">
+<meta itemprop="dateModified" content="2021-11-03T15:06:05+00:00" />
+<meta itemprop="wordCount" content="1049">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tabs"/>
 <meta name="twitter:description" content="Tabs allow navigation from a parent record to a related child record"/>
@@ -617,6 +617,7 @@ if (!doNotTrack) {
 <p>Typically, these options are only needed to finnesse an application. They can be useful to look at once the core of the structure is built.</p>
 <h3 id="tab-view">Tab view</h3>
 <p>For one to many tabs, which <a href="/docs/views/">view</a> to use to show items. By creating a specific view to use for the tab, you can control which fields are displayed in which order, add calculations, filter those which are shown etc.</p>
+<p>If the view contains one or more charts, those charts will also be shown when opening the tab, filtered to show only data for the parent record containing the tab (in the same way that the records to display in the tab are filtered).</p>
 <h3 id="populate-from-template">Populate from template</h3>
 <p>Under a tab, a button allows the user to add records. For example in the contacts tab of an organisation, they would be able to add a new contact.</p>
 <p>However, in some situations you want to pre-populate the tab with records, rather than make the user create each one manually. An example might be order lines for a customer order in a telesales system. The order lines could be initially pre-populated with regular items the customer orders.</p>
@@ -712,7 +713,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified June 22, 2021: <a href="https://github.com/okohll/abdocs/commit/c49ef8f324b093200f9219cbe41d1246eae15ee3">Tag all docs pages (c49ef8f)</a>
+  Last modified November 3, 2021: <a href="https://github.com/okohll/abdocs/commit/e4f9dd3da959ca03b2313b056190e08cc9beb022">Embedding charts in tabs (e4f9dd3)</a>
 </div>
 
 </div>

@@ -186,9 +186,9 @@
 &lt;p&gt;Charts can be embedded into tables. When the user opens a record, the chart will automatically filter to show data pertaining to that record only.&lt;/p&gt;
 &lt;p&gt;So for example if you have a chart of sales per month per customer, which you embed into a customer table, it will show as sales per month, only for the customer on screen.&lt;/p&gt;
 &lt;p&gt;This is accomplished by using a view with chart(s) as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;cross-referenced panel&lt;/a&gt; - see that page for setup information.&lt;/p&gt;
-&lt;h2 id=&#34;the-visualisations-tile&#34;&gt;The visualisations tile&lt;/h2&gt;
-&lt;p&gt;Once a few charts have been created in different views and tiles, a user can add a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;visualisations tile&lt;/a&gt; to their screen and select charts to include in it. The contents of the visualisation tile are personal to each user.&lt;/p&gt;
-&lt;p&gt;Only one visualisations tile can be added to a user&amp;rsquo;s homepage, but that tile can include as many charts as necessary collected from anywhere in the system.&lt;/p&gt;
+&lt;h2 id=&#34;embedding-charts-in-tabs&#34;&gt;Embedding charts in tabs&lt;/h2&gt;
+&lt;p&gt;When a tab contains many &amp;lsquo;child&amp;rsquo; records, e.g. an organisation may have a tab which contains financial data for the past 10 years, then charts can display above the rows of data when the tab&amp;rsquo;s opened.&lt;/p&gt;
+&lt;p&gt;To accomplish this, simply add a chart to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#tab-view&#34;&gt;view used by the tab&lt;/a&gt;. When the tab is opened, the chart will automatically be filtered to only show data pertaining to the parent table, in a similar fashion to how charts embedded using cross-referenced panels are filtered, as above.&lt;/p&gt;
 &lt;h2 id=&#34;subscribing-users-or-roles-to-charts&#34;&gt;Subscribing users or roles to charts&lt;/h2&gt;
 &lt;p&gt;Users can be subscribed to charts (or subscribe themselves) to receive them by email.&lt;/p&gt;
 &lt;ol&gt;
