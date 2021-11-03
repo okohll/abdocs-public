@@ -64,7 +64,15 @@ end
 &lt;ul&gt;
 &lt;li&gt;A simplistic way of extracting a person&amp;rsquo;s first name from a full name - strip out everything from the first space onwards.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;This one is slightly more complex because it uses a powerful text matching/search and replace facility called &lt;strong&gt;regular expressions&lt;/strong&gt;, or regexes for short. Again, this is a standard facility and there&amp;rsquo;s lots of documentation available on the &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP&#34;&gt;PostgreSQL website&lt;/a&gt; and elsewhere if you&amp;rsquo;d like to learn more.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;regexp_replace(
+  {account owner},
+  &#39;.*\\((.*)\\).*&#39;,
+  &#39;\\1&#39;
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;A more complex example. Given an &amp;lsquo;account owner&amp;rsquo; value in the format &lt;strong&gt;Forename Surname (username)&lt;/strong&gt;, extract the username, i.e. everything between the brackets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The last two are slightly more complex because they use a powerful text matching/search and replace facility called &lt;strong&gt;regular expressions&lt;/strong&gt;, or regexes for short. Again, this is a standard facility and there&amp;rsquo;s lots of documentation available on the &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP&#34;&gt;PostgreSQL website&lt;/a&gt; and elsewhere if you&amp;rsquo;d like to learn more.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The only difference from standard to be aware of is that when entering a regex into a calculation in agileBase, you must use two backslashes instead of one.&lt;/p&gt;
 &lt;/blockquote&gt;

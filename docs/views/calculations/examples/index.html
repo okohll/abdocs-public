@@ -27,12 +27,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/views/calculations/examples/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-19T16:40:00+01:00" />
-<meta property="article:modified_time" content="2021-06-22T17:43:36+01:00" />
+<meta property="article:modified_time" content="2021-11-03T11:37:48+00:00" />
 
 <meta itemprop="name" content="Calculation Examples">
 <meta itemprop="description" content="Some examples of useful calculations for each type of field (text, number etc.)"><meta itemprop="datePublished" content="2020-05-19T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2021-06-22T17:43:36+01:00" />
-<meta itemprop="wordCount" content="1461">
+<meta itemprop="dateModified" content="2021-11-03T11:37:48+00:00" />
+<meta itemprop="wordCount" content="1491">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Calculation Examples"/>
 <meta name="twitter:description" content="Some examples of useful calculations for each type of field (text, number etc.)"/>
@@ -637,7 +637,15 @@ end
 <ul>
 <li>A simplistic way of extracting a person&rsquo;s first name from a full name - strip out everything from the first space onwards.</li>
 </ul>
-<p>This one is slightly more complex because it uses a powerful text matching/search and replace facility called <strong>regular expressions</strong>, or regexes for short. Again, this is a standard facility and there&rsquo;s lots of documentation available on the <a href="https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP">PostgreSQL website</a> and elsewhere if you&rsquo;d like to learn more.</p>
+<pre tabindex="0"><code>regexp_replace(
+  {account owner},
+  '.*\\((.*)\\).*',
+  '\\1'
+)
+</code></pre><ul>
+<li>A more complex example. Given an &lsquo;account owner&rsquo; value in the format <strong>Forename Surname (username)</strong>, extract the username, i.e. everything between the brackets.</li>
+</ul>
+<p>The last two are slightly more complex because they use a powerful text matching/search and replace facility called <strong>regular expressions</strong>, or regexes for short. Again, this is a standard facility and there&rsquo;s lots of documentation available on the <a href="https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP">PostgreSQL website</a> and elsewhere if you&rsquo;d like to learn more.</p>
 <blockquote>
 <p>The only difference from standard to be aware of is that when entering a regex into a calculation in agileBase, you must use two backslashes instead of one.</p>
 </blockquote>
@@ -809,7 +817,7 @@ and a video introduction to the concept here:</p>
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified June 22, 2021: <a href="https://github.com/okohll/abdocs/commit/c49ef8f324b093200f9219cbe41d1246eae15ee3">Tag all docs pages (c49ef8f)</a>
+  Last modified November 3, 2021: <a href="https://github.com/okohll/abdocs/commit/4845273f9b3d7334c2e952feb4add194e33fd1cf">A more complex example. Given an &#39;account owner&#39; value in the format **Forename Surname (username)**, extract the username, i.e. everything between the brackets. (4845273)</a>
 </div>
 
 </div>
