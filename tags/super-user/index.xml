@@ -166,9 +166,9 @@
       <description>
         
         
-        &lt;p&gt;In agileBase there are two mechanisms for charting and visualising data, each suited to different purposes&lt;/p&gt;
+        &lt;p&gt;In agileBase there are two mechanisms for charting and visualising data, each suited to a different purpose&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;built-in-charting&#34;&gt;built-in charting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;our &lt;a href=&#34;built-in-charting&#34;&gt;built-in charting&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;exporting data to third party business intelligence tools&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;If you&amp;rsquo;re starting out, we recommend beginning by looking at built-in charting.&lt;/p&gt;
