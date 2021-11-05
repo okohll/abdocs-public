@@ -186,7 +186,6 @@
 &lt;p&gt;We provide our own business intelligence tool, an instance of Apache Superset, which is available at &lt;a href=&#34;https://superset.agilebase.co.uk&#34;&gt;https://superset.agilebase.co.uk&lt;/a&gt; for easy setup &amp;lsquo;out of the box&amp;rsquo;, however any tool you wish such as Power BI can also be connected.&lt;/p&gt;
 &lt;p&gt;This may be useful when&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The source data views in agileBase are mature and aren&amp;rsquo;t likely to change. Changes can break any integration set up&lt;/li&gt;
 &lt;li&gt;You want to report summary KPIs or trends upwards, to higher levels of management, so you need a dashboard
 &lt;ul&gt;
 &lt;li&gt;to include charts from different view in agileBase in one place&lt;/li&gt;
@@ -194,6 +193,7 @@
 &lt;li&gt;potentially to include data from additional sources in the one dashboard e.g. from accounting systems&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;The source data views in agileBase are mature and aren&amp;rsquo;t likely to change. Changes can break any integration set up&lt;/li&gt;
 &lt;li&gt;You are happy with the privacy and data security implications - see below&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;privacy-and-data-security&#34;&gt;Privacy and data security&lt;/h3&gt;
