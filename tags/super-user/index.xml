@@ -183,14 +183,27 @@
 &lt;/ol&gt;
 &lt;p&gt;Developers can also choose to have certain charts emailed to different groups of people on a regular basis. For example, [TODO]&lt;/p&gt;
 &lt;h2 id=&#34;exporting-to-business-intelligence&#34;&gt;Exporting to Business Intelligence&lt;/h2&gt;
+&lt;p&gt;We provide our own business intelligence tool, an instance of Apache Superset, which is available at &lt;a href=&#34;https://superset.agilebase.co.uk&#34;&gt;https://superset.agilebase.co.uk&lt;/a&gt; for easy setup &amp;lsquo;out of the box&amp;rsquo;, however any tool you wish such as Power BI can also be connected.&lt;/p&gt;
 &lt;p&gt;This may be useful when&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The source data views in agileBase are mature and aren&amp;rsquo;t likely to change. Changes can break any integration set up&lt;/li&gt;
 &lt;li&gt;You want to report summary KPIs or trends upwards, to higher levels of management, so you need a dashboard
-** to include charts from different view in agileBase in one place
-** to present them in particular formats suitable for reporting, e.g. using company colours
-** potentially to include data from additional sources in the one dashboard e.g. from accounting systems&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;to include charts from different view in agileBase in one place&lt;/li&gt;
+&lt;li&gt;to present them in particular formats suitable for reporting, e.g. using company colours&lt;/li&gt;
+&lt;li&gt;potentially to include data from additional sources in the one dashboard e.g. from accounting systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;You are happy with the privacy and data security implications - see below&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;privacy-and-data-security&#34;&gt;Privacy and data security&lt;/h3&gt;
+&lt;p&gt;When connecting a Business Intelligence tool, whether that&amp;rsquo;s the Superset instance we provide, or a third party tool, it&amp;rsquo;s important to realise that data &lt;em&gt;leaves agileBase&lt;/em&gt; and therefore is no longer protected by agileBase&amp;rsquo;s roles and privileges system.&lt;/p&gt;
+&lt;p&gt;You may have data in agileBase which is only accessible to certain members of staff, however when accessed outside of agileBase, those rules no longer apply. That doesn&amp;rsquo;t necessarily mean the data is accessible publicly, but it does mean it&amp;rsquo;s controlled by whatever privilege system the third party tool uses, which will be different to agileBase&amp;rsquo;s.&lt;/p&gt;
+&lt;p&gt;Therefore, from agileBase&amp;rsquo;s point of view, similar rules will apply when connecting a BI system as to when exporting data to spreadsheets. For example&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Any user connecting a BI tool will be shown a warning of these consequences, which they&amp;rsquo;ll need to accept prior to going ahead&lt;/li&gt;
+&lt;li&gt;agileBase system administrators will get email notifications every time data in a view is made available to BI tools, containing information on whether that data is marked as sensitive or private&lt;/li&gt;
+&lt;li&gt;Only people with MANAGE privileges on a table can connect BI tools. They also have to have two factor authentication enabled&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
