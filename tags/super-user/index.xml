@@ -4,7 +4,7 @@
     <link>https://docs.agilebase.co.uk/tags/super-user/</link>
     <description>Recent content in Super User on agileBase docs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 03 Jun 2020 16:40:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 05 Nov 2021 11:40:00 +0100</lastBuildDate>
     
 	  <atom:link href="https://docs.agilebase.co.uk/tags/super-user/index.xml" rel="self" type="application/rss+xml" />
     
@@ -160,9 +160,48 @@
     <item>
       <title>Docs: Charting</title>
       <link>https://docs.agilebase.co.uk/docs/charting/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      <pubDate>Fri, 05 Nov 2021 11:40:00 +0100</pubDate>
       
       <guid>https://docs.agilebase.co.uk/docs/charting/</guid>
+      <description>
+        
+        
+        &lt;p&gt;In agileBase there are two mechanisms for charting and visualising data, each suited to different purposes&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;built-in charting&lt;/li&gt;
+&lt;li&gt;exporting data to third party business intelligence tools&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you&amp;rsquo;re starting out, we recommend beginning by looking at built-in charting.&lt;/p&gt;
+&lt;p&gt;For more advanced users, here&amp;rsquo;s a description of when each of the two options may be appropriate, with reasons why.&lt;/p&gt;
+&lt;h2 id=&#34;built-in-charting&#34;&gt;Built in charting&lt;/h2&gt;
+&lt;p&gt;This should be the default starting point. It&amp;rsquo;s great for ad-hoc charting, i.e. to get quick answers to questions you may have about the data in the view you&amp;rsquo;re looking at.&lt;/p&gt;
+&lt;p&gt;Charts can be easily created, modified and removed. People with MANAGE privileges on a table can create charts that all users will see, lower privileged users can create charts that only they see.&lt;/p&gt;
+&lt;p&gt;Creating charts can be used in conjunction with building views, in an agile fashion. For example, if you&amp;rsquo;re looking at a view of invoice and want to see a breakdown of totals for the year by customer type, but the customer type field isn&amp;rsquo;t in the view, no problem. Just&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;add the customer type field to the invoices view&lt;/li&gt;
+&lt;li&gt;create a chart to total up values by customer type&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Developers can also choose to have certain charts emailed to different groups of people on a regular basis. For example, [TODO]&lt;/p&gt;
+&lt;h2 id=&#34;exporting-to-business-intelligence&#34;&gt;Exporting to Business Intelligence&lt;/h2&gt;
+&lt;p&gt;This may be useful when&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The source data views in agileBase are mature and aren&amp;rsquo;t likely to change. Changes can break any integration set up&lt;/li&gt;
+&lt;li&gt;You want to report summary KPIs or trends upwards, to higher levels of management, so you need a dashboard
+** to include charts from different view in agileBase in one place
+** to present them in particular formats suitable for reporting, e.g. using company colours
+** potentially to include data from additional sources in the one dashboard e.g. from accounting systems&lt;/li&gt;
+&lt;li&gt;You are happy with the privacy and data security implications - see below&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Built In Charting</title>
+      <link>https://docs.agilebase.co.uk/docs/charting/built-in-charting/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/charting/built-in-charting/</guid>
       <description>
         
         

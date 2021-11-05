@@ -4,7 +4,7 @@
     <link>https://docs.agilebase.co.uk/docs/charting/</link>
     <description>Recent content in Charting on agileBase docs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Apr 2020 16:40:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 05 Nov 2021 11:40:00 +0100</lastBuildDate>
     
 	  <atom:link href="https://docs.agilebase.co.uk/docs/charting/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,6 +13,69 @@
         
       
     
+    
+    <item>
+      <title>Docs: Built In Charting</title>
+      <link>https://docs.agilebase.co.uk/docs/charting/built-in-charting/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/charting/built-in-charting/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Charting is not strictly an administrator function, as any user can create charts and other data visualisations, such as maps and word clouds.&lt;/p&gt;
+&lt;p&gt;However, it&amp;rsquo;s useful for administrators to know how the system works in outline, so they can support users and also because creating charts may be a key part of building an application.&lt;/p&gt;
+&lt;p&gt;In agileBase, charts &amp;lsquo;belong to&amp;rsquo; a view. Each view can have a collection of charts. Users can toggle between viewing data rows and looking at charts based on those rows. When a user filters data using the quick filter boxes at the top of the screen, the data or charts (whichever is shown) will update to match the filtered results.&lt;/p&gt;
+&lt;h2 id=&#34;creating-a-chart&#34;&gt;Creating a chart&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, open the tile and view to use as a source of chart data&lt;/li&gt;
+&lt;li&gt;Click the charts button to the left of the data rows displayed&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;add/edit chart or map&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;Follow each of the steps (1 - 3) on screen to build the chart&lt;/li&gt;
+&lt;li&gt;In the last step, give a name to the chart and press &lt;em&gt;save&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When choosing a type of chart in step 3, small previews will be displayed based on some of the chart data. However some chart types may display a message rather than a preview. In this case, the chart data selected in step 1 is not applicable for this chart type.&lt;/p&gt;
+&lt;p&gt;For example, if in step 1 we have a count of items per year:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/chart-1.png&#34; alt=&#34;Chart - step 1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;then the scatter diagram will work but the bubble chart won&amp;rsquo;t. For the bubble chart, &lt;strong&gt;two&lt;/strong&gt; y-axis measurements are required, one to specify the position of the bubble on the y-axis, plus another to determine the relative size of the bubble.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/chart-bubble.png&#34; alt=&#34;Chart - step 3&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;embedding-charts-in-forms&#34;&gt;Embedding charts in forms&lt;/h2&gt;
+&lt;p&gt;Charts can be embedded into tables. When the user opens a record, the chart will automatically filter to show data pertaining to that record only.&lt;/p&gt;
+&lt;p&gt;So for example if you have a chart of sales per month per customer, which you embed into a customer table, it will show as sales per month, only for the customer on screen.&lt;/p&gt;
+&lt;p&gt;This is accomplished by using a view with chart(s) as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;cross-referenced panel&lt;/a&gt; - see that page for setup information.&lt;/p&gt;
+&lt;h2 id=&#34;embedding-charts-in-tabs&#34;&gt;Embedding charts in tabs&lt;/h2&gt;
+&lt;p&gt;When a tab contains many &amp;lsquo;child&amp;rsquo; records, e.g. an organisation may have a tab which contains financial data for the past 10 years, then charts can display above the rows of data when the tab&amp;rsquo;s opened.&lt;/p&gt;
+&lt;p&gt;To accomplish this, simply add a chart to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#tab-view&#34;&gt;view used by the tab&lt;/a&gt;. When the tab is opened, the chart will automatically be filtered to only show data pertaining to the parent table, in a similar fashion to how charts embedded using cross-referenced panels are filtered, as above.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/endole-example.png&#34; alt=&#34;Endole example&#34; title=&#34;Example of a chart in a tab&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;subscribing-users-or-roles-to-charts&#34;&gt;Subscribing users or roles to charts&lt;/h2&gt;
+&lt;p&gt;Users can be subscribed to charts (or subscribe themselves) to receive them by email.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In a view with some charts, open the charts&lt;/li&gt;
+&lt;li&gt;Next to &amp;lsquo;Send these charts to me&amp;rsquo;, select a frequency, e.g. monthly.&lt;/li&gt;
+&lt;li&gt;Under &amp;lsquo;Include data too&amp;rsquo;, select tabular data to include in the email too - various options will be displayed e.g. all new rows since the last email&lt;/li&gt;
+&lt;li&gt;Next to &amp;lsquo;roles&amp;rsquo;, select a role to send the charts and data to. All users in the role will be subscribed. Multiple roles can be added&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If the view has no charts, this function can be used to send tabular data only&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;going-further&#34;&gt;Going further&lt;/h2&gt;
+&lt;p&gt;agileBase can also integrate with third party business intelligence and reporting tools, using the API Creator. A worked example is &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/pull-example-power-bi/&#34;&gt;here for Power BI&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Business Intelligence</title>
+      <link>https://docs.agilebase.co.uk/docs/charting/business-intelligence/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/charting/business-intelligence/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
     
   </channel>
 </rss>

@@ -122,6 +122,9 @@
     <loc>https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/</loc>
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
   </url><url>
+    <loc>https://docs.agilebase.co.uk/docs/charting/</loc>
+    <lastmod>2021-11-05T12:01:30+00:00</lastmod>
+  </url><url>
     <loc>https://docs.agilebase.co.uk/docs/views/joins/</loc>
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
   </url><url>
@@ -133,9 +136,6 @@
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/to-grandchild-records/</loc>
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/docs/charting/</loc>
-    <lastmod>2021-11-03T15:17:07+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/tables/sensitive-data/</loc>
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
@@ -154,6 +154,12 @@
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/upwards-navigation/</loc>
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/docs/charting/built-in-charting/</loc>
+    <lastmod>2021-11-05T12:01:30+00:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/docs/charting/business-intelligence/</loc>
+    <lastmod>2021-11-05T12:01:30+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/calendar/</loc>
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
@@ -332,11 +338,14 @@
     <loc>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/</loc>
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
   </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/architect/</loc>
-    <lastmod>2021-11-03T15:06:05+00:00</lastmod>
+    <loc>https://docs.agilebase.co.uk/tags/super-user/</loc>
+    <lastmod>2021-11-05T12:01:30+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/</loc>
-    <lastmod>2021-11-03T15:17:07+00:00</lastmod>
+    <lastmod>2021-11-05T12:01:30+00:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/architect/</loc>
+    <lastmod>2021-11-03T15:06:05+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/certified-architect/</loc>
     <lastmod>2021-08-31T17:24:09+01:00</lastmod>
@@ -344,11 +353,11 @@
     <loc>https://docs.agilebase.co.uk/tags/principal-architect/</loc>
     <lastmod>2021-08-27T11:17:03+01:00</lastmod>
   </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/super-user/</loc>
-    <lastmod>2021-11-03T15:17:07+00:00</lastmod>
-  </url><url>
     <loc>https://docs.agilebase.co.uk/tags/core-user/</loc>
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/developer/</loc>
+    <lastmod>2021-11-05T12:01:30+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/system-owner/</loc>
     <lastmod>2021-10-29T19:27:11+01:00</lastmod>
