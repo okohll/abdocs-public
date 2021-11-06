@@ -1548,6 +1548,9 @@ export default LoginScreen;
 &lt;li&gt;Access the dashboard from the &lt;em&gt;Dashboards&lt;/em&gt; menu at the top&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;For more details on creating charts and editing dashboards, including video walkthroughs, see &lt;a href=&#34;https://docs.preset.io/docs/create-a-chart&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The first view sent to Superset is free, further views can be purchased in bundles.&lt;/p&gt;
+&lt;/blockquote&gt;
 
       </description>
     </item>
