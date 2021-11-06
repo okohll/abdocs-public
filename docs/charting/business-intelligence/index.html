@@ -21,21 +21,21 @@
 <title>Business Intelligence | agileBase docs</title>
 
 
-  <meta name="description" content="Visualising data in third party business intelligence tools">
+  <meta name="description" content="Visualising data in third party Business Intelligence tools">
 <meta property="og:title" content="Business Intelligence" />
-<meta property="og:description" content="Visualising data in third party business intelligence tools" />
+<meta property="og:description" content="Visualising data in third party Business Intelligence tools" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/charting/business-intelligence/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2021-11-05T12:01:30+00:00" />
+<meta property="article:modified_time" content="2021-11-06T19:05:14+00:00" />
 
 <meta itemprop="name" content="Business Intelligence">
-<meta itemprop="description" content="Visualising data in third party business intelligence tools"><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2021-11-05T12:01:30+00:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="description" content="Visualising data in third party Business Intelligence tools"><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
+<meta itemprop="dateModified" content="2021-11-06T19:05:14+00:00" />
+<meta itemprop="wordCount" content="509">
 <meta itemprop="keywords" content="Developer," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Business Intelligence"/>
-<meta name="twitter:description" content="Visualising data in third party business intelligence tools"/>
+<meta name="twitter:description" content="Visualising data in third party Business Intelligence tools"/>
 
 
 
@@ -128,18 +128,6 @@ if (!doNotTrack) {
 				
 				
 				<a class="nav-link active" href="/docs/" ><span class="active">Docs</span></a>
-			</li>
-			
-			<li class="nav-item mr-4 mb-2 mb-lg-0">
-				
-				
-				
-				
-				
-				
-				
-				
-				<a class="nav-link" href="/get-help/" ><span>Get Help</span></a>
 			</li>
 			
 			
@@ -456,6 +444,18 @@ if (!doNotTrack) {
             
 
 
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#initial-setup">Initial Setup</a></li>
+    <li><a href="#sending-data-to-superset">Sending data to Superset</a>
+      <ul>
+        <li><a href="#changes">Changes</a></li>
+      </ul>
+    </li>
+    <li><a href="#creating-dashboards-in-superset">Creating dashboards in Superset</a></li>
+  </ul>
+</nav></div>
+
 
 
             
@@ -553,7 +553,7 @@ if (!doNotTrack) {
             
 <div class="td-content">
 	<h1>Business Intelligence</h1>
-	<div class="lead">Visualising data in third party business intelligence tools</div>
+	<div class="lead">Visualising data in third party Business Intelligence tools</div>
 	<header class="article-meta">
 		
 		
@@ -578,7 +578,52 @@ if (!doNotTrack) {
 		
 		
 	</header>    
-	
+	<blockquote>
+<p>Before setting up a BI connection, please be aware of the <a href="charting#privacy-and-data-security">data privacy and security</a> considerations.</p>
+</blockquote>
+<p>At agileBase we host an instance of <a href="https://superset.apache.org">Apache Superset</a> which can be used by customers to create reporting dashboards.</p>
+<p>However the setup processes below also applies to third party tools such as Power BI.</p>
+<h2 id="initial-setup">Initial Setup</h2>
+<p>The first step is to <a href="https://agilechilli.com/contact-us/">contact us</a> to request we set up an Apache Superset account (this will also allow connections from other BI tools). We will then set up as many Superset users you require - there is no ongoing cost for these login accounts.</p>
+<p>Note that Superset logins are separate from agileBase ones - the usernames and passwords can be different.</p>
+<h2 id="sending-data-to-superset">Sending data to Superset</h2>
+<p>A developer with MANAGE privileges on a view&rsquo;s parent table can set this up.</p>
+<ol>
+<li>In agileBase, open the view you wish to report on. Ensure it has all the necessary fields and calculations in it which you want to report on. If not, add them before continuing.</li>
+<li>Click the charting icon to view the chart setup interface</li>
+<li>At the bottom of the screen, tick &lsquo;send data to a shareable dashboard&rsquo;. As this makes data available <a href="charting#privacy-and-data-security">outside of agileBase</a>, you will be asked to confirm you will treat the data in a way which maintains privacy and security before enabling the feature.</li>
+</ol>
+<p>Within a few seconds, the data will then be available in Superset.</p>
+<h3 id="changes">Changes</h3>
+<p>It&rsquo;s easy for developers to make changes to views in agileBase, for example adding / removing fields, changing calculations or just renaming a view.</p>
+<blockquote>
+<p>However, when the BI connection is active, bear in mind that any such changes will disable the connection. The reason is that once data is set up to transfer to a separate system, the other system typically expects it to remain in the same format.</p>
+<p>That means that if you make <em>any</em> changes to the view, you must afterwards re-connect BI by repeating step 3 above. As long as you haven&rsquo;t deleted or renamed fields used in charts within Superset, those charts will continue to work.</p>
+</blockquote>
+<h2 id="creating-dashboards-in-superset">Creating dashboards in Superset</h2>
+<p>Now that you&rsquo;ve set up agileBase to make data available to Superset, you can create charts and dashboards there.</p>
+<ol>
+<li>Create a &lsquo;dataset&rsquo; in Superset, corresponding to the view you set up above
+<ol>
+<li>From the <em>Data</em> menu at the top, select <em>datasets</em>, then click the <em>+ dataset</em> button</li>
+<li>Under <em>Schema</em>, select your company name</li>
+<li>Under <em>Table</em>, select the name of the view that you set up above</li>
+<li>Click <em>ADD</em> at the bottom of the dialog (you may need to scroll down)</li>
+</ol>
+</li>
+<li>Create the chart
+<ol>
+<li>Click <em>Charts</em> at the top, then <em>+ Chart</em></li>
+<li>Select the dataset created above</li>
+<li>Choose a chart type, then <em>Create New Chart</em></li>
+<li>Drag metrics (e.g. &lsquo;COUNT&rsquo;) and fields from the left into the appropriate areas in the middle column</li>
+<li>Click <em>Save</em> and Superset will prompt you to add the chart to a new or existing dashboard</li>
+</ol>
+</li>
+<li>Access the dashboard from the <em>Dashboards</em> menu at the top</li>
+</ol>
+<p>For more details on creating charts and editing dashboards, including video walkthroughs, see <a href="https://docs.preset.io/docs/create-a-chart">here</a></p>
+
 	
 		<style>
   .feedback--answer {
@@ -644,7 +689,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified November 5, 2021: <a href="https://github.com/okohll/abdocs/commit/6130ac1ff30024df009a7d57e008c1176a7ce89a">Start BI (6130ac1)</a>
+  Last modified November 6, 2021: <a href="https://github.com/okohll/abdocs/commit/aed50a792935ba6e8ea20092b4d9c78dc57066fa">Apache Superset instructions (aed50a7)</a>
 </div>
 
 </div>
