@@ -24,7 +24,7 @@
         
         
         &lt;blockquote&gt;
-&lt;p&gt;Before setting up a BI connection, please be aware of the &lt;a href=&#34;charting#privacy-and-data-security&#34;&gt;data privacy and security&lt;/a&gt; considerations.&lt;/p&gt;
+&lt;p&gt;Before setting up a BI connection, please be aware of the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting#privacy-and-data-security&#34;&gt;data privacy and security&lt;/a&gt; considerations.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;At agileBase we host an instance of &lt;a href=&#34;https://superset.apache.org&#34;&gt;Apache Superset&lt;/a&gt; which can be used by customers to create reporting dashboards.&lt;/p&gt;
 &lt;p&gt;However the setup processes below also applies to third party tools such as Power BI.&lt;/p&gt;
@@ -42,8 +42,8 @@
 &lt;h3 id=&#34;changes&#34;&gt;Changes&lt;/h3&gt;
 &lt;p&gt;It&amp;rsquo;s easy for developers to make changes to views in agileBase, for example adding / removing fields, changing calculations or just renaming a view.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;However, when the BI connection is active, bear in mind that any such changes will disable the connection. The reason is that once data is set up to transfer to a separate system, the other system typically expects it to remain in the same format.&lt;/p&gt;
-&lt;p&gt;That means that if you make &lt;em&gt;any&lt;/em&gt; changes to the view, you must afterwards re-connect BI by repeating step 3 above. As long as you haven&amp;rsquo;t deleted or renamed fields used in charts within Superset, those charts will continue to work.&lt;/p&gt;
+&lt;p&gt;However, when the BI connection is active, bear in mind that certain changes will disable the connection. The reason is that once data is set up to transfer to a separate system, the other system typically expects it to remain in the same format.&lt;/p&gt;
+&lt;p&gt;That means that if you rename the view or move it, or rename/delete fields and calculations, you may afterwards need to re-connect BI by repeating step 3 above. Additionally, check your charts in Superset, to see if they need re-creating.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;creating-dashboards-in-superset&#34;&gt;Creating dashboards in Superset&lt;/h2&gt;
 &lt;p&gt;Now that you&amp;rsquo;ve set up agileBase to make data available to Superset, you can create charts and dashboards there.&lt;/p&gt;
