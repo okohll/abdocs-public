@@ -51,6 +51,9 @@
 &lt;p&gt;The workflow view may contain many records which could theoretically have a document generated for them. When the button is pressed to run step 1, it will only run on the single record on screen.&lt;/p&gt;
 &lt;p&gt;agileBase will then pass the ID of that record through to the next workflow step to act as a filter. i.e. &amp;lsquo;send that document to a receipient&amp;rsquo; will only send the individual document which has just been created.&lt;/p&gt;
 &lt;p&gt;This mechanism works until any workflow step creates a new record. When that happens, it&amp;rsquo;s unclear whether subsequent steps should run on the original record or the newly created one, so the ID won&amp;rsquo;t be passed through to following steps and you&amp;rsquo;ll have to manage things manually, e.g. using flagging as below.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This behaviour can be manually disabled by un-ticking the option &lt;em&gt;Make subsequent workflow steps act on the same record as this one&lt;/em&gt;, which will then cause the next chained workflow to always act on all records in its view.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;using-hidden-flagging-fields&#34;&gt;Using hidden &amp;ldquo;flagging&amp;rdquo; fields&lt;/h2&gt;
 &lt;p&gt;It is sometimes necessary to &lt;strong&gt;find&lt;/strong&gt; the source record when chaining workflows.&lt;/p&gt;
 &lt;p&gt;A trick to allow you to find the appropriate record is to use and set a flag field in the source table.&lt;/p&gt;
