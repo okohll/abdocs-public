@@ -510,9 +510,9 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h2 id=&#34;unlock-if-record-in-view&#34;&gt;Unlock if record in view&lt;/h2&gt;
 &lt;p&gt;If &lt;strong&gt;Lock when value set&lt;/strong&gt; is ticked, unlock on certain criteria. Works the same way as &lt;a href=&#34;#show-if-record-in-view&#34;&gt;Show if record in view&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;required&#34;&gt;Required&lt;/h2&gt;
-&lt;p&gt;If ticked, force the user to supply a value. They won&amp;rsquo;t be able to navigate away from a record without doing so.&lt;/p&gt;
+&lt;p&gt;If ticked, prompt the user for a value when they try to leave a record without one. Note we can&amp;rsquo;t force the value, as the user could refresh the browser as a workaround.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Note: although this is a strong prompt, it would still be possible for the user to close the browser window for example, leaving the field with no value. In that case a value will be prompted for again the next time the record is loaded.&lt;/p&gt;
+&lt;p&gt;For dropdown fields with the default value set to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#lists-of-users&#34;&gt;Lists of users&lt;/a&gt;, this has the special effect of defaulting the field to the ID of the currently logged in user.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;
 &lt;p&gt;Prominently highlight the field on the screen, e.g. if it&amp;rsquo;s one that is important to fill out, without actually requiring a value to be supplied.&lt;/p&gt;
@@ -898,6 +898,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;When using &amp;lsquo;fill with users&amp;rsquo;, the list of users to appear in the dropdown can further be narrowed down by role if required. To do that, enter the text&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;_users|role1,role2,role3&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;i.e. &lt;code&gt;_users&lt;/code&gt; followed by a vertical bar and then a comma separated list of role names. Only users which appear in one or more of the named roles will appear.&lt;/p&gt;
+&lt;p&gt;If you want a field to auto-populate with the ID of the currently logged in user, enable both this option and the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#required&#34;&gt;required&lt;/a&gt; field option.&lt;/p&gt;
 &lt;h2 id=&#34;text-case&#34;&gt;Text case&lt;/h2&gt;
 &lt;p&gt;Convert people&amp;rsquo;s input into the required case as it&amp;rsquo;s entered - choose from&lt;/p&gt;
 &lt;ul&gt;
