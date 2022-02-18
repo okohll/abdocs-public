@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="generator" content="Hugo 0.92.2" />
+<link rel="alternate" type="application/rss&#43;xml" href="https://docs.agilebase.co.uk/docs/developer-mode/index.xml">
 <meta name="robots" content="index, follow">
 
 
@@ -18,24 +19,19 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Creating a view | agileBase docs</title>
+<title>Developer Mode | agileBase docs</title>
 
 
-  <meta name="description" content="How to create a new view and place it in a navigation structure">
-<meta property="og:title" content="Creating a view" />
-<meta property="og:description" content="How to create a new view and place it in a navigation structure" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://docs.agilebase.co.uk/docs/views/creating-a-view/" /><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2020-05-13T16:40:00+01:00" />
-<meta property="article:modified_time" content="2021-06-22T17:43:36+01:00" />
+  <meta name="description" content="Introducing agileBase&#39;s build mode and how to toggle it on and off">
+<meta property="og:title" content="Developer Mode" />
+<meta property="og:description" content="Introducing agileBase&#39;s build mode and how to toggle it on and off" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://docs.agilebase.co.uk/docs/developer-mode/" />
 
-<meta itemprop="name" content="Creating a view">
-<meta itemprop="description" content="How to create a new view and place it in a navigation structure"><meta itemprop="datePublished" content="2020-05-13T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2021-06-22T17:43:36+01:00" />
-<meta itemprop="wordCount" content="572">
-<meta itemprop="keywords" content="Super User," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Creating a view"/>
-<meta name="twitter:description" content="How to create a new view and place it in a navigation structure"/>
+<meta itemprop="name" content="Developer Mode">
+<meta itemprop="description" content="Introducing agileBase&#39;s build mode and how to toggle it on and off"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Developer Mode"/>
+<meta name="twitter:description" content="Introducing agileBase&#39;s build mode and how to toggle it on and off"/>
 
 
 
@@ -71,7 +67,7 @@ if (!doNotTrack) {
 
 
   </head>
-  <body class="td-page">
+  <body class="td-section">
     <header>
       
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
@@ -159,8 +155,8 @@ if (!doNotTrack) {
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
   <a href="/docs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Docs</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsdeveloper-mode-li">
-  <a href="/docs/developer-mode/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsdeveloper-mode"><span class="">Developer Mode</span></a>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsdeveloper-mode-li">
+  <a href="/docs/developer-mode/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__section" id="m-docsdeveloper-mode"><span class="td-sidebar-nav-active-item">Developer Mode</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docssecurity-and-compliance-li">
   <a href="/docs/security-and-compliance/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docssecurity-and-compliance"><span class="">Security and Compliance</span></a>
   <ul class="ul-2 foldable">
@@ -290,28 +286,28 @@ if (!doNotTrack) {
   </ul>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsviews-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsviews-li">
   <a href="/docs/views/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsviews"><span class="">Views</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsviewscreating-a-view-li">
-  <a href="/docs/views/creating-a-view/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docsviewscreating-a-view"><span class="td-sidebar-nav-active-item">Creating a view</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsviewsjoins-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsviewscreating-a-view-li">
+  <a href="/docs/views/creating-a-view/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsviewscreating-a-view"><span class="">Creating a view</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsviewsjoins-li">
   <a href="/docs/views/joins/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsviewsjoins"><span class="">Joins</span></a>
   <ul class="ul-3 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsviewsjoinstypes-of-join-li">
   <a href="/docs/views/joins/types-of-join/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsviewsjoinstypes-of-join"><span class="">Types of Join</span></a>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsviewscalculations-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsviewscalculations-li">
   <a href="/docs/views/calculations/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsviewscalculations"><span class="">Calculations</span></a>
   <ul class="ul-3 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsviewscalculationsexamples-li">
   <a href="/docs/views/calculations/examples/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsviewscalculationsexamples"><span class="">Calculation Examples</span></a>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsviewsfilters-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsviewsfilters-li">
   <a href="/docs/views/filters/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsviewsfilters"><span class="">Filters</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsviewsspecial-uses-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsviewsspecial-uses-li">
   <a href="/docs/views/special-uses/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsviewsspecial-uses"><span class="">Special Uses</span></a>
   <ul class="ul-3 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsviewsspecial-usesapis-li">
@@ -328,7 +324,7 @@ if (!doNotTrack) {
   <a href="/docs/views/special-uses/related-record-pickers/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsviewsspecial-usesrelated-record-pickers"><span class="">Related Record Chooser</span></a>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsviewsoptions-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsviewsoptions-li">
   <a href="/docs/views/options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsviewsoptions"><span class="">Options</span></a>
 </li>
   </ul>
@@ -437,8 +433,8 @@ if (!doNotTrack) {
 
 
 
-<a href="https://github.com/okohll/abdocs/edit/master/content/docs/views/creating-a-view.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/okohll/abdocs/issues/new?title=Creating%20a%20view" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/okohll/abdocs/edit/master/content/docs/developer-mode/_index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/okohll/abdocs/issues/new?title=Developer%20Mode" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
 
@@ -448,15 +444,9 @@ if (!doNotTrack) {
 
 <div class="td-toc"><nav id="TableOfContents">
   <ul>
-    <li><a href="#to-create-a-view">To create a view</a></li>
-    <li><a href="#organising-into-a-navigation-structure">Organising into a navigation structure</a></li>
-    <li><a href="#using-a-view">Using a view</a>
-      <ul>
-        <li><a href="#finding-data">Finding data</a></li>
-        <li><a href="#seeing-summary-stats">Seeing summary stats</a></li>
-        <li><a href="#loading-a-record">Loading a record</a></li>
-      </ul>
-    </li>
+    <li><a href="#toggling-build-mode-on-and-off">Toggling build mode on and off</a></li>
+    <li><a href="#using-editing-panels">Using editing panels</a></li>
+    <li><a href="#example-videos">Example videos</a></li>
   </ul>
 </nav></div>
 
@@ -530,9 +520,6 @@ if (!doNotTrack) {
 
 
 
-
-
-
 <li class="breadcrumb-item" >
 	<a href="https://docs.agilebase.co.uk/docs/">Docs</a>
 </li>
@@ -540,15 +527,8 @@ if (!doNotTrack) {
 
 
 
-<li class="breadcrumb-item" >
-	<a href="https://docs.agilebase.co.uk/docs/views/">Views</a>
-</li>
-
-
-
-
 <li class="breadcrumb-item active" aria-current="page">
-	<a href="https://docs.agilebase.co.uk/docs/views/creating-a-view/">Creating a view</a>
+	<a href="https://docs.agilebase.co.uk/docs/developer-mode/">Developer Mode</a>
 </li>
 
 	</ol>
@@ -556,8 +536,8 @@ if (!doNotTrack) {
 
             
 <div class="td-content">
-	<h1>Creating a view</h1>
-	<div class="lead">How to create a new view and place it in a navigation structure</div>
+	<h1>Developer Mode</h1>
+  <div class="lead">Introducing agileBase&rsquo;s build mode and how to toggle it on and off</div>
 	<header class="article-meta">
 		
 		
@@ -569,7 +549,7 @@ if (!doNotTrack) {
   <h5 class="taxonomy-title">Tags:</h5>
   <ul class="taxonomy-terms">
     
-      <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/super-user/" data-taxonomy-term="super-user"><span class="taxonomy-label">Super User</span></a></li>
+      <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/developer/" data-taxonomy-term="developer"><span class="taxonomy-label">Developer</span></a></li>
     
   </ul>
 </div>
@@ -581,35 +561,45 @@ if (!doNotTrack) {
 			
 		
 		
-	</header>    
-	<p>In agileBase, a view &lsquo;belongs to&rsquo; a <a href="/docs/tables/">table</a>. We&rsquo;ll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we&rsquo;ll assume we pick a contacts table.</p>
-<p>We&rsquo;ll also assume we already have some tables and some <a href="/docs/tiles/">tiles</a>.</p>
-<h2 id="to-create-a-view">To create a view</h2>
+	</header>
+	<p>As a no-code platform, agileBase allows you to easily build (and later un-build or &lsquo;refactor&rsquo;) and change your software.</p>
+<h2 id="toggling-build-mode-on-and-off">Toggling build mode on and off</h2>
+<p>To get started, you need to toggle from &lsquo;normal&rsquo; mode to &lsquo;build&rsquo; mode. You can do this wherever you are in the system and you will switch to building or developing the item you&rsquo;re looking at. The three main areas this covers are:</p>
 <ol>
-<li>Expand the <em>Build Tables</em> menu in the lefthand sidebar</li>
-<li>Click the table you want to create a view from</li>
-<li>If necessary, click the pencil icon in the toolbar to edit the table and click the <em>manage</em> tab at the bottom of the screen</li>
-<li>Press the &lsquo;Create new view&rsquo; button at the top right. You&rsquo;ll be prompted for a name.</li>
+<li>The homepage. Toggling to build mode on the homepage shows an overview of everything in the system - tables, views, tiles, roles and users can all be listed and edited. Further, the connections between different objects can be shown. More advanced users will typically use this area, when working on larger systems.</li>
+<li>In a [view](/docs/views/. When a view is open, toggling to build will let you edit that view - to add or remove fields and calculations for example.</li>
+<li>When viewing a record from a [table](/docs/tables/&gt;, toggling to build will let you edit that table, e.g. to add/remove fields.</li>
 </ol>
-<blockquote>
-<p>There is an option <strong>Populate the view with fields from this table</strong> next to the <em>Create new view</em> button. This is a convenience feature, which is ticked by default. When it&rsquo;s ticked, the view created will contain all fields from the table - you can then remove any you don&rsquo;t need. When un-ticked, the view will start with no fields so you can add just those you wish.</p>
-</blockquote>
-<h2 id="organising-into-a-navigation-structure">Organising into a navigation structure</h2>
-<p>On creating a view, its manage tab will appear. One of the first things it&rsquo;s useful to do is put the field in a tile - use the <em>Tile</em> dropdown option to do so.</p>
-<p>Within a tile, the view can be added to a menu by editing the view name. Simply prefix the view name with a menu name and a dash. So for example, naming a view <code>contacts - all contacts</code> will create a &lsquo;contacts&rsquo; menu containing the view &lsquo;all contacts&rsquo; visible to users.</p>
-<p>Entering a view <em>Purpose</em> in the space underneath the name will provide help text for the view. This will be displayed in the menu underneath the view name. Here&rsquo;s a screenshot of a sample menu, each with purpose completed.</p>
-<p><img src="/menu.png" alt="menu"></p>
-<h2 id="using-a-view">Using a view</h2>
-<p>Once the view is created, how can someone use it? We won&rsquo;t work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.</p>
-<h3 id="finding-data">Finding data</h3>
-<p>By default a search box appears under each column heading (the system can also be configured in a simplified way with a single search box to cover all fields).</p>
-<p>The help icon (?) to the left of the search boxes details the types of search that can be performed. There are many, allowing for e.g. date-based searches, <em>and</em> and <em>or</em> searching, finding empty values etc. Helper features pop up for some field types, like date range pickers for example.</p>
-<h3 id="seeing-summary-stats">Seeing summary stats</h3>
-<p>Hovering over a column shows summary statistics, like a total and average (of all filtered records) for numeric fields, or a breakdown of dropdown/tags fields.</p>
-<h3 id="loading-a-record">Loading a record</h3>
-<p>Once a record has been found, click a row in the view to load that record for viewing or editing. The record loaded comes from the table that the view belongs to (as referenced at the start of this page), even though the view may contain fields from other tables as well.</p>
-<p>It&rsquo;s also possible to use <a href="/docs/views/options/#inline-editing">inline editing</a> to edit the contents of fields directly in the view.</p>
-<p>Pressing the plus button to the left of the view contents will create a new record in the view&rsquo;s parent table.</p>
+<p>When build mode is on, pencil icons will appear next to every object which can be edited, for example next to every field and tab in a table record.</p>
+<p>When editing views and tables, the large pencil at the top left lets you edit the object as a whole, as opposed to a field or tab in it.</p>
+<p>Build mode can easily be toggled off again when you&rsquo;re done and the user interface will switch back to &lsquo;normal&rsquo; mode.</p>
+<h2 id="using-editing-panels">Using editing panels</h2>
+<p>When build mode is on, clicking any of the pencil icons on screen will open a panel allowing you to edit the item it&rsquo;s next to. The panel can be dragged to move it around the screen if you want to see what&rsquo;s underneath. Whenever you make a change using the panel, the display underneath will update, allowing you to see the effect your changes have in real time.</p>
+<h2 id="example-videos">Example videos</h2>
+<p>Here&rsquo;s an example of editing a table and view:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/mTOWsXDpQgo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>and here&rsquo;s what the build mode looks like on the homepage:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Rojcf6OzdHw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+        <div class="section-index">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
 
 	
 		<style>
@@ -676,11 +666,10 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified June 22, 2021: <a href="https://github.com/okohll/abdocs/commit/c49ef8f324b093200f9219cbe41d1246eae15ee3">Tag all docs pages (c49ef8f)</a>
+  Last modified February 18, 2022: <a href="https://github.com/okohll/abdocs/commit/dfa32d957a3335ef854d9039995533b895172c5b">Introducing the build mode - fix links (dfa32d9)</a>
 </div>
 
 </div>
-
 
           </main>
         </div>
