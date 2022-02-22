@@ -63,7 +63,8 @@
 &lt;li&gt;Click the plus button in the toolbar at the top&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;You should now see an editing screen with the details of the tile you just created.
-&lt;img src=&#34;https://docs.agilebase.co.uk/tile-details.png&#34; alt=&#34;Tile editing&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://docs.agilebase.co.uk/tile-details.png&#34; alt=&#34;Tile editing&#34;&gt;
+TODO: update this image&lt;/p&gt;
 &lt;p&gt;The available options are&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Name - the tile name&lt;/li&gt;
@@ -129,10 +130,11 @@
 &lt;p&gt;We&amp;rsquo;ll also assume we already have some tables and some &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;to-create-a-view&#34;&gt;To create a view&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
+&lt;li&gt;Select (or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;create&lt;/a&gt; a new) table.&lt;/li&gt;
 &lt;li&gt;Click the table you want to create a view from&lt;/li&gt;
-&lt;li&gt;If necessary, click the pencil icon in the toolbar to edit the table and click the &lt;em&gt;manage&lt;/em&gt; tab at the bottom of the screen&lt;/li&gt;
-&lt;li&gt;Press the &amp;lsquo;Create new view&amp;rsquo; button at the top right. You&amp;rsquo;ll be prompted for a name.&lt;/li&gt;
+&lt;li&gt;Once the table has been selected, click &lt;em&gt;name and views&lt;/em&gt; on the floating sidebar&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Add View&amp;hellip;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;You should now see your freshly created view&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;There is an option &lt;strong&gt;Populate the view with fields from this table&lt;/strong&gt; next to the &lt;em&gt;Create new view&lt;/em&gt; button. This is a convenience feature, which is ticked by default. When it&amp;rsquo;s ticked, the view created will contain all fields from the table - you can then remove any you don&amp;rsquo;t need. When un-ticked, the view will start with no fields so you can add just those you wish.&lt;/p&gt;
@@ -140,7 +142,7 @@
 &lt;h2 id=&#34;organising-into-a-navigation-structure&#34;&gt;Organising into a navigation structure&lt;/h2&gt;
 &lt;p&gt;On creating a view, its manage tab will appear. One of the first things it&amp;rsquo;s useful to do is put the field in a tile - use the &lt;em&gt;Tile&lt;/em&gt; dropdown option to do so.&lt;/p&gt;
 &lt;p&gt;Within a tile, the view can be added to a menu by editing the view name. Simply prefix the view name with a menu name and a dash. So for example, naming a view &lt;code&gt;contacts - all contacts&lt;/code&gt; will create a &amp;lsquo;contacts&amp;rsquo; menu containing the view &amp;lsquo;all contacts&amp;rsquo; visible to users.&lt;/p&gt;
-&lt;p&gt;Entering a view &lt;em&gt;Purpose&lt;/em&gt; in the space underneath the name will provide help text for the view. This will be displayed in the menu underneath the view name. Here&amp;rsquo;s a screenshot of a sample menu, each with purpose completed.&lt;/p&gt;
+&lt;p&gt;Entering a view &lt;em&gt;Help&lt;/em&gt; in the space underneath the name will provide help text for the view. This will be displayed in the menu underneath the view name. Here&amp;rsquo;s a screenshot of a sample menu, each with purpose completed.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/menu.png&#34; alt=&#34;menu&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;using-a-view&#34;&gt;Using a view&lt;/h2&gt;
 &lt;p&gt;Once the view is created, how can someone use it? We won&amp;rsquo;t work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.&lt;/p&gt;

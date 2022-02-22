@@ -365,13 +365,12 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
         &lt;p&gt;A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an agileBase application.&lt;/p&gt;
 &lt;h2 id=&#34;adding-a-table&#34;&gt;Adding a table&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
-&lt;li&gt;Click &lt;em&gt;create a new table&lt;/em&gt; at the bottom of the list of existing tables&lt;/li&gt;
-&lt;li&gt;Name the table&lt;/li&gt;
-&lt;li&gt;If necessary, click the pencil icon in the toolbar to see the details of the table you just created.&lt;/li&gt;
+&lt;li&gt;On the homepage, click the &amp;lsquo;toggle&amp;rsquo; button in the top-right of the screen to enable dev mode (if it is not enabled already)&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;list&lt;/em&gt; in the top centre of the screen (next to &lt;em&gt;connections&lt;/em&gt;) to select the list view&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;+ Add Table&lt;/em&gt;, choosing a name for the new table&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;TODO: image&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;You can change the table&amp;rsquo;s name and add a longer description under &lt;strong&gt;Purpose&lt;/strong&gt;. This description will be used as help text in the user interface.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TODO: images&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You can change the table&amp;rsquo;s name and add a longer description under &lt;strong&gt;Help&lt;/strong&gt;. This description will be used as help text in the user interface.&lt;/p&gt;
 &lt;h3 id=&#34;naming-tables&#34;&gt;Naming tables&lt;/h3&gt;
 &lt;p&gt;When naming a table, it&amp;rsquo;s best to use a plural form. Also avoid filler endings like &amp;lsquo;info&amp;rsquo; or &amp;lsquo;details&amp;rsquo;. So rather than &amp;lsquo;company info&amp;rsquo;, you might call a table &amp;lsquo;companies&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;The reason for this is that the user interface will automatically convert plural names into singular forms where appropriate. So for example if there&amp;rsquo;s a plus button on the screen to allow the user to add a new record in the table, it will automatically recognise the table and title the button Add Company.&lt;/p&gt;
@@ -383,11 +382,11 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h2 id=&#34;removing-a-table&#34;&gt;Removing a table&lt;/h2&gt;
 &lt;p&gt;Before removing a table, you first need to remove all views and fields.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s not necessary to remove actual data records from the table first.&lt;/p&gt;
-&lt;p&gt;A list of existing views is visible in the &lt;em&gt;manage&lt;/em&gt; tab of the table, at the top right. Visit each view and delete it.&lt;/p&gt;
-&lt;p&gt;Then next to the table&amp;rsquo;s manage tab is the &lt;em&gt;fields&lt;/em&gt; tab. Delete all the existing fields from here.&lt;/p&gt;
+&lt;p&gt;A list of existing views is visible in the &lt;em&gt;name and views&lt;/em&gt; section of the sidebar. Visit each view and delete it.&lt;/p&gt;
+&lt;p&gt;Then below to the table&amp;rsquo;s &lt;em&gt;name and views&lt;/em&gt; section is the &lt;em&gt;fields&lt;/em&gt; section. Delete all the existing fields from here.&lt;/p&gt;
+&lt;p&gt;When you&amp;rsquo;re done, you can click the &lt;em&gt;Remove table&lt;/em&gt; button in &lt;em&gt;name and views&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;When deleting views and fields, you may find you have to first delete other views or fields they depend on. In complex systems there can be chains of objects that need to be deleted in order.&lt;/p&gt;
 &lt;p&gt;Deleting is a destructive process so is not highly automated on purpose, to avoid accidental deletion. However at each stage you&amp;rsquo;ll be shown any dependencies which have to be removed first, so you can follow through the chain.&lt;/p&gt;
-&lt;p&gt;Once all views and fields have been deleted, you may need to reload the table by choosing it from the list under &lt;em&gt;Build Tables&lt;/em&gt;. In the &lt;em&gt;manage&lt;/em&gt; tab, the &lt;em&gt;Delete Table&lt;/em&gt; button should now be enabled and you can click it to perform the final step of the deletion.&lt;/p&gt;
 
       </description>
     </item>
@@ -676,7 +675,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
         &lt;p&gt;For each table, agileBase will automatically build a data entry form for users to view, add and edit records with.&lt;/p&gt;
 &lt;p&gt;The layout of this form can be controlled by selecting a layout option and adding separators to create blocks i.e. groups of fields which go together. This will create a more pleasant and usable system.&lt;/p&gt;
 &lt;h2 id=&#34;layout&#34;&gt;Layout&lt;/h2&gt;
-&lt;p&gt;The layout option is the main control. There are three options&lt;/p&gt;
+&lt;p&gt;The layout option is the main control. There are three options:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;single column&lt;/strong&gt; - a simple vertical list of fields&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;blocks in two columns&lt;/strong&gt; - makes the best use of screen space for large forms. Also allows tabs
@@ -776,6 +775,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;Views can utilise the full power of the SQL language (mostly behind the scenes with complexity hidden from administrators) to create useful and advanced reports where necessary.&lt;/p&gt;
 &lt;p&gt;On the screen, a view is most usually output as a series of rows of data, with field names as column headings - like a spreadsheet.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/view.png&#34; alt=&#34;view&#34;&gt;&lt;/p&gt;
+&lt;p&gt;TODO: updated UI screenshot&lt;/p&gt;
 &lt;p&gt;There are also other ways of displaying the output, such as in a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/calendar/&#34;&gt;calendar&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;document library&lt;/a&gt; interface.&lt;/p&gt;
 &lt;p&gt;Views are organised into &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;. Each tile contains a collection of views, organised into a menu system within it. Administrators can hence organise the display of data in a logical fashion.&lt;/p&gt;
 &lt;h3 id=&#34;behind-the-scenes-uses&#34;&gt;Behind the scenes uses&lt;/h3&gt;
@@ -1420,10 +1420,10 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
         
         &lt;p&gt;To access these options&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
-&lt;li&gt;Select the table you wish to edit&lt;/li&gt;
-&lt;li&gt;Click the pencil icon in the toolbar to edit the table, then select the table&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab&lt;/li&gt;
-&lt;li&gt;Click the &lt;em&gt;Options&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;Enable developer mode with the toggle switch in the top-right of the screen (if it is not already enabled)&lt;/li&gt;
+&lt;li&gt;Select the table you wish to edit (in the &lt;em&gt;list&lt;/em&gt; view)&lt;/li&gt;
+&lt;li&gt;Click the pencil icon on the left of the screen to edit the table, then select &lt;em&gt;tags and options&lt;/em&gt; in the floating sidebar&lt;/li&gt;
+&lt;li&gt;Edit the fields as described below&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;allow-add&#34;&gt;Allow add&lt;/h2&gt;
 &lt;p&gt;If this is ticked (it is by default), users can add records to the table. Anyone with manage privileges on the table can add tables regardless.&lt;/p&gt;
@@ -2302,7 +2302,7 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Caching is implemented using &lt;a href=&#34;https://en.wikipedia.org/wiki/Materialized_view&#34;&gt;materialized views&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;If you find a view is slow, feel free to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; for support before trying options like caching, there are many other targetted options we can look at first, such as adding indexes.&lt;/p&gt;
+&lt;p&gt;If you find a view is slow, feel free to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; for support before trying options like caching, there are many other targeted options we can look at first, such as adding indexes.&lt;/p&gt;
 &lt;/blockquote&gt;
 
       </description>

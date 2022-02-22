@@ -27,12 +27,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/tables/adding-and-removing/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2021-06-22T17:43:36+01:00" />
+<meta property="article:modified_time" content="2022-02-21T16:50:05+00:00" />
 
 <meta itemprop="name" content="Adding and removing">
 <meta itemprop="description" content="The basics of working with tables"><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2021-06-22T17:43:36+01:00" />
-<meta itemprop="wordCount" content="456">
+<meta itemprop="dateModified" content="2022-02-21T16:50:05+00:00" />
+<meta itemprop="wordCount" content="427">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Adding and removing"/>
 <meta name="twitter:description" content="The basics of working with tables"/>
@@ -582,13 +582,12 @@ if (!doNotTrack) {
 	<p>A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an agileBase application.</p>
 <h2 id="adding-a-table">Adding a table</h2>
 <ol>
-<li>Expand the <em>Build Tables</em> menu in the lefthand sidebar</li>
-<li>Click <em>create a new table</em> at the bottom of the list of existing tables</li>
-<li>Name the table</li>
-<li>If necessary, click the pencil icon in the toolbar to see the details of the table you just created.</li>
+<li>On the homepage, click the &lsquo;toggle&rsquo; button in the top-right of the screen to enable dev mode (if it is not enabled already)</li>
+<li>Click <em>list</em> in the top centre of the screen (next to <em>connections</em>) to select the list view</li>
+<li>Click <em>+ Add Table</em>, choosing a name for the new table</li>
 </ol>
-<p><strong>TODO: image</strong></p>
-<p>You can change the table&rsquo;s name and add a longer description under <strong>Purpose</strong>. This description will be used as help text in the user interface.</p>
+<p><strong>TODO: images</strong></p>
+<p>You can change the table&rsquo;s name and add a longer description under <strong>Help</strong>. This description will be used as help text in the user interface.</p>
 <h3 id="naming-tables">Naming tables</h3>
 <p>When naming a table, it&rsquo;s best to use a plural form. Also avoid filler endings like &lsquo;info&rsquo; or &lsquo;details&rsquo;. So rather than &lsquo;company info&rsquo;, you might call a table &lsquo;companies&rsquo;.</p>
 <p>The reason for this is that the user interface will automatically convert plural names into singular forms where appropriate. So for example if there&rsquo;s a plus button on the screen to allow the user to add a new record in the table, it will automatically recognise the table and title the button Add Company.</p>
@@ -600,11 +599,11 @@ if (!doNotTrack) {
 <h2 id="removing-a-table">Removing a table</h2>
 <p>Before removing a table, you first need to remove all views and fields.</p>
 <p>It&rsquo;s not necessary to remove actual data records from the table first.</p>
-<p>A list of existing views is visible in the <em>manage</em> tab of the table, at the top right. Visit each view and delete it.</p>
-<p>Then next to the table&rsquo;s manage tab is the <em>fields</em> tab. Delete all the existing fields from here.</p>
+<p>A list of existing views is visible in the <em>name and views</em> section of the sidebar. Visit each view and delete it.</p>
+<p>Then below to the table&rsquo;s <em>name and views</em> section is the <em>fields</em> section. Delete all the existing fields from here.</p>
+<p>When you&rsquo;re done, you can click the <em>Remove table</em> button in <em>name and views</em>.</p>
 <p>When deleting views and fields, you may find you have to first delete other views or fields they depend on. In complex systems there can be chains of objects that need to be deleted in order.</p>
 <p>Deleting is a destructive process so is not highly automated on purpose, to avoid accidental deletion. However at each stage you&rsquo;ll be shown any dependencies which have to be removed first, so you can follow through the chain.</p>
-<p>Once all views and fields have been deleted, you may need to reload the table by choosing it from the list under <em>Build Tables</em>. In the <em>manage</em> tab, the <em>Delete Table</em> button should now be enabled and you can click it to perform the final step of the deletion.</p>
 
 	
 		<style>
@@ -671,7 +670,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified June 22, 2021: <a href="https://github.com/okohll/abdocs/commit/c49ef8f324b093200f9219cbe41d1246eae15ee3">Tag all docs pages (c49ef8f)</a>
+  Last modified February 21, 2022: <a href="https://github.com/okohll/abdocs/commit/afa9a9a7cd36e3edf1a3a7a8a3e3dc90c0b917d2">Started doc updates and created TODO for UI screenshots that need updating (afa9a9a)</a>
 </div>
 
 </div>

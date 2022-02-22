@@ -28,8 +28,8 @@
 &lt;p&gt;To get started, you need to toggle from &amp;lsquo;normal&amp;rsquo; mode to &amp;lsquo;build&amp;rsquo; mode. You can do this wherever you are in the system and you will switch to building or developing the item you&amp;rsquo;re looking at. The three main areas this covers are:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;The homepage. Toggling to build mode on the homepage shows an overview of everything in the system - tables, views, tiles, roles and users can all be listed and edited. Further, the connections between different objects can be shown. More advanced users will typically use this area, when working on larger systems.&lt;/li&gt;
-&lt;li&gt;In a [view](/docs/views/. When a view is open, toggling to build will let you edit that view - to add or remove fields and calculations for example.&lt;/li&gt;
-&lt;li&gt;When viewing a record from a [table](/docs/tables/&amp;gt;, toggling to build will let you edit that table, e.g. to add/remove fields.&lt;/li&gt;
+&lt;li&gt;In a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt;. When a view is open, toggling to build will let you edit that view - to add or remove fields and calculations for example.&lt;/li&gt;
+&lt;li&gt;When viewing a record from a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/%3E&#34;&gt;table&lt;/a&gt;, toggling to build will let you edit that table, e.g. to add/remove fields.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;When build mode is on, pencil icons will appear next to every object which can be edited, for example next to every field and tab in a table record.&lt;/p&gt;
 &lt;p&gt;When editing views and tables, the large pencil at the top left lets you edit the object as a whole, as opposed to a field or tab in it.&lt;/p&gt;
