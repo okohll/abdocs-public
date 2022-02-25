@@ -255,8 +255,6 @@ TODO: update this image&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;If the view has no charts, this function can be used to send tabular data only&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;going-further&#34;&gt;Going further&lt;/h2&gt;
-&lt;p&gt;agileBase can also integrate with third party business intelligence and reporting tools, using the API Creator. A worked example is &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/pull-example-power-bi/&#34;&gt;here for Power BI&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>

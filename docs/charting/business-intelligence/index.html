@@ -27,12 +27,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/charting/business-intelligence/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2021-12-08T15:00:29+00:00" />
+<meta property="article:modified_time" content="2022-02-25T18:25:37+00:00" />
 
 <meta itemprop="name" content="Business Intelligence">
 <meta itemprop="description" content="Visualising data in third party Business Intelligence tools"><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2021-12-08T15:00:29+00:00" />
-<meta itemprop="wordCount" content="522">
+<meta itemprop="dateModified" content="2022-02-25T18:25:37+00:00" />
+<meta itemprop="wordCount" content="683">
 <meta itemprop="keywords" content="Developer," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Business Intelligence"/>
 <meta name="twitter:description" content="Visualising data in third party Business Intelligence tools"/>
@@ -358,8 +358,6 @@ if (!doNotTrack) {
   <a href="/docs/integrations/setting-up-the-pull-api/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationssetting-up-the-pull-api"><span class="">Creating a PULL API</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationspush-example-zapier-li">
   <a href="/docs/integrations/push-example-zapier/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationspush-example-zapier"><span class="">PUSH API worked example - Zapier</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationspull-example-power-bi-li">
-  <a href="/docs/integrations/pull-example-power-bi/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationspull-example-power-bi"><span class="">PULL API worked example - Power BI</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationscomplex-example-li">
   <a href="/docs/integrations/complex-example/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationscomplex-example"><span class="">Complete API worked example</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationsexporting-to-spreadsheet-li">
@@ -449,9 +447,10 @@ if (!doNotTrack) {
 <div class="td-toc"><nav id="TableOfContents">
   <ul>
     <li><a href="#initial-setup">Initial Setup</a></li>
-    <li><a href="#sending-data-to-superset">Sending data to Superset</a>
+    <li><a href="#sending-data-to-superset-or-power-bi">Sending data to Superset or Power BI</a>
       <ul>
         <li><a href="#changes">Changes</a></li>
+        <li><a href="#daily-updates">Daily updates</a></li>
       </ul>
     </li>
     <li><a href="#creating-dashboards-in-superset">Creating dashboards in Superset</a></li>
@@ -491,7 +490,7 @@ if (!doNotTrack) {
         
           <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/administrator/" data-taxonomy-term="administrator"><span class="taxonomy-label">Administrator</span><span class="taxonomy-count">1</span></a></li>
         
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/architect/" data-taxonomy-term="architect"><span class="taxonomy-label">Architect</span><span class="taxonomy-count">61</span></a></li>
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/architect/" data-taxonomy-term="architect"><span class="taxonomy-label">Architect</span><span class="taxonomy-count">60</span></a></li>
         
           <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/certified-architect/" data-taxonomy-term="certified-architect"><span class="taxonomy-label">Certified Architect</span><span class="taxonomy-count">16</span></a></li>
         
@@ -584,25 +583,39 @@ if (!doNotTrack) {
 <p>Before setting up a BI connection, please be aware of the <a href="/docs/charting#privacy-and-data-security">data privacy and security</a> considerations.</p>
 </blockquote>
 <p>At agileBase we host an instance of <a href="https://superset.apache.org">Apache Superset</a> which can be used by customers to create reporting dashboards.</p>
-<p>However the setup processes below also applies to third party tools such as Power BI.</p>
+<p>However the setup processes below also applies to third party tools such as Power BI. In fact, any tool which utilises <a href="https://en.wikipedia.org/wiki/Open_Database_Connectivity">ODBC</a> can be used, such as Excel for example.</p>
 <h2 id="initial-setup">Initial Setup</h2>
 <p>The first step is to <a href="https://agilechilli.com/contact-us/">contact us</a> to request we set up an Apache Superset account (this will also allow connections from other BI tools). We will then set up as many Superset users you require - there is no ongoing cost for these login accounts.</p>
 <p>Note that Superset logins are separate from agileBase ones - the usernames and passwords can be different.</p>
-<h2 id="sending-data-to-superset">Sending data to Superset</h2>
+<h2 id="sending-data-to-superset-or-power-bi">Sending data to Superset or Power BI</h2>
 <p>A developer with MANAGE privileges on a view&rsquo;s parent table can set this up.</p>
 <ol>
 <li>In agileBase, open the view you wish to report on. Ensure it has all the necessary fields and calculations in it which you want to report on. If not, add them before continuing.</li>
 <li>Click the charting icon to view the chart setup interface</li>
 <li>At the bottom of the screen, tick &lsquo;send data to a shareable dashboard&rsquo;. As this makes data available <a href="charting#privacy-and-data-security">outside of agileBase</a>, you will be asked to confirm you will treat the data in a way which maintains privacy and security before enabling the feature.</li>
 </ol>
-<p>Within a few seconds, the data will then be available in Superset.</p>
+<p>Within a few seconds, the data will then be visible to your external application.</p>
+<blockquote>
+<p>The first view set up in this way is free, further views can be purchased in bundles.</p>
+</blockquote>
 <h3 id="changes">Changes</h3>
 <p>It&rsquo;s easy for developers to make changes to views in agileBase, for example adding / removing fields, changing calculations or just renaming a view.</p>
 <blockquote>
 <p>However, when the BI connection is active, bear in mind that certain changes will disable the connection. The reason is that once data is set up to transfer to a separate system, the other system typically expects it to remain in the same format.</p>
 <p>That means that if you rename the view or move it, or rename/delete fields and calculations, you may afterwards need to re-connect BI by repeating step 3 above. Additionally, check your charts in Superset, to see if they need re-creating.</p>
 </blockquote>
+<h3 id="daily-updates">Daily updates</h3>
+<p>Once the view has been set up, external applications will see a new read-only snapshot of data once a day. If your data needs to be updated more often, you can add a workflow button to accomplish that:</p>
+<ol>
+<li>Ensure that the view A is used for reporting only, in particular it doesn&rsquo;t have any <a href="/docs/workflows/">workflow</a> set up.</li>
+<li>From another view B, edit the view and go to the &lsquo;workflow - edit records&rsquo; panel</li>
+<li>Under &lsquo;chain workflow&rsquo;, select the reporting view A</li>
+</ol>
+<p>Then, when a user opens view B, they will see a button at the top of the screen with the button text set to the name of view A. Pressing it will refresh the view A data sent to external applications.</p>
 <h2 id="creating-dashboards-in-superset">Creating dashboards in Superset</h2>
+<blockquote>
+<p>This section applies to Superset only, for Power BI or other instructions please contact us.</p>
+</blockquote>
 <p>Now that you&rsquo;ve set up agileBase to make data available to Superset, you can create charts and dashboards there.</p>
 <ol>
 <li>Create a &lsquo;dataset&rsquo; in Superset, corresponding to the view you set up above
@@ -625,9 +638,6 @@ if (!doNotTrack) {
 <li>Access the dashboard from the <em>Dashboards</em> menu at the top</li>
 </ol>
 <p>For more details on creating charts and editing dashboards, including video walkthroughs, see <a href="https://docs.preset.io/docs/create-a-chart">here</a></p>
-<blockquote>
-<p>The first view sent to Superset is free, further views can be purchased in bundles.</p>
-</blockquote>
 
 	
 		<style>
@@ -694,7 +704,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified December 8, 2021: <a href="https://github.com/okohll/abdocs/commit/14831a05ced0a44a784abefb5a6b20248ffbf923">Superset tweaks (14831a0)</a>
+  Last modified February 25, 2022: <a href="https://github.com/okohll/abdocs/commit/419c14e5cb70d1ee8218efbe7d523582a066b364">External reporting updates (419c14e)</a>
 </div>
 
 </div>
