@@ -188,10 +188,10 @@ That means that your company can send out branded, rich-text emails (with attach
 &lt;p&gt;Create a view with a list of people to chase. In the view’s &lt;em&gt;manage&lt;/em&gt; tab, under &lt;em&gt;Send&lt;/em&gt;, choose &lt;em&gt;send email chasers&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Tick &amp;lsquo;enable this chaser&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;Tick &amp;rsquo;enable this chaser&#39;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The system will add a number of calculations to the view and a couple of fields to the underlying table, to help manage chasing. These will be listed on the screen after ticking &amp;lsquo;enable this chaser&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;The system will add a number of calculations to the view and a couple of fields to the underlying table, to help manage chasing. These will be listed on the screen after ticking &amp;rsquo;enable this chaser&#39;.&lt;/p&gt;
 &lt;p&gt;Please edit the calculations to fill in the details required, such as the email address to send messages to, the frequency with which to send messages etc.&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Now make sure that only things you want to chase are chased, by adding any relevant filters to the view. e.g. to show anything out of date&lt;/li&gt;

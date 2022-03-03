@@ -37,25 +37,25 @@
 &lt;li&gt;If successful, a HTML page will be returned containing three hidden input fields, &lt;code&gt;username&lt;/code&gt;, &lt;code&gt;forename&lt;/code&gt;, &lt;code&gt;surname&lt;/code&gt; containing relevant details for the logged in user. If being called from a React Native Web View, the page will also post back messages to React using this JavaScript:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (window.ReactNativeWebView) {
-    window.ReactNativeWebView.postMessage(&amp;quot;username:&amp;quot; + username);
-    window.ReactNativeWebView.postMessage(&amp;quot;forename:&amp;quot; + forename);
-    window.ReactNativeWebView.postMessage(&amp;quot;surname:&amp;quot; + surname);
+    window.ReactNativeWebView.postMessage(&amp;#34;username:&amp;#34; + username);
+    window.ReactNativeWebView.postMessage(&amp;#34;forename:&amp;#34; + forename);
+    window.ReactNativeWebView.postMessage(&amp;#34;surname:&amp;#34; + surname);
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s a full example of a login.js page using the React Native Web View. NB this is an example taken from a full application, so you will need to modify it / strip it back to suit your needs, before it can be run.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;//Node imports
-import React, {useEffect, useRef, useState} from &#39;react&#39;;
-import {View, StatusBar, Image, ImageBackground, ScrollView} from &#39;react-native&#39;;
+import React, {useEffect, useRef, useState} from &amp;#39;react&amp;#39;;
+import {View, StatusBar, Image, ImageBackground, ScrollView} from &amp;#39;react-native&amp;#39;;
 
 //Local imports
-import {styles} from &#39;../../../styles/loginStyles&#39;;
-import {Images, Colors, Constants, Language} from &#39;../../../common&#39;;
-import {useNetInfo} from &amp;quot;@react-native-community/netinfo&amp;quot;;
-import { WebView } from &#39;react-native-webview&#39;;
-import {useDispatch, useSelector} from &#39;react-redux&#39;;
-import {updateUserData} from &#39;../../../redux/actions/commonAction&#39;;
-import commonFunctions from &#39;../../../common/commonFunctions&#39;;
-import SplashScreen from &#39;react-native-splash-screen&#39;
+import {styles} from &amp;#39;../../../styles/loginStyles&amp;#39;;
+import {Images, Colors, Constants, Language} from &amp;#39;../../../common&amp;#39;;
+import {useNetInfo} from &amp;#34;@react-native-community/netinfo&amp;#34;;
+import { WebView } from &amp;#39;react-native-webview&amp;#39;;
+import {useDispatch, useSelector} from &amp;#39;react-redux&amp;#39;;
+import {updateUserData} from &amp;#39;../../../redux/actions/commonAction&amp;#39;;
+import commonFunctions from &amp;#39;../../../common/commonFunctions&amp;#39;;
+import SplashScreen from &amp;#39;react-native-splash-screen&amp;#39;
 const {fontSize, fontFamily, Window} = Constants;
 
 const LoginScreen = (props) =&amp;gt; {
@@ -65,7 +65,7 @@ const LoginScreen = (props) =&amp;gt; {
 
     useEffect(function () {
         SplashScreen.hide();
-        console.log(&#39;netInfo==============&#39;, netInfo)
+        console.log(&amp;#39;netInfo==============&amp;#39;, netInfo)
         if(netInfo?.isInternetReachable || netInfo?.details != null){
             checkUser();
         }
@@ -75,7 +75,7 @@ const LoginScreen = (props) =&amp;gt; {
         if(user_data &amp;amp;&amp;amp; user_data?.forename &amp;amp;&amp;amp; user_data?.surname &amp;amp;&amp;amp; user_data?.username){
             goToNextPage();
         }
-        console.log(&#39;user_data&#39;, user_data)
+        console.log(&amp;#39;user_data&amp;#39;, user_data)
     }
 
     const goToNextPage = async () =&amp;gt; {
@@ -85,29 +85,29 @@ const LoginScreen = (props) =&amp;gt; {
 
     const onResponseFromWebView = (event) =&amp;gt; {
         const eventData = event.nativeEvent.data;
-        console.log(&#39;eventData&#39;, eventData);
-        if (eventData.includes(&#39;username&#39;)) {
-            dispatch(updateUserData({username: eventData.split(&#39;username:&#39;)[1]}));
-        } else if (eventData.includes(&#39;forename&#39;)) {
-            dispatch(updateUserData({forename: eventData.split(&#39;forename:&#39;)[1]}));
-        } else if (eventData.includes(&#39;surname&#39;)) {
-            dispatch(updateUserData({surname: eventData.split(&#39;surname:&#39;)[1]}));
+        console.log(&amp;#39;eventData&amp;#39;, eventData);
+        if (eventData.includes(&amp;#39;username&amp;#39;)) {
+            dispatch(updateUserData({username: eventData.split(&amp;#39;username:&amp;#39;)[1]}));
+        } else if (eventData.includes(&amp;#39;forename&amp;#39;)) {
+            dispatch(updateUserData({forename: eventData.split(&amp;#39;forename:&amp;#39;)[1]}));
+        } else if (eventData.includes(&amp;#39;surname&amp;#39;)) {
+            dispatch(updateUserData({surname: eventData.split(&amp;#39;surname:&amp;#39;)[1]}));
         }
     }
 
     const navigateToNextPage = () =&amp;gt; {
         if (netInfo?.isInternetReachable) {
-            return props.navigation.navigate(&#39;Loading&#39;);
+            return props.navigation.navigate(&amp;#39;Loading&amp;#39;);
         }
-        return props.navigation.navigate(&#39;MyApplicationPage&#39;);
+        return props.navigation.navigate(&amp;#39;MyApplicationPage&amp;#39;);
     }
 
     return (
         &amp;lt;View style={styles.container}&amp;gt;
-            &amp;lt;StatusBar backgroundColor={Colors.black} barStyle={&#39;dark-content&#39;}/&amp;gt;
+            &amp;lt;StatusBar backgroundColor={Colors.black} barStyle={&amp;#39;dark-content&amp;#39;}/&amp;gt;
             {(netInfo?.isInternetReachable &amp;amp;&amp;amp; !user_data?.surname) ?
                 &amp;lt;WebView
-                    source={{uri: &#39;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&#39;}}
+                    source={{uri: &amp;#39;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&amp;#39;}}
                     onMessage={onResponseFromWebView}
                     textZoom={100}
                     sharedCookiesEnabled={true}
@@ -263,7 +263,7 @@ export default LoginScreen;
 &lt;p&gt;Extending the above, what about when you want to summarise by two factors, e.g. ‘by customer by product’. In that case create calculations to make a unique key per combination e.g.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;{customers.id:customers} || ‘_’ || {products.id:products}&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Use the same calculation in views you want to join to and join on it.&lt;/p&gt;
-&lt;p&gt;This is much better than the &amp;lsquo;naive&amp;rsquo; idea of creating separate joins to each table, which won’t work.&lt;/p&gt;
+&lt;p&gt;This is much better than the &amp;rsquo;naive&amp;rsquo; idea of creating separate joins to each table, which won’t work.&lt;/p&gt;
 &lt;h2 id=&#34;including-multiple-aggregates-from-different-sources&#34;&gt;Including multiple aggregates from different sources&lt;/h2&gt;
 &lt;p&gt;Joining from one table down to multiple child tables in order to perform aggregates will not work - you&amp;rsquo;ll experience double counting.&lt;/p&gt;
 &lt;p&gt;For example, if a customers table joins down to both &amp;lsquo;customer invoices&amp;rsquo; and &amp;lsquo;customer complaints&amp;rsquo;, then a &lt;code&gt;count(*)&lt;/code&gt; calculation will return neither the number of invoices or complaints, but the product of the two i.e. the number of invoices times the number of complaints.&lt;/p&gt;
@@ -292,17 +292,17 @@ export default LoginScreen;
 &lt;p&gt;Calculation template:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;array_to_string(
   array(select distinct unnest(
-    regexp_split_to_array(‘my,comma,separated,list’, &#39;,&#39;)
+    regexp_split_to_array(‘my,comma,separated,list’, &amp;#39;,&amp;#39;)
   ))
-,&#39;,&#39;)
+,&amp;#39;,&amp;#39;)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Example:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;array_to_string(
   array(select distinct unnest(
     regexp_split_to_array(
-      string_agg({b2.2) ingredient suppliers.ingredient supplier&#39;s countries of origin}, &#39;,&#39;)
-    ,&#39;,&#39;)
+      string_agg({b2.2) ingredient suppliers.ingredient supplier&amp;#39;s countries of origin}, &amp;#39;,&amp;#39;)
+    ,&amp;#39;,&amp;#39;)
   ))
-,&#39;,&#39;)
+,&amp;#39;,&amp;#39;)
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;custom-filtering-when-choosing-a-relation&#34;&gt;Custom filtering when choosing a relation&lt;/h2&gt;
 &lt;p&gt;When choosing a relation, either in a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;junction table&lt;/a&gt; or otherwise, the system will automatically filter on the ID of any related parent record. For example, when adding order lines to a customer order, if each product is related to a customer, then the system will automatically only let the user choose products for that customer.&lt;/p&gt;
 &lt;p&gt;However it won’t filter on anything that’s more than one direct relationship away. If you want to do that, or indeed filter on anything else at all, you can create a filter calculation.&lt;/p&gt;
@@ -321,8 +321,8 @@ export default LoginScreen;
 &lt;li&gt;Edit all those views to remove references to the field and add the new field. That includes updating all calculations that reference the field to trigger the system to realise that the calc. no longer references eht old field&lt;/li&gt;
 &lt;li&gt;Remove the old field&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;finding-the-latest-child-record&#34;&gt;Finding the &amp;lsquo;latest&amp;rsquo; child record&lt;/h2&gt;
-&lt;p&gt;A common scenario occurs when you have a one to many relationship. You want a view which shows precise info from the &amp;lsquo;latest&amp;rsquo; child record.&lt;/p&gt;
+&lt;h2 id=&#34;finding-the-latest-child-record&#34;&gt;Finding the &amp;rsquo;latest&amp;rsquo; child record&lt;/h2&gt;
+&lt;p&gt;A common scenario occurs when you have a one to many relationship. You want a view which shows precise info from the &amp;rsquo;latest&amp;rsquo; child record.&lt;/p&gt;
 &lt;p&gt;Start with parent table and join to child, add the controlling field and set the correct order. For example, sorting by &amp;lsquo;created on [auto]&amp;rsquo; descending will give you the newest child record. Then go to &lt;em&gt;manage&lt;/em&gt; tab of the view and set the &lt;em&gt;Distinct Field&lt;/em&gt; option to the Parent table’s ID field.&lt;/p&gt;
 &lt;p&gt;You can now freely add what ever fields from the child record happy in the knowledge you’ll only have the one line per parent.&lt;/p&gt;
 
@@ -355,7 +355,7 @@ export default LoginScreen;
       <description>
         
         
-        &lt;p&gt;Sometimes when developing an app that integrates with agileBase, you may want to allow it to query the system to check the login details a user provides. In other words, let a user &amp;lsquo;log in&amp;rsquo; via your app.&lt;/p&gt;
+        &lt;p&gt;Sometimes when developing an app that integrates with agileBase, you may want to allow it to query the system to check the login details a user provides. In other words, let a user &amp;rsquo;log in&amp;rsquo; via your app.&lt;/p&gt;
 &lt;p&gt;The API mechanisms described in this section (push, pull etc.) don&amp;rsquo;t require a login to use, they work only via the API keys as described, however your app may still wish to test a users login to ensure they are a valid user.&lt;/p&gt;
 &lt;p&gt;To do that, the third party app must act exactly as if it were a web browser allowing the user to log in. In other words it must follow this process:&lt;/p&gt;
 &lt;ol&gt;
@@ -419,20 +419,20 @@ export default LoginScreen;
 &lt;p&gt;For each user, the &lt;code&gt;roles&lt;/code&gt; parameter is a comma separated list of internal role IDs, or role names. In addition to the multi-tenanting role, they will also be assigned these roles. They could be e.g. &amp;lsquo;manager&amp;rsquo;, &amp;lsquo;sales rep&amp;rsquo; or &amp;lsquo;accounts dept&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;For each user, &lt;code&gt;tiles&lt;/code&gt; is an array of the tiles the user should see on screen when they log in.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
-  &amp;quot;[multi-tenanting fieldname]&amp;quot;: &amp;quot;[multi-tenanting value]&amp;quot;,
-  &amp;quot;users&amp;quot;: [
+  &amp;#34;[multi-tenanting fieldname]&amp;#34;: &amp;#34;[multi-tenanting value]&amp;#34;,
+  &amp;#34;users&amp;#34;: [
     {
-      &amp;quot;username&amp;quot;: &amp;quot;[username&amp;quot;,
-      &amp;quot;forename&amp;quot;: &amp;quot;[forename]&amp;quot;,
-      &amp;quot;surname&amp;quot;: &amp;quot;[surname]&amp;quot;,
-      &amp;quot;email&amp;quot;: &amp;quot;[email address]&amp;quot;,
-      &amp;quot;customui&amp;quot;: [true/false],
-      &amp;quot;roles&amp;quot;: &amp;quot;[comma separated list of role names]&amp;quot;,
-      &amp;quot;tiles&amp;quot;: [
+      &amp;#34;username&amp;#34;: &amp;#34;[username&amp;#34;,
+      &amp;#34;forename&amp;#34;: &amp;#34;[forename]&amp;#34;,
+      &amp;#34;surname&amp;#34;: &amp;#34;[surname]&amp;#34;,
+      &amp;#34;email&amp;#34;: &amp;#34;[email address]&amp;#34;,
+      &amp;#34;customui&amp;#34;: [true/false],
+      &amp;#34;roles&amp;#34;: &amp;#34;[comma separated list of role names]&amp;#34;,
+      &amp;#34;tiles&amp;#34;: [
         {
-          &amp;quot;tiletype&amp;quot;: &amp;quot;comment_stream / calendar / data_link / files&amp;quot;,
-          &amp;quot;colour&amp;quot;: &amp;quot;blue / yellow / green / purple / pink / turquoise / blue2 / yellow2 / green2 / purple2 / pink2 / turquoise2&amp;quot;,
-          &amp;quot;internaltilename&amp;quot;: &amp;quot;[for data_link or files tiles, identifies the tile to add]&amp;quot;
+          &amp;#34;tiletype&amp;#34;: &amp;#34;comment_stream / calendar / data_link / files&amp;#34;,
+          &amp;#34;colour&amp;#34;: &amp;#34;blue / yellow / green / purple / pink / turquoise / blue2 / yellow2 / green2 / purple2 / pink2 / turquoise2&amp;#34;,
+          &amp;#34;internaltilename&amp;#34;: &amp;#34;[for data_link or files tiles, identifies the tile to add]&amp;#34;
         },
         { ... }
       ]
@@ -441,13 +441,13 @@ export default LoginScreen;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On a successful call, the JSON&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
-&amp;quot;result&amp;quot;: &amp;quot;ok&amp;quot;
+&amp;#34;result&amp;#34;: &amp;#34;ok&amp;#34;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;will be returned, with a 200 HTTP status code. If there is an error,&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
-&amp;quot;error&amp;quot;: true,
-&amp;quot;type&amp;quot;: &amp;quot;[class of error]&amp;quot;,
-&amp;quot;message&amp;quot;: &amp;quot;[error message]&amp;quot;
+&amp;#34;error&amp;#34;: true,
+&amp;#34;type&amp;#34;: &amp;#34;[class of error]&amp;#34;,
+&amp;#34;message&amp;#34;: &amp;#34;[error message]&amp;#34;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;will be returned and the HTTP status code will reflect the error.&lt;/p&gt;
 

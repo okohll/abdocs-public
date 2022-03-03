@@ -57,14 +57,14 @@
 &lt;blockquote&gt;
 &lt;p&gt;Different third party calendar systems may use some fields in slighlty different ways. For example, at the time of writing, Google Calendar does not support the &lt;code&gt;categories&lt;/code&gt; field but some other calendar systems do use this to show tags you may have added to your events.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Once you have data successfully flowing into the system, a common next step is to move the incoming events into tables which make sense for your particular business needs. For example, if you have a team of salespeople, you may move incoming bookings into a &amp;lsquo;leads&amp;rsquo; table. What you do with the data will depend on your particular circumstances.&lt;/p&gt;
+&lt;p&gt;Once you have data successfully flowing into the system, a common next step is to move the incoming events into tables which make sense for your particular business needs. For example, if you have a team of salespeople, you may move incoming bookings into a &amp;rsquo;leads&amp;rsquo; table. What you do with the data will depend on your particular circumstances.&lt;/p&gt;
 &lt;p&gt;You can use &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;automated worflows&lt;/a&gt; to copy data from one table to another if necessary.&lt;/p&gt;
 &lt;p&gt;However, you could also simply create views from the &amp;lsquo;ab calendar intray&amp;rsquo; table to allow users to view these events directly. Adding a filter to the user on the &amp;lsquo;person&amp;rsquo; field will ensure a user will only see their own events -see [users - restrict data access]({{relref &amp;ldquo;/docs/security-and-compliance/security-features/users#restrict-data-access&amp;rdquo;}})&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Please be aware of potential data privacy concerns when setting up calendar synchronisation. All events a user creates or modifies in any of the calendars in their connected account will send to agileBase. As an administrator, you may wish to set up specific work calendar accounts for your users, distinct from any personal accounts they may use.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;outgoing-data&#34;&gt;Outgoing data&lt;/h2&gt;
-&lt;p&gt;As well as receiving data in, you can send either new or modified events from agileBase to users&#39; connected calendars.&lt;/p&gt;
+&lt;p&gt;As well as receiving data in, you can send either new or modified events from agileBase to users&amp;rsquo; connected calendars.&lt;/p&gt;
 &lt;p&gt;New events are those created in agileBase, modified events are those created externally which have come into the system via the incoming data method above, but which have then been updated in agileBase.&lt;/p&gt;
 &lt;p&gt;To set this up&lt;/p&gt;
 &lt;ol&gt;
@@ -140,9 +140,9 @@
 &lt;p&gt;The row ID is returned with the key &lt;code&gt;rowId&lt;/code&gt; - this is often useful to identify a record when performing multiple actions. For example, when a new record is created, the calling system may want to store its row ID in order to be able to make future updates to the same record.&lt;/p&gt;
 &lt;p&gt;If there is an error, an appropriate HTTP response code is returned (see below) along with JSON explaining the error, containing three keys. For example if an incorrect Authorization header is supplied, the response may be&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
-  &amp;quot;error&amp;quot;: true,
-  &amp;quot;type&amp;quot;: &amp;quot;DisallowedException&amp;quot;,
-  &amp;quot;message&amp;quot;: &amp;quot;User public api is not allowed to edit delete data in table my table. An administrator can set up privileges so this can be allowed&amp;quot;
+  &amp;#34;error&amp;#34;: true,
+  &amp;#34;type&amp;#34;: &amp;#34;DisallowedException&amp;#34;,
+  &amp;#34;message&amp;#34;: &amp;#34;User public api is not allowed to edit delete data in table my table. An administrator can set up privileges so this can be allowed&amp;#34;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;http-response-codes&#34;&gt;HTTP response codes&lt;/h3&gt;
 &lt;ul&gt;
@@ -231,9 +231,9 @@ Other parameters to control various options are detailed below.&lt;/p&gt;
 &lt;p&gt;Finally, the API key provided needs to be submitted not as a HTTP request parameter, but as a header named ‘Authorization’. This is to reduce the change of it being cached or used in a browser string where it can be easily retained and read by unauthorised users.&lt;/p&gt;
 &lt;p&gt;Here’s a complete example of making a request, using PHP in WordPress&lt;/p&gt;
 &lt;p&gt;[php]&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$url = &#39;http://appserver.gtportalbase.com/agileBase/Public.ab?get_report_json=true&amp;amp;simple_format=true&amp;amp;t=mytablecode&amp;amp;r=myreportcode&amp;amp;c=mycompanycode&amp;amp;json_format=json&#39;;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$url = &amp;#39;http://appserver.gtportalbase.com/agileBase/Public.ab?get_report_json=true&amp;amp;simple_format=true&amp;amp;t=mytablecode&amp;amp;r=myreportcode&amp;amp;c=mycompanycode&amp;amp;json_format=json&amp;#39;;
 
-$args = array(&#39;headers&#39; =&amp;gt; array( &#39;Authorization&#39; =&amp;gt; &#39;myauthorisationkey&#39;));
+$args = array(&amp;#39;headers&amp;#39; =&amp;gt; array( &amp;#39;Authorization&amp;#39; =&amp;gt; &amp;#39;myauthorisationkey&amp;#39;));
 
 $response = wp_remote_get( $url, $args );
 
@@ -242,19 +242,19 @@ var_dump($response);
 &lt;p&gt;Sample output would look like&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[
   {
-    forename: &amp;quot;Oliver&amp;quot;,
-    surname: &amp;quot;Kohll&amp;quot;,
-    email_address: &amp;quot;oliver@agilebase.co.uk&amp;quot;
+    forename: &amp;#34;Oliver&amp;#34;,
+    surname: &amp;#34;Kohll&amp;#34;,
+    email_address: &amp;#34;oliver@agilebase.co.uk&amp;#34;
   },
   {
-    forename: &amp;quot;Simon&amp;quot;,
-    surname: &amp;quot;Minton&amp;quot;,
-    email_address: &amp;quot;simon@agilebase.co.uk&amp;quot;
+    forename: &amp;#34;Simon&amp;#34;,
+    surname: &amp;#34;Minton&amp;#34;,
+    email_address: &amp;#34;simon@agilebase.co.uk&amp;#34;
   },
   {
-    forename: &amp;quot;Cliff&amp;quot;,
-    surname: &amp;quot;Calcutt&amp;quot;,
-    email_address: &amp;quot;cliff@agilebase.co.uk&amp;quot;
+    forename: &amp;#34;Cliff&amp;#34;,
+    surname: &amp;#34;Calcutt&amp;#34;,
+    email_address: &amp;#34;cliff@agilebase.co.uk&amp;#34;
   }
 ]
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
@@ -397,7 +397,7 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;h2 id=&#34;setting-up-the-api-calls&#34;&gt;Setting up the API calls&lt;/h2&gt;
 &lt;p&gt;The integration is relatively easy to set up using &lt;a href=&#34;https://zapier.com&#34;&gt;Zapier&lt;/a&gt;. There&amp;rsquo;s one Zapier action for each step in the process:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/endole-zapier-overview.png&#34; alt=&#34;Endole Zapier Overview&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Each step is created using Zapier&amp;rsquo;s Webhooks integration - this is a flexible, general purpose integration suitable for communicating with many different companies&#39; APIs.&lt;/p&gt;
+&lt;p&gt;Each step is created using Zapier&amp;rsquo;s Webhooks integration - this is a flexible, general purpose integration suitable for communicating with many different companies&amp;rsquo; APIs.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt; is what Zapier calls a &amp;lsquo;catch hook&amp;rsquo;. It&amp;rsquo;s a single purpose URL they will generate to allow you to push data to them. Once that step is created, we can create a matching workflow view in agileBase which contains the company number we wish to query Endole for. We created a simple view with just one field, the company number. We then turned on a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/&#34;&gt;PUSH API&lt;/a&gt; using the URL Zapier provided. That&amp;rsquo;s as simple as pasting in the URL into the provided space in the agileBase view:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/endole-push-url.png&#34; alt=&#34;Endole Zapier push link&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt; in Zapier queries Endole with that company number. Here&amp;rsquo;s the meat of the process:&lt;/p&gt;
@@ -416,7 +416,7 @@ In short, we don&amp;rsquo;t need to worry about it. Endole provides the data to
 &lt;p&gt;Above, we mentioned creating a workflow to transform the YYYYMM date format (stored as text) into a proper date field. To do this we create a [workflow](/docs/workflows/altering-data/ which will update our Date field. It contains a calculation called Date with the definition&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;to_date(
     {1.4) financial data.date representation},
-    &#39;YYYYMM&#39;
+    &amp;#39;YYYYMM&amp;#39;
   )
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The workflow can be set to run whenever a financial details record is created, i.e. as data comes in, using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-on-create/&#34;&gt;run workflow on record creation&lt;/a&gt; option of a table.&lt;/p&gt;
 &lt;h2 id=&#34;charting-the-data&#34;&gt;Charting the data&lt;/h2&gt;
@@ -509,7 +509,7 @@ In short, we don&amp;rsquo;t need to worry about it. Endole provides the data to
       <description>
         
         
-        &lt;p&gt;Sometimes when developing an app that integrates with agileBase, you may want to allow it to query the system to check the login details a user provides. In other words, let a user &amp;lsquo;log in&amp;rsquo; via your app.&lt;/p&gt;
+        &lt;p&gt;Sometimes when developing an app that integrates with agileBase, you may want to allow it to query the system to check the login details a user provides. In other words, let a user &amp;rsquo;log in&amp;rsquo; via your app.&lt;/p&gt;
 &lt;p&gt;The API mechanisms described in this section (push, pull etc.) don&amp;rsquo;t require a login to use, they work only via the API keys as described, however your app may still wish to test a users login to ensure they are a valid user.&lt;/p&gt;
 &lt;p&gt;To do that, the third party app must act exactly as if it were a web browser allowing the user to log in. In other words it must follow this process:&lt;/p&gt;
 &lt;ol&gt;
@@ -573,20 +573,20 @@ In short, we don&amp;rsquo;t need to worry about it. Endole provides the data to
 &lt;p&gt;For each user, the &lt;code&gt;roles&lt;/code&gt; parameter is a comma separated list of internal role IDs, or role names. In addition to the multi-tenanting role, they will also be assigned these roles. They could be e.g. &amp;lsquo;manager&amp;rsquo;, &amp;lsquo;sales rep&amp;rsquo; or &amp;lsquo;accounts dept&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;For each user, &lt;code&gt;tiles&lt;/code&gt; is an array of the tiles the user should see on screen when they log in.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
-  &amp;quot;[multi-tenanting fieldname]&amp;quot;: &amp;quot;[multi-tenanting value]&amp;quot;,
-  &amp;quot;users&amp;quot;: [
+  &amp;#34;[multi-tenanting fieldname]&amp;#34;: &amp;#34;[multi-tenanting value]&amp;#34;,
+  &amp;#34;users&amp;#34;: [
     {
-      &amp;quot;username&amp;quot;: &amp;quot;[username&amp;quot;,
-      &amp;quot;forename&amp;quot;: &amp;quot;[forename]&amp;quot;,
-      &amp;quot;surname&amp;quot;: &amp;quot;[surname]&amp;quot;,
-      &amp;quot;email&amp;quot;: &amp;quot;[email address]&amp;quot;,
-      &amp;quot;customui&amp;quot;: [true/false],
-      &amp;quot;roles&amp;quot;: &amp;quot;[comma separated list of role names]&amp;quot;,
-      &amp;quot;tiles&amp;quot;: [
+      &amp;#34;username&amp;#34;: &amp;#34;[username&amp;#34;,
+      &amp;#34;forename&amp;#34;: &amp;#34;[forename]&amp;#34;,
+      &amp;#34;surname&amp;#34;: &amp;#34;[surname]&amp;#34;,
+      &amp;#34;email&amp;#34;: &amp;#34;[email address]&amp;#34;,
+      &amp;#34;customui&amp;#34;: [true/false],
+      &amp;#34;roles&amp;#34;: &amp;#34;[comma separated list of role names]&amp;#34;,
+      &amp;#34;tiles&amp;#34;: [
         {
-          &amp;quot;tiletype&amp;quot;: &amp;quot;comment_stream / calendar / data_link / files&amp;quot;,
-          &amp;quot;colour&amp;quot;: &amp;quot;blue / yellow / green / purple / pink / turquoise / blue2 / yellow2 / green2 / purple2 / pink2 / turquoise2&amp;quot;,
-          &amp;quot;internaltilename&amp;quot;: &amp;quot;[for data_link or files tiles, identifies the tile to add]&amp;quot;
+          &amp;#34;tiletype&amp;#34;: &amp;#34;comment_stream / calendar / data_link / files&amp;#34;,
+          &amp;#34;colour&amp;#34;: &amp;#34;blue / yellow / green / purple / pink / turquoise / blue2 / yellow2 / green2 / purple2 / pink2 / turquoise2&amp;#34;,
+          &amp;#34;internaltilename&amp;#34;: &amp;#34;[for data_link or files tiles, identifies the tile to add]&amp;#34;
         },
         { ... }
       ]
@@ -595,13 +595,13 @@ In short, we don&amp;rsquo;t need to worry about it. Endole provides the data to
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On a successful call, the JSON&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
-&amp;quot;result&amp;quot;: &amp;quot;ok&amp;quot;
+&amp;#34;result&amp;#34;: &amp;#34;ok&amp;#34;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;will be returned, with a 200 HTTP status code. If there is an error,&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
-&amp;quot;error&amp;quot;: true,
-&amp;quot;type&amp;quot;: &amp;quot;[class of error]&amp;quot;,
-&amp;quot;message&amp;quot;: &amp;quot;[error message]&amp;quot;
+&amp;#34;error&amp;#34;: true,
+&amp;#34;type&amp;#34;: &amp;#34;[class of error]&amp;#34;,
+&amp;#34;message&amp;#34;: &amp;#34;[error message]&amp;#34;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;will be returned and the HTTP status code will reflect the error.&lt;/p&gt;
 

@@ -85,7 +85,7 @@
 &lt;p&gt;Extending the above, what about when you want to summarise by two factors, e.g. ‘by customer by product’. In that case create calculations to make a unique key per combination e.g.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;{customers.id:customers} || ‘_’ || {products.id:products}&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Use the same calculation in views you want to join to and join on it.&lt;/p&gt;
-&lt;p&gt;This is much better than the &amp;lsquo;naive&amp;rsquo; idea of creating separate joins to each table, which won’t work.&lt;/p&gt;
+&lt;p&gt;This is much better than the &amp;rsquo;naive&amp;rsquo; idea of creating separate joins to each table, which won’t work.&lt;/p&gt;
 &lt;h2 id=&#34;including-multiple-aggregates-from-different-sources&#34;&gt;Including multiple aggregates from different sources&lt;/h2&gt;
 &lt;p&gt;Joining from one table down to multiple child tables in order to perform aggregates will not work - you&amp;rsquo;ll experience double counting.&lt;/p&gt;
 &lt;p&gt;For example, if a customers table joins down to both &amp;lsquo;customer invoices&amp;rsquo; and &amp;lsquo;customer complaints&amp;rsquo;, then a &lt;code&gt;count(*)&lt;/code&gt; calculation will return neither the number of invoices or complaints, but the product of the two i.e. the number of invoices times the number of complaints.&lt;/p&gt;
@@ -114,17 +114,17 @@
 &lt;p&gt;Calculation template:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;array_to_string(
   array(select distinct unnest(
-    regexp_split_to_array(‘my,comma,separated,list’, &#39;,&#39;)
+    regexp_split_to_array(‘my,comma,separated,list’, &amp;#39;,&amp;#39;)
   ))
-,&#39;,&#39;)
+,&amp;#39;,&amp;#39;)
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Example:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;array_to_string(
   array(select distinct unnest(
     regexp_split_to_array(
-      string_agg({b2.2) ingredient suppliers.ingredient supplier&#39;s countries of origin}, &#39;,&#39;)
-    ,&#39;,&#39;)
+      string_agg({b2.2) ingredient suppliers.ingredient supplier&amp;#39;s countries of origin}, &amp;#39;,&amp;#39;)
+    ,&amp;#39;,&amp;#39;)
   ))
-,&#39;,&#39;)
+,&amp;#39;,&amp;#39;)
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;custom-filtering-when-choosing-a-relation&#34;&gt;Custom filtering when choosing a relation&lt;/h2&gt;
 &lt;p&gt;When choosing a relation, either in a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;junction table&lt;/a&gt; or otherwise, the system will automatically filter on the ID of any related parent record. For example, when adding order lines to a customer order, if each product is related to a customer, then the system will automatically only let the user choose products for that customer.&lt;/p&gt;
 &lt;p&gt;However it won’t filter on anything that’s more than one direct relationship away. If you want to do that, or indeed filter on anything else at all, you can create a filter calculation.&lt;/p&gt;
@@ -143,8 +143,8 @@
 &lt;li&gt;Edit all those views to remove references to the field and add the new field. That includes updating all calculations that reference the field to trigger the system to realise that the calc. no longer references eht old field&lt;/li&gt;
 &lt;li&gt;Remove the old field&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;finding-the-latest-child-record&#34;&gt;Finding the &amp;lsquo;latest&amp;rsquo; child record&lt;/h2&gt;
-&lt;p&gt;A common scenario occurs when you have a one to many relationship. You want a view which shows precise info from the &amp;lsquo;latest&amp;rsquo; child record.&lt;/p&gt;
+&lt;h2 id=&#34;finding-the-latest-child-record&#34;&gt;Finding the &amp;rsquo;latest&amp;rsquo; child record&lt;/h2&gt;
+&lt;p&gt;A common scenario occurs when you have a one to many relationship. You want a view which shows precise info from the &amp;rsquo;latest&amp;rsquo; child record.&lt;/p&gt;
 &lt;p&gt;Start with parent table and join to child, add the controlling field and set the correct order. For example, sorting by &amp;lsquo;created on [auto]&amp;rsquo; descending will give you the newest child record. Then go to &lt;em&gt;manage&lt;/em&gt; tab of the view and set the &lt;em&gt;Distinct Field&lt;/em&gt; option to the Parent table’s ID field.&lt;/p&gt;
 &lt;p&gt;You can now freely add what ever fields from the child record happy in the knowledge you’ll only have the one line per parent.&lt;/p&gt;
 

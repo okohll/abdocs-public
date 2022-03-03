@@ -117,7 +117,7 @@ Users with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compli
 &lt;ol&gt;
 &lt;li&gt;filter the view (by typing into the filter boxes at the top of each column) to narrow down the rows to those which should be edited&lt;/li&gt;
 &lt;li&gt;double click on a column header in a view, to edit the data in that field. The field must be from the view&amp;rsquo;s parent table.&lt;/li&gt;
-&lt;li&gt;click the &amp;lsquo;edit filtered&amp;rsquo; button which appears&lt;/li&gt;
+&lt;li&gt;click the &amp;rsquo;edit filtered&amp;rsquo; button which appears&lt;/li&gt;
 &lt;li&gt;type in the value you want to apply and follow through the prompts&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;User Visibility&lt;/strong&gt; and &lt;strong&gt;Restrict Data Access&lt;/strong&gt;&lt;br&gt;
@@ -370,25 +370,25 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;If successful, a HTML page will be returned containing three hidden input fields, &lt;code&gt;username&lt;/code&gt;, &lt;code&gt;forename&lt;/code&gt;, &lt;code&gt;surname&lt;/code&gt; containing relevant details for the logged in user. If being called from a React Native Web View, the page will also post back messages to React using this JavaScript:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (window.ReactNativeWebView) {
-    window.ReactNativeWebView.postMessage(&amp;quot;username:&amp;quot; + username);
-    window.ReactNativeWebView.postMessage(&amp;quot;forename:&amp;quot; + forename);
-    window.ReactNativeWebView.postMessage(&amp;quot;surname:&amp;quot; + surname);
+    window.ReactNativeWebView.postMessage(&amp;#34;username:&amp;#34; + username);
+    window.ReactNativeWebView.postMessage(&amp;#34;forename:&amp;#34; + forename);
+    window.ReactNativeWebView.postMessage(&amp;#34;surname:&amp;#34; + surname);
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s a full example of a login.js page using the React Native Web View. NB this is an example taken from a full application, so you will need to modify it / strip it back to suit your needs, before it can be run.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;//Node imports
-import React, {useEffect, useRef, useState} from &#39;react&#39;;
-import {View, StatusBar, Image, ImageBackground, ScrollView} from &#39;react-native&#39;;
+import React, {useEffect, useRef, useState} from &amp;#39;react&amp;#39;;
+import {View, StatusBar, Image, ImageBackground, ScrollView} from &amp;#39;react-native&amp;#39;;
 
 //Local imports
-import {styles} from &#39;../../../styles/loginStyles&#39;;
-import {Images, Colors, Constants, Language} from &#39;../../../common&#39;;
-import {useNetInfo} from &amp;quot;@react-native-community/netinfo&amp;quot;;
-import { WebView } from &#39;react-native-webview&#39;;
-import {useDispatch, useSelector} from &#39;react-redux&#39;;
-import {updateUserData} from &#39;../../../redux/actions/commonAction&#39;;
-import commonFunctions from &#39;../../../common/commonFunctions&#39;;
-import SplashScreen from &#39;react-native-splash-screen&#39;
+import {styles} from &amp;#39;../../../styles/loginStyles&amp;#39;;
+import {Images, Colors, Constants, Language} from &amp;#39;../../../common&amp;#39;;
+import {useNetInfo} from &amp;#34;@react-native-community/netinfo&amp;#34;;
+import { WebView } from &amp;#39;react-native-webview&amp;#39;;
+import {useDispatch, useSelector} from &amp;#39;react-redux&amp;#39;;
+import {updateUserData} from &amp;#39;../../../redux/actions/commonAction&amp;#39;;
+import commonFunctions from &amp;#39;../../../common/commonFunctions&amp;#39;;
+import SplashScreen from &amp;#39;react-native-splash-screen&amp;#39;
 const {fontSize, fontFamily, Window} = Constants;
 
 const LoginScreen = (props) =&amp;gt; {
@@ -398,7 +398,7 @@ const LoginScreen = (props) =&amp;gt; {
 
     useEffect(function () {
         SplashScreen.hide();
-        console.log(&#39;netInfo==============&#39;, netInfo)
+        console.log(&amp;#39;netInfo==============&amp;#39;, netInfo)
         if(netInfo?.isInternetReachable || netInfo?.details != null){
             checkUser();
         }
@@ -408,7 +408,7 @@ const LoginScreen = (props) =&amp;gt; {
         if(user_data &amp;amp;&amp;amp; user_data?.forename &amp;amp;&amp;amp; user_data?.surname &amp;amp;&amp;amp; user_data?.username){
             goToNextPage();
         }
-        console.log(&#39;user_data&#39;, user_data)
+        console.log(&amp;#39;user_data&amp;#39;, user_data)
     }
 
     const goToNextPage = async () =&amp;gt; {
@@ -418,29 +418,29 @@ const LoginScreen = (props) =&amp;gt; {
 
     const onResponseFromWebView = (event) =&amp;gt; {
         const eventData = event.nativeEvent.data;
-        console.log(&#39;eventData&#39;, eventData);
-        if (eventData.includes(&#39;username&#39;)) {
-            dispatch(updateUserData({username: eventData.split(&#39;username:&#39;)[1]}));
-        } else if (eventData.includes(&#39;forename&#39;)) {
-            dispatch(updateUserData({forename: eventData.split(&#39;forename:&#39;)[1]}));
-        } else if (eventData.includes(&#39;surname&#39;)) {
-            dispatch(updateUserData({surname: eventData.split(&#39;surname:&#39;)[1]}));
+        console.log(&amp;#39;eventData&amp;#39;, eventData);
+        if (eventData.includes(&amp;#39;username&amp;#39;)) {
+            dispatch(updateUserData({username: eventData.split(&amp;#39;username:&amp;#39;)[1]}));
+        } else if (eventData.includes(&amp;#39;forename&amp;#39;)) {
+            dispatch(updateUserData({forename: eventData.split(&amp;#39;forename:&amp;#39;)[1]}));
+        } else if (eventData.includes(&amp;#39;surname&amp;#39;)) {
+            dispatch(updateUserData({surname: eventData.split(&amp;#39;surname:&amp;#39;)[1]}));
         }
     }
 
     const navigateToNextPage = () =&amp;gt; {
         if (netInfo?.isInternetReachable) {
-            return props.navigation.navigate(&#39;Loading&#39;);
+            return props.navigation.navigate(&amp;#39;Loading&amp;#39;);
         }
-        return props.navigation.navigate(&#39;MyApplicationPage&#39;);
+        return props.navigation.navigate(&amp;#39;MyApplicationPage&amp;#39;);
     }
 
     return (
         &amp;lt;View style={styles.container}&amp;gt;
-            &amp;lt;StatusBar backgroundColor={Colors.black} barStyle={&#39;dark-content&#39;}/&amp;gt;
+            &amp;lt;StatusBar backgroundColor={Colors.black} barStyle={&amp;#39;dark-content&amp;#39;}/&amp;gt;
             {(netInfo?.isInternetReachable &amp;amp;&amp;amp; !user_data?.surname) ?
                 &amp;lt;WebView
-                    source={{uri: &#39;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&#39;}}
+                    source={{uri: &amp;#39;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&amp;#39;}}
                     onMessage={onResponseFromWebView}
                     textZoom={100}
                     sharedCookiesEnabled={true}

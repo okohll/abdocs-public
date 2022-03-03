@@ -31,7 +31,7 @@
 &lt;h3 id=&#34;general-functions&#34;&gt;General functions&lt;/h3&gt;
 &lt;p&gt;There are a couple of functions that are particularly useful to know about, to keep in your calculations toolkit. These are&lt;/p&gt;
 &lt;h4 id=&#34;coalesce&#34;&gt;Coalesce&lt;/h4&gt;
-&lt;p&gt;The coalesce function lets you deal sensibly with empty values, which we call &amp;lsquo;null&amp;rsquo; values. Normally, if any field you reference is null, then the result of the calculation is also null. Coalesce is a way to provide a default value. So for example, if a view of customer order lines has a quantity and a price field, but the quantity may be blank, then&lt;/p&gt;
+&lt;p&gt;The coalesce function lets you deal sensibly with empty values, which we call &amp;rsquo;null&amp;rsquo; values. Normally, if any field you reference is null, then the result of the calculation is also null. Coalesce is a way to provide a default value. So for example, if a view of customer order lines has a quantity and a price field, but the quantity may be blank, then&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;coalesce({quantity}, 0) * {price}&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;would calculate the line value, outputting zero if the quantity is not filled in.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -40,10 +40,10 @@
 &lt;h4 id=&#34;case&#34;&gt;Case&lt;/h4&gt;
 &lt;p&gt;A case statement can be used to add &amp;lsquo;if/then/else&amp;rsquo; logic. An example is&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;case
-  when {due date} is null then &#39;unknown&#39;
-  when {due date} &amp;lt; now() then &#39;overdue&#39;
-  when {due date} &amp;lt; now() + interval &#39;7 days&#39; then &#39;due soon&#39;
-  else &#39;not due yet&#39;
+  when {due date} is null then &amp;#39;unknown&amp;#39;
+  when {due date} &amp;lt; now() then &amp;#39;overdue&amp;#39;
+  when {due date} &amp;lt; now() + interval &amp;#39;7 days&amp;#39; then &amp;#39;due soon&amp;#39;
+  else &amp;#39;not due yet&amp;#39;
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(We&amp;rsquo;ll cover date calculations more below).&lt;/p&gt;
 &lt;blockquote&gt;
@@ -66,8 +66,8 @@ end
 &lt;/ul&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;regexp_replace(
   {account owner},
-  &#39;.*\\((.*)\\).*&#39;,
-  &#39;\\1&#39;
+  &amp;#39;.*\\((.*)\\).*&amp;#39;,
+  &amp;#39;\\1&amp;#39;
 )
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;A more complex example. Given an &amp;lsquo;account owner&amp;rsquo; value in the format &lt;strong&gt;Forename Surname (username)&lt;/strong&gt;, extract the username, i.e. everything between the brackets.&lt;/li&gt;
@@ -78,8 +78,8 @@ end
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;like&lt;/code&gt; compares two elements of text and &lt;code&gt;ilike&lt;/code&gt; does so case-insensitively. A percentage sign means &amp;lsquo;match any text&amp;rsquo;. So for example:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;case
-  when {postcode} ilike &#39;bs%&#39; then &#39;Bristol&#39;
-  else &#39;elsewhere&#39;
+  when {postcode} ilike &amp;#39;bs%&amp;#39; then &amp;#39;Bristol&amp;#39;
+  else &amp;#39;elsewhere&amp;#39;
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;Outputs &amp;lsquo;Bristol&amp;rsquo; if the postcode field starts with &amp;lsquo;BS&amp;rsquo; (or &amp;lsquo;bs&amp;rsquo;).&lt;/li&gt;
@@ -103,7 +103,7 @@ end
 &lt;li&gt;Works out how many days are left in the current month. This example introduces a couple more date functions:
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;now()&lt;/code&gt; gives the current date and time&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;date_trunc&lt;/code&gt; &amp;lsquo;truncates&amp;rsquo; a date to the month in this case (in other words rounding it down to the nearest month)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;date_trunc&lt;/code&gt; &amp;rsquo;truncates&amp;rsquo; a date to the month in this case (in other words rounding it down to the nearest month)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

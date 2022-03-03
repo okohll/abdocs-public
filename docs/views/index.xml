@@ -94,7 +94,7 @@
 &lt;p&gt;So joins upwards are the more common case, but joins downward can be useful for particular purposes.&lt;/p&gt;
 &lt;h2 id=&#34;complex-joins&#34;&gt;Complex joins&lt;/h2&gt;
 &lt;p&gt;As above, agileBase automatically suggests joins to data that&amp;rsquo;s related to the current view&amp;rsquo;s parent table as well as any of the tables already joined to. It uses &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation fields&lt;/a&gt; to see what&amp;rsquo;s related.&lt;/p&gt;
-&lt;p&gt;However, sometimes you may want to join to a table or view that&amp;rsquo;s not automatically suggested. These examples may become increasingly &amp;lsquo;niche&amp;rsquo; but they are a useful reference for similar situations you may come across.&lt;/p&gt;
+&lt;p&gt;However, sometimes you may want to join to a table or view that&amp;rsquo;s not automatically suggested. These examples may become increasingly &amp;rsquo;niche&amp;rsquo; but they are a useful reference for similar situations you may come across.&lt;/p&gt;
 &lt;h3 id=&#34;joining-to-a-view&#34;&gt;Joining to a view&lt;/h3&gt;
 &lt;p&gt;Joins to views aren&amp;rsquo;t automatically suggested, but you can still add them.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -116,7 +116,7 @@
 &lt;li&gt;The &lt;strong&gt;right field&lt;/strong&gt; is the field to match. This will usually be a table ID field. If you chose an ID field for the left field, then choose the same ID field in the target view. If the left field is a relation, choose the ID of the table it relates to on the right&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;example&#34;&gt;Example&lt;/h4&gt;
-&lt;p&gt;To take the example above of the nutritional calculations, assume we have a view called &amp;lsquo;nutritional values&amp;rsquo;, built from a &amp;lsquo;recipes&amp;rsquo; table. To include nutritional data in another view &amp;lsquo;recipe details&amp;rsquo;, also built from the recipes table, we would edit recipe details and add a join as follows:&lt;/p&gt;
+&lt;p&gt;To take the example above of the nutritional calculations, assume we have a view called &amp;rsquo;nutritional values&amp;rsquo;, built from a &amp;lsquo;recipes&amp;rsquo; table. To include nutritional data in another view &amp;lsquo;recipe details&amp;rsquo;, also built from the recipes table, we would edit recipe details and add a join as follows:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Left source: the recipes table&lt;/li&gt;
 &lt;li&gt;Left field: the ID:recipes field&lt;/li&gt;
@@ -125,7 +125,7 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;joining-on-a-field-other-than-the-id&#34;&gt;Joining on a field other than the ID&lt;/h3&gt;
 &lt;p&gt;On occasion, you may wish to join to another table on data that is present in this and the other.&lt;/p&gt;
-&lt;p&gt;For an example, imagine our business opens a series of restaurants - we have a table &amp;lsquo;restaurants&amp;rsquo; listing them. We may have a table of people who&amp;rsquo;ve signed up to our newsletter, called &amp;lsquo;newsletter signups&amp;rsquo;. Some of them may have provided a postcode.&lt;/p&gt;
+&lt;p&gt;For an example, imagine our business opens a series of restaurants - we have a table &amp;lsquo;restaurants&amp;rsquo; listing them. We may have a table of people who&amp;rsquo;ve signed up to our newsletter, called &amp;rsquo;newsletter signups&amp;rsquo;. Some of them may have provided a postcode.&lt;/p&gt;
 &lt;p&gt;To find a list of people in the same postcode areas as each restaurant (the first half of a postcode, e.g. BS1):&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;in a view &amp;lsquo;restaurant locations&amp;rsquo;, built from the restaurants table, create a calculation &amp;lsquo;postcode area&amp;rsquo;, which picks out the first part of the restaurant&amp;rsquo;s postcode (see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculations&lt;/a&gt; for how to create a calculation)&lt;/li&gt;
@@ -263,8 +263,8 @@
 &lt;li&gt;Under &lt;em&gt;Filters&lt;/em&gt;, click the &lt;em&gt;Add Filter&lt;/em&gt; button&lt;/li&gt;
 &lt;li&gt;Choose relevant options and press &lt;em&gt;Add&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;There are 26 types of filter to choose from, from the simple &amp;lsquo;equals&amp;rsquo; and &amp;lsquo;not equal to&amp;rsquo;, to more complex pattern matching using &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP&#34;&gt;regular expressions&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Some filters apply to multiple data types, others only to specific types. For example, &amp;lsquo;newer than X days ago&amp;rsquo; only applies to date fields.&lt;/p&gt;
+&lt;p&gt;There are 26 types of filter to choose from, from the simple &amp;rsquo;equals&amp;rsquo; and &amp;rsquo;not equal to&amp;rsquo;, to more complex pattern matching using &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP&#34;&gt;regular expressions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Some filters apply to multiple data types, others only to specific types. For example, &amp;rsquo;newer than X days ago&amp;rsquo; only applies to date fields.&lt;/p&gt;
 &lt;p&gt;Once you&amp;rsquo;ve added a filter, you&amp;rsquo;ll be able to type in a description for it. If no description is entered, the system will automatically generate one, which you&amp;rsquo;ll be able to see.&lt;/p&gt;
 &lt;p&gt;This description is shown to users as help in particular circumstances, e.g. when the view is used as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt;, so it&amp;rsquo;s a good idea to check it makes sense.&lt;/p&gt;
 &lt;h3 id=&#34;including-blank-values&#34;&gt;Including blank values&lt;/h3&gt;

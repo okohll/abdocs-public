@@ -91,7 +91,7 @@
     </item>
     
     <item>
-      <title>Docs: Adding and removing</title>
+      <title>Docs: Adding, editing and removing</title>
       <link>https://docs.agilebase.co.uk/docs/tables/adding-and-removing/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       
@@ -102,8 +102,7 @@
         &lt;p&gt;A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an agileBase application.&lt;/p&gt;
 &lt;h2 id=&#34;adding-a-table&#34;&gt;Adding a table&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;On the homepage, click the &amp;lsquo;toggle&amp;rsquo; button in the top-right of the screen to enable dev mode (if it is not enabled already)&lt;/li&gt;
-&lt;li&gt;Click &lt;em&gt;list&lt;/em&gt; in the top centre of the screen (next to &lt;em&gt;connections&lt;/em&gt;) to select the list view&lt;/li&gt;
+&lt;li&gt;On the homepage, click the &amp;rsquo;toggle&amp;rsquo; button in the top-right of the screen to enable dev mode (if it is not enabled already)&lt;/li&gt;
 &lt;li&gt;Click &lt;em&gt;+ Add Table&lt;/em&gt;, choosing a name for the new table&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;TODO: images&lt;/strong&gt;&lt;/p&gt;
@@ -116,6 +115,15 @@
 &lt;code&gt;b) table 2&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;In the administrator interface, tables are listed alphabetically, so you can arrange the tables into a logical order with this method.&lt;/p&gt;
 &lt;p&gt;The user interface will strip out any prefixes when displaying names to users, if they end with a closing bracket &lt;code&gt;)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;## Editing a table
+There are two ways to edit a table: from the homepage, or from editing a record.&lt;/p&gt;
+&lt;h3 id=&#34;from-the-homepage&#34;&gt;From the homepage&lt;/h3&gt;
+&lt;p&gt;When you toggle build mode with the toggle in the top right corner of the screen, you can see a &lt;em&gt;connections&lt;/em&gt; mode and a &lt;em&gt;list&lt;/em&gt; mode: these two views show the tables in the system. The &lt;em&gt;connections&lt;/em&gt; mode shows the relations between entities whilst the &lt;em&gt;list&lt;/em&gt; mode presents the same data in tabular form.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/homepage-connections-mode.png&#34; alt=&#34;Connections mode&#34;&gt;
+&lt;img src=&#34;https://docs.agilebase.co.uk/homepage-list-mode.png&#34; alt=&#34;List mode&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;from-editing-a-record&#34;&gt;From editing a record&lt;/h3&gt;
+&lt;p&gt;When build mode is enabled, if you are viewing an individual record then clicking the big pencil at the top left of the screen lets you edit the underlying table.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/editing-a-record.png&#34; alt=&#34;Editing a record&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;removing-a-table&#34;&gt;Removing a table&lt;/h2&gt;
 &lt;p&gt;Before removing a table, you first need to remove all views and fields.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s not necessary to remove actual data records from the table first.&lt;/p&gt;
@@ -146,7 +154,7 @@
 &lt;li&gt;&lt;strong&gt;blocks in two columns&lt;/strong&gt; - makes the best use of screen space for large forms. Also allows tabs
 &lt;ul&gt;
 &lt;li&gt;All fields before the first separator are displayed in a section at the top of the screen, in two columns&lt;/li&gt;
-&lt;li&gt;After that, each separator added creates a new block of fields. Blocks are arranged in two &amp;lsquo;newspaper&amp;rsquo; style columns which are displayed below the top section&lt;/li&gt;
+&lt;li&gt;After that, each separator added creates a new block of fields. Blocks are arranged in two &amp;rsquo;newspaper&amp;rsquo; style columns which are displayed below the top section&lt;/li&gt;
 &lt;li&gt;If the table has tabs, they are displayed below the top section&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
