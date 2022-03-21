@@ -588,7 +588,8 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;On the homepage, click the &amp;rsquo;toggle&amp;rsquo; button in the top-right of the screen to enable dev mode (if it is not enabled already)&lt;/li&gt;
 &lt;li&gt;Click &lt;em&gt;+ Add Table&lt;/em&gt;, choosing a name for the new table&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;TODO: images&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TODO: images&lt;/strong&gt;
+&lt;img src=&#34;https://docs.agilebase.co.uk/add-table-button.png&#34; alt=&#34;Add Table Button&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You can change the table&amp;rsquo;s name and add a longer description under &lt;strong&gt;Help&lt;/strong&gt;. This description will be used as help text in the user interface.&lt;/p&gt;
 &lt;h3 id=&#34;naming-tables&#34;&gt;Naming tables&lt;/h3&gt;
 &lt;p&gt;When naming a table, it&amp;rsquo;s best to use a plural form. Also avoid filler endings like &amp;lsquo;info&amp;rsquo; or &amp;lsquo;details&amp;rsquo;. So rather than &amp;lsquo;company info&amp;rsquo;, you might call a table &amp;lsquo;companies&amp;rsquo;.&lt;/p&gt;
@@ -900,6 +901,7 @@ There are two ways to edit a table: from the homepage, or from editing a record.
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;process flow&lt;/strong&gt; - blocks of fields are arranged vertically one after each other, works well when there the data entry form maps to a set process&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/tags-and-options.png&#34; alt=&#34;Tags and options&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s what the same data entry form looks like in each of the three configurations&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/layout-single.png&#34; alt=&#34;single column layout&#34;&gt; &amp;ldquo;single column&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/layout-two-columns.png&#34; alt=&#34;two column layout&#34;&gt; &amp;ldquo;two columns&amp;rdquo;&lt;/p&gt;
@@ -1369,8 +1371,9 @@ export default LoginScreen;
       <description>
         
         
-        &lt;p&gt;In a table&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab, there are two options which are worth considering if the data is storing commercially sensitive information (plenty of information in most customer systems falls under this category!) or personal information as defined by EU General Data Protection Regulations (GDPR).&lt;/p&gt;
+        &lt;p&gt;In a table&amp;rsquo;s &lt;em&gt;privacy and security&lt;/em&gt; tab, there are two options which are worth considering if the data is storing commercially sensitive information (plenty of information in most customer systems falls under this category!) or personal information as defined by EU General Data Protection Regulations (GDPR).&lt;/p&gt;
 &lt;p&gt;When either option is ticked, two controls appear.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/privacy-and-security.png&#34; alt=&#34;Privacy and security&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;notify-administrators-on-export&#34;&gt;Notify administrators on export&lt;/h2&gt;
 &lt;p&gt;Here you can enter a number. When a user exports more than that number of records at once to spreadsheet, all administrators (users with the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/#assigning-the-administrator-privilege&#34;&gt;administrator&lt;/a&gt; privilege) are notified by email.&lt;/p&gt;
 &lt;h2 id=&#34;disallow-exports&#34;&gt;Disallow exports&lt;/h2&gt;
@@ -1625,7 +1628,7 @@ export default LoginScreen;
 &lt;/blockquote&gt;
 &lt;p&gt;That said, these are the ways in which you can strictly enforce data integrity.&lt;/p&gt;
 &lt;h2 id=&#34;at-an-individual-field-level&#34;&gt;At an individual field level&lt;/h2&gt;
-&lt;p&gt;Basic rules can be applied with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/&#34;&gt;field options&lt;/a&gt;. for example a field may be set as mandatory, or it must contain unique values (no duplicates).&lt;/p&gt;
+&lt;p&gt;Basic rules can be applied with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/&#34;&gt;field options&lt;/a&gt;. For example a field may be set as mandatory, or it must contain unique values (no duplicates).&lt;/p&gt;
 &lt;h2 id=&#34;advanced-field-checks&#34;&gt;Advanced field checks&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
@@ -1634,6 +1637,7 @@ export default LoginScreen;
 &lt;li&gt;Click the &lt;em&gt;Checks&lt;/em&gt; button&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Here you can add more complex checks, such as the value must be longer or shorter than a certain length, be within a date range or match a &lt;a href=&#34;https://en.wikipedia.org/wiki/Regular_expression&#34;&gt;regular expression&lt;/a&gt;. The list of checks available is the same as that used in &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/field-checks.png&#34; alt=&#34;Field checks&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;multi-field-unique-constraints&#34;&gt;Multi-field unique constraints&lt;/h2&gt;
 &lt;p&gt;Access these with the &lt;em&gt;Unique&lt;/em&gt; button under the &lt;em&gt;Checks&lt;/em&gt; button.&lt;/p&gt;
 &lt;p&gt;Sometimes, fields must be unique &lt;strong&gt;in combination&lt;/strong&gt;. For example, imagine you have a system for recording customer complaints. One of the fields might be a customer&amp;rsquo;s reference number, another a relation to the customer record.&lt;/p&gt;
@@ -1677,7 +1681,7 @@ export default LoginScreen;
 &lt;h3 id=&#34;run-this-workflow-whenever-each-record-is-viewed&#34;&gt;Run this workflow whenever each record is viewed&lt;/h3&gt;
 &lt;p&gt;As well as running the workflow on record creation, also run it whenever a user views a record in this table. Be aware this may have a performance impact for users, if the workflow is resource intensive and/or multi-step.&lt;/p&gt;
 &lt;h2 id=&#34;data-entry-from-external-sources&#34;&gt;Data entry from external sources&lt;/h2&gt;
-&lt;p&gt;The options in this section are for configuring the table to allow an API request from an external source to create and edit records. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API use&lt;/a&gt;for more information.&lt;/p&gt;
+&lt;p&gt;The options in this section are for configuring the table to allow an API request from an external source to create and edit records. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API use&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;h2 id=&#34;other-options&#34;&gt;Other options&lt;/h2&gt;
 &lt;h3 id=&#34;records-lockable&#34;&gt;Records lockable&lt;/h3&gt;
 &lt;p&gt;Records can be locked to prevent editing. You may like to do this based on criteria e.g. once a customer order has been sent, it should be locked against further changes.&lt;/p&gt;

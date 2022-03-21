@@ -23,7 +23,7 @@
       <description>
         
         
-        &lt;p&gt;Any view with one or more date/time fields can have it&amp;rsquo;s data displayed in calendar form. If there are two date/time fields, the first will be the start time, the second the end time. If there&amp;rsquo;s only one, events will last 1 hour by default, unless the field is a date only, in which case they will be all day.&lt;/p&gt;
+        &lt;p&gt;Any view with one or more date/time fields can have its data displayed in calendar form. If there are two date/time fields, the first will be the start time, the second the end time. If there&amp;rsquo;s only one, events will last 1 hour by default, unless the field is a date only, in which case they will be all day.&lt;/p&gt;
 &lt;p&gt;Data can also &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/calendar/&#34;&gt;sync to and from external calendars&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Any user can add the calendar tile to their homepage, then select views containing dates to display in it. Data can be displayed in a number of formats, like standard month/week/day views but also timeline views for a gantt-style format, with each view in its own swim-lane.&lt;/p&gt;
 &lt;h2 id=&#34;default-views&#34;&gt;Default views&lt;/h2&gt;
@@ -88,12 +88,12 @@
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/business-intelligence/&#34;&gt;External reporting (read-only access to data)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;incoming-data&#34;&gt;Incoming Data&lt;/h2&gt;
-&lt;p&gt;Users are ablle to add data:&lt;/p&gt;
+&lt;p&gt;Users are able to add data:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Via the User Interface&lt;/li&gt;
 &lt;li&gt;Import CSV files&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Third parties can save data in to agilebase&lt;/p&gt;
+&lt;p&gt;Third parties can save data into agilebase:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Via the POST API&lt;/li&gt;
 &lt;/ul&gt;
@@ -113,6 +113,7 @@
         &lt;p&gt;A workflow is a task that processes data to acheive a particular function. AgileBase has a number of workflow functions that can be used to automate or simplify the activities users would otherwise need to perform manually.&lt;/p&gt;
 &lt;p&gt;Workflows can automatically edit records and create new records, saving a lot of manual typing. The system will follow rules for creating new records, editing values in existing records or taking other actions. The rules can be simple or complex, in fact anything that can be represented by a standard view, which makes it quite powerful.&lt;/p&gt;
 &lt;p&gt;Workflows can also send email notifications, generate documents and push data to 3rd parties. Importantly steps can be &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;chained together&lt;/a&gt;. Many business processes can therefore be fully automated. As an example if the system stores recipes, whenever an allergen is changed, a product specification doc can be generated and emailed to significant customers.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-tab.png&#34; alt=&#34;Workflow tab&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-rule&#34;&gt;Creating a rule&lt;/h2&gt;
 &lt;p&gt;Here are the basics.&lt;/p&gt;
 &lt;ol&gt;

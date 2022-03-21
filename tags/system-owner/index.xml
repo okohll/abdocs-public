@@ -491,8 +491,9 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;In a table&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab, there are two options which are worth considering if the data is storing commercially sensitive information (plenty of information in most customer systems falls under this category!) or personal information as defined by EU General Data Protection Regulations (GDPR).&lt;/p&gt;
+        &lt;p&gt;In a table&amp;rsquo;s &lt;em&gt;privacy and security&lt;/em&gt; tab, there are two options which are worth considering if the data is storing commercially sensitive information (plenty of information in most customer systems falls under this category!) or personal information as defined by EU General Data Protection Regulations (GDPR).&lt;/p&gt;
 &lt;p&gt;When either option is ticked, two controls appear.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/privacy-and-security.png&#34; alt=&#34;Privacy and security&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;notify-administrators-on-export&#34;&gt;Notify administrators on export&lt;/h2&gt;
 &lt;p&gt;Here you can enter a number. When a user exports more than that number of records at once to spreadsheet, all administrators (users with the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/#assigning-the-administrator-privilege&#34;&gt;administrator&lt;/a&gt; privilege) are notified by email.&lt;/p&gt;
 &lt;h2 id=&#34;disallow-exports&#34;&gt;Disallow exports&lt;/h2&gt;

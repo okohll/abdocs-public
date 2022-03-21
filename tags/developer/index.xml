@@ -25,14 +25,15 @@
         
         &lt;p&gt;As a no-code platform, agileBase allows you to easily build (and later un-build or &amp;lsquo;refactor&amp;rsquo;) and change your software.&lt;/p&gt;
 &lt;h2 id=&#34;toggling-build-mode-on-and-off&#34;&gt;Toggling build mode on and off&lt;/h2&gt;
-&lt;p&gt;To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &amp;lsquo;build&amp;rsquo; mode. You can do this wherever you are in the system and you will switch to building or developing the item you&amp;rsquo;re looking at. The three main areas this covers are:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/toggle-build-mode.png&#34; alt=&#34;Toggle build mode&#34;&gt;
+To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &amp;lsquo;build&amp;rsquo; mode. You can do this wherever you are in the system and you will switch to building or developing the item you&amp;rsquo;re looking at. The three main areas this covers are:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;The homepage. Toggling to build mode on the homepage shows an overview of everything in the system - tables, views, tiles, roles and users can all be listed and edited. Further, the connections between different objects can be shown. More advanced users will typically use this area, when working on larger systems.&lt;/li&gt;
+&lt;li&gt;The homepage. Toggling to build mode on the homepage shows an overview of everything in the system - tables, views, tiles, roles and users can all be listed and edited. Furthermore, the connections between different objects can be shown. More advanced users will typically use this area, when working on larger systems.&lt;/li&gt;
 &lt;li&gt;In a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt;. When a view is open, toggling to build will let you edit that view - to add or remove fields and calculations for example.&lt;/li&gt;
 &lt;li&gt;When viewing a record from a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/%3E&#34;&gt;table&lt;/a&gt;, toggling to build will let you edit that table, e.g. to add/remove fields.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;When build mode is on, pencil icons will appear next to every object which can be edited, for example next to every field and tab in a table record.&lt;/p&gt;
-&lt;p&gt;When editing views and tables, the large pencil at the top left lets you edit the object as a whole, as opposed to a field or tab in it.&lt;/p&gt;
+&lt;p&gt;When build mode is on, pencil icons will appear next to every object which can be edited: for example, next to every field and tab in a table record.&lt;/p&gt;
+&lt;p&gt;When editing views and tables, the large pencil at the top left lets you edit the object as a whole, as opposed to a field or a tab in it.&lt;/p&gt;
 &lt;p&gt;Build mode can easily be toggled off again when you&amp;rsquo;re done and the user interface will switch back to &amp;rsquo;normal&amp;rsquo; mode.&lt;/p&gt;
 &lt;h2 id=&#34;using-editing-panels&#34;&gt;Using editing panels&lt;/h2&gt;
 &lt;p&gt;When build mode is on, clicking any of the pencil icons on screen will open a panel allowing you to edit the item it&amp;rsquo;s next to. The panel can be dragged to move it around the screen if you want to see what&amp;rsquo;s underneath. Whenever you make a change using the panel, the display underneath will update, allowing you to see the effect your changes have in real time.&lt;/p&gt;
