@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.95.0" />
+<meta name="generator" content="Hugo 0.96.0" />
 <meta name="robots" content="index, follow">
 
 
@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2022-01-22T00:12:01+00:00" />
+<meta property="article:modified_time" content="2022-04-08T17:41:06+01:00" />
 
 <meta itemprop="name" content="Text Field Options">
 <meta itemprop="description" content="Options specific to text fields"><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2022-01-22T00:12:01+00:00" />
-<meta itemprop="wordCount" content="1037">
+<meta itemprop="dateModified" content="2022-04-08T17:41:06+01:00" />
+<meta itemprop="wordCount" content="1200">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Text Field Options"/>
 <meta name="twitter:description" content="Options specific to text fields"/>
@@ -268,6 +268,8 @@ if (!doNotTrack) {
   <a href="/docs/fields/field-options/checkbox-field-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionscheckbox-field-options"><span class="">Checkbox Field Options</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfieldsfield-optionsnumber-field-options-li">
   <a href="/docs/fields/field-options/number-field-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionsnumber-field-options"><span class="">Number Field Options</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfieldsfield-optionssequence-field-options-li">
+  <a href="/docs/fields/field-options/sequence-field-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionssequence-field-options"><span class="">Sequence Field Options</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfieldsfield-optionsseparator-options-li">
   <a href="/docs/fields/field-options/separator-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionsseparator-options"><span class="">Separator Options</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfieldsfield-optionsreferenced-field-options-li">
@@ -486,7 +488,7 @@ if (!doNotTrack) {
         
           <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/administrator/" data-taxonomy-term="administrator"><span class="taxonomy-label">Administrator</span><span class="taxonomy-count">1</span></a></li>
         
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/architect/" data-taxonomy-term="architect"><span class="taxonomy-label">Architect</span><span class="taxonomy-count">60</span></a></li>
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/architect/" data-taxonomy-term="architect"><span class="taxonomy-label">Architect</span><span class="taxonomy-count">61</span></a></li>
         
           <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/certified-architect/" data-taxonomy-term="certified-architect"><span class="taxonomy-label">Certified Architect</span><span class="taxonomy-count">16</span></a></li>
         
@@ -565,7 +567,7 @@ if (!doNotTrack) {
 </blockquote>
 <h2 id="use-dropdown">Use dropdown</h2>
 <p>Rather than a simple text entry field, display a dropdown of choices from which one can be selected. If there are only a few values, then the user interface may display options in <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio">radio button</a> style, but the behaviour is exactly the same.</p>
-<p>Options can be provided with the <a href="#default-value">default value</a> setting as above. If no options are specified, then the list of options will be automatically generated from the set of unique values <strong>already entered</strong> into records. In this way, a set of values will gradually grow as people enter new data.</p>
+<p>Options can be provided by entering a comma separated list into the <a href="#default-value">default value</a> setting as below. If no options are specified, then the list of options will be automatically generated from the set of unique values <strong>already entered</strong> into records. In this way, a set of values will gradually grow as people enter new data.</p>
 <p>See also the <a href="#use-only-given-values">Use only given values</a> option below to enforce the use of provided values only.</p>
 <h2 id="use-tags">Use tags</h2>
 <p>Similar to Use dropdown, but rather than only letting the user select one value, multiple values can be chosen at once.</p>
@@ -580,7 +582,7 @@ if (!doNotTrack) {
 <p>In some circumstances, it can be useful to leave this un-ticked and let options grow organically, until a certain point. Administrators can then rationalise and &lsquo;hard-code&rsquo; values from the most commonly entered. In other situations, it may be best to specify available options right from the start.</p>
 </blockquote>
 <h2 id="default-value">Default value</h2>
-<p>For basic text fields, this simply provides a default value, which the field will have when a record&rsquo;s created. If not provided, the field will be blank.</p>
+<p>For basic text fields, i.e. not those which display as dropdowns or tag lists (see below), this simply provides a default value to set the field to when a new record&rsquo;s created. If not provided, the field value will be blank on creation.</p>
 <blockquote>
 <p>Field defaults can also be calculated, with a simple or arbitratily complex calculation. To do that, instead use the <a href="/docs/fields/field-options/common-options/#set-from-previous-referenced-field">Set from previous referenced field</a> option.</p>
 </blockquote>
@@ -588,6 +590,12 @@ if (!doNotTrack) {
 <p>If either <a href="#use-dropdown">Use dropdown</a> or <a href="#use-tags">Use tags</a> is selected, the default value option provides a <strong>list</strong> of options with which to populate the dropdown, or a set of tags to choose from. Enter each option here separated by commas.</p>
 <p>If the list <strong>starts with</strong> a comma, that means the field should be blank by default when a record is created. If not, then the default will be the first value in the comma separated list.</p>
 <p>In the dropdown/tags list, the options will be ordered alphabetically, not shown in the order they&rsquo;re entered in. If you wish to give the values a particular order, you can prefix them with a number or letter followed by a closing bracket like so: <code>1) cold, 2) warm, 3) hot</code>. The number prefixes won&rsquo;t show to the user.</p>
+<h4 id="customising-the-list-of-options-per-user">Customising the list of options per user</h4>
+<p>As well as entering a default set of options for dropdowns and tags fields as above, it&rsquo;s possible to add options which will only be visible to certain users, specifically those in a certain role.</p>
+<p>The way to add an option which will only be visible to users of a role is to add <code>|rolename</code> after the option, that is a vertical bar followed by the name of the role.</p>
+<p>For example, setting the list of options to</p>
+<p><code>1) not billed, 2) awaiting payment, 3) paid|finance</code></p>
+<p>will mean that anyone will be able to set the field to <code>1) not billed</code> or <code>2) awaiting payment</code> but only members of the finance role will be able to see and set the <code>3) paid</code> option (once it has been set, it will be visible to everyone).</p>
 <h4 id="lists-of-users">Lists of users</h4>
 <p>Also for dropdown lists and tags fields, agileBase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select <code>users</code> or <code>users and roles</code> from the &lsquo;fill with&rsquo; selector just below the default value input. The standard user ID format throughout the system is used, &lsquo;Forename Surname (username)&rsquo;.</p>
 <p>Only users/roles which have privileges to view the data in this particular table will be shown in the list. That can keep things manageable if a system has hundreds or more users.</p>
@@ -682,7 +690,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified January 22, 2022: <a href="https://github.com/okohll/abdocs/commit/d3906f737d2671613b2c30e2c9d6ba86ff557508">Document auto-populate current user option (d3906f7)</a>
+  Last modified April 8, 2022: <a href="https://github.com/okohll/abdocs/commit/e3814f4572a110af87e61316479990294e306c47">Customising the list of options per user (e3814f4)</a>
 </div>
 
 </div>

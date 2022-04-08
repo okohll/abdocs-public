@@ -18,22 +18,22 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Running on record creation or load | agileBase docs</title>
-<meta name="description" content="How to run a workflow every time a new record is created, or optionally, opened">
-<meta property="og:title" content="Running on record creation or load" />
-<meta property="og:description" content="How to run a workflow every time a new record is created, or optionally, opened" />
+<title>Sequence Field Options | agileBase docs</title>
+<meta name="description" content="Options specific to auto-generated numeric sequence fields">
+<meta property="og:title" content="Sequence Field Options" />
+<meta property="og:description" content="Options specific to auto-generated numeric sequence fields" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-on-create/" /><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2021-08-31T16:00:00+01:00" />
-<meta property="article:modified_time" content="2021-08-31T17:24:09+01:00" />
+<meta property="og:url" content="https://docs.agilebase.co.uk/docs/fields/field-options/sequence-field-options/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2022-03-29T10:40:00+01:00" />
+<meta property="article:modified_time" content="2022-03-29T10:40:00+01:00" />
 
-<meta itemprop="name" content="Running on record creation or load">
-<meta itemprop="description" content="How to run a workflow every time a new record is created, or optionally, opened"><meta itemprop="datePublished" content="2021-08-31T16:00:00+01:00" />
-<meta itemprop="dateModified" content="2021-08-31T17:24:09+01:00" />
-<meta itemprop="wordCount" content="9">
-<meta itemprop="keywords" content="Certified Architect," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Running on record creation or load"/>
-<meta name="twitter:description" content="How to run a workflow every time a new record is created, or optionally, opened"/>
+<meta itemprop="name" content="Sequence Field Options">
+<meta itemprop="description" content="Options specific to auto-generated numeric sequence fields"><meta itemprop="datePublished" content="2022-03-29T10:40:00+01:00" />
+<meta itemprop="dateModified" content="2022-03-29T10:40:00+01:00" />
+<meta itemprop="wordCount" content="151">
+<meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Sequence Field Options"/>
+<meta name="twitter:description" content="Options specific to auto-generated numeric sequence fields"/>
 
 
 
@@ -219,10 +219,10 @@ if (!doNotTrack) {
   <a href="/docs/tables/users-and-roles/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docstablesusers-and-roles"><span class="">Users and Roles</span></a>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsfields-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsfields-li">
   <a href="/docs/fields/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsfields"><span class="">Fields</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsfieldsfield-types-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsfieldsfield-types-li">
   <a href="/docs/fields/field-types/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsfieldsfield-types"><span class="">Field Types</span></a>
   <ul class="ul-3 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfieldsfield-typesbasic-field-types-li">
@@ -253,28 +253,28 @@ if (!doNotTrack) {
   <a href="/docs/fields/field-types/changing-field-types/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-typeschanging-field-types"><span class="">Changing Field Types</span></a>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsfieldsfield-options-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsfieldsfield-options-li">
   <a href="/docs/fields/field-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsfieldsfield-options"><span class="">Field Options</span></a>
   <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfieldsfield-optionscommon-options-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfieldsfield-optionscommon-options-li">
   <a href="/docs/fields/field-options/common-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionscommon-options"><span class="">Common Options</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfieldsfield-optionstext-field-options-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfieldsfield-optionstext-field-options-li">
   <a href="/docs/fields/field-options/text-field-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionstext-field-options"><span class="">Text Field Options</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfieldsfield-optionsrelation-field-options-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfieldsfield-optionsrelation-field-options-li">
   <a href="/docs/fields/field-options/relation-field-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionsrelation-field-options"><span class="">Relation Field Options</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfieldsfield-optionsdate-field-options-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfieldsfield-optionsdate-field-options-li">
   <a href="/docs/fields/field-options/date-field-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionsdate-field-options"><span class="">Date Field Options</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfieldsfield-optionscheckbox-field-options-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfieldsfield-optionscheckbox-field-options-li">
   <a href="/docs/fields/field-options/checkbox-field-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionscheckbox-field-options"><span class="">Checkbox Field Options</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfieldsfield-optionsnumber-field-options-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfieldsfield-optionsnumber-field-options-li">
   <a href="/docs/fields/field-options/number-field-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionsnumber-field-options"><span class="">Number Field Options</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfieldsfield-optionssequence-field-options-li">
-  <a href="/docs/fields/field-options/sequence-field-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionssequence-field-options"><span class="">Sequence Field Options</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfieldsfield-optionsseparator-options-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsfieldsfield-optionssequence-field-options-li">
+  <a href="/docs/fields/field-options/sequence-field-options/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionssequence-field-options"><span class="td-sidebar-nav-active-item">Sequence Field Options</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfieldsfield-optionsseparator-options-li">
   <a href="/docs/fields/field-options/separator-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionsseparator-options"><span class="">Separator Options</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfieldsfield-optionsreferenced-field-options-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfieldsfield-optionsreferenced-field-options-li">
   <a href="/docs/fields/field-options/referenced-field-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionsreferenced-field-options"><span class="">Cross Reference Field Options</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfieldsfield-optionsfile-field-options-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsfieldsfield-optionsfile-field-options-li">
   <a href="/docs/fields/field-options/file-field-options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfieldsfield-optionsfile-field-options"><span class="">File Field Options</span></a>
 </li>
   </ul>
@@ -362,31 +362,31 @@ if (!doNotTrack) {
   <a href="/docs/integrations/creating-user-accounts/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationscreating-user-accounts"><span class="">Creating user accounts with the API</span></a>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsworkflows-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsworkflows-li">
   <a href="/docs/workflows/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsworkflows"><span class="">Workflows</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowstypes-of-actions-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowstypes-of-actions-li">
   <a href="/docs/workflows/types-of-actions/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowstypes-of-actions"><span class="">Types of Workflow Actions</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowsaltering-data-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowsaltering-data-li">
   <a href="/docs/workflows/altering-data/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsaltering-data"><span class="">Altering Data</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowssend-data-to-a-third-party-via-api-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowssend-data-to-a-third-party-via-api-li">
   <a href="/docs/workflows/send-data-to-a-third-party-via-api/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowssend-data-to-a-third-party-via-api"><span class="">Send Data to a third party via API</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowssend-email-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowssend-email-li">
   <a href="/docs/workflows/send-email/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowssend-email"><span class="">Send an email</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowssend-chaser-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowssend-chaser-li">
   <a href="/docs/workflows/send-chaser/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowssend-chaser"><span class="">Send a Chaser email</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowssend-document-generator-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowssend-document-generator-li">
   <a href="/docs/workflows/send-document-generator/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowssend-document-generator"><span class="">Send to Document Generator</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsworkflowsadvanced-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsworkflowsadvanced-li">
   <a href="/docs/workflows/advanced/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsworkflowsadvanced"><span class="">Advanced information on Workflows</span></a>
   <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowsadvancedchaining-workflows-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowsadvancedchaining-workflows-li">
   <a href="/docs/workflows/advanced/chaining-workflows/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsadvancedchaining-workflows"><span class="">Chaining Workflows</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowsadvancedrecursive-workflows-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowsadvancedrecursive-workflows-li">
   <a href="/docs/workflows/advanced/recursive-workflows/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsadvancedrecursive-workflows"><span class="">Recursive Workflows</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsworkflowsadvancedworkflow-on-create-li">
-  <a href="/docs/workflows/advanced/workflow-on-create/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsadvancedworkflow-on-create"><span class="td-sidebar-nav-active-item">Running on record creation or load</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowsadvancedworkflow-buttons-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowsadvancedworkflow-on-create-li">
+  <a href="/docs/workflows/advanced/workflow-on-create/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsadvancedworkflow-on-create"><span class="">Running on record creation or load</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowsadvancedworkflow-buttons-li">
   <a href="/docs/workflows/advanced/workflow-buttons/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsadvancedworkflow-buttons"><span class="">Workflows Buttons</span></a>
 </li>
   </ul>
@@ -425,8 +425,8 @@ if (!doNotTrack) {
 
 
 
-<a href="https://github.com/okohll/abdocs/edit/master/content/docs/workflows/advanced/workflow-on-create.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/okohll/abdocs/issues/new?title=Running%20on%20record%20creation%20or%20load" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/okohll/abdocs/edit/master/content/docs/fields/field-options/sequence-field-options.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/okohll/abdocs/issues/new?title=Sequence%20Field%20Options" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
 
@@ -500,20 +500,20 @@ if (!doNotTrack) {
     <a href="https://docs.agilebase.co.uk/docs/">Docs</a>
   </li>
   <li class="breadcrumb-item">
-    <a href="https://docs.agilebase.co.uk/docs/workflows/">Workflows</a>
+    <a href="https://docs.agilebase.co.uk/docs/fields/">Fields</a>
   </li>
   <li class="breadcrumb-item">
-    <a href="https://docs.agilebase.co.uk/docs/workflows/advanced/">Advanced information on Workflows</a>
+    <a href="https://docs.agilebase.co.uk/docs/fields/field-options/">Field Options</a>
   </li>
   <li class="breadcrumb-item active" aria-current="page">
-    <a href="https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-on-create/">Running on record creation or load</a>
+    <a href="https://docs.agilebase.co.uk/docs/fields/field-options/sequence-field-options/">Sequence Field Options</a>
   </li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>Running on record creation or load</h1>
-	<div class="lead">How to run a workflow every time a new record is created, or optionally, opened</div>
+	<h1>Sequence Field Options</h1>
+	<div class="lead">Options specific to auto-generated numeric sequence fields</div>
 	<header class="article-meta">
 		
 
@@ -525,7 +525,7 @@ if (!doNotTrack) {
   <h5 class="taxonomy-title">Tags:</h5>
   <ul class="taxonomy-terms">
     
-      <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/certified-architect/" data-taxonomy-term="certified-architect"><span class="taxonomy-label">Certified Architect</span></a></li>
+      <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/architect/" data-taxonomy-term="architect"><span class="taxonomy-label">Architect</span></a></li>
     
   </ul>
 </div>
@@ -538,7 +538,11 @@ if (!doNotTrack) {
 
 		
 	</header>    
-	<p>This can be set up in the <a href="/docs/tables/options/#when-a-records-created-run-this-workflow">table options</a>.</p>
+	<h2 id="do-not-auto-populate">Do not auto-populate</h2>
+<p>When this is un-ticked, the next number in the sequence will always be generated and saved for this field, whenever a new record is created.</p>
+<p>When the option is ticked, the field value will be left blank when a new record is created. A button will appear in place of the value, which on pressed will create and save the next sequence value.</p>
+<p>One benefit of this is to allow &lsquo;accidental&rsquo; creation of records without using up the next value in the sequence. So for example, if an &lsquo;invoice number&rsquo; field has this option ticked, creating an invoice and then immediately deleting it won&rsquo;t use up a sequence value, leaving a gap.</p>
+<p>Note that if records are created by a background workflow, this option will be overriden and sequence values will always be generated and saved. The assumption is that automated workflows will always create the correct records.</p>
 
 	
 		<style>
@@ -604,10 +608,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified August 31, 2021: <a href="https://github.com/okohll/abdocs/commit/992bf2708575faec7efece080c260d010672a00f">Calc special functions (992bf27)</a>
-</div>
-
+	
 </div>
 
 

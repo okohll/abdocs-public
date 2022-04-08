@@ -4,7 +4,7 @@
     <link>https://docs.agilebase.co.uk/tags/architect/</link>
     <description>Recent content in Architect on agileBase docs</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 29 Oct 2021 16:40:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 29 Mar 2022 10:40:00 +0100</lastBuildDate>
     
 	  <atom:link href="https://docs.agilebase.co.uk/tags/architect/index.xml" rel="self" type="application/rss+xml" />
     
@@ -876,7 +876,7 @@ There are two ways to edit a table: from the homepage, or from editing a record.
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;use-dropdown&#34;&gt;Use dropdown&lt;/h2&gt;
 &lt;p&gt;Rather than a simple text entry field, display a dropdown of choices from which one can be selected. If there are only a few values, then the user interface may display options in &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio&#34;&gt;radio button&lt;/a&gt; style, but the behaviour is exactly the same.&lt;/p&gt;
-&lt;p&gt;Options can be provided with the &lt;a href=&#34;#default-value&#34;&gt;default value&lt;/a&gt; setting as above. If no options are specified, then the list of options will be automatically generated from the set of unique values &lt;strong&gt;already entered&lt;/strong&gt; into records. In this way, a set of values will gradually grow as people enter new data.&lt;/p&gt;
+&lt;p&gt;Options can be provided by entering a comma separated list into the &lt;a href=&#34;#default-value&#34;&gt;default value&lt;/a&gt; setting as below. If no options are specified, then the list of options will be automatically generated from the set of unique values &lt;strong&gt;already entered&lt;/strong&gt; into records. In this way, a set of values will gradually grow as people enter new data.&lt;/p&gt;
 &lt;p&gt;See also the &lt;a href=&#34;#use-only-given-values&#34;&gt;Use only given values&lt;/a&gt; option below to enforce the use of provided values only.&lt;/p&gt;
 &lt;h2 id=&#34;use-tags&#34;&gt;Use tags&lt;/h2&gt;
 &lt;p&gt;Similar to Use dropdown, but rather than only letting the user select one value, multiple values can be chosen at once.&lt;/p&gt;
@@ -891,7 +891,7 @@ There are two ways to edit a table: from the homepage, or from editing a record.
 &lt;p&gt;In some circumstances, it can be useful to leave this un-ticked and let options grow organically, until a certain point. Administrators can then rationalise and &amp;lsquo;hard-code&amp;rsquo; values from the most commonly entered. In other situations, it may be best to specify available options right from the start.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;default-value&#34;&gt;Default value&lt;/h2&gt;
-&lt;p&gt;For basic text fields, this simply provides a default value, which the field will have when a record&amp;rsquo;s created. If not provided, the field will be blank.&lt;/p&gt;
+&lt;p&gt;For basic text fields, i.e. not those which display as dropdowns or tag lists (see below), this simply provides a default value to set the field to when a new record&amp;rsquo;s created. If not provided, the field value will be blank on creation.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Field defaults can also be calculated, with a simple or arbitratily complex calculation. To do that, instead use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#set-from-previous-referenced-field&#34;&gt;Set from previous referenced field&lt;/a&gt; option.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -899,6 +899,12 @@ There are two ways to edit a table: from the homepage, or from editing a record.
 &lt;p&gt;If either &lt;a href=&#34;#use-dropdown&#34;&gt;Use dropdown&lt;/a&gt; or &lt;a href=&#34;#use-tags&#34;&gt;Use tags&lt;/a&gt; is selected, the default value option provides a &lt;strong&gt;list&lt;/strong&gt; of options with which to populate the dropdown, or a set of tags to choose from. Enter each option here separated by commas.&lt;/p&gt;
 &lt;p&gt;If the list &lt;strong&gt;starts with&lt;/strong&gt; a comma, that means the field should be blank by default when a record is created. If not, then the default will be the first value in the comma separated list.&lt;/p&gt;
 &lt;p&gt;In the dropdown/tags list, the options will be ordered alphabetically, not shown in the order they&amp;rsquo;re entered in. If you wish to give the values a particular order, you can prefix them with a number or letter followed by a closing bracket like so: &lt;code&gt;1) cold, 2) warm, 3) hot&lt;/code&gt;. The number prefixes won&amp;rsquo;t show to the user.&lt;/p&gt;
+&lt;h4 id=&#34;customising-the-list-of-options-per-user&#34;&gt;Customising the list of options per user&lt;/h4&gt;
+&lt;p&gt;As well as entering a default set of options for dropdowns and tags fields as above, it&amp;rsquo;s possible to add options which will only be visible to certain users, specifically those in a certain role.&lt;/p&gt;
+&lt;p&gt;The way to add an option which will only be visible to users of a role is to add &lt;code&gt;|rolename&lt;/code&gt; after the option, that is a vertical bar followed by the name of the role.&lt;/p&gt;
+&lt;p&gt;For example, setting the list of options to&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;1) not billed, 2) awaiting payment, 3) paid|finance&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;will mean that anyone will be able to set the field to &lt;code&gt;1) not billed&lt;/code&gt; or &lt;code&gt;2) awaiting payment&lt;/code&gt; but only members of the finance role will be able to see and set the &lt;code&gt;3) paid&lt;/code&gt; option (once it has been set, it will be visible to everyone).&lt;/p&gt;
 &lt;h4 id=&#34;lists-of-users&#34;&gt;Lists of users&lt;/h4&gt;
 &lt;p&gt;Also for dropdown lists and tags fields, agileBase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select &lt;code&gt;users&lt;/code&gt; or &lt;code&gt;users and roles&lt;/code&gt; from the &amp;lsquo;fill with&amp;rsquo; selector just below the default value input. The standard user ID format throughout the system is used, &amp;lsquo;Forename Surname (username)&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;Only users/roles which have privileges to view the data in this particular table will be shown in the list. That can keep things manageable if a system has hundreds or more users.&lt;/p&gt;
@@ -1051,8 +1057,11 @@ There are two ways to edit a table: from the homepage, or from editing a record.
 &lt;li&gt;The user interface becomes clearer to navigate, especially if you have dozens of fields in each section&lt;/li&gt;
 &lt;li&gt;Different privileges can easily be assigned to different tables. For example, you may want only certain people to be able to update allergen information, with others able to view but not edit the data.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;do-not-use-session-record-for-new-items&#34;&gt;Do not use session record for new items&lt;/h2&gt;
+&lt;h2 id=&#34;do-not-auto-populate&#34;&gt;Do not auto-populate&lt;/h2&gt;
 &lt;p&gt;This is ticked by default. When un-ticked, this means that when you add a new record, the relation field will automatically be populated with a link to the last &amp;lsquo;parent&amp;rsquo; item you were looking at. For example, if you edit an organisation, then move away somewhere else in the system, finally load a contacts screen and create a new contact, that contact will link to the organisation you were editing (assuming there&amp;rsquo;s a relation field linking contacts and organisations).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/sequence-field-options/&#34;&gt;similarly named option&lt;/a&gt; exists for sequence fields, to prevent auto-population of sequence numbers&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;on-parent-delete&#34;&gt;On parent delete&lt;/h2&gt;
 &lt;p&gt;This is an important option for controlling what happens when a parent record is deleted.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s assume we have a table of customers and one of invoices, each invoice linked to a customer by a relation field in the invoices table, so the invoice is a &amp;lsquo;child record&amp;rsquo; of the customer. What would happen if a customer is deleted? This setting controls that and there are three options.&lt;/p&gt;
@@ -2222,6 +2231,24 @@ and a video introduction to the concept here:&lt;/p&gt;
     </item>
     
     <item>
+      <title>Docs: Sequence Field Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/sequence-field-options/</link>
+      <pubDate>Tue, 29 Mar 2022 10:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/sequence-field-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;do-not-auto-populate&#34;&gt;Do not auto-populate&lt;/h2&gt;
+&lt;p&gt;When this is un-ticked, the next number in the sequence will always be generated and saved for this field, whenever a new record is created.&lt;/p&gt;
+&lt;p&gt;When the option is ticked, the field value will be left blank when a new record is created. A button will appear in place of the value, which on pressed will create and save the next sequence value.&lt;/p&gt;
+&lt;p&gt;One benefit of this is to allow &amp;lsquo;accidental&amp;rsquo; creation of records without using up the next value in the sequence. So for example, if an &amp;lsquo;invoice number&amp;rsquo; field has this option ticked, creating an invoice and then immediately deleting it won&amp;rsquo;t use up a sequence value, leaving a gap.&lt;/p&gt;
+&lt;p&gt;Note that if records are created by a background workflow, this option will be overriden and sequence values will always be generated and saved. The assumption is that automated workflows will always create the correct records.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Options</title>
       <link>https://docs.agilebase.co.uk/docs/views/options/</link>
       <pubDate>Thu, 28 May 2020 16:40:00 +0100</pubDate>
@@ -2421,74 +2448,6 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;li&gt;Panel fieldname, no content fieldnames&lt;/li&gt;
 &lt;li&gt;No fieldnames - show only the field values, useful particularly when there is only one value and when the context is obvious&lt;/li&gt;
 &lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Creating a POST API</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Firstly, identify the table into which you wish to recieve incoming data. Go to that table&amp;rsquo;s manage taband press &amp;lsquo;options’. Tick &amp;lsquo;Public form or API data entry’, which will create an API for the table.&lt;/p&gt;
-&lt;p&gt;To protect the system from spam input, we also suggest you tick &amp;lsquo;Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
-&lt;p&gt;Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming-data-api.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;creating-new-records&#34;&gt;Creating new records&lt;/h2&gt;
-&lt;p&gt;Clicking the ‘sample form’ link will then show a sample form which can be used for testing or to copy code from.&lt;/p&gt;
-&lt;p&gt;If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;save_new_record=true&lt;/li&gt;
-&lt;li&gt;c=[internalcompanyid]&lt;/li&gt;
-&lt;li&gt;t=[internaltableid]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The post URL is&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The form needs to be posted using the method POST.&lt;/p&gt;
-&lt;p&gt;Remember also to set the &amp;lsquo;Authorization&amp;rsquo; HTTP header if that option has been selected.&lt;/p&gt;
-&lt;p&gt;To specify the contents of each field to be saved, add parameters for the internal field names of each field you want to send data to. The internal field names necessary will be shown on screen when API use is enabled.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The API can be tested using a tool such as &lt;a href=&#34;https://www.postman.com&#34;&gt;Postman&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
-&lt;p&gt;The process is similar, but instead of &lt;em&gt;save_new_record=true&lt;/em&gt;, supply&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;update_record=true&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;row_id=[internal id of the record]&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The internal record ID can be got from a JSON feed or by using the &lt;em&gt;return=posted_json&lt;/em&gt; as above if editing a record previously created using the API.&lt;/p&gt;
-&lt;h2 id=&#34;uploading-files&#34;&gt;Uploading files&lt;/h2&gt;
-&lt;p&gt;As well as &amp;lsquo;standard&amp;rsquo; data, agileBase can accept documents posted into a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/&#34;&gt;file field&lt;/a&gt;. This can be done in two ways:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Make sure the form is posted with encoding type &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST&#34;&gt;multipart/form-data&lt;/a&gt;. Then simply post the contents of the file with the form parameter specifying the internal name of the file field.&lt;/li&gt;
-&lt;li&gt;Post the form normally (not as multipart/form-data), and provide a URL value for the file field. That URL will be downloaded by agileBase and the contents saved as a file.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Method 2 is &lt;a href=&#34;https://www.zapier.com&#34;&gt;Zapier&lt;/a&gt;-compatible.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;response&#34;&gt;Response&lt;/h2&gt;
-&lt;p&gt;The response to the successful request will be a JSON representation of the complete record created or updated, after the update has taken place. An object of key-value pairs is returned, the key being the internal field name.&lt;/p&gt;
-&lt;p&gt;The row ID is returned with the key &lt;code&gt;rowId&lt;/code&gt; - this is often useful to identify a record when performing multiple actions. For example, when a new record is created, the calling system may want to store its row ID in order to be able to make future updates to the same record.&lt;/p&gt;
-&lt;p&gt;If there is an error, an appropriate HTTP response code is returned (see below) along with JSON explaining the error, containing three keys. For example if an incorrect Authorization header is supplied, the response may be&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
-  &amp;#34;error&amp;#34;: true,
-  &amp;#34;type&amp;#34;: &amp;#34;DisallowedException&amp;#34;,
-  &amp;#34;message&amp;#34;: &amp;#34;User public api is not allowed to edit delete data in table my table. An administrator can set up privileges so this can be allowed&amp;#34;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;http-response-codes&#34;&gt;HTTP response codes&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;200: success&lt;/li&gt;
-&lt;li&gt;401: unauthorised: the API key is missing or invalid&lt;/li&gt;
-&lt;li&gt;404: not found: an object identified in the request was not found e.g. no match was found for a table ID specified with the &amp;rsquo;t&amp;rsquo; parameter&lt;/li&gt;
-&lt;li&gt;429: too many requests: the frequency of requests is too high, please throttle them back&lt;/li&gt;
-&lt;li&gt;507: insufficient storage: when creating a record, the limit on number of records which can be stored has been reached. Contact us to purchase additional capacity.&lt;/li&gt;
-&lt;li&gt;500: some other server error&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;When there is an error, a response header X-AB-error is also set with the type and content of the error message.&lt;/p&gt;
 
       </description>
     </item>
