@@ -15,28 +15,28 @@
     
     
     <item>
-      <title>Docs: Developer Mode</title>
-      <link>https://docs.agilebase.co.uk/docs/developer-mode/</link>
+      <title>Docs: Development Mode</title>
+      <link>https://docs.agilebase.co.uk/docs/development-mode/</link>
       <pubDate>Fri, 18 Feb 2022 16:40:00 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/docs/developer-mode/</guid>
+      <guid>https://docs.agilebase.co.uk/docs/development-mode/</guid>
       <description>
         
         
-        &lt;p&gt;As a no-code platform, agileBase allows you to easily build (and later un-build or &amp;lsquo;refactor&amp;rsquo;) and change your software.&lt;/p&gt;
-&lt;h2 id=&#34;toggling-build-mode-on-and-off&#34;&gt;Toggling build mode on and off&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/toggle-build-mode.png&#34; alt=&#34;Toggle build mode&#34;&gt;
-To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &amp;lsquo;build&amp;rsquo; mode. You can do this wherever you are in the system and you will switch to building or developing the item you&amp;rsquo;re looking at. The three main areas this covers are:&lt;/p&gt;
+        &lt;p&gt;As a no-code platform, agileBase allows you to easily construct (and later de-construct or &amp;lsquo;refactor&amp;rsquo;) and change your software.&lt;/p&gt;
+&lt;h2 id=&#34;toggling-development-mode-on-and-off&#34;&gt;Toggling development mode on and off&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/toggle-build-mode.png&#34; alt=&#34;Toggle development mode&#34;&gt;
+To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &amp;lsquo;development&amp;rsquo; mode. You can do this wherever you are in the system and you will switch to building or developing the item you&amp;rsquo;re looking at. The three main areas this covers are:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;The homepage. Toggling to build mode on the homepage shows an overview of everything in the system - tables, views, tiles, roles and users can all be listed and edited. Furthermore, the connections between different objects can be shown. More advanced users will typically use this area, when working on larger systems.&lt;/li&gt;
-&lt;li&gt;In a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt;. When a view is open, toggling to build will let you edit that view - to add or remove fields and calculations for example.&lt;/li&gt;
-&lt;li&gt;When viewing a record from a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/%3E&#34;&gt;table&lt;/a&gt;, toggling to build will let you edit that table, e.g. to add/remove fields.&lt;/li&gt;
+&lt;li&gt;The homepage. Toggling to development mode on the homepage shows an overview of everything in the system - tables, views, tiles, roles and users can all be listed and edited. Furthermore, the connections between different objects can be shown. More advanced users will typically use this area, when working on larger systems.&lt;/li&gt;
+&lt;li&gt;In a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt;. When a view is open, toggling development on will let you edit that view - to add or remove fields and calculations for example.&lt;/li&gt;
+&lt;li&gt;When viewing a record from a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/%3E&#34;&gt;table&lt;/a&gt;, toggling development on will let you edit that table, e.g. to add/remove fields.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;When build mode is on, pencil icons will appear next to every object which can be edited: for example, next to every field and tab in a table record.&lt;/p&gt;
+&lt;p&gt;When development mode is on, pencil icons will appear next to every object which can be edited: for example, next to every field and tab in a table record.&lt;/p&gt;
 &lt;p&gt;When editing views and tables, the large pencil at the top left lets you edit the object as a whole, as opposed to a field or a tab in it.&lt;/p&gt;
-&lt;p&gt;Build mode can easily be toggled off again when you&amp;rsquo;re done and the user interface will switch back to &amp;rsquo;normal&amp;rsquo; mode.&lt;/p&gt;
+&lt;p&gt;Development mode can easily be toggled off again when you&amp;rsquo;re done and the user interface will switch back to &amp;rsquo;normal&amp;rsquo; mode.&lt;/p&gt;
 &lt;h2 id=&#34;using-editing-panels&#34;&gt;Using editing panels&lt;/h2&gt;
-&lt;p&gt;When build mode is on, clicking any of the pencil icons on screen will open a panel allowing you to edit the item it&amp;rsquo;s next to. The panel can be dragged to move it around the screen if you want to see what&amp;rsquo;s underneath. Whenever you make a change using the panel, the display underneath will update, allowing you to see the effect your changes have in real time.&lt;/p&gt;
+&lt;p&gt;When development mode is on, clicking any of the pencil icons on screen will open a panel allowing you to edit the item it&amp;rsquo;s next to. The panel can be dragged to move it around the screen if you want to see what&amp;rsquo;s underneath. Whenever you make a change using the panel, the display underneath will update, allowing you to see the effect your changes have in real time.&lt;/p&gt;
 &lt;h2 id=&#34;example-videos&#34;&gt;Example videos&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s an example of editing a table and view:&lt;/p&gt;
 
@@ -44,12 +44,16 @@ To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &am
   &lt;iframe src=&#34;https://www.youtube.com/embed/mTOWsXDpQgo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;and here&amp;rsquo;s what the build mode looks like on the homepage:&lt;/p&gt;
+&lt;p&gt;and here&amp;rsquo;s what the development mode looks like on the homepage:&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/Rojcf6OzdHw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
+&lt;h2 id=&#34;accessing-additional-debugging-information&#34;&gt;Accessing additional debugging information&lt;/h2&gt;
+&lt;p&gt;Later on down the route of creating applications, you may wish the user interface to show additional information, specifically in views, to show the primary key values for each record - the internal row identifiers - which are normally hidden.&lt;/p&gt;
+&lt;p&gt;This can be useful when testing and debugging &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt; for example.&lt;/p&gt;
+&lt;p&gt;To enable this, add &lt;code&gt;&amp;amp;set_context=systadmin&lt;/code&gt; to the URL in the browser. To revert to normal mode, replace it with &lt;code&gt;&amp;amp;set_context=business&lt;/code&gt;.&lt;/p&gt;
 
       </description>
     </item>

@@ -366,7 +366,7 @@
 &lt;p&gt;If you have two views with fields of the same type in the same order, then you can merge them together into one. The field names don&amp;rsquo;t necessarily need to be the same.&lt;/p&gt;
 &lt;p&gt;This is done using an &lt;a href=&#34;https://www.sqltutorial.org/sql-union/&#34;&gt;SQL UNION&lt;/a&gt; clause.&lt;/p&gt;
 &lt;h2 id=&#34;cache-view-rows&#34;&gt;Cache view rows&lt;/h2&gt;
-&lt;p&gt;Caching can speed up views. It doesn&amp;rsquo;t need to be used often a the underlying database PostgreSQL is great at dealing with large data problems, but when it is necessary it can significantly speed up access, allowing faster loading and searching. Caching works well when&lt;/p&gt;
+&lt;p&gt;Caching can speed up views. It doesn&amp;rsquo;t need to be used often as the underlying database PostgreSQL is great at dealing with large data problems, but when it is necessary it can significantly speed up access, allowing faster loading and searching. Caching works well when&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;a view is complex and slow to load&lt;/li&gt;
 &lt;li&gt;it doesn&amp;rsquo;t contain a massive number of rows - in this case the issue is likely to be the raw volume of data, rather than the complexity of calculations&lt;/li&gt;
