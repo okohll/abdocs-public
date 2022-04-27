@@ -15,21 +15,6 @@
     
     
     <item>
-      <title>Quickstart: Creating Tiles</title>
-      <link>https://docs.agilebase.co.uk/quickstart/tiles/</link>
-      <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/quickstart/tiles/</guid>
-      <description>
-        
-        
-        &lt;p&gt;The first thing we&amp;rsquo;ll do is create a &amp;lsquo;CRM&amp;rsquo; tile which will act as the entry point to our simple application.&lt;/p&gt;
-&lt;p&gt;Follow the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/#creating-a-tile&#34;&gt;creating a tile&lt;/a&gt; section to do so.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Introduction: What is low code / no code?</title>
       <link>https://docs.agilebase.co.uk/introduction/what-is-no-code/</link>
       <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
@@ -120,32 +105,6 @@
     </item>
     
     <item>
-      <title>Quickstart: Adding tables</title>
-      <link>https://docs.agilebase.co.uk/quickstart/tables/</link>
-      <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/quickstart/tables/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Now we will create three tables to store our data, called&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;organisations&lt;/li&gt;
-&lt;li&gt;sites&lt;/li&gt;
-&lt;li&gt;contacts&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This demonstrates that you can use tables to link related data (we&amp;rsquo;ll get to the links in a bit).&lt;/p&gt;
-&lt;p&gt;Organisations will contain company names and basic details&lt;/p&gt;
-&lt;p&gt;Sites will contain a list of addresses, because we may want allow an organisation to have more than one address&lt;/p&gt;
-&lt;p&gt;Contacts will contain a list of people, each linked to an organisation and optionally a site.&lt;/p&gt;
-&lt;p&gt;Separating the data into three tables lets us create these &amp;lsquo;one-to-many&amp;rsquo; relationships, where one organisation can have many sites and contacts.&lt;/p&gt;
-&lt;p&gt;Don&amp;rsquo;t worry about the relationships between tables at this stage, the first thing to do is just to create those three tables and leave them empty for now.&lt;/p&gt;
-&lt;p&gt;Use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/&#34;&gt;tables&lt;/a&gt; page for instructions on creating a table.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Docs: Community Users</title>
       <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/community-users/</link>
       <pubDate>Fri, 05 Nov 2021 12:40:00 +0100</pubDate>
@@ -203,6 +162,19 @@
 &lt;p&gt;Together, all of these measures will help protect data in the organisation whilst simplifying the user interface, allowing people from outside to be able to usefully carry out work, without having to go through the expense of creating or purchasing dedicated applications for them.&lt;/p&gt;
 &lt;/blockquote&gt;
 
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: Creating a basic task list</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</link>
+      <pubDate>Fri, 22 Apr 2022 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</guid>
+      <description>
+        
+        
+        
       </description>
     </item>
     
@@ -429,34 +401,6 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
     </item>
     
     <item>
-      <title>Quickstart: Adding some fields</title>
-      <link>https://docs.agilebase.co.uk/quickstart/fields/</link>
-      <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/quickstart/fields/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Now we have out three tables - organisations, sites and contacts, lets add some relevant fields to each.&lt;/p&gt;
-&lt;p&gt;For example, in the organisations table, a text field &amp;lsquo;organisation name&amp;rsquo; would be an obvious starter. You could also add things like &amp;lsquo;website&amp;rsquo; and perhaps a number field to record annual turnover, should you be interested in that.&lt;/p&gt;
-&lt;p&gt;Sites should include a few address fields and contacts can include a full name (or separate forename and surname fields) along with various fields for email address and other contact details.&lt;/p&gt;
-&lt;p&gt;To add a field to a table, follow the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;fields&lt;/a&gt; page.&lt;/p&gt;
-&lt;p&gt;Once the basic fields are added, here&amp;rsquo;s a key step: linking the tables together, so that the system knows that a contact belongs to an organisation &amp;amp; site and a site belongs to an organisation.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;In the sites table, add a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation&lt;/a&gt; field, linking to the organisations table. For the display field, choose the &amp;lsquo;organisation name&amp;rsquo; or your equivalent.&lt;/li&gt;
-&lt;li&gt;In the contacts table, add a relation field linking to the organisations table in a similar way&lt;/li&gt;
-&lt;li&gt;Also in the contacts table, ad a relation field linking to the sites table. Use postcode or zip code as the display field.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Finally and optionally, we can add some tabs to the organisation table, so that the user can add view and edit sites and contacts when looking at an organisation:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;In the organisations table, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/&#34;&gt;add a tab&lt;/a&gt;. When selecting a table to use for the tab, choose sites&lt;/li&gt;
-&lt;li&gt;Again in the organisations table, add another tab for contacts&lt;/li&gt;
-&lt;/ol&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Docs: Privileges</title>
       <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
@@ -530,24 +474,6 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h2 id=&#34;related-to-privileges&#34;&gt;Related to privileges&lt;/h2&gt;
 &lt;p&gt;Database systems often have the concept of row level privileges. The equivalent in agileBase is the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; system.&lt;/p&gt;
 &lt;p&gt;Individual fields in a table can be locked or hidden, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;field options&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Quickstart: Creating a view</title>
-      <link>https://docs.agilebase.co.uk/quickstart/views/</link>
-      <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/quickstart/views/</guid>
-      <description>
-        
-        
-        &lt;p&gt;The last step is to add some views so users can add and edit data in our tables.&lt;/p&gt;
-&lt;p&gt;From each of the three tables, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;create a view&lt;/a&gt; and place it in the CRM tile.&lt;/p&gt;
-&lt;p&gt;We don&amp;rsquo;t need to do anything complex with the view or even edit any options. The simple act of creating it will allow users to see and edit all of the data.&lt;/p&gt;
-&lt;p&gt;That&amp;rsquo;s it. Enter the user interface (as opposed to the admin interface) and you&amp;rsquo;ll be able to add organisation, site and contact details to your heart&amp;rsquo;s content. Of course, to do anything really interesting with this data you will likely want to create extra tables to suit your own needs - maybe to add sales opportunities or invoices for example.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ll leave that as an exercise for the reader, but please do get in touch for help and advice on your journey.&lt;/p&gt;
 
       </description>
     </item>
@@ -2440,6 +2366,180 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;p&gt;When the option is ticked, the field value will be left blank when a new record is created. A button will appear in place of the value, which on pressed will create and save the next sequence value.&lt;/p&gt;
 &lt;p&gt;One benefit of this is to allow &amp;lsquo;accidental&amp;rsquo; creation of records without using up the next value in the sequence. So for example, if an &amp;lsquo;invoice number&amp;rsquo; field has this option ticked, creating an invoice and then immediately deleting it won&amp;rsquo;t use up a sequence value, leaving a gap.&lt;/p&gt;
 &lt;p&gt;Note that if records are created by a background workflow, this option will be overriden and sequence values will always be generated and saved. The assumption is that automated workflows will always create the correct records.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Types of Workflow Actions</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/types-of-actions/</link>
+      <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/workflows/types-of-actions/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;types-of-action&#34;&gt;Types of Action&lt;/h2&gt;
+&lt;p&gt;Actions fall in to two types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Those that effect data held within agileBase tables&lt;/li&gt;
+&lt;li&gt;Those that send data to another system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;alter-data&#34;&gt;Alter Data&lt;/h3&gt;
+&lt;p&gt;Use the dropdown within the &lt;em&gt;workflow&lt;/em&gt; section of the &lt;em&gt;manage&lt;/em&gt; tab of the view to control the action that will be applied to every record in the view.
+Options are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create record - This will create a new item in the nominated table&lt;/li&gt;
+&lt;li&gt;Update record - This will alter the values of the record.&lt;/li&gt;
+&lt;li&gt;Lock record - This will apply a record level lock on the item.&lt;/li&gt;
+&lt;li&gt;Delete record - This will totally remove the record.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-manage.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;creating-records&#34;&gt;Creating records&lt;/h4&gt;
+&lt;p&gt;If &amp;lsquo;create record&amp;rsquo; is chosen, a couple of other options appear.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You can select which table the new record should be created in&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;Auto-connect new records&amp;rsquo; can be used when &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;chaining workflows&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;sending-data&#34;&gt;Sending Data&lt;/h3&gt;
+&lt;p&gt;The options to send data are contained within the &lt;em&gt;send&lt;/em&gt; section of the &lt;em&gt;workflow&lt;/em&gt; tab. Matching records will be sent to the appropriate &lt;strong&gt;function&lt;/strong&gt;.&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-data-to-a-third-party-via-api/&#34;&gt;Send data to a third party via API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;Send an email&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;Send an email Chaser&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/calendar/&#34;&gt;Send data to a calendar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;Send to document generator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;RSS feed - See facility with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/&#34;&gt;PULL API&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-send.png&#34; alt=&#34;Workflow functions that send data&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Options</title>
+      <link>https://docs.agilebase.co.uk/docs/views/options/</link>
+      <pubDate>Thu, 28 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/options/</guid>
+      <description>
+        
+        
+        &lt;p&gt;These options can be seen and edited as follows&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the tiles interface, open a view&lt;/li&gt;
+&lt;li&gt;Click your user icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt; from the menu&lt;/li&gt;
+&lt;li&gt;Some options are visible under &lt;em&gt;advanced options&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;group-by-all-non-aggregate-fields&#34;&gt;Group by all non-aggregate fields&lt;/h2&gt;
+&lt;p&gt;Affects how some calculation aggregates worked - documented in &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#aggregates-of-child-rows&#34;&gt;calculations -&amp;gt; aggregates of child rows&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;show-charts-by-default&#34;&gt;Show charts by default&lt;/h2&gt;
+&lt;p&gt;When a user opens this view, immediately show charts rather than data rows&lt;/p&gt;
+&lt;h2 id=&#34;allow-exports&#34;&gt;Allow exports&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/&#34;&gt;Security And Compliance -&amp;gt; Exporting&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;inline-editing&#34;&gt;Inline editing&lt;/h2&gt;
+&lt;p&gt;The goal of this feature is to allow rapid and efficient editing of data when in the list view so there’s no need to drill down into a record to edit and back to the list again after each.&lt;/p&gt;
+&lt;p&gt;Some examples of where this might be useful would be when working through a list of milestones to update statuses, or when in a list of stock items to update quantities.&lt;/p&gt;
+&lt;p&gt;In inline editing mode, the list view changes from something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-off.png&#34; alt=&#34;inline editing off&#34;&gt;&lt;/p&gt;
+&lt;p&gt;into this editable version:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-on.png&#34; alt=&#34;inline editing on&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Certain fields will be editable&lt;/strong&gt;, but others will be read-only. Fields that can be editable are all those which are from the view’s parent table. Fields that will not be editable are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;calculations&lt;/li&gt;
+&lt;li&gt;fields from other tables joined to the view. E.g. if an &amp;lsquo;all contacts&amp;rsquo; view joins from a contacts table to an organisation table (to show the parent organisation), then only contacts fields will be editable, not organisation fields like &amp;lsquo;organisation name&amp;rsquo; for example.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The inline editing option has three states:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Disallow: the view can’t be inline edited&lt;/li&gt;
+&lt;li&gt;Allow but turn off by default&lt;/li&gt;
+&lt;li&gt;On by default&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;style-layout-options&#34;&gt;Style (layout options)&lt;/h2&gt;
+&lt;p&gt;The visual style affects whether the view is shown as&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;spreadsheet format - standard output in rows (the default option)&lt;/li&gt;
+&lt;li&gt;headings and rows&lt;/li&gt;
+&lt;li&gt;long headings and rows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When &lt;strong&gt;headings and rows&lt;/strong&gt; is selected, the first field in the view will be used as a heading for the rows below. A new heading appears every time the field value changes.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/headings.png&#34; alt=&#34;headings and rows&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;record-limit&#34;&gt;Record limit&lt;/h2&gt;
+&lt;p&gt;Only return the top N rows of data from the view, even if there are more available. This is equivalent to adding a &lt;a href=&#34;https://www.postgresql.org/docs/current/sql-select.html#SQL-LIMIT&#34;&gt;LIMIT clause&lt;/a&gt; in SQL.&lt;/p&gt;
+&lt;h2 id=&#34;distinct-fields&#34;&gt;Distinct fields&lt;/h2&gt;
+&lt;p&gt;If many rows in the view have the same values for a particular field, then reduce the number shown to only one row for every distinct (unique) value of that field. The top row is returned.&lt;/p&gt;
+&lt;p&gt;Multiple distinct fields can be added, in which case the rows reduce based on their values unique in combination.&lt;/p&gt;
+&lt;p&gt;For example, imagine you have a view showing countries, cities and populations, sorted by population descending, with data like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Japan, Tokyo, 13,515,271&lt;/li&gt;
+&lt;li&gt;Japan, Nagoya, 2,283,289&lt;/li&gt;
+&lt;li&gt;UK, London, 8,908,081&lt;/li&gt;
+&lt;li&gt;UK, Bristol, 463,400&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Adding a distinct field on the country would reduce this to the most populated city in each country, i.e.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Japan, Tokyo, 13,515,271&lt;/li&gt;
+&lt;li&gt;UK, London, 8,908,081&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;DISTINCT is an &lt;a href=&#34;https://www.postgresql.org/docs/current/sql-select.html#SQL-DISTINCT&#34;&gt;SQL feature&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;amalgamate-with&#34;&gt;Amalgamate with&lt;/h2&gt;
+&lt;p&gt;If you have two views with fields of the same type in the same order, then you can merge them together into one. The field names don&amp;rsquo;t necessarily need to be the same.&lt;/p&gt;
+&lt;p&gt;This is done using an &lt;a href=&#34;https://www.sqltutorial.org/sql-union/&#34;&gt;SQL UNION&lt;/a&gt; clause.&lt;/p&gt;
+&lt;h2 id=&#34;cache-view-rows&#34;&gt;Cache view rows&lt;/h2&gt;
+&lt;p&gt;Caching can speed up views. It doesn&amp;rsquo;t need to be used often as the underlying database PostgreSQL is great at dealing with large data problems, but when it is necessary it can significantly speed up access, allowing faster loading and searching. Caching works well when&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a view is complex and slow to load&lt;/li&gt;
+&lt;li&gt;it doesn&amp;rsquo;t contain a massive number of rows - in this case the issue is likely to be the raw volume of data, rather than the complexity of calculations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If both those criteria are met, then turning on caching can significantly speed a view up, allowing faster loading and searching. There are three options&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;no caching (the default)&lt;/li&gt;
+&lt;li&gt;cache view, update on record save
+&lt;ul&gt;
+&lt;li&gt;this means when a view is opened or searched, if there have been changes to data in any tables used by the view since it was last opened, then the cache will be updated&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;cache view, update once a day
+&lt;ul&gt;
+&lt;li&gt;useful for views that don&amp;rsquo;t need to be updated often, e.g. monthly reporting figures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If a view is cached and other views reference it, those other views will also speed up too.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Caching is implemented using &lt;a href=&#34;https://en.wikipedia.org/wiki/Materialized_view&#34;&gt;materialized views&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you find a view is slow, feel free to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; for support before trying options like caching, there are many other targeted options we can look at first, such as adding indexes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Separator Options</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-options/separator-options/</link>
+      <pubDate>Wed, 27 May 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/separator-options/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;field separator&lt;/a&gt; creates a block of fields, starting with the separator and ending at the next one (or the last field in the table).&lt;/p&gt;
+&lt;p&gt;These blocks can either be initially contracted, or expanded. Here&amp;rsquo;s a screenshot showing a number of contracted blocks, with one expanded.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/blocks-one-expanded.png&#34; alt=&#34;blocks one expanded&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;to-program-the-initial-state-of-the-block&#34;&gt;To program the initial state of the block&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;Create a view&lt;/a&gt; from the table the separator is in&lt;/li&gt;
+&lt;li&gt;Add &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;filters&lt;/a&gt; to that view that leave only records which the block should be expanded in present&lt;/li&gt;
+&lt;li&gt;In the &lt;em&gt;fields&lt;/em&gt; tab of the table, click &lt;em&gt;field options&lt;/em&gt; and select the view for the &lt;em&gt;expand if record in view&lt;/em&gt; option&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;There are two other selections that can be made for the &lt;em&gt;expand if record in view&lt;/em&gt; option other than selecting a view.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;expand if under 10 blocks on the screen&lt;/li&gt;
+&lt;li&gt;expand never&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Remember, these just set the initial state of the block when a record is first opened, blocks can be expanded and contracted by the user at any time.&lt;/p&gt;
 
       </description>
     </item>

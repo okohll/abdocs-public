@@ -1,0 +1,31 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>agileBase docs – Guide 1 - Build a CRM</title>
+    <link>https://docs.agilebase.co.uk/guides/guide1-crm/</link>
+    <description>Recent content in Guide 1 - Build a CRM on agileBase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 22 Apr 2022 13:00:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/guides/guide1-crm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Guides: Creating a basic task list</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</link>
+      <pubDate>Fri, 22 Apr 2022 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

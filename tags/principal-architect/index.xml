@@ -384,7 +384,7 @@ export default LoginScreen;
       <description>
         
         
-        &lt;p&gt;Normally, a user account can only be created by a system administrator - see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#adding-a-user&#34;&gt;adding a user&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;Normally, a user account can only be created by a system administrator - see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#adding-a-user&#34;&gt;adding a user&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;However there&amp;rsquo;s one special case in which the organisation runs a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanted&lt;/a&gt; agileBase account. In that case, you can use an API call to create a new tenant in the account and new user(s) for that tenant.&lt;/p&gt;
 &lt;p&gt;For example, imagine your organisation is a body for football clubs around the country, where each club was a tenant, i.e. each club had users who could log in, but only see data from their own club. In that case, the user creation API could be called to&lt;/p&gt;
 &lt;ol&gt;

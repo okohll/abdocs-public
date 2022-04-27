@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.97.1" />
+<meta name="generator" content="Hugo 0.97.3" />
 <meta name="robots" content="index, follow">
 
 
@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/views/options/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-28T16:40:00+01:00" />
-<meta property="article:modified_time" content="2022-04-11T16:48:40+01:00" />
+<meta property="article:modified_time" content="2020-05-28T16:40:00+01:00" />
 
 <meta itemprop="name" content="Options">
 <meta itemprop="description" content="Many options affect how views look and behave"><meta itemprop="datePublished" content="2020-05-28T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2022-04-11T16:48:40+01:00" />
-<meta itemprop="wordCount" content="733">
+<meta itemprop="dateModified" content="2020-05-28T16:40:00+01:00" />
+<meta itemprop="wordCount" content="756">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Options"/>
 <meta name="twitter:description" content="Many options affect how views look and behave"/>
@@ -103,7 +103,7 @@ if (!doNotTrack) {
 				
 				
 				
-				<a class="nav-link" href="/quickstart/" ><span>Quick Start</span></a>
+				<a class="nav-link" href="/guides/" ><span>Guides</span></a>
 			</li>
 			
 			<li class="nav-item mr-4 mb-2 mb-lg-0">
@@ -480,23 +480,21 @@ if (!doNotTrack) {
       
       <ul class="taxonomy-terms">
         
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/administrator/" data-taxonomy-term="administrator"><span class="taxonomy-label">Administrator</span><span class="taxonomy-count">1</span></a></li>
-        
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/architect/" data-taxonomy-term="architect"><span class="taxonomy-label">Architect</span><span class="taxonomy-count">61</span></a></li>
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/architect/" data-taxonomy-term="architect"><span class="taxonomy-label">Architect</span><span class="taxonomy-count">62</span></a></li>
         
           <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/certified-architect/" data-taxonomy-term="certified-architect"><span class="taxonomy-label">Certified Architect</span><span class="taxonomy-count">16</span></a></li>
         
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer/" data-taxonomy-term="citizen-developer"><span class="taxonomy-label">Citizen Developer</span><span class="taxonomy-count">7</span></a></li>
+        
           <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/core-user/" data-taxonomy-term="core-user"><span class="taxonomy-label">Core User</span><span class="taxonomy-count">1</span></a></li>
         
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/developer/" data-taxonomy-term="developer"><span class="taxonomy-label">Developer</span><span class="taxonomy-count">2</span></a></li>
-        
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/owner/" data-taxonomy-term="owner"><span class="taxonomy-label">Owner</span><span class="taxonomy-count">1</span></a></li>
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/developer/" data-taxonomy-term="developer"><span class="taxonomy-label">Developer</span><span class="taxonomy-count">1</span></a></li>
         
           <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/principal-architect/" data-taxonomy-term="principal-architect"><span class="taxonomy-label">Principal Architect</span><span class="taxonomy-count">9</span></a></li>
         
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/super-user/" data-taxonomy-term="super-user"><span class="taxonomy-label">Super User</span><span class="taxonomy-count">7</span></a></li>
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/system-builder/" data-taxonomy-term="system-builder"><span class="taxonomy-label">System Builder</span><span class="taxonomy-count">3</span></a></li>
         
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/system-owner/" data-taxonomy-term="system-owner"><span class="taxonomy-label">System Owner</span><span class="taxonomy-count">11</span></a></li>
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/system-owner/" data-taxonomy-term="system-owner"><span class="taxonomy-label">System Owner</span><span class="taxonomy-count">12</span></a></li>
         
       </ul>
     </div>
@@ -572,10 +570,10 @@ if (!doNotTrack) {
 <p><img src="/inline-editing-off.png" alt="inline editing off"></p>
 <p>into this editable version:</p>
 <p><img src="/inline-editing-on.png" alt="inline editing on"></p>
-<p><strong>Certain fields will be editable</strong>, but others will be read-only. Fields that can be editable are all those which are from the view’s parent table, except for</p>
+<p><strong>Certain fields will be editable</strong>, but others will be read-only. Fields that can be editable are all those which are from the view’s parent table. Fields that will not be editable are</p>
 <ul>
-<li>large text fields: we want the UI to remain compact and it’s not usually required to edit large amounts of text in inline editing scenarios</li>
 <li>calculations</li>
+<li>fields from other tables joined to the view. E.g. if an &lsquo;all contacts&rsquo; view joins from a contacts table to an organisation table (to show the parent organisation), then only contacts fields will be editable, not organisation fields like &lsquo;organisation name&rsquo; for example.</li>
 </ul>
 <p>The inline editing option has three states:</p>
 <ul>
@@ -705,10 +703,7 @@ if (!doNotTrack) {
 		<br />
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified April 11, 2022: <a href="https://github.com/okohll/abdocs/commit/7142dd953dfd4f2e6b52da266d70f9cf55e0ed83">Fixed minor typo a -&gt; as (7142dd9)</a>
-</div>
-
+	
 </div>
 
 
