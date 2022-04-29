@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/workflows/send-chaser/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-29T12:35:00+01:00" />
-<meta property="article:modified_time" content="2020-05-29T12:35:00+01:00" />
+<meta property="article:modified_time" content="2022-04-29T19:14:19+01:00" />
 
 <meta itemprop="name" content="Send a Chaser email">
 <meta itemprop="description" content="Chasers are dedicated functionality that use email to ask third parties for relevant information"><meta itemprop="datePublished" content="2020-05-29T12:35:00+01:00" />
-<meta itemprop="dateModified" content="2020-05-29T12:35:00+01:00" />
-<meta itemprop="wordCount" content="676">
+<meta itemprop="dateModified" content="2022-04-29T19:14:19+01:00" />
+<meta itemprop="wordCount" content="934">
 <meta itemprop="keywords" content="Certified Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Send a Chaser email"/>
 <meta name="twitter:description" content="Chasers are dedicated functionality that use email to ask third parties for relevant information"/>
@@ -439,7 +439,10 @@ if (!doNotTrack) {
     <li><a href="#example">Example</a></li>
     <li><a href="#setup">Setup</a>
       <ul>
+        <li><a href="#including-attachments">Including attachments</a></li>
         <li><a href="#receiving-a-response">Receiving a response</a></li>
+        <li><a href="#sending-thank-you-emails">Sending thank you emails</a></li>
+        <li><a href="#errors">Errors</a></li>
         <li><a href="#using-multiple-chasers-on-the-same-table">Using multiple chasers on the same table</a></li>
       </ul>
     </li>
@@ -588,6 +591,15 @@ if (!doNotTrack) {
 The system will automatically create a form containing these fields (excluding any of the chaser fields above such as ‘to’ and ‘subject’). When the recipient receives an email, it will have a link in it that takes them to this form.</li>
 </ol>
 <p>If you want the content that the chaser sends out to be visible to users, add the chaser view into a form as a <a href="/docs/fields/field-types/special-field-types/referenced-data/">referenced data field</a>. The panel displayed to users will show information such as the email to be sent, how many times the record’s been chased, when the last time was etc. If the record doesn’t need to be chased it will instead show the reasons why (the filters from the view).</p>
+<h3 id="including-attachments">Including attachments</h3>
+<p>If you add a file field to the view and a row being chased has a file uploaded to that field, it will be added to the outgoing email as an attachment.</p>
+<p>Note if you add a file field from the view&rsquo;s parent table to the view and a particular record <em>doesn&rsquo;t</em> have a file uploaded, the chaser will request the recipient uploads one, when completing the form. In other words it will request a document.</p>
+<h4 id="multiple-attachments">Multiple attachments</h4>
+<p>Sometimes there may be a set of files you wish to attach to a single email, where the files are all stored in a child table. To accomplish this, join down to the child table and add the file field in that child table to the view.</p>
+<p>Then, when there are multiple child records, each containing a file, those files will all be added to the outgoing email.</p>
+<blockquote>
+<p>Don&rsquo;t worry that the view then contains multiple rows per email. The chaser is clever enough to only send one email, but merge in all the files from the multiple rows.</p>
+</blockquote>
 <h3 id="receiving-a-response">Receiving a response</h3>
 <p>When a response is received to a chaser, as well as saving the documents / fields the chaser asked for, a comment will be logged to the first comment field in the parent table (if there is a comment field).</p>
 <p>An email will also be sent to a user notifying them of the response. The logic for who to send that notification to is:</p>
@@ -595,12 +607,16 @@ The system will automatically create a form containing these fields (excluding a
 <li>If there are any dropdown fields in the table with the option <a href="/docs/fields/field-options/text-field-options/#lists-of-users">fill with users</a> then send the email to the user selected in that field. If there&rsquo;s more than one field with that option, use the first one.</li>
 <li>If there are no fields with &lsquo;fill with users&rsquo; selected, fall back to notifying the user who last updated or created the record being chased.</li>
 </ol>
+<h3 id="sending-thank-you-emails">Sending thank you emails</h3>
+<p>When someone completes the chaser form and provides the information requested, a thank you page will be shown. If the value of the <em>send thanks</em> calculation in the chaser form is <em>true</em> for a row, then the recipient will be sent a thank you email as well.</p>
 <h4 id="optional-response-fields">Optional response fields</h4>
 <p>The following fields can optionally be added to the table. If they are found, they will be populated by the chaser system when a chaser response is received.</p>
 <ol>
 <li><strong>chaser response received</strong>: if a <em>date</em> field with this name exists, the value will be set to the date and time of the response</li>
 <li><strong>chaser response needs checking</strong>: if a <em>checkbox</em> field with this name exists, it will be ticked when the response is received</li>
 </ol>
+<h3 id="errors">Errors</h3>
+<p>If an email can&rsquo;t be sent because of an invalid address in the &lsquo;To&rsquo; field, then the address specified in the &lsquo;Escalate To&rsquo; field will be notified.</p>
 <h3 id="using-multiple-chasers-on-the-same-table">Using multiple chasers on the same table</h3>
 <p>[TODO]</p>
 
@@ -668,7 +684,10 @@ The system will automatically create a form containing these fields (excluding a
 		<br />
 	
 	
-	
+	<div class="text-muted mt-5 pt-3 border-top">
+  Last modified April 29, 2022: <a href="https://github.com/okohll/abdocs/commit/2db33b2fa92050b30e69f1e34b2446bc6e8b97f7">New chaser features (2db33b2)</a>
+</div>
+
 </div>
 
 
