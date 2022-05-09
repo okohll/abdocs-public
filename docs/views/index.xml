@@ -321,9 +321,9 @@
 &lt;p&gt;The goal of this feature is to allow rapid and efficient editing of data when in the list view so there’s no need to drill down into a record to edit and back to the list again after each.&lt;/p&gt;
 &lt;p&gt;Some examples of where this might be useful would be when working through a list of milestones to update statuses, or when in a list of stock items to update quantities.&lt;/p&gt;
 &lt;p&gt;In inline editing mode, the list view changes from something like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-off.png&#34; alt=&#34;inline editing off&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-off-new.png&#34; alt=&#34;inline editing off&#34;&gt;&lt;/p&gt;
 &lt;p&gt;into this editable version:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-on.png&#34; alt=&#34;inline editing on&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-on-new.png&#34; alt=&#34;inline editing on&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Certain fields will be editable&lt;/strong&gt;, but others will be read-only. Fields that can be editable are all those which are from the view’s parent table. Fields that will not be editable are&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;calculations&lt;/li&gt;
@@ -343,7 +343,7 @@
 &lt;li&gt;long headings and rows&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When &lt;strong&gt;headings and rows&lt;/strong&gt; is selected, the first field in the view will be used as a heading for the rows below. A new heading appears every time the field value changes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/headings.png&#34; alt=&#34;headings and rows&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/headings-new.png&#34; alt=&#34;headings and rows&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;record-limit&#34;&gt;Record limit&lt;/h2&gt;
 &lt;p&gt;Only return the top N rows of data from the view, even if there are more available. This is equivalent to adding a &lt;a href=&#34;https://www.postgresql.org/docs/current/sql-select.html#SQL-LIMIT&#34;&gt;LIMIT clause&lt;/a&gt; in SQL.&lt;/p&gt;
 &lt;h2 id=&#34;distinct-fields&#34;&gt;Distinct fields&lt;/h2&gt;

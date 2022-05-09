@@ -332,12 +332,14 @@ These backups are also encrypted so that Amazon has no access to the data within
 &lt;p&gt;Roles have some other important uses, such as multi-tenanting, described below.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-role&#34;&gt;Creating a role&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
-&lt;li&gt;Click &lt;em&gt;roles&lt;/em&gt;. You&amp;rsquo;ll see a list of existing roles&lt;/li&gt;
-&lt;li&gt;Click the plus button in the toolbar at the top&lt;/li&gt;
+&lt;li&gt;Go to the homepage and toggle build mode on&lt;/li&gt;
+&lt;li&gt;Select &amp;rsquo;list&amp;rsquo; mode&lt;/li&gt;
+&lt;li&gt;Select &amp;lsquo;roles&amp;rsquo; from the dropdown at the top centre of the screen&lt;/li&gt;
+&lt;li&gt;Click the Add Role button at the top right of the screen&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-role.png&#34; alt=&#34;Add Role&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You should now see an editing screen with the details of the role you just created. You can give it a name and there are a few options:
-&lt;img src=&#34;https://docs.agilebase.co.uk/role-details.png&#34; alt=&#34;Role details&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://docs.agilebase.co.uk/new-role-details.png&#34; alt=&#34;Role details&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Allow Export&lt;/strong&gt;&lt;br&gt;
 Referrs to exporting to spreadsheet - see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/exporting-to-spreadsheet/&#34;&gt;spreadsheet exports&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Allow global editing&lt;/strong&gt;
@@ -2065,7 +2067,7 @@ and a video introduction to the concept here:&lt;/p&gt;
         
         &lt;p&gt;This panel shows a list of views that contain data from the table. Any view with data is included, not just those directly created from the table.&lt;/p&gt;
 &lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/&#34;&gt;usage reporting&lt;/a&gt; for more info.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/table-usage.png&#34; alt=&#34;table usage&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/new-table-usage.png&#34; alt=&#34;table usage&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -2394,7 +2396,7 @@ Options are:&lt;/p&gt;
 &lt;li&gt;Lock record - This will apply a record level lock on the item.&lt;/li&gt;
 &lt;li&gt;Delete record - This will totally remove the record.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-manage.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-manage-new.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;creating-records&#34;&gt;Creating records&lt;/h4&gt;
 &lt;p&gt;If &amp;lsquo;create record&amp;rsquo; is chosen, a couple of other options appear.&lt;/p&gt;
 &lt;ol&gt;
@@ -2411,7 +2413,7 @@ Options are:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;Send to document generator&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;RSS feed - See facility with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/&#34;&gt;PULL API&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-send.png&#34; alt=&#34;Workflow functions that send data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-send-new.png&#34; alt=&#34;Workflow functions that send data&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -2441,9 +2443,9 @@ Options are:&lt;/p&gt;
 &lt;p&gt;The goal of this feature is to allow rapid and efficient editing of data when in the list view so there’s no need to drill down into a record to edit and back to the list again after each.&lt;/p&gt;
 &lt;p&gt;Some examples of where this might be useful would be when working through a list of milestones to update statuses, or when in a list of stock items to update quantities.&lt;/p&gt;
 &lt;p&gt;In inline editing mode, the list view changes from something like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-off.png&#34; alt=&#34;inline editing off&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-off-new.png&#34; alt=&#34;inline editing off&#34;&gt;&lt;/p&gt;
 &lt;p&gt;into this editable version:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-on.png&#34; alt=&#34;inline editing on&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-on-new.png&#34; alt=&#34;inline editing on&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Certain fields will be editable&lt;/strong&gt;, but others will be read-only. Fields that can be editable are all those which are from the view’s parent table. Fields that will not be editable are&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;calculations&lt;/li&gt;
@@ -2463,7 +2465,7 @@ Options are:&lt;/p&gt;
 &lt;li&gt;long headings and rows&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When &lt;strong&gt;headings and rows&lt;/strong&gt; is selected, the first field in the view will be used as a heading for the rows below. A new heading appears every time the field value changes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/headings.png&#34; alt=&#34;headings and rows&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/headings-new.png&#34; alt=&#34;headings and rows&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;record-limit&#34;&gt;Record limit&lt;/h2&gt;
 &lt;p&gt;Only return the top N rows of data from the view, even if there are more available. This is equivalent to adding a &lt;a href=&#34;https://www.postgresql.org/docs/current/sql-select.html#SQL-LIMIT&#34;&gt;LIMIT clause&lt;/a&gt; in SQL.&lt;/p&gt;
 &lt;h2 id=&#34;distinct-fields&#34;&gt;Distinct fields&lt;/h2&gt;

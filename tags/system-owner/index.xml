@@ -54,12 +54,14 @@
         
         &lt;h2 id=&#34;adding-a-user&#34;&gt;Adding a user&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
-&lt;li&gt;Click &lt;em&gt;users&lt;/em&gt;. You&amp;rsquo;ll see a list of existing users&lt;/li&gt;
-&lt;li&gt;Click the plus button in the toolbar at the top&lt;/li&gt;
+&lt;li&gt;Go to the homepage and toggle build mode on&lt;/li&gt;
+&lt;li&gt;Select &amp;rsquo;list&amp;rsquo; mode&lt;/li&gt;
+&lt;li&gt;Select &amp;lsquo;users&amp;rsquo; from the dropdown at the top centre of the screen&lt;/li&gt;
+&lt;li&gt;Click the Add User button at the top right of the screen&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;You should now see an editing screen with the details of the user you just created.
-&lt;img src=&#34;https://docs.agilebase.co.uk/user-details.png&#34; alt=&#34;User editing&#34;&gt;&lt;/p&gt;
+![Add user][/add-user.png]
+&lt;img src=&#34;https://docs.agilebase.co.uk/new-user-details.png&#34; alt=&#34;User editing&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You can enter the user&amp;rsquo;s name and username. If the username isn&amp;rsquo;t their email address, enter their email address in the field provided too. This is useful&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;to allow them to reset their own password by receiving a link by email&lt;/li&gt;
@@ -238,12 +240,14 @@ These backups are also encrypted so that Amazon has no access to the data within
 &lt;p&gt;Roles have some other important uses, such as multi-tenanting, described below.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-role&#34;&gt;Creating a role&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
-&lt;li&gt;Click &lt;em&gt;roles&lt;/em&gt;. You&amp;rsquo;ll see a list of existing roles&lt;/li&gt;
-&lt;li&gt;Click the plus button in the toolbar at the top&lt;/li&gt;
+&lt;li&gt;Go to the homepage and toggle build mode on&lt;/li&gt;
+&lt;li&gt;Select &amp;rsquo;list&amp;rsquo; mode&lt;/li&gt;
+&lt;li&gt;Select &amp;lsquo;roles&amp;rsquo; from the dropdown at the top centre of the screen&lt;/li&gt;
+&lt;li&gt;Click the Add Role button at the top right of the screen&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-role.png&#34; alt=&#34;Add Role&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You should now see an editing screen with the details of the role you just created. You can give it a name and there are a few options:
-&lt;img src=&#34;https://docs.agilebase.co.uk/role-details.png&#34; alt=&#34;Role details&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;https://docs.agilebase.co.uk/new-role-details.png&#34; alt=&#34;Role details&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Allow Export&lt;/strong&gt;&lt;br&gt;
 Referrs to exporting to spreadsheet - see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/exporting-to-spreadsheet/&#34;&gt;spreadsheet exports&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Allow global editing&lt;/strong&gt;
@@ -588,7 +592,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
         
         &lt;p&gt;This panel shows a list of views that contain data from the table. Any view with data is included, not just those directly created from the table.&lt;/p&gt;
 &lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/&#34;&gt;usage reporting&lt;/a&gt; for more info.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/table-usage.png&#34; alt=&#34;table usage&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/new-table-usage.png&#34; alt=&#34;table usage&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>

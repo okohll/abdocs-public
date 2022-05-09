@@ -102,7 +102,7 @@
         &lt;p&gt;Firstly, identify the table into which you wish to recieve incoming data. Go to that table&amp;rsquo;s manage taband press &amp;lsquo;options’. Tick &amp;lsquo;Public form or API data entry’, which will create an API for the table.&lt;/p&gt;
 &lt;p&gt;To protect the system from spam input, we also suggest you tick &amp;lsquo;Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
 &lt;p&gt;Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming-data-api.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming-data-api-new.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;creating-new-records&#34;&gt;Creating new records&lt;/h2&gt;
 &lt;p&gt;Clicking the ‘sample form’ link will then show a sample form which can be used for testing or to copy code from.&lt;/p&gt;
 &lt;p&gt;If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:&lt;/p&gt;
@@ -177,7 +177,7 @@ for ‘recording the time of the last action’, choose the date/time field crea
 choose a minimum interval to wait between pushes&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The system will now make a POST to the URL specified in step 2 whenever there’s new data to send. It will contain one parameter, ‘json’, which is a JSON representation of all the data in the view.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-push.png&#34; alt=&#34;Configuring the PUSH API&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-push-new.png&#34; alt=&#34;Configuring the PUSH API&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;selecting-data-to-push&#34;&gt;Selecting data to push&lt;/h3&gt;
 &lt;p&gt;How do we know which data is new and wants to be sent out via the API?&lt;/p&gt;
 &lt;p&gt;That’s up to you - any filters can be added to the view to select data you want. Commonly, you’d use the date/time field set up in step 3. When a push successfully completes, every record in the view has this field set to the current time.&lt;/p&gt;
@@ -220,7 +220,7 @@ choose a minimum interval to wait between pushes&lt;/li&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The remainder of this article explains how to PULL the data.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-pull.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-pull-new.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The most important piece of information is the URL that the third party will access your data via. This will be:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If you host on your own cloud or on premises, this may be different.&lt;/p&gt;
@@ -301,9 +301,6 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;/ul&gt;
 &lt;p&gt;and the ‘Authorization’ header set to the API key (if the table requires one).&lt;/p&gt;
 &lt;p&gt;This also makes testing with &lt;a href=&#34;https://www.postman.com/&#34;&gt;Postman&lt;/a&gt; easier, since Postman can import a Swagger API description – so you don’t have to write a single line of code to test out an API.&lt;/p&gt;
-&lt;h2 id=&#34;rss-feed&#34;&gt;RSS Feed&lt;/h2&gt;
-&lt;p&gt;If your PULL API has been enabled for Public access then you can offer 3rd parties the option of accessing the feed via an RSS feed. The link is visible just below the tick box for public access.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-send-rss.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>

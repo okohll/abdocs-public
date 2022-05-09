@@ -175,7 +175,7 @@ Options are:&lt;/p&gt;
 &lt;li&gt;Lock record - This will apply a record level lock on the item.&lt;/li&gt;
 &lt;li&gt;Delete record - This will totally remove the record.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-manage.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-manage-new.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;creating-records&#34;&gt;Creating records&lt;/h4&gt;
 &lt;p&gt;If &amp;lsquo;create record&amp;rsquo; is chosen, a couple of other options appear.&lt;/p&gt;
 &lt;ol&gt;
@@ -192,7 +192,7 @@ Options are:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;Send to document generator&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;RSS feed - See facility with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/&#34;&gt;PULL API&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-send.png&#34; alt=&#34;Workflow functions that send data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-send-new.png&#34; alt=&#34;Workflow functions that send data&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -341,7 +341,7 @@ Options are:&lt;/p&gt;
 &lt;p&gt;If you have any difficulty thinking up what criteria you need for your purpose, please get in touch.&lt;/p&gt;
 &lt;h2 id=&#34;step-4-fill-in-an-email-template&#34;&gt;Step 4: fill in an email template&lt;/h2&gt;
 &lt;p&gt;In the view’s &lt;em&gt;manage&lt;/em&gt; tab, under &lt;em&gt;send&lt;/em&gt;, fill in the subject, to and body of the email. To merge in data from the view, use field names in lowercase surrounded by curly brackets. A typical template would look something like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/send-email.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/send-email-new.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You can attach documents to the email by including the field name for a file in the message.&lt;/p&gt;
 &lt;p&gt;Under the email template, set “Notification time field” to the field that you created in step 1, e.g. “Last notified”&lt;/p&gt;
 &lt;p&gt;Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in agileBase, you can use that field and the system will automatically pick out the email address for them.&lt;/p&gt;
