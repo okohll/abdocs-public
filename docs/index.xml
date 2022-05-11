@@ -1610,13 +1610,6 @@ export default LoginScreen;
 &lt;p&gt;(On by default). Allow records to be deleted by people with EDIT privileges as well as people with MANAGE privileges, who can always delete.&lt;/p&gt;
 &lt;h2 id=&#34;allow-share&#34;&gt;Allow share&lt;/h2&gt;
 &lt;p&gt;Showa button which allows links to individual records to be shared between users using email. Note - recipients still need a login and relevant privileges to see the record.&lt;/p&gt;
-&lt;h2 id=&#34;when-a-records-created-run-this-workflow&#34;&gt;When a record&amp;rsquo;s created, run this workflow&lt;/h2&gt;
-&lt;p&gt;Run a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; immediately after the creation of a record. The workflow runs after any field default values have been set.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The workflow &amp;lsquo;knows&amp;rsquo; metadata such as which user is logged in, which tile is open etc., so if you want to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/#special-functions&#34;&gt;use those in a calculation&lt;/a&gt; in the workflow, you can do.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;run-this-workflow-whenever-each-record-is-viewed&#34;&gt;Run this workflow whenever each record is viewed&lt;/h3&gt;
-&lt;p&gt;As well as running the workflow on record creation, also run it whenever a user views a record in this table. Be aware this may have a performance impact for users, if the workflow is resource intensive and/or multi-step.&lt;/p&gt;
 &lt;h2 id=&#34;data-entry-from-external-sources&#34;&gt;Data entry from external sources&lt;/h2&gt;
 &lt;p&gt;The options in this section are for configuring the table to allow an API request from an external source to create and edit records. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API use&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;h2 id=&#34;other-options&#34;&gt;Other options&lt;/h2&gt;
@@ -1647,6 +1640,32 @@ export default LoginScreen;
 &lt;/ul&gt;
 &lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
 &lt;p&gt;After the options, some structural information is shown, such as which tables depend on this one i.e. have a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation&lt;/a&gt; to it, how many fields and views per tile there are. See also the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#the-dashboard&#34;&gt;usage dashboard&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Workflow</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/workflow/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/workflow/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The workflow panel of a table shows any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; which act on data in that table. In other words, any workflow that updates records, creates new records in the table, or deletes records from it.&lt;/p&gt;
+&lt;p&gt;Additionally, this panel allows you to choose a workflow to run whenever a new record is created, or (less frequently used) whenever a record is opened.&lt;/p&gt;
+&lt;p&gt;That can be very useful for setting initial values for fields, where those values may be more complex calculations than just a static default value.&lt;/p&gt;
+&lt;h2 id=&#34;when-a-records-created-run-workflow&#34;&gt;When a record&amp;rsquo;s created, run workflow&lt;/h2&gt;
+&lt;p&gt;Run a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; immediately after the creation of a record. The workflow runs after any field default values have been set.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The workflow &amp;lsquo;knows&amp;rsquo; metadata such as which user is logged in, which tile is open etc., so if you want to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/#special-functions&#34;&gt;use those in a calculation&lt;/a&gt; in the workflow, you can do.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note that only workflows which have &lt;strong&gt;Frequency = manual&lt;/strong&gt; set can be chosen to be run when a record is created. That&amp;rsquo;s because a single workflow can&amp;rsquo;t be used both to set initial values &lt;em&gt;and&lt;/em&gt; to run every X minutes.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;run-this-workflow-whenever-each-record-is-viewed&#34;&gt;Run this workflow whenever each record is viewed&lt;/h3&gt;
+&lt;p&gt;As well as running the workflow on record creation, also run it whenever a user views a record in this table. Be aware this may have a performance impact for users, if the workflow is resource intensive and/or multi-step, particularly if records are also viewed frequently.&lt;/p&gt;
 
       </description>
     </item>
@@ -2514,34 +2533,6 @@ Options are:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;If you find a view is slow, feel free to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; for support before trying options like caching, there are many other targeted options we can look at first, such as adding indexes.&lt;/p&gt;
 &lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Separator Options</title>
-      <link>https://docs.agilebase.co.uk/docs/fields/field-options/separator-options/</link>
-      <pubDate>Wed, 27 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/separator-options/</guid>
-      <description>
-        
-        
-        &lt;p&gt;A &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;field separator&lt;/a&gt; creates a block of fields, starting with the separator and ending at the next one (or the last field in the table).&lt;/p&gt;
-&lt;p&gt;These blocks can either be initially contracted, or expanded. Here&amp;rsquo;s a screenshot showing a number of contracted blocks, with one expanded.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/blocks-one-expanded.png&#34; alt=&#34;blocks one expanded&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;to-program-the-initial-state-of-the-block&#34;&gt;To program the initial state of the block&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;Create a view&lt;/a&gt; from the table the separator is in&lt;/li&gt;
-&lt;li&gt;Add &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;filters&lt;/a&gt; to that view that leave only records which the block should be expanded in present&lt;/li&gt;
-&lt;li&gt;In the &lt;em&gt;fields&lt;/em&gt; tab of the table, click &lt;em&gt;field options&lt;/em&gt; and select the view for the &lt;em&gt;expand if record in view&lt;/em&gt; option&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;There are two other selections that can be made for the &lt;em&gt;expand if record in view&lt;/em&gt; option other than selecting a view.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;expand if under 10 blocks on the screen&lt;/li&gt;
-&lt;li&gt;expand never&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Remember, these just set the initial state of the block when a record is first opened, blocks can be expanded and contracted by the user at any time.&lt;/p&gt;
 
       </description>
     </item>
