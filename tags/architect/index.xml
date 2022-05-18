@@ -973,9 +973,8 @@ There are two ways to edit a table: from the homepage, or from editing a record.
 &lt;p&gt;agileBase will automatically pick out the common tables you may wish to join to, by seeing which are related via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation fields&lt;/a&gt;. Once you get used to the concepts, you may also wish sometimes to add joins manually to tables or views not automatically suggested. That will be covered at the end of this page.&lt;/p&gt;
 &lt;p&gt;To add a join&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;In the tiles interface, load the view you wish to edit (add a join to)&lt;/li&gt;
-&lt;li&gt;Click your user profile icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Under &lt;em&gt;Joins&lt;/em&gt;, click the &lt;em&gt;Add Join&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;Load the view you wish to add a join to and enable development mode&lt;/li&gt;
+&lt;li&gt;Click the big pencil icon at the top left of the screen to bring up the &amp;lsquo;Edit view&amp;rsquo; panel&lt;/li&gt;
 &lt;li&gt;A list of joins you can add will appear, each representing a link to a table with related data in it. Select one and the join will add&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;the-anatomy-of-a-join&#34;&gt;The anatomy of a join&lt;/h2&gt;
@@ -1282,10 +1281,9 @@ There are two ways to edit a table: from the homepage, or from editing a record.
 &lt;p&gt;But first, what are the mechanics of creating a calculation and adding it to a view?&lt;/p&gt;
 &lt;h2 id=&#34;adding-a-calculation&#34;&gt;Adding a calculation&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;In the tiles interface, open the view you want to edit&lt;/li&gt;
-&lt;li&gt;Click your user icon at the top right of the screen and select &lt;em&gt;admin - edit view&lt;/em&gt; from the menu. The view editing interface will open&lt;/li&gt;
-&lt;li&gt;Click the &lt;em&gt;Add Field&amp;hellip;&lt;/em&gt; button.&lt;/li&gt;
-&lt;li&gt;Under &lt;em&gt;Add Calculation&lt;/em&gt;, choose a type (text, number etc.), give it a name and press &lt;em&gt;Add&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Open the view you want to edit&lt;/li&gt;
+&lt;li&gt;Toggle development mode on and click the big pencil at the top left of the screen&lt;/li&gt;
+&lt;li&gt;Under &lt;em&gt;fields&lt;/em&gt;, from &lt;em&gt;Add Calculation&lt;/em&gt; choose a type (text, number etc.), give it a name and press &lt;em&gt;Add&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The calculation editing screen panel now open to the right and you can type in your calculation.&lt;/p&gt;
 &lt;p&gt;Before doing that, we&amp;rsquo;ll quickly review the main areas of the calculation editing panel. There are&lt;/p&gt;
@@ -2297,8 +2295,8 @@ and a video introduction to the concept here:&lt;/p&gt;
         
         &lt;p&gt;These options can be seen and edited as follows&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;In the tiles interface, open a view&lt;/li&gt;
-&lt;li&gt;Click your user icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt; from the menu&lt;/li&gt;
+&lt;li&gt;In development mode, open a view&lt;/li&gt;
+&lt;li&gt;Click the big pencil icon at the top left and select &lt;em&gt;properties and options&lt;/em&gt; from the menu&lt;/li&gt;
 &lt;li&gt;Some options are visible under &lt;em&gt;advanced options&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;group-by-all-non-aggregate-fields&#34;&gt;Group by all non-aggregate fields&lt;/h2&gt;
