@@ -50,7 +50,7 @@
 &lt;p&gt;Hovering over a column shows summary statistics, like a total and average (of all filtered records) for numeric fields, or a breakdown of dropdown/tags fields.&lt;/p&gt;
 &lt;h3 id=&#34;loading-a-record&#34;&gt;Loading a record&lt;/h3&gt;
 &lt;p&gt;Once a record has been found, click a row in the view to load that record for viewing or editing. The record loaded comes from the table that the view belongs to (as referenced at the start of this page), even though the view may contain fields from other tables as well.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s also possible to use &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/options/#inline-editing&#34;&gt;inline editing&lt;/a&gt; to edit the contents of fields directly in the view.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also possible to use &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/options/display-options/#interface-inline-editing&#34;&gt;inline editing&lt;/a&gt; to edit the contents of fields directly in the view.&lt;/p&gt;
 &lt;p&gt;Pressing the plus button to the left of the view contents will create a new record in the view&amp;rsquo;s parent table.&lt;/p&gt;
 
       </description>
@@ -294,37 +294,30 @@
     </item>
     
     <item>
-      <title>Docs: Options</title>
-      <link>https://docs.agilebase.co.uk/docs/views/options/</link>
-      <pubDate>Thu, 28 May 2020 16:40:00 +0100</pubDate>
+      <title>Docs: Display Options</title>
+      <link>https://docs.agilebase.co.uk/docs/views/options/display-options/</link>
+      <pubDate>Sun, 22 May 2022 16:00:00 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/docs/views/options/</guid>
+      <guid>https://docs.agilebase.co.uk/docs/views/options/display-options/</guid>
       <description>
         
         
-        &lt;p&gt;These options can be seen and edited as follows&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;In development mode, open a view&lt;/li&gt;
-&lt;li&gt;Click the big pencil icon at the top left and select &lt;em&gt;properties and options&lt;/em&gt; from the menu&lt;/li&gt;
-&lt;li&gt;Some options are visible under &lt;em&gt;advanced options&lt;/em&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;group-by-all-non-aggregate-fields&#34;&gt;Group by all non-aggregate fields&lt;/h2&gt;
-&lt;p&gt;Affects how some calculation aggregates worked - documented in &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#aggregates-of-child-rows&#34;&gt;calculations -&amp;gt; aggregates of child rows&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;show-charts-by-default&#34;&gt;Show charts by default&lt;/h2&gt;
+        &lt;h2 id=&#34;show-charts-by-default&#34;&gt;Show charts by default&lt;/h2&gt;
 &lt;p&gt;When a user opens this view, immediately show charts rather than data rows&lt;/p&gt;
-&lt;h2 id=&#34;allow-exports&#34;&gt;Allow exports&lt;/h2&gt;
-&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/&#34;&gt;Security And Compliance -&amp;gt; Exporting&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;inline-editing&#34;&gt;Inline editing&lt;/h2&gt;
+&lt;h2 id=&#34;interface---inline-editing&#34;&gt;Interface -&amp;gt; inline editing&lt;/h2&gt;
 &lt;p&gt;The goal of this feature is to allow rapid and efficient editing of data when in the list view so there’s no need to drill down into a record to edit and back to the list again after each.&lt;/p&gt;
 &lt;p&gt;Some examples of where this might be useful would be when working through a list of milestones to update statuses, or when in a list of stock items to update quantities.&lt;/p&gt;
 &lt;p&gt;In inline editing mode, the list view changes from something like this:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-off-new.png&#34; alt=&#34;inline editing off&#34;&gt;&lt;/p&gt;
 &lt;p&gt;into this editable version:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-on-new.png&#34; alt=&#34;inline editing on&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Certain fields will be editable&lt;/strong&gt;, but others will be read-only. Fields that can be editable are all those which are from the view’s parent table. Fields that will not be editable are&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Certain fields will be editable&lt;/strong&gt;, but others will be read-only.&lt;/p&gt;
+&lt;p&gt;Fields that can be editable are all those which are from the view’s parent table as well as the display fields of relations in that table.&lt;/p&gt;
+&lt;p&gt;For example, if editing a list of contacts, then the contact name, email, phone number etc. would be editable as well as the organisation name, if the contacts table had a relation field linking to the organisations table, which had &lt;em&gt;organisation name&lt;/em&gt; as its display field.&lt;/p&gt;
+&lt;p&gt;Fields that will not be editable are&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;calculations&lt;/li&gt;
-&lt;li&gt;fields from other tables joined to the view. E.g. if an &amp;lsquo;all contacts&amp;rsquo; view joins from a contacts table to an organisation table (to show the parent organisation), then only contacts fields will be editable, not organisation fields like &amp;lsquo;organisation name&amp;rsquo; for example.&lt;/li&gt;
+&lt;li&gt;fields from other tables joined to the view, except relation display fields as above&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The inline editing option has three states:&lt;/p&gt;
 &lt;ul&gt;
@@ -332,15 +325,48 @@
 &lt;li&gt;Allow but turn off by default&lt;/li&gt;
 &lt;li&gt;On by default&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;style-layout-options&#34;&gt;Style (layout options)&lt;/h2&gt;
-&lt;p&gt;The visual style affects whether the view is shown as&lt;/p&gt;
+&lt;h2 id=&#34;interface---cards-in-columns&#34;&gt;Interface -&amp;gt; cards in columns&lt;/h2&gt;
+&lt;p&gt;When &lt;em&gt;cards in columns&lt;/em&gt; is selected, the display switches from showing each record as a row, to showing each as a card in a column.&lt;/p&gt;
+&lt;p&gt;The column names are generated from the first dropdown field in the view (there must be at least one dropdown field in the view for this to work).&lt;/p&gt;
+&lt;p&gt;Each available option in the dropdown becomes a column. Each record is placed, as a card, in the column which matches the dropdown value for that record.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/cards.png&#34; alt=&#34;the cards interface&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Dragging a card from one column to another updates that record, changing the value of the dropdown field to match the column.&lt;/p&gt;
+&lt;h3 id=&#34;vertical-grouping-within-a-column&#34;&gt;Vertical grouping within a column&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s also possible to sub-divide each column into groups. To achieve that, simply set up the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#specifying-dropdown-lists-and-tags-fields&#34;&gt;available options&lt;/a&gt; in the dropdown to have prefixes separated by a dot.&lt;/p&gt;
+&lt;p&gt;E.g.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;spreadsheet format - standard output in rows (the default option)&lt;/li&gt;
+&lt;li&gt;1.1) column one, group 1&lt;/li&gt;
+&lt;li&gt;1.2) column one, group 2&lt;/li&gt;
+&lt;li&gt;2.1) column two, group 1&lt;/li&gt;
+&lt;li&gt;2.2) column two, group 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then, cards can be dragged to different groups, not just different columns.&lt;/p&gt;
+&lt;h2 id=&#34;style-layout-options&#34;&gt;Style (layout options)&lt;/h2&gt;
+&lt;p&gt;The visual style affects whether a list of rows is shown with headings or not. This is not used when the cards option above is active.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;spreadsheet format - standard output in rows (no headings, the default option)&lt;/li&gt;
 &lt;li&gt;headings and rows&lt;/li&gt;
 &lt;li&gt;long headings and rows&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When &lt;strong&gt;headings and rows&lt;/strong&gt; is selected, the first field in the view will be used as a heading for the rows below. A new heading appears every time the field value changes.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/headings-new.png&#34; alt=&#34;headings and rows&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Options</title>
+      <link>https://docs.agilebase.co.uk/docs/views/options/behaviour-options/</link>
+      <pubDate>Sun, 22 May 2022 16:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/options/behaviour-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;group-by-all-non-aggregate-fields&#34;&gt;Group by all non-aggregate fields&lt;/h2&gt;
+&lt;p&gt;Affects how some calculation aggregates worked - documented in &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/#aggregates-of-child-rows&#34;&gt;calculations -&amp;gt; aggregates of child rows&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;allow-exports&#34;&gt;Allow exports&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/&#34;&gt;Security And Compliance -&amp;gt; Exporting&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;record-limit&#34;&gt;Record limit&lt;/h2&gt;
 &lt;p&gt;Only return the top N rows of data from the view, even if there are more available. This is equivalent to adding a &lt;a href=&#34;https://www.postgresql.org/docs/current/sql-select.html#SQL-LIMIT&#34;&gt;LIMIT clause&lt;/a&gt; in SQL.&lt;/p&gt;
 &lt;h2 id=&#34;distinct-fields&#34;&gt;Distinct fields&lt;/h2&gt;

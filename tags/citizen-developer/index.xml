@@ -153,7 +153,7 @@
 &lt;p&gt;Hovering over a column shows summary statistics, like a total and average (of all filtered records) for numeric fields, or a breakdown of dropdown/tags fields.&lt;/p&gt;
 &lt;h3 id=&#34;loading-a-record&#34;&gt;Loading a record&lt;/h3&gt;
 &lt;p&gt;Once a record has been found, click a row in the view to load that record for viewing or editing. The record loaded comes from the table that the view belongs to (as referenced at the start of this page), even though the view may contain fields from other tables as well.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s also possible to use &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/options/#inline-editing&#34;&gt;inline editing&lt;/a&gt; to edit the contents of fields directly in the view.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also possible to use &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/options/display-options/#interface-inline-editing&#34;&gt;inline editing&lt;/a&gt; to edit the contents of fields directly in the view.&lt;/p&gt;
 &lt;p&gt;Pressing the plus button to the left of the view contents will create a new record in the view&amp;rsquo;s parent table.&lt;/p&gt;
 
       </description>

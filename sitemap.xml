@@ -108,7 +108,7 @@
     <lastmod>2020-10-29T17:17:40+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/views/creating-a-view/</loc>
-    <lastmod>2022-04-25T17:05:25+01:00</lastmod>
+    <lastmod>2022-05-22T16:17:41+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/</loc>
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
@@ -230,9 +230,6 @@
     <loc>https://docs.agilebase.co.uk/docs/workflows/types-of-actions/</loc>
     <lastmod>2022-05-09T16:58:04+01:00</lastmod>
   </url><url>
-    <loc>https://docs.agilebase.co.uk/docs/views/options/</loc>
-    <lastmod>2022-05-16T17:05:12+01:00</lastmod>
-  </url><url>
     <loc>https://docs.agilebase.co.uk/docs/fields/field-options/separator-options/</loc>
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
   </url><url>
@@ -247,6 +244,12 @@
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/integrations/calendar/</loc>
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/docs/views/options/display-options/</loc>
+    <lastmod>2022-05-22T16:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/docs/views/options/behaviour-options/</loc>
+    <lastmod>2022-05-22T16:00:00+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/workflows/altering-data/</loc>
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
@@ -282,7 +285,7 @@
     <lastmod>2021-08-27T11:17:03+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/</loc>
-    <lastmod>2021-06-22T17:46:36+01:00</lastmod>
+    <lastmod>2022-05-22T16:17:41+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/workflows/send-email/</loc>
     <lastmod>2022-05-09T16:58:04+01:00</lastmod>
@@ -339,10 +342,10 @@
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/architect/</loc>
-    <lastmod>2022-05-16T17:05:12+01:00</lastmod>
+    <lastmod>2022-05-22T16:00:00+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/</loc>
-    <lastmod>2022-05-16T17:05:12+01:00</lastmod>
+    <lastmod>2022-05-22T16:17:41+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/system-builder/</loc>
     <lastmod>2022-04-25T17:05:25+01:00</lastmod>
@@ -354,13 +357,13 @@
     <lastmod>2022-05-09T11:47:50+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/citizen-developer/</loc>
-    <lastmod>2022-05-16T17:05:12+01:00</lastmod>
+    <lastmod>2022-05-22T16:17:41+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/certified-architect/</loc>
     <lastmod>2022-05-09T16:58:04+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/principal-architect/</loc>
-    <lastmod>2022-04-25T17:05:25+01:00</lastmod>
+    <lastmod>2022-05-22T16:17:41+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/core-user/</loc>
     <lastmod>2022-02-18T18:43:37+00:00</lastmod>

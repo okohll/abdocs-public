@@ -161,7 +161,7 @@
         
         
         &lt;p&gt;agileBase automatically takes some measures behind the scenes to maintain high performance as data volumes grow.&lt;/p&gt;
-&lt;p&gt;There are other mechanisms that can be manually enabled such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/options/#cache-view-rows&#34;&gt;caching&lt;/a&gt; and increasing the memory assigned to particular views.&lt;/p&gt;
+&lt;p&gt;There are other mechanisms that can be manually enabled such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/options/behaviour-options/#cache-view-rows&#34;&gt;caching&lt;/a&gt; and increasing the memory assigned to particular views.&lt;/p&gt;
 &lt;p&gt;Finally, we will be happy to to do all we can to speed up any parts of your application that require it if you &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt;. Often, a solution as simple as manually adding an index to a particular field can speed up requests by multiple orders of magnitude.&lt;/p&gt;
 &lt;p&gt;For really big data projects, there&amp;rsquo;s also the option of utilising PostgreSQL-compatible database services designed for such tasks, like &lt;a href=&#34;https://www.citusdata.com/&#34;&gt;Citus Data&lt;/a&gt;, which we will be happy to provision.&lt;/p&gt;
 
