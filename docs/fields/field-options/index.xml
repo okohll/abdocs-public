@@ -161,7 +161,7 @@
       <description>
         
         
-        &lt;p&gt;Relations between tables are the &amp;lsquo;glue&amp;rsquo; that holds together an application build using agileBase. If you&amp;rsquo;d like to learn more about this fundamental concept, please check out the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; page.&lt;/p&gt;
+        &lt;p&gt;Relations between tables are the &amp;lsquo;glue&amp;rsquo; that holds together an application built using agileBase. If you&amp;rsquo;d like to learn more about this fundamental concept, please check out the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; page.&lt;/p&gt;
 &lt;p&gt;Some of the options for a relation field determine the nature of the links between tables, which can have a great effect on how an app works, so it&amp;rsquo;s very useful to know about them.&lt;/p&gt;
 &lt;h2 id=&#34;one-to-one-only&#34;&gt;One to one only&lt;/h2&gt;
 &lt;p&gt;By default, a relation is a &amp;lsquo;many to one&amp;rsquo;. For example if a relation field in a contacts table links to an organisation, that organisation can have many contacts linked. If an ingredient links to a recipe, that recipe can have many ingredients. One customer can have many orders - examples are numerous.&lt;/p&gt;

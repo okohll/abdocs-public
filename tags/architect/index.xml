@@ -223,7 +223,7 @@
 &lt;p&gt;Roles have some other important uses, such as multi-tenanting, described below.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-role&#34;&gt;Creating a role&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Go to the homepage and toggle build mode on&lt;/li&gt;
+&lt;li&gt;Go to the homepage and toggle development mode on&lt;/li&gt;
 &lt;li&gt;Select &amp;rsquo;list&amp;rsquo; mode&lt;/li&gt;
 &lt;li&gt;Select &amp;lsquo;roles&amp;rsquo; from the dropdown at the top centre of the screen&lt;/li&gt;
 &lt;li&gt;Click the Add Role button at the top right of the screen&lt;/li&gt;
@@ -397,8 +397,8 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;code&gt;b) table 2&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;In the administrator interface, tables are listed alphabetically, so you can arrange the tables into a logical order with this method.&lt;/p&gt;
 &lt;p&gt;The user interface will strip out any prefixes when displaying names to users, if they end with a closing bracket &lt;code&gt;)&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;## Editing a table
-There are two ways to edit a table: from the homepage, or from editing a record.&lt;/p&gt;
+&lt;h2 id=&#34;editing-a-table&#34;&gt;Editing a table&lt;/h2&gt;
+&lt;p&gt;There are two ways to edit a table: from the homepage, or from editing a record.&lt;/p&gt;
 &lt;h3 id=&#34;from-the-homepage&#34;&gt;From the homepage&lt;/h3&gt;
 &lt;p&gt;When you toggle build mode with the toggle in the top right corner of the screen, you can see a &lt;em&gt;connections&lt;/em&gt; mode and a &lt;em&gt;list&lt;/em&gt; mode: these two views show the tables in the system. The &lt;em&gt;connections&lt;/em&gt; mode shows the relations between entities whilst the &lt;em&gt;list&lt;/em&gt; mode presents the same data in tabular form.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/homepage-connections-mode.png&#34; alt=&#34;Connections mode&#34;&gt;
@@ -481,7 +481,7 @@ There are two ways to edit a table: from the homepage, or from editing a record.
 &lt;p&gt;There are various types of fields and field options which this section will cover.&lt;/p&gt;
 &lt;h2 id=&#34;adding-a-field&#34;&gt;Adding a field&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Ensure &amp;lsquo;build mode&amp;rsquo; is toggled on&lt;/li&gt;
+&lt;li&gt;Ensure &lt;a href=&#34;https://docs.agilebase.co.uk/docs/development-mode/&#34;&gt;development mode&lt;/a&gt; is toggled on&lt;/li&gt;
 &lt;li&gt;Select the table to add a field to&lt;/li&gt;
 &lt;li&gt;Click on the pencil icon in the toolbar, if necessary, to edit the table&lt;/li&gt;
 &lt;li&gt;Click the &lt;em&gt;fields&lt;/em&gt; tab&lt;/li&gt;
@@ -1063,7 +1063,7 @@ There are two ways to edit a table: from the homepage, or from editing a record.
       <description>
         
         
-        &lt;p&gt;Relations between tables are the &amp;lsquo;glue&amp;rsquo; that holds together an application build using agileBase. If you&amp;rsquo;d like to learn more about this fundamental concept, please check out the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; page.&lt;/p&gt;
+        &lt;p&gt;Relations between tables are the &amp;lsquo;glue&amp;rsquo; that holds together an application built using agileBase. If you&amp;rsquo;d like to learn more about this fundamental concept, please check out the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; page.&lt;/p&gt;
 &lt;p&gt;Some of the options for a relation field determine the nature of the links between tables, which can have a great effect on how an app works, so it&amp;rsquo;s very useful to know about them.&lt;/p&gt;
 &lt;h2 id=&#34;one-to-one-only&#34;&gt;One to one only&lt;/h2&gt;
 &lt;p&gt;By default, a relation is a &amp;lsquo;many to one&amp;rsquo;. For example if a relation field in a contacts table links to an organisation, that organisation can have many contacts linked. If an ingredient links to a recipe, that recipe can have many ingredients. One customer can have many orders - examples are numerous.&lt;/p&gt;
@@ -1682,9 +1682,9 @@ end
 &lt;p&gt;This again is much too large a topic to cover in an introductory page, there&amp;rsquo;s plenty of documentation here: &lt;a href=&#34;https://www.postgresql.org/docs/current/tutorial-window.html&#34;&gt;https://www.postgresql.org/docs/current/tutorial-window.html&lt;/a&gt;
 and a video introduction to the concept here:&lt;/p&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/blHEnrYwySE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+ &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+   &lt;iframe src=&#34;https://www.youtube.com/embed/blHEnrYwySE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
 &lt;h3 id=&#34;series-generation&#34;&gt;Series generation&lt;/h3&gt;
 &lt;p&gt;Sometimes you need to &lt;strong&gt;generate&lt;/strong&gt; a set of rows, as opposed to having the data stored in the database. Here are some quick examples:&lt;/p&gt;

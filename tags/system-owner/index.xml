@@ -240,7 +240,7 @@ These backups are also encrypted so that Amazon has no access to the data within
 &lt;p&gt;Roles have some other important uses, such as multi-tenanting, described below.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-role&#34;&gt;Creating a role&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Go to the homepage and toggle build mode on&lt;/li&gt;
+&lt;li&gt;Go to the homepage and toggle development mode on&lt;/li&gt;
 &lt;li&gt;Select &amp;rsquo;list&amp;rsquo; mode&lt;/li&gt;
 &lt;li&gt;Select &amp;lsquo;roles&amp;rsquo; from the dropdown at the top centre of the screen&lt;/li&gt;
 &lt;li&gt;Click the Add Role button at the top right of the screen&lt;/li&gt;

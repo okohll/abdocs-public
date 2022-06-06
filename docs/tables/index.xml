@@ -116,8 +116,8 @@
 &lt;code&gt;b) table 2&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;In the administrator interface, tables are listed alphabetically, so you can arrange the tables into a logical order with this method.&lt;/p&gt;
 &lt;p&gt;The user interface will strip out any prefixes when displaying names to users, if they end with a closing bracket &lt;code&gt;)&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;## Editing a table
-There are two ways to edit a table: from the homepage, or from editing a record.&lt;/p&gt;
+&lt;h2 id=&#34;editing-a-table&#34;&gt;Editing a table&lt;/h2&gt;
+&lt;p&gt;There are two ways to edit a table: from the homepage, or from editing a record.&lt;/p&gt;
 &lt;h3 id=&#34;from-the-homepage&#34;&gt;From the homepage&lt;/h3&gt;
 &lt;p&gt;When you toggle build mode with the toggle in the top right corner of the screen, you can see a &lt;em&gt;connections&lt;/em&gt; mode and a &lt;em&gt;list&lt;/em&gt; mode: these two views show the tables in the system. The &lt;em&gt;connections&lt;/em&gt; mode shows the relations between entities whilst the &lt;em&gt;list&lt;/em&gt; mode presents the same data in tabular form.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/homepage-connections-mode.png&#34; alt=&#34;Connections mode&#34;&gt;

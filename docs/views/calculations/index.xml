@@ -162,9 +162,9 @@ end
 &lt;p&gt;This again is much too large a topic to cover in an introductory page, there&amp;rsquo;s plenty of documentation here: &lt;a href=&#34;https://www.postgresql.org/docs/current/tutorial-window.html&#34;&gt;https://www.postgresql.org/docs/current/tutorial-window.html&lt;/a&gt;
 and a video introduction to the concept here:&lt;/p&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/blHEnrYwySE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+ &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+   &lt;iframe src=&#34;https://www.youtube.com/embed/blHEnrYwySE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
 
 &lt;h3 id=&#34;series-generation&#34;&gt;Series generation&lt;/h3&gt;
 &lt;p&gt;Sometimes you need to &lt;strong&gt;generate&lt;/strong&gt; a set of rows, as opposed to having the data stored in the database. Here are some quick examples:&lt;/p&gt;
