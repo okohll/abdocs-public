@@ -224,6 +224,18 @@
   &lt;iframe src=&#34;https://www.youtube.com/embed/d57CDMWmUW4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
+&lt;h2 id=&#34;delete-viewsguide-1---video-9-&#34;&gt;Delete Views[guide 1 - video 9 *]&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/????&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;delete-tablesguide-1---video-10-&#34;&gt;Delete Tables[guide 1 - video 10 *]&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/????&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
 
       </description>
     </item>
@@ -589,7 +601,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h2 id=&#34;removing-a-table&#34;&gt;Removing a table&lt;/h2&gt;
 &lt;p&gt;Before removing a table, you first need to remove all views and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#removing-a-field&#34;&gt;fields&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s not necessary to remove actual data records from the table first.&lt;/p&gt;
-&lt;p&gt;A list of existing views is visible in the &lt;em&gt;name and views&lt;/em&gt; section of the sidebar. Visit each view and delete it.&lt;/p&gt;
+&lt;p&gt;A list of existing views is visible in the &lt;em&gt;name and views&lt;/em&gt; section of the panel sidebar. Visit each view and delete it.&lt;/p&gt;
 &lt;p&gt;Then below to the table&amp;rsquo;s &lt;em&gt;name and views&lt;/em&gt; section is the &lt;em&gt;fields&lt;/em&gt; section. Delete all the existing fields from here.&lt;/p&gt;
 &lt;p&gt;When you&amp;rsquo;re done, you can click the &lt;em&gt;Remove table&lt;/em&gt; button in &lt;em&gt;name and views&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;When deleting views and fields, you may find you have to first delete other views or fields they depend on. In complex systems there can be chains of objects that need to be deleted in order.&lt;/p&gt;

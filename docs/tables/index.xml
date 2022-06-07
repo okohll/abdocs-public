@@ -128,7 +128,7 @@
 &lt;h2 id=&#34;removing-a-table&#34;&gt;Removing a table&lt;/h2&gt;
 &lt;p&gt;Before removing a table, you first need to remove all views and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#removing-a-field&#34;&gt;fields&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s not necessary to remove actual data records from the table first.&lt;/p&gt;
-&lt;p&gt;A list of existing views is visible in the &lt;em&gt;name and views&lt;/em&gt; section of the sidebar. Visit each view and delete it.&lt;/p&gt;
+&lt;p&gt;A list of existing views is visible in the &lt;em&gt;name and views&lt;/em&gt; section of the panel sidebar. Visit each view and delete it.&lt;/p&gt;
 &lt;p&gt;Then below to the table&amp;rsquo;s &lt;em&gt;name and views&lt;/em&gt; section is the &lt;em&gt;fields&lt;/em&gt; section. Delete all the existing fields from here.&lt;/p&gt;
 &lt;p&gt;When you&amp;rsquo;re done, you can click the &lt;em&gt;Remove table&lt;/em&gt; button in &lt;em&gt;name and views&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;When deleting views and fields, you may find you have to first delete other views or fields they depend on. In complex systems there can be chains of objects that need to be deleted in order.&lt;/p&gt;
