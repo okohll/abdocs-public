@@ -587,7 +587,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;When build mode is enabled, if you are viewing an individual record then clicking the big pencil at the top left of the screen lets you edit the underlying table.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/editing-a-record.png&#34; alt=&#34;Editing a record&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;removing-a-table&#34;&gt;Removing a table&lt;/h2&gt;
-&lt;p&gt;Before removing a table, you first need to remove all views and fields.&lt;/p&gt;
+&lt;p&gt;Before removing a table, you first need to remove all views and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#removing-a-field&#34;&gt;fields&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s not necessary to remove actual data records from the table first.&lt;/p&gt;
 &lt;p&gt;A list of existing views is visible in the &lt;em&gt;name and views&lt;/em&gt; section of the sidebar. Visit each view and delete it.&lt;/p&gt;
 &lt;p&gt;Then below to the table&amp;rsquo;s &lt;em&gt;name and views&lt;/em&gt; section is the &lt;em&gt;fields&lt;/em&gt; section. Delete all the existing fields from here.&lt;/p&gt;
