@@ -36,11 +36,57 @@
       <description>
         
         
-        &lt;p&gt;Content to go here.&lt;/p&gt;
-&lt;h2 id=&#34;heading&#34;&gt;Heading&lt;/h2&gt;
-&lt;p&gt;fgh
-fghfg
-h&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create a Table and associated Views to use it!
+&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “How to use agileBase”&lt;/p&gt;
+&lt;h2 id=&#34;create-a-table-called-tasks--guide-1---video-1&#34;&gt;Create a table called &amp;ldquo;Tasks&amp;rdquo;  [guide 1 - video 1]&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/r7nkYcnjyeQ&amp;amp;t&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;add-fields-to-the-tasks-table-guide-1---video-2&#34;&gt;Add fields to the &amp;ldquo;Tasks&amp;rdquo; table [guide 1 - video 2]&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nBL2oFPTRfo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;make-the-form-easier-to-understand-by-breaking-it-into-sections-guide-1---video-3&#34;&gt;Make the form easier to understand by breaking it into sections [guide 1 - video 3]&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nBL2oFPTRfo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;make-the-table-available-via-the-homepage-by-creating-a-tile-called-tasks-guide-1---video-4&#34;&gt;Make the table available via the homepage by creating a tile called Tasks [guide 1 - video 4]&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nBL2oFPTRfo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;create-a-view-to-show-all-the-tasks-we-will-be-creating-guide-1---video-5&#34;&gt;Create a view to show all the tasks we will be creating [guide 1 - video 5]&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nBL2oFPTRfo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;create-a-number-of-tasks-guide1---video-1a&#34;&gt;Create a number of tasks [Guide1 - Video 1A]&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nBL2oFPTRfo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;create-better-way-of-looking-at-data-guide-1---video-6&#34;&gt;Create better way of looking at data [guide 1 - video 6]&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nBL2oFPTRfo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;add-a-filter-to-a-view-to-show-only-those-tasks-that-are-marked-as-completed--guide-1---video-7&#34;&gt;Add a filter to a View to show only those tasks that are marked as completed  [guide 1 - video 7]&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nBL2oFPTRfo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;add-a-comments-field-to-a-table-guide-1---video-8-&#34;&gt;Add a Comments field to a table! [guide 1 - video 8 *]&lt;/h2&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/nBL2oFPTRfo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
