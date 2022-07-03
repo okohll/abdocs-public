@@ -77,8 +77,13 @@
 &lt;p&gt;At agileBase we host an instance of &lt;a href=&#34;https://superset.apache.org&#34;&gt;Apache Superset&lt;/a&gt; which can be used by customers to create reporting dashboards.&lt;/p&gt;
 &lt;p&gt;However the setup processes below also applies to third party tools such as Power BI. In fact, any tool which utilises &lt;a href=&#34;https://en.wikipedia.org/wiki/Open_Database_Connectivity&#34;&gt;ODBC&lt;/a&gt; can be used, such as Excel for example.&lt;/p&gt;
 &lt;h2 id=&#34;initial-setup&#34;&gt;Initial Setup&lt;/h2&gt;
-&lt;p&gt;The first step is to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; to request we set up an Apache Superset account (this will also allow connections from other BI tools). We will then set up as many Superset users you require - there is no ongoing cost for these login accounts.&lt;/p&gt;
-&lt;p&gt;Note that Superset logins are separate from agileBase ones - the usernames and passwords can be different.&lt;/p&gt;
+&lt;p&gt;The first step is to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; to request we prepare your account. This will also allow connections from Apache Superset, Power BI or any other tool which can connect to ODBC).&lt;/p&gt;
+&lt;p&gt;If you wish to use our supplied instance of Superset, we will then set up as many Superset users you require - there is no ongoing cost for these login accounts. Note that Superset logins are separate from agileBase ones - the usernames and passwords can be different.&lt;/p&gt;
+&lt;p&gt;If you use Power BI, then the process is as follows&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install the PostgreSQL ODBC driver from &lt;a href=&#34;https://odbc.postgresql.org/&#34;&gt;https://odbc.postgresql.org/&lt;/a&gt;. Use the Downloads link and if running on Windows, use the newest driver from the &lt;strong&gt;msi&lt;/strong&gt; folder. When setting up the driver, use the login details we supply. Ensure the SSL mode is set to &amp;lsquo;require&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;From Power BI, add a connection using the PostgreSQL ODBC driver, &lt;em&gt;not&lt;/em&gt; the built-in Power BI PostgreSQL driver.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;sending-data-to-superset-or-power-bi&#34;&gt;Sending data to Superset or Power BI&lt;/h2&gt;
 &lt;p&gt;A developer with MANAGE privileges on a view&amp;rsquo;s parent table can set this up.&lt;/p&gt;
 &lt;ol&gt;
