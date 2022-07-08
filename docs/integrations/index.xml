@@ -516,9 +516,9 @@ In short, we don&amp;rsquo;t need to worry about it. Endole provides the data to
 &lt;ul&gt;
 &lt;li&gt;mature&lt;/li&gt;
 &lt;li&gt;mission critical&lt;/li&gt;
-&lt;li&gt;integrating with third party systems
-then you will most likely benefit from requesting a test server setup.&lt;/li&gt;
+&lt;li&gt;integrating with third party systems&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;then you will most likely benefit from requesting a test server setup.&lt;/p&gt;
 &lt;p&gt;The test server will be an exact copy of your live system. The application structure (table, views etc.) will be the same as will the data itself in the database. All users and roles will also be the same, so people can log in using their existing username and passwords to test changes.&lt;/p&gt;
 &lt;h3 id=&#34;the-test-process&#34;&gt;The test process&lt;/h3&gt;
 &lt;ol&gt;
@@ -537,7 +537,7 @@ then you will most likely benefit from requesting a test server setup.&lt;/li&gt
 &lt;/li&gt;
 &lt;li&gt;Re-create those changes in the live system
 &lt;ul&gt;
-&lt;li&gt;This is currently a manual process, though the audit trail above helps ensure you&amp;rsquo;ve not missed everything&lt;/li&gt;
+&lt;li&gt;This is currently a manual process, though the audit trail above helps ensure you&amp;rsquo;ve not missed anything&lt;/li&gt;
 &lt;li&gt;Internal IDs for tables, fields and views are deterministic. That means if you create them with the same names in the same order on the live system, they will get the same internal IDs. Therefore APIs using them won&amp;rsquo;t need changing&lt;/li&gt;
 &lt;li&gt;API Authorization keys however will be different, so will need updating in any system that calls a new API&lt;/li&gt;
 &lt;/ul&gt;
