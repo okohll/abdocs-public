@@ -156,6 +156,64 @@ export default LoginScreen;
     </item>
     
     <item>
+      <title>Docs: Testing</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/test_server/</link>
+      <pubDate>Thu, 07 Jul 2022 12:15:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/test_server/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When systems get to a certain size, in particular when you start integrating with apps representing other parts of the business, then it can be beneficial to be able to test new developments and changes before putting them live.&lt;/p&gt;
+&lt;p&gt;For example, when accepting orders via an e-commerce website, or sending invoices to an accounting package, or accepting incoming stock change records from Goods In staff using a bar code scanning application.&lt;/p&gt;
+&lt;p&gt;In cases like that, you don&amp;rsquo;t want potentially large quantities of test data polluting your live system. And when systems are up and running, they can be mission critical - you don&amp;rsquo;t want a change to cause online orders to be missed or incorrect invoices to transfer to accounts.&lt;/p&gt;
+&lt;p&gt;People from the traditional IT world will be familiar with the concept of testing changes during the development process, before deploying them live.&lt;/p&gt;
+&lt;p&gt;As agileBase is a no-code platform, the processes are slightly different - there are no &amp;lsquo;code&amp;rsquo; changes to deploy. But here&amp;rsquo;s how we achieve the same.&lt;/p&gt;
+&lt;h2 id=&#34;commissioning-a-test-server&#34;&gt;Commissioning a test server&lt;/h2&gt;
+&lt;p&gt;In summary, when your system is&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mature&lt;/li&gt;
+&lt;li&gt;mission critical&lt;/li&gt;
+&lt;li&gt;integrating with third party systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;then you will most likely benefit from requesting a test server setup.&lt;/p&gt;
+&lt;p&gt;The test server will be an exact copy of your live system. The application structure (table, views etc.) will be the same as will the data itself in the database. All users and roles will also be the same, so people can log in using their existing username and passwords to test changes.&lt;/p&gt;
+&lt;h3 id=&#34;the-test-process&#34;&gt;The test process&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Transfer a snapshot from live - this will update your test system to be an exact copy of the live system as of approx. 7am in the morning
+&lt;ul&gt;
+&lt;li&gt;Log in to the web interface for your test server (details will be supplied)&lt;/li&gt;
+&lt;li&gt;Reboot the server. It will automatically re-initialise with the latest snapshot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Make and test any changes on the test server&lt;/li&gt;
+&lt;li&gt;View a summary list of changes you&amp;rsquo;ve made
+&lt;ul&gt;
+&lt;li&gt;Use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail&#34;&gt;enhanced audit trail&lt;/a&gt; to see changes like field addition/removals or view alterations&lt;/li&gt;
+&lt;li&gt;If you don&amp;rsquo;t already have the advanced audit trail, it will be set up as part of the test server commisioning process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Re-create those changes in the live system
+&lt;ul&gt;
+&lt;li&gt;This is currently a manual process, though the audit trail above helps ensure you&amp;rsquo;ve not missed anything&lt;/li&gt;
+&lt;li&gt;Internal IDs for tables, fields and views are deterministic. That means if you create them with the same names in the same order on the live system, they will get the same internal IDs. Therefore APIs using them won&amp;rsquo;t need changing&lt;/li&gt;
+&lt;li&gt;API Authorization keys however will be different, so will need updating in any system that calls a new API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;By default, a new snapshot will be made available every 24hrs, at around 7am. However, if you wish, you can ask us to set up a different timing or frequency of snapshots, just let us know.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;testing-agilebase-platform-updates&#34;&gt;Testing agileBase platform updates&lt;/h2&gt;
+&lt;p&gt;As well as testing your own changes, the test server comes with the added benefit that you can access pre-release versions of new versions of the agileBase platform itself.&lt;/p&gt;
+&lt;p&gt;That means you can test out new features before they&amp;rsquo;re released and if you like run your own API tests against it.&lt;/p&gt;
+&lt;p&gt;We do of course have our own automated API and end to end tests, but you&amp;rsquo;re welcome to add your own specific unit tests for any APIs specific to your setup.&lt;/p&gt;
+&lt;p&gt;You will be optionally enrolled onto our pre-release mailing list to be notified when a new version has been prepared, along with it&amp;rsquo;s planned release date which will typically be Monday to Wednesday the following week.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Advanced Usage</title>
       <link>https://docs.agilebase.co.uk/docs/advanced-usage/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
@@ -342,64 +400,6 @@ export default LoginScreen;
 &lt;p&gt;There are other mechanisms that can be manually enabled such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/options/behaviour-options/#cache-view-rows&#34;&gt;caching&lt;/a&gt; and increasing the memory assigned to particular views.&lt;/p&gt;
 &lt;p&gt;Finally, we will be happy to to do all we can to speed up any parts of your application that require it if you &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt;. Often, a solution as simple as manually adding an index to a particular field can speed up requests by multiple orders of magnitude.&lt;/p&gt;
 &lt;p&gt;For really big data projects, there&amp;rsquo;s also the option of utilising PostgreSQL-compatible database services designed for such tasks, like &lt;a href=&#34;https://www.citusdata.com/&#34;&gt;Citus Data&lt;/a&gt;, which we will be happy to provision.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Testing</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/test_server/</link>
-      <pubDate>Thu, 07 Jul 2022 12:15:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/integrations/test_server/</guid>
-      <description>
-        
-        
-        &lt;p&gt;When systems get to a certain size, in particular when you start integrating with apps representing other parts of the business, then it can be beneficial to be able to test new developments and changes before putting them live.&lt;/p&gt;
-&lt;p&gt;For example, when accepting orders via an e-commerce website, or sending invoices to an accounting package, or accepting incoming stock change records from Goods In staff using a bar code scanning application.&lt;/p&gt;
-&lt;p&gt;In cases like that, you don&amp;rsquo;t want potentially large quantities of test data polluting your live system. And when systems are up and running, they can be mission critical - you don&amp;rsquo;t want a change to cause online orders to be missed or incorrect invoices to transfer to accounts.&lt;/p&gt;
-&lt;p&gt;People from the traditional IT world will be familiar with the concept of testing changes during the development process, before deploying them live.&lt;/p&gt;
-&lt;p&gt;As agileBase is a no-code platform, the processes are slightly different - there are no &amp;lsquo;code&amp;rsquo; changes to deploy. But here&amp;rsquo;s how we achieve the same.&lt;/p&gt;
-&lt;h2 id=&#34;commissioning-a-test-server&#34;&gt;Commissioning a test server&lt;/h2&gt;
-&lt;p&gt;In summary, when your system is&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;mature&lt;/li&gt;
-&lt;li&gt;mission critical&lt;/li&gt;
-&lt;li&gt;integrating with third party systems&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;then you will most likely benefit from requesting a test server setup.&lt;/p&gt;
-&lt;p&gt;The test server will be an exact copy of your live system. The application structure (table, views etc.) will be the same as will the data itself in the database. All users and roles will also be the same, so people can log in using their existing username and passwords to test changes.&lt;/p&gt;
-&lt;h3 id=&#34;the-test-process&#34;&gt;The test process&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Transfer a snapshot from live - this will update your test system to be an exact copy of the live system as of approx. 7am in the morning
-&lt;ul&gt;
-&lt;li&gt;Log in to the web interface for your test server (details will be supplied)&lt;/li&gt;
-&lt;li&gt;Reboot the server. It will automatically re-initialise with the latest snapshot&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Make and test any changes on the test server&lt;/li&gt;
-&lt;li&gt;View a summary list of changes you&amp;rsquo;ve made
-&lt;ul&gt;
-&lt;li&gt;Use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail&#34;&gt;enhanced audit trail&lt;/a&gt; to see changes like field addition/removals or view alterations&lt;/li&gt;
-&lt;li&gt;If you don&amp;rsquo;t already have the advanced audit trail, it will be set up as part of the test server commisioning process&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Re-create those changes in the live system
-&lt;ul&gt;
-&lt;li&gt;This is currently a manual process, though the audit trail above helps ensure you&amp;rsquo;ve not missed anything&lt;/li&gt;
-&lt;li&gt;Internal IDs for tables, fields and views are deterministic. That means if you create them with the same names in the same order on the live system, they will get the same internal IDs. Therefore APIs using them won&amp;rsquo;t need changing&lt;/li&gt;
-&lt;li&gt;API Authorization keys however will be different, so will need updating in any system that calls a new API&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;By default, a new snapshot will be made available every 24hrs, at around 7am. However, if you wish, you can ask us to set up a different timing or frequency of snapshots, just let us know.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;testing-agilebase-platform-updates&#34;&gt;Testing agileBase platform updates&lt;/h2&gt;
-&lt;p&gt;As well as testing your own changes, the test server comes with the added benefit that you can access pre-release versions of new versions of the agileBase platform itself.&lt;/p&gt;
-&lt;p&gt;That means you can test out new features before they&amp;rsquo;re released and if you like run your own API tests against it.&lt;/p&gt;
-&lt;p&gt;We do of course have our own automated API and end to end tests, but you&amp;rsquo;re welcome to add your own specific unit tests for any APIs specific to your setup.&lt;/p&gt;
-&lt;p&gt;You will be optionally enrolled onto our pre-release mailing list to be notified when a new version has been prepared, along with it&amp;rsquo;s planned release date which will typically be Monday to Wednesday the following week.&lt;/p&gt;
 
       </description>
     </item>

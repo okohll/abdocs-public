@@ -245,28 +245,19 @@ The system will automatically create a form containing these fields (excluding a
         
         &lt;h2 id=&#34;automated-bulk-document-generation&#34;&gt;Automated bulk document generation&lt;/h2&gt;
 &lt;p&gt;Automatically generating PDF documents based on criteria you specify is a powerful feature.
-For example, if your system tracks exam marks, you may wish to automatically generate a certificate whenever someone passes. Another more common example might be generating invoices for all work carried out this month.&lt;/p&gt;
+For example, if your system tracks exam marks, you may wish to automatically generate a certificate whenever someone passes. Another more common example might be generating invoices for all the work carried out each month.&lt;/p&gt;
 &lt;h2 id=&#34;setting-up&#34;&gt;Setting up&lt;/h2&gt;
 &lt;p&gt;The concept works much like email notifications or syncing events to Google calendar. A view must be set up that contains the records that you want to generate documents for.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;The first step is to set up and upload a template as per &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/&#34;&gt;generating PDF documents&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Add a date field to the table that contains the document file field, for the system to record the time each document was generated. For the purposes of these instructions, we’ll assume it’s called &lt;em&gt;document generation time&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Create a new view to contain only records that need documents generating, e.g. with a filter added to remove any records that already have a document&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;In the &lt;em&gt;manage&lt;/em&gt; tab for the view, within the &lt;em&gt;send&lt;/em&gt; section set to &lt;em&gt;Generate PDF documents&lt;/em&gt;. Select the date field that you created in step 2 above, i.e. ‘document generation time’&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;The first step is to set up and upload a template as per &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/&#34;&gt;generating PDF documents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;In the same screen, choose a date field to log the time of each document generation. If no suitable date field exists in the table yet, you can add one by selecting &amp;lsquo;create new field&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;Choose a frequency to run the workflow at, e.g. every hour&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;That’s it. Now whenever a record appears in the view, a document will be generated. Note this generation may take up to 10 minutes from the time the record appears in the view to allow for the fact if a record’s being edited, we want to make sure all information has been captured that may go into the document template.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/send-document-generation.png&#34; alt=&#34;Workflow setup to generate a PDF document&#34;&gt;&lt;/p&gt;
+&lt;p&gt;That’s it. Now whenever a record appears in the view, a document will be generated.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/document_generation.png&#34; alt=&#34;Workflow setup to generate a PDF document&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;automatically-emailing-documents-as-attachments&#34;&gt;Automatically emailing documents as attachments&lt;/h2&gt;
-&lt;p&gt;Once your system is generating documents automatically, you can set it up to email those out to people as attachments, also automatically without any user input. That’s great if you’re processing a large number of documents, for example invoicing hundreds or thousands of people per invoice run – it could be quite a time saver.&lt;/p&gt;
-&lt;p&gt;To set this up, create an automated notification as normal, to send an email to the intended document recipient. Just make sure that the body ‘template’ contains a reference to the field name of the document that you want to attach – the document field must be in the table that the notification view’s based on.&lt;/p&gt;
+&lt;p&gt;Once your system is generating documents automatically, you can set it up to email those out to people as attachments, also automatically without any user input. That’s great if you’re processing a large number of documents, for example invoicing hundreds or thousands of people per invoice run, it could be quite a time saver.&lt;/p&gt;
+&lt;p&gt;To set this up, create an automated notification as normal, to send an email to the intended document recipient. Just make sure that the body ‘template’ contains a reference to the field name of the document that you want to attach the document field must be in the table that the notification view’s based on.&lt;/p&gt;
 &lt;p&gt;e.g. your template body could be
 `Dear {forename},&lt;/p&gt;
 &lt;p&gt;Many thanks for your custom with us this month. Your invoice {invoice number} is attached.&lt;/p&gt;

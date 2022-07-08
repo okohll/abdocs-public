@@ -210,10 +210,7 @@
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/</loc>
-    <lastmod>2021-06-22T17:43:36+01:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</loc>
-    <lastmod>2021-06-22T17:43:36+01:00</lastmod>
+    <lastmod>2022-07-08T15:18:10+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</loc>
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
@@ -223,6 +220,9 @@
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/workflows/</loc>
     <lastmod>2022-03-21T16:57:46+00:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/docs/integrations/test_server/</loc>
+    <lastmod>2022-07-08T15:18:10+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/fields/field-options/sequence-field-options/</loc>
     <lastmod>2022-04-17T21:21:50+01:00</lastmod>
@@ -309,7 +309,7 @@
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/workflows/send-document-generator/</loc>
-    <lastmod>2021-06-22T17:43:36+01:00</lastmod>
+    <lastmod>2022-07-08T15:18:10+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/integrations/complex-example/</loc>
     <lastmod>2021-11-01T17:12:35+00:00</lastmod>
@@ -322,9 +322,6 @@
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/integrations/importing/</loc>
     <lastmod>2022-04-25T17:05:25+01:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/docs/integrations/test_server/</loc>
-    <lastmod>2022-07-08T13:16:43+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/integrations/testing-a-login/</loc>
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
@@ -348,13 +345,13 @@
     <lastmod>2021-06-22T17:43:36+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/principal-architect/</loc>
-    <lastmod>2022-07-08T13:16:43+01:00</lastmod>
+    <lastmod>2022-07-08T15:18:10+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/</loc>
-    <lastmod>2022-07-08T13:16:43+01:00</lastmod>
+    <lastmod>2022-07-08T15:18:10+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/architect/</loc>
-    <lastmod>2022-07-08T13:11:48+01:00</lastmod>
+    <lastmod>2022-07-08T15:18:10+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/system-builder/</loc>
     <lastmod>2022-07-08T13:11:48+01:00</lastmod>
@@ -369,7 +366,7 @@
     <lastmod>2022-05-22T16:17:41+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/certified-architect/</loc>
-    <lastmod>2022-05-09T16:58:04+01:00</lastmod>
+    <lastmod>2022-07-08T15:18:10+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/core-user/</loc>
     <lastmod>2022-02-18T18:43:37+00:00</lastmod>

@@ -2266,13 +2266,17 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;p&gt;Templates can be created using the built-in WYSIWYG editor, which allows simple presentation controls, like adding tables, headings and text formatting.&lt;/p&gt;
 &lt;p&gt;Alternatively and for complex needs, templates can be created manually. The templating language is &lt;a href=&#34;https://velocity.apache.org/&#34;&gt;Apache Velocity&lt;/a&gt;, which allows concepts such as variables, loops etc. to be used, i.e. simple programming features. The output format is HTML.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Find or create a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in.&lt;/li&gt;
-&lt;li&gt;Press the &lt;em&gt;Print&lt;/em&gt; button in the toolbar, then the &lt;em&gt;manage&lt;/em&gt; button&lt;/li&gt;
-&lt;li&gt;You will then be prompted to create a template using the WYSIWIG editor, or upload one created outside the system.&lt;/li&gt;
+&lt;li&gt;Find or create a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in. The view needs to be created from the parent table of the file field created for the output document&lt;/li&gt;
+&lt;li&gt;Toggle to development mode and click the top left pencil icon to edit the view&lt;/li&gt;
+&lt;li&gt;Load the &amp;lsquo;workflow - generate PDFs&amp;rsquo; panel&lt;/li&gt;
+&lt;li&gt;Click CREATE to create a new blank template, then EDIT to edit it&lt;/li&gt;
+&lt;li&gt;Tick a file field to assign the template to that file&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;Then a user will see a &amp;lsquo;generate document&amp;rsquo; button when they edit a record from the table, allowing them to generate a PDF from the template.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Existing templates can also be edited or downloaded. Manually created templates with complex features such as variable setting and looping can&amp;rsquo;t be edited using the WYSIWYG editor&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/document_generation.png&#34; alt=&#34;Template creation&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;including-data&#34;&gt;Including data&lt;/h2&gt;
 &lt;p&gt;Each field in the view (included calculations), or parent table, can be merged in to the template by referencing the field name, preceded by a dollar sign. For convenience, a list of available fields is listed below the WYSIWYG editor, for easy copying and pasting into the template.&lt;/p&gt;
 &lt;p&gt;For those manually creating templates, a field name becomes a variable to reference by&lt;/p&gt;
@@ -2414,28 +2418,65 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;p&gt;There are many more functions than these available, indeed the whole of the agileBase user interface is created with templates including functions of these three types.&lt;/p&gt;
 &lt;p&gt;The entire templating API is beyond the scope of this documentation but if you do wish to create any template functionality not covered by the above, it&amp;rsquo;s probably possible. Please get in touch with us to discuss your needs and be pointed in the right direction.&lt;/p&gt;
 &lt;h3 id=&#34;using-apache-velocity-features&#34;&gt;Using Apache Velocity features&lt;/h3&gt;
-&lt;p&gt;In the examples above are some uses of simple programming code. A full reference for what you can do with the Apache Velocity language is here: &lt;a href=&#34;https://velocity.apache.org/engine/2.2/user-guide.html&#34;&gt;https://velocity.apache.org/engine/2.2/user-guide.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In the examples above are some uses of simple programming code. A full reference for what you can do with the Apache Velocity language is here: &lt;a href=&#34;https://velocity.apache.org/engine/2.3/user-guide.html&#34;&gt;https://velocity.apache.org/engine/2.3/user-guide.html&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
-      <title>Docs: File fields</title>
-      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</link>
-      <pubDate>Fri, 08 May 2020 16:40:00 +0100</pubDate>
+      <title>Docs: Testing</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/test_server/</link>
+      <pubDate>Thu, 07 Jul 2022 12:15:00 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</guid>
+      <guid>https://docs.agilebase.co.uk/docs/integrations/test_server/</guid>
       <description>
         
         
-        &lt;p&gt;By default, a file field added to a table will let users upload files.&lt;/p&gt;
-&lt;p&gt;When a file field is added to a view, a link to download the file is included.&lt;/p&gt;
-&lt;p&gt;Files previews can be displayed in an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;image/document library&lt;/a&gt; tile.&lt;/p&gt;
-&lt;h2 id=&#34;version-history&#34;&gt;Version history&lt;/h2&gt;
-&lt;p&gt;When a new file is uploaded (or generated), any previous file is kept as a previous version, displayed with a timestamp, for download by users.&lt;/p&gt;
-&lt;h2 id=&#34;generating-pdf-documents&#34;&gt;Generating PDF documents&lt;/h2&gt;
-&lt;p&gt;If a template is uploaded using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/&#34;&gt;file field options&lt;/a&gt;, the file upload button in the user interface will be replaced by a generate button.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/&#34;&gt;document templates&lt;/a&gt; for more information.&lt;/p&gt;
+        &lt;p&gt;When systems get to a certain size, in particular when you start integrating with apps representing other parts of the business, then it can be beneficial to be able to test new developments and changes before putting them live.&lt;/p&gt;
+&lt;p&gt;For example, when accepting orders via an e-commerce website, or sending invoices to an accounting package, or accepting incoming stock change records from Goods In staff using a bar code scanning application.&lt;/p&gt;
+&lt;p&gt;In cases like that, you don&amp;rsquo;t want potentially large quantities of test data polluting your live system. And when systems are up and running, they can be mission critical - you don&amp;rsquo;t want a change to cause online orders to be missed or incorrect invoices to transfer to accounts.&lt;/p&gt;
+&lt;p&gt;People from the traditional IT world will be familiar with the concept of testing changes during the development process, before deploying them live.&lt;/p&gt;
+&lt;p&gt;As agileBase is a no-code platform, the processes are slightly different - there are no &amp;lsquo;code&amp;rsquo; changes to deploy. But here&amp;rsquo;s how we achieve the same.&lt;/p&gt;
+&lt;h2 id=&#34;commissioning-a-test-server&#34;&gt;Commissioning a test server&lt;/h2&gt;
+&lt;p&gt;In summary, when your system is&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mature&lt;/li&gt;
+&lt;li&gt;mission critical&lt;/li&gt;
+&lt;li&gt;integrating with third party systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;then you will most likely benefit from requesting a test server setup.&lt;/p&gt;
+&lt;p&gt;The test server will be an exact copy of your live system. The application structure (table, views etc.) will be the same as will the data itself in the database. All users and roles will also be the same, so people can log in using their existing username and passwords to test changes.&lt;/p&gt;
+&lt;h3 id=&#34;the-test-process&#34;&gt;The test process&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Transfer a snapshot from live - this will update your test system to be an exact copy of the live system as of approx. 7am in the morning
+&lt;ul&gt;
+&lt;li&gt;Log in to the web interface for your test server (details will be supplied)&lt;/li&gt;
+&lt;li&gt;Reboot the server. It will automatically re-initialise with the latest snapshot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Make and test any changes on the test server&lt;/li&gt;
+&lt;li&gt;View a summary list of changes you&amp;rsquo;ve made
+&lt;ul&gt;
+&lt;li&gt;Use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail&#34;&gt;enhanced audit trail&lt;/a&gt; to see changes like field addition/removals or view alterations&lt;/li&gt;
+&lt;li&gt;If you don&amp;rsquo;t already have the advanced audit trail, it will be set up as part of the test server commisioning process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Re-create those changes in the live system
+&lt;ul&gt;
+&lt;li&gt;This is currently a manual process, though the audit trail above helps ensure you&amp;rsquo;ve not missed anything&lt;/li&gt;
+&lt;li&gt;Internal IDs for tables, fields and views are deterministic. That means if you create them with the same names in the same order on the live system, they will get the same internal IDs. Therefore APIs using them won&amp;rsquo;t need changing&lt;/li&gt;
+&lt;li&gt;API Authorization keys however will be different, so will need updating in any system that calls a new API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;By default, a new snapshot will be made available every 24hrs, at around 7am. However, if you wish, you can ask us to set up a different timing or frequency of snapshots, just let us know.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;testing-agilebase-platform-updates&#34;&gt;Testing agileBase platform updates&lt;/h2&gt;
+&lt;p&gt;As well as testing your own changes, the test server comes with the added benefit that you can access pre-release versions of new versions of the agileBase platform itself.&lt;/p&gt;
+&lt;p&gt;That means you can test out new features before they&amp;rsquo;re released and if you like run your own API tests against it.&lt;/p&gt;
+&lt;p&gt;We do of course have our own automated API and end to end tests, but you&amp;rsquo;re welcome to add your own specific unit tests for any APIs specific to your setup.&lt;/p&gt;
+&lt;p&gt;You will be optionally enrolled onto our pre-release mailing list to be notified when a new version has been prepared, along with it&amp;rsquo;s planned release date which will typically be Monday to Wednesday the following week.&lt;/p&gt;
 
       </description>
     </item>

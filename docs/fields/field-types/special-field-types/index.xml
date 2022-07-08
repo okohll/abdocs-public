@@ -192,27 +192,6 @@
 &lt;h2 id=&#34;version-history&#34;&gt;Version history&lt;/h2&gt;
 &lt;p&gt;When a new file is uploaded (or generated), any previous file is kept as a previous version, displayed with a timestamp, for download by users.&lt;/p&gt;
 &lt;h2 id=&#34;generating-pdf-documents&#34;&gt;Generating PDF documents&lt;/h2&gt;
-&lt;p&gt;If a template is uploaded using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/&#34;&gt;file field options&lt;/a&gt;, the file upload button in the user interface will be replaced by a generate button.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/&#34;&gt;document templates&lt;/a&gt; for more information.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: File fields</title>
-      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</link>
-      <pubDate>Fri, 08 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</guid>
-      <description>
-        
-        
-        &lt;p&gt;By default, a file field added to a table will let users upload files.&lt;/p&gt;
-&lt;p&gt;When a file field is added to a view, a link to download the file is included.&lt;/p&gt;
-&lt;p&gt;Files previews can be displayed in an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;image/document library&lt;/a&gt; tile.&lt;/p&gt;
-&lt;h2 id=&#34;version-history&#34;&gt;Version history&lt;/h2&gt;
-&lt;p&gt;When a new file is uploaded (or generated), any previous file is kept as a previous version, displayed with a timestamp, for download by users.&lt;/p&gt;
-&lt;h2 id=&#34;generating-pdf-documents&#34;&gt;Generating PDF documents&lt;/h2&gt;
 &lt;p&gt;If a template is uploaded using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/#template&#34;&gt;file field options&lt;/a&gt;, the file upload button in the user interface will be replaced by a generate button.&lt;/p&gt;
 &lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/&#34;&gt;document templates&lt;/a&gt; for more information.&lt;/p&gt;
 

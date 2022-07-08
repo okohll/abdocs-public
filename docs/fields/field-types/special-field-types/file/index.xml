@@ -30,13 +30,17 @@
 &lt;p&gt;Templates can be created using the built-in WYSIWYG editor, which allows simple presentation controls, like adding tables, headings and text formatting.&lt;/p&gt;
 &lt;p&gt;Alternatively and for complex needs, templates can be created manually. The templating language is &lt;a href=&#34;https://velocity.apache.org/&#34;&gt;Apache Velocity&lt;/a&gt;, which allows concepts such as variables, loops etc. to be used, i.e. simple programming features. The output format is HTML.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Find or create a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in.&lt;/li&gt;
-&lt;li&gt;Press the &lt;em&gt;Print&lt;/em&gt; button in the toolbar, then the &lt;em&gt;manage&lt;/em&gt; button&lt;/li&gt;
-&lt;li&gt;You will then be prompted to create a template using the WYSIWIG editor, or upload one created outside the system.&lt;/li&gt;
+&lt;li&gt;Find or create a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in. The view needs to be created from the parent table of the file field created for the output document&lt;/li&gt;
+&lt;li&gt;Toggle to development mode and click the top left pencil icon to edit the view&lt;/li&gt;
+&lt;li&gt;Load the &amp;lsquo;workflow - generate PDFs&amp;rsquo; panel&lt;/li&gt;
+&lt;li&gt;Click CREATE to create a new blank template, then EDIT to edit it&lt;/li&gt;
+&lt;li&gt;Tick a file field to assign the template to that file&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;Then a user will see a &amp;lsquo;generate document&amp;rsquo; button when they edit a record from the table, allowing them to generate a PDF from the template.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Existing templates can also be edited or downloaded. Manually created templates with complex features such as variable setting and looping can&amp;rsquo;t be edited using the WYSIWYG editor&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/document_generation.png&#34; alt=&#34;Template creation&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;including-data&#34;&gt;Including data&lt;/h2&gt;
 &lt;p&gt;Each field in the view (included calculations), or parent table, can be merged in to the template by referencing the field name, preceded by a dollar sign. For convenience, a list of available fields is listed below the WYSIWYG editor, for easy copying and pasting into the template.&lt;/p&gt;
 &lt;p&gt;For those manually creating templates, a field name becomes a variable to reference by&lt;/p&gt;
@@ -178,7 +182,7 @@
 &lt;p&gt;There are many more functions than these available, indeed the whole of the agileBase user interface is created with templates including functions of these three types.&lt;/p&gt;
 &lt;p&gt;The entire templating API is beyond the scope of this documentation but if you do wish to create any template functionality not covered by the above, it&amp;rsquo;s probably possible. Please get in touch with us to discuss your needs and be pointed in the right direction.&lt;/p&gt;
 &lt;h3 id=&#34;using-apache-velocity-features&#34;&gt;Using Apache Velocity features&lt;/h3&gt;
-&lt;p&gt;In the examples above are some uses of simple programming code. A full reference for what you can do with the Apache Velocity language is here: &lt;a href=&#34;https://velocity.apache.org/engine/2.2/user-guide.html&#34;&gt;https://velocity.apache.org/engine/2.2/user-guide.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In the examples above are some uses of simple programming code. A full reference for what you can do with the Apache Velocity language is here: &lt;a href=&#34;https://velocity.apache.org/engine/2.3/user-guide.html&#34;&gt;https://velocity.apache.org/engine/2.3/user-guide.html&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>

@@ -2071,13 +2071,17 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;p&gt;Templates can be created using the built-in WYSIWYG editor, which allows simple presentation controls, like adding tables, headings and text formatting.&lt;/p&gt;
 &lt;p&gt;Alternatively and for complex needs, templates can be created manually. The templating language is &lt;a href=&#34;https://velocity.apache.org/&#34;&gt;Apache Velocity&lt;/a&gt;, which allows concepts such as variables, loops etc. to be used, i.e. simple programming features. The output format is HTML.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Find or create a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in.&lt;/li&gt;
-&lt;li&gt;Press the &lt;em&gt;Print&lt;/em&gt; button in the toolbar, then the &lt;em&gt;manage&lt;/em&gt; button&lt;/li&gt;
-&lt;li&gt;You will then be prompted to create a template using the WYSIWIG editor, or upload one created outside the system.&lt;/li&gt;
+&lt;li&gt;Find or create a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; which contains the data to be included in your output document. The idea is that each row in the view will correspond to one document, with the data from that row being merged in. The view needs to be created from the parent table of the file field created for the output document&lt;/li&gt;
+&lt;li&gt;Toggle to development mode and click the top left pencil icon to edit the view&lt;/li&gt;
+&lt;li&gt;Load the &amp;lsquo;workflow - generate PDFs&amp;rsquo; panel&lt;/li&gt;
+&lt;li&gt;Click CREATE to create a new blank template, then EDIT to edit it&lt;/li&gt;
+&lt;li&gt;Tick a file field to assign the template to that file&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;Then a user will see a &amp;lsquo;generate document&amp;rsquo; button when they edit a record from the table, allowing them to generate a PDF from the template.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Existing templates can also be edited or downloaded. Manually created templates with complex features such as variable setting and looping can&amp;rsquo;t be edited using the WYSIWYG editor&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/document_generation.png&#34; alt=&#34;Template creation&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;including-data&#34;&gt;Including data&lt;/h2&gt;
 &lt;p&gt;Each field in the view (included calculations), or parent table, can be merged in to the template by referencing the field name, preceded by a dollar sign. For convenience, a list of available fields is listed below the WYSIWYG editor, for easy copying and pasting into the template.&lt;/p&gt;
 &lt;p&gt;For those manually creating templates, a field name becomes a variable to reference by&lt;/p&gt;
@@ -2219,28 +2223,7 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;p&gt;There are many more functions than these available, indeed the whole of the agileBase user interface is created with templates including functions of these three types.&lt;/p&gt;
 &lt;p&gt;The entire templating API is beyond the scope of this documentation but if you do wish to create any template functionality not covered by the above, it&amp;rsquo;s probably possible. Please get in touch with us to discuss your needs and be pointed in the right direction.&lt;/p&gt;
 &lt;h3 id=&#34;using-apache-velocity-features&#34;&gt;Using Apache Velocity features&lt;/h3&gt;
-&lt;p&gt;In the examples above are some uses of simple programming code. A full reference for what you can do with the Apache Velocity language is here: &lt;a href=&#34;https://velocity.apache.org/engine/2.2/user-guide.html&#34;&gt;https://velocity.apache.org/engine/2.2/user-guide.html&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: File fields</title>
-      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</link>
-      <pubDate>Fri, 08 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/</guid>
-      <description>
-        
-        
-        &lt;p&gt;By default, a file field added to a table will let users upload files.&lt;/p&gt;
-&lt;p&gt;When a file field is added to a view, a link to download the file is included.&lt;/p&gt;
-&lt;p&gt;Files previews can be displayed in an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;image/document library&lt;/a&gt; tile.&lt;/p&gt;
-&lt;h2 id=&#34;version-history&#34;&gt;Version history&lt;/h2&gt;
-&lt;p&gt;When a new file is uploaded (or generated), any previous file is kept as a previous version, displayed with a timestamp, for download by users.&lt;/p&gt;
-&lt;h2 id=&#34;generating-pdf-documents&#34;&gt;Generating PDF documents&lt;/h2&gt;
-&lt;p&gt;If a template is uploaded using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/&#34;&gt;file field options&lt;/a&gt;, the file upload button in the user interface will be replaced by a generate button.&lt;/p&gt;
-&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/&#34;&gt;document templates&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;In the examples above are some uses of simple programming code. A full reference for what you can do with the Apache Velocity language is here: &lt;a href=&#34;https://velocity.apache.org/engine/2.3/user-guide.html&#34;&gt;https://velocity.apache.org/engine/2.3/user-guide.html&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -2347,6 +2330,67 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This topic also includes information about APIs which receive data from third party systems, as opposed to sending to them, for which a view isn&amp;rsquo;t necessary.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Display Options</title>
+      <link>https://docs.agilebase.co.uk/docs/views/options/display-options/</link>
+      <pubDate>Sun, 22 May 2022 16:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/views/options/display-options/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;show-charts-by-default&#34;&gt;Show charts by default&lt;/h2&gt;
+&lt;p&gt;When a user opens this view, immediately show charts rather than data rows&lt;/p&gt;
+&lt;h2 id=&#34;interface---inline-editing&#34;&gt;Interface -&amp;gt; inline editing&lt;/h2&gt;
+&lt;p&gt;The goal of this feature is to allow rapid and efficient editing of data when in the list view so there’s no need to drill down into a record to edit and back to the list again after each.&lt;/p&gt;
+&lt;p&gt;Some examples of where this might be useful would be when working through a list of milestones to update statuses, or when in a list of stock items to update quantities.&lt;/p&gt;
+&lt;p&gt;In inline editing mode, the list view changes from something like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-off-new.png&#34; alt=&#34;inline editing off&#34;&gt;&lt;/p&gt;
+&lt;p&gt;into this editable version:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/inline-editing-on-new.png&#34; alt=&#34;inline editing on&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Certain fields will be editable&lt;/strong&gt;, but others will be read-only.&lt;/p&gt;
+&lt;p&gt;Fields that can be editable are all those which are from the view’s parent table as well as the display fields of relations in that table.&lt;/p&gt;
+&lt;p&gt;For example, if editing a list of contacts, then the contact name, email, phone number etc. would be editable as well as the organisation name, if the contacts table had a relation field linking to the organisations table, which had &lt;em&gt;organisation name&lt;/em&gt; as its display field.&lt;/p&gt;
+&lt;p&gt;Fields that will not be editable are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;calculations&lt;/li&gt;
+&lt;li&gt;fields from other tables joined to the view, except relation display fields as above&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The inline editing option has three states:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Disallow: the view can’t be inline edited&lt;/li&gt;
+&lt;li&gt;Allow but turn off by default&lt;/li&gt;
+&lt;li&gt;On by default&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;interface---cards-in-columns&#34;&gt;Interface -&amp;gt; cards in columns&lt;/h2&gt;
+&lt;p&gt;When &lt;em&gt;cards in columns&lt;/em&gt; is selected, the display switches from showing each record as a row, to showing each as a card in a column.&lt;/p&gt;
+&lt;p&gt;The column names are generated from the first dropdown field in the view (there must be at least one dropdown field in the view for this to work).&lt;/p&gt;
+&lt;p&gt;Each available option in the dropdown becomes a column. Each record is placed, as a card, in the column which matches the dropdown value for that record.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/cards.png&#34; alt=&#34;the cards interface&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Dragging a card from one column to another updates that record, changing the value of the dropdown field to match the column.&lt;/p&gt;
+&lt;h3 id=&#34;vertical-grouping-within-a-column&#34;&gt;Vertical grouping within a column&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s also possible to sub-divide each column into groups. To achieve that, simply set up the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#specifying-dropdown-lists-and-tags-fields&#34;&gt;available options&lt;/a&gt; in the dropdown to have prefixes separated by a dot.&lt;/p&gt;
+&lt;p&gt;E.g.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1.1) column one, group 1&lt;/li&gt;
+&lt;li&gt;1.2) column one, group 2&lt;/li&gt;
+&lt;li&gt;2.1) column two, group 1&lt;/li&gt;
+&lt;li&gt;2.2) column two, group 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Then, cards can be dragged to different groups, not just different columns.&lt;/p&gt;
+&lt;h2 id=&#34;style-layout-options&#34;&gt;Style (layout options)&lt;/h2&gt;
+&lt;p&gt;The visual style affects whether a list of rows is shown with headings or not. This is not used when the cards option above is active.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;spreadsheet format - standard output in rows (no headings, the default option)&lt;/li&gt;
+&lt;li&gt;headings and rows&lt;/li&gt;
+&lt;li&gt;long headings and rows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When &lt;strong&gt;headings and rows&lt;/strong&gt; is selected, the first field in the view will be used as a heading for the rows below. A new heading appears every time the field value changes.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/headings-new.png&#34; alt=&#34;headings and rows&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
