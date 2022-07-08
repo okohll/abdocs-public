@@ -18,22 +18,22 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Privileges | agileBase docs</title>
-<meta name="description" content="The different types of privilege and how they can be assigned">
-<meta property="og:title" content="Privileges" />
-<meta property="og:description" content="The different types of privilege and how they can be assigned" />
+<title>Testing | agileBase docs</title>
+<meta name="description" content="Using a test server to dry-run integrations">
+<meta property="og:title" content="Testing" />
+<meta property="og:description" content="Using a test server to dry-run integrations" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/" /><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2021-06-22T17:43:36+01:00" />
+<meta property="og:url" content="https://docs.agilebase.co.uk/docs/integrations/test_server/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2022-07-07T12:15:00+01:00" />
+<meta property="article:modified_time" content="2022-07-08T13:11:48+01:00" />
 
-<meta itemprop="name" content="Privileges">
-<meta itemprop="description" content="The different types of privilege and how they can be assigned"><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2021-06-22T17:43:36+01:00" />
-<meta itemprop="wordCount" content="540">
-<meta itemprop="keywords" content="System Owner,Architect," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Privileges"/>
-<meta name="twitter:description" content="The different types of privilege and how they can be assigned"/>
+<meta itemprop="name" content="Testing">
+<meta itemprop="description" content="Using a test server to dry-run integrations"><meta itemprop="datePublished" content="2022-07-07T12:15:00+01:00" />
+<meta itemprop="dateModified" content="2022-07-08T13:11:48+01:00" />
+<meta itemprop="wordCount" content="603">
+<meta itemprop="keywords" content="Principal Architect," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Testing"/>
+<meta name="twitter:description" content="Using a test server to dry-run integrations"/>
 
 
 
@@ -149,13 +149,13 @@ if (!doNotTrack) {
   <ul class="ul-1">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsdevelopment-mode-li">
   <a href="/docs/development-mode/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsdevelopment-mode"><span class="">Development Mode</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docssecurity-and-compliance-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docssecurity-and-compliance-li">
   <a href="/docs/security-and-compliance/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docssecurity-and-compliance"><span class="">Security and Compliance</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docssecurity-and-compliancesecurity-features-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docssecurity-and-compliancesecurity-features-li">
   <a href="/docs/security-and-compliance/security-features/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docssecurity-and-compliancesecurity-features"><span class="">Security Features</span></a>
   <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docssecurity-and-compliancesecurity-featuresusers-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docssecurity-and-compliancesecurity-featuresusers-li">
   <a href="/docs/security-and-compliance/security-features/users/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docssecurity-and-compliancesecurity-featuresusers"><span class="">Users</span></a>
   <ul class="ul-4 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docssecurity-and-compliancesecurity-featuresusers2fa-setup-li">
@@ -164,24 +164,24 @@ if (!doNotTrack) {
   <a href="/docs/security-and-compliance/security-features/users/community-users/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssecurity-and-compliancesecurity-featuresuserscommunity-users"><span class="">Community Users</span></a>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docssecurity-and-compliancesecurity-featuresroles-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docssecurity-and-compliancesecurity-featuresroles-li">
   <a href="/docs/security-and-compliance/security-features/roles/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssecurity-and-compliancesecurity-featuresroles"><span class="">Roles</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docssecurity-and-compliancesecurity-featuresprivileges-li">
-  <a href="/docs/security-and-compliance/security-features/privileges/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docssecurity-and-compliancesecurity-featuresprivileges"><span class="td-sidebar-nav-active-item">Privileges</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docssecurity-and-compliancesecurity-featuresexporting-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docssecurity-and-compliancesecurity-featuresprivileges-li">
+  <a href="/docs/security-and-compliance/security-features/privileges/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssecurity-and-compliancesecurity-featuresprivileges"><span class="">Privileges</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docssecurity-and-compliancesecurity-featuresexporting-li">
   <a href="/docs/security-and-compliance/security-features/exporting/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssecurity-and-compliancesecurity-featuresexporting"><span class="">Exporting</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docssecurity-and-compliancesecurity-featuresusage-monitoring-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docssecurity-and-compliancesecurity-featuresusage-monitoring-li">
   <a href="/docs/security-and-compliance/security-features/usage-monitoring/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docssecurity-and-compliancesecurity-featuresusage-monitoring"><span class="">Usage Monitoring</span></a>
   <ul class="ul-4 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docssecurity-and-compliancesecurity-featuresusage-monitoringusage-reporting-li">
   <a href="/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssecurity-and-compliancesecurity-featuresusage-monitoringusage-reporting"><span class="">Reporting</span></a>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docssecurity-and-compliancesecurity-featuresapp_login-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docssecurity-and-compliancesecurity-featuresapp_login-li">
   <a href="/docs/security-and-compliance/security-features/app_login/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssecurity-and-compliancesecurity-featuresapp_login"><span class="">Logging in from an app</span></a>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docssecurity-and-compliancepolicies-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docssecurity-and-compliancepolicies-li">
   <a href="/docs/security-and-compliance/policies/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssecurity-and-compliancepolicies"><span class="">Policies</span></a>
 </li>
   </ul>
@@ -344,32 +344,32 @@ if (!doNotTrack) {
   <a href="/docs/calendar/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docscalendar"><span class="">Calendar</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsadding-help-li">
   <a href="/docs/adding-help/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsadding-help"><span class="">Adding Help</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsintegrations-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsintegrations-li">
   <a href="/docs/integrations/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsintegrations"><span class="">Integrations</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationscalendar-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsintegrationscalendar-li">
   <a href="/docs/integrations/calendar/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationscalendar"><span class="">Setting up the Calendar API</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationssetting-up-the-post-api-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsintegrationssetting-up-the-post-api-li">
   <a href="/docs/integrations/setting-up-the-post-api/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationssetting-up-the-post-api"><span class="">Creating a POST API</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationssetting-up-the-push-api-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsintegrationssetting-up-the-push-api-li">
   <a href="/docs/integrations/setting-up-the-push-api/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationssetting-up-the-push-api"><span class="">Creating a PUSH API</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationssetting-up-the-pull-api-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsintegrationssetting-up-the-pull-api-li">
   <a href="/docs/integrations/setting-up-the-pull-api/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationssetting-up-the-pull-api"><span class="">Creating a PULL API</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationspush-example-zapier-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsintegrationspush-example-zapier-li">
   <a href="/docs/integrations/push-example-zapier/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationspush-example-zapier"><span class="">PUSH API worked example - Zapier</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationscomplex-example-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsintegrationscomplex-example-li">
   <a href="/docs/integrations/complex-example/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationscomplex-example"><span class="">Complete API worked example</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationsexporting-to-spreadsheet-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsintegrationsexporting-to-spreadsheet-li">
   <a href="/docs/integrations/exporting-to-spreadsheet/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationsexporting-to-spreadsheet"><span class="">Exporting to spreadsheet</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationsslack-integration-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsintegrationsslack-integration-li">
   <a href="/docs/integrations/slack-integration/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationsslack-integration"><span class="">Slack integration</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationsimporting-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsintegrationsimporting-li">
   <a href="/docs/integrations/importing/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationsimporting"><span class="">Importing from spreadsheet</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationstest_server-li">
-  <a href="/docs/integrations/test_server/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationstest_server"><span class="">Testing</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationstesting-a-login-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsintegrationstest_server-li">
+  <a href="/docs/integrations/test_server/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docsintegrationstest_server"><span class="td-sidebar-nav-active-item">Testing</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsintegrationstesting-a-login-li">
   <a href="/docs/integrations/testing-a-login/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationstesting-a-login"><span class="">Authenticating users via the API</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationscreating-user-accounts-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsintegrationscreating-user-accounts-li">
   <a href="/docs/integrations/creating-user-accounts/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationscreating-user-accounts"><span class="">Creating user accounts with the API</span></a>
 </li>
   </ul>
@@ -436,8 +436,8 @@ if (!doNotTrack) {
 
 
 
-<a href="https://github.com/okohll/abdocs/edit/master/content/docs/security-and-compliance/security-features/privileges.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/okohll/abdocs/issues/new?title=Privileges" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/okohll/abdocs/edit/master/content/docs/integrations/test_server.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/okohll/abdocs/issues/new?title=Testing" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
 
@@ -447,13 +447,12 @@ if (!doNotTrack) {
 
 <div class="td-toc"><nav id="TableOfContents">
   <ul>
-    <li><a href="#privilege-levels">Privilege levels</a>
+    <li><a href="#commissioning-a-test-server">Commissioning a test server</a>
       <ul>
-        <li><a href="#assigning-table-privileges">Assigning table privileges</a></li>
-        <li><a href="#assigning-the-administrator-privilege">Assigning the administrator privilege</a></li>
+        <li><a href="#the-test-process">The test process</a></li>
       </ul>
     </li>
-    <li><a href="#related-to-privileges">Related to privileges</a></li>
+    <li><a href="#testing-agilebase-platform-updates">Testing agileBase platform updates</a></li>
   </ul>
 </nav></div>
 
@@ -523,20 +522,17 @@ if (!doNotTrack) {
     <a href="https://docs.agilebase.co.uk/docs/">Docs</a>
   </li>
   <li class="breadcrumb-item">
-    <a href="https://docs.agilebase.co.uk/docs/security-and-compliance/">Security and Compliance</a>
-  </li>
-  <li class="breadcrumb-item">
-    <a href="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/">Security Features</a>
+    <a href="https://docs.agilebase.co.uk/docs/integrations/">Integrations</a>
   </li>
   <li class="breadcrumb-item active" aria-current="page">
-    <a href="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/">Privileges</a>
+    <a href="https://docs.agilebase.co.uk/docs/integrations/test_server/">Testing</a>
   </li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>Privileges</h1>
-	<div class="lead">The different types of privilege and how they can be assigned</div>
+	<h1>Testing</h1>
+	<div class="lead">Using a test server to dry-run integrations</div>
 	<header class="article-meta">
 		
 
@@ -549,9 +545,7 @@ if (!doNotTrack) {
   <h5 class="taxonomy-title">Tags:</h5>
   <ul class="taxonomy-terms">
     
-      <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/system-owner/" data-taxonomy-term="system-owner"><span class="taxonomy-label">System Owner</span></a></li>
-    
-      <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/architect/" data-taxonomy-term="architect"><span class="taxonomy-label">Architect</span></a></li>
+      <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/principal-architect/" data-taxonomy-term="principal-architect"><span class="taxonomy-label">Principal Architect</span></a></li>
     
   </ul>
 </div>
@@ -565,71 +559,51 @@ if (!doNotTrack) {
 
 		
 	</header>    
-	<p>In agileBase, there are three privilege levels, as well as a special ‘administrator’ privilege.</p>
-<p>The three privileges take effect per table, i.e. a user/role can have certain privileges on one table and different ones on another.</p>
-<p>Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together, plus any they may have individually assigned.</p>
-<h2 id="privilege-levels">Privilege levels</h2>
+	<p>When systems get to a certain size, in particular when you start integrating with apps representing other parts of the business, then it can be beneficial to be able to test new developments and changes before putting them live.</p>
+<p>For example, when accepting orders via an e-commerce website, or sending invoices to an accounting package, or accepting incoming stock change records from Goods In staff using a bar code scanning application.</p>
+<p>In cases like that, you don&rsquo;t want potentially large quantities of test data polluting your live system. And when systems are up and running, they can be mission critical - you don&rsquo;t want a change to cause online orders to be missed or incorrect invoices to transfer to accounts.</p>
+<p>People from the traditional IT world will be familiar with the concept of testing changes during the development process, before deploying them live.</p>
+<p>As agileBase is a no-code platform, the processes are slightly different - there are no &lsquo;code&rsquo; changes to deploy. But here&rsquo;s how we achieve the same.</p>
+<h2 id="commissioning-a-test-server">Commissioning a test server</h2>
+<p>In summary, when your system is</p>
 <ul>
-<li><strong>View</strong>: ability to see data in a table</li>
-<li><strong>Edit</strong>: ability to create, edit and delete data in a table (create and delete subject to various table options)</li>
-<li><strong>Manage</strong>: the privilege that allows you to use the &lsquo;application building&rsquo; features of agileBase, relating to a table. Namely the ability to
+<li>mature</li>
+<li>mission critical</li>
+<li>integrating with third party systems
+then you will most likely benefit from requesting a test server setup.</li>
+</ul>
+<p>The test server will be an exact copy of your live system. The application structure (table, views etc.) will be the same as will the data itself in the database. All users and roles will also be the same, so people can log in using their existing username and passwords to test changes.</p>
+<h3 id="the-test-process">The test process</h3>
+<ol>
+<li>Transfer a snapshot from live - this will update your test system to be an exact copy of the live system as of approx. 7am in the morning
 <ul>
-<li>modify the structure, i.e. create/delete fields, tabs, change options etc.</li>
-<li>create, edit and delete views from the table, including creating charts, maps and word clouds.</li>
-<li>upload or create printout templates for views</li>
-<li>view usage statistics about a table</li>
-<li>Manage also allows some extended user features
-<ul>
-<li>delete any user&rsquo;s comments from a table</li>
-<li>unlock locked records to allow editing (one at a time)</li>
-<li>override table options which would normally disallow adding/removing records from a table</li>
-<li>override options which would normally disallow exporting data to a spreadsheet</li>
-<li>import data from spreadsheet</li>
-<li>override options which would normally disallow global editing of data in the table</li>
+<li>Log in to the web interface for your test server (details will be supplied)</li>
+<li>Reboot the server. It will automatically re-initialise with the latest snapshot</li>
 </ul>
 </li>
+<li>Make and test any changes on the test server</li>
+<li>View a summary list of changes you&rsquo;ve made
+<ul>
+<li>Use the <a href="/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail">enhanced audit trail</a> to see changes like field addition/removals or view alterations</li>
+<li>If you don&rsquo;t already have the advanced audit trail, it will be set up as part of the test server commisioning process</li>
 </ul>
 </li>
-</ul>
-<p>Finally the <strong>administrator</strong> privilege allows full permissions over the complete system. An administrator can create/remove users, roles, tables etc., as well as assign table privileges to any user, including themselves.</p>
-<blockquote>
-<p>The administrator privilege is the only one that allows the user to add new tables.</p>
-</blockquote>
-<blockquote>
-<p>Two Factor Authentication is required for any user with manage or administrator privileges</p>
-</blockquote>
-<h3 id="assigning-table-privileges">Assigning table privileges</h3>
+<li>Re-create those changes in the live system
 <ul>
-<li>Table privileges can be assigned to one or more users or roles from that table&rsquo;s editing screen.</li>
-<li>From a user or role editing screen, privileges on one or more tables can be assigned</li>
+<li>This is currently a manual process, though the audit trail above helps ensure you&rsquo;ve not missed everything</li>
+<li>Internal IDs for tables, fields and views are deterministic. That means if you create them with the same names in the same order on the live system, they will get the same internal IDs. Therefore APIs using them won&rsquo;t need changing</li>
+<li>API Authorization keys however will be different, so will need updating in any system that calls a new API</li>
 </ul>
-<p>The two methods are equivalent, whichever is the most convenient for a given purpose can be used.</p>
-<p>Managing privileges by role rather than by individual user is recommended. That makes managing large numbers of users easier and also more secure as it&rsquo;s easy to see which privileges each type of user has and which they don&rsquo;t.</p>
-<p>To assign one or more role or user privileges to a table:</p>
-<ol>
-<li>Expand the <em>Build Tables</em> section in the lefthand navigation</li>
-<li>Click a table</li>
-<li>Click the pencil (edit) icon in the top toolbar (or click a record to load the editing screen)</li>
-<li>Click the <em>manage</em> tab at the bottom of the screen</li>
-<li>Open the <em>roles</em> or <em>users</em> section, then select or un-select any privileges required</li>
+</li>
 </ol>
-<p>To assign one or more table privileges to a particular role or user:</p>
-<ol>
-<li>Expand the <em>Administration</em> section of the lefthand navigation</li>
-<li>Click <em>roles</em> or <em>users</em></li>
-<li>Select the role or user to assign privileges to, then select or un-select any privileges required</li>
-</ol>
-<h3 id="assigning-the-administrator-privilege">Assigning the administrator privilege</h3>
-<ol>
-<li>Expand the <em>Administration</em> section</li>
-<li>Click <em>users</em></li>
-<li>Select the user to make an administrator</li>
-<li>Open the <em>roles</em> section</li>
-<li>Tick the role marked <strong>Grants administrative privileges</strong></li>
-</ol>
-<h2 id="related-to-privileges">Related to privileges</h2>
-<p>Database systems often have the concept of row level privileges. The equivalent in agileBase is the <a href="/docs/security-and-compliance/security-features/roles/#multi-tenanting">multi-tenanting</a> system.</p>
-<p>Individual fields in a table can be locked or hidden, see the <a href="/docs/fields/field-options/common-options/#show-if-record-in-view">field options</a></p>
+<blockquote>
+<p>By default, a new snapshot will be made available every 24hrs, at around 7am. However, if you wish, you can ask us to set up a different timing or frequency of snapshots, just let us know.</p>
+</blockquote>
+<h2 id="testing-agilebase-platform-updates">Testing agileBase platform updates</h2>
+<p>As well as testing your own changes, the test server comes with the added benefit that you can access pre-release versions of new versions of the agileBase platform itself.</p>
+<p>That means you can test out new features before they&rsquo;re released and if you like run your own API tests against it.</p>
+<p>We do of course have our own automated API and end to end tests, but you&rsquo;re welcome to add your own specific unit tests for any APIs specific to your setup.</p>
+<p>You will be optionally enrolled onto our pre-release mailing list to be notified when a new version has been prepared, along with it&rsquo;s planned release date which will typically be Monday to Wednesday the following week.</p>
 
 	
 		<style>
@@ -696,7 +670,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified June 22, 2021: <a href="https://github.com/okohll/abdocs/commit/c49ef8f324b093200f9219cbe41d1246eae15ee3">Tag all docs pages (c49ef8f)</a>
+  Last modified July 8, 2022: <a href="https://github.com/okohll/abdocs/commit/31ca43d31fe2f2ba1ef7ec253bc4800732d8d3ae">Test server (31ca43d)</a>
 </div>
 
 </div>
