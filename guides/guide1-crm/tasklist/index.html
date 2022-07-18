@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/" /><meta property="article:section" content="guides" />
 <meta property="article:published_time" content="2022-04-22T13:00:00+01:00" />
-<meta property="article:modified_time" content="2022-06-08T09:33:38+01:00" />
+<meta property="article:modified_time" content="2022-07-18T17:49:19+01:00" />
 
 <meta itemprop="name" content="Creating a basic task list">
 <meta itemprop="description" content="Demonstrates the basic processes of building a simple application, a good starting point"><meta itemprop="datePublished" content="2022-04-22T13:00:00+01:00" />
-<meta itemprop="dateModified" content="2022-06-08T09:33:38+01:00" />
-<meta itemprop="wordCount" content="156">
+<meta itemprop="dateModified" content="2022-07-18T17:49:19+01:00" />
+<meta itemprop="wordCount" content="947">
 <meta itemprop="keywords" content="System Builder," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Creating a basic task list"/>
 <meta name="twitter:description" content="Demonstrates the basic processes of building a simple application, a good starting point"/>
@@ -185,16 +185,29 @@ if (!doNotTrack) {
 
 <div class="td-toc"><nav id="TableOfContents">
   <ul>
-    <li><a href="#create-a-table-called-tasks--guide-1---video-1">Create a table called &ldquo;Tasks&rdquo;  [guide 1 - video 1]</a></li>
-    <li><a href="#add-fields-to-the-tasks-table-guide-1---video-2">Add fields to the &ldquo;Tasks&rdquo; table [guide 1 - video 2]</a></li>
-    <li><a href="#make-the-form-easier-to-understand-by-breaking-it-into-sections-guide-1---video-3">Make the form easier to understand by breaking it into sections [guide 1 - video 3]</a></li>
-    <li><a href="#make-the-table-available-via-the-homepage-by-creating-a-tile-called-tasks-guide-1---video-4">Make the table available via the homepage by creating a tile called Tasks [guide 1 - video 4]</a></li>
-    <li><a href="#create-a-view-to-show-all-the-tasks-we-will-be-creating-guide-1---video-5">Create a view to show all the tasks we will be creating [guide 1 - video 5]</a></li>
-    <li><a href="#create-better-way-of-looking-at-data-guide-1---video-6">Create better way of looking at data [guide 1 - video 6]</a></li>
-    <li><a href="#add-a-filter-to-a-view-to-show-only-those-tasks-that-are-marked-as-completed--guide-1---video-7">Add a filter to a View to show only those tasks that are marked as completed  [guide 1 - video 7]</a></li>
-    <li><a href="#add-a-comments-field-to-a-table-guide-1---video-8-">Add a Comments field to a table! [guide 1 - video 8 *]</a></li>
-    <li><a href="#delete-views-guide-1---video-9-">Delete Views [guide 1 - video 9 *]</a></li>
-    <li><a href="#delete-fields-and-tables-guide-1---video-10-">Delete Fields and Tables [guide 1 - video 10 *]</a></li>
+    <li>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-a-table-called-tasks">Create a table called &ldquo;Tasks&rdquo;</a></li>
+    <li><a href="#add-fields-to-the-tasks-table">Add fields to the &ldquo;Tasks&rdquo; table</a></li>
+    <li><a href="#make-the-form-easier-to-understand-break-it-into-sections">Make the form easier to understand. Break it into sections</a></li>
+    <li><a href="#make-the-table-available-for-use-adding-a-tile-to-the-homepage">Make the table available for use! Adding a tile to the homepage</a></li>
+    <li><a href="#make-the-table-available-for-use-adding-views-that-show-all-the-tasks-that-have-been-created">Make the table available for use! Adding views that show all the tasks that have been created</a></li>
+    <li><a href="#make-the-table-available-for-use-better-way-of-looking-at-data">Make the table available for use! Better way of looking at data</a></li>
+    <li><a href="#make-the-table-available-for-use-making-views-for-a-specific-job">Make the table available for use! Making views for a specific job</a>
+      <ul>
+        <li><a href="#our-simple-application-is-complete">Our simple application is complete!</a></li>
+      </ul>
+    </li>
+    <li><a href="#add-a-comments-field-to-a-table">Add a Comments field to a table!</a>
+      <ul>
+        <li><a href="#for-completeness-the-remainder-of-this-stage-of-the-guide-covers-removing-items-and-functionality-that-are-no-longer-needed">For completeness the remainder of this stage of the guide covers removing items and functionality that are no longer needed.</a></li>
+      </ul>
+    </li>
+    <li><a href="#deleting-views">Deleting Views</a></li>
+    <li><a href="#delete-fields-and-tables">Delete Fields and Tables</a></li>
   </ul>
 </nav></div>
 
@@ -301,68 +314,101 @@ if (!doNotTrack) {
 
 		
 	</header>    
-	<p><strong>Learning Aim:</strong> Create a Table and associated Views to use it!
-<strong>Prerequisites:</strong> User to have watched “How to use agileBase”</p>
-<h2 id="create-a-table-called-tasks--guide-1---video-1">Create a table called &ldquo;Tasks&rdquo;  [guide 1 - video 1]</h2>
-
+	<p><strong>Learning Aim:</strong> Create a Table and associated Views to use it!</p>
+<p><strong>Prerequisites:</strong> User to have watched “How to use agileBase”</p>
+<h3 id="introduction">Introduction</h3>
+<p>This stage of the guide will introduce you to the basic activities required to build a simple application. We will start by creating a table with different types of fields in order to store a variety of data. We will then show you how to create and control tiles, views and forms which are the interfaces that your users will use to enter and consume this data.
+Let us start by building a simple task list.</p>
+<h2 id="create-a-table-called-tasks">Create a table called &ldquo;Tasks&rdquo;</h2>
+<p>Our simple application will need to store information about the tasks our users create. This is done by creating a database table. In agileBase this is achieved by navigating to the developer interface and pressing the “add new table button”.
+[guide 1 - video 1]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/r7nkYcnjyeQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
-<h2 id="add-fields-to-the-tasks-table-guide-1---video-2">Add fields to the &ldquo;Tasks&rdquo; table [guide 1 - video 2]</h2>
-
+</p>
+<h2 id="add-fields-to-the-tasks-table">Add fields to the &ldquo;Tasks&rdquo; table</h2>
+<p>A table of data is nothing without its list of fields. Each field stores a single piece of information. It is simple to add fields to an existing table within agilebase.
+Edit the table, type in the name of the field and choose the appropriate type. On creation of the field you will be able to set further options.
+For more detail visit - <a href="https://docs.agilebase.co.uk/docs/fields/field-types/">https://docs.agilebase.co.uk/docs/fields/field-types/</a></p>
+<p>In the following video we add the fields needed to for a simple Task
+[guide 1 - video 2]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/QgKRVSMM07Y" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
-<h2 id="make-the-form-easier-to-understand-by-breaking-it-into-sections-guide-1---video-3">Make the form easier to understand by breaking it into sections [guide 1 - video 3]</h2>
-
+</p>
+<h2 id="make-the-form-easier-to-understand-break-it-into-sections">Make the form easier to understand. Break it into sections</h2>
+<p>Now we have the data structure required to capture a simple task we can think about how it would be used. The user interface within agileBase is controlled by the list of fields and their options. It is a simple task to reorder fields, just use the drag and drop facility when looking at the list of fields.
+Use a field of type separator to create sections within the user interface
+[guide 1 - video 3]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/YwthqTiTroM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
-<h2 id="make-the-table-available-via-the-homepage-by-creating-a-tile-called-tasks-guide-1---video-4">Make the table available via the homepage by creating a tile called Tasks [guide 1 - video 4]</h2>
-
+</p>
+<p>We now need to provide the user with a way of accessing our “tasks” table and using it!!! This is achieved by a combination of Tiles and Views.</p>
+<p>For more info on Tiles - <a href="https://docs.agilebase.co.uk/docs/tiles/">https://docs.agilebase.co.uk/docs/tiles/</a></p>
+<p>For more info on Views - <a href="https://docs.agilebase.co.uk/docs/views/">https://docs.agilebase.co.uk/docs/views/</a></p>
+<p>In summary:
+A view generally provides abbreviated data in the form of a list of records. It also provides the ability to drill through to see the full record details.
+Tiles are a way of grouping functionality together. Specifically, a data tile is a way of grouping a collection of views that all share some common theme.</p>
+<p>For this guide, we need a tile and collection of views dedicated to helping us create and manage our “Tasks”</p>
+<h2 id="make-the-table-available-for-use-adding-a-tile-to-the-homepage">Make the table available for use! Adding a tile to the homepage</h2>
+<p>The homepage of agilebase is made up of data tiles. We need to create a new tile to hold all the views of our taks data
+[guide 1 - video 4]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/7hA7-VzX_A8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
-<h2 id="create-a-view-to-show-all-the-tasks-we-will-be-creating-guide-1---video-5">Create a view to show all the tasks we will be creating [guide 1 - video 5]</h2>
-
+</p>
+<h2 id="make-the-table-available-for-use-adding-views-that-show-all-the-tasks-that-have-been-created">Make the table available for use! Adding views that show all the tasks that have been created</h2>
+<p>To provide the user access to a list of Task records we need to create a View. To start with we will create a view that will list ALL the data.   <br>
+[guide 1 - video 5]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/P4FnZIYmAIo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
-<h2 id="create-better-way-of-looking-at-data-guide-1---video-6">Create better way of looking at data [guide 1 - video 6]</h2>
-
+</p>
+<h2 id="make-the-table-available-for-use-better-way-of-looking-at-data">Make the table available for use! Better way of looking at data</h2>
+<p>Many users will be familiar with a card or kanban style interface (such as Trello). Agilebase has a similar style of view that can often be useful.<br>
+Within a views “options” tab you can set its interface stylle to be “Cards in Columns”
+[guide 1 - video 6]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/GN7685gOnQ0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
-<h2 id="add-a-filter-to-a-view-to-show-only-those-tasks-that-are-marked-as-completed--guide-1---video-7">Add a filter to a View to show only those tasks that are marked as completed  [guide 1 - video 7]</h2>
-
+</p>
+<h2 id="make-the-table-available-for-use-making-views-for-a-specific-job">Make the table available for use! Making views for a specific job</h2>
+<p>Whilst users can apply their own filters and re-order data in a view, it is often a better user experience if there are dedicated views setup that match a particular job. For this example we want to create a list of all the completed tasks with the most recent at the top of the list.
+For more information on applying filters - <a href="https://docs.agilebase.co.uk/docs/views/filters/">https://docs.agilebase.co.uk/docs/views/filters/</a>
+[guide 1 - video 7]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/wvlUpjFhxJg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
-<h2 id="add-a-comments-field-to-a-table-guide-1---video-8-">Add a Comments field to a table! [guide 1 - video 8 *]</h2>
-
+</p>
+<h3 id="our-simple-application-is-complete">Our simple application is complete!</h3>
+<p>However, we can quickly see that we have missed implementing a key feature - collaboration. We should add another field to this table - a comments field!</p>
+<p>For more information on the comments field and its associated comment feed - <a href="https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/">https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/</a></p>
+<h2 id="add-a-comments-field-to-a-table">Add a Comments field to a table!</h2>
+<p>Adding new fields to an existing table is no different to when creating from scratch. Simply add via the table edit screen.
+Adding collaboration functionality to an agileB\se application is as easy as adding any other field! Just add a field of type Comments as shown in the video below
+[guide 1 - video 8 *]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/d57CDMWmUW4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
-<h2 id="delete-views-guide-1---video-9-">Delete Views [guide 1 - video 9 *]</h2>
-
+</p>
+<h3 id="for-completeness-the-remainder-of-this-stage-of-the-guide-covers-removing-items-and-functionality-that-are-no-longer-needed">For completeness the remainder of this stage of the guide covers removing items and functionality that are no longer needed.</h3>
+<h2 id="deleting-views">Deleting Views</h2>
+<p>Eventually you will want to remove unused views in order to reduce clutter and streamline the user experience. To do this go to the Properties and Options tab when editing the view and press Delete view
+[guide 1 - video 9 *]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/YfCz-9Fjt7g" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
-<h2 id="delete-fields-and-tables-guide-1---video-10-">Delete Fields and Tables [guide 1 - video 10 *]</h2>
-
+</p>
+<h2 id="delete-fields-and-tables">Delete Fields and Tables</h2>
+<p>Keeping the user interface streamlined and uncluttered also includes the removal of unwanted or old data fields.
+It is straightforward to delete a field from a table. Either clicking the X icon on the RHS of the list of fields, or use the Remove field button on the fields definition. However, extra care needs to be taken as the field may be in use as the following video demonstrates.</p>
+<p>N.b. to completely remove a table you are first required to delete ALL the fields it contains.
+[guide 1 - video 10 *]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/5ExSypK06W8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
-
+</p>
 
 	
 		<style>
@@ -429,7 +475,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified June 8, 2022: <a href="https://github.com/okohll/abdocs/commit/07ec80d97c37f96f958099ec04683490f800b7fa">Video guide 1 (adding table) URL fix (07ec80d)</a>
+  Last modified July 18, 2022: <a href="https://github.com/okohll/abdocs/commit/6f8a62abf8526a8e1ba7f834fbc4a78afb8abc20">Update tasklist.md (6f8a62a)</a>
 </div>
 
 </div>
