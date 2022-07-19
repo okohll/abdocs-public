@@ -37,7 +37,7 @@
         
         
         &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create a Table and associated Views to use it!&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “How to use agileBase”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched &amp;ldquo;How to use agileBase&amp;rdquo;&lt;/p&gt;
 &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;This stage of the guide will introduce you to the basic activities required to build a simple application. We will start by creating a table with different types of fields in order to store a variety of data. We will then show you how to create and control tiles, views and forms which are the interfaces that your users will use to enter and consume this data.
 Let us start by building a simple task list.&lt;/p&gt;
@@ -73,21 +73,22 @@ Use a field of type separator to create sections within the user interface
 A view generally provides abbreviated data in the form of a list of records. It also provides the ability to drill through to see the full record details.
 Tiles are a way of grouping functionality together. Specifically, a data tile is a way of grouping a collection of views that all share some common theme.&lt;/p&gt;
 &lt;p&gt;For this guide, we need a tile and collection of views dedicated to helping us create and manage our “Tasks”&lt;/p&gt;
-&lt;h2 id=&#34;make-the-table-available-for-use-adding-a-tile-to-the-homepage&#34;&gt;Make the table available for use! Adding a tile to the homepage&lt;/h2&gt;
+&lt;h2 id=&#34;make-the-table-available-for-use&#34;&gt;Make the table available for use!&lt;/h2&gt;
+&lt;h3 id=&#34;adding-a-tile-to-the-homepage&#34;&gt;Adding a tile to the homepage&lt;/h3&gt;
 &lt;p&gt;The homepage of agilebase is made up of data tiles. We need to create a new tile to hold all the views of our taks data
 [guide 1 - video 4]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/7hA7-VzX_A8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
-&lt;h2 id=&#34;make-the-table-available-for-use-adding-views-that-show-all-the-tasks-that-have-been-created&#34;&gt;Make the table available for use! Adding views that show all the tasks that have been created&lt;/h2&gt;
+&lt;h3 id=&#34;adding-views-that-show-all-the-tasks-that-have-been-created&#34;&gt;Adding views that show all the tasks that have been created&lt;/h3&gt;
 &lt;p&gt;To provide the user access to a list of Task records we need to create a View. To start with we will create a view that will list ALL the data.   &lt;br&gt;
 [guide 1 - video 5]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/P4FnZIYmAIo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
-&lt;h2 id=&#34;make-the-table-available-for-use-better-way-of-looking-at-data&#34;&gt;Make the table available for use! Better way of looking at data&lt;/h2&gt;
+&lt;h3 id=&#34;a-better-way-of-looking-at-data&#34;&gt;A better way of looking at data&lt;/h3&gt;
 &lt;p&gt;Many users will be familiar with a card or kanban style interface (such as Trello). Agilebase has a similar style of view that can often be useful.&lt;br&gt;
 Within a views “options” tab you can set its interface stylle to be “Cards in Columns”
 [guide 1 - video 6]
@@ -95,7 +96,7 @@ Within a views “options” tab you can set its interface stylle to be “Cards
   &lt;iframe src=&#34;https://www.youtube.com/embed/GN7685gOnQ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
-&lt;h2 id=&#34;make-the-table-available-for-use-making-views-for-a-specific-job&#34;&gt;Make the table available for use! Making views for a specific job&lt;/h2&gt;
+&lt;h3 id=&#34;making-views-for-a-specific-job&#34;&gt;Making views for a specific job&lt;/h3&gt;
 &lt;p&gt;Whilst users can apply their own filters and re-order data in a view, it is often a better user experience if there are dedicated views setup that match a particular job. For this example we want to create a list of all the completed tasks with the most recent at the top of the list.
 For more information on applying filters - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;https://docs.agilebase.co.uk/docs/views/filters/&lt;/a&gt;
 [guide 1 - video 7]

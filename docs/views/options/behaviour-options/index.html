@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/views/options/behaviour-options/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2022-05-22T16:00:00+01:00" />
-<meta property="article:modified_time" content="2022-05-22T16:26:48+01:00" />
+<meta property="article:modified_time" content="2022-07-19T12:07:03+01:00" />
 
 <meta itemprop="name" content="Behaviour Options">
 <meta itemprop="description" content="These options affect the behaviour of a view"><meta itemprop="datePublished" content="2022-05-22T16:00:00+01:00" />
-<meta itemprop="dateModified" content="2022-05-22T16:26:48+01:00" />
-<meta itemprop="wordCount" content="450">
+<meta itemprop="dateModified" content="2022-07-19T12:07:03+01:00" />
+<meta itemprop="wordCount" content="648">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Behaviour Options"/>
 <meta name="twitter:description" content="These options affect the behaviour of a view"/>
@@ -451,6 +451,7 @@ if (!doNotTrack) {
     <li><a href="#distinct-fields">Distinct fields</a></li>
     <li><a href="#amalgamate-with">Amalgamate with</a></li>
     <li><a href="#cache-view-rows">Cache view rows</a></li>
+    <li><a href="#query-plan">Query Plan</a></li>
   </ul>
 </nav></div>
 
@@ -612,6 +613,13 @@ if (!doNotTrack) {
 <blockquote>
 <p>If you find a view is slow, feel free to <a href="https://agilechilli.com/contact-us/">contact us</a> for support before trying options like caching, there are many other targeted options we can look at first, such as adding indexes.</p>
 </blockquote>
+<h2 id="query-plan">Query Plan</h2>
+<p>The majority of the time you will not need to change this setting. However here&rsquo;s what it does in case you do:</p>
+<p>When getting data from a view (the list of rows), the database internally uses a <a href="https://www.postgresql.org/docs/current/planner-optimizer.html">query planner</a>. The planner works out the quickest way to return the results, as for complex queries there may be many possible ways.</p>
+<p>Most of the time that works very well, in fact increasingly well with each new release of the PostgreSQL database. However sometimes a sub-optimal plan can be used, resulting in a slow view. agileBase then automatically tries out an alternative (specifically, disabling the use of &lsquo;<a href="https://www.postgresql.org/docs/14/runtime-config-query.html'">nested loops</a> to see if that&rsquo;s faster and sets this option if so.</p>
+<p>This option only needs to be changed if the agileBase detection fails (which is possible, query timing can depend on many factors, such as how many other queries the database is running at the time), resulting in a slower view rather than a faster one.</p>
+<p>In that case, you can experiment by changing the setting from &lsquo;default&rsquo; to &lsquo;alternative&rsquo; or vice versa.</p>
+<p>As above, feel free to <a href="https://agilechilli.com/contact-us/">contact us</a> if you have any questions about improving database performance.</p>
 
 	
 		<style>
@@ -678,7 +686,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified May 22, 2022: <a href="https://github.com/okohll/abdocs/commit/c9ad55cbd180e2ff1a01eacf0b26907293296d18">View options page title (c9ad55c)</a>
+  Last modified July 19, 2022: <a href="https://github.com/okohll/abdocs/commit/a494ff730bf5fefa018285f353fcf967fc5ceb85">The &#39;query plan&#39; option, and guide heading improvements (a494ff7)</a>
 </div>
 
 </div>
