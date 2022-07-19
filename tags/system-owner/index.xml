@@ -24,6 +24,7 @@
         
         
         &lt;p&gt;In these pages you can find details of how to set up users, roles, and privileges in agileBase. agileBase has an extensive role-based permissions system that enables fine-grained permissions and roles to be used.&lt;/p&gt;
+&lt;p&gt;Tables of data can also be marked as containing &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/sensitive-data/&#34;&gt;commercially sensitive or personal data&lt;/a&gt;, relevant to GDPR and affecting application behaviour.&lt;/p&gt;
 
       </description>
     </item>

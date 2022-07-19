@@ -18,22 +18,22 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Recursive Workflows | agileBase docs</title>
-<meta name="description" content="Recursively Firing Workflows">
-<meta property="og:title" content="Recursive Workflows" />
-<meta property="og:description" content="Recursively Firing Workflows" />
+<title>Development Mode | agileBase docs</title>
+<meta name="description" content="How to toggle between development and standard user modes">
+<meta property="og:title" content="Development Mode" />
+<meta property="og:description" content="How to toggle between development and standard user modes" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://docs.agilebase.co.uk/docs/workflows/advanced/recursive-workflows/" /><meta property="article:section" content="docs" />
-<meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2021-06-22T17:43:36+01:00" />
+<meta property="og:url" content="https://docs.agilebase.co.uk/docs/introduction/development-mode/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2022-02-18T16:40:00+01:00" />
+<meta property="article:modified_time" content="2022-07-19T23:47:03+01:00" />
 
-<meta itemprop="name" content="Recursive Workflows">
-<meta itemprop="description" content="Recursively Firing Workflows"><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2021-06-22T17:43:36+01:00" />
-<meta itemprop="wordCount" content="723">
-<meta itemprop="keywords" content="Certified Architect," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Recursive Workflows"/>
-<meta name="twitter:description" content="Recursively Firing Workflows"/>
+<meta itemprop="name" content="Development Mode">
+<meta itemprop="description" content="How to toggle between development and standard user modes"><meta itemprop="datePublished" content="2022-02-18T16:40:00+01:00" />
+<meta itemprop="dateModified" content="2022-07-19T23:47:03+01:00" />
+<meta itemprop="wordCount" content="414">
+<meta itemprop="keywords" content="Developer," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Development Mode"/>
+<meta name="twitter:description" content="How to toggle between development and standard user modes"/>
 
 
 
@@ -147,13 +147,13 @@ if (!doNotTrack) {
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
   <a href="/docs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">Docs</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsintroduction-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsintroduction-li">
   <a href="/docs/introduction/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsintroduction"><span class="">Introduction</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintroductionlearner-progression-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsintroductionlearner-progression-li">
   <a href="/docs/introduction/learner-progression/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintroductionlearner-progression"><span class="">Learner Progression</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintroductiondevelopment-mode-li">
-  <a href="/docs/introduction/development-mode/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintroductiondevelopment-mode"><span class="">Development Mode</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsintroductiondevelopment-mode-li">
+  <a href="/docs/introduction/development-mode/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docsintroductiondevelopment-mode"><span class="td-sidebar-nav-active-item">Development Mode</span></a>
 </li>
   </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docssecurity-and-compliance-li">
@@ -378,31 +378,31 @@ if (!doNotTrack) {
   <a href="/docs/integrations/creating-user-accounts/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationscreating-user-accounts"><span class="">Creating user accounts with the API</span></a>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsworkflows-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsworkflows-li">
   <a href="/docs/workflows/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsworkflows"><span class="">Workflows</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowstypes-of-actions-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowstypes-of-actions-li">
   <a href="/docs/workflows/types-of-actions/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowstypes-of-actions"><span class="">Types of Workflow Actions</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowsaltering-data-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowsaltering-data-li">
   <a href="/docs/workflows/altering-data/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsaltering-data"><span class="">Altering Data</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowssend-data-to-a-third-party-via-api-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowssend-data-to-a-third-party-via-api-li">
   <a href="/docs/workflows/send-data-to-a-third-party-via-api/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowssend-data-to-a-third-party-via-api"><span class="">Send Data to a third party via API</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowssend-email-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowssend-email-li">
   <a href="/docs/workflows/send-email/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowssend-email"><span class="">Send an email</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowssend-chaser-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowssend-chaser-li">
   <a href="/docs/workflows/send-chaser/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowssend-chaser"><span class="">Send a Chaser email</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowssend-document-generator-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowssend-document-generator-li">
   <a href="/docs/workflows/send-document-generator/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowssend-document-generator"><span class="">Send to Document Generator</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsworkflowsadvanced-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsworkflowsadvanced-li">
   <a href="/docs/workflows/advanced/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsworkflowsadvanced"><span class="">Advanced information on Workflows</span></a>
   <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowsadvancedchaining-workflows-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowsadvancedchaining-workflows-li">
   <a href="/docs/workflows/advanced/chaining-workflows/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsadvancedchaining-workflows"><span class="">Chaining Workflows</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowsadvancedrecursive-workflows-li">
-  <a href="/docs/workflows/advanced/recursive-workflows/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsadvancedrecursive-workflows"><span class="td-sidebar-nav-active-item">Recursive Workflows</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowsadvancedworkflow-on-create-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowsadvancedrecursive-workflows-li">
+  <a href="/docs/workflows/advanced/recursive-workflows/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsadvancedrecursive-workflows"><span class="">Recursive Workflows</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowsadvancedworkflow-on-create-li">
   <a href="/docs/workflows/advanced/workflow-on-create/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsadvancedworkflow-on-create"><span class="">Running on record creation or load</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsworkflowsadvancedworkflow-buttons-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowsadvancedworkflow-buttons-li">
   <a href="/docs/workflows/advanced/workflow-buttons/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsadvancedworkflow-buttons"><span class="">Workflows Buttons</span></a>
 </li>
   </ul>
@@ -441,14 +441,22 @@ if (!doNotTrack) {
 
 
 
-<a href="https://github.com/okohll/abdocs/edit/master/content/docs/workflows/advanced/recursive-workflows.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/okohll/abdocs/issues/new?title=Recursive%20Workflows" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/okohll/abdocs/edit/master/content/docs/introduction/development-mode.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/okohll/abdocs/issues/new?title=Development%20Mode" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
 
 
             
 
+
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#toggling-development-mode-on-and-off">Toggling development mode on and off</a></li>
+    <li><a href="#using-editing-panels">Using editing panels</a></li>
+    <li><a href="#accessing-additional-debugging-information">Accessing additional debugging information</a></li>
+  </ul>
+</nav></div>
 
 
 
@@ -516,20 +524,17 @@ if (!doNotTrack) {
     <a href="https://docs.agilebase.co.uk/docs/">Docs</a>
   </li>
   <li class="breadcrumb-item">
-    <a href="https://docs.agilebase.co.uk/docs/workflows/">Workflows</a>
-  </li>
-  <li class="breadcrumb-item">
-    <a href="https://docs.agilebase.co.uk/docs/workflows/advanced/">Advanced information on Workflows</a>
+    <a href="https://docs.agilebase.co.uk/docs/introduction/">Introduction</a>
   </li>
   <li class="breadcrumb-item active" aria-current="page">
-    <a href="https://docs.agilebase.co.uk/docs/workflows/advanced/recursive-workflows/">Recursive Workflows</a>
+    <a href="https://docs.agilebase.co.uk/docs/introduction/development-mode/">Development Mode</a>
   </li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>Recursive Workflows</h1>
-	<div class="lead">Recursively Firing Workflows</div>
+	<h1>Development Mode</h1>
+	<div class="lead">How to toggle between development and standard user modes</div>
 	<header class="article-meta">
 		
 
@@ -542,7 +547,7 @@ if (!doNotTrack) {
   <h5 class="taxonomy-title">Tags:</h5>
   <ul class="taxonomy-terms">
     
-      <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/certified-architect/" data-taxonomy-term="certified-architect"><span class="taxonomy-label">Certified Architect</span></a></li>
+      <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/developer/" data-taxonomy-term="developer"><span class="taxonomy-label">Developer</span></a></li>
     
   </ul>
 </div>
@@ -556,42 +561,40 @@ if (!doNotTrack) {
 
 		
 	</header>    
-	<p>Recursion is a rather heavyweight feature of the workflow capabilities of the agileBase platform.</p>
-<p>If you’re interested in a bit of maths and want to know what that means, there’s a great <a href="https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/recursion">tutorial about the concept at the Khan Academy</a>.</p>
-<p>If not, never mind, the takeaway is it allows an administrator to set up workflows that weren’t possible before, particularly where you have networks of people or things. For example, if your CRM links people who know each other, you could create a list of all people 1 step removed, 2 steps etc.</p>
-<p>More generally, any calculation with a repetitive step that depends on the results of the previous repetition is recursive. For example, solving sudokus or to some extent crosswords. In fact, we have a sudoku solver as one of our demos.</p>
-<h2 id="worked-example--an-ingredients-declaration">Worked example – an ingredients declaration</h2>
-<p>Here’s an example that may be a useful pattern for reference. We have a recipe with quantities of each ingredient. However, an ingredient may itself also be a recipe containing other ingredients. We wish to calculate an ‘ingredients declaration’ which has a list of all ‘raw ingredients’ at the end of the chain i.e. those with no recipe and their percentages in the initial recipe.</p>
-<p>This can (and has) been done with a some linked workflows including a couple of recursive steps. Here’s the logic (not including technical implementation details).</p>
+	<p>As a no-code platform, agileBase allows you to easily construct (and later de-construct or &lsquo;refactor&rsquo;) and change your software.</p>
+<h2 id="toggling-development-mode-on-and-off">Toggling development mode on and off</h2>
+<p><img src="/toggle-build-mode.png" alt="Toggle development mode">
+To get started, you need to toggle from &rsquo;normal&rsquo; mode to &lsquo;development&rsquo; mode. You can do this wherever you are in the system and you will switch to building or developing the item you&rsquo;re looking at. The three main areas this covers are:</p>
 <ol>
-<li>Step 1</li>
+<li>The homepage. Toggling to development mode on the homepage shows an overview of everything in the system - tables, views, tiles, roles and users can all be listed and edited. Furthermore, the connections between different objects can be shown. More advanced users will typically use this area, when working on larger systems. 
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/A_OYbB9wR6c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</li>
+<li>In a <a href="/docs/views/">view</a>. When a view is open, toggling development on will let you edit that view - to add or remove fields and calculations for example.</li>
+<li>When viewing a record from a <a href="/docs/tables/%3E">table</a>, toggling development on will let you edit that table, e.g. to add/remove fields.</li>
 </ol>
-<p>Firstly, with for our main recipe (let’s call it Tom Yum Soup), look at all the direct ingredients and make a copy list, we’ll call it the <em>exploded ingredients</em>. After this step it will just be exactly the same ingredients as the main list, but later on we’ll recurse and add ingredients of ingredients.</p>
-<p>In agileBase parlance, a workflow will copy all the items from an <em>ingredient lines</em> table to an <em>exploded ingredient lines</em> table. Each exploded ingredient line will have</p>
-<ul>
-<li>a link to the main recipe, i.e. Tom Yum Soup</li>
-<li>a link to it’s corresponding ingredient line e.g. 10 grams of chilli paste</li>
-<li>a link to the ‘parent exploded line’, which will just be empty in this first step</li>
-</ul>
-<ol start="2">
-<li>Step 2</li>
-</ol>
-<p>Go through each of the exploded ingredient lines. For each one, if the ingredient is itself a recipe, add lines for each of it’s ingredients, setting</p>
-<p>main recipe = the same main recipe as the existing exploded line, i.e. Tom Yum Soup
-link to parent ingredient line = the line we’re looking at e.g. 10 grams chilli paste
-link to ingredient line = e.g. 7 grams crushed chillies
-Now recurse and do step 2 again, for any of the new exploded ingredient lines that are themselves recipes. Repeat 2 as many times as are necessary until there are no new lines which are recipes. <strong>This is the key step – after this you’ll have a complete list of raw ingredients.</strong></p>
-<p>To make agileBase do that, simply tick the <em>recursive</em> checkbox in the view’s workflow section. It will repeat the step until the view contains no records.</p>
-<ol start="3">
-<li>Step 3</li>
-</ol>
-<p>The only thing left is to fill in the percentages. This involves a similar logic – bootstrap by first filling in percentages copied from the direct ingredients of the main recipe, then in a new workflow calculate the percentage of sub-ingredients by multiplying the proportion of the main ingredient by the percentage in the sub-ingredient. So for example if our Tom Yum is 2% chilli paste, which contains 70% crushed chillies, the percentage of crushed chillies in the Tom Yum is 0.02 x 70 = 1.4%.</p>
-<p>When implementing, there are a couple of other details to take into consideration, e.g. how to mark each exploded line as ‘processed’ so you don’t keep on re-calculating them. We do that with a counter. You also have to deal with the mechanics of things like what to do if a recipe changes e.g. an ingredient is deleted – another recursive workflow will go through and delete all exploded lines including sub-ingredients.</p>
-<p>If you’d like to see a full implementation details for this example, please let us know and we can take you through it on our demo system.</p>
-<ol start="4">
-<li>Step 4</li>
-</ol>
-<p>Finally, the ingredient declaration to e.g. go on a label can be calculated by joining together the names of all the raw ingredients i.e. the exploded ingredients that aren’t themselves recipes, along with their percentages.</p>
+<p>When development mode is on, pencil icons will appear next to every object which can be edited: for example, next to every field and tab in a table record.</p>
+<p>When editing views and tables, the large pencil at the top left lets you edit the object as a whole, as opposed to a field or a tab in it.</p>
+<p>Development mode can easily be toggled off again when you&rsquo;re done and the user interface will switch back to &rsquo;normal&rsquo; mode.</p>
+<h2 id="using-editing-panels">Using editing panels</h2>
+<p>When development mode is on, clicking any of the pencil icons on screen will open a panel allowing you to edit the item it&rsquo;s next to. The panel can be dragged to move it around the screen if you want to see what&rsquo;s underneath. Whenever you make a change using the panel, the display underneath will update, allowing you to see the effect your changes have in real time.</p>
+<p>Here&rsquo;s an example of editing a table and view:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/mTOWsXDpQgo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>and here&rsquo;s what the development mode looks like on the homepage:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/Rojcf6OzdHw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="accessing-additional-debugging-information">Accessing additional debugging information</h2>
+<p>Later on down the route of creating applications, you may wish the user interface to show additional information, specifically in views, to show the primary key values for each record - the internal row identifiers - which are normally hidden.</p>
+<p>This can be useful when testing and debugging <a href="/docs/integrations/">APIs</a> for example.</p>
+<p>To enable this, add <code>&amp;set_context=systadmin</code> to the URL in the browser. To revert to normal mode, replace it with <code>&amp;set_context=business</code>.</p>
 
 	
 		<style>
@@ -658,7 +661,7 @@ Now recurse and do step 2 again, for any of the new exploded ingredient lines th
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified June 22, 2021: <a href="https://github.com/okohll/abdocs/commit/c49ef8f324b093200f9219cbe41d1246eae15ee3">Tag all docs pages (c49ef8f)</a>
+  Last modified July 19, 2022: <a href="https://github.com/okohll/abdocs/commit/629ac59f60402632c40dabfa352c43a597a2e3c0">Initial learner progression page (629ac59)</a>
 </div>
 
 </div>
