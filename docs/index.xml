@@ -391,7 +391,9 @@ Adding collaboration functionality to an agileB\se application is as easy as add
   &lt;iframe src=&#34;https://www.youtube.com/embed/d57CDMWmUW4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
-&lt;h3 id=&#34;for-completeness-the-remainder-of-this-stage-of-the-guide-covers-removing-items-and-functionality-that-are-no-longer-needed&#34;&gt;For completeness the remainder of this stage of the guide covers removing items and functionality that are no longer needed.&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For completeness the remainder of this stage of the guide covers removing items and functionality that are no longer needed.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;deleting-views&#34;&gt;Deleting Views&lt;/h2&gt;
 &lt;p&gt;Eventually you will want to remove unused views in order to reduce clutter and streamline the user experience. To do this go to the Properties and Options tab when editing the view and press Delete view
 [guide 1 - video 9 *]
@@ -2597,10 +2599,10 @@ and a video introduction to the concept here:&lt;/p&gt;
     
     <item>
       <title>Docs: Testing</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/test_server/</link>
+      <link>https://docs.agilebase.co.uk/docs/integrations/test-server/</link>
       <pubDate>Thu, 07 Jul 2022 12:15:00 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/docs/integrations/test_server/</guid>
+      <guid>https://docs.agilebase.co.uk/docs/integrations/test-server/</guid>
       <description>
         
         

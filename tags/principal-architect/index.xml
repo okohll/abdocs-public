@@ -157,10 +157,10 @@ export default LoginScreen;
     
     <item>
       <title>Docs: Testing</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/test_server/</link>
+      <link>https://docs.agilebase.co.uk/docs/integrations/test-server/</link>
       <pubDate>Thu, 07 Jul 2022 12:15:00 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/docs/integrations/test_server/</guid>
+      <guid>https://docs.agilebase.co.uk/docs/integrations/test-server/</guid>
       <description>
         
         
@@ -223,6 +223,9 @@ export default LoginScreen;
         
         
         &lt;p&gt;Also, new features, news and tips and tricks are posted on &lt;a href=&#34;https://blog.agilebase.co.uk&#34;&gt;https://blog.agilebase.co.uk&lt;/a&gt;. Please subscribe on that page to receive any updates.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When carrying out changes to critical systems which the business relies on, you may wish to take advantage of a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/test-server/&#34;&gt;test server&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
       </description>
     </item>
