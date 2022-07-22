@@ -32,7 +32,7 @@ Let us start by building a simple task list.&lt;/p&gt;
 &lt;p&gt;Our simple application will need to store information about the tasks our users create. This is done by creating a database table. In agileBase this is achieved by navigating to the developer interface and pressing the “add new table button”.
 [guide 1 - video 1]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/r7nkYcnjyeQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/-kY2RRzKqxQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;add-fields-to-the-tasks-table&#34;&gt;Add fields to the &amp;ldquo;Tasks&amp;rdquo; table&lt;/h2&gt;
@@ -42,7 +42,7 @@ For more detail visit - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields
 &lt;p&gt;In the following video we add the fields needed to for a simple Task
 [guide 1 - video 2]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/QgKRVSMM07Y&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SannBQNKlKk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;make-the-form-easier-to-understand-break-it-into-sections&#34;&gt;Make the form easier to understand. Break it into sections&lt;/h2&gt;
@@ -50,7 +50,7 @@ For more detail visit - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields
 Use a field of type separator to create sections within the user interface
 [guide 1 - video 3]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/YwthqTiTroM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/c8XMlhoiuSM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;p&gt;We now need to provide the user with a way of accessing our “tasks” table and using it!!! This is achieved by a combination of Tiles and Views.&lt;/p&gt;
@@ -72,7 +72,7 @@ Tiles are a way of grouping functionality together. Specifically, a data tile is
 &lt;p&gt;To provide the user access to a list of Task records we need to create a View. To start with we will create a view that will list ALL the data.   &lt;br&gt;
 [guide 1 - video 5]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/P4FnZIYmAIo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ZwAcJz3jBhs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;a-better-way-of-looking-at-data&#34;&gt;A better way of looking at data&lt;/h3&gt;
@@ -80,7 +80,7 @@ Tiles are a way of grouping functionality together. Specifically, a data tile is
 Within a views “options” tab you can set its interface stylle to be “Cards in Columns”
 [guide 1 - video 6]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/GN7685gOnQ0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/HeZxfiLZR_k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;making-views-for-a-specific-job&#34;&gt;Making views for a specific job&lt;/h3&gt;
@@ -88,7 +88,7 @@ Within a views “options” tab you can set its interface stylle to be “Cards
 For more information on applying filters - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;https://docs.agilebase.co.uk/docs/views/filters/&lt;/a&gt;
 [guide 1 - video 7]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/wvlUpjFhxJg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/2755kBKLKzk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;our-simple-application-is-complete&#34;&gt;Our simple application is complete!&lt;/h3&gt;
@@ -99,7 +99,7 @@ For more information on applying filters - &lt;a href=&#34;https://docs.agilebas
 Adding collaboration functionality to an agileB\se application is as easy as adding any other field! Just add a field of type Comments as shown in the video below
 [guide 1 - video 8 *]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/d57CDMWmUW4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/VqpAmdVJiVc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;blockquote&gt;

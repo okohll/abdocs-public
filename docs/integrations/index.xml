@@ -49,7 +49,7 @@
 &lt;li&gt;View a summary list of changes you&amp;rsquo;ve made
 &lt;ul&gt;
 &lt;li&gt;Use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail&#34;&gt;enhanced audit trail&lt;/a&gt; to see changes like field addition/removals or view alterations&lt;/li&gt;
-&lt;li&gt;If you don&amp;rsquo;t already have the advanced audit trail, it will be set up as part of the test server commisioning process&lt;/li&gt;
+&lt;li&gt;If you don&amp;rsquo;t already have the enhanced audit trail, it will be set up as part of the test server commisioning process&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Re-create those changes in the live system
