@@ -2392,6 +2392,15 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;When &lt;strong&gt;headings and rows&lt;/strong&gt; is selected, the first field in the view will be used as a heading for the rows below. A new heading appears every time the field value changes.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/headings-new.png&#34; alt=&#34;headings and rows&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When &lt;strong&gt;long headings and rows&lt;/strong&gt; is selected, an amalgamation of content from the first fields in the view that all belong to the view&amp;rsquo;s parent table will be used as a heading. As soon as a field is encountered that is from a different table, heading text generation stops. Calculations that are added to the view can also form part of a heading, as long as they are placed next to (before, after or within) that first set of fields from the view&amp;rsquo;s parent table.&lt;/p&gt;
+&lt;p&gt;For example, if the fields in a view of organisations and contacts are&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Organisation name (from the organisations table)&lt;/li&gt;
+&lt;li&gt;Website address (from the organisations table)&lt;/li&gt;
+&lt;li&gt;Contact Name (from the contacts table)&lt;/li&gt;
+&lt;li&gt;Email address (from the contacts table)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;then a heading would be generated consisting of organisation and website address. Each time a row where one of these is different is encountered, a new heading row will be shown.&lt;/p&gt;
 
       </description>
     </item>

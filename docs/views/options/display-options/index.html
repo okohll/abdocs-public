@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/views/options/display-options/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2022-05-22T16:00:00+01:00" />
-<meta property="article:modified_time" content="2022-05-22T16:23:12+01:00" />
+<meta property="article:modified_time" content="2022-07-25T17:57:27+01:00" />
 
 <meta itemprop="name" content="Display Options">
 <meta itemprop="description" content="These options control how data is displayed"><meta itemprop="datePublished" content="2022-05-22T16:00:00+01:00" />
-<meta itemprop="dateModified" content="2022-05-22T16:23:12+01:00" />
-<meta itemprop="wordCount" content="487">
+<meta itemprop="dateModified" content="2022-07-25T17:57:27+01:00" />
+<meta itemprop="wordCount" content="640">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Display Options"/>
 <meta name="twitter:description" content="These options control how data is displayed"/>
@@ -617,6 +617,15 @@ if (!doNotTrack) {
 </ul>
 <p>When <strong>headings and rows</strong> is selected, the first field in the view will be used as a heading for the rows below. A new heading appears every time the field value changes.</p>
 <p><img src="/headings-new.png" alt="headings and rows"></p>
+<p>When <strong>long headings and rows</strong> is selected, an amalgamation of content from the first fields in the view that all belong to the view&rsquo;s parent table will be used as a heading. As soon as a field is encountered that is from a different table, heading text generation stops. Calculations that are added to the view can also form part of a heading, as long as they are placed next to (before, after or within) that first set of fields from the view&rsquo;s parent table.</p>
+<p>For example, if the fields in a view of organisations and contacts are</p>
+<ol>
+<li>Organisation name (from the organisations table)</li>
+<li>Website address (from the organisations table)</li>
+<li>Contact Name (from the contacts table)</li>
+<li>Email address (from the contacts table)</li>
+</ol>
+<p>then a heading would be generated consisting of organisation and website address. Each time a row where one of these is different is encountered, a new heading row will be shown.</p>
 
 	
 		<style>
@@ -683,7 +692,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified May 22, 2022: <a href="https://github.com/okohll/abdocs/commit/8e95aac99a8f5ce750abfb946292270231f33b8b">Fix links and document cards interface (8e95aac)</a>
+  Last modified July 25, 2022: <a href="https://github.com/okohll/abdocs/commit/91e3a230982b192ead4f19e1e6e867e507a5a37a">Long headings and rows option (91e3a23)</a>
 </div>
 
 </div>
