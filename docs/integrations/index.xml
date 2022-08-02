@@ -186,6 +186,7 @@
 &lt;/ul&gt;
 &lt;p&gt;Then &lt;em&gt;[internalfieldname]&lt;/em&gt; can be replaced by &lt;em&gt;[friendlyfieldname]&lt;/em&gt; which is the lowercase version of the field name, with spaces replaced by underscores and all other special (i.e. not a letter or a number) characters removed.&lt;/p&gt;
 &lt;p&gt;For example, the field &amp;lsquo;Discount Approved?&amp;rsquo; would have the friendly name &lt;em&gt;discount_approved&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;We suggest you only use friendly fieldnames if you&amp;rsquo;re confident the field name isn&amp;rsquo;t going to change. Internal fieldnames are constant and never change, whereas friendly names can easily change if the field is renamed.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The API can be tested using a tool such as &lt;a href=&#34;https://www.postman.com&#34;&gt;Postman&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
