@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2022-05-09T16:58:04+01:00" />
+<meta property="article:modified_time" content="2022-08-02T12:53:08+01:00" />
 
 <meta itemprop="name" content="Creating a POST API">
 <meta itemprop="description" content="A powerful automation feature that can allow a third party system to POST data in to agileBase."><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2022-05-09T16:58:04+01:00" />
-<meta itemprop="wordCount" content="680">
+<meta itemprop="dateModified" content="2022-08-02T12:53:08+01:00" />
+<meta itemprop="wordCount" content="749">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Creating a POST API"/>
 <meta name="twitter:description" content="A powerful automation feature that can allow a third party system to POST data in to agileBase."/>
@@ -452,7 +452,11 @@ if (!doNotTrack) {
 
 <div class="td-toc"><nav id="TableOfContents">
   <ul>
-    <li><a href="#creating-new-records">Creating new records</a></li>
+    <li><a href="#creating-new-records">Creating new records</a>
+      <ul>
+        <li><a href="#specifying-the-data-to-save">Specifying the data to save</a></li>
+      </ul>
+    </li>
     <li><a href="#updating-existing-records">Updating existing records</a></li>
     <li><a href="#uploading-files">Uploading files</a></li>
     <li><a href="#response">Response</a>
@@ -574,15 +578,27 @@ if (!doNotTrack) {
 <p>Clicking the ‘sample form’ link will then show a sample form which can be used for testing or to copy code from.</p>
 <p>If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:</p>
 <ul>
-<li>save_new_record=true</li>
-<li>c=[internalcompanyid]</li>
-<li>t=[internaltableid]</li>
+<li>save_new_record = true</li>
+<li>c = [internalcompanyid]</li>
+<li>t = [internaltableid]</li>
 </ul>
 <p>The post URL is</p>
 <p><a href="https://appserver.gtportalbase.com/agileBase/Public.ab">https://appserver.gtportalbase.com/agileBase/Public.ab</a></p>
 <p>The form needs to be posted using the method POST.</p>
 <p>Remember also to set the &lsquo;Authorization&rsquo; HTTP header if that option has been selected.</p>
-<p>To specify the contents of each field to be saved, add parameters for the internal field names of each field you want to send data to. The internal field names necessary will be shown on screen when API use is enabled.</p>
+<h3 id="specifying-the-data-to-save">Specifying the data to save</h3>
+<p>To specify the contents of each field to be saved, just add an</p>
+<ul>
+<li>[internalfieldname] = value</li>
+</ul>
+<p>parameter for each field.</p>
+<p>The internal field names necessary will be shown on screen when API use is enabled.</p>
+<p>Alternatively, friendly field name parameters can be used, with the addition of the parameter</p>
+<ul>
+<li>allow_friendly_fieldnames = true</li>
+</ul>
+<p>Then [internalfieldname] can be replaced by [friendlyfieldname] where friendlyfieldname is the lowercase version of the field name, with spaces replaced by underscores and all other special (i.e. not a letter or a number) characters removed.</p>
+<p>For example, the field &lsquo;Discount Approved?&rsquo; would have the friendly name &lsquo;discount_approved&rsquo;.</p>
 <blockquote>
 <p>The API can be tested using a tool such as <a href="https://www.postman.com">Postman</a>.</p>
 </blockquote>
@@ -687,7 +703,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified May 9, 2022: <a href="https://github.com/okohll/abdocs/commit/8a3fbb069e0fcfc0d78cac21888a85133a76ee49">Documentation screenshot updates (8a3fbb0)</a>
+  Last modified August 2, 2022: <a href="https://github.com/okohll/abdocs/commit/37f32c112b198fc33e552d4d71ccd830da7e5fcb">Use of friendly fieldnames when posting data in via the API (37f32c1)</a>
 </div>
 
 </div>

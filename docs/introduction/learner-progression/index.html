@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/introduction/learner-progression/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2022-02-18T16:40:00+01:00" />
-<meta property="article:modified_time" content="2022-07-19T23:49:39+01:00" />
+<meta property="article:modified_time" content="2022-08-02T12:55:34+01:00" />
 
 <meta itemprop="name" content="Learner Progression">
 <meta itemprop="description" content="The journey from citizen developer to software architect"><meta itemprop="datePublished" content="2022-02-18T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2022-07-19T23:49:39+01:00" />
-<meta itemprop="wordCount" content="796">
+<meta itemprop="dateModified" content="2022-08-02T12:55:34+01:00" />
+<meta itemprop="wordCount" content="836">
 <meta itemprop="keywords" content="Developer," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Learner Progression"/>
 <meta name="twitter:description" content="The journey from citizen developer to software architect"/>
@@ -591,6 +591,9 @@ if (!doNotTrack) {
 </li>
 <li>add and remove <a href="/docs/charting/">charts</a> from their version of the view</li>
 </ul>
+<blockquote>
+<p>A confidential field is one that has a <a href="/docs/fields/field-options/common-options/#show-if-record-in-view">visibility</a> rule, or is used for <a href="/docs/security-and-compliance/security-features/roles/#multi-tenanting">multi-tenanting</a>.</p>
+</blockquote>
 <p>The altered version of the view is seen only by them. Everyone else sees the original view. They can revert to the original (losing their changes) at any time.</p>
 <p>For example, a citizen developer may want to create a list of records which is filtered to only show ones assigned to them.</p>
 <p>The Citizen Developer role is automatically assigned once a user has used the system for a certain period of time and got used to it by carrying out standard functions like adding and editing records. It&rsquo;s assigned internal staff only though, not to <a href="/docs/security-and-compliance/security-features/users/community-users/">community users</a></p>
@@ -616,14 +619,17 @@ if (!doNotTrack) {
 <li>create <a href="/docs/tiles/">tiles</a> and delete tiles they&rsquo;ve added themselves</li>
 </ul>
 <h2 id="citizen-developer-level-3">Citizen Developer Level 3</h2>
-<p>A Software Architect (see below) can, at their discretion, assign a citizen developer &lsquo;manage&rsquo; privileges on a table (or tables). That allows them to</p>
+<p>A Software Architect (see below) can, at their discretion, assign a citizen developer &lsquo;manage&rsquo; privileges on a table (or tables). At that point, the user is automatically assigned Citizen Developer level 3.</p>
+<p>That allows them to</p>
 <ul>
-<li>add <a href="/docs/fields/">fields</a> to a table</li>
+<li>add <a href="/docs/fields/">fields</a> to those table</li>
 <li>remove fields that they themselves have added (not others)</li>
-<li>edit basic properties of any field, e.g. the list of options in a dropdown box</li>
-<li>edit basic properties of any regular view. Workflow and API views will be read-only</li>
+<li>edit the basic properties of any field in those tables, e.g. the list of options in a dropdown box</li>
 </ul>
-<p>At that point, the user is automatically assigned Citizen Developer level 3.</p>
+<p>Additionally, actions not related to having manage privileges on a particular table are</p>
+<ul>
+<li>edit the basic properties of any regular view. Workflow, API and some other types of system view will be read-only</li>
+</ul>
 <h2 id="junior-software-architect">Junior Software Architect</h2>
 <p>A junior software architect can use practically all of the application building functionality of agileBase. For example</p>
 <ul>
@@ -633,7 +639,7 @@ if (!doNotTrack) {
 <li>Create, edit and delete <a href="/docs/security-and-compliance/security-features/roles/">roles</a></li>
 <li>Assign <a href="/docs/security-and-compliance/security-features/privileges/">privileges</a> to roles or users up to the &rsquo;edit&rsquo; level</li>
 <li>Remove fields, views etc. created by anyone</li>
-<li>Edit the advanced properties of fields and views, including field visibility rules for example</li>
+<li>Edit the advanced properties of fields and views, including field visibility rules (confidentiality rules) for example</li>
 </ul>
 <p>Their only limitations are to do with managing the organisation as a whole, including other users.</p>
 <h2 id="software-architect">Software Architect</h2>
@@ -711,7 +717,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified July 19, 2022: <a href="https://github.com/okohll/abdocs/commit/257f270fc38bb833c38f87f598add87be922dda3">Initial learner progression page - link updates (257f270)</a>
+  Last modified August 2, 2022: <a href="https://github.com/okohll/abdocs/commit/cec6ac88c2a2a2619343b6e5775c6ccc484f9ff8">Use of friendly fieldnames when posting data in via the API (cec6ac8)</a>
 </div>
 
 </div>
