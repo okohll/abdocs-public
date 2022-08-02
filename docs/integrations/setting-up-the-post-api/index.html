@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2022-08-02T13:01:10+01:00" />
+<meta property="article:modified_time" content="2022-08-02T13:15:04+01:00" />
 
 <meta itemprop="name" content="Creating a POST API">
 <meta itemprop="description" content="A powerful automation feature that can allow a third party system to POST data in to agileBase."><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2022-08-02T13:01:10+01:00" />
+<meta itemprop="dateModified" content="2022-08-02T13:15:04+01:00" />
 <meta itemprop="wordCount" content="748">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Creating a POST API"/>
@@ -579,8 +579,8 @@ if (!doNotTrack) {
 <p>If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:</p>
 <ul>
 <li><em>save_new_record = true</em></li>
-<li><em>c = [internalcompanyid]</em>_</li>
-<li><em>t = [internaltableid]</em>_</li>
+<li><em>c = [internalcompanyid]</em></li>
+<li><em>t = [internaltableid]</em></li>
 </ul>
 <p>The post URL is</p>
 <p><a href="https://appserver.gtportalbase.com/agileBase/Public.ab">https://appserver.gtportalbase.com/agileBase/Public.ab</a></p>
@@ -597,7 +597,7 @@ if (!doNotTrack) {
 <ul>
 <li><em>allow_friendly_fieldnames = true</em></li>
 </ul>
-<p>Then [internalfieldname] can be replaced by [friendlyfieldname] which is the lowercase version of the field name, with spaces replaced by underscores and all other special (i.e. not a letter or a number) characters removed.</p>
+<p>Then <em>[internalfieldname]</em> can be replaced by <em>[friendlyfieldname]</em> which is the lowercase version of the field name, with spaces replaced by underscores and all other special (i.e. not a letter or a number) characters removed.</p>
 <p>For example, the field &lsquo;Discount Approved?&rsquo; would have the friendly name <em>discount_approved</em>.</p>
 <blockquote>
 <p>The API can be tested using a tool such as <a href="https://www.postman.com">Postman</a>.</p>
@@ -703,7 +703,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified August 2, 2022: <a href="https://github.com/okohll/abdocs/commit/77d84b5d03dc71932725754e2fd255bf17fd0260">Use of friendly fieldnames when posting data in via the API - tweaks (77d84b5)</a>
+  Last modified August 2, 2022: <a href="https://github.com/okohll/abdocs/commit/15b1d13e2423dd5b93b74e4bfc3b80e075bec4c3">Use of friendly fieldnames when posting data in via the API - tweaks (15b1d13)</a>
 </div>
 
 </div>

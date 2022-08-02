@@ -166,8 +166,8 @@
 &lt;p&gt;If you want to submit data directly from an app rather than a web form, simply prepare a HTTP POST request that mimics the form. Again, use the source code of the form as a reference. Note the form contains three hidden fields that need to be included. They are listed at the start of the sample form, for reference they are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;save_new_record = true&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;c = [internalcompanyid]&lt;/em&gt;_&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;t = [internaltableid]&lt;/em&gt;_&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;c = [internalcompanyid]&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;t = [internaltableid]&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The post URL is&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/Public.ab&#34;&gt;https://appserver.gtportalbase.com/agileBase/Public.ab&lt;/a&gt;&lt;/p&gt;
@@ -184,7 +184,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;allow_friendly_fieldnames = true&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Then [internalfieldname] can be replaced by [friendlyfieldname] which is the lowercase version of the field name, with spaces replaced by underscores and all other special (i.e. not a letter or a number) characters removed.&lt;/p&gt;
+&lt;p&gt;Then &lt;em&gt;[internalfieldname]&lt;/em&gt; can be replaced by &lt;em&gt;[friendlyfieldname]&lt;/em&gt; which is the lowercase version of the field name, with spaces replaced by underscores and all other special (i.e. not a letter or a number) characters removed.&lt;/p&gt;
 &lt;p&gt;For example, the field &amp;lsquo;Discount Approved?&amp;rsquo; would have the friendly name &lt;em&gt;discount_approved&lt;/em&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The API can be tested using a tool such as &lt;a href=&#34;https://www.postman.com&#34;&gt;Postman&lt;/a&gt;.&lt;/p&gt;
