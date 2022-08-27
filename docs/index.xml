@@ -53,7 +53,7 @@
 &lt;p&gt;Agilebase enables citizen developers to pass through five stages on their way to becoming software architects:&lt;/p&gt;
 &lt;h2 id=&#34;citizen-developer-level-1&#34;&gt;Citizen Developer Level 1&lt;/h2&gt;
 &lt;p&gt;This is the start of the agileBase journey. At this level you can create your own applications, using no coding.&lt;/p&gt;
-&lt;p&gt;An agileBase citizen developer can create &amp;lsquo;peronal copies&amp;rsquo; of any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; and edit those copies&lt;/p&gt;
+&lt;p&gt;An agileBase citizen developer can create &amp;lsquo;personal copies&amp;rsquo; of any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; and edit those copies&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;remove or add fields, excepting any that are marked &amp;lsquo;confidential&amp;rsquo; (only higher level developers can access those fields)&lt;/li&gt;
 &lt;li&gt;rearrange fields&lt;/li&gt;
@@ -82,7 +82,7 @@
 &lt;ul&gt;
 &lt;li&gt;add, edit and remove fields and tabs from those tables&lt;/li&gt;
 &lt;li&gt;edit basic properties of the fields&lt;/li&gt;
-&lt;li&gt;assign privileges (up to edit) on those tables, using existing roles&lt;/li&gt;
+&lt;li&gt;assign privileges (up to edit) on those tables, using existing roles or direct user privileges&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;create &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt; and delete tiles they&amp;rsquo;ve added themselves&lt;/li&gt;

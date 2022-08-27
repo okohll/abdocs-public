@@ -344,6 +344,9 @@
 &lt;li&gt;expand never&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Remember, these just set the initial state of the block when a record is first opened, blocks can be expanded and contracted by the user at any time.&lt;/p&gt;
+&lt;h2 id=&#34;place-tabs-here&#34;&gt;Place tabs here&lt;/h2&gt;
+&lt;p&gt;Normally, the first time a separator is encountered, as well as starting a block, any tabs which the table has will be shown in a row just before the block.&lt;/p&gt;
+&lt;p&gt;To prevent that, un-tick this option. Then the block will be created but the tabs row won&amp;rsquo;t be displayed until another separator is encountered, with &lt;em&gt;place tabs here&lt;/em&gt; ticked.&lt;/p&gt;
 
       </description>
     </item>
