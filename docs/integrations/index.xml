@@ -41,8 +41,11 @@
 &lt;ol&gt;
 &lt;li&gt;Transfer a snapshot from live - this will update your test system to be an exact copy of the live system as of approx. 7am in the morning
 &lt;ul&gt;
-&lt;li&gt;Log in to the web interface for your test server (details will be supplied)&lt;/li&gt;
-&lt;li&gt;Reboot the server. It will automatically re-initialise with the latest snapshot&lt;/li&gt;
+&lt;li&gt;Log in to the web interface for your test server at &lt;a href=&#34;https://www.linode.com&#34;&gt;www.linode.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Click your test server name, then the &amp;lsquo;Launch LISH Console&amp;rsquo; button at the top right&lt;/li&gt;
+&lt;li&gt;Enter your username, then password at the prompts&lt;/li&gt;
+&lt;li&gt;Type &lt;code&gt;sudo ./reload.sh&lt;/code&gt; and enter your password again&lt;/li&gt;
+&lt;li&gt;The system will now update from the latest snapshot. Please wait around 5 minutes then you&amp;rsquo;ll be able to log in to it&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Make and test any changes on the test server&lt;/li&gt;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.103.1" />
 <meta name="robots" content="index, follow">
 
 
@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/integrations/test-server/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2022-07-07T12:15:00+01:00" />
-<meta property="article:modified_time" content="2022-07-22T18:10:40+01:00" />
+<meta property="article:modified_time" content="2022-09-21T16:21:03+01:00" />
 
 <meta itemprop="name" content="Testing">
 <meta itemprop="description" content="Using a test server to dry-run integrations"><meta itemprop="datePublished" content="2022-07-07T12:15:00+01:00" />
-<meta itemprop="dateModified" content="2022-07-22T18:10:40+01:00" />
-<meta itemprop="wordCount" content="603">
+<meta itemprop="dateModified" content="2022-09-21T16:21:03+01:00" />
+<meta itemprop="wordCount" content="644">
 <meta itemprop="keywords" content="Principal Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Testing"/>
 <meta name="twitter:description" content="Using a test server to dry-run integrations"/>
@@ -582,8 +582,11 @@ if (!doNotTrack) {
 <ol>
 <li>Transfer a snapshot from live - this will update your test system to be an exact copy of the live system as of approx. 7am in the morning
 <ul>
-<li>Log in to the web interface for your test server (details will be supplied)</li>
-<li>Reboot the server. It will automatically re-initialise with the latest snapshot</li>
+<li>Log in to the web interface for your test server at <a href="https://www.linode.com">www.linode.com</a></li>
+<li>Click your test server name, then the &lsquo;Launch LISH Console&rsquo; button at the top right</li>
+<li>Enter your username, then password at the prompts</li>
+<li>Type <code>sudo ./reload.sh</code> and enter your password again</li>
+<li>The system will now update from the latest snapshot. Please wait around 5 minutes then you&rsquo;ll be able to log in to it</li>
 </ul>
 </li>
 <li>Make and test any changes on the test server</li>
@@ -675,7 +678,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified July 22, 2022: <a href="https://github.com/okohll/abdocs/commit/e990fb76f0fed7520b54d3738d14855852e5f6bb">Re-voiced tutorial videos (e990fb7)</a>
+  Last modified September 21, 2022: <a href="https://github.com/okohll/abdocs/commit/adcc31afd51791ab8df49be4710dd028a9475a3a">More detailed test server snapshot instructions (adcc31a)</a>
 </div>
 
 </div>
