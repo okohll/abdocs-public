@@ -46,6 +46,7 @@
 &lt;p&gt;Typically, these options are only needed to finnesse an application. They can be useful to look at once the core of the structure is built.&lt;/p&gt;
 &lt;h3 id=&#34;tab-view&#34;&gt;Tab view&lt;/h3&gt;
 &lt;p&gt;For one to many tabs, which &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; to use to show items. By creating a specific view to use for the tab, you can control which fields are displayed in which order, add calculations, filter those which are shown etc.&lt;/p&gt;
+&lt;p&gt;To use a view as a tab view, it must contain the row ID field of the parent table i.e. the table the tab is present in.&lt;/p&gt;
 &lt;p&gt;If the view contains one or more charts, those charts will also be shown when opening the tab, filtered to show only data for the parent record containing the tab (in the same way that the records to display in the tab are filtered).&lt;/p&gt;
 &lt;h3 id=&#34;populate-from-template&#34;&gt;Populate from template&lt;/h3&gt;
 &lt;p&gt;Under a tab, a button allows the user to add records. For example in the contacts tab of an organisation, they would be able to add a new contact.&lt;/p&gt;
