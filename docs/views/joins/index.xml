@@ -29,9 +29,9 @@
   &lt;iframe src=&#34;https://www.youtube.com/embed/9yeOJ0ZMUYw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Just remember, when using third party resources to learn about joins (or other SQL features), you don&amp;rsquo;t need to write the SQL code in agileBase, it&amp;rsquo;s generated for you behind the scenes.&lt;/p&gt;
+&lt;p&gt;Just remember, when using third party resources to learn about joins (or other SQL features), you don&amp;rsquo;t need to write the SQL code in Agilebase, it&amp;rsquo;s generated for you behind the scenes.&lt;/p&gt;
 &lt;h2 id=&#34;left-outer-and-inner-joins&#34;&gt;Left outer and inner joins&lt;/h2&gt;
-&lt;p&gt;The left outer join is the default type used when a join is added to a view in agileBase. It suits most cases, but can be changed after join creation if needed.&lt;/p&gt;
+&lt;p&gt;The left outer join is the default type used when a join is added to a view in Agilebase. It suits most cases, but can be changed after join creation if needed.&lt;/p&gt;
 &lt;p&gt;A left outer join type will ensure that every row from the left source (table or view) is visible in output, whether or not the data links to a row on the right side. Conversely, when an inner join&amp;rsquo;s used, data from the left will be hidden unless it links to data on the right.&lt;/p&gt;
 &lt;p&gt;That may sound rather abstract: working with an example, we can see what it means in practice.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s take the common and straightforward example of linking contacts to organisations. We start by creating a view from the contacts table, so that&amp;rsquo;s on the left side. We then join from contacts to an organisations table, on the right. This join looks as follows:&lt;/p&gt;
@@ -46,13 +46,13 @@
 &lt;p&gt;Sometimes of course, inner joins are very useful - but it makes sense that there must be a conscious decision to change a join to that type.&lt;/p&gt;
 &lt;h2 id=&#34;right-outer-and-full-outer&#34;&gt;Right outer and full outer&lt;/h2&gt;
 &lt;p&gt;You may think, if there&amp;rsquo;s a left outer, is there also a right outer? There is, it means all data from the right side is always visible, whether or not there&amp;rsquo;s a match on the left. So in our contacts/organisations example, all organisations would be visible, whether or not any contacts belonged to them.&lt;/p&gt;
-&lt;p&gt;Practically, this isn&amp;rsquo;t used much, as a right outer join is just the same as a left outer join started from the other table. There&amp;rsquo;s no difference in the data visible, but using a left outer works better in agileBase because you can be guaranteed that clicking on a row will load a record (with a right outer, if there&amp;rsquo;s no data on the left side, then no record can be loaded when the row&amp;rsquo;s clicked).&lt;/p&gt;
+&lt;p&gt;Practically, this isn&amp;rsquo;t used much, as a right outer join is just the same as a left outer join started from the other table. There&amp;rsquo;s no difference in the data visible, but using a left outer works better in Agilebase because you can be guaranteed that clicking on a row will load a record (with a right outer, if there&amp;rsquo;s no data on the left side, then no record can be loaded when the row&amp;rsquo;s clicked).&lt;/p&gt;
 &lt;p&gt;You may also hear of a full outer join - this again has a very small number of useful cases, but you can &lt;a href=&#34;https://stackoverflow.com/questions/2094793/when-is-a-good-situation-to-use-a-full-outer-join&#34;&gt;read about them online&lt;/a&gt; if interested.&lt;/p&gt;
 &lt;h2 id=&#34;venn-diagram&#34;&gt;Venn diagram&lt;/h2&gt;
 &lt;p&gt;Joins are often represented visually with Venn diagrams. Here&amp;rsquo;s one, showing that for a left outer join, all the data from the left side is visible, whether or not a matching row exists on the right, and for an inner join, data from the left is excluded without a match. The results of right outer and full outer are also visualised.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/joins-venn.png&#34; alt=&#34;Joins Venn diagram&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;cross-join&#34;&gt;Cross join&lt;/h2&gt;
-&lt;p&gt;There&amp;rsquo;s one final type to consider that can be used in agileBase. Strictly speaking, it isn&amp;rsquo;t a join at all, but it does bring together data from left and right sides in a particular way, so we&amp;rsquo;ll think of it as a join here and it&amp;rsquo;s treated as such in agileBase.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s one final type to consider that can be used in Agilebase. Strictly speaking, it isn&amp;rsquo;t a join at all, but it does bring together data from left and right sides in a particular way, so we&amp;rsquo;ll think of it as a join here and it&amp;rsquo;s treated as such in Agilebase.&lt;/p&gt;
 &lt;p&gt;If you have a mathematical background, it may help to know that it produces a cartesian product, or cross product, of all rows in the left and right sides.&lt;/p&gt;
 &lt;p&gt;However if you don&amp;rsquo;t, not to worry, it can be easily explained without maths. Basically, every combination of each row on the left with each row on the right is output. So if you have three rows, A, B and C on the left and another three X, Y and Z on the right, then you would get as output: data from&lt;/p&gt;
 &lt;ul&gt;

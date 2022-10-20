@@ -58,7 +58,7 @@
 &lt;h4 id=&#34;mandating-2fa-for-everyone&#34;&gt;Mandating 2FA for everyone&lt;/h4&gt;
 &lt;p&gt;This can be done in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/#mandate-2fa&#34;&gt;company settings&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;other-options&#34;&gt;Other options&lt;/h3&gt;
-&lt;h4 id=&#34;use-the-custom-agilechilli-ui-rather-than-agilebases&#34;&gt;Use the custom AgileChilli UI rather than agileBase&amp;rsquo;s&lt;/h4&gt;
+&lt;h4 id=&#34;use-the-custom-agilechilli-ui-rather-than-agilebases&#34;&gt;Use the custom AgileChilli UI rather than Agilebase&amp;rsquo;s&lt;/h4&gt;
 &lt;p&gt;It&amp;rsquo;s possible for companies to apply their logo and custom login screen to the system. Please contact us if you&amp;rsquo;d like to set this up.&lt;/p&gt;
 &lt;h4 id=&#34;logout-after&#34;&gt;Logout after&lt;/h4&gt;
 &lt;p&gt;Automatically end the user&amp;rsquo;s session after after this many minutes of inactivity. The user themselves can also change this setting.&lt;/p&gt;
@@ -164,10 +164,10 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;In a multi-tenanting account, it&amp;rsquo;s possible to create new tenants, with users, by API, as opposed to the manual actions of an administrator. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/&#34;&gt;Creating user accounts with the API&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;role-properties&#34;&gt;Role properties&lt;/h2&gt;
 &lt;h3 id=&#34;brand-name-and-domain&#34;&gt;Brand name and domain&lt;/h3&gt;
-&lt;p&gt;These two options allow system emails (password reset notification etc.) to come from a domain name of your choice and be branded with a particular &amp;lsquo;app&amp;rsquo; name. This can be useful if you&amp;rsquo;re creating a public-facing app using agileBase, rather than applications for your own staff.&lt;/p&gt;
+&lt;p&gt;These two options allow system emails (password reset notification etc.) to come from a domain name of your choice and be branded with a particular &amp;lsquo;app&amp;rsquo; name. This can be useful if you&amp;rsquo;re creating a public-facing app using Agilebase, rather than applications for your own staff.&lt;/p&gt;
 &lt;p&gt;To allow the domain name to work, you&amp;rsquo;ll need to contact us to set it up - our server will need to be authorised to send email from your domain.&lt;/p&gt;
 &lt;h3 id=&#34;custom-menus&#34;&gt;Custom menus&lt;/h3&gt;
-&lt;p&gt;It’s possible to add custom menu items into the user menu (the one at the top right that appears if you click your user icon). That means if your company has specific help pages or process documentation relevant to your organisation or application, you can make them available from within agileBase.&lt;/p&gt;
+&lt;p&gt;It’s possible to add custom menu items into the user menu (the one at the top right that appears if you click your user icon). That means if your company has specific help pages or process documentation relevant to your organisation or application, you can make them available from within Agilebase.&lt;/p&gt;
 &lt;p&gt;Each custom menu has a title, description and URL, which will be opened in a new tab when the menu item’s chosen.&lt;/p&gt;
 &lt;p&gt;Simply add these into the &lt;strong&gt;menu title&lt;/strong&gt;, &lt;strong&gt;menu description&lt;/strong&gt; and &lt;strong&gt;menu URL&lt;/strong&gt; properties of a role. Assigning that role to a user will add the menu item to their profile menu.&lt;/p&gt;
 &lt;p&gt;To add multiple menu items to a user or users, assign multiple roles, each with one menu item defined.&lt;/p&gt;
@@ -184,14 +184,14 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;In agileBase, there are three privilege levels, as well as a special ‘administrator’ privilege.&lt;/p&gt;
+        &lt;p&gt;In Agilebase, there are three privilege levels, as well as a special ‘administrator’ privilege.&lt;/p&gt;
 &lt;p&gt;The three privileges take effect per table, i.e. a user/role can have certain privileges on one table and different ones on another.&lt;/p&gt;
 &lt;p&gt;Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together, plus any they may have individually assigned.&lt;/p&gt;
 &lt;h2 id=&#34;privilege-levels&#34;&gt;Privilege levels&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;View&lt;/strong&gt;: ability to see data in a table&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Edit&lt;/strong&gt;: ability to create, edit and delete data in a table (create and delete subject to various table options)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Manage&lt;/strong&gt;: the privilege that allows you to use the &amp;lsquo;application building&amp;rsquo; features of agileBase, relating to a table. Namely the ability to
+&lt;li&gt;&lt;strong&gt;Manage&lt;/strong&gt;: the privilege that allows you to use the &amp;lsquo;application building&amp;rsquo; features of Agilebase, relating to a table. Namely the ability to
 &lt;ul&gt;
 &lt;li&gt;modify the structure, i.e. create/delete fields, tabs, change options etc.&lt;/li&gt;
 &lt;li&gt;create, edit and delete views from the table, including creating charts, maps and word clouds.&lt;/li&gt;
@@ -247,7 +247,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;Tick the role marked &lt;strong&gt;Grants administrative privileges&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;related-to-privileges&#34;&gt;Related to privileges&lt;/h2&gt;
-&lt;p&gt;Database systems often have the concept of row level privileges. The equivalent in agileBase is the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; system.&lt;/p&gt;
+&lt;p&gt;Database systems often have the concept of row level privileges. The equivalent in Agilebase is the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; system.&lt;/p&gt;
 &lt;p&gt;Individual fields in a table can be locked or hidden, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;field options&lt;/a&gt;&lt;/p&gt;
 
       </description>
@@ -262,7 +262,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;Exporting to spreadsheet is only one way of getting data out of agileBase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt; can be used.&lt;/p&gt;
+        &lt;p&gt;Exporting to spreadsheet is only one way of getting data out of Agilebase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt; can be used.&lt;/p&gt;
 &lt;h2 id=&#34;allowing-exports&#34;&gt;Allowing exports&lt;/h2&gt;
 &lt;p&gt;In order for a user to be allowed to export to spreadsheet, a number of critieria have to be matched, to suitably protect your organisation&amp;rsquo;s data.&lt;/p&gt;
 &lt;ol&gt;
@@ -313,7 +313,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;agileBase comprehensively logs changes to data in the system as well as changes to the structure of the system. Powerful &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/&#34;&gt;reporting facilities&lt;/a&gt; allow the generation of audit trails, trend monitoring, customer success monitoring etc.&lt;/p&gt;
+        &lt;p&gt;Agilebase comprehensively logs changes to data in the system as well as changes to the structure of the system. Powerful &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/&#34;&gt;reporting facilities&lt;/a&gt; allow the generation of audit trails, trend monitoring, customer success monitoring etc.&lt;/p&gt;
 &lt;h2 id=&#34;what-is-logged&#34;&gt;What is logged&lt;/h2&gt;
 &lt;h3 id=&#34;user-actions&#34;&gt;User actions&lt;/h3&gt;
 &lt;p&gt;The following actions are recorded&lt;/p&gt;
@@ -361,17 +361,17 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;It&amp;rsquo;s possible for a developer to create a third party application, for example a phone or tablet app, that communicates with agileBase via the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations&#34;&gt;API&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Now to use the API, you don&amp;rsquo;t need to authenticate as a user, as long as the app has the correct Authorization key(s), it can read and write data to agileBase.&lt;/p&gt;
-&lt;p&gt;However, in some cases the app may need to confirm that someone has a valid agileBase account before allowing them to use the app. This may or may not be necessary depending on the use case, for example depending on whether the app is free to use for anyone, or must be limited to paying customers.&lt;/p&gt;
-&lt;p&gt;To validate a user, the app must redirect them to the agileBase login page, let them log in and confirm that was successful. Therefore, a HTTP client is necessary - this can be a &amp;lsquo;web view component&amp;rsquo; or a programmatic client such as the &lt;a href=&#34;https://hc.apache.org/&#34;&gt;Apache HTTP Client&lt;/a&gt; for &lt;a href=&#34;https://en.wikipedia.org/wiki/Java_%28programming_language%29&#34;&gt;Java&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;It&amp;rsquo;s possible for a developer to create a third party application, for example a phone or tablet app, that communicates with Agilebase via the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations&#34;&gt;API&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now to use the API, you don&amp;rsquo;t need to authenticate as a user, as long as the app has the correct Authorization key(s), it can read and write data to Agilebase.&lt;/p&gt;
+&lt;p&gt;However, in some cases the app may need to confirm that someone has a valid Agilebase account before allowing them to use the app. This may or may not be necessary depending on the use case, for example depending on whether the app is free to use for anyone, or must be limited to paying customers.&lt;/p&gt;
+&lt;p&gt;To validate a user, the app must redirect them to the Agilebase login page, let them log in and confirm that was successful. Therefore, a HTTP client is necessary - this can be a &amp;lsquo;web view component&amp;rsquo; or a programmatic client such as the &lt;a href=&#34;https://hc.apache.org/&#34;&gt;Apache HTTP Client&lt;/a&gt; for &lt;a href=&#34;https://en.wikipedia.org/wiki/Java_%28programming_language%29&#34;&gt;Java&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In this example, we&amp;rsquo;ll use the &lt;a href=&#34;https://reactjs.org/&#34;&gt;React&lt;/a&gt; &lt;a href=&#34;https://www.npmjs.com/package/react-native-webview&#34;&gt;Native Web View&lt;/a&gt; but the principle is the same for any programming language or library.&lt;/p&gt;
 &lt;h2 id=&#34;general-principle&#34;&gt;General Principle&lt;/h2&gt;
 &lt;p&gt;The application must reproduce the same login process as a human would, using a HTTP client. Importantly, the HTTP client must support cookies, as the login process depends on them, in particular setting a &lt;code&gt;JSESSIONID&lt;/code&gt; cookie.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Make a request to load the page &lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&#34;&gt;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&lt;/a&gt;. This will return the login page and set the cookie value.&lt;/li&gt;
-&lt;li&gt;Submit the login form using the user&amp;rsquo;s username and password. If using a programattic process i.e. making the calls from code rather than using a web view, this means making a form POST to &lt;code&gt;/agileBase/j_security_check&lt;/code&gt; with the parameters &lt;code&gt;j_username&lt;/code&gt; and &lt;code&gt;j_password&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Detect whether the login&amp;rsquo;s successful. If not, the standard agileBase login failure page will be returned&lt;/li&gt;
+&lt;li&gt;Make a request to load the page &lt;a href=&#34;https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details&#34;&gt;https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details&lt;/a&gt;. This will return the login page and set the cookie value.&lt;/li&gt;
+&lt;li&gt;Submit the login form using the user&amp;rsquo;s username and password. If using a programattic process i.e. making the calls from code rather than using a web view, this means making a form POST to &lt;code&gt;/Agilebase/j_security_check&lt;/code&gt; with the parameters &lt;code&gt;j_username&lt;/code&gt; and &lt;code&gt;j_password&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Detect whether the login&amp;rsquo;s successful. If not, the standard Agilebase login failure page will be returned&lt;/li&gt;
 &lt;li&gt;If successful, a HTML page will be returned containing three hidden input fields, &lt;code&gt;username&lt;/code&gt;, &lt;code&gt;forename&lt;/code&gt;, &lt;code&gt;surname&lt;/code&gt; containing relevant details for the logged in user. If being called from a React Native Web View, the page will also post back messages to React using this JavaScript:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (window.ReactNativeWebView) {
@@ -445,7 +445,7 @@ const LoginScreen = (props) =&amp;gt; {
             &amp;lt;StatusBar backgroundColor={Colors.black} barStyle={&amp;#39;dark-content&amp;#39;}/&amp;gt;
             {(netInfo?.isInternetReachable &amp;amp;&amp;amp; !user_data?.surname) ?
                 &amp;lt;WebView
-                    source={{uri: &amp;#39;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&amp;#39;}}
+                    source={{uri: &amp;#39;https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details&amp;#39;}}
                     onMessage={onResponseFromWebView}
                     textZoom={100}
                     sharedCookiesEnabled={true}

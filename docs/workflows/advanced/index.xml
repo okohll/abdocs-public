@@ -49,7 +49,7 @@
 &lt;li&gt;send that document to a recipient&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The workflow view may contain many records which could theoretically have a document generated for them. When the button is pressed to run step 1, it will only run on the single record on screen.&lt;/p&gt;
-&lt;p&gt;agileBase will then pass the ID of that record through to the next workflow step to act as a filter. i.e. &amp;lsquo;send that document to a receipient&amp;rsquo; will only send the individual document which has just been created.&lt;/p&gt;
+&lt;p&gt;Agilebase will then pass the ID of that record through to the next workflow step to act as a filter. i.e. &amp;lsquo;send that document to a receipient&amp;rsquo; will only send the individual document which has just been created.&lt;/p&gt;
 &lt;p&gt;This mechanism works until any workflow step creates a new record. When that happens, it&amp;rsquo;s unclear whether subsequent steps should run on the original record or the newly created one, so the ID won&amp;rsquo;t be passed through to following steps and you&amp;rsquo;ll have to manage things manually, e.g. using flagging as below.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This behaviour can be manually disabled by un-ticking the option &lt;em&gt;Make subsequent workflow steps act on the same record as this one&lt;/em&gt;, which will then cause the next chained workflow to always act on all records in its view.&lt;/p&gt;
@@ -78,7 +78,7 @@
       <description>
         
         
-        &lt;p&gt;Recursion is a rather heavyweight feature of the workflow capabilities of the agileBase platform.&lt;/p&gt;
+        &lt;p&gt;Recursion is a rather heavyweight feature of the workflow capabilities of the Agilebase platform.&lt;/p&gt;
 &lt;p&gt;If you’re interested in a bit of maths and want to know what that means, there’s a great &lt;a href=&#34;https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/recursion&#34;&gt;tutorial about the concept at the Khan Academy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If not, never mind, the takeaway is it allows an administrator to set up workflows that weren’t possible before, particularly where you have networks of people or things. For example, if your CRM links people who know each other, you could create a list of all people 1 step removed, 2 steps etc.&lt;/p&gt;
 &lt;p&gt;More generally, any calculation with a repetitive step that depends on the results of the previous repetition is recursive. For example, solving sudokus or to some extent crosswords. In fact, we have a sudoku solver as one of our demos.&lt;/p&gt;
@@ -89,7 +89,7 @@
 &lt;li&gt;Step 1&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Firstly, with for our main recipe (let’s call it Tom Yum Soup), look at all the direct ingredients and make a copy list, we’ll call it the &lt;em&gt;exploded ingredients&lt;/em&gt;. After this step it will just be exactly the same ingredients as the main list, but later on we’ll recurse and add ingredients of ingredients.&lt;/p&gt;
-&lt;p&gt;In agileBase parlance, a workflow will copy all the items from an &lt;em&gt;ingredient lines&lt;/em&gt; table to an &lt;em&gt;exploded ingredient lines&lt;/em&gt; table. Each exploded ingredient line will have&lt;/p&gt;
+&lt;p&gt;In Agilebase parlance, a workflow will copy all the items from an &lt;em&gt;ingredient lines&lt;/em&gt; table to an &lt;em&gt;exploded ingredient lines&lt;/em&gt; table. Each exploded ingredient line will have&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;a link to the main recipe, i.e. Tom Yum Soup&lt;/li&gt;
 &lt;li&gt;a link to it’s corresponding ingredient line e.g. 10 grams of chilli paste&lt;/li&gt;
@@ -103,7 +103,7 @@
 link to parent ingredient line = the line we’re looking at e.g. 10 grams chilli paste
 link to ingredient line = e.g. 7 grams crushed chillies
 Now recurse and do step 2 again, for any of the new exploded ingredient lines that are themselves recipes. Repeat 2 as many times as are necessary until there are no new lines which are recipes. &lt;strong&gt;This is the key step – after this you’ll have a complete list of raw ingredients.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To make agileBase do that, simply tick the &lt;em&gt;recursive&lt;/em&gt; checkbox in the view’s workflow section. It will repeat the step until the view contains no records.&lt;/p&gt;
+&lt;p&gt;To make Agilebase do that, simply tick the &lt;em&gt;recursive&lt;/em&gt; checkbox in the view’s workflow section. It will repeat the step until the view contains no records.&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Step 3&lt;/li&gt;
 &lt;/ol&gt;

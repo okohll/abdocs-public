@@ -64,8 +64,8 @@
       <description>
         
         
-        &lt;p&gt;There are a number of ways to extract data from agileBase, whether manually for an individual&amp;rsquo;s use or programatically for integration with other systems.&lt;/p&gt;
-&lt;p&gt;There are also multiple ways other than the user interface to enter data into agileBase.&lt;/p&gt;
+        &lt;p&gt;There are a number of ways to extract data from Agilebase, whether manually for an individual&amp;rsquo;s use or programatically for integration with other systems.&lt;/p&gt;
+&lt;p&gt;There are also multiple ways other than the user interface to enter data into Agilebase.&lt;/p&gt;
 &lt;h2 id=&#34;outgoing-data&#34;&gt;Outgoing Data&lt;/h2&gt;
 &lt;p&gt;Users are able to:&lt;/p&gt;
 &lt;ul&gt;
@@ -163,7 +163,7 @@
         &lt;h2 id=&#34;types-of-action&#34;&gt;Types of Action&lt;/h2&gt;
 &lt;p&gt;Actions fall in to two types:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Those that effect data held within agileBase tables&lt;/li&gt;
+&lt;li&gt;Those that effect data held within Agilebase tables&lt;/li&gt;
 &lt;li&gt;Those that send data to another system.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;alter-data&#34;&gt;Alter Data&lt;/h3&gt;
@@ -224,10 +224,10 @@ Options are:&lt;/p&gt;
         
         &lt;p&gt;If a view contains a date field, the data in it can by synchronised with an external calendar application, e.g. Google Calendar, Microsoft Office 365, Apple calendars etc.&lt;/p&gt;
 &lt;p&gt;If it contains two date fields, the first will be used for the start date/time, the second for the finish.&lt;/p&gt;
-&lt;p&gt;Once set up, the link will be maintained and the calendar will update whenever the data in agileBase is updated, or vice versa. The synchonisation can be set up to be two-way (to and from agileBase), or just one way (either two or from agileBase)&lt;/p&gt;
+&lt;p&gt;Once set up, the link will be maintained and the calendar will update whenever the data in Agilebase is updated, or vice versa. The synchonisation can be set up to be two-way (to and from Agilebase), or just one way (either two or from Agilebase)&lt;/p&gt;
 &lt;h2 id=&#34;pre-requisites&#34;&gt;Pre-requisites&lt;/h2&gt;
-&lt;p&gt;agileBase uses &lt;a href=&#34;https://oauth.net/&#34;&gt;OAuth&lt;/a&gt;, an industry standard protocol, to synchronize with your calendar system of choice.&lt;/p&gt;
-&lt;p&gt;Under this protocol, each person will need to individually grant agileBase permission to send data to, and view events in their calendar. This is a straightforward process: as a user,&lt;/p&gt;
+&lt;p&gt;Agilebase uses &lt;a href=&#34;https://oauth.net/&#34;&gt;OAuth&lt;/a&gt;, an industry standard protocol, to synchronize with your calendar system of choice.&lt;/p&gt;
+&lt;p&gt;Under this protocol, each person will need to individually grant Agilebase permission to send data to, and view events in their calendar. This is a straightforward process: as a user,&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Click on your user icon at the top right of the screen&lt;/li&gt;
 &lt;li&gt;Select &lt;em&gt;edit profile&lt;/em&gt;&lt;/li&gt;
@@ -237,8 +237,8 @@ Options are:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/cronofy.png&#34; alt=&#34;Cronofy&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Choose the calendar system you use and follow through the prompt to allow access.&lt;/p&gt;
 &lt;h2 id=&#34;incoming-data&#34;&gt;Incoming data&lt;/h2&gt;
-&lt;p&gt;Once users have connected their calendars, data can be received into agileBase whenever an event is created, edited or deleted in the external calendar. We need to set up two new tables so the system can receive these events. One is a table for the event data itself, the other stores the list of calendars in the user&amp;rsquo;s account. One calendar account may contain multiple calendars, e.g. a user may have separate calendars set up for bookings, sales visits, holidays etc. - typically they display in different colours on the screen.&lt;/p&gt;
-&lt;p&gt;The main reason for recording the calendar list is so that the correct calendar can be chosen to send events to, when we come to send events from agileBase (see below).&lt;/p&gt;
+&lt;p&gt;Once users have connected their calendars, data can be received into Agilebase whenever an event is created, edited or deleted in the external calendar. We need to set up two new tables so the system can receive these events. One is a table for the event data itself, the other stores the list of calendars in the user&amp;rsquo;s account. One calendar account may contain multiple calendars, e.g. a user may have separate calendars set up for bookings, sales visits, holidays etc. - typically they display in different colours on the screen.&lt;/p&gt;
+&lt;p&gt;The main reason for recording the calendar list is so that the correct calendar can be chosen to send events to, when we come to send events from Agilebase (see below).&lt;/p&gt;
 &lt;p&gt;To set up these tables, follow this process:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Create a table called &lt;code&gt;ab calendar intray&lt;/code&gt;. It can have a prefix if you like, e.g. &lt;code&gt;z) ab calendar intray&lt;/code&gt;&lt;/li&gt;
@@ -260,11 +260,11 @@ Options are:&lt;/p&gt;
 &lt;p&gt;You can use &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;automated worflows&lt;/a&gt; to copy data from one table to another if necessary.&lt;/p&gt;
 &lt;p&gt;However, you could also simply create views from the &amp;lsquo;ab calendar intray&amp;rsquo; table to allow users to view these events directly. Adding a filter to the user on the &amp;lsquo;person&amp;rsquo; field will ensure a user will only see their own events -see [users - restrict data access]({{relref &amp;ldquo;/docs/security-and-compliance/security-features/users#restrict-data-access&amp;rdquo;}})&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Please be aware of potential data privacy concerns when setting up calendar synchronisation. All events a user creates or modifies in any of the calendars in their connected account will send to agileBase. As an administrator, you may wish to set up specific work calendar accounts for your users, distinct from any personal accounts they may use.&lt;/p&gt;
+&lt;p&gt;Please be aware of potential data privacy concerns when setting up calendar synchronisation. All events a user creates or modifies in any of the calendars in their connected account will send to Agilebase. As an administrator, you may wish to set up specific work calendar accounts for your users, distinct from any personal accounts they may use.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;outgoing-data&#34;&gt;Outgoing data&lt;/h2&gt;
-&lt;p&gt;As well as receiving data in, you can send either new or modified events from agileBase to users&amp;rsquo; connected calendars.&lt;/p&gt;
-&lt;p&gt;New events are those created in agileBase, modified events are those created externally which have come into the system via the incoming data method above, but which have then been updated in agileBase.&lt;/p&gt;
+&lt;p&gt;As well as receiving data in, you can send either new or modified events from Agilebase to users&amp;rsquo; connected calendars.&lt;/p&gt;
+&lt;p&gt;New events are those created in Agilebase, modified events are those created externally which have come into the system via the incoming data method above, but which have then been updated in Agilebase.&lt;/p&gt;
 &lt;p&gt;To set this up&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;Create a view&lt;/a&gt; to show the events to send to the calendar.&lt;/li&gt;
@@ -282,7 +282,7 @@ Options are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;calendar id&lt;/strong&gt;: identifies the particular calendar within the user&amp;rsquo;s connected account to send events to. This is the same calendar ID used in the &amp;lsquo;ab calendar mapping&amp;rsquo; table above, so can be looked up from there, perhaps by joining to the table.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;event id&lt;/strong&gt;: if you&amp;rsquo;re creating a new event, leave this blank. If the event was created externally, or you&amp;rsquo;re updating an existing event, use the event ID as listed in the &amp;lsquo;ab calendar intray&amp;rsquo; record for it.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;calendar owner&lt;/strong&gt;: the ID of the agileBase user - this will be used to determine the person who&amp;rsquo;se linked calendar the event should be sent to. The standard agileBase format is used &amp;lsquo;Forename Surname (username)&amp;rsquo;, so you can use the automatic field &amp;lsquo;Created By [auto]&amp;rsquo; if you like.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;calendar owner&lt;/strong&gt;: the ID of the Agilebase user - this will be used to determine the person who&amp;rsquo;se linked calendar the event should be sent to. The standard Agilebase format is used &amp;lsquo;Forename Surname (username)&amp;rsquo;, so you can use the automatic field &amp;lsquo;Created By [auto]&amp;rsquo; if you like.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;attendees&lt;/strong&gt;: a comma separated list of email addresses of people who should be invited&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -328,7 +328,7 @@ Options are:&lt;/p&gt;
         
         &lt;p&gt;Agilebase can be used to send emails. This facility should &lt;strong&gt;NOT&lt;/strong&gt; be used for marketing purposes, rather as a method to notify people about data associated to the system.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Note: When setting up an email alert, the system needs to know the email address of the recipient. Sometimes this may be very simple, when you always want to send the alert to the same person. For some alerts though you may wish to change who gets it depending on the data, e.g. each salesperson may get the leads assigned to them. In this case, the system will need to know the email address, so it needs to be stored somewhere. For agileBase users, if they use their email address as their username, the system can pick this up when a user’s assigned to a record, either manually or as part of the automatic ‘created by’ and ‘modified by’ fields&lt;/p&gt;
+&lt;p&gt;Note: When setting up an email alert, the system needs to know the email address of the recipient. Sometimes this may be very simple, when you always want to send the alert to the same person. For some alerts though you may wish to change who gets it depending on the data, e.g. each salesperson may get the leads assigned to them. In this case, the system will need to know the email address, so it needs to be stored somewhere. For Agilebase users, if they use their email address as their username, the system can pick this up when a user’s assigned to a record, either manually or as part of the automatic ‘created by’ and ‘modified by’ fields&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;step-1-add-a-necessary-field&#34;&gt;Step 1: add a necessary field&lt;/h2&gt;
 &lt;p&gt;Select the table which has the alert data in it and add a date/time field with SECOND accuracy called e.g. “Last notified”. This will be used by the system to store when the last notification was sent for each record.&lt;/p&gt;
@@ -344,12 +344,12 @@ Options are:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/send-email-new.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You can attach documents to the email by including the field name for a file in the message.&lt;/p&gt;
 &lt;p&gt;Under the email template, set “Notification time field” to the field that you created in step 1, e.g. “Last notified”&lt;/p&gt;
-&lt;p&gt;Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in agileBase, you can use that field and the system will automatically pick out the email address for them.&lt;/p&gt;
+&lt;p&gt;Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in Agilebase, you can use that field and the system will automatically pick out the email address for them.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;That’s it! Note when testing, we recommend setting the “To:” value to your own email address, just until you’re sure everything’s working properly.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;rich-text-html-emails&#34;&gt;Rich text (HTML) emails&lt;/h2&gt;
-&lt;p&gt;HTML emails can now be sent by apps built on the agileBase platform.
+&lt;p&gt;HTML emails can now be sent by apps built on the Agilebase platform.
 That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.&lt;/p&gt;
 &lt;h3 id=&#34;setting-up&#34;&gt;Setting up&lt;/h3&gt;
 &lt;p&gt;Set up an email notification workflow as normal (in a view, use the manage -&amp;gt; send tab).&lt;/p&gt;
@@ -388,7 +388,7 @@ That means that your company can send out branded, rich-text emails (with attach
 &lt;p&gt;For example, a food manufacturer who receives ingredients from suppliers may occasionally need to raise a non-conformance where something isn&amp;rsquo;t up to standard.&lt;/p&gt;
 &lt;p&gt;Whenever a non-conformance is raised against a supplier, whether as a result of an audit or ad hoc, the supplier can be chased for information about a resolution of the issue. Likewise, staff can be chased if an internal non-conformance is not resolved.&lt;/p&gt;
 &lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
-&lt;p&gt;As an agileBase administrator, if you want to set up your own chaser, here’s how to do so.&lt;/p&gt;
+&lt;p&gt;As an Agilebase administrator, if you want to set up your own chaser, here’s how to do so.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Create a view with a list of people to chase. In the view’s &lt;em&gt;manage&lt;/em&gt; tab, under &lt;em&gt;Send&lt;/em&gt;, choose &lt;em&gt;send email chasers&lt;/em&gt;&lt;/p&gt;
@@ -530,7 +530,7 @@ XYZ&lt;/p&gt;
 &lt;li&gt;send that document to a recipient&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The workflow view may contain many records which could theoretically have a document generated for them. When the button is pressed to run step 1, it will only run on the single record on screen.&lt;/p&gt;
-&lt;p&gt;agileBase will then pass the ID of that record through to the next workflow step to act as a filter. i.e. &amp;lsquo;send that document to a receipient&amp;rsquo; will only send the individual document which has just been created.&lt;/p&gt;
+&lt;p&gt;Agilebase will then pass the ID of that record through to the next workflow step to act as a filter. i.e. &amp;lsquo;send that document to a receipient&amp;rsquo; will only send the individual document which has just been created.&lt;/p&gt;
 &lt;p&gt;This mechanism works until any workflow step creates a new record. When that happens, it&amp;rsquo;s unclear whether subsequent steps should run on the original record or the newly created one, so the ID won&amp;rsquo;t be passed through to following steps and you&amp;rsquo;ll have to manage things manually, e.g. using flagging as below.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This behaviour can be manually disabled by un-ticking the option &lt;em&gt;Make subsequent workflow steps act on the same record as this one&lt;/em&gt;, which will then cause the next chained workflow to always act on all records in its view.&lt;/p&gt;
@@ -559,7 +559,7 @@ XYZ&lt;/p&gt;
       <description>
         
         
-        &lt;p&gt;Recursion is a rather heavyweight feature of the workflow capabilities of the agileBase platform.&lt;/p&gt;
+        &lt;p&gt;Recursion is a rather heavyweight feature of the workflow capabilities of the Agilebase platform.&lt;/p&gt;
 &lt;p&gt;If you’re interested in a bit of maths and want to know what that means, there’s a great &lt;a href=&#34;https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/recursion&#34;&gt;tutorial about the concept at the Khan Academy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If not, never mind, the takeaway is it allows an administrator to set up workflows that weren’t possible before, particularly where you have networks of people or things. For example, if your CRM links people who know each other, you could create a list of all people 1 step removed, 2 steps etc.&lt;/p&gt;
 &lt;p&gt;More generally, any calculation with a repetitive step that depends on the results of the previous repetition is recursive. For example, solving sudokus or to some extent crosswords. In fact, we have a sudoku solver as one of our demos.&lt;/p&gt;
@@ -570,7 +570,7 @@ XYZ&lt;/p&gt;
 &lt;li&gt;Step 1&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Firstly, with for our main recipe (let’s call it Tom Yum Soup), look at all the direct ingredients and make a copy list, we’ll call it the &lt;em&gt;exploded ingredients&lt;/em&gt;. After this step it will just be exactly the same ingredients as the main list, but later on we’ll recurse and add ingredients of ingredients.&lt;/p&gt;
-&lt;p&gt;In agileBase parlance, a workflow will copy all the items from an &lt;em&gt;ingredient lines&lt;/em&gt; table to an &lt;em&gt;exploded ingredient lines&lt;/em&gt; table. Each exploded ingredient line will have&lt;/p&gt;
+&lt;p&gt;In Agilebase parlance, a workflow will copy all the items from an &lt;em&gt;ingredient lines&lt;/em&gt; table to an &lt;em&gt;exploded ingredient lines&lt;/em&gt; table. Each exploded ingredient line will have&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;a link to the main recipe, i.e. Tom Yum Soup&lt;/li&gt;
 &lt;li&gt;a link to it’s corresponding ingredient line e.g. 10 grams of chilli paste&lt;/li&gt;
@@ -584,7 +584,7 @@ XYZ&lt;/p&gt;
 link to parent ingredient line = the line we’re looking at e.g. 10 grams chilli paste
 link to ingredient line = e.g. 7 grams crushed chillies
 Now recurse and do step 2 again, for any of the new exploded ingredient lines that are themselves recipes. Repeat 2 as many times as are necessary until there are no new lines which are recipes. &lt;strong&gt;This is the key step – after this you’ll have a complete list of raw ingredients.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To make agileBase do that, simply tick the &lt;em&gt;recursive&lt;/em&gt; checkbox in the view’s workflow section. It will repeat the step until the view contains no records.&lt;/p&gt;
+&lt;p&gt;To make Agilebase do that, simply tick the &lt;em&gt;recursive&lt;/em&gt; checkbox in the view’s workflow section. It will repeat the step until the view contains no records.&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Step 3&lt;/li&gt;
 &lt;/ol&gt;

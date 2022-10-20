@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.103.1" />
+<meta name="generator" content="Hugo 0.104.3" />
 <meta name="robots" content="index, follow">
 
 
@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-08T16:40:00+01:00" />
-<meta property="article:modified_time" content="2021-06-22T17:43:36+01:00" />
+<meta property="article:modified_time" content="2022-10-20T10:51:42+01:00" />
 
 <meta itemprop="name" content="Automatically present fields">
 <meta itemprop="description" content="Metadata fields created and managed by the system"><meta itemprop="datePublished" content="2020-05-08T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2021-06-22T17:43:36+01:00" />
+<meta itemprop="dateModified" content="2022-10-20T10:51:42+01:00" />
 <meta itemprop="wordCount" content="600">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Automatically present fields"/>
@@ -577,13 +577,13 @@ if (!doNotTrack) {
 	<p>When every <a href="/docs/tables/">table</a> is created, a series of fields are automatically added. These aren&rsquo;t displayed in the data entry form of a table, but are available to be added into views.</p>
 <h2 id="id-field">ID field</h2>
 <p>In database parlance, the table&rsquo;s <a href="https://en.wikipedia.org/wiki/Primary_key">primary key</a> - providing a unique ID to identify each record. Values are generated in sequence.</p>
-<p>agileBase creates and manages primary keys, using them to link related tables together automatically, however it&rsquo;s useful for administrators to understand the concept and implementation. Many platform features depending on including the ID field for a particular table in a view, such as <a href="/docs/fields/field-types/special-field-types/referenced-data/">referenced fields</a>.</p>
+<p>Agilebase creates and manages primary keys, using them to link related tables together automatically, however it&rsquo;s useful for administrators to understand the concept and implementation. Many platform features depending on including the ID field for a particular table in a view, such as <a href="/docs/fields/field-types/special-field-types/referenced-data/">referenced fields</a>.</p>
 <h2 id="creation-time-auto">Creation Time [Auto]</h2>
 <p>The record&rsquo;s creation time, accurate to the ms and displayed to the second by default.</p>
 <h2 id="created-by-auto">Created By [Auto]</h2>
 <p>The user ID of the person who created the record, in the form <code>Forename Surname (username)</code>.</p>
 <blockquote>
-<p>This format is used to identify a user everywhere in agileBase, for example when assigning a record to a user. When a user ID identifies a person in a <a href="/docs/workflows/send-chaser/">chaser</a> or <a href="/docs/workflows/send-email/">email workflow</a>, agileBase will look up and use their email address, from their account details.</p>
+<p>This format is used to identify a user everywhere in Agilebase, for example when assigning a record to a user. When a user ID identifies a person in a <a href="/docs/workflows/send-chaser/">chaser</a> or <a href="/docs/workflows/send-email/">email workflow</a>, Agilebase will look up and use their email address, from their account details.</p>
 </blockquote>
 <p>When a record is created by a workflow, the Created By will be <code>System User (system)</code>.</p>
 <p>When created by an API call, it will be <code>Public API (IP Address) (public api</code>, where the IP address of the calling system is recorded.</p>
@@ -674,7 +674,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified June 22, 2021: <a href="https://github.com/okohll/abdocs/commit/c49ef8f324b093200f9219cbe41d1246eae15ee3">Tag all docs pages (c49ef8f)</a>
+  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/08ac056e46e4bf4b89ac89de4d004f3cb100bb87">Agilebase capitalisation (08ac056)</a>
 </div>
 
 </div>

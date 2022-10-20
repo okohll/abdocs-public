@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.103.1" />
+<meta name="generator" content="Hugo 0.104.3" />
 <meta name="robots" content="index, follow">
 
 
@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-08T16:40:00+01:00" />
-<meta property="article:modified_time" content="2022-07-08T15:18:10+01:00" />
+<meta property="article:modified_time" content="2022-10-20T10:51:42+01:00" />
 
 <meta itemprop="name" content="Document templates">
 <meta itemprop="description" content="Templates allow the automatic generation of PDF documents, or printouts"><meta itemprop="datePublished" content="2020-05-08T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2022-07-08T15:18:10+01:00" />
-<meta itemprop="wordCount" content="996">
+<meta itemprop="dateModified" content="2022-10-20T10:51:42+01:00" />
+<meta itemprop="wordCount" content="1072">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Document templates"/>
 <meta name="twitter:description" content="Templates allow the automatic generation of PDF documents, or printouts"/>
@@ -452,7 +452,11 @@ if (!doNotTrack) {
 
 <div class="td-toc"><nav id="TableOfContents">
   <ul>
-    <li><a href="#creating-a-template">Creating a template</a></li>
+    <li><a href="#creating-a-template">Creating a template</a>
+      <ul>
+        <li><a href="#filename">Filename</a></li>
+      </ul>
+    </li>
     <li><a href="#including-data">Including data</a>
       <ul>
         <li><a href="#using-templates">Using templates</a></li>
@@ -580,7 +584,7 @@ if (!doNotTrack) {
 
 		
 	</header>    
-	<p>Document templates in agileBase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.</p>
+	<p>Document templates in Agilebase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.</p>
 <p>The same templating system is used for both generating documents (which can be done automatically with a <a href="/docs/workflows/send-document-generator/">workflow</a> or manually) and displaying output to be printed.</p>
 <p>Each template is attached to a view and given a name.</p>
 <h2 id="creating-a-template">Creating a template</h2>
@@ -595,9 +599,14 @@ if (!doNotTrack) {
 </ol>
 <p>Then a user will see a &lsquo;generate document&rsquo; button when they edit a record from the table, allowing them to generate a PDF from the template.</p>
 <blockquote>
-<p>Existing templates can also be edited or downloaded. Manually created templates with complex features such as variable setting and looping can&rsquo;t be edited using the WYSIWYG editor</p>
+<p>Existing templates can also be edited or downloaded. Manually created templates with complex features such as variable setting and looping can&rsquo;t be edited using the WYSIWYG editor, but can be downloaded, edited manually then re-uploaded.</p>
 </blockquote>
 <p><img src="/document_generation.png" alt="Template creation"></p>
+<h3 id="filename">Filename</h3>
+<p>The filename of the generated document will be comprised of two parts, separated by a dash:
+a) the name of the template which you created as above
+b) the value of the first field in the view above</p>
+<p>Additionally if multi-tenanting is active, then the name of the tenant associated with the record the document is being generated in will also be added, preceded by a dash.</p>
 <h2 id="including-data">Including data</h2>
 <p>Each field in the view (included calculations), or parent table, can be merged in to the template by referencing the field name, preceded by a dollar sign. For convenience, a list of available fields is listed below the WYSIWYG editor, for easy copying and pasting into the template.</p>
 <p>For those manually creating templates, a field name becomes a variable to reference by</p>
@@ -736,7 +745,7 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<p>There are many more functions than these available, indeed the whole of the agileBase user interface is created with templates including functions of these three types.</p>
+<p>There are many more functions than these available, indeed the whole of the Agilebase user interface is created with templates including functions of these three types.</p>
 <p>The entire templating API is beyond the scope of this documentation but if you do wish to create any template functionality not covered by the above, it&rsquo;s probably possible. Please get in touch with us to discuss your needs and be pointed in the right direction.</p>
 <h3 id="using-apache-velocity-features">Using Apache Velocity features</h3>
 <p>In the examples above are some uses of simple programming code. A full reference for what you can do with the Apache Velocity language is here: <a href="https://velocity.apache.org/engine/2.3/user-guide.html">https://velocity.apache.org/engine/2.3/user-guide.html</a></p>
@@ -806,7 +815,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified July 8, 2022: <a href="https://github.com/okohll/abdocs/commit/737eca1bde322adaea9de4d8871796b576aa4b8c">Update document generation pages with new mechanism (737eca1)</a>
+  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/08ac056e46e4bf4b89ac89de4d004f3cb100bb87">Agilebase capitalisation (08ac056)</a>
 </div>
 
 </div>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.103.1" />
+<meta name="generator" content="Hugo 0.104.3" />
 <meta name="robots" content="index, follow">
 
 
@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2022-04-17T21:21:50+01:00" />
+<meta property="article:modified_time" content="2022-10-20T10:51:42+01:00" />
 
 <meta itemprop="name" content="Text Field Options">
 <meta itemprop="description" content="Options specific to text fields"><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2022-04-17T21:21:50+01:00" />
+<meta itemprop="dateModified" content="2022-10-20T10:51:42+01:00" />
 <meta itemprop="wordCount" content="1196">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Text Field Options"/>
@@ -615,12 +615,12 @@ if (!doNotTrack) {
 <p><code>1) not billed, 2) awaiting payment, 3) paid|finance</code></p>
 <p>will mean that anyone will be able to set the field to <code>1) not billed</code> or <code>2) awaiting payment</code> but only members of the finance role will be able to see and set the <code>3) paid</code> option (once it has been set, it will be visible to everyone).</p>
 <h4 id="lists-of-users">Lists of users</h4>
-<p>Also for dropdown lists and tags fields, agileBase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select <code>users</code> or <code>users and roles</code> from the &lsquo;fill with&rsquo; selector just below the value(s) input. The standard user ID format throughout the system is used, &lsquo;Forename Surname (username)&rsquo;.</p>
+<p>Also for dropdown lists and tags fields, Agilebase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select <code>users</code> or <code>users and roles</code> from the &lsquo;fill with&rsquo; selector just below the value(s) input. The standard user ID format throughout the system is used, &lsquo;Forename Surname (username)&rsquo;.</p>
 <p>Only users/roles which have privileges to view the data in this particular table will be shown in the list. That can keep things manageable if a system has hundreds or more users.</p>
 <blockquote>
 <p>An example use would be assigning an account manager to a customer, selecting from a list of staff members (who are users).</p>
 </blockquote>
-<p>When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there&rsquo;s a status change or something is overdue for example. agileBase can look up the user&rsquo;s email address to accomplish this, See <a href="/docs/workflows/send-email/">email workflows</a> for details.</p>
+<p>When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there&rsquo;s a status change or something is overdue for example. Agilebase can look up the user&rsquo;s email address to accomplish this, See <a href="/docs/workflows/send-email/">email workflows</a> for details.</p>
 <p>When using &lsquo;fill with users&rsquo;, the list of users to appear in the dropdown can further be narrowed down by role if required. To do that, enter the text</p>
 <p><code>_users|role1,role2,role3</code></p>
 <p>i.e. <code>_users</code> followed by a vertical bar and then a comma separated list of role names. Only users which appear in one or more of the named roles will appear.</p>
@@ -640,7 +640,7 @@ if (!doNotTrack) {
 <p>This option can be selected for multiple fields in a table. In that case, the first field will be the main title, others will appear as subtitles.</p>
 <h3 id="preventing-duplicates">Preventing duplicates</h3>
 <p>Enabling the &lsquo;use as record title&rsquo; option also has the effect of enabling duplicate detection. The system will detect when a value is entered that is close to an existing value in the system. Any &lsquo;close&rsquo; values that are found are displayed as links to the relevant records.</p>
-<p>This can be useful when e.g. entering company names. Although a field can be marked <a href="/docs/fields/field-options/common-options/#unique">unique</a> to prevent exact duplicates, that won&rsquo;t pick up near matches, which this duplicate detection will. For example, &lsquo;The Universoty Of Bristol&rsquo; and &lsquo;University Of Bristol (UOB)&rsquo; will be detected as close matches, or &lsquo;agileBase&rsquo; and &lsquo;agileBase Ltd&rsquo;.</p>
+<p>This can be useful when e.g. entering company names. Although a field can be marked <a href="/docs/fields/field-options/common-options/#unique">unique</a> to prevent exact duplicates, that won&rsquo;t pick up near matches, which this duplicate detection will. For example, &lsquo;The Universoty Of Bristol&rsquo; and &lsquo;University Of Bristol (UOB)&rsquo; will be detected as close matches, or &lsquo;Agilebase&rsquo; and &lsquo;Agilebase Ltd&rsquo;.</p>
 <p>The system uses <a href="https://www.postgresql.org/docs/current/pgtrgm.html">trigram matching</a> to detect similar values.</p>
 
 	
@@ -708,7 +708,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified April 17, 2022: <a href="https://github.com/okohll/abdocs/commit/f12a204ec323433e400e033569fad9d4386e24e5">Development mode (f12a204)</a>
+  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/08ac056e46e4bf4b89ac89de4d004f3cb100bb87">Agilebase capitalisation (08ac056)</a>
 </div>
 
 </div>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.103.1" />
+<meta name="generator" content="Hugo 0.104.3" />
 <meta name="robots" content="index, follow">
 
 
@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/views/joins/types-of-join/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-15T16:40:00+01:00" />
-<meta property="article:modified_time" content="2021-06-22T17:43:36+01:00" />
+<meta property="article:modified_time" content="2022-10-20T10:51:42+01:00" />
 
 <meta itemprop="name" content="Types of Join">
 <meta itemprop="description" content="Left outer, inner and cross joins"><meta itemprop="datePublished" content="2020-05-15T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2021-06-22T17:43:36+01:00" />
+<meta itemprop="dateModified" content="2022-10-20T10:51:42+01:00" />
 <meta itemprop="wordCount" content="1205">
 <meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Types of Join"/>
@@ -575,9 +575,9 @@ if (!doNotTrack) {
   <iframe src="https://www.youtube.com/embed/9yeOJ0ZMUYw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<p>Just remember, when using third party resources to learn about joins (or other SQL features), you don&rsquo;t need to write the SQL code in agileBase, it&rsquo;s generated for you behind the scenes.</p>
+<p>Just remember, when using third party resources to learn about joins (or other SQL features), you don&rsquo;t need to write the SQL code in Agilebase, it&rsquo;s generated for you behind the scenes.</p>
 <h2 id="left-outer-and-inner-joins">Left outer and inner joins</h2>
-<p>The left outer join is the default type used when a join is added to a view in agileBase. It suits most cases, but can be changed after join creation if needed.</p>
+<p>The left outer join is the default type used when a join is added to a view in Agilebase. It suits most cases, but can be changed after join creation if needed.</p>
 <p>A left outer join type will ensure that every row from the left source (table or view) is visible in output, whether or not the data links to a row on the right side. Conversely, when an inner join&rsquo;s used, data from the left will be hidden unless it links to data on the right.</p>
 <p>That may sound rather abstract: working with an example, we can see what it means in practice.</p>
 <p>Let&rsquo;s take the common and straightforward example of linking contacts to organisations. We start by creating a view from the contacts table, so that&rsquo;s on the left side. We then join from contacts to an organisations table, on the right. This join looks as follows:</p>
@@ -592,13 +592,13 @@ if (!doNotTrack) {
 <p>Sometimes of course, inner joins are very useful - but it makes sense that there must be a conscious decision to change a join to that type.</p>
 <h2 id="right-outer-and-full-outer">Right outer and full outer</h2>
 <p>You may think, if there&rsquo;s a left outer, is there also a right outer? There is, it means all data from the right side is always visible, whether or not there&rsquo;s a match on the left. So in our contacts/organisations example, all organisations would be visible, whether or not any contacts belonged to them.</p>
-<p>Practically, this isn&rsquo;t used much, as a right outer join is just the same as a left outer join started from the other table. There&rsquo;s no difference in the data visible, but using a left outer works better in agileBase because you can be guaranteed that clicking on a row will load a record (with a right outer, if there&rsquo;s no data on the left side, then no record can be loaded when the row&rsquo;s clicked).</p>
+<p>Practically, this isn&rsquo;t used much, as a right outer join is just the same as a left outer join started from the other table. There&rsquo;s no difference in the data visible, but using a left outer works better in Agilebase because you can be guaranteed that clicking on a row will load a record (with a right outer, if there&rsquo;s no data on the left side, then no record can be loaded when the row&rsquo;s clicked).</p>
 <p>You may also hear of a full outer join - this again has a very small number of useful cases, but you can <a href="https://stackoverflow.com/questions/2094793/when-is-a-good-situation-to-use-a-full-outer-join">read about them online</a> if interested.</p>
 <h2 id="venn-diagram">Venn diagram</h2>
 <p>Joins are often represented visually with Venn diagrams. Here&rsquo;s one, showing that for a left outer join, all the data from the left side is visible, whether or not a matching row exists on the right, and for an inner join, data from the left is excluded without a match. The results of right outer and full outer are also visualised.</p>
 <p><img src="/joins-venn.png" alt="Joins Venn diagram"></p>
 <h2 id="cross-join">Cross join</h2>
-<p>There&rsquo;s one final type to consider that can be used in agileBase. Strictly speaking, it isn&rsquo;t a join at all, but it does bring together data from left and right sides in a particular way, so we&rsquo;ll think of it as a join here and it&rsquo;s treated as such in agileBase.</p>
+<p>There&rsquo;s one final type to consider that can be used in Agilebase. Strictly speaking, it isn&rsquo;t a join at all, but it does bring together data from left and right sides in a particular way, so we&rsquo;ll think of it as a join here and it&rsquo;s treated as such in Agilebase.</p>
 <p>If you have a mathematical background, it may help to know that it produces a cartesian product, or cross product, of all rows in the left and right sides.</p>
 <p>However if you don&rsquo;t, not to worry, it can be easily explained without maths. Basically, every combination of each row on the left with each row on the right is output. So if you have three rows, A, B and C on the left and another three X, Y and Z on the right, then you would get as output: data from</p>
 <ul>
@@ -696,7 +696,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified June 22, 2021: <a href="https://github.com/okohll/abdocs/commit/c49ef8f324b093200f9219cbe41d1246eae15ee3">Tag all docs pages (c49ef8f)</a>
+  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/08ac056e46e4bf4b89ac89de4d004f3cb100bb87">Agilebase capitalisation (08ac056)</a>
 </div>
 
 </div>

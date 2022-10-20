@@ -24,8 +24,8 @@
         
         
         &lt;p&gt;Before diving into the details of building applications, starting with tables, let&amp;rsquo;s take a step back and learn some background information about databases, including what a table is. If you&amp;rsquo;re familiar with these concepts, feel free to skip this section.&lt;/p&gt;
-&lt;p&gt;When building back office software with agileBase, a large amount of what we&amp;rsquo;ll be doing is building database structures, to store user-entered data. agileBase takes care of creating the user interface to allow users to use these structures automatically, e.g. to search for data, add and edit it.&lt;/p&gt;
-&lt;p&gt;You will find many articles explaining relational databases if you look for them on the internet. Most will introduce SQL, the language used to work with databases. It&amp;rsquo;s not necessary to learn that as agileBase generates it automatically behind the scenes, but the higher level concepts are useful to grasp.&lt;/p&gt;
+&lt;p&gt;When building back office software with Agilebase, a large amount of what we&amp;rsquo;ll be doing is building database structures, to store user-entered data. Agilebase takes care of creating the user interface to allow users to use these structures automatically, e.g. to search for data, add and edit it.&lt;/p&gt;
+&lt;p&gt;You will find many articles explaining relational databases if you look for them on the internet. Most will introduce SQL, the language used to work with databases. It&amp;rsquo;s not necessary to learn that as Agilebase generates it automatically behind the scenes, but the higher level concepts are useful to grasp.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a YouTube video with a good introduction.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -74,7 +74,7 @@
 &lt;p&gt;The video above also explains this type of relation if you&amp;rsquo;ve not already watched it.&lt;/p&gt;
 &lt;h3 id=&#34;when-to-use-the-many-to-many&#34;&gt;When to use the many to many&lt;/h3&gt;
 &lt;p&gt;You may have a niggling thought at the back of your mind: how do I know whether it&amp;rsquo;s best to use a simple one to many relation, or a more complex many to many setup? Surely I could use many to many for contacts and suppliers too? A single contact may be associated with more than one supplier, for example if they&amp;rsquo;re a contractor, or if they move jobs.&lt;/p&gt;
-&lt;p&gt;The answer to that just comes down to your judgement. Although agileBase creates a friendly, easy to use interface on top of the data structure, the many to many does add complexity. So it&amp;rsquo;s a bit of a trade-off. However the advantage of a no-code system like agileBase is that you can rapidly try out ideas and see which one works best. As time goes on you&amp;rsquo;ll get a sense of what works best in which situation.&lt;/p&gt;
+&lt;p&gt;The answer to that just comes down to your judgement. Although Agilebase creates a friendly, easy to use interface on top of the data structure, the many to many does add complexity. So it&amp;rsquo;s a bit of a trade-off. However the advantage of a no-code system like Agilebase is that you can rapidly try out ideas and see which one works best. As time goes on you&amp;rsquo;ll get a sense of what works best in which situation.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;If you do want to learn more about this topic, it&amp;rsquo;s called &amp;lsquo;database normalisation&amp;rsquo; and there&amp;rsquo;s plenty written about it!&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -99,7 +99,7 @@
       <description>
         
         
-        &lt;p&gt;A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an agileBase application.&lt;/p&gt;
+        &lt;p&gt;A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an Agilebase application.&lt;/p&gt;
 &lt;h2 id=&#34;adding-a-table&#34;&gt;Adding a table&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;On the homepage, click the &amp;rsquo;toggle&amp;rsquo; button in the top-right of the screen to enable dev mode (if it is not enabled already)&lt;/li&gt;
@@ -146,7 +146,7 @@
       <description>
         
         
-        &lt;p&gt;For each table, agileBase will automatically build a data entry form for users to view, add and edit records with.&lt;/p&gt;
+        &lt;p&gt;For each table, Agilebase will automatically build a data entry form for users to view, add and edit records with.&lt;/p&gt;
 &lt;p&gt;The layout of this form can be controlled by selecting a layout option and adding separators to create blocks i.e. groups of fields which go together. This will create a more pleasant and usable system.&lt;/p&gt;
 &lt;h2 id=&#34;layout&#34;&gt;Layout&lt;/h2&gt;
 &lt;p&gt;The layout option is the main control. There are three options:&lt;/p&gt;
@@ -188,7 +188,7 @@
       <description>
         
         
-        &lt;p&gt;agileBase does its best with sensible defaults to create a friendly user interface.&lt;/p&gt;
+        &lt;p&gt;Agilebase does its best with sensible defaults to create a friendly user interface.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s useful for an administrator to know how to configure and tweak the system to allow the to user navigate the structure of an application in the most intuitive way possible.&lt;/p&gt;
 
       </description>
@@ -240,7 +240,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;When designing applications, just be aware there is sometimes a trade-off between the ideal of data integrity and everyday concerns.&lt;/p&gt;
 &lt;p&gt;For example, you may like to force users to always provide an email address for contacts but in a small minority of cases, they may not have that available.&lt;/p&gt;
-&lt;p&gt;agileBase has options for handling soft validation (highlighting errors or notifying someone) as well as the hard validation (disallowing invalid data entry) options discussed here. For example, you could&lt;/p&gt;
+&lt;p&gt;Agilebase has options for handling soft validation (highlighting errors or notifying someone) as well as the hard validation (disallowing invalid data entry) options discussed here. For example, you could&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;Create a view&lt;/a&gt;to show all records with errors, for later checking&lt;/li&gt;
 &lt;li&gt;Set up a workflow or chaser to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chase someone&lt;/a&gt; when errors are found&lt;/li&gt;
@@ -318,9 +318,9 @@
 &lt;h4 id=&#34;configuring-the-email-address-used&#34;&gt;Configuring the email address used&lt;/h4&gt;
 &lt;p&gt;An email address of the form &lt;a href=&#34;mailto:viewname@accountname.domainname&#34;&gt;viewname@accountname.domainname&lt;/a&gt; will be set up, e.g. &lt;a href=&#34;mailto:contacts@mycompany.agilebase.co.uk&#34;&gt;contacts@mycompany.agilebase.co.uk&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;viewname&lt;/em&gt; determines the view which agileBase queries to find the recipient email address. The comment will be added to the matching record in the view&amp;rsquo;s parent table, or a tab of the table, if &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#accept-emails-from-parent-table&#34;&gt;Accept emails from parent table&lt;/a&gt; is enabled in a tab. If multiple tabs have this option enabled, then the tab with a name also matching &lt;em&gt;viewname&lt;/em&gt; is used&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;viewname&lt;/em&gt; determines the view which Agilebase queries to find the recipient email address. The comment will be added to the matching record in the view&amp;rsquo;s parent table, or a tab of the table, if &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#accept-emails-from-parent-table&#34;&gt;Accept emails from parent table&lt;/a&gt; is enabled in a tab. If multiple tabs have this option enabled, then the tab with a name also matching &lt;em&gt;viewname&lt;/em&gt; is used&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;accountname&lt;/em&gt; determines the company account to look in&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;domainname&lt;/em&gt; is the domain name of the agileBase server&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;domainname&lt;/em&gt; is the domain name of the Agilebase server&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
 &lt;p&gt;After the options, some structural information is shown, such as which tables depend on this one i.e. have a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation&lt;/a&gt; to it, how many fields and views per tile there are. See also the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#the-dashboard&#34;&gt;usage dashboard&lt;/a&gt;&lt;/p&gt;

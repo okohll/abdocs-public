@@ -34,10 +34,10 @@
 &lt;p&gt;We recommend that all administrators enable this if possible. Even when 2FA is mandated, admins can still &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#two-factor-authentication&#34;&gt;disable it temporarily&lt;/a&gt; on a per-user basis. The next time they log in they will be prompted to set it up again.&lt;/p&gt;
 &lt;p&gt;When this is off, users will still be prompted to set up 2FA, it just won&amp;rsquo;t be mandatory.&lt;/p&gt;
 &lt;h3 id=&#34;smtp-server&#34;&gt;SMTP server&lt;/h3&gt;
-&lt;p&gt;agileBase &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;workflows&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chasers&lt;/a&gt; that send emails use an @notifications.agilebase.co.uk email address by default.&lt;/p&gt;
+&lt;p&gt;Agilebase &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;workflows&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chasers&lt;/a&gt; that send emails use an @notifications.agilebase.co.uk email address by default.&lt;/p&gt;
 &lt;p&gt;You may wish to instead use email addresses from your own domain name, especially if the system sends emails to people outside your organisation, like customers or suppliers.&lt;/p&gt;
 &lt;p&gt;To allow this, you will need to use your own SMTP server, or a third party trusted system authenticated against your domain name. Using a service like &lt;a href=&#34;http://www.authsmtp.com/&#34;&gt;AuthSmtp&lt;/a&gt;, &lt;a href=&#34;http://www.sendgrid.com/&#34;&gt;SendGrid&lt;/a&gt; or &lt;a href=&#34;https://aws.amazon.com/ses/&#34;&gt;Amazon Simple Email Service&lt;/a&gt; is probably the most straightforward way of setting this up - their instructions will tell you how to set up facilities such as Sender Policy Framework and DomainKeys in order to increase email deliverability.&lt;/p&gt;
-&lt;p&gt;Once you have the SMTP server address, username and password from your service, enter them into the details in this section in agileBase.&lt;/p&gt;
+&lt;p&gt;Once you have the SMTP server address, username and password from your service, enter them into the details in this section in Agilebase.&lt;/p&gt;
 &lt;h3 id=&#34;slack-webhook-url&#34;&gt;Slack Webhook URL&lt;/h3&gt;
 &lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/slack-integration/&#34;&gt;Integrations - Slack&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;send-chart-subscriptions-from&#34;&gt;Send chart subscriptions from&lt;/h3&gt;
@@ -61,7 +61,7 @@
         
         
         &lt;p&gt;Some of these are just useful ideas, some are tips and tricks and some are larger-scale build patterns for more complex tasks commonly undertaken by customers.&lt;/p&gt;
-&lt;p&gt;These tips will link to various other places in the documentation, but it will still be useful to have some experience of building in agileBase before reading.&lt;/p&gt;
+&lt;p&gt;These tips will link to various other places in the documentation, but it will still be useful to have some experience of building in Agilebase before reading.&lt;/p&gt;
 &lt;h2 id=&#34;settings-table-idea&#34;&gt;Settings table idea&lt;/h2&gt;
 &lt;p&gt;To use a single store of a common setting throughout the application. When a setting is changed it will then automatically take effect throught the whole application.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -160,7 +160,7 @@
       <description>
         
         
-        &lt;p&gt;agileBase automatically takes some measures behind the scenes to maintain high performance as data volumes grow.&lt;/p&gt;
+        &lt;p&gt;Agilebase automatically takes some measures behind the scenes to maintain high performance as data volumes grow.&lt;/p&gt;
 &lt;p&gt;There are other mechanisms that can be manually enabled such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/options/behaviour-options/#cache-view-rows&#34;&gt;caching&lt;/a&gt; and increasing the memory assigned to particular views.&lt;/p&gt;
 &lt;p&gt;Finally, we will be happy to to do all we can to speed up any parts of your application that require it if you &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt;. Often, a solution as simple as manually adding an index to a particular field can speed up requests by multiple orders of magnitude.&lt;/p&gt;
 &lt;p&gt;For really big data projects, there&amp;rsquo;s also the option of utilising PostgreSQL-compatible database services designed for such tasks, like &lt;a href=&#34;https://www.citusdata.com/&#34;&gt;Citus Data&lt;/a&gt;, which we will be happy to provision.&lt;/p&gt;

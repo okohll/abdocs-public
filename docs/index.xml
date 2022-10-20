@@ -28,7 +28,7 @@
 &lt;p&gt;Low code / no code has matured into a viable alternative. A few platforms have proved they are fast, robust and powerful.&lt;/p&gt;
 &lt;p&gt;Business teams can build solutions that actually work, that are the right size for them, that reflect their language and that can be adapted in real time as the business evolves. Even on really small budgets.&lt;/p&gt;
 &lt;p&gt;Low code / no code platforms come in many flavours and have been designed to tackle different problems.&lt;/p&gt;
-&lt;p&gt;agileBase has been specifically designed to build back offices for ambitious businesses.&lt;/p&gt;
+&lt;p&gt;Agilebase has been specifically designed to build back offices for ambitious businesses.&lt;/p&gt;
 &lt;p&gt;You can start small with a quick prototype, build this over the years into a full blown &lt;a href=&#34;https://en.wikipedia.org/wiki/Enterprise_resource_planning&#34;&gt;ERP&lt;/a&gt; system and even use it to act as the hub for all your software via its built in &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API Creator&lt;/a&gt;.&lt;/p&gt;
 
       </description>
@@ -52,8 +52,8 @@
 &lt;p&gt;Agilebase will help you every step of the way. And you can stop at the level that is useful to you.&lt;/p&gt;
 &lt;p&gt;Agilebase enables citizen developers to pass through five stages on their way to becoming software architects:&lt;/p&gt;
 &lt;h2 id=&#34;citizen-developer-level-1&#34;&gt;Citizen Developer Level 1&lt;/h2&gt;
-&lt;p&gt;This is the start of the agileBase journey. At this level you can create your own applications, using no coding.&lt;/p&gt;
-&lt;p&gt;An agileBase citizen developer can create &amp;lsquo;personal copies&amp;rsquo; of any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; and edit those copies&lt;/p&gt;
+&lt;p&gt;This is the start of the Agilebase journey. At this level you can create your own applications, using no coding.&lt;/p&gt;
+&lt;p&gt;An Agilebase citizen developer can create &amp;lsquo;personal copies&amp;rsquo; of any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; and edit those copies&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;remove or add fields, excepting any that are marked &amp;lsquo;confidential&amp;rsquo; (only higher level developers can access those fields)&lt;/li&gt;
 &lt;li&gt;rearrange fields&lt;/li&gt;
@@ -100,7 +100,7 @@
 &lt;li&gt;edit the basic properties of any regular view. However, workflow, API and some other types of system view will be read-only&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;junior-software-architect&#34;&gt;Junior Software Architect&lt;/h2&gt;
-&lt;p&gt;A junior software architect can use practically all of the application building functionality of agileBase. For example&lt;/p&gt;
+&lt;p&gt;A junior software architect can use practically all of the application building functionality of Agilebase. For example&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; (including chasers, document generation)&lt;/li&gt;
 &lt;li&gt;Set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt;&lt;/li&gt;
@@ -133,7 +133,7 @@
       <description>
         
         
-        &lt;p&gt;As a no-code platform, agileBase allows you to easily construct (and later de-construct or &amp;lsquo;refactor&amp;rsquo;) and change your software.&lt;/p&gt;
+        &lt;p&gt;As a no-code platform, Agilebase allows you to easily construct (and later de-construct or &amp;lsquo;refactor&amp;rsquo;) and change your software.&lt;/p&gt;
 &lt;h2 id=&#34;toggling-development-mode-on-and-off&#34;&gt;Toggling development mode on and off&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/toggle-build-mode.png&#34; alt=&#34;Toggle development mode&#34;&gt;
 To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &amp;lsquo;development&amp;rsquo; mode. You can do this wherever you are in the system and you will switch to building or developing the item you&amp;rsquo;re looking at. The three main areas this covers are:&lt;/p&gt;
@@ -181,8 +181,8 @@ To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &am
         
         
         &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Back-office_software&#34;&gt;Back-office software&lt;/a&gt; solutions evolved with the emergence of cloud-based software as a service (SaaS) as a way of distinguishing them from front-office software, (which typically refers to software used for processes related to things like marketing, sales, interaction tracking, project management and other customer-facing activities).&lt;/p&gt;
-&lt;p&gt;Whilst agileBase is widely used as front-office platform our unique strength is in our ability to support not only this front end but also the back-office.&lt;/p&gt;
-&lt;p&gt;Because of the power and flexibility of agileBase there are a really wide range of business processes that can be successfully managed with the platform across all sectors, manufacturing and service related items.&lt;/p&gt;
+&lt;p&gt;Whilst Agilebase is widely used as front-office platform our unique strength is in our ability to support not only this front end but also the back-office.&lt;/p&gt;
+&lt;p&gt;Because of the power and flexibility of Agilebase there are a really wide range of business processes that can be successfully managed with the platform across all sectors, manufacturing and service related items.&lt;/p&gt;
 &lt;p&gt;For example:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Supplier Approval&lt;/li&gt;
@@ -235,7 +235,7 @@ To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &am
 &lt;p&gt;If you don’t use a smartphone at work, that’s no problem. You can use an app on your computer - in fact many people find that more convenient than using a phone. Please ask your system administrator how to set things up and they’ll give you a hand.&lt;/p&gt;
 &lt;h2 id=&#34;when-should-i-set-this-up&#34;&gt;When should I set this up?&lt;/h2&gt;
 &lt;p&gt;Now!&lt;/p&gt;
-&lt;p&gt;It’s never a bad time to upgrade your data security and privacy protection measures. If you’ve not already set up 2FA, agileBase will prompt you to do so once a week.&lt;/p&gt;
+&lt;p&gt;It’s never a bad time to upgrade your data security and privacy protection measures. If you’ve not already set up 2FA, Agilebase will prompt you to do so once a week.&lt;/p&gt;
 &lt;p&gt;However, you can do so at any time: click your user icon at the top right of the screen, select &amp;rsquo;edit profile&amp;rsquo; and tick &amp;rsquo;enable two factor authentication&#39;.&lt;/p&gt;
 
       </description>
@@ -250,9 +250,9 @@ To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &am
       <description>
         
         
-        &lt;p&gt;agileBase is primarily a platform for building back office systems for employees (or members of the organisation) to use.&lt;/p&gt;
+        &lt;p&gt;Agilebase is primarily a platform for building back office systems for employees (or members of the organisation) to use.&lt;/p&gt;
 &lt;p&gt;However, it&amp;rsquo;s common to allow access to people outside the organisation to perform limited data entry tasks. For example, you may wish your suppliers to be able to upload certificates of conformances to items they sell you, or you may have a large workforce of contractors who you require to fill in timesheets.&lt;/p&gt;
-&lt;p&gt;It may be that you don&amp;rsquo;t wish to supply each person a full agileBase license because&lt;/p&gt;
+&lt;p&gt;It may be that you don&amp;rsquo;t wish to supply each person a full Agilebase license because&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;there will be a large number of them, so there&amp;rsquo;ll be management and cost issues&lt;/li&gt;
 &lt;li&gt;you wish to restrict what they can do in the system further than can be accomplished with roles and privileges&lt;/li&gt;
@@ -312,12 +312,12 @@ To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &am
         
         
         &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create a Table and associated Views to use it!&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched &amp;ldquo;How to use agileBase&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched &amp;ldquo;How to use Agilebase&amp;rdquo;&lt;/p&gt;
 &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;This stage of the guide will introduce you to the basic activities required to build a simple application. We will start by creating a table with different types of fields in order to store a variety of data. We will then show you how to create and control tiles, views and forms which are the interfaces that your users will use to enter and consume this data.
 Let us start by building a simple task list.&lt;/p&gt;
 &lt;h2 id=&#34;create-a-table-called-tasks&#34;&gt;Create a table called &amp;ldquo;Tasks&amp;rdquo;&lt;/h2&gt;
-&lt;p&gt;Our simple application will need to store information about the tasks our users create. This is done by creating a database table. In agileBase this is achieved by navigating to the developer interface and pressing the “add new table button”.
+&lt;p&gt;Our simple application will need to store information about the tasks our users create. This is done by creating a database table. In Agilebase this is achieved by navigating to the developer interface and pressing the “add new table button”.
 [guide 1 - video 1]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/-kY2RRzKqxQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -334,7 +334,7 @@ For more detail visit - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;make-the-form-easier-to-understand-break-it-into-sections&#34;&gt;Make the form easier to understand. Break it into sections&lt;/h2&gt;
-&lt;p&gt;Now we have the data structure required to capture a simple task we can think about how it would be used. The user interface within agileBase is controlled by the list of fields and their options. It is a simple task to reorder fields, just use the drag and drop facility when looking at the list of fields.
+&lt;p&gt;Now we have the data structure required to capture a simple task we can think about how it would be used. The user interface within Agilebase is controlled by the list of fields and their options. It is a simple task to reorder fields, just use the drag and drop facility when looking at the list of fields.
 Use a field of type separator to create sections within the user interface
 [guide 1 - video 3]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -414,7 +414,7 @@ It is straightforward to delete a field from a table. Either clicking the X icon
     </item>
     
     <item>
-      <title>Introduction: Why use agileBase?</title>
+      <title>Introduction: Why use Agilebase?</title>
       <link>https://docs.agilebase.co.uk/introduction/why-use-agilebase/</link>
       <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
       
@@ -422,8 +422,8 @@ It is straightforward to delete a field from a table. Either clicking the X icon
       <description>
         
         
-        &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/platform.jpg&#34; alt=&#34;agileBase banner&#34;&gt;&lt;/p&gt;
-&lt;p&gt;agileBase has been created with some important aims in mind&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/platform.jpg&#34; alt=&#34;Agilebase banner&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Agilebase has been created with some important aims in mind&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;to create software that people find enjoyable to use, which manifests in many ways, most obviously the attractive and colourful user interface, but also because it can match user&amp;rsquo;s requirements exactly&lt;/li&gt;
 &lt;li&gt;to support the full ambitions of business owners. It&amp;rsquo;s simple to get started but the platform has a very high &lt;em&gt;technical ceiling&lt;/em&gt; - there&amp;rsquo;s not much you can&amp;rsquo;t accomplish&lt;/li&gt;
@@ -454,7 +454,7 @@ These backups are also encrypted so that Amazon has no access to the data within
 &lt;p&gt;&lt;a href=&#34;https://www.postgresql.org/docs/current/warm-standby.html&#34;&gt;Continuous archiving &lt;/a&gt; of the database is also enabled, to transfer data to a &amp;lsquo;hot standby&amp;rsquo; server using streaming replication, allowing immediate failover should the primary database fail for any reason.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;agileBase content (uploaded files, custom templates etc.) also have snapshots taken daily, kept for 200 days in a separate EU location.&lt;/p&gt;
+&lt;p&gt;Agilebase content (uploaded files, custom templates etc.) also have snapshots taken daily, kept for 200 days in a separate EU location.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;In addition to these content-only backups, snapshots of the totality of each key server in the infrastructure (including configuration), are run daily using the Linode backup service &lt;a href=&#34;https://www.linode.com/products/backups/&#34;&gt;https://www.linode.com/products/backups/&lt;/a&gt;&lt;/p&gt;
@@ -462,12 +462,12 @@ These backups are also encrypted so that Amazon has no access to the data within
 &lt;/ol&gt;
 &lt;p&gt;The backup and recovery process is monitored and tested regularly.&lt;/p&gt;
 &lt;h3 id=&#34;retrieval&#34;&gt;Retrieval&lt;/h3&gt;
-&lt;p&gt;There may be a charge for retrieval of customer data from backup, to cover our costs. The data will be restored to a separate instance of agileBase available at a different URL, which a customer can look at to compare data. If necessary, data can then be extracted from one and loaded into the other.&lt;/p&gt;
+&lt;p&gt;There may be a charge for retrieval of customer data from backup, to cover our costs. The data will be restored to a separate instance of Agilebase available at a different URL, which a customer can look at to compare data. If necessary, data can then be extracted from one and loaded into the other.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Please be aware that depending on needs, this may be a complex process due to the fact that other data in the live system may have changed since the backup. A simple overwrite of existing data may not be the best option.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;privacy-policy&#34;&gt;Privacy policy&lt;/h2&gt;
-&lt;p&gt;agileBase Ltd is funded directly by the customers we provide services to, we do not have any other business model, particularly we do not resell any data.&lt;/p&gt;
+&lt;p&gt;Agilebase Ltd is funded directly by the customers we provide services to, we do not have any other business model, particularly we do not resell any data.&lt;/p&gt;
 &lt;p&gt;Our privacy policy is available here: &lt;a href=&#34;https://agilechilli.com/help-centre/agilebase/privacy-policy/&#34;&gt;https://agilechilli.com/help-centre/agilebase/privacy-policy/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;gdpr-policy&#34;&gt;GDPR Policy&lt;/h2&gt;
 &lt;p&gt;An overview of our GDPR policy is available &lt;a href=&#34;https://docs.agilebase.co.uk/gdpr-overview.pdf&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -488,8 +488,8 @@ These backups are also encrypted so that Amazon has no access to the data within
         
         
         &lt;p&gt;Before diving into the details of building applications, starting with tables, let&amp;rsquo;s take a step back and learn some background information about databases, including what a table is. If you&amp;rsquo;re familiar with these concepts, feel free to skip this section.&lt;/p&gt;
-&lt;p&gt;When building back office software with agileBase, a large amount of what we&amp;rsquo;ll be doing is building database structures, to store user-entered data. agileBase takes care of creating the user interface to allow users to use these structures automatically, e.g. to search for data, add and edit it.&lt;/p&gt;
-&lt;p&gt;You will find many articles explaining relational databases if you look for them on the internet. Most will introduce SQL, the language used to work with databases. It&amp;rsquo;s not necessary to learn that as agileBase generates it automatically behind the scenes, but the higher level concepts are useful to grasp.&lt;/p&gt;
+&lt;p&gt;When building back office software with Agilebase, a large amount of what we&amp;rsquo;ll be doing is building database structures, to store user-entered data. Agilebase takes care of creating the user interface to allow users to use these structures automatically, e.g. to search for data, add and edit it.&lt;/p&gt;
+&lt;p&gt;You will find many articles explaining relational databases if you look for them on the internet. Most will introduce SQL, the language used to work with databases. It&amp;rsquo;s not necessary to learn that as Agilebase generates it automatically behind the scenes, but the higher level concepts are useful to grasp.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a YouTube video with a good introduction.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -538,7 +538,7 @@ These backups are also encrypted so that Amazon has no access to the data within
 &lt;p&gt;The video above also explains this type of relation if you&amp;rsquo;ve not already watched it.&lt;/p&gt;
 &lt;h3 id=&#34;when-to-use-the-many-to-many&#34;&gt;When to use the many to many&lt;/h3&gt;
 &lt;p&gt;You may have a niggling thought at the back of your mind: how do I know whether it&amp;rsquo;s best to use a simple one to many relation, or a more complex many to many setup? Surely I could use many to many for contacts and suppliers too? A single contact may be associated with more than one supplier, for example if they&amp;rsquo;re a contractor, or if they move jobs.&lt;/p&gt;
-&lt;p&gt;The answer to that just comes down to your judgement. Although agileBase creates a friendly, easy to use interface on top of the data structure, the many to many does add complexity. So it&amp;rsquo;s a bit of a trade-off. However the advantage of a no-code system like agileBase is that you can rapidly try out ideas and see which one works best. As time goes on you&amp;rsquo;ll get a sense of what works best in which situation.&lt;/p&gt;
+&lt;p&gt;The answer to that just comes down to your judgement. Although Agilebase creates a friendly, easy to use interface on top of the data structure, the many to many does add complexity. So it&amp;rsquo;s a bit of a trade-off. However the advantage of a no-code system like Agilebase is that you can rapidly try out ideas and see which one works best. As time goes on you&amp;rsquo;ll get a sense of what works best in which situation.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;If you do want to learn more about this topic, it&amp;rsquo;s called &amp;lsquo;database normalisation&amp;rsquo; and there&amp;rsquo;s plenty written about it!&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -626,10 +626,10 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;In a multi-tenanting account, it&amp;rsquo;s possible to create new tenants, with users, by API, as opposed to the manual actions of an administrator. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/&#34;&gt;Creating user accounts with the API&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;role-properties&#34;&gt;Role properties&lt;/h2&gt;
 &lt;h3 id=&#34;brand-name-and-domain&#34;&gt;Brand name and domain&lt;/h3&gt;
-&lt;p&gt;These two options allow system emails (password reset notification etc.) to come from a domain name of your choice and be branded with a particular &amp;lsquo;app&amp;rsquo; name. This can be useful if you&amp;rsquo;re creating a public-facing app using agileBase, rather than applications for your own staff.&lt;/p&gt;
+&lt;p&gt;These two options allow system emails (password reset notification etc.) to come from a domain name of your choice and be branded with a particular &amp;lsquo;app&amp;rsquo; name. This can be useful if you&amp;rsquo;re creating a public-facing app using Agilebase, rather than applications for your own staff.&lt;/p&gt;
 &lt;p&gt;To allow the domain name to work, you&amp;rsquo;ll need to contact us to set it up - our server will need to be authorised to send email from your domain.&lt;/p&gt;
 &lt;h3 id=&#34;custom-menus&#34;&gt;Custom menus&lt;/h3&gt;
-&lt;p&gt;It’s possible to add custom menu items into the user menu (the one at the top right that appears if you click your user icon). That means if your company has specific help pages or process documentation relevant to your organisation or application, you can make them available from within agileBase.&lt;/p&gt;
+&lt;p&gt;It’s possible to add custom menu items into the user menu (the one at the top right that appears if you click your user icon). That means if your company has specific help pages or process documentation relevant to your organisation or application, you can make them available from within Agilebase.&lt;/p&gt;
 &lt;p&gt;Each custom menu has a title, description and URL, which will be opened in a new tab when the menu item’s chosen.&lt;/p&gt;
 &lt;p&gt;Simply add these into the &lt;strong&gt;menu title&lt;/strong&gt;, &lt;strong&gt;menu description&lt;/strong&gt; and &lt;strong&gt;menu URL&lt;/strong&gt; properties of a role. Assigning that role to a user will add the menu item to their profile menu.&lt;/p&gt;
 &lt;p&gt;To add multiple menu items to a user or users, assign multiple roles, each with one menu item defined.&lt;/p&gt;
@@ -646,14 +646,14 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;In agileBase, there are three privilege levels, as well as a special ‘administrator’ privilege.&lt;/p&gt;
+        &lt;p&gt;In Agilebase, there are three privilege levels, as well as a special ‘administrator’ privilege.&lt;/p&gt;
 &lt;p&gt;The three privileges take effect per table, i.e. a user/role can have certain privileges on one table and different ones on another.&lt;/p&gt;
 &lt;p&gt;Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together, plus any they may have individually assigned.&lt;/p&gt;
 &lt;h2 id=&#34;privilege-levels&#34;&gt;Privilege levels&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;View&lt;/strong&gt;: ability to see data in a table&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Edit&lt;/strong&gt;: ability to create, edit and delete data in a table (create and delete subject to various table options)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Manage&lt;/strong&gt;: the privilege that allows you to use the &amp;lsquo;application building&amp;rsquo; features of agileBase, relating to a table. Namely the ability to
+&lt;li&gt;&lt;strong&gt;Manage&lt;/strong&gt;: the privilege that allows you to use the &amp;lsquo;application building&amp;rsquo; features of Agilebase, relating to a table. Namely the ability to
 &lt;ul&gt;
 &lt;li&gt;modify the structure, i.e. create/delete fields, tabs, change options etc.&lt;/li&gt;
 &lt;li&gt;create, edit and delete views from the table, including creating charts, maps and word clouds.&lt;/li&gt;
@@ -709,7 +709,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;Tick the role marked &lt;strong&gt;Grants administrative privileges&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;related-to-privileges&#34;&gt;Related to privileges&lt;/h2&gt;
-&lt;p&gt;Database systems often have the concept of row level privileges. The equivalent in agileBase is the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; system.&lt;/p&gt;
+&lt;p&gt;Database systems often have the concept of row level privileges. The equivalent in Agilebase is the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; system.&lt;/p&gt;
 &lt;p&gt;Individual fields in a table can be locked or hidden, see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;field options&lt;/a&gt;&lt;/p&gt;
 
       </description>
@@ -745,7 +745,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an agileBase application.&lt;/p&gt;
+        &lt;p&gt;A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an Agilebase application.&lt;/p&gt;
 &lt;h2 id=&#34;adding-a-table&#34;&gt;Adding a table&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;On the homepage, click the &amp;rsquo;toggle&amp;rsquo; button in the top-right of the screen to enable dev mode (if it is not enabled already)&lt;/li&gt;
@@ -792,7 +792,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;Exporting to spreadsheet is only one way of getting data out of agileBase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt; can be used.&lt;/p&gt;
+        &lt;p&gt;Exporting to spreadsheet is only one way of getting data out of Agilebase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt; can be used.&lt;/p&gt;
 &lt;h2 id=&#34;allowing-exports&#34;&gt;Allowing exports&lt;/h2&gt;
 &lt;p&gt;In order for a user to be allowed to export to spreadsheet, a number of critieria have to be matched, to suitably protect your organisation&amp;rsquo;s data.&lt;/p&gt;
 &lt;ol&gt;
@@ -843,25 +843,25 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;Using agileBase you can start small (perhaps in one team or department) and build apps iteratively to encompass a constantly widening range of business requirements. Many back office and CRM systems don&amp;rsquo;t typically store high volumes of data, but as systems grow its not uncommon to add transactional apps such as customer order processing for example, which can experience high throughput.&lt;/p&gt;
-&lt;p&gt;agileBase supports all three stages of an organisation&amp;rsquo;s lifecycle - startup, scaling and growth. As a startup, development speed and flexibility are key, during scaling efficiency becomes important and as a large organisation, control, robustness and trust come to the fore. We&amp;rsquo;ll explain how each of these is covered.&lt;/p&gt;
+        &lt;p&gt;Using Agilebase you can start small (perhaps in one team or department) and build apps iteratively to encompass a constantly widening range of business requirements. Many back office and CRM systems don&amp;rsquo;t typically store high volumes of data, but as systems grow its not uncommon to add transactional apps such as customer order processing for example, which can experience high throughput.&lt;/p&gt;
+&lt;p&gt;Agilebase supports all three stages of an organisation&amp;rsquo;s lifecycle - startup, scaling and growth. As a startup, development speed and flexibility are key, during scaling efficiency becomes important and as a large organisation, control, robustness and trust come to the fore. We&amp;rsquo;ll explain how each of these is covered.&lt;/p&gt;
 &lt;h2 id=&#34;database---postgresql&#34;&gt;Database - PostgreSQL&lt;/h2&gt;
-&lt;p&gt;Firstly, at a technical level, agileBase is well covered to support large volumes of data and numbers of transactions per second (TPS) whilst remaining highly responsive for users.&lt;/p&gt;
+&lt;p&gt;Firstly, at a technical level, Agilebase is well covered to support large volumes of data and numbers of transactions per second (TPS) whilst remaining highly responsive for users.&lt;/p&gt;
 &lt;p&gt;The underlying database used to store data is &lt;a href=&#34;https://www.postgresql.org&#34;&gt;PostgreSQL&lt;/a&gt;, &amp;ldquo;the world&amp;rsquo;s most advanced open source database&amp;rdquo;. It has a strong reputation for reliability, feature robustness, and performance.&lt;/p&gt;
 &lt;p&gt;Our monitoring systems ensure reliable performance under load. Customers routinely build apps which store and process tens of millions of data rows. Should there be a need to expand to larger amounts, there&amp;rsquo;s always the option to upgrade a customer database to larger servers or distributed &amp;lsquo;hyperscale&amp;rsquo; systems, such as &lt;a href=&#34;https://www.citusdata.com/&#34;&gt;Citus Data&lt;/a&gt;, which works with PostgreSQL.&lt;/p&gt;
 &lt;h2 id=&#34;engine---api-creator&#34;&gt;Engine - API Creator&lt;/h2&gt;
 &lt;p&gt;Typically, higher data processing volumes occur not when users are entering data, but when third party systems are connected via the API, which can feed in or extract data from high-volume sources such as websites or financial systems. The &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API Creator&lt;/a&gt; allows this to be done easily.&lt;/p&gt;
 &lt;h2 id=&#34;adoption&#34;&gt;Adoption&lt;/h2&gt;
-&lt;p&gt;As agileBase use migrates from one group of people to another throughout an organisation, a project manager or architect&amp;rsquo;s concern moves from the &amp;lsquo;is it technically possible?&amp;rsquo; question, to &amp;lsquo;is it going to be successful?&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;Over and over again we find that successful software implementations occur when users are happy. Frequently, agileBase users evangelise the system to their colleagues and help grow the internal user base. There are a couple of reasons for this. Firstly, the user interface is friendly - not only easy to use but attractive and colourful. It sounds simple but it makes a world of difference.&lt;/p&gt;
+&lt;p&gt;As Agilebase use migrates from one group of people to another throughout an organisation, a project manager or architect&amp;rsquo;s concern moves from the &amp;lsquo;is it technically possible?&amp;rsquo; question, to &amp;lsquo;is it going to be successful?&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;Over and over again we find that successful software implementations occur when users are happy. Frequently, Agilebase users evangelise the system to their colleagues and help grow the internal user base. There are a couple of reasons for this. Firstly, the user interface is friendly - not only easy to use but attractive and colourful. It sounds simple but it makes a world of difference.&lt;/p&gt;
 &lt;p&gt;The user interface is also consistent from app to app - whatever the function of the app, the same look &amp;amp; feel &amp;amp; layouts are used, reducing training requirements and letting users support each other.&lt;/p&gt;
-&lt;p&gt;Secondly, as agileBase is a low code / no code platform, users can be involved from the very beginning. If a project is managed well, their input will be quickly actioned in a working prototype - people then feel they have a stake in the final application, resulting in engagement and buy-in.&lt;/p&gt;
-&lt;p&gt;To aid adoption by new users, agileBase allows an administrator to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/adding-help/&#34;&gt;enter help content&lt;/a&gt; and links into many different places of the user interface, down to the individual field level. We highly recommend some time is spent doing this as applications are built.&lt;/p&gt;
+&lt;p&gt;Secondly, as Agilebase is a low code / no code platform, users can be involved from the very beginning. If a project is managed well, their input will be quickly actioned in a working prototype - people then feel they have a stake in the final application, resulting in engagement and buy-in.&lt;/p&gt;
+&lt;p&gt;To aid adoption by new users, Agilebase allows an administrator to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/adding-help/&#34;&gt;enter help content&lt;/a&gt; and links into many different places of the user interface, down to the individual field level. We highly recommend some time is spent doing this as applications are built.&lt;/p&gt;
 &lt;h2 id=&#34;partners&#34;&gt;Partners&lt;/h2&gt;
-&lt;p&gt;We have a growing network of partners, with lots of experience and skills in consultancy, project management and development using agileBase. Larger projects and companies may well want to take advantage of this range of abilities, e.g. to run planning, development workshops and training events.&lt;/p&gt;
+&lt;p&gt;We have a growing network of partners, with lots of experience and skills in consultancy, project management and development using Agilebase. Larger projects and companies may well want to take advantage of this range of abilities, e.g. to run planning, development workshops and training events.&lt;/p&gt;
 &lt;h2 id=&#34;security-privacy-and-control&#34;&gt;Security, privacy and control&lt;/h2&gt;
 &lt;p&gt;As systems grow, it&amp;rsquo;s important that a level of control is exercised over who accesses which data, how and when, particularly when sensitive personal information is stored, or core data central to the running of a company.&lt;/p&gt;
-&lt;p&gt;In a low code / low code environment such as agileBase&amp;rsquo;s, an additional factor is controlling the evolution of the system. Too centralised and innovation can slow, too relaxed and it can run out of control.&lt;/p&gt;
+&lt;p&gt;In a low code / low code environment such as Agilebase&amp;rsquo;s, an additional factor is controlling the evolution of the system. Too centralised and innovation can slow, too relaxed and it can run out of control.&lt;/p&gt;
 &lt;p&gt;All of these factors are taken into consideration when we design the administrative features that help decision makers set the rules and monitoring for application development. The &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/&#34;&gt;Security and Compliance&lt;/a&gt; section of the documentation covers many of these. This is also an area of ongoing research and development - our &lt;a href=&#34;https://blog.agilebase.co.uk/2019/12/10/agilebase-platform-vision-2020-from-startup-to-scale-up-without-screwing-up/&#34;&gt;roadmap blog post&lt;/a&gt; details some of the current thinking.&lt;/p&gt;
 &lt;h2 id=&#34;cost&#34;&gt;Cost&lt;/h2&gt;
 &lt;p&gt;An easily understandable, fair and transparent pricing policy means that annual costs can be reliably estimated for any future growth scenario, in fact multiple scenarios can be planned - nothing is hidden! See the &lt;a href=&#34;https://todo.com&#34;&gt;costing&lt;/a&gt; section for more details.&lt;/p&gt;
@@ -879,7 +879,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
         
         
         &lt;h2 id=&#34;capitalise-field-name&#34;&gt;Capitalise field name&lt;/h2&gt;
-&lt;p&gt;By default agileBase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. &amp;lsquo;pH&amp;rsquo; or &amp;lsquo;Length (m)&amp;rsquo;, which would otherwise show as &amp;lsquo;PH&amp;rsquo; and &amp;lsquo;Length (M)&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;By default Agilebase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. &amp;lsquo;pH&amp;rsquo; or &amp;lsquo;Length (m)&amp;rsquo;, which would otherwise show as &amp;lsquo;PH&amp;rsquo; and &amp;lsquo;Length (M)&amp;rsquo;.&lt;/p&gt;
 &lt;h2 id=&#34;icon&#34;&gt;Icon&lt;/h2&gt;
 &lt;p&gt;Rather than displaying a field name, show an icon, chosen from &lt;a href=&#34;https://fontawesome.com/icons&#34;&gt;https://fontawesome.com/icons&lt;/a&gt;. For example, to show a phone icon for a phone number field, you could enter &lt;code&gt;phone&lt;/code&gt;, for an email field &lt;code&gt;envelope&lt;/code&gt; or a twitter handle &lt;code&gt;twitter&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;show-if-record-in-view&#34;&gt;Show if record in view&lt;/h2&gt;
@@ -940,7 +940,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
         
         &lt;p&gt;Log data reporting provides a rich view of system usage.&lt;/p&gt;
 &lt;h2 id=&#34;enhanced-audit-trail&#34;&gt;Enhanced audit trail&lt;/h2&gt;
-&lt;p&gt;For organisations who have activated the enhanced audit trail, all logs are stored in user-accessible tables which are just like any other tables in the system, the only difference being the data is read only. This means an administrator can use the full power of the built in agileBase reporting features, to create views, add calculations, charts etc., even export via the API.&lt;/p&gt;
+&lt;p&gt;For organisations who have activated the enhanced audit trail, all logs are stored in user-accessible tables which are just like any other tables in the system, the only difference being the data is read only. This means an administrator can use the full power of the built in Agilebase reporting features, to create views, add calculations, charts etc., even export via the API.&lt;/p&gt;
 &lt;p&gt;So for example, you could analyse how many changes were made per month by each user, count the volume of logins from various locations or see what the most common fields are to search on. All actions listed on the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/&#34;&gt;usage monitoring&lt;/a&gt; page are available to query.&lt;/p&gt;
 &lt;p&gt;Data is also retained for an extended period, see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/#retention-periods&#34;&gt;retention periods&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If interested in activating this feature, please &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;get in touch&lt;/a&gt;. There will be a small recurring charge added to your bill.&lt;/p&gt;
@@ -974,7 +974,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;Details - any filters and row limit applied&lt;/li&gt;
 &lt;li&gt;Rows - the number of records returned to the user or API&lt;/li&gt;
 &lt;li&gt;Processing time - the total server-side processing time in milliseconds needed to retrieve the data, and if for an API, transform it into JSON format&lt;/li&gt;
-&lt;li&gt;Of which Q time &lt;strong&gt;(API calls only)&lt;/strong&gt; - to achieve a fair level of load balancing, agileBase operates a separate API request queue for each customer. If a request arrives and the system is still busy processing a previous request, the new one gets held in a queue. This field shows how much of the total processing time, in ms was spent waiting for previous requests to complete&lt;/li&gt;
+&lt;li&gt;Of which Q time &lt;strong&gt;(API calls only)&lt;/strong&gt; - to achieve a fair level of load balancing, Agilebase operates a separate API request queue for each customer. If a request arrives and the system is still busy processing a previous request, the new one gets held in a queue. This field shows how much of the total processing time, in ms was spent waiting for previous requests to complete&lt;/li&gt;
 &lt;li&gt;Bytes &lt;strong&gt;(API calls only)&lt;/strong&gt; - the number of bytes of JSON data returned via the API&lt;/li&gt;
 &lt;li&gt;Count - if many similar requests or API calls (to a particular view) reach the server in quick succession, they will be amalgamated together into one log line. The count then shows the number of requests the log line refers to, otherwise it will be 1. If more than one, then the &lt;em&gt;rows&lt;/em&gt;, &lt;em&gt;processing time&lt;/em&gt;, &lt;em&gt;of which q time&lt;/em&gt; and &lt;em&gt;bytes&lt;/em&gt; will represent the totals for all requests&lt;/li&gt;
 &lt;/ul&gt;
@@ -1050,7 +1050,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;For each table, agileBase will automatically build a data entry form for users to view, add and edit records with.&lt;/p&gt;
+        &lt;p&gt;For each table, Agilebase will automatically build a data entry form for users to view, add and edit records with.&lt;/p&gt;
 &lt;p&gt;The layout of this form can be controlled by selecting a layout option and adding separators to create blocks i.e. groups of fields which go together. This will create a more pleasant and usable system.&lt;/p&gt;
 &lt;h2 id=&#34;layout&#34;&gt;Layout&lt;/h2&gt;
 &lt;p&gt;The layout option is the main control. There are three options:&lt;/p&gt;
@@ -1092,17 +1092,17 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;It&amp;rsquo;s possible for a developer to create a third party application, for example a phone or tablet app, that communicates with agileBase via the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations&#34;&gt;API&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Now to use the API, you don&amp;rsquo;t need to authenticate as a user, as long as the app has the correct Authorization key(s), it can read and write data to agileBase.&lt;/p&gt;
-&lt;p&gt;However, in some cases the app may need to confirm that someone has a valid agileBase account before allowing them to use the app. This may or may not be necessary depending on the use case, for example depending on whether the app is free to use for anyone, or must be limited to paying customers.&lt;/p&gt;
-&lt;p&gt;To validate a user, the app must redirect them to the agileBase login page, let them log in and confirm that was successful. Therefore, a HTTP client is necessary - this can be a &amp;lsquo;web view component&amp;rsquo; or a programmatic client such as the &lt;a href=&#34;https://hc.apache.org/&#34;&gt;Apache HTTP Client&lt;/a&gt; for &lt;a href=&#34;https://en.wikipedia.org/wiki/Java_%28programming_language%29&#34;&gt;Java&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;It&amp;rsquo;s possible for a developer to create a third party application, for example a phone or tablet app, that communicates with Agilebase via the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations&#34;&gt;API&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now to use the API, you don&amp;rsquo;t need to authenticate as a user, as long as the app has the correct Authorization key(s), it can read and write data to Agilebase.&lt;/p&gt;
+&lt;p&gt;However, in some cases the app may need to confirm that someone has a valid Agilebase account before allowing them to use the app. This may or may not be necessary depending on the use case, for example depending on whether the app is free to use for anyone, or must be limited to paying customers.&lt;/p&gt;
+&lt;p&gt;To validate a user, the app must redirect them to the Agilebase login page, let them log in and confirm that was successful. Therefore, a HTTP client is necessary - this can be a &amp;lsquo;web view component&amp;rsquo; or a programmatic client such as the &lt;a href=&#34;https://hc.apache.org/&#34;&gt;Apache HTTP Client&lt;/a&gt; for &lt;a href=&#34;https://en.wikipedia.org/wiki/Java_%28programming_language%29&#34;&gt;Java&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;In this example, we&amp;rsquo;ll use the &lt;a href=&#34;https://reactjs.org/&#34;&gt;React&lt;/a&gt; &lt;a href=&#34;https://www.npmjs.com/package/react-native-webview&#34;&gt;Native Web View&lt;/a&gt; but the principle is the same for any programming language or library.&lt;/p&gt;
 &lt;h2 id=&#34;general-principle&#34;&gt;General Principle&lt;/h2&gt;
 &lt;p&gt;The application must reproduce the same login process as a human would, using a HTTP client. Importantly, the HTTP client must support cookies, as the login process depends on them, in particular setting a &lt;code&gt;JSESSIONID&lt;/code&gt; cookie.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Make a request to load the page &lt;a href=&#34;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&#34;&gt;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&lt;/a&gt;. This will return the login page and set the cookie value.&lt;/li&gt;
-&lt;li&gt;Submit the login form using the user&amp;rsquo;s username and password. If using a programattic process i.e. making the calls from code rather than using a web view, this means making a form POST to &lt;code&gt;/agileBase/j_security_check&lt;/code&gt; with the parameters &lt;code&gt;j_username&lt;/code&gt; and &lt;code&gt;j_password&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Detect whether the login&amp;rsquo;s successful. If not, the standard agileBase login failure page will be returned&lt;/li&gt;
+&lt;li&gt;Make a request to load the page &lt;a href=&#34;https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details&#34;&gt;https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details&lt;/a&gt;. This will return the login page and set the cookie value.&lt;/li&gt;
+&lt;li&gt;Submit the login form using the user&amp;rsquo;s username and password. If using a programattic process i.e. making the calls from code rather than using a web view, this means making a form POST to &lt;code&gt;/Agilebase/j_security_check&lt;/code&gt; with the parameters &lt;code&gt;j_username&lt;/code&gt; and &lt;code&gt;j_password&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Detect whether the login&amp;rsquo;s successful. If not, the standard Agilebase login failure page will be returned&lt;/li&gt;
 &lt;li&gt;If successful, a HTML page will be returned containing three hidden input fields, &lt;code&gt;username&lt;/code&gt;, &lt;code&gt;forename&lt;/code&gt;, &lt;code&gt;surname&lt;/code&gt; containing relevant details for the logged in user. If being called from a React Native Web View, the page will also post back messages to React using this JavaScript:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if (window.ReactNativeWebView) {
@@ -1176,7 +1176,7 @@ const LoginScreen = (props) =&amp;gt; {
             &amp;lt;StatusBar backgroundColor={Colors.black} barStyle={&amp;#39;dark-content&amp;#39;}/&amp;gt;
             {(netInfo?.isInternetReachable &amp;amp;&amp;amp; !user_data?.surname) ?
                 &amp;lt;WebView
-                    source={{uri: &amp;#39;https://appserver.gtportalbase.com/agileBase/AppController.servlet?return=user_details&amp;#39;}}
+                    source={{uri: &amp;#39;https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details&amp;#39;}}
                     onMessage={onResponseFromWebView}
                     textZoom={100}
                     sharedCookiesEnabled={true}
@@ -1203,7 +1203,7 @@ export default LoginScreen;
       <description>
         
         
-        &lt;p&gt;A large variety of applications can be built using the agileBase platform. Customers can start small (perhaps in one team or department, or a new startup business) and build apps iteratively to encompass a constantly widening range of business requirements.&lt;/p&gt;
+        &lt;p&gt;A large variety of applications can be built using the Agilebase platform. Customers can start small (perhaps in one team or department, or a new startup business) and build apps iteratively to encompass a constantly widening range of business requirements.&lt;/p&gt;
 &lt;p&gt;Our costing structure has been developed to ensure fairness and affordability however far along an organisation is in their growth.&lt;/p&gt;
 &lt;p&gt;Costing is controlled by five factors&lt;/p&gt;
 &lt;ul&gt;
@@ -1227,7 +1227,7 @@ export default LoginScreen;
       <description>
         
         
-        &lt;p&gt;In agileBase, a view &amp;lsquo;belongs to&amp;rsquo; a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt;. We&amp;rsquo;ll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we&amp;rsquo;ll assume we pick a contacts table.&lt;/p&gt;
+        &lt;p&gt;In Agilebase, a view &amp;lsquo;belongs to&amp;rsquo; a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt;. We&amp;rsquo;ll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we&amp;rsquo;ll assume we pick a contacts table.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ll also assume we already have some tables and some &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;to-create-a-view&#34;&gt;To create a view&lt;/h2&gt;
 &lt;ol&gt;
@@ -1339,12 +1339,12 @@ export default LoginScreen;
 &lt;p&gt;&lt;code&gt;1) not billed, 2) awaiting payment, 3) paid|finance&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;will mean that anyone will be able to set the field to &lt;code&gt;1) not billed&lt;/code&gt; or &lt;code&gt;2) awaiting payment&lt;/code&gt; but only members of the finance role will be able to see and set the &lt;code&gt;3) paid&lt;/code&gt; option (once it has been set, it will be visible to everyone).&lt;/p&gt;
 &lt;h4 id=&#34;lists-of-users&#34;&gt;Lists of users&lt;/h4&gt;
-&lt;p&gt;Also for dropdown lists and tags fields, agileBase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select &lt;code&gt;users&lt;/code&gt; or &lt;code&gt;users and roles&lt;/code&gt; from the &amp;lsquo;fill with&amp;rsquo; selector just below the value(s) input. The standard user ID format throughout the system is used, &amp;lsquo;Forename Surname (username)&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;Also for dropdown lists and tags fields, Agilebase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select &lt;code&gt;users&lt;/code&gt; or &lt;code&gt;users and roles&lt;/code&gt; from the &amp;lsquo;fill with&amp;rsquo; selector just below the value(s) input. The standard user ID format throughout the system is used, &amp;lsquo;Forename Surname (username)&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;Only users/roles which have privileges to view the data in this particular table will be shown in the list. That can keep things manageable if a system has hundreds or more users.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;An example use would be assigning an account manager to a customer, selecting from a list of staff members (who are users).&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there&amp;rsquo;s a status change or something is overdue for example. agileBase can look up the user&amp;rsquo;s email address to accomplish this, See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email workflows&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there&amp;rsquo;s a status change or something is overdue for example. Agilebase can look up the user&amp;rsquo;s email address to accomplish this, See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email workflows&lt;/a&gt; for details.&lt;/p&gt;
 &lt;p&gt;When using &amp;lsquo;fill with users&amp;rsquo;, the list of users to appear in the dropdown can further be narrowed down by role if required. To do that, enter the text&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;_users|role1,role2,role3&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;i.e. &lt;code&gt;_users&lt;/code&gt; followed by a vertical bar and then a comma separated list of role names. Only users which appear in one or more of the named roles will appear.&lt;/p&gt;
@@ -1364,7 +1364,7 @@ export default LoginScreen;
 &lt;p&gt;This option can be selected for multiple fields in a table. In that case, the first field will be the main title, others will appear as subtitles.&lt;/p&gt;
 &lt;h3 id=&#34;preventing-duplicates&#34;&gt;Preventing duplicates&lt;/h3&gt;
 &lt;p&gt;Enabling the &amp;lsquo;use as record title&amp;rsquo; option also has the effect of enabling duplicate detection. The system will detect when a value is entered that is close to an existing value in the system. Any &amp;lsquo;close&amp;rsquo; values that are found are displayed as links to the relevant records.&lt;/p&gt;
-&lt;p&gt;This can be useful when e.g. entering company names. Although a field can be marked &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#unique&#34;&gt;unique&lt;/a&gt; to prevent exact duplicates, that won&amp;rsquo;t pick up near matches, which this duplicate detection will. For example, &amp;lsquo;The Universoty Of Bristol&amp;rsquo; and &amp;lsquo;University Of Bristol (UOB)&amp;rsquo; will be detected as close matches, or &amp;lsquo;agileBase&amp;rsquo; and &amp;lsquo;agileBase Ltd&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;This can be useful when e.g. entering company names. Although a field can be marked &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#unique&#34;&gt;unique&lt;/a&gt; to prevent exact duplicates, that won&amp;rsquo;t pick up near matches, which this duplicate detection will. For example, &amp;lsquo;The Universoty Of Bristol&amp;rsquo; and &amp;lsquo;University Of Bristol (UOB)&amp;rsquo; will be detected as close matches, or &amp;lsquo;Agilebase&amp;rsquo; and &amp;lsquo;Agilebase Ltd&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;The system uses &lt;a href=&#34;https://www.postgresql.org/docs/current/pgtrgm.html&#34;&gt;trigram matching&lt;/a&gt; to detect similar values.&lt;/p&gt;
 
       </description>
@@ -1379,7 +1379,7 @@ export default LoginScreen;
       <description>
         
         
-        &lt;p&gt;Relations between tables are the &amp;lsquo;glue&amp;rsquo; that holds together an application built using agileBase. If you&amp;rsquo;d like to learn more about this fundamental concept, please check out the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; page.&lt;/p&gt;
+        &lt;p&gt;Relations between tables are the &amp;lsquo;glue&amp;rsquo; that holds together an application built using Agilebase. If you&amp;rsquo;d like to learn more about this fundamental concept, please check out the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; page.&lt;/p&gt;
 &lt;p&gt;Some of the options for a relation field determine the nature of the links between tables, which can have a great effect on how an app works, so it&amp;rsquo;s very useful to know about them.&lt;/p&gt;
 &lt;h2 id=&#34;one-to-one-only&#34;&gt;One to one only&lt;/h2&gt;
 &lt;p&gt;By default, a relation is a &amp;lsquo;many to one&amp;rsquo;. For example if a relation field in a contacts table links to an organisation, that organisation can have many contacts linked. If an ingredient links to a recipe, that recipe can have many ingredients. One customer can have many orders - examples are numerous.&lt;/p&gt;
@@ -1521,7 +1521,7 @@ export default LoginScreen;
         
         &lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/&#34;&gt;Tabs&lt;/a&gt; allow navigation from a parent record to a child, e.g. an organisation to a contact, order to order line, recipe to ingredient etc.&lt;/p&gt;
 &lt;p&gt;Of course, that child record may itself have subsidiary records of its own, e.g. a contact may have a tab for their training records.&lt;/p&gt;
-&lt;p&gt;When that&amp;rsquo;s the case, agileBase exposes both tiers of data on screen so the user can jump from the top level, in this example the organisation, directly to a contact&amp;rsquo;s training records.&lt;/p&gt;
+&lt;p&gt;When that&amp;rsquo;s the case, Agilebase exposes both tiers of data on screen so the user can jump from the top level, in this example the organisation, directly to a contact&amp;rsquo;s training records.&lt;/p&gt;
 &lt;p&gt;This type of navigation manifests in different ways according to the setup.&lt;/p&gt;
 &lt;p&gt;If a child links to the parent with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/relation-field-options/#one-to-one-only&#34;&gt;one-to-one relation&lt;/a&gt; then links to &amp;lsquo;grandchildren&amp;rsquo; are displayed by a menu in a tab. Here&amp;rsquo;s a menu showing the various grandchild items under a product&amp;rsquo;s specification.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/tab-menu.png&#34; alt=&#34;tab menu&#34;&gt;&lt;/p&gt;
@@ -1641,7 +1641,7 @@ export default LoginScreen;
         
         &lt;p&gt;Charting is not strictly an administrator function, as any user can create charts and other data visualisations, such as maps and word clouds.&lt;/p&gt;
 &lt;p&gt;However, it&amp;rsquo;s useful for administrators to know how the system works in outline, so they can support users and also because creating charts may be a key part of building an application.&lt;/p&gt;
-&lt;p&gt;In agileBase, charts &amp;lsquo;belong to&amp;rsquo; a view. Each view can have a collection of charts. Users can toggle between viewing data rows and looking at charts based on those rows. When a user filters data using the quick filter boxes at the top of the screen, the data or charts (whichever is shown) will update to match the filtered results.&lt;/p&gt;
+&lt;p&gt;In Agilebase, charts &amp;lsquo;belong to&amp;rsquo; a view. Each view can have a collection of charts. Users can toggle between viewing data rows and looking at charts based on those rows. When a user filters data using the quick filter boxes at the top of the screen, the data or charts (whichever is shown) will update to match the filtered results.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-chart&#34;&gt;Creating a chart&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;In the tiles interface, open the tile and view to use as a source of chart data&lt;/li&gt;
@@ -1690,11 +1690,11 @@ export default LoginScreen;
         &lt;blockquote&gt;
 &lt;p&gt;Before setting up a BI connection, please be aware of the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting#privacy-and-data-security&#34;&gt;data privacy and security&lt;/a&gt; considerations.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;At agileBase we host an instance of &lt;a href=&#34;https://superset.apache.org&#34;&gt;Apache Superset&lt;/a&gt; which can be used by customers to create reporting dashboards.&lt;/p&gt;
+&lt;p&gt;At Agilebase we host an instance of &lt;a href=&#34;https://superset.apache.org&#34;&gt;Apache Superset&lt;/a&gt; which can be used by customers to create reporting dashboards.&lt;/p&gt;
 &lt;p&gt;However the setup processes below also applies to third party tools such as Power BI. In fact, any tool which utilises &lt;a href=&#34;https://en.wikipedia.org/wiki/Open_Database_Connectivity&#34;&gt;ODBC&lt;/a&gt; can be used, such as Excel for example.&lt;/p&gt;
 &lt;h2 id=&#34;initial-setup&#34;&gt;Initial Setup&lt;/h2&gt;
 &lt;p&gt;The first step is to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; to request we prepare your account. This will also allow connections from Apache Superset, Power BI or any other tool which can connect to ODBC).&lt;/p&gt;
-&lt;p&gt;If you wish to use our supplied instance of Superset, we will then set up as many Superset users you require - there is no ongoing cost for these login accounts. Note that Superset logins are separate from agileBase ones - the usernames and passwords can be different.&lt;/p&gt;
+&lt;p&gt;If you wish to use our supplied instance of Superset, we will then set up as many Superset users you require - there is no ongoing cost for these login accounts. Note that Superset logins are separate from Agilebase ones - the usernames and passwords can be different.&lt;/p&gt;
 &lt;p&gt;If you use Power BI, then the process is as follows&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Install the PostgreSQL ODBC driver from &lt;a href=&#34;https://odbc.postgresql.org/&#34;&gt;https://odbc.postgresql.org/&lt;/a&gt;. Use the Downloads link and if running on Windows, use the newest driver from the &lt;strong&gt;msi&lt;/strong&gt; folder.&lt;/li&gt;
@@ -1704,16 +1704,16 @@ export default LoginScreen;
 &lt;h2 id=&#34;sending-data-to-superset-or-power-bi&#34;&gt;Sending data to Superset or Power BI&lt;/h2&gt;
 &lt;p&gt;A developer with MANAGE privileges on a view&amp;rsquo;s parent table can set this up.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;In agileBase, open the view you wish to report on. Ensure it has all the necessary fields and calculations in it which you want to report on. If not, add them before continuing.&lt;/li&gt;
+&lt;li&gt;In Agilebase, open the view you wish to report on. Ensure it has all the necessary fields and calculations in it which you want to report on. If not, add them before continuing.&lt;/li&gt;
 &lt;li&gt;Click the charting icon to view the chart setup interface&lt;/li&gt;
-&lt;li&gt;At the bottom of the screen, tick &amp;lsquo;send data to a shareable dashboard&amp;rsquo;. As this makes data available &lt;a href=&#34;charting#privacy-and-data-security&#34;&gt;outside of agileBase&lt;/a&gt;, you will be asked to confirm you will treat the data in a way which maintains privacy and security before enabling the feature.&lt;/li&gt;
+&lt;li&gt;At the bottom of the screen, tick &amp;lsquo;send data to a shareable dashboard&amp;rsquo;. As this makes data available &lt;a href=&#34;charting#privacy-and-data-security&#34;&gt;outside of Agilebase&lt;/a&gt;, you will be asked to confirm you will treat the data in a way which maintains privacy and security before enabling the feature.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Within a few seconds, the data will then be visible to your external application.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The first view set up in this way is free, further views can be purchased in bundles.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;changes&#34;&gt;Changes&lt;/h3&gt;
-&lt;p&gt;It&amp;rsquo;s easy for developers to make changes to views in agileBase, for example adding / removing fields, changing calculations or just renaming a view.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s easy for developers to make changes to views in Agilebase, for example adding / removing fields, changing calculations or just renaming a view.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;However, when the BI connection is active, bear in mind that certain changes could break it. The reason is that once data is set up to transfer to a separate system, the other system typically expects it to remain in the same format.&lt;/p&gt;
 &lt;p&gt;That means that if you rename the view or move it, or rename/delete fields and calculations, you may afterwards need to check your charts in Superset / Power BI, to see if they need re-creating.&lt;/p&gt;
@@ -1730,7 +1730,7 @@ export default LoginScreen;
 &lt;blockquote&gt;
 &lt;p&gt;This section applies to Superset only, for Power BI or other instructions please contact us.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Now that you&amp;rsquo;ve set up agileBase to make data available to Superset, you can create charts and dashboards there.&lt;/p&gt;
+&lt;p&gt;Now that you&amp;rsquo;ve set up Agilebase to make data available to Superset, you can create charts and dashboards there.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Create a &amp;lsquo;dataset&amp;rsquo; in Superset, corresponding to the view you set up above
 &lt;ol&gt;
@@ -1799,7 +1799,7 @@ export default LoginScreen;
 &lt;blockquote&gt;
 &lt;p&gt;When designing applications, just be aware there is sometimes a trade-off between the ideal of data integrity and everyday concerns.&lt;/p&gt;
 &lt;p&gt;For example, you may like to force users to always provide an email address for contacts but in a small minority of cases, they may not have that available.&lt;/p&gt;
-&lt;p&gt;agileBase has options for handling soft validation (highlighting errors or notifying someone) as well as the hard validation (disallowing invalid data entry) options discussed here. For example, you could&lt;/p&gt;
+&lt;p&gt;Agilebase has options for handling soft validation (highlighting errors or notifying someone) as well as the hard validation (disallowing invalid data entry) options discussed here. For example, you could&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;Create a view&lt;/a&gt;to show all records with errors, for later checking&lt;/li&gt;
 &lt;li&gt;Set up a workflow or chaser to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chase someone&lt;/a&gt; when errors are found&lt;/li&gt;
@@ -1877,9 +1877,9 @@ export default LoginScreen;
 &lt;h4 id=&#34;configuring-the-email-address-used&#34;&gt;Configuring the email address used&lt;/h4&gt;
 &lt;p&gt;An email address of the form &lt;a href=&#34;mailto:viewname@accountname.domainname&#34;&gt;viewname@accountname.domainname&lt;/a&gt; will be set up, e.g. &lt;a href=&#34;mailto:contacts@mycompany.agilebase.co.uk&#34;&gt;contacts@mycompany.agilebase.co.uk&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;viewname&lt;/em&gt; determines the view which agileBase queries to find the recipient email address. The comment will be added to the matching record in the view&amp;rsquo;s parent table, or a tab of the table, if &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#accept-emails-from-parent-table&#34;&gt;Accept emails from parent table&lt;/a&gt; is enabled in a tab. If multiple tabs have this option enabled, then the tab with a name also matching &lt;em&gt;viewname&lt;/em&gt; is used&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;viewname&lt;/em&gt; determines the view which Agilebase queries to find the recipient email address. The comment will be added to the matching record in the view&amp;rsquo;s parent table, or a tab of the table, if &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#accept-emails-from-parent-table&#34;&gt;Accept emails from parent table&lt;/a&gt; is enabled in a tab. If multiple tabs have this option enabled, then the tab with a name also matching &lt;em&gt;viewname&lt;/em&gt; is used&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;accountname&lt;/em&gt; determines the company account to look in&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;domainname&lt;/em&gt; is the domain name of the agileBase server&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;domainname&lt;/em&gt; is the domain name of the Agilebase server&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
 &lt;p&gt;After the options, some structural information is shown, such as which tables depend on this one i.e. have a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation&lt;/a&gt; to it, how many fields and views per tile there are. See also the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#the-dashboard&#34;&gt;usage dashboard&lt;/a&gt;&lt;/p&gt;
@@ -1922,7 +1922,7 @@ export default LoginScreen;
       <description>
         
         
-        &lt;p&gt;The database which underpins agileBase is &lt;a href=&#34;https://www.postgresql.org&#34;&gt;PostgreSQL&lt;/a&gt; - &amp;lsquo;The World&amp;rsquo;s Most Advanced Open Source Relational Database&amp;rsquo;.&lt;/p&gt;
+        &lt;p&gt;The database which underpins Agilebase is &lt;a href=&#34;https://www.postgresql.org&#34;&gt;PostgreSQL&lt;/a&gt; - &amp;lsquo;The World&amp;rsquo;s Most Advanced Open Source Relational Database&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;This page will just be an introduction to some of the things you can do with calculations.&lt;/p&gt;
 &lt;p&gt;A comprehensive definition and reference for all of the functions possible can be found here: &lt;a href=&#34;https://www.postgresql.org/docs/current/functions.html&#34;&gt;https://www.postgresql.org/docs/current/functions.html&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;example-functions-for-each-type-of-field&#34;&gt;Example functions for each type of field&lt;/h2&gt;
@@ -1973,7 +1973,7 @@ end
 &lt;/ul&gt;
 &lt;p&gt;The last two are slightly more complex because they use a powerful text matching/search and replace facility called &lt;strong&gt;regular expressions&lt;/strong&gt;, or regexes for short. Again, this is a standard facility and there&amp;rsquo;s lots of documentation available on the &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP&#34;&gt;PostgreSQL website&lt;/a&gt; and elsewhere if you&amp;rsquo;d like to learn more.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The only difference from standard to be aware of is that when entering a regex into a calculation in agileBase, you must use two backslashes instead of one.&lt;/p&gt;
+&lt;p&gt;The only difference from standard to be aware of is that when entering a regex into a calculation in Agilebase, you must use two backslashes instead of one.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;like&lt;/code&gt; compares two elements of text and &lt;code&gt;ilike&lt;/code&gt; does so case-insensitively. A percentage sign means &amp;lsquo;match any text&amp;rsquo;. So for example:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;case
@@ -2096,9 +2096,9 @@ and a video introduction to the concept here:&lt;/p&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/9yeOJ0ZMUYw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Just remember, when using third party resources to learn about joins (or other SQL features), you don&amp;rsquo;t need to write the SQL code in agileBase, it&amp;rsquo;s generated for you behind the scenes.&lt;/p&gt;
+&lt;p&gt;Just remember, when using third party resources to learn about joins (or other SQL features), you don&amp;rsquo;t need to write the SQL code in Agilebase, it&amp;rsquo;s generated for you behind the scenes.&lt;/p&gt;
 &lt;h2 id=&#34;left-outer-and-inner-joins&#34;&gt;Left outer and inner joins&lt;/h2&gt;
-&lt;p&gt;The left outer join is the default type used when a join is added to a view in agileBase. It suits most cases, but can be changed after join creation if needed.&lt;/p&gt;
+&lt;p&gt;The left outer join is the default type used when a join is added to a view in Agilebase. It suits most cases, but can be changed after join creation if needed.&lt;/p&gt;
 &lt;p&gt;A left outer join type will ensure that every row from the left source (table or view) is visible in output, whether or not the data links to a row on the right side. Conversely, when an inner join&amp;rsquo;s used, data from the left will be hidden unless it links to data on the right.&lt;/p&gt;
 &lt;p&gt;That may sound rather abstract: working with an example, we can see what it means in practice.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s take the common and straightforward example of linking contacts to organisations. We start by creating a view from the contacts table, so that&amp;rsquo;s on the left side. We then join from contacts to an organisations table, on the right. This join looks as follows:&lt;/p&gt;
@@ -2113,13 +2113,13 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;p&gt;Sometimes of course, inner joins are very useful - but it makes sense that there must be a conscious decision to change a join to that type.&lt;/p&gt;
 &lt;h2 id=&#34;right-outer-and-full-outer&#34;&gt;Right outer and full outer&lt;/h2&gt;
 &lt;p&gt;You may think, if there&amp;rsquo;s a left outer, is there also a right outer? There is, it means all data from the right side is always visible, whether or not there&amp;rsquo;s a match on the left. So in our contacts/organisations example, all organisations would be visible, whether or not any contacts belonged to them.&lt;/p&gt;
-&lt;p&gt;Practically, this isn&amp;rsquo;t used much, as a right outer join is just the same as a left outer join started from the other table. There&amp;rsquo;s no difference in the data visible, but using a left outer works better in agileBase because you can be guaranteed that clicking on a row will load a record (with a right outer, if there&amp;rsquo;s no data on the left side, then no record can be loaded when the row&amp;rsquo;s clicked).&lt;/p&gt;
+&lt;p&gt;Practically, this isn&amp;rsquo;t used much, as a right outer join is just the same as a left outer join started from the other table. There&amp;rsquo;s no difference in the data visible, but using a left outer works better in Agilebase because you can be guaranteed that clicking on a row will load a record (with a right outer, if there&amp;rsquo;s no data on the left side, then no record can be loaded when the row&amp;rsquo;s clicked).&lt;/p&gt;
 &lt;p&gt;You may also hear of a full outer join - this again has a very small number of useful cases, but you can &lt;a href=&#34;https://stackoverflow.com/questions/2094793/when-is-a-good-situation-to-use-a-full-outer-join&#34;&gt;read about them online&lt;/a&gt; if interested.&lt;/p&gt;
 &lt;h2 id=&#34;venn-diagram&#34;&gt;Venn diagram&lt;/h2&gt;
 &lt;p&gt;Joins are often represented visually with Venn diagrams. Here&amp;rsquo;s one, showing that for a left outer join, all the data from the left side is visible, whether or not a matching row exists on the right, and for an inner join, data from the left is excluded without a match. The results of right outer and full outer are also visualised.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/joins-venn.png&#34; alt=&#34;Joins Venn diagram&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;cross-join&#34;&gt;Cross join&lt;/h2&gt;
-&lt;p&gt;There&amp;rsquo;s one final type to consider that can be used in agileBase. Strictly speaking, it isn&amp;rsquo;t a join at all, but it does bring together data from left and right sides in a particular way, so we&amp;rsquo;ll think of it as a join here and it&amp;rsquo;s treated as such in agileBase.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s one final type to consider that can be used in Agilebase. Strictly speaking, it isn&amp;rsquo;t a join at all, but it does bring together data from left and right sides in a particular way, so we&amp;rsquo;ll think of it as a join here and it&amp;rsquo;s treated as such in Agilebase.&lt;/p&gt;
 &lt;p&gt;If you have a mathematical background, it may help to know that it produces a cartesian product, or cross product, of all rows in the left and right sides.&lt;/p&gt;
 &lt;p&gt;However if you don&amp;rsquo;t, not to worry, it can be easily explained without maths. Basically, every combination of each row on the left with each row on the right is output. So if you have three rows, A, B and C on the left and another three X, Y and Z on the right, then you would get as output: data from&lt;/p&gt;
 &lt;ul&gt;
@@ -2209,7 +2209,7 @@ and a video introduction to the concept here:&lt;/p&gt;
         &lt;h2 id=&#34;default-value&#34;&gt;Default value&lt;/h2&gt;
 &lt;p&gt;Simply whether the checkbox should default to ticked (true) or un-ticked (false) for new records.&lt;/p&gt;
 &lt;h2 id=&#34;dont-set-last-modified&#34;&gt;Don&amp;rsquo;t set last modified&lt;/h2&gt;
-&lt;p&gt;Whenever someone edits a record, agileBase automatically updates the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#last-modified-auto&#34;&gt;Last Modified&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#modified-by-auto&#34;&gt;Modified By&lt;/a&gt; fields of the table. This option prevents that happening when the checkbox field is ticked or un-ticked. There would not usually be a need for this but it may be useful in a minority of cases.&lt;/p&gt;
+&lt;p&gt;Whenever someone edits a record, Agilebase automatically updates the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#last-modified-auto&#34;&gt;Last Modified&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#modified-by-auto&#34;&gt;Modified By&lt;/a&gt; fields of the table. This option prevents that happening when the checkbox field is ticked or un-ticked. There would not usually be a need for this but it may be useful in a minority of cases.&lt;/p&gt;
 &lt;h2 id=&#34;show-digital-signature&#34;&gt;Show digital signature&lt;/h2&gt;
 &lt;p&gt;Causes the user interface to show the name &amp;amp; username of the person who last ticked or un-ticked the checkbox, along with a timestamp.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -2229,7 +2229,7 @@ and a video introduction to the concept here:&lt;/p&gt;
         
         
         &lt;p&gt;Adding a comment feed to a table adds a discussion area to a form, transforming its usefulness.&lt;/p&gt;
-&lt;p&gt;Comment feeds in agileBase are quite a large topic, as one of the most often used features central to the platform. It&amp;rsquo;s common for at least one comment feed to be added to every table in the system, allowing users to collaborate and discuss data wherever they are.&lt;/p&gt;
+&lt;p&gt;Comment feeds in Agilebase are quite a large topic, as one of the most often used features central to the platform. It&amp;rsquo;s common for at least one comment feed to be added to every table in the system, allowing users to collaborate and discuss data wherever they are.&lt;/p&gt;
 &lt;p&gt;The ability to discuss and comment on data can be one of the most important mechanisms used to break down silo thinking and help organisations that wish to adopt a more systematic or process orientated view of things.&lt;/p&gt;
 &lt;h2 id=&#34;comment-feeds-in-action&#34;&gt;Comment feeds in action&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s an example of a comment feed in a table, being used to add a new comment. Previous comments can be seen underneath, with the user and date/time of each.&lt;/p&gt;
@@ -2390,13 +2390,13 @@ and a video introduction to the concept here:&lt;/p&gt;
         &lt;p&gt;When every &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt; is created, a series of fields are automatically added. These aren&amp;rsquo;t displayed in the data entry form of a table, but are available to be added into views.&lt;/p&gt;
 &lt;h2 id=&#34;id-field&#34;&gt;ID field&lt;/h2&gt;
 &lt;p&gt;In database parlance, the table&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Primary_key&#34;&gt;primary key&lt;/a&gt; - providing a unique ID to identify each record. Values are generated in sequence.&lt;/p&gt;
-&lt;p&gt;agileBase creates and manages primary keys, using them to link related tables together automatically, however it&amp;rsquo;s useful for administrators to understand the concept and implementation. Many platform features depending on including the ID field for a particular table in a view, such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced fields&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Agilebase creates and manages primary keys, using them to link related tables together automatically, however it&amp;rsquo;s useful for administrators to understand the concept and implementation. Many platform features depending on including the ID field for a particular table in a view, such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced fields&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;creation-time-auto&#34;&gt;Creation Time [Auto]&lt;/h2&gt;
 &lt;p&gt;The record&amp;rsquo;s creation time, accurate to the ms and displayed to the second by default.&lt;/p&gt;
 &lt;h2 id=&#34;created-by-auto&#34;&gt;Created By [Auto]&lt;/h2&gt;
 &lt;p&gt;The user ID of the person who created the record, in the form &lt;code&gt;Forename Surname (username)&lt;/code&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This format is used to identify a user everywhere in agileBase, for example when assigning a record to a user. When a user ID identifies a person in a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email workflow&lt;/a&gt;, agileBase will look up and use their email address, from their account details.&lt;/p&gt;
+&lt;p&gt;This format is used to identify a user everywhere in Agilebase, for example when assigning a record to a user. When a user ID identifies a person in a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email workflow&lt;/a&gt;, Agilebase will look up and use their email address, from their account details.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;When a record is created by a workflow, the Created By will be &lt;code&gt;System User (system)&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;When created by an API call, it will be &lt;code&gt;Public API (IP Address) (public api&lt;/code&gt;, where the IP address of the calling system is recorded.&lt;/p&gt;
@@ -2434,7 +2434,7 @@ and a video introduction to the concept here:&lt;/p&gt;
       <description>
         
         
-        &lt;p&gt;Document templates in agileBase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.&lt;/p&gt;
+        &lt;p&gt;Document templates in Agilebase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.&lt;/p&gt;
 &lt;p&gt;The same templating system is used for both generating documents (which can be done automatically with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;workflow&lt;/a&gt; or manually) and displaying output to be printed.&lt;/p&gt;
 &lt;p&gt;Each template is attached to a view and given a name.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-template&#34;&gt;Creating a template&lt;/h2&gt;
@@ -2449,9 +2449,14 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;Then a user will see a &amp;lsquo;generate document&amp;rsquo; button when they edit a record from the table, allowing them to generate a PDF from the template.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Existing templates can also be edited or downloaded. Manually created templates with complex features such as variable setting and looping can&amp;rsquo;t be edited using the WYSIWYG editor&lt;/p&gt;
+&lt;p&gt;Existing templates can also be edited or downloaded. Manually created templates with complex features such as variable setting and looping can&amp;rsquo;t be edited using the WYSIWYG editor, but can be downloaded, edited manually then re-uploaded.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/document_generation.png&#34; alt=&#34;Template creation&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;filename&#34;&gt;Filename&lt;/h3&gt;
+&lt;p&gt;The filename of the generated document will be comprised of two parts, separated by a dash:
+a) the name of the template which you created as above
+b) the value of the first field in the view above&lt;/p&gt;
+&lt;p&gt;Additionally if multi-tenanting is active, then the name of the tenant associated with the record the document is being generated in will also be added, preceded by a dash.&lt;/p&gt;
 &lt;h2 id=&#34;including-data&#34;&gt;Including data&lt;/h2&gt;
 &lt;p&gt;Each field in the view (included calculations), or parent table, can be merged in to the template by referencing the field name, preceded by a dollar sign. For convenience, a list of available fields is listed below the WYSIWYG editor, for easy copying and pasting into the template.&lt;/p&gt;
 &lt;p&gt;For those manually creating templates, a field name becomes a variable to reference by&lt;/p&gt;
@@ -2590,7 +2595,7 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;There are many more functions than these available, indeed the whole of the agileBase user interface is created with templates including functions of these three types.&lt;/p&gt;
+&lt;p&gt;There are many more functions than these available, indeed the whole of the Agilebase user interface is created with templates including functions of these three types.&lt;/p&gt;
 &lt;p&gt;The entire templating API is beyond the scope of this documentation but if you do wish to create any template functionality not covered by the above, it&amp;rsquo;s probably possible. Please get in touch with us to discuss your needs and be pointed in the right direction.&lt;/p&gt;
 &lt;h3 id=&#34;using-apache-velocity-features&#34;&gt;Using Apache Velocity features&lt;/h3&gt;
 &lt;p&gt;In the examples above are some uses of simple programming code. A full reference for what you can do with the Apache Velocity language is here: &lt;a href=&#34;https://velocity.apache.org/engine/2.3/user-guide.html&#34;&gt;https://velocity.apache.org/engine/2.3/user-guide.html&lt;/a&gt;&lt;/p&gt;
@@ -2611,7 +2616,7 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;p&gt;For example, when accepting orders via an e-commerce website, or sending invoices to an accounting package, or accepting incoming stock change records from Goods In staff using a bar code scanning application.&lt;/p&gt;
 &lt;p&gt;In cases like that, you don&amp;rsquo;t want potentially large quantities of test data polluting your live system. And when systems are up and running, they can be mission critical - you don&amp;rsquo;t want a change to cause online orders to be missed or incorrect invoices to transfer to accounts.&lt;/p&gt;
 &lt;p&gt;People from the traditional IT world will be familiar with the concept of testing changes during the development process, before deploying them live.&lt;/p&gt;
-&lt;p&gt;As agileBase is a no-code platform, the processes are slightly different - there are no &amp;lsquo;code&amp;rsquo; changes to deploy. But here&amp;rsquo;s how we achieve the same.&lt;/p&gt;
+&lt;p&gt;As Agilebase is a no-code platform, the processes are slightly different - there are no &amp;lsquo;code&amp;rsquo; changes to deploy. But here&amp;rsquo;s how we achieve the same.&lt;/p&gt;
 &lt;h2 id=&#34;commissioning-a-test-server&#34;&gt;Commissioning a test server&lt;/h2&gt;
 &lt;p&gt;In summary, when your system is&lt;/p&gt;
 &lt;ul&gt;
@@ -2652,8 +2657,8 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;By default, a new snapshot will be made available every 24hrs, at around 7am. However, if you wish, you can ask us to set up a different timing or frequency of snapshots, just let us know.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;testing-agilebase-platform-updates&#34;&gt;Testing agileBase platform updates&lt;/h2&gt;
-&lt;p&gt;As well as testing your own changes, the test server comes with the added benefit that you can access pre-release versions of new versions of the agileBase platform itself.&lt;/p&gt;
+&lt;h2 id=&#34;testing-agilebase-platform-updates&#34;&gt;Testing Agilebase platform updates&lt;/h2&gt;
+&lt;p&gt;As well as testing your own changes, the test server comes with the added benefit that you can access pre-release versions of new versions of the Agilebase platform itself.&lt;/p&gt;
 &lt;p&gt;That means you can test out new features before they&amp;rsquo;re released and if you like run your own API tests against it.&lt;/p&gt;
 &lt;p&gt;We do of course have our own automated API and end to end tests, but you&amp;rsquo;re welcome to add your own specific unit tests for any APIs specific to your setup.&lt;/p&gt;
 &lt;p&gt;You will be optionally enrolled onto our pre-release mailing list to be notified when a new version has been prepared, along with it&amp;rsquo;s planned release date which will typically be Monday to Wednesday the following week.&lt;/p&gt;

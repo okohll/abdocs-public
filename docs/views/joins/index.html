@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.103.1" />
+<meta name="generator" content="Hugo 0.104.3" />
 <link rel="alternate" type="application/rss&#43;xml" href="https://docs.agilebase.co.uk/docs/views/joins/index.xml">
 <meta name="robots" content="index, follow">
 
@@ -569,7 +569,7 @@ if (!doNotTrack) {
 <p>Or for a more complex example, if you start with a view from a recipes table, you could potentially join down to ingredients, then on again to allergens of those ingredients, allowing you to work out with a calculation the complete list of allergens in any recipe.</p>
 <p>Any number of joins to different tables or views can be added to a view.</p>
 <h2 id="adding-a-join">Adding a join</h2>
-<p>agileBase will automatically pick out the common tables you may wish to join to, by seeing which are related via <a href="/docs/fields/field-types/basic-field-types/#relation">relation fields</a>. Once you get used to the concepts, you may also wish sometimes to add joins manually to tables or views not automatically suggested. That will be covered at the end of this page.</p>
+<p>Agilebase will automatically pick out the common tables you may wish to join to, by seeing which are related via <a href="/docs/fields/field-types/basic-field-types/#relation">relation fields</a>. Once you get used to the concepts, you may also wish sometimes to add joins manually to tables or views not automatically suggested. That will be covered at the end of this page.</p>
 <p>To add a join</p>
 <ol>
 <li>Load the view you wish to add a join to and enable development mode</li>
@@ -579,7 +579,7 @@ if (!doNotTrack) {
 <h2 id="the-anatomy-of-a-join">The anatomy of a join</h2>
 <p>The added join will appear graphically above the <em>Add Join</em> button. The lefthand &lsquo;blob&rsquo; or part represents the table being joined from, on the right is the one joined to. In the middle is a selector for the <a href="/docs/views/joins/types-of-join/">join type</a>, which we will come to.</p>
 <p>In each part, left or right, the name of the table being joined from (on the left) or to (on the right) is shown in bold.</p>
-<p>Underneath the table name, the name of the field used to match records is shown. When an ID field is shown, this just refers to the internal ID agileBase uses automatically to make the match. It&rsquo;s only of relevance if you&rsquo;re creating advanced joins manually - see below, so can be ignored otherwise.</p>
+<p>Underneath the table name, the name of the field used to match records is shown. When an ID field is shown, this just refers to the internal ID Agilebase uses automatically to make the match. It&rsquo;s only of relevance if you&rsquo;re creating advanced joins manually - see below, so can be ignored otherwise.</p>
 <p><img src="/example-join.png" alt="example join"></p>
 <p>In this example, we have a join from the <strong>contacts</strong> table to <strong>companies</strong>, to allow us to add company information into our view. The link was made based on the <strong>organisation</strong> field in the contacts table, which lets a company be assigned to a contact.</p>
 <h2 id="upwards-and-downwards-joins">Upwards and downwards joins</h2>
@@ -591,7 +591,7 @@ if (!doNotTrack) {
 <p>** TODO: screenshot **</p>
 <p>So joins upwards are the more common case, but joins downward can be useful for particular purposes.</p>
 <h2 id="complex-joins">Complex joins</h2>
-<p>As above, agileBase automatically suggests joins to data that&rsquo;s related to the current view&rsquo;s parent table as well as any of the tables already joined to. It uses <a href="/docs/fields/field-types/basic-field-types/#relation">relation fields</a> to see what&rsquo;s related.</p>
+<p>As above, Agilebase automatically suggests joins to data that&rsquo;s related to the current view&rsquo;s parent table as well as any of the tables already joined to. It uses <a href="/docs/fields/field-types/basic-field-types/#relation">relation fields</a> to see what&rsquo;s related.</p>
 <p>However, sometimes you may want to join to a table or view that&rsquo;s not automatically suggested. These examples may become increasingly &rsquo;niche&rsquo; but they are a useful reference for similar situations you may come across.</p>
 <h3 id="joining-to-a-view">Joining to a view</h3>
 <p>Joins to views aren&rsquo;t automatically suggested, but you can still add them.</p>
@@ -737,7 +737,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified May 16, 2022: <a href="https://github.com/okohll/abdocs/commit/b85fa4403e511911a48246457acfce6d26511b77">Update docs to use new UI (b85fa44)</a>
+  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/08ac056e46e4bf4b89ac89de4d004f3cb100bb87">Agilebase capitalisation (08ac056)</a>
 </div>
 
 </div>

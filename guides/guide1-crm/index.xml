@@ -24,12 +24,12 @@
         
         
         &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create a Table and associated Views to use it!&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched &amp;ldquo;How to use agileBase&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched &amp;ldquo;How to use Agilebase&amp;rdquo;&lt;/p&gt;
 &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;This stage of the guide will introduce you to the basic activities required to build a simple application. We will start by creating a table with different types of fields in order to store a variety of data. We will then show you how to create and control tiles, views and forms which are the interfaces that your users will use to enter and consume this data.
 Let us start by building a simple task list.&lt;/p&gt;
 &lt;h2 id=&#34;create-a-table-called-tasks&#34;&gt;Create a table called &amp;ldquo;Tasks&amp;rdquo;&lt;/h2&gt;
-&lt;p&gt;Our simple application will need to store information about the tasks our users create. This is done by creating a database table. In agileBase this is achieved by navigating to the developer interface and pressing the “add new table button”.
+&lt;p&gt;Our simple application will need to store information about the tasks our users create. This is done by creating a database table. In Agilebase this is achieved by navigating to the developer interface and pressing the “add new table button”.
 [guide 1 - video 1]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/-kY2RRzKqxQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -46,7 +46,7 @@ For more detail visit - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;make-the-form-easier-to-understand-break-it-into-sections&#34;&gt;Make the form easier to understand. Break it into sections&lt;/h2&gt;
-&lt;p&gt;Now we have the data structure required to capture a simple task we can think about how it would be used. The user interface within agileBase is controlled by the list of fields and their options. It is a simple task to reorder fields, just use the drag and drop facility when looking at the list of fields.
+&lt;p&gt;Now we have the data structure required to capture a simple task we can think about how it would be used. The user interface within Agilebase is controlled by the list of fields and their options. It is a simple task to reorder fields, just use the drag and drop facility when looking at the list of fields.
 Use a field of type separator to create sections within the user interface
 [guide 1 - video 3]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;

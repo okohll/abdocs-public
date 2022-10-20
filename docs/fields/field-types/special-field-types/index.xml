@@ -42,7 +42,7 @@
         
         
         &lt;p&gt;Adding a comment feed to a table adds a discussion area to a form, transforming its usefulness.&lt;/p&gt;
-&lt;p&gt;Comment feeds in agileBase are quite a large topic, as one of the most often used features central to the platform. It&amp;rsquo;s common for at least one comment feed to be added to every table in the system, allowing users to collaborate and discuss data wherever they are.&lt;/p&gt;
+&lt;p&gt;Comment feeds in Agilebase are quite a large topic, as one of the most often used features central to the platform. It&amp;rsquo;s common for at least one comment feed to be added to every table in the system, allowing users to collaborate and discuss data wherever they are.&lt;/p&gt;
 &lt;p&gt;The ability to discuss and comment on data can be one of the most important mechanisms used to break down silo thinking and help organisations that wish to adopt a more systematic or process orientated view of things.&lt;/p&gt;
 &lt;h2 id=&#34;comment-feeds-in-action&#34;&gt;Comment feeds in action&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s an example of a comment feed in a table, being used to add a new comment. Previous comments can be seen underneath, with the user and date/time of each.&lt;/p&gt;
@@ -142,13 +142,13 @@
         &lt;p&gt;When every &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt; is created, a series of fields are automatically added. These aren&amp;rsquo;t displayed in the data entry form of a table, but are available to be added into views.&lt;/p&gt;
 &lt;h2 id=&#34;id-field&#34;&gt;ID field&lt;/h2&gt;
 &lt;p&gt;In database parlance, the table&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Primary_key&#34;&gt;primary key&lt;/a&gt; - providing a unique ID to identify each record. Values are generated in sequence.&lt;/p&gt;
-&lt;p&gt;agileBase creates and manages primary keys, using them to link related tables together automatically, however it&amp;rsquo;s useful for administrators to understand the concept and implementation. Many platform features depending on including the ID field for a particular table in a view, such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced fields&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Agilebase creates and manages primary keys, using them to link related tables together automatically, however it&amp;rsquo;s useful for administrators to understand the concept and implementation. Many platform features depending on including the ID field for a particular table in a view, such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced fields&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;creation-time-auto&#34;&gt;Creation Time [Auto]&lt;/h2&gt;
 &lt;p&gt;The record&amp;rsquo;s creation time, accurate to the ms and displayed to the second by default.&lt;/p&gt;
 &lt;h2 id=&#34;created-by-auto&#34;&gt;Created By [Auto]&lt;/h2&gt;
 &lt;p&gt;The user ID of the person who created the record, in the form &lt;code&gt;Forename Surname (username)&lt;/code&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This format is used to identify a user everywhere in agileBase, for example when assigning a record to a user. When a user ID identifies a person in a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email workflow&lt;/a&gt;, agileBase will look up and use their email address, from their account details.&lt;/p&gt;
+&lt;p&gt;This format is used to identify a user everywhere in Agilebase, for example when assigning a record to a user. When a user ID identifies a person in a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email workflow&lt;/a&gt;, Agilebase will look up and use their email address, from their account details.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;When a record is created by a workflow, the Created By will be &lt;code&gt;System User (system)&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;When created by an API call, it will be &lt;code&gt;Public API (IP Address) (public api&lt;/code&gt;, where the IP address of the calling system is recorded.&lt;/p&gt;

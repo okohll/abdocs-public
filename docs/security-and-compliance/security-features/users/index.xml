@@ -46,7 +46,7 @@
 &lt;p&gt;If you don’t use a smartphone at work, that’s no problem. You can use an app on your computer - in fact many people find that more convenient than using a phone. Please ask your system administrator how to set things up and they’ll give you a hand.&lt;/p&gt;
 &lt;h2 id=&#34;when-should-i-set-this-up&#34;&gt;When should I set this up?&lt;/h2&gt;
 &lt;p&gt;Now!&lt;/p&gt;
-&lt;p&gt;It’s never a bad time to upgrade your data security and privacy protection measures. If you’ve not already set up 2FA, agileBase will prompt you to do so once a week.&lt;/p&gt;
+&lt;p&gt;It’s never a bad time to upgrade your data security and privacy protection measures. If you’ve not already set up 2FA, Agilebase will prompt you to do so once a week.&lt;/p&gt;
 &lt;p&gt;However, you can do so at any time: click your user icon at the top right of the screen, select &amp;rsquo;edit profile&amp;rsquo; and tick &amp;rsquo;enable two factor authentication&#39;.&lt;/p&gt;
 
       </description>
@@ -61,9 +61,9 @@
       <description>
         
         
-        &lt;p&gt;agileBase is primarily a platform for building back office systems for employees (or members of the organisation) to use.&lt;/p&gt;
+        &lt;p&gt;Agilebase is primarily a platform for building back office systems for employees (or members of the organisation) to use.&lt;/p&gt;
 &lt;p&gt;However, it&amp;rsquo;s common to allow access to people outside the organisation to perform limited data entry tasks. For example, you may wish your suppliers to be able to upload certificates of conformances to items they sell you, or you may have a large workforce of contractors who you require to fill in timesheets.&lt;/p&gt;
-&lt;p&gt;It may be that you don&amp;rsquo;t wish to supply each person a full agileBase license because&lt;/p&gt;
+&lt;p&gt;It may be that you don&amp;rsquo;t wish to supply each person a full Agilebase license because&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;there will be a large number of them, so there&amp;rsquo;ll be management and cost issues&lt;/li&gt;
 &lt;li&gt;you wish to restrict what they can do in the system further than can be accomplished with roles and privileges&lt;/li&gt;

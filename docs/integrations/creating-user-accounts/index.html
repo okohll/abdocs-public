@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.103.1" />
+<meta name="generator" content="Hugo 0.104.3" />
 <meta name="robots" content="index, follow">
 
 
@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2021-04-14T10:41:00+01:00" />
-<meta property="article:modified_time" content="2022-04-25T17:05:25+01:00" />
+<meta property="article:modified_time" content="2022-10-20T10:51:42+01:00" />
 
 <meta itemprop="name" content="Creating user accounts with the API">
 <meta itemprop="description" content="Creating a user account in a multi-tenanted system with an API request"><meta itemprop="datePublished" content="2021-04-14T10:41:00+01:00" />
-<meta itemprop="dateModified" content="2022-04-25T17:05:25+01:00" />
+<meta itemprop="dateModified" content="2022-10-20T10:51:42+01:00" />
 <meta itemprop="wordCount" content="634">
 <meta itemprop="keywords" content="Principal Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Creating user accounts with the API"/>
@@ -554,7 +554,7 @@ if (!doNotTrack) {
 		
 	</header>    
 	<p>Normally, a user account can only be created by a system administrator - see <a href="/docs/security-and-compliance/security-features/users/#adding-a-user">adding a user</a>.</p>
-<p>However there&rsquo;s one special case in which the organisation runs a <a href="/docs/security-and-compliance/security-features/roles/#multi-tenanting">multi-tenanted</a> agileBase account. In that case, you can use an API call to create a new tenant in the account and new user(s) for that tenant.</p>
+<p>However there&rsquo;s one special case in which the organisation runs a <a href="/docs/security-and-compliance/security-features/roles/#multi-tenanting">multi-tenanted</a> Agilebase account. In that case, you can use an API call to create a new tenant in the account and new user(s) for that tenant.</p>
 <p>For example, imagine your organisation is a body for football clubs around the country, where each club was a tenant, i.e. each club had users who could log in, but only see data from their own club. In that case, the user creation API could be called to</p>
 <ol>
 <li>create a new club</li>
@@ -573,7 +573,7 @@ if (!doNotTrack) {
 <p>To disable the API at any point, just delete the value you entered into <em>Multi-tenanting field name (optional)</em></p>
 </blockquote>
 <h2 id="calling-the-api">Calling the API</h2>
-<p>Use URL <a href="https://ab.agilechilli.com/agileBase/Public.ab">https://ab.agilechilli.com/agileBase/Public.ab</a>. You should make a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST">POST</a> request with encoding <code>application/x-www-form-urlencoded</code>.</p>
+<p>Use URL <a href="https://ab.agilechilli.com/Agilebase/Public.ab">https://ab.agilechilli.com/Agilebase/Public.ab</a>. You should make a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST">POST</a> request with encoding <code>application/x-www-form-urlencoded</code>.</p>
 <p>The <code>Authorization</code> header needs to be set to the API key as above.</p>
 <p>The following paramaters are required</p>
 <ol>
@@ -685,7 +685,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified April 25, 2022: <a href="https://github.com/okohll/abdocs/commit/7d9c2fde626ce6715b122af89dc9cd4188b199c3">Updated tags and filled out blank index pages (7d9c2fd)</a>
+  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/08ac056e46e4bf4b89ac89de4d004f3cb100bb87">Agilebase capitalisation (08ac056)</a>
 </div>
 
 </div>

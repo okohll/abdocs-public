@@ -24,7 +24,7 @@
         
         
         &lt;h2 id=&#34;capitalise-field-name&#34;&gt;Capitalise field name&lt;/h2&gt;
-&lt;p&gt;By default agileBase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. &amp;lsquo;pH&amp;rsquo; or &amp;lsquo;Length (m)&amp;rsquo;, which would otherwise show as &amp;lsquo;PH&amp;rsquo; and &amp;lsquo;Length (M)&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;By default Agilebase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. &amp;lsquo;pH&amp;rsquo; or &amp;lsquo;Length (m)&amp;rsquo;, which would otherwise show as &amp;lsquo;PH&amp;rsquo; and &amp;lsquo;Length (M)&amp;rsquo;.&lt;/p&gt;
 &lt;h2 id=&#34;icon&#34;&gt;Icon&lt;/h2&gt;
 &lt;p&gt;Rather than displaying a field name, show an icon, chosen from &lt;a href=&#34;https://fontawesome.com/icons&#34;&gt;https://fontawesome.com/icons&lt;/a&gt;. For example, to show a phone icon for a phone number field, you could enter &lt;code&gt;phone&lt;/code&gt;, for an email field &lt;code&gt;envelope&lt;/code&gt; or a twitter handle &lt;code&gt;twitter&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;show-if-record-in-view&#34;&gt;Show if record in view&lt;/h2&gt;
@@ -121,12 +121,12 @@
 &lt;p&gt;&lt;code&gt;1) not billed, 2) awaiting payment, 3) paid|finance&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;will mean that anyone will be able to set the field to &lt;code&gt;1) not billed&lt;/code&gt; or &lt;code&gt;2) awaiting payment&lt;/code&gt; but only members of the finance role will be able to see and set the &lt;code&gt;3) paid&lt;/code&gt; option (once it has been set, it will be visible to everyone).&lt;/p&gt;
 &lt;h4 id=&#34;lists-of-users&#34;&gt;Lists of users&lt;/h4&gt;
-&lt;p&gt;Also for dropdown lists and tags fields, agileBase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select &lt;code&gt;users&lt;/code&gt; or &lt;code&gt;users and roles&lt;/code&gt; from the &amp;lsquo;fill with&amp;rsquo; selector just below the value(s) input. The standard user ID format throughout the system is used, &amp;lsquo;Forename Surname (username)&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;Also for dropdown lists and tags fields, Agilebase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select &lt;code&gt;users&lt;/code&gt; or &lt;code&gt;users and roles&lt;/code&gt; from the &amp;lsquo;fill with&amp;rsquo; selector just below the value(s) input. The standard user ID format throughout the system is used, &amp;lsquo;Forename Surname (username)&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;Only users/roles which have privileges to view the data in this particular table will be shown in the list. That can keep things manageable if a system has hundreds or more users.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;An example use would be assigning an account manager to a customer, selecting from a list of staff members (who are users).&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there&amp;rsquo;s a status change or something is overdue for example. agileBase can look up the user&amp;rsquo;s email address to accomplish this, See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email workflows&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there&amp;rsquo;s a status change or something is overdue for example. Agilebase can look up the user&amp;rsquo;s email address to accomplish this, See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email workflows&lt;/a&gt; for details.&lt;/p&gt;
 &lt;p&gt;When using &amp;lsquo;fill with users&amp;rsquo;, the list of users to appear in the dropdown can further be narrowed down by role if required. To do that, enter the text&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;_users|role1,role2,role3&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;i.e. &lt;code&gt;_users&lt;/code&gt; followed by a vertical bar and then a comma separated list of role names. Only users which appear in one or more of the named roles will appear.&lt;/p&gt;
@@ -146,7 +146,7 @@
 &lt;p&gt;This option can be selected for multiple fields in a table. In that case, the first field will be the main title, others will appear as subtitles.&lt;/p&gt;
 &lt;h3 id=&#34;preventing-duplicates&#34;&gt;Preventing duplicates&lt;/h3&gt;
 &lt;p&gt;Enabling the &amp;lsquo;use as record title&amp;rsquo; option also has the effect of enabling duplicate detection. The system will detect when a value is entered that is close to an existing value in the system. Any &amp;lsquo;close&amp;rsquo; values that are found are displayed as links to the relevant records.&lt;/p&gt;
-&lt;p&gt;This can be useful when e.g. entering company names. Although a field can be marked &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#unique&#34;&gt;unique&lt;/a&gt; to prevent exact duplicates, that won&amp;rsquo;t pick up near matches, which this duplicate detection will. For example, &amp;lsquo;The Universoty Of Bristol&amp;rsquo; and &amp;lsquo;University Of Bristol (UOB)&amp;rsquo; will be detected as close matches, or &amp;lsquo;agileBase&amp;rsquo; and &amp;lsquo;agileBase Ltd&amp;rsquo;.&lt;/p&gt;
+&lt;p&gt;This can be useful when e.g. entering company names. Although a field can be marked &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#unique&#34;&gt;unique&lt;/a&gt; to prevent exact duplicates, that won&amp;rsquo;t pick up near matches, which this duplicate detection will. For example, &amp;lsquo;The Universoty Of Bristol&amp;rsquo; and &amp;lsquo;University Of Bristol (UOB)&amp;rsquo; will be detected as close matches, or &amp;lsquo;Agilebase&amp;rsquo; and &amp;lsquo;Agilebase Ltd&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;The system uses &lt;a href=&#34;https://www.postgresql.org/docs/current/pgtrgm.html&#34;&gt;trigram matching&lt;/a&gt; to detect similar values.&lt;/p&gt;
 
       </description>
@@ -161,7 +161,7 @@
       <description>
         
         
-        &lt;p&gt;Relations between tables are the &amp;lsquo;glue&amp;rsquo; that holds together an application built using agileBase. If you&amp;rsquo;d like to learn more about this fundamental concept, please check out the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; page.&lt;/p&gt;
+        &lt;p&gt;Relations between tables are the &amp;lsquo;glue&amp;rsquo; that holds together an application built using Agilebase. If you&amp;rsquo;d like to learn more about this fundamental concept, please check out the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; page.&lt;/p&gt;
 &lt;p&gt;Some of the options for a relation field determine the nature of the links between tables, which can have a great effect on how an app works, so it&amp;rsquo;s very useful to know about them.&lt;/p&gt;
 &lt;h2 id=&#34;one-to-one-only&#34;&gt;One to one only&lt;/h2&gt;
 &lt;p&gt;By default, a relation is a &amp;lsquo;many to one&amp;rsquo;. For example if a relation field in a contacts table links to an organisation, that organisation can have many contacts linked. If an ingredient links to a recipe, that recipe can have many ingredients. One customer can have many orders - examples are numerous.&lt;/p&gt;
@@ -261,7 +261,7 @@
         &lt;h2 id=&#34;default-value&#34;&gt;Default value&lt;/h2&gt;
 &lt;p&gt;Simply whether the checkbox should default to ticked (true) or un-ticked (false) for new records.&lt;/p&gt;
 &lt;h2 id=&#34;dont-set-last-modified&#34;&gt;Don&amp;rsquo;t set last modified&lt;/h2&gt;
-&lt;p&gt;Whenever someone edits a record, agileBase automatically updates the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#last-modified-auto&#34;&gt;Last Modified&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#modified-by-auto&#34;&gt;Modified By&lt;/a&gt; fields of the table. This option prevents that happening when the checkbox field is ticked or un-ticked. There would not usually be a need for this but it may be useful in a minority of cases.&lt;/p&gt;
+&lt;p&gt;Whenever someone edits a record, Agilebase automatically updates the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#last-modified-auto&#34;&gt;Last Modified&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#modified-by-auto&#34;&gt;Modified By&lt;/a&gt; fields of the table. This option prevents that happening when the checkbox field is ticked or un-ticked. There would not usually be a need for this but it may be useful in a minority of cases.&lt;/p&gt;
 &lt;h2 id=&#34;show-digital-signature&#34;&gt;Show digital signature&lt;/h2&gt;
 &lt;p&gt;Causes the user interface to show the name &amp;amp; username of the person who last ticked or un-ticked the checkbox, along with a timestamp.&lt;/p&gt;
 &lt;blockquote&gt;

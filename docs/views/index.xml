@@ -23,7 +23,7 @@
       <description>
         
         
-        &lt;p&gt;In agileBase, a view &amp;lsquo;belongs to&amp;rsquo; a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt;. We&amp;rsquo;ll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we&amp;rsquo;ll assume we pick a contacts table.&lt;/p&gt;
+        &lt;p&gt;In Agilebase, a view &amp;lsquo;belongs to&amp;rsquo; a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt;. We&amp;rsquo;ll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we&amp;rsquo;ll assume we pick a contacts table.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ll also assume we already have some tables and some &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;to-create-a-view&#34;&gt;To create a view&lt;/h2&gt;
 &lt;ol&gt;
@@ -70,7 +70,7 @@
 &lt;p&gt;Or for a more complex example, if you start with a view from a recipes table, you could potentially join down to ingredients, then on again to allergens of those ingredients, allowing you to work out with a calculation the complete list of allergens in any recipe.&lt;/p&gt;
 &lt;p&gt;Any number of joins to different tables or views can be added to a view.&lt;/p&gt;
 &lt;h2 id=&#34;adding-a-join&#34;&gt;Adding a join&lt;/h2&gt;
-&lt;p&gt;agileBase will automatically pick out the common tables you may wish to join to, by seeing which are related via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation fields&lt;/a&gt;. Once you get used to the concepts, you may also wish sometimes to add joins manually to tables or views not automatically suggested. That will be covered at the end of this page.&lt;/p&gt;
+&lt;p&gt;Agilebase will automatically pick out the common tables you may wish to join to, by seeing which are related via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation fields&lt;/a&gt;. Once you get used to the concepts, you may also wish sometimes to add joins manually to tables or views not automatically suggested. That will be covered at the end of this page.&lt;/p&gt;
 &lt;p&gt;To add a join&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Load the view you wish to add a join to and enable development mode&lt;/li&gt;
@@ -80,7 +80,7 @@
 &lt;h2 id=&#34;the-anatomy-of-a-join&#34;&gt;The anatomy of a join&lt;/h2&gt;
 &lt;p&gt;The added join will appear graphically above the &lt;em&gt;Add Join&lt;/em&gt; button. The lefthand &amp;lsquo;blob&amp;rsquo; or part represents the table being joined from, on the right is the one joined to. In the middle is a selector for the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/types-of-join/&#34;&gt;join type&lt;/a&gt;, which we will come to.&lt;/p&gt;
 &lt;p&gt;In each part, left or right, the name of the table being joined from (on the left) or to (on the right) is shown in bold.&lt;/p&gt;
-&lt;p&gt;Underneath the table name, the name of the field used to match records is shown. When an ID field is shown, this just refers to the internal ID agileBase uses automatically to make the match. It&amp;rsquo;s only of relevance if you&amp;rsquo;re creating advanced joins manually - see below, so can be ignored otherwise.&lt;/p&gt;
+&lt;p&gt;Underneath the table name, the name of the field used to match records is shown. When an ID field is shown, this just refers to the internal ID Agilebase uses automatically to make the match. It&amp;rsquo;s only of relevance if you&amp;rsquo;re creating advanced joins manually - see below, so can be ignored otherwise.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/example-join.png&#34; alt=&#34;example join&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In this example, we have a join from the &lt;strong&gt;contacts&lt;/strong&gt; table to &lt;strong&gt;companies&lt;/strong&gt;, to allow us to add company information into our view. The link was made based on the &lt;strong&gt;organisation&lt;/strong&gt; field in the contacts table, which lets a company be assigned to a contact.&lt;/p&gt;
 &lt;h2 id=&#34;upwards-and-downwards-joins&#34;&gt;Upwards and downwards joins&lt;/h2&gt;
@@ -92,7 +92,7 @@
 &lt;p&gt;** TODO: screenshot **&lt;/p&gt;
 &lt;p&gt;So joins upwards are the more common case, but joins downward can be useful for particular purposes.&lt;/p&gt;
 &lt;h2 id=&#34;complex-joins&#34;&gt;Complex joins&lt;/h2&gt;
-&lt;p&gt;As above, agileBase automatically suggests joins to data that&amp;rsquo;s related to the current view&amp;rsquo;s parent table as well as any of the tables already joined to. It uses &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation fields&lt;/a&gt; to see what&amp;rsquo;s related.&lt;/p&gt;
+&lt;p&gt;As above, Agilebase automatically suggests joins to data that&amp;rsquo;s related to the current view&amp;rsquo;s parent table as well as any of the tables already joined to. It uses &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation fields&lt;/a&gt; to see what&amp;rsquo;s related.&lt;/p&gt;
 &lt;p&gt;However, sometimes you may want to join to a table or view that&amp;rsquo;s not automatically suggested. These examples may become increasingly &amp;rsquo;niche&amp;rsquo; but they are a useful reference for similar situations you may come across.&lt;/p&gt;
 &lt;h3 id=&#34;joining-to-a-view&#34;&gt;Joining to a view&lt;/h3&gt;
 &lt;p&gt;Joins to views aren&amp;rsquo;t automatically suggested, but you can still add them.&lt;/p&gt;
@@ -164,7 +164,7 @@
         
         
         &lt;p&gt;The ability to add calculations to a view opens up a world of possibilities. Within the confines of the SQL language, there&amp;rsquo;s no limit to what you can do, and those confines contain a pretty large space.&lt;/p&gt;
-&lt;p&gt;This is the only area of agileBase which requires some &amp;lsquo;semi-programming&amp;rsquo; to use - using snippets of SQL. SQL is a standard, widely popular and easy to learn language and there are lots of resources available on the internet.&lt;/p&gt;
+&lt;p&gt;This is the only area of Agilebase which requires some &amp;lsquo;semi-programming&amp;rsquo; to use - using snippets of SQL. SQL is a standard, widely popular and easy to learn language and there are lots of resources available on the internet.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ll start with some simple examples, then move on to some more advanced ones, but even then we won&amp;rsquo;t cover every capability so will point you to specific further resources and references.&lt;/p&gt;
 &lt;p&gt;But first, what are the mechanics of creating a calculation and adding it to a view?&lt;/p&gt;
 &lt;h2 id=&#34;adding-a-calculation&#34;&gt;Adding a calculation&lt;/h2&gt;
@@ -223,11 +223,11 @@
 &lt;p&gt;&lt;code&gt;({really complex calculation 1} + {really complex calculation 2}) / {really complex calculation 3}&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;The rule not to mix aggregate parts and non-aggregate parts, as above, still holds.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Just be aware that if you update one of the composite parts, you then need to update any calculations that depend on it. The system won&amp;rsquo;t automatically update them to reference the new version. This is due to the way the database works under the hood - it doesn&amp;rsquo;t natively support referencing one calculation from another, so we add that layer in agileBase functionality.&lt;/p&gt;
+&lt;p&gt;Just be aware that if you update one of the composite parts, you then need to update any calculations that depend on it. The system won&amp;rsquo;t automatically update them to reference the new version. This is due to the way the database works under the hood - it doesn&amp;rsquo;t natively support referencing one calculation from another, so we add that layer in Agilebase functionality.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;troubleshooting-errors&#34;&gt;Troubleshooting errors&lt;/h3&gt;
-&lt;p&gt;If there is an error in a view, it&amp;rsquo;s more than likely the culprit is a calculation, as they are one of the more complex facilities of agileBase and the only one where SQL can be entered by the user, as opposed to be automatically generated. You may see messages like &lt;strong&gt;view broken&lt;/strong&gt; or errors when you try to change a view e.g. move a field.&lt;/p&gt;
-&lt;p&gt;Errors can occur due to data changing. Division by zero errors are automatically handled by agileBase (null is returned), but other types of calculation can also cause errors in certain circumstances. For example if a calculation squares a field, if someone enters a really large number into that field in a particular record, then an overflow error may occur.&lt;/p&gt;
+&lt;p&gt;If there is an error in a view, it&amp;rsquo;s more than likely the culprit is a calculation, as they are one of the more complex facilities of Agilebase and the only one where SQL can be entered by the user, as opposed to be automatically generated. You may see messages like &lt;strong&gt;view broken&lt;/strong&gt; or errors when you try to change a view e.g. move a field.&lt;/p&gt;
+&lt;p&gt;Errors can occur due to data changing. Division by zero errors are automatically handled by Agilebase (null is returned), but other types of calculation can also cause errors in certain circumstances. For example if a calculation squares a field, if someone enters a really large number into that field in a particular record, then an overflow error may occur.&lt;/p&gt;
 &lt;p&gt;This can be resolved by temporarily filtering out the problem data, then the view can be edited to handle the issue, or perhaps a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/data-integrity-checks/&#34;&gt;data integrity check&lt;/a&gt; can be added to disallow problem data in future.&lt;/p&gt;
 &lt;p&gt;If there is a persistent issue, one way of dealing with it is to temporarily delete all the calculation definitions - you can copy and paste them somewhere else for record-keeping, perhaps into each calculation&amp;rsquo;s notes entry. Then once the view is working again, add the calculation definitions back one by one until you find the problem.&lt;/p&gt;
 
@@ -286,7 +286,7 @@
         
         
         &lt;p&gt;The primary purpose of a view is to show data to users. To let them see, search and report on it, or find individual records to edit.&lt;/p&gt;
-&lt;p&gt;However, some fundamental aspects of a view make it a very useful feature that can power many core capabilities of agileBase, such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chasers&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt;, as well as being useful to administrators in many more minor ways.&lt;/p&gt;
+&lt;p&gt;However, some fundamental aspects of a view make it a very useful feature that can power many core capabilities of Agilebase, such as &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chasers&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt;, as well as being useful to administrators in many more minor ways.&lt;/p&gt;
 &lt;p&gt;A view being a filtered list of records, it can be used to specify those records to act on, i.e. those representing emails to send, workflow actions or data to send to a third party system with an API.&lt;/p&gt;
 &lt;p&gt;A view is commonly created for the task you wish to accomplish, placing it in a System tile to hide it from users. Then it can be turned to the required purpose in any of the following ways.&lt;/p&gt;
 

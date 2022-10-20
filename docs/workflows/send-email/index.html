@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.103.1" />
+<meta name="generator" content="Hugo 0.104.3" />
 <meta name="robots" content="index, follow">
 
 
@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/workflows/send-email/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-29T12:35:00+01:00" />
-<meta property="article:modified_time" content="2022-05-09T16:58:04+01:00" />
+<meta property="article:modified_time" content="2022-10-20T10:51:42+01:00" />
 
 <meta itemprop="name" content="Send an email">
 <meta itemprop="description" content="Workflows can be used to send an email"><meta itemprop="datePublished" content="2020-05-29T12:35:00+01:00" />
-<meta itemprop="dateModified" content="2022-05-09T16:58:04+01:00" />
+<meta itemprop="dateModified" content="2022-10-20T10:51:42+01:00" />
 <meta itemprop="wordCount" content="602">
 <meta itemprop="keywords" content="Certified Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Send an email"/>
@@ -569,7 +569,7 @@ if (!doNotTrack) {
 	</header>    
 	<p>Agilebase can be used to send emails. This facility should <strong>NOT</strong> be used for marketing purposes, rather as a method to notify people about data associated to the system.</p>
 <blockquote>
-<p>Note: When setting up an email alert, the system needs to know the email address of the recipient. Sometimes this may be very simple, when you always want to send the alert to the same person. For some alerts though you may wish to change who gets it depending on the data, e.g. each salesperson may get the leads assigned to them. In this case, the system will need to know the email address, so it needs to be stored somewhere. For agileBase users, if they use their email address as their username, the system can pick this up when a user’s assigned to a record, either manually or as part of the automatic ‘created by’ and ‘modified by’ fields</p>
+<p>Note: When setting up an email alert, the system needs to know the email address of the recipient. Sometimes this may be very simple, when you always want to send the alert to the same person. For some alerts though you may wish to change who gets it depending on the data, e.g. each salesperson may get the leads assigned to them. In this case, the system will need to know the email address, so it needs to be stored somewhere. For Agilebase users, if they use their email address as their username, the system can pick this up when a user’s assigned to a record, either manually or as part of the automatic ‘created by’ and ‘modified by’ fields</p>
 </blockquote>
 <h2 id="step-1-add-a-necessary-field">Step 1: add a necessary field</h2>
 <p>Select the table which has the alert data in it and add a date/time field with SECOND accuracy called e.g. “Last notified”. This will be used by the system to store when the last notification was sent for each record.</p>
@@ -585,12 +585,12 @@ if (!doNotTrack) {
 <p><img src="/send-email-new.png" alt="Workflow actions that alter data"></p>
 <p>You can attach documents to the email by including the field name for a file in the message.</p>
 <p>Under the email template, set “Notification time field” to the field that you created in step 1, e.g. “Last notified”</p>
-<p>Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in agileBase, you can use that field and the system will automatically pick out the email address for them.</p>
+<p>Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in Agilebase, you can use that field and the system will automatically pick out the email address for them.</p>
 <blockquote>
 <p>That’s it! Note when testing, we recommend setting the “To:” value to your own email address, just until you’re sure everything’s working properly.</p>
 </blockquote>
 <h2 id="rich-text-html-emails">Rich text (HTML) emails</h2>
-<p>HTML emails can now be sent by apps built on the agileBase platform.
+<p>HTML emails can now be sent by apps built on the Agilebase platform.
 That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.</p>
 <h3 id="setting-up">Setting up</h3>
 <p>Set up an email notification workflow as normal (in a view, use the manage -&gt; send tab).</p>
@@ -663,7 +663,7 @@ That means that your company can send out branded, rich-text emails (with attach
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified May 9, 2022: <a href="https://github.com/okohll/abdocs/commit/8a3fbb069e0fcfc0d78cac21888a85133a76ee49">Documentation screenshot updates (8a3fbb0)</a>
+  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/08ac056e46e4bf4b89ac89de4d004f3cb100bb87">Agilebase capitalisation (08ac056)</a>
 </div>
 
 </div>

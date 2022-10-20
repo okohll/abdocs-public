@@ -32,8 +32,8 @@
 &lt;p&gt;Agilebase will help you every step of the way. And you can stop at the level that is useful to you.&lt;/p&gt;
 &lt;p&gt;Agilebase enables citizen developers to pass through five stages on their way to becoming software architects:&lt;/p&gt;
 &lt;h2 id=&#34;citizen-developer-level-1&#34;&gt;Citizen Developer Level 1&lt;/h2&gt;
-&lt;p&gt;This is the start of the agileBase journey. At this level you can create your own applications, using no coding.&lt;/p&gt;
-&lt;p&gt;An agileBase citizen developer can create &amp;lsquo;personal copies&amp;rsquo; of any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; and edit those copies&lt;/p&gt;
+&lt;p&gt;This is the start of the Agilebase journey. At this level you can create your own applications, using no coding.&lt;/p&gt;
+&lt;p&gt;An Agilebase citizen developer can create &amp;lsquo;personal copies&amp;rsquo; of any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; and edit those copies&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;remove or add fields, excepting any that are marked &amp;lsquo;confidential&amp;rsquo; (only higher level developers can access those fields)&lt;/li&gt;
 &lt;li&gt;rearrange fields&lt;/li&gt;
@@ -80,7 +80,7 @@
 &lt;li&gt;edit the basic properties of any regular view. However, workflow, API and some other types of system view will be read-only&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;junior-software-architect&#34;&gt;Junior Software Architect&lt;/h2&gt;
-&lt;p&gt;A junior software architect can use practically all of the application building functionality of agileBase. For example&lt;/p&gt;
+&lt;p&gt;A junior software architect can use practically all of the application building functionality of Agilebase. For example&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; (including chasers, document generation)&lt;/li&gt;
 &lt;li&gt;Set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt;&lt;/li&gt;
@@ -113,7 +113,7 @@
       <description>
         
         
-        &lt;p&gt;As a no-code platform, agileBase allows you to easily construct (and later de-construct or &amp;lsquo;refactor&amp;rsquo;) and change your software.&lt;/p&gt;
+        &lt;p&gt;As a no-code platform, Agilebase allows you to easily construct (and later de-construct or &amp;lsquo;refactor&amp;rsquo;) and change your software.&lt;/p&gt;
 &lt;h2 id=&#34;toggling-development-mode-on-and-off&#34;&gt;Toggling development mode on and off&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/toggle-build-mode.png&#34; alt=&#34;Toggle development mode&#34;&gt;
 To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &amp;lsquo;development&amp;rsquo; mode. You can do this wherever you are in the system and you will switch to building or developing the item you&amp;rsquo;re looking at. The three main areas this covers are:&lt;/p&gt;

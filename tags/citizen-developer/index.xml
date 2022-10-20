@@ -112,7 +112,7 @@
       <description>
         
         
-        &lt;p&gt;These pages provide a guide to using tables, which are the backbone of data storage in agileBase. agileBase offers rich table functionality so that data can be processed in the optimal way for your application.&lt;/p&gt;
+        &lt;p&gt;These pages provide a guide to using tables, which are the backbone of data storage in Agilebase. Agilebase offers rich table functionality so that data can be processed in the optimal way for your application.&lt;/p&gt;
 
       </description>
     </item>
@@ -126,7 +126,7 @@
       <description>
         
         
-        &lt;p&gt;In agileBase, a view &amp;lsquo;belongs to&amp;rsquo; a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt;. We&amp;rsquo;ll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we&amp;rsquo;ll assume we pick a contacts table.&lt;/p&gt;
+        &lt;p&gt;In Agilebase, a view &amp;lsquo;belongs to&amp;rsquo; a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt;. We&amp;rsquo;ll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we&amp;rsquo;ll assume we pick a contacts table.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ll also assume we already have some tables and some &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;to-create-a-view&#34;&gt;To create a view&lt;/h2&gt;
 &lt;ol&gt;
@@ -168,7 +168,7 @@
       <description>
         
         
-        &lt;p&gt;In agileBase there are two mechanisms for charting and visualising data, each suited to a different purpose&lt;/p&gt;
+        &lt;p&gt;In Agilebase there are two mechanisms for charting and visualising data, each suited to a different purpose&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;our &lt;a href=&#34;built-in-charting&#34;&gt;built-in charting&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;exporting data to third party business intelligence tools&lt;/li&gt;
@@ -190,21 +190,21 @@
 &lt;ul&gt;
 &lt;li&gt;You want to report summary KPIs or trends upwards, to higher levels of management, so you need a dashboard
 &lt;ul&gt;
-&lt;li&gt;to include charts from different views in agileBase in one place&lt;/li&gt;
+&lt;li&gt;to include charts from different views in Agilebase in one place&lt;/li&gt;
 &lt;li&gt;to present them in particular formats suitable for reporting, e.g. in particular sizes/layouts or using company colours&lt;/li&gt;
 &lt;li&gt;potentially to include data from additional sources in the one dashboard e.g. from accounting systems as well&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;The source data views in agileBase are mature and aren&amp;rsquo;t likely to change. Changes can break any integration set up&lt;/li&gt;
+&lt;li&gt;The source data views in Agilebase are mature and aren&amp;rsquo;t likely to change. Changes can break any integration set up&lt;/li&gt;
 &lt;li&gt;You are happy with the privacy and data security implications - see below&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;privacy-and-data-security&#34;&gt;Privacy and data security&lt;/h3&gt;
-&lt;p&gt;When connecting a Business Intelligence tool, whether that&amp;rsquo;s the Superset instance we provide, or a third party tool, it&amp;rsquo;s important to realise that data &lt;em&gt;leaves agileBase&lt;/em&gt; and therefore is no longer protected by agileBase&amp;rsquo;s roles and privileges system.&lt;/p&gt;
-&lt;p&gt;You may have data in agileBase which is only accessible to certain members of staff, however when accessed outside of agileBase, those rules no longer apply. That doesn&amp;rsquo;t necessarily mean the data is accessible publicly, but it does mean it&amp;rsquo;s controlled by whatever privilege system the third party tool uses, which will be different to agileBase&amp;rsquo;s.&lt;/p&gt;
-&lt;p&gt;Therefore, from agileBase&amp;rsquo;s point of view, similar rules will apply when connecting a BI system as to when exporting data to spreadsheets. For example&lt;/p&gt;
+&lt;p&gt;When connecting a Business Intelligence tool, whether that&amp;rsquo;s the Superset instance we provide, or a third party tool, it&amp;rsquo;s important to realise that data &lt;em&gt;leaves Agilebase&lt;/em&gt; and therefore is no longer protected by Agilebase&amp;rsquo;s roles and privileges system.&lt;/p&gt;
+&lt;p&gt;You may have data in Agilebase which is only accessible to certain members of staff, however when accessed outside of Agilebase, those rules no longer apply. That doesn&amp;rsquo;t necessarily mean the data is accessible publicly, but it does mean it&amp;rsquo;s controlled by whatever privilege system the third party tool uses, which will be different to Agilebase&amp;rsquo;s.&lt;/p&gt;
+&lt;p&gt;Therefore, from Agilebase&amp;rsquo;s point of view, similar rules will apply when connecting a BI system as to when exporting data to spreadsheets. For example&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Any user connecting a BI tool will be shown a warning of these consequences, which they&amp;rsquo;ll need to accept prior to going ahead&lt;/li&gt;
-&lt;li&gt;agileBase system administrators will get email notifications every time data in a view is made available to BI tools, containing information on whether that data is marked as sensitive or private&lt;/li&gt;
+&lt;li&gt;Agilebase system administrators will get email notifications every time data in a view is made available to BI tools, containing information on whether that data is marked as sensitive or private&lt;/li&gt;
 &lt;li&gt;Only people with MANAGE privileges on a table can connect BI tools. They also have to have two factor authentication enabled&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -222,7 +222,7 @@
         
         &lt;p&gt;Charting is not strictly an administrator function, as any user can create charts and other data visualisations, such as maps and word clouds.&lt;/p&gt;
 &lt;p&gt;However, it&amp;rsquo;s useful for administrators to know how the system works in outline, so they can support users and also because creating charts may be a key part of building an application.&lt;/p&gt;
-&lt;p&gt;In agileBase, charts &amp;lsquo;belong to&amp;rsquo; a view. Each view can have a collection of charts. Users can toggle between viewing data rows and looking at charts based on those rows. When a user filters data using the quick filter boxes at the top of the screen, the data or charts (whichever is shown) will update to match the filtered results.&lt;/p&gt;
+&lt;p&gt;In Agilebase, charts &amp;lsquo;belong to&amp;rsquo; a view. Each view can have a collection of charts. Users can toggle between viewing data rows and looking at charts based on those rows. When a user filters data using the quick filter boxes at the top of the screen, the data or charts (whichever is shown) will update to match the filtered results.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-chart&#34;&gt;Creating a chart&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;In the tiles interface, open the tile and view to use as a source of chart data&lt;/li&gt;
@@ -310,7 +310,7 @@
       <description>
         
         
-        &lt;p&gt;agileBase allows data to be imported from CSV (Comma Separated Variable) files. All popular spreadsheet software can save data in this format.&lt;/p&gt;
+        &lt;p&gt;Agilebase allows data to be imported from CSV (Comma Separated Variable) files. All popular spreadsheet software can save data in this format.&lt;/p&gt;
 &lt;p&gt;Anyone with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;&lt;strong&gt;manage&lt;/strong&gt; privileges&lt;/a&gt; on a table can import data into it.&lt;/p&gt;
 &lt;p&gt;In the tiles interface, load any view created from the table to import into. Scroll to the bottom of the rows and press the cloud import icon, then follow through the prompts.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/import-link.png&#34; alt=&#34;import link&#34;&gt;&lt;/p&gt;
@@ -322,7 +322,7 @@
 &lt;p&gt;Inserting new records will create a new record in the database for every line in the CSV file. Updating existing records will attempt to match each line in the file with an existing record and update all field values from the CSV. This can be useful when merging in data from an external source, or exporting, altering with a third party system and re-importing. Another use can be updating one field based on another - you can &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/&#34;&gt;export&lt;/a&gt;, update the fields as necessary and re-import.&lt;/p&gt;
 &lt;p&gt;In either case, the CSV file must contain fields in the same order as they are in the table being imported into. The column titles don’t need to be the same though, it’s the order which is important. The import screen will show you the column order which is necessary.&lt;/p&gt;
 &lt;h2 id=&#34;updating-existing-records&#34;&gt;Updating existing records&lt;/h2&gt;
-&lt;p&gt;When updating records, a key field must be selected to match records up. This can be any field that has the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#unique&#34;&gt;unique&lt;/a&gt; property set. Alternatively the internal agileBase rowID can be used. This field is included as the first field in any data export.&lt;/p&gt;
+&lt;p&gt;When updating records, a key field must be selected to match records up. This can be any field that has the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#unique&#34;&gt;unique&lt;/a&gt; property set. Alternatively the internal Agilebase rowID can be used. This field is included as the first field in any data export.&lt;/p&gt;
 &lt;p&gt;Sometimes, admins will want to do an export -&amp;gt; modify spreadsheet -&amp;gt; re-import workflow. This is straightforward:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Export from the admin interface by clicking the table containing the data you want to modify and clicking the &lt;em&gt;export&lt;/em&gt; button in the top toolbar.&lt;/li&gt;
@@ -333,7 +333,7 @@
 &lt;/blockquote&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;Blank out (remove content from) any columns which you haven’t updated. Otherwise if people have updated them since your export, you will overwrite their changes.&lt;/li&gt;
-&lt;li&gt;Re-import using an ‘update’ type import as above. Select &lt;em&gt;use internal agileBase row IDs to identify records&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Re-import using an ‘update’ type import as above. Select &lt;em&gt;use internal Agilebase row IDs to identify records&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;notes-on-special-fields&#34;&gt;Notes on special fields&lt;/h2&gt;
 &lt;p&gt;For a file field, please leave an empty column in the spreadsheet in that position. If you wish to do a bulk upload of many images or documents, please contact &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;support&lt;/a&gt;.&lt;/p&gt;
