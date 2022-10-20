@@ -245,15 +245,12 @@
         
         
         &lt;ol&gt;
-&lt;li&gt;Firstly, set up a view to operate as a standard ‘pull’ API&lt;/li&gt;
-&lt;li&gt;Enter a URL into the &lt;em&gt;Push URL (optional)&lt;/em&gt; area below the other details on that screen. This is the URL that Agilebase will POST to when there’s new data.&lt;/li&gt;
+&lt;li&gt;Firstly, create a a view which contains the data you wish to send&lt;/li&gt;
+&lt;li&gt;In the &amp;lsquo;Use API&amp;rsquo; panel, enter a URL into the &lt;em&gt;Push URL&lt;/em&gt; field. This is the URL that Agilebase will POST to when there’s new data.&lt;/li&gt;
 &lt;li&gt;In the table that the API view was created from, add a new date/time field, accurate to the second, for the system to record when the API push was last used&lt;/li&gt;
-&lt;li&gt;Go to the ‘workflow’ section under the view’s ‘manage’ tab.
-for ‘workflow action’, select ‘send data to a third party system using the API’
-for ‘recording the time of the last action’, choose the date/time field created above
-choose a minimum interval to wait between pushes&lt;/li&gt;
+&lt;li&gt;Go back to the view and the &amp;lsquo;Use API&amp;rsquo; panel and select the field you just created for the &amp;lsquo;Log Time Of Push To&amp;rsquo; field.
+The system will now make a POST to the URL specified in step 2 whenever there’s new data to send. It will contain one parameter, ‘json’, which is a JSON representation of all the data in the view.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The system will now make a POST to the URL specified in step 2 whenever there’s new data to send. It will contain one parameter, ‘json’, which is a JSON representation of all the data in the view.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-push-new.png&#34; alt=&#34;Configuring the PUSH API&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;selecting-data-to-push&#34;&gt;Selecting data to push&lt;/h3&gt;
 &lt;p&gt;How do we know which data is new and wants to be sent out via the API?&lt;/p&gt;
@@ -290,7 +287,7 @@ choose a minimum interval to wait between pushes&lt;/li&gt;
 &lt;p&gt;The first step is to create a view in Agilebase that contains the data you want to make available to other apps. You can use the standard view creation features of the administrator interface, including adding fields and calculations, sorts and filters.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Secondly, turn on the ability for the view to be accessed via a PULL API by going to the &lt;em&gt;manage&lt;/em&gt; tab,and within the &lt;em&gt;send&lt;/em&gt; section choosing &lt;em&gt;Send data to a third party system using the API&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Secondly, turn on the ability for the view to be accessed via a PULL API by going to the &lt;em&gt;use API&lt;/em&gt; panel, and ticking &lt;em&gt;Send data to a third party system using the API&lt;/em&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Finally Tick the &lt;em&gt;Allow access from third party software using an API key&lt;/em&gt;.&lt;/p&gt;
@@ -526,8 +523,8 @@ In short, we don&amp;rsquo;t need to worry about it. Endole provides the data to
       <description>
         
         
-        &lt;p&gt;When a comment is added to a record in Agilebase, a copy can be sent to your Slack workspace, to a specific channel appropriate to the tile. Instructions are in progress, in the meantime please &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; for help setting this up.&lt;/p&gt;
-&lt;p&gt;Integration with Microsoft Teams or other similar services is also possible should a customer wish - please get in touch if so.&lt;/p&gt;
+        &lt;p&gt;When a comment is added to a record in Agilebase, a copy can be sent to your Slack or Teams workspace, to a specific channel appropriate to the tile. Instructions are in progress, in the meantime please &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; for help setting this up.&lt;/p&gt;
+&lt;p&gt;Integration with other similar services is also possible should a customer wish - please get in touch if so.&lt;/p&gt;
 
       </description>
     </item>
@@ -620,6 +617,9 @@ In short, we don&amp;rsquo;t need to worry about it. Endole provides the data to
 &lt;li&gt;create an initial user (or users) for that club&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: these instructions need updating for the newest release, please contact support if you wish to use this functionality.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Before calling the API, you have to configure the system to allow it to be used. In the administrator user interface:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;

@@ -25,13 +25,13 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/tables/data-integrity-checks/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2022-10-20T10:51:42+01:00" />
+<meta property="article:modified_time" content="2022-10-20T15:20:52+01:00" />
 
 <meta itemprop="name" content="Data Integrity Checks">
 <meta itemprop="description" content="Enforcing the correctness of data entered into the system"><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2022-10-20T10:51:42+01:00" />
-<meta itemprop="wordCount" content="406">
-<meta itemprop="keywords" content="Architect," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="dateModified" content="2022-10-20T15:20:52+01:00" />
+<meta itemprop="wordCount" content="381">
+<meta itemprop="keywords" content="Software Architect,v6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Data Integrity Checks"/>
 <meta name="twitter:description" content="Enforcing the correctness of data entered into the system"/>
 
@@ -222,10 +222,10 @@ if (!doNotTrack) {
   <a href="/docs/tables/options/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docstablesoptions"><span class="">Options</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docstablesworkflow-li">
   <a href="/docs/tables/workflow/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docstablesworkflow"><span class="">Workflow</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docstablesusers-and-roles-li">
+  <a href="/docs/tables/users-and-roles/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docstablesusers-and-roles"><span class="">Roles and Privileges</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docstablesusage-li">
   <a href="/docs/tables/usage/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docstablesusage"><span class="">Usage</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docstablesusers-and-roles-li">
-  <a href="/docs/tables/users-and-roles/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docstablesusers-and-roles"><span class="">Users and Roles</span></a>
 </li>
   </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsfields-li">
@@ -453,7 +453,7 @@ if (!doNotTrack) {
 <div class="td-toc"><nav id="TableOfContents">
   <ul>
     <li><a href="#at-an-individual-field-level">At an individual field level</a></li>
-    <li><a href="#advanced-field-checks">Advanced field checks</a></li>
+    <li><a href="#data-integrity-checks-advanced">Data integrity checks (advanced)</a></li>
     <li><a href="#multi-field-unique-constraints">Multi-field unique constraints</a></li>
   </ul>
 </nav></div>
@@ -490,21 +490,21 @@ if (!doNotTrack) {
       
       <ul class="taxonomy-terms">
         
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/architect/" data-taxonomy-term="architect"><span class="taxonomy-label">Architect</span><span class="taxonomy-count">64</span></a></li>
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-1/" data-taxonomy-term="citizen-developer-level-1"><span class="taxonomy-label">Citizen Developer level 1</span><span class="taxonomy-count">5</span></a></li>
         
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/certified-architect/" data-taxonomy-term="certified-architect"><span class="taxonomy-label">Certified Architect</span><span class="taxonomy-count">16</span></a></li>
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-2/" data-taxonomy-term="citizen-developer-level-2"><span class="taxonomy-label">Citizen Developer level 2</span><span class="taxonomy-count">28</span></a></li>
         
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer/" data-taxonomy-term="citizen-developer"><span class="taxonomy-label">Citizen Developer</span><span class="taxonomy-count">7</span></a></li>
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-3/" data-taxonomy-term="citizen-developer-level-3"><span class="taxonomy-label">Citizen Developer level 3</span><span class="taxonomy-count">9</span></a></li>
         
           <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/core-user/" data-taxonomy-term="core-user"><span class="taxonomy-label">Core User</span><span class="taxonomy-count">1</span></a></li>
         
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/developer/" data-taxonomy-term="developer"><span class="taxonomy-label">Developer</span><span class="taxonomy-count">3</span></a></li>
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/junior-software-architect/" data-taxonomy-term="junior-software-architect"><span class="taxonomy-label">Junior Software Architect</span><span class="taxonomy-count">30</span></a></li>
         
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/principal-architect/" data-taxonomy-term="principal-architect"><span class="taxonomy-label">Principal Architect</span><span class="taxonomy-count">10</span></a></li>
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/requires-update/" data-taxonomy-term="requires-update"><span class="taxonomy-label">requires update</span><span class="taxonomy-count">2</span></a></li>
         
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/system-builder/" data-taxonomy-term="system-builder"><span class="taxonomy-label">System Builder</span><span class="taxonomy-count">3</span></a></li>
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span><span class="taxonomy-count">32</span></a></li>
         
-          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/system-owner/" data-taxonomy-term="system-owner"><span class="taxonomy-label">System Owner</span><span class="taxonomy-count">12</span></a></li>
+          <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/v6/" data-taxonomy-term="v6"><span class="taxonomy-label">v6</span><span class="taxonomy-count">85</span></a></li>
         
       </ul>
     </div>
@@ -547,7 +547,9 @@ if (!doNotTrack) {
   <h5 class="taxonomy-title">Tags:</h5>
   <ul class="taxonomy-terms">
     
-      <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/architect/" data-taxonomy-term="architect"><span class="taxonomy-label">Architect</span></a></li>
+      <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span></a></li>
+    
+      <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/v6/" data-taxonomy-term="v6"><span class="taxonomy-label">v6</span></a></li>
     
   </ul>
 </div>
@@ -575,17 +577,20 @@ if (!doNotTrack) {
 <p>That said, these are the ways in which you can strictly enforce data integrity.</p>
 <h2 id="at-an-individual-field-level">At an individual field level</h2>
 <p>Basic rules can be applied with <a href="/docs/fields/field-options/common-options/">field options</a>. For example a field may be set as mandatory, or it must contain unique values (no duplicates).</p>
-<h2 id="advanced-field-checks">Advanced field checks</h2>
+<h2 id="data-integrity-checks-advanced">Data integrity checks (advanced)</h2>
 <ol>
-<li>Expand the <em>Build Tables</em> menu in the lefthand sidebar</li>
-<li>Select the table you wish to add rules to</li>
-<li>Click the pencil icon in the toolbar to edit the table, then select the table&rsquo;s <em>manage</em> tab</li>
-<li>Click the <em>Checks</em> button</li>
+<li><a href="/docs/tables/adding-and-removing/#editing-a-table">Edit a table</a></li>
+<li>Click _Data Integrity Checks</li>
+<li>Click &lsquo;Add Single-Field Check&rsquo;</li>
 </ol>
 <p>Here you can add more complex checks, such as the value must be longer or shorter than a certain length, be within a date range or match a <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expression</a>. The list of checks available is the same as that used in <a href="/docs/views/filters/">view filters</a>.</p>
 <p><img src="/field-checks.png" alt="Field checks"></p>
 <h2 id="multi-field-unique-constraints">Multi-field unique constraints</h2>
-<p>Access these with the <em>Unique</em> button under the <em>Checks</em> button.</p>
+<ol>
+<li><a href="/docs/tables/adding-and-removing/#editing-a-table">Edit a table</a></li>
+<li>Click _Data Integrity Checks</li>
+<li>Click &lsquo;Add Multi-Field Unique Check&rsquo;</li>
+</ol>
 <p>Sometimes, fields must be unique <strong>in combination</strong>. For example, imagine you have a system for recording customer complaints. One of the fields might be a customer&rsquo;s reference number, another a relation to the customer record.</p>
 <p>You want to avoid duplicates being entered, so could make the customer reference number unique. However it could be that two different customers could use the same reference number independently, so that wouldn&rsquo;t really work.</p>
 <p>The solution is to add a multi-field unique constraint on customer and customer reference number. That way, a reference number won&rsquo;t be able to be re-used for a complaint from the same customer, but more than one customer is allowed to use the same reference.</p>
@@ -655,7 +660,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/08ac056e46e4bf4b89ac89de4d004f3cb100bb87">Agilebase capitalisation (08ac056)</a>
+  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/38914c9e1bb9f6efb085510479e9844c4f0dc374">Refresh of all instructions to match v6 of the Agilebase development interface - link syntax (38914c9)</a>
 </div>
 
 </div>

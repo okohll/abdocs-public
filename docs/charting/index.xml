@@ -29,7 +29,7 @@
 &lt;h2 id=&#34;creating-a-chart&#34;&gt;Creating a chart&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;In the tiles interface, open the tile and view to use as a source of chart data&lt;/li&gt;
-&lt;li&gt;Click the charts button to the left of the data rows displayed&lt;/li&gt;
+&lt;li&gt;Click the charts button at the top right of the screen&lt;/li&gt;
 &lt;li&gt;Click the &lt;em&gt;add/edit chart or map&lt;/em&gt; button&lt;/li&gt;
 &lt;li&gt;Follow each of the steps (1 - 3) on screen to build the chart&lt;/li&gt;
 &lt;li&gt;In the last step, give a name to the chart and press &lt;em&gt;save&lt;/em&gt;&lt;/li&gt;
@@ -42,7 +42,7 @@
 &lt;h2 id=&#34;embedding-charts-in-forms&#34;&gt;Embedding charts in forms&lt;/h2&gt;
 &lt;p&gt;Charts can be embedded into tables. When the user opens a record, the chart will automatically filter to show data pertaining to that record only.&lt;/p&gt;
 &lt;p&gt;So for example if you have a chart of sales per month per customer, which you embed into a customer table, it will show as sales per month, only for the customer on screen.&lt;/p&gt;
-&lt;p&gt;This is accomplished by using a view with chart(s) as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;cross-referenced panel&lt;/a&gt; - see that page for setup information.&lt;/p&gt;
+&lt;p&gt;This is accomplished by using a view with chart(s) as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data field&lt;/a&gt; - see that page for setup information.&lt;/p&gt;
 &lt;h2 id=&#34;embedding-charts-in-tabs&#34;&gt;Embedding charts in tabs&lt;/h2&gt;
 &lt;p&gt;When a tab contains many &amp;lsquo;child&amp;rsquo; records, e.g. an organisation may have a tab which contains financial data for the past 10 years, then charts can display above the rows of data when the tab&amp;rsquo;s opened.&lt;/p&gt;
 &lt;p&gt;To accomplish this, simply add a chart to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#tab-view&#34;&gt;view used by the tab&lt;/a&gt;. When the tab is opened, the chart will automatically be filtered to only show data pertaining to the parent table, in a similar fashion to how charts embedded using cross-referenced panels are filtered, as above.&lt;/p&gt;
@@ -74,18 +74,16 @@
         &lt;blockquote&gt;
 &lt;p&gt;Before setting up a BI connection, please be aware of the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting#privacy-and-data-security&#34;&gt;data privacy and security&lt;/a&gt; considerations.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;At Agilebase we host an instance of &lt;a href=&#34;https://superset.apache.org&#34;&gt;Apache Superset&lt;/a&gt; which can be used by customers to create reporting dashboards.&lt;/p&gt;
-&lt;p&gt;However the setup processes below also applies to third party tools such as Power BI. In fact, any tool which utilises &lt;a href=&#34;https://en.wikipedia.org/wiki/Open_Database_Connectivity&#34;&gt;ODBC&lt;/a&gt; can be used, such as Excel for example.&lt;/p&gt;
+&lt;p&gt;Any tool which utilises &lt;a href=&#34;https://en.wikipedia.org/wiki/Open_Database_Connectivity&#34;&gt;ODBC&lt;/a&gt; can be used, such as Excel for example. Power BI is a common one.&lt;/p&gt;
 &lt;h2 id=&#34;initial-setup&#34;&gt;Initial Setup&lt;/h2&gt;
-&lt;p&gt;The first step is to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; to request we prepare your account. This will also allow connections from Apache Superset, Power BI or any other tool which can connect to ODBC).&lt;/p&gt;
-&lt;p&gt;If you wish to use our supplied instance of Superset, we will then set up as many Superset users you require - there is no ongoing cost for these login accounts. Note that Superset logins are separate from Agilebase ones - the usernames and passwords can be different.&lt;/p&gt;
+&lt;p&gt;The first step is to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; to request we prepare your account. This will also allow connections from Power BI or any other tool which can connect to ODBC).&lt;/p&gt;
 &lt;p&gt;If you use Power BI, then the process is as follows&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Install the PostgreSQL ODBC driver from &lt;a href=&#34;https://odbc.postgresql.org/&#34;&gt;https://odbc.postgresql.org/&lt;/a&gt;. Use the Downloads link and if running on Windows, use the newest driver from the &lt;strong&gt;msi&lt;/strong&gt; folder.&lt;/li&gt;
 &lt;li&gt;Use your operating system&amp;rsquo;s control panel to set up the ODBC driver, using the login details we supply. Ensure the SSL mode is set to &amp;lsquo;require&amp;rsquo;.&lt;/li&gt;
 &lt;li&gt;From Power BI, add a connection using the PostgreSQL ODBC driver, &lt;em&gt;not&lt;/em&gt; the built-in Power BI PostgreSQL driver.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;sending-data-to-superset-or-power-bi&#34;&gt;Sending data to Superset or Power BI&lt;/h2&gt;
+&lt;h2 id=&#34;sending-data-to-power-bi&#34;&gt;Sending data to Power BI&lt;/h2&gt;
 &lt;p&gt;A developer with MANAGE privileges on a view&amp;rsquo;s parent table can set this up.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;In Agilebase, open the view you wish to report on. Ensure it has all the necessary fields and calculations in it which you want to report on. If not, add them before continuing.&lt;/li&gt;
@@ -110,32 +108,6 @@
 &lt;li&gt;Under &amp;lsquo;chain workflow&amp;rsquo;, select the reporting view A&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Then, when a user opens view B, they will see a button at the top of the screen with the button text set to the name of view A. Pressing it will refresh the view A data sent to external applications.&lt;/p&gt;
-&lt;h2 id=&#34;creating-dashboards-in-superset&#34;&gt;Creating dashboards in Superset&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This section applies to Superset only, for Power BI or other instructions please contact us.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Now that you&amp;rsquo;ve set up Agilebase to make data available to Superset, you can create charts and dashboards there.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create a &amp;lsquo;dataset&amp;rsquo; in Superset, corresponding to the view you set up above
-&lt;ol&gt;
-&lt;li&gt;From the &lt;em&gt;Data&lt;/em&gt; menu at the top, select &lt;em&gt;datasets&lt;/em&gt;, then click the &lt;em&gt;+ dataset&lt;/em&gt; button&lt;/li&gt;
-&lt;li&gt;Under &lt;em&gt;Schema&lt;/em&gt;, select your company name&lt;/li&gt;
-&lt;li&gt;Under &lt;em&gt;Table&lt;/em&gt;, select the name of the view that you set up above&lt;/li&gt;
-&lt;li&gt;Click &lt;em&gt;ADD&lt;/em&gt; at the bottom of the dialog (you may need to scroll down)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Create the chart
-&lt;ol&gt;
-&lt;li&gt;Click &lt;em&gt;Charts&lt;/em&gt; at the top, then &lt;em&gt;+ Chart&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Select the dataset created above&lt;/li&gt;
-&lt;li&gt;Choose a chart type, then &lt;em&gt;Create New Chart&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Drag metrics (e.g. &amp;lsquo;COUNT&amp;rsquo;) and fields from the left into the appropriate areas in the middle column&lt;/li&gt;
-&lt;li&gt;Click &lt;em&gt;Save&lt;/em&gt; and Superset will prompt you to add the chart to a new or existing dashboard&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Access the dashboard from the &lt;em&gt;Dashboards&lt;/em&gt; menu at the top&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;For more details on creating charts and editing dashboards, including video walkthroughs, see &lt;a href=&#34;https://docs.preset.io/docs/create-a-chart&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>

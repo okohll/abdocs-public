@@ -25,11 +25,10 @@
         
         &lt;h2 id=&#34;adding-a-user&#34;&gt;Adding a user&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Go to the homepage and toggle build mode on&lt;/li&gt;
-&lt;li&gt;Select &amp;rsquo;list&amp;rsquo; mode&lt;/li&gt;
-&lt;li&gt;Select &amp;lsquo;users&amp;rsquo; from the dropdown at the top centre of the screen&lt;/li&gt;
-&lt;li&gt;Click the Add User button at the top right of the screen&lt;/li&gt;
+&lt;li&gt;Go to the homepage and toggle development mode on&lt;/li&gt;
+&lt;li&gt;Click the &amp;lsquo;+ USER&amp;rsquo; button under Lists at the top of the screen&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;If a cost is to be applied, this will be shown to you.&lt;/p&gt;
 &lt;p&gt;You should now see an editing screen with the details of the user you just created.
 ![Add user][/add-user.png]
 &lt;img src=&#34;https://docs.agilebase.co.uk/new-user-details.png&#34; alt=&#34;User editing&#34;&gt;&lt;/p&gt;
@@ -105,10 +104,8 @@
 &lt;p&gt;Roles have some other important uses, such as multi-tenanting, described below.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-role&#34;&gt;Creating a role&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Go to the homepage and toggle development mode on&lt;/li&gt;
-&lt;li&gt;Select &amp;rsquo;list&amp;rsquo; mode&lt;/li&gt;
-&lt;li&gt;Select &amp;lsquo;roles&amp;rsquo; from the dropdown at the top centre of the screen&lt;/li&gt;
-&lt;li&gt;Click the Add Role button at the top right of the screen&lt;/li&gt;
+&lt;li&gt;Go to the homepage and toggle development mode on
+42 Click the &amp;lsquo;+ ROLE&amp;rsquo; button at the top right of the screen&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-role.png&#34; alt=&#34;Add Role&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You should now see an editing screen with the details of the role you just created. You can give it a name and there are a few options:
@@ -184,20 +181,20 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;In Agilebase, there are three privilege levels, as well as a special ‘administrator’ privilege.&lt;/p&gt;
+        &lt;p&gt;In Agilebase, there are three privilege levels, as well as a special &amp;lsquo;develop&amp;rsquo; privilege.&lt;/p&gt;
 &lt;p&gt;The three privileges take effect per table, i.e. a user/role can have certain privileges on one table and different ones on another.&lt;/p&gt;
 &lt;p&gt;Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together, plus any they may have individually assigned.&lt;/p&gt;
 &lt;h2 id=&#34;privilege-levels&#34;&gt;Privilege levels&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;View&lt;/strong&gt;: ability to see data in a table&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Edit&lt;/strong&gt;: ability to create, edit and delete data in a table (create and delete subject to various table options)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Manage&lt;/strong&gt;: the privilege that allows you to use the &amp;lsquo;application building&amp;rsquo; features of Agilebase, relating to a table. Namely the ability to
+&lt;li&gt;&lt;strong&gt;Develop&lt;/strong&gt;: the privilege that allows you to use the &amp;lsquo;application building&amp;rsquo; features of Agilebase, relating to a table. Namely the ability to
 &lt;ul&gt;
 &lt;li&gt;modify the structure, i.e. create/delete fields, tabs, change options etc.&lt;/li&gt;
 &lt;li&gt;create, edit and delete views from the table, including creating charts, maps and word clouds.&lt;/li&gt;
 &lt;li&gt;upload or create printout templates for views&lt;/li&gt;
 &lt;li&gt;view usage statistics about a table&lt;/li&gt;
-&lt;li&gt;Manage also allows some extended user features
+&lt;li&gt;Develop also allows some extended user features
 &lt;ul&gt;
 &lt;li&gt;delete any user&amp;rsquo;s comments from a table&lt;/li&gt;
 &lt;li&gt;unlock locked records to allow editing (one at a time)&lt;/li&gt;
@@ -210,12 +207,9 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Finally the &lt;strong&gt;administrator&lt;/strong&gt; privilege allows full permissions over the complete system. An administrator can create/remove users, roles, tables etc., as well as assign table privileges to any user, including themselves.&lt;/p&gt;
+&lt;p&gt;Privilege levels work in conjunction with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/introduction/learner-progression/&#34;&gt;Learner Progression levels&lt;/a&gt;, for example, only someone at level Citizen Developer level 3 can have Develop privileges assigned to them.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The administrator privilege is the only one that allows the user to add new tables.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Two Factor Authentication is required for any user with manage or administrator privileges&lt;/p&gt;
+&lt;p&gt;Two Factor Authentication is required for any user with any Citizen Developer or Software Architect role.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;assigning-table-privileges&#34;&gt;Assigning table privileges&lt;/h3&gt;
 &lt;ul&gt;
@@ -226,25 +220,14 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;Managing privileges by role rather than by individual user is recommended. That makes managing large numbers of users easier and also more secure as it&amp;rsquo;s easy to see which privileges each type of user has and which they don&amp;rsquo;t.&lt;/p&gt;
 &lt;p&gt;To assign one or more role or user privileges to a table:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; section in the lefthand navigation&lt;/li&gt;
-&lt;li&gt;Click a table&lt;/li&gt;
-&lt;li&gt;Click the pencil (edit) icon in the top toolbar (or click a record to load the editing screen)&lt;/li&gt;
-&lt;li&gt;Click the &lt;em&gt;manage&lt;/em&gt; tab at the bottom of the screen&lt;/li&gt;
-&lt;li&gt;Open the &lt;em&gt;roles&lt;/em&gt; or &lt;em&gt;users&lt;/em&gt; section, then select or un-select any privileges required&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;Edit a table&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open the &lt;em&gt;roles and privileges&lt;/em&gt; panel, then select or un-select any privileges required&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;To assign one or more table privileges to a particular role or user:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; section of the lefthand navigation&lt;/li&gt;
+&lt;li&gt;On the homepage, toggle on development mode&lt;/li&gt;
 &lt;li&gt;Click &lt;em&gt;roles&lt;/em&gt; or &lt;em&gt;users&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;Select the role or user to assign privileges to, then select or un-select any privileges required&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;assigning-the-administrator-privilege&#34;&gt;Assigning the administrator privilege&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; section&lt;/li&gt;
-&lt;li&gt;Click &lt;em&gt;users&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Select the user to make an administrator&lt;/li&gt;
-&lt;li&gt;Open the &lt;em&gt;roles&lt;/em&gt; section&lt;/li&gt;
-&lt;li&gt;Tick the role marked &lt;strong&gt;Grants administrative privileges&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;related-to-privileges&#34;&gt;Related to privileges&lt;/h2&gt;
 &lt;p&gt;Database systems often have the concept of row level privileges. The equivalent in Agilebase is the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; system.&lt;/p&gt;
@@ -346,6 +329,10 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;view additions, updates and removals&lt;/li&gt;
 &lt;li&gt;chart edits&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;viewing-logs&#34;&gt;Viewing logs&lt;/h2&gt;
+&lt;p&gt;Changes to schemas (e.g. tables and views) can be seen in the editing panels for those objects. On the development homepage, a history of recent changes can be seen.&lt;/p&gt;
+&lt;p&gt;Changes to an individual record can be seen from the &amp;lsquo;history&amp;rsquo; link at the bottom left of any editing screen.&lt;/p&gt;
+&lt;p&gt;If the account has the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail&#34;&gt;enhanced audit trail&lt;/a&gt; then all data can be queried using agileBase views.&lt;/p&gt;
 &lt;h2 id=&#34;retention-periods&#34;&gt;Retention periods&lt;/h2&gt;
 &lt;p&gt;Data is retained for 12 months as standard. The enhanced audit trail allows customers to define their own retention period, the maximum being unlimited.&lt;/p&gt;
 

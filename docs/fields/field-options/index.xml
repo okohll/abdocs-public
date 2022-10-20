@@ -39,6 +39,9 @@
 &lt;li&gt;show always - the default state&lt;/li&gt;
 &lt;li&gt;show never - useful for hiding fields used for internal purposes, e.g. which help the internal workings of a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If this option is used on a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;separator&lt;/a&gt; field, then the visibility rule will apply to the entire block of fields under that separator.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;lock-when-value-set&#34;&gt;Lock when value set&lt;/h2&gt;
 &lt;p&gt;If the field is blank, allow a value to be entered, however as soon as it has a value, lock to prevent further editing. The user can manually unlock, but will be prompted for a reason for doing so, which will be logged against the field as a comment.&lt;/p&gt;
 &lt;p&gt;This can be used to prevent accidental editing of important fields which should not usually be changed, for example a product&amp;rsquo;s stock code.&lt;/p&gt;

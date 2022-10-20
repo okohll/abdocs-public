@@ -29,11 +29,8 @@
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;adding-a-tab&#34;&gt;Adding a tab&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
-&lt;li&gt;Select the table you wish to add a tab to&lt;/li&gt;
-&lt;li&gt;Click the pencil icon in the toolbar to edit the table, then select the table&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab&lt;/li&gt;
-&lt;li&gt;Scroll down to the bottom of the form&lt;/li&gt;
-&lt;li&gt;Under &amp;lsquo;Choose child tabs for the form&amp;rsquo;, select an option in the &lt;em&gt;Add a tab&lt;/em&gt; dropdown&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;Edit the table&lt;/a&gt; you wish to add a tab to&lt;/li&gt;
+&lt;li&gt;In the &amp;rsquo;tabs&amp;rsquo; panel, select a &amp;lsquo;child table&amp;rsquo; in the &lt;em&gt;Add a tab&lt;/em&gt; dropdown&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;tab-types&#34;&gt;Tab types&lt;/h2&gt;
 &lt;p&gt;There are two types of tab, those which show a &lt;strong&gt;single record&lt;/strong&gt; and those which show &lt;strong&gt;multiple records&lt;/strong&gt;.&lt;/p&gt;

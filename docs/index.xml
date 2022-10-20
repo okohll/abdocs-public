@@ -43,10 +43,7 @@
       <description>
         
         
-        &lt;blockquote&gt;
-&lt;p&gt;Note: this page describes features which are coming soon but which are not currently available.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Agilebase&amp;rsquo;s learner progression pathway enables you to transform your career. You can go from  a citizen developer to a no-code software architect.&lt;/p&gt;
+        &lt;p&gt;Agilebase&amp;rsquo;s learner progression pathway enables you to transform your career. You can go from  a citizen developer to a no-code software architect.&lt;/p&gt;
 &lt;p&gt;Citizen developers can create their own applications using no code. Software architects can build complex applications, including powerful workflow features and integrations with other applications.&lt;/p&gt;
 &lt;p&gt;To go on this journey requires no technical knowledge. Beginners - &amp;ldquo;citizen developers&amp;rdquo; - come from a diverse range of non-IT backgrounds. The only skills you need are the ability to think, be willing to learn, and be able to plan.&lt;/p&gt;
 &lt;p&gt;Agilebase will help you every step of the way. And you can stop at the level that is useful to you.&lt;/p&gt;
@@ -567,10 +564,8 @@ These backups are also encrypted so that Amazon has no access to the data within
 &lt;p&gt;Roles have some other important uses, such as multi-tenanting, described below.&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-role&#34;&gt;Creating a role&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Go to the homepage and toggle development mode on&lt;/li&gt;
-&lt;li&gt;Select &amp;rsquo;list&amp;rsquo; mode&lt;/li&gt;
-&lt;li&gt;Select &amp;lsquo;roles&amp;rsquo; from the dropdown at the top centre of the screen&lt;/li&gt;
-&lt;li&gt;Click the Add Role button at the top right of the screen&lt;/li&gt;
+&lt;li&gt;Go to the homepage and toggle development mode on
+42 Click the &amp;lsquo;+ ROLE&amp;rsquo; button at the top right of the screen&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-role.png&#34; alt=&#34;Add Role&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You should now see an editing screen with the details of the role you just created. You can give it a name and there are a few options:
@@ -646,20 +641,20 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
       <description>
         
         
-        &lt;p&gt;In Agilebase, there are three privilege levels, as well as a special ‘administrator’ privilege.&lt;/p&gt;
+        &lt;p&gt;In Agilebase, there are three privilege levels, as well as a special &amp;lsquo;develop&amp;rsquo; privilege.&lt;/p&gt;
 &lt;p&gt;The three privileges take effect per table, i.e. a user/role can have certain privileges on one table and different ones on another.&lt;/p&gt;
 &lt;p&gt;Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together, plus any they may have individually assigned.&lt;/p&gt;
 &lt;h2 id=&#34;privilege-levels&#34;&gt;Privilege levels&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;View&lt;/strong&gt;: ability to see data in a table&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Edit&lt;/strong&gt;: ability to create, edit and delete data in a table (create and delete subject to various table options)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Manage&lt;/strong&gt;: the privilege that allows you to use the &amp;lsquo;application building&amp;rsquo; features of Agilebase, relating to a table. Namely the ability to
+&lt;li&gt;&lt;strong&gt;Develop&lt;/strong&gt;: the privilege that allows you to use the &amp;lsquo;application building&amp;rsquo; features of Agilebase, relating to a table. Namely the ability to
 &lt;ul&gt;
 &lt;li&gt;modify the structure, i.e. create/delete fields, tabs, change options etc.&lt;/li&gt;
 &lt;li&gt;create, edit and delete views from the table, including creating charts, maps and word clouds.&lt;/li&gt;
 &lt;li&gt;upload or create printout templates for views&lt;/li&gt;
 &lt;li&gt;view usage statistics about a table&lt;/li&gt;
-&lt;li&gt;Manage also allows some extended user features
+&lt;li&gt;Develop also allows some extended user features
 &lt;ul&gt;
 &lt;li&gt;delete any user&amp;rsquo;s comments from a table&lt;/li&gt;
 &lt;li&gt;unlock locked records to allow editing (one at a time)&lt;/li&gt;
@@ -672,12 +667,9 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Finally the &lt;strong&gt;administrator&lt;/strong&gt; privilege allows full permissions over the complete system. An administrator can create/remove users, roles, tables etc., as well as assign table privileges to any user, including themselves.&lt;/p&gt;
+&lt;p&gt;Privilege levels work in conjunction with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/introduction/learner-progression/&#34;&gt;Learner Progression levels&lt;/a&gt;, for example, only someone at level Citizen Developer level 3 can have Develop privileges assigned to them.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The administrator privilege is the only one that allows the user to add new tables.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Two Factor Authentication is required for any user with manage or administrator privileges&lt;/p&gt;
+&lt;p&gt;Two Factor Authentication is required for any user with any Citizen Developer or Software Architect role.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;assigning-table-privileges&#34;&gt;Assigning table privileges&lt;/h3&gt;
 &lt;ul&gt;
@@ -688,25 +680,14 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;Managing privileges by role rather than by individual user is recommended. That makes managing large numbers of users easier and also more secure as it&amp;rsquo;s easy to see which privileges each type of user has and which they don&amp;rsquo;t.&lt;/p&gt;
 &lt;p&gt;To assign one or more role or user privileges to a table:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; section in the lefthand navigation&lt;/li&gt;
-&lt;li&gt;Click a table&lt;/li&gt;
-&lt;li&gt;Click the pencil (edit) icon in the top toolbar (or click a record to load the editing screen)&lt;/li&gt;
-&lt;li&gt;Click the &lt;em&gt;manage&lt;/em&gt; tab at the bottom of the screen&lt;/li&gt;
-&lt;li&gt;Open the &lt;em&gt;roles&lt;/em&gt; or &lt;em&gt;users&lt;/em&gt; section, then select or un-select any privileges required&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;Edit a table&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open the &lt;em&gt;roles and privileges&lt;/em&gt; panel, then select or un-select any privileges required&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;To assign one or more table privileges to a particular role or user:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; section of the lefthand navigation&lt;/li&gt;
+&lt;li&gt;On the homepage, toggle on development mode&lt;/li&gt;
 &lt;li&gt;Click &lt;em&gt;roles&lt;/em&gt; or &lt;em&gt;users&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;Select the role or user to assign privileges to, then select or un-select any privileges required&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;assigning-the-administrator-privilege&#34;&gt;Assigning the administrator privilege&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Administration&lt;/em&gt; section&lt;/li&gt;
-&lt;li&gt;Click &lt;em&gt;users&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Select the user to make an administrator&lt;/li&gt;
-&lt;li&gt;Open the &lt;em&gt;roles&lt;/em&gt; section&lt;/li&gt;
-&lt;li&gt;Tick the role marked &lt;strong&gt;Grants administrative privileges&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;related-to-privileges&#34;&gt;Related to privileges&lt;/h2&gt;
 &lt;p&gt;Database systems often have the concept of row level privileges. The equivalent in Agilebase is the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; system.&lt;/p&gt;
@@ -749,7 +730,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h2 id=&#34;adding-a-table&#34;&gt;Adding a table&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;On the homepage, click the &amp;rsquo;toggle&amp;rsquo; button in the top-right of the screen to enable dev mode (if it is not enabled already)&lt;/li&gt;
-&lt;li&gt;Click &lt;em&gt;+ Add Table&lt;/em&gt;, choosing a name for the new table&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;+ Table&lt;/em&gt;, choosing a name for the new table&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;TODO: images&lt;/strong&gt;
 &lt;img src=&#34;https://docs.agilebase.co.uk/add-table-button.png&#34; alt=&#34;Add Table Button&#34;&gt;&lt;/p&gt;
@@ -765,7 +746,8 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h2 id=&#34;editing-a-table&#34;&gt;Editing a table&lt;/h2&gt;
 &lt;p&gt;There are two ways to edit a table: from the homepage, or from editing a record.&lt;/p&gt;
 &lt;h3 id=&#34;from-the-homepage&#34;&gt;From the homepage&lt;/h3&gt;
-&lt;p&gt;When you toggle build mode with the toggle in the top right corner of the screen, you can see a &lt;em&gt;connections&lt;/em&gt; mode and a &lt;em&gt;list&lt;/em&gt; mode: these two views show the tables in the system. The &lt;em&gt;connections&lt;/em&gt; mode shows the relations between entities whilst the &lt;em&gt;list&lt;/em&gt; mode presents the same data in tabular form.&lt;/p&gt;
+&lt;p&gt;When you toggle development mode with the toggle in the top right corner of the screen, you can see a &lt;em&gt;Map&lt;/em&gt; and &lt;em&gt;List&lt;/em&gt; items: the Map shows tables and relations between them, the List can show tables and also other entities, like views or users.&lt;/p&gt;
+&lt;p&gt;From either display, you can click a table to edit it. Once open, you can also pin tables with the pin icon at the top left of the editing panel. The table will then appear &amp;lsquo;pinned&amp;rsquo; to the lefthand side of the development homepage and will remain there until unpinned, or you log out. This can be useful when working with a number of different tables.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/homepage-connections-mode.png&#34; alt=&#34;Connections mode&#34;&gt;
 &lt;img src=&#34;https://docs.agilebase.co.uk/homepage-list-mode.png&#34; alt=&#34;List mode&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;from-editing-a-record&#34;&gt;From editing a record&lt;/h3&gt;
@@ -894,6 +876,9 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;li&gt;show always - the default state&lt;/li&gt;
 &lt;li&gt;show never - useful for hiding fields used for internal purposes, e.g. which help the internal workings of a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If this option is used on a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;separator&lt;/a&gt; field, then the visibility rule will apply to the entire block of fields under that separator.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;lock-when-value-set&#34;&gt;Lock when value set&lt;/h2&gt;
 &lt;p&gt;If the field is blank, allow a value to be entered, however as soon as it has a value, lock to prevent further editing. The user can manually unlock, but will be prompted for a reason for doing so, which will be logged against the field as a comment.&lt;/p&gt;
 &lt;p&gt;This can be used to prevent accidental editing of important fields which should not usually be changed, for example a product&amp;rsquo;s stock code.&lt;/p&gt;
@@ -1234,11 +1219,11 @@ export default LoginScreen;
 &lt;li&gt;Select (or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;create&lt;/a&gt; a new) table.&lt;/li&gt;
 &lt;li&gt;Click the table you want to create a view from&lt;/li&gt;
 &lt;li&gt;Once the table has been selected, click &lt;em&gt;name and views&lt;/em&gt; on the floating sidebar&lt;/li&gt;
-&lt;li&gt;Click &lt;em&gt;Add View&amp;hellip;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Add View&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;You should now see your freshly created view&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;There is an option &lt;strong&gt;Populate the view with fields from this table&lt;/strong&gt; next to the &lt;em&gt;Create new view&lt;/em&gt; button. This is a convenience feature, which is ticked by default. When it&amp;rsquo;s ticked, the view created will contain all fields from the table - you can then remove any you don&amp;rsquo;t need. When un-ticked, the view will start with no fields so you can add just those you wish.&lt;/p&gt;
+&lt;p&gt;There is an option &lt;strong&gt;Populate the view with fields from this table&lt;/strong&gt; next to the &lt;em&gt;Add View&lt;/em&gt; button. This is a convenience feature, which is ticked by default. When it&amp;rsquo;s ticked, the view created will contain the first 10 fields from the table - you can then remove any you don&amp;rsquo;t need or add more. When un-ticked, the view will start with no fields so you can add just those you wish.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;organising-into-a-navigation-structure&#34;&gt;Organising into a navigation structure&lt;/h2&gt;
 &lt;p&gt;On creating a view, its manage tab will appear. One of the first things it&amp;rsquo;s useful to do is put the field in a tile - use the &lt;em&gt;Tile&lt;/em&gt; dropdown option to do so.&lt;/p&gt;
@@ -1458,11 +1443,8 @@ export default LoginScreen;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;adding-a-tab&#34;&gt;Adding a tab&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
-&lt;li&gt;Select the table you wish to add a tab to&lt;/li&gt;
-&lt;li&gt;Click the pencil icon in the toolbar to edit the table, then select the table&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab&lt;/li&gt;
-&lt;li&gt;Scroll down to the bottom of the form&lt;/li&gt;
-&lt;li&gt;Under &amp;lsquo;Choose child tabs for the form&amp;rsquo;, select an option in the &lt;em&gt;Add a tab&lt;/em&gt; dropdown&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;Edit the table&lt;/a&gt; you wish to add a tab to&lt;/li&gt;
+&lt;li&gt;In the &amp;rsquo;tabs&amp;rsquo; panel, select a &amp;lsquo;child table&amp;rsquo; in the &lt;em&gt;Add a tab&lt;/em&gt; dropdown&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;tab-types&#34;&gt;Tab types&lt;/h2&gt;
 &lt;p&gt;There are two types of tab, those which show a &lt;strong&gt;single record&lt;/strong&gt; and those which show &lt;strong&gt;multiple records&lt;/strong&gt;.&lt;/p&gt;
@@ -1545,7 +1527,7 @@ export default LoginScreen;
       <description>
         
         
-        &lt;p&gt;In a table&amp;rsquo;s &lt;em&gt;privacy and security&lt;/em&gt; tab, there are two options which are worth considering if the data is storing commercially sensitive information (plenty of information in most customer systems falls under this category!) or personal information as defined by EU General Data Protection Regulations (GDPR).&lt;/p&gt;
+        &lt;p&gt;In a table&amp;rsquo;s &lt;em&gt;privacy and security&lt;/em&gt; panel, there are two options which are worth considering if the data is storing commercially sensitive information (plenty of information in most customer systems falls under this category!) or personal information as defined by EU General Data Protection Regulations (GDPR).&lt;/p&gt;
 &lt;p&gt;When either option is ticked, two controls appear.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/privacy-and-security.png&#34; alt=&#34;Privacy and security&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;notify-administrators-on-export&#34;&gt;Notify administrators on export&lt;/h2&gt;
@@ -1645,7 +1627,7 @@ export default LoginScreen;
 &lt;h2 id=&#34;creating-a-chart&#34;&gt;Creating a chart&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;In the tiles interface, open the tile and view to use as a source of chart data&lt;/li&gt;
-&lt;li&gt;Click the charts button to the left of the data rows displayed&lt;/li&gt;
+&lt;li&gt;Click the charts button at the top right of the screen&lt;/li&gt;
 &lt;li&gt;Click the &lt;em&gt;add/edit chart or map&lt;/em&gt; button&lt;/li&gt;
 &lt;li&gt;Follow each of the steps (1 - 3) on screen to build the chart&lt;/li&gt;
 &lt;li&gt;In the last step, give a name to the chart and press &lt;em&gt;save&lt;/em&gt;&lt;/li&gt;
@@ -1658,7 +1640,7 @@ export default LoginScreen;
 &lt;h2 id=&#34;embedding-charts-in-forms&#34;&gt;Embedding charts in forms&lt;/h2&gt;
 &lt;p&gt;Charts can be embedded into tables. When the user opens a record, the chart will automatically filter to show data pertaining to that record only.&lt;/p&gt;
 &lt;p&gt;So for example if you have a chart of sales per month per customer, which you embed into a customer table, it will show as sales per month, only for the customer on screen.&lt;/p&gt;
-&lt;p&gt;This is accomplished by using a view with chart(s) as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;cross-referenced panel&lt;/a&gt; - see that page for setup information.&lt;/p&gt;
+&lt;p&gt;This is accomplished by using a view with chart(s) as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/&#34;&gt;referenced data field&lt;/a&gt; - see that page for setup information.&lt;/p&gt;
 &lt;h2 id=&#34;embedding-charts-in-tabs&#34;&gt;Embedding charts in tabs&lt;/h2&gt;
 &lt;p&gt;When a tab contains many &amp;lsquo;child&amp;rsquo; records, e.g. an organisation may have a tab which contains financial data for the past 10 years, then charts can display above the rows of data when the tab&amp;rsquo;s opened.&lt;/p&gt;
 &lt;p&gt;To accomplish this, simply add a chart to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#tab-view&#34;&gt;view used by the tab&lt;/a&gt;. When the tab is opened, the chart will automatically be filtered to only show data pertaining to the parent table, in a similar fashion to how charts embedded using cross-referenced panels are filtered, as above.&lt;/p&gt;
@@ -1690,18 +1672,16 @@ export default LoginScreen;
         &lt;blockquote&gt;
 &lt;p&gt;Before setting up a BI connection, please be aware of the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting#privacy-and-data-security&#34;&gt;data privacy and security&lt;/a&gt; considerations.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;At Agilebase we host an instance of &lt;a href=&#34;https://superset.apache.org&#34;&gt;Apache Superset&lt;/a&gt; which can be used by customers to create reporting dashboards.&lt;/p&gt;
-&lt;p&gt;However the setup processes below also applies to third party tools such as Power BI. In fact, any tool which utilises &lt;a href=&#34;https://en.wikipedia.org/wiki/Open_Database_Connectivity&#34;&gt;ODBC&lt;/a&gt; can be used, such as Excel for example.&lt;/p&gt;
+&lt;p&gt;Any tool which utilises &lt;a href=&#34;https://en.wikipedia.org/wiki/Open_Database_Connectivity&#34;&gt;ODBC&lt;/a&gt; can be used, such as Excel for example. Power BI is a common one.&lt;/p&gt;
 &lt;h2 id=&#34;initial-setup&#34;&gt;Initial Setup&lt;/h2&gt;
-&lt;p&gt;The first step is to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; to request we prepare your account. This will also allow connections from Apache Superset, Power BI or any other tool which can connect to ODBC).&lt;/p&gt;
-&lt;p&gt;If you wish to use our supplied instance of Superset, we will then set up as many Superset users you require - there is no ongoing cost for these login accounts. Note that Superset logins are separate from Agilebase ones - the usernames and passwords can be different.&lt;/p&gt;
+&lt;p&gt;The first step is to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; to request we prepare your account. This will also allow connections from Power BI or any other tool which can connect to ODBC).&lt;/p&gt;
 &lt;p&gt;If you use Power BI, then the process is as follows&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Install the PostgreSQL ODBC driver from &lt;a href=&#34;https://odbc.postgresql.org/&#34;&gt;https://odbc.postgresql.org/&lt;/a&gt;. Use the Downloads link and if running on Windows, use the newest driver from the &lt;strong&gt;msi&lt;/strong&gt; folder.&lt;/li&gt;
 &lt;li&gt;Use your operating system&amp;rsquo;s control panel to set up the ODBC driver, using the login details we supply. Ensure the SSL mode is set to &amp;lsquo;require&amp;rsquo;.&lt;/li&gt;
 &lt;li&gt;From Power BI, add a connection using the PostgreSQL ODBC driver, &lt;em&gt;not&lt;/em&gt; the built-in Power BI PostgreSQL driver.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;sending-data-to-superset-or-power-bi&#34;&gt;Sending data to Superset or Power BI&lt;/h2&gt;
+&lt;h2 id=&#34;sending-data-to-power-bi&#34;&gt;Sending data to Power BI&lt;/h2&gt;
 &lt;p&gt;A developer with MANAGE privileges on a view&amp;rsquo;s parent table can set this up.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;In Agilebase, open the view you wish to report on. Ensure it has all the necessary fields and calculations in it which you want to report on. If not, add them before continuing.&lt;/li&gt;
@@ -1726,32 +1706,6 @@ export default LoginScreen;
 &lt;li&gt;Under &amp;lsquo;chain workflow&amp;rsquo;, select the reporting view A&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Then, when a user opens view B, they will see a button at the top of the screen with the button text set to the name of view A. Pressing it will refresh the view A data sent to external applications.&lt;/p&gt;
-&lt;h2 id=&#34;creating-dashboards-in-superset&#34;&gt;Creating dashboards in Superset&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This section applies to Superset only, for Power BI or other instructions please contact us.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Now that you&amp;rsquo;ve set up Agilebase to make data available to Superset, you can create charts and dashboards there.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create a &amp;lsquo;dataset&amp;rsquo; in Superset, corresponding to the view you set up above
-&lt;ol&gt;
-&lt;li&gt;From the &lt;em&gt;Data&lt;/em&gt; menu at the top, select &lt;em&gt;datasets&lt;/em&gt;, then click the &lt;em&gt;+ dataset&lt;/em&gt; button&lt;/li&gt;
-&lt;li&gt;Under &lt;em&gt;Schema&lt;/em&gt;, select your company name&lt;/li&gt;
-&lt;li&gt;Under &lt;em&gt;Table&lt;/em&gt;, select the name of the view that you set up above&lt;/li&gt;
-&lt;li&gt;Click &lt;em&gt;ADD&lt;/em&gt; at the bottom of the dialog (you may need to scroll down)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Create the chart
-&lt;ol&gt;
-&lt;li&gt;Click &lt;em&gt;Charts&lt;/em&gt; at the top, then &lt;em&gt;+ Chart&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Select the dataset created above&lt;/li&gt;
-&lt;li&gt;Choose a chart type, then &lt;em&gt;Create New Chart&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Drag metrics (e.g. &amp;lsquo;COUNT&amp;rsquo;) and fields from the left into the appropriate areas in the middle column&lt;/li&gt;
-&lt;li&gt;Click &lt;em&gt;Save&lt;/em&gt; and Superset will prompt you to add the chart to a new or existing dashboard&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Access the dashboard from the &lt;em&gt;Dashboards&lt;/em&gt; menu at the top&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;For more details on creating charts and editing dashboards, including video walkthroughs, see &lt;a href=&#34;https://docs.preset.io/docs/create-a-chart&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -1809,17 +1763,20 @@ export default LoginScreen;
 &lt;p&gt;That said, these are the ways in which you can strictly enforce data integrity.&lt;/p&gt;
 &lt;h2 id=&#34;at-an-individual-field-level&#34;&gt;At an individual field level&lt;/h2&gt;
 &lt;p&gt;Basic rules can be applied with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/&#34;&gt;field options&lt;/a&gt;. For example a field may be set as mandatory, or it must contain unique values (no duplicates).&lt;/p&gt;
-&lt;h2 id=&#34;advanced-field-checks&#34;&gt;Advanced field checks&lt;/h2&gt;
+&lt;h2 id=&#34;data-integrity-checks-advanced&#34;&gt;Data integrity checks (advanced)&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Expand the &lt;em&gt;Build Tables&lt;/em&gt; menu in the lefthand sidebar&lt;/li&gt;
-&lt;li&gt;Select the table you wish to add rules to&lt;/li&gt;
-&lt;li&gt;Click the pencil icon in the toolbar to edit the table, then select the table&amp;rsquo;s &lt;em&gt;manage&lt;/em&gt; tab&lt;/li&gt;
-&lt;li&gt;Click the &lt;em&gt;Checks&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;Edit a table&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Click _Data Integrity Checks&lt;/li&gt;
+&lt;li&gt;Click &amp;lsquo;Add Single-Field Check&amp;rsquo;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Here you can add more complex checks, such as the value must be longer or shorter than a certain length, be within a date range or match a &lt;a href=&#34;https://en.wikipedia.org/wiki/Regular_expression&#34;&gt;regular expression&lt;/a&gt;. The list of checks available is the same as that used in &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/field-checks.png&#34; alt=&#34;Field checks&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;multi-field-unique-constraints&#34;&gt;Multi-field unique constraints&lt;/h2&gt;
-&lt;p&gt;Access these with the &lt;em&gt;Unique&lt;/em&gt; button under the &lt;em&gt;Checks&lt;/em&gt; button.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;Edit a table&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Click _Data Integrity Checks&lt;/li&gt;
+&lt;li&gt;Click &amp;lsquo;Add Multi-Field Unique Check&amp;rsquo;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;Sometimes, fields must be unique &lt;strong&gt;in combination&lt;/strong&gt;. For example, imagine you have a system for recording customer complaints. One of the fields might be a customer&amp;rsquo;s reference number, another a relation to the customer record.&lt;/p&gt;
 &lt;p&gt;You want to avoid duplicates being entered, so could make the customer reference number unique. However it could be that two different customers could use the same reference number independently, so that wouldn&amp;rsquo;t really work.&lt;/p&gt;
 &lt;p&gt;The solution is to add a multi-field unique constraint on customer and customer reference number. That way, a reference number won&amp;rsquo;t be able to be re-used for a complaint from the same customer, but more than one customer is allowed to use the same reference.&lt;/p&gt;
@@ -1836,13 +1793,7 @@ export default LoginScreen;
       <description>
         
         
-        &lt;p&gt;To access these options&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Enable developer mode with the toggle switch in the top-right of the screen (if it is not already enabled)&lt;/li&gt;
-&lt;li&gt;Select the table you wish to edit (in the &lt;em&gt;list&lt;/em&gt; view)&lt;/li&gt;
-&lt;li&gt;Click the pencil icon on the left of the screen to edit the table, then select &lt;em&gt;tags and options&lt;/em&gt; in the floating sidebar&lt;/li&gt;
-&lt;li&gt;Edit the fields as described below&lt;/li&gt;
-&lt;/ol&gt;
+        &lt;p&gt;To access these options, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;edit a table&lt;/a&gt; and select &amp;rsquo;tags and options&#39;.&lt;/p&gt;
 &lt;h2 id=&#34;allow-add&#34;&gt;Allow add&lt;/h2&gt;
 &lt;p&gt;If this is ticked (it is by default), users can add records to the table. Anyone with manage privileges on the table can add tables regardless.&lt;/p&gt;
 &lt;h3 id=&#34;only-from-within-tab&#34;&gt;Only from within tab&lt;/h3&gt;
@@ -2318,6 +2269,20 @@ and a video introduction to the concept here:&lt;/p&gt;
     </item>
     
     <item>
+      <title>Docs: Roles and Privileges</title>
+      <link>https://docs.agilebase.co.uk/docs/tables/users-and-roles/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tables/users-and-roles/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The &lt;em&gt;Roles and Privileges&lt;/em&gt; panel of a table&amp;rsquo;s manage tab allow privileges to be assigned to a user or role on a table. Please see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; page for more details.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Usage</title>
       <link>https://docs.agilebase.co.uk/docs/tables/usage/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
@@ -2329,20 +2294,6 @@ and a video introduction to the concept here:&lt;/p&gt;
         &lt;p&gt;This panel shows a list of views that contain data from the table. Any view with data is included, not just those directly created from the table.&lt;/p&gt;
 &lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/&#34;&gt;usage reporting&lt;/a&gt; for more info.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/new-table-usage.png&#34; alt=&#34;table usage&#34;&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Users and Roles</title>
-      <link>https://docs.agilebase.co.uk/docs/tables/users-and-roles/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/tables/users-and-roles/</guid>
-      <description>
-        
-        
-        &lt;p&gt;The &lt;em&gt;Users&lt;/em&gt; and &lt;em&gt;Roles&lt;/em&gt; panels of a table&amp;rsquo;s manage tab allow privileges to be assigned to a user or role on a table. Please see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; page for more details.&lt;/p&gt;
 
       </description>
     </item>
