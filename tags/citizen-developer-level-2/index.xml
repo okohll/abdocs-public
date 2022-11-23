@@ -451,7 +451,7 @@ It is straightforward to delete a field from a table. Either clicking the X icon
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/pin-views.png&#34; alt=&#34;pinning views&#34;&gt;&lt;/p&gt;
 &lt;p&gt;When editing a field, press &amp;lsquo;add to pinned views&amp;rsquo;. The field will then be added to all pinned views which don&amp;rsquo;t already contain it.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-to-pinned-views.png&#34; alt=&#34;adding a field to pinned views&#34;&gt;&lt;/p&gt;
-&lt;p&gt;This can be particularly useful when introducing a multi-tenanting feature. Multi-tenanting means allowing different customers to access the same system, segregating their data so they each see only their own data. Part of the setup requires adding a new field to all (or most) of the views in the system.&lt;/p&gt;
+&lt;p&gt;This can be particularly useful when introducing a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; feature. Multi-tenanting means allowing different customers to access the same system, segregating their data so they each see only their own data. Part of the setup requires adding a new field to all (or most) of the views in the system.&lt;/p&gt;
 
       </description>
     </item>
