@@ -446,6 +446,12 @@ It is straightforward to delete a field from a table. Either clicking the X icon
 &lt;p&gt;If the field is used in any other locations in your application, such as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt;, you&amp;rsquo;ll be alerted to the fact. You&amp;rsquo;ll need to first remove the field from those locations before being able to remove it.&lt;/p&gt;
 &lt;p&gt;You can also see where fields are used by scrolling to the bottom of the field editing panel and looking under &amp;lsquo;Field Uses&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/removing-a-table-field.png&#34; alt=&#34;Removing a table field&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-field-to-multiple-views&#34;&gt;Adding a field to multiple views&lt;/h2&gt;
+&lt;p&gt;First &amp;lsquo;pin&amp;rsquo; all the views to which you want to add a field. You can pin a single view by clicking on the pushpin icon when editing it, or multiple ones at once from the &amp;rsquo;name and views&amp;rsquo; panel of a table when editing it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/pin-views.png&#34; alt=&#34;pinning views&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When editing a field, press &amp;lsquo;add to pinned views&amp;rsquo;. The field will then be added to all pinned views which don&amp;rsquo;t already contain it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-to-pinned-views.png&#34; alt=&#34;adding a field to pinned views&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This can be particularly useful when introducing a multi-tenanting feature. Multi-tenanting means allowing different customers to access the same system, segregating their data so they each see only their own data. Part of the setup requires adding a new field to all (or most) of the views in the system.&lt;/p&gt;
 
       </description>
     </item>

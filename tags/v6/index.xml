@@ -920,6 +920,12 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;If the field is used in any other locations in your application, such as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt;, you&amp;rsquo;ll be alerted to the fact. You&amp;rsquo;ll need to first remove the field from those locations before being able to remove it.&lt;/p&gt;
 &lt;p&gt;You can also see where fields are used by scrolling to the bottom of the field editing panel and looking under &amp;lsquo;Field Uses&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/removing-a-table-field.png&#34; alt=&#34;Removing a table field&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-field-to-multiple-views&#34;&gt;Adding a field to multiple views&lt;/h2&gt;
+&lt;p&gt;First &amp;lsquo;pin&amp;rsquo; all the views to which you want to add a field. You can pin a single view by clicking on the pushpin icon when editing it, or multiple ones at once from the &amp;rsquo;name and views&amp;rsquo; panel of a table when editing it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/pin-views.png&#34; alt=&#34;pinning views&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When editing a field, press &amp;lsquo;add to pinned views&amp;rsquo;. The field will then be added to all pinned views which don&amp;rsquo;t already contain it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-to-pinned-views.png&#34; alt=&#34;adding a field to pinned views&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This can be particularly useful when introducing a multi-tenanting feature. Multi-tenanting means allowing different customers to access the same system, segregating their data so they each see only their own data. Part of the setup requires adding a new field to all (or most) of the views in the system.&lt;/p&gt;
 
       </description>
     </item>
@@ -937,9 +943,12 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;p&gt;By default Agilebase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. &amp;lsquo;pH&amp;rsquo; or &amp;lsquo;Length (m)&amp;rsquo;, which would otherwise show as &amp;lsquo;PH&amp;rsquo; and &amp;lsquo;Length (M)&amp;rsquo;.&lt;/p&gt;
 &lt;h2 id=&#34;icon&#34;&gt;Icon&lt;/h2&gt;
 &lt;p&gt;Rather than displaying a field name, show an icon, chosen from &lt;a href=&#34;https://fontawesome.com/icons&#34;&gt;https://fontawesome.com/icons&lt;/a&gt;. For example, to show a phone icon for a phone number field, you could enter &lt;code&gt;phone&lt;/code&gt;, for an email field &lt;code&gt;envelope&lt;/code&gt; or a twitter handle &lt;code&gt;twitter&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;show-if-record-in-view&#34;&gt;Show if record in view&lt;/h2&gt;
-&lt;p&gt;Allow a field to be hidden or shown based on conditions. The conditions are specified by creating a view and adding filters. That view is then selected in this field option.&lt;/p&gt;
-&lt;p&gt;If a record appears in the view, the field will be visible, otherwise it won&amp;rsquo;t display to users.&lt;/p&gt;
+&lt;h2 id=&#34;field-visibility&#34;&gt;Field visibility&lt;/h2&gt;
+&lt;p&gt;Allow a field to be hidden or shown based on conditions.&lt;/p&gt;
+&lt;p&gt;You can either select a view containing the conditions to use or just create conditions directly under the Field Visibility heading. In either case, the conditions in use will be shown.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/field-visibility.png&#34; alt=&#34;field visibility conditions&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Behind the scenes, the conditions are saved by creating a view (if none is selected already) and adding each condition as a filter. If a record appears in the view, the field will be visible, otherwise it won&amp;rsquo;t display to users.&lt;/p&gt;
+&lt;p&gt;You can click the &amp;lsquo;visibility view&amp;rsquo; link to go to that view and edit it to add more complex conditions if you wish.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;As the conditions are created in a view, this mechanism is really powerful. You can create simple or very complex critera, including all of the filter options in a view, for example basing a filter on a calculation and combining multiple filters.&lt;/p&gt;
 &lt;p&gt;So you could make a field appear only when a particular point is reached in a process, or a status is changed elsewhere in a form, or perhaps it should only be visible to people who are &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/&#34;&gt;members of a certain role&lt;/a&gt;. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;view filters&lt;/a&gt; for more information.&lt;/p&gt;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.104.3" />
+<meta name="generator" content="Hugo 0.106.0">
 <link rel="alternate" type="application/rss&#43;xml" href="https://docs.agilebase.co.uk/docs/fields/index.xml">
 <meta name="robots" content="index, follow">
 
@@ -452,6 +452,7 @@ if (!doNotTrack) {
     <li><a href="#field-level-help">Field level help</a></li>
     <li><a href="#editing-a-field">Editing a field</a></li>
     <li><a href="#removing-a-field">Removing a field</a></li>
+    <li><a href="#adding-a-field-to-multiple-views">Adding a field to multiple views</a></li>
   </ul>
 </nav></div>
 
@@ -583,6 +584,12 @@ if (!doNotTrack) {
 <p>If the field is used in any other locations in your application, such as a <a href="/docs/views/">view</a>, you&rsquo;ll be alerted to the fact. You&rsquo;ll need to first remove the field from those locations before being able to remove it.</p>
 <p>You can also see where fields are used by scrolling to the bottom of the field editing panel and looking under &lsquo;Field Uses&rsquo;.</p>
 <p><img src="/removing-a-table-field.png" alt="Removing a table field"></p>
+<h2 id="adding-a-field-to-multiple-views">Adding a field to multiple views</h2>
+<p>First &lsquo;pin&rsquo; all the views to which you want to add a field. You can pin a single view by clicking on the pushpin icon when editing it, or multiple ones at once from the &rsquo;name and views&rsquo; panel of a table when editing it.</p>
+<p><img src="/pin-views.png" alt="pinning views"></p>
+<p>When editing a field, press &lsquo;add to pinned views&rsquo;. The field will then be added to all pinned views which don&rsquo;t already contain it.</p>
+<p><img src="/add-to-pinned-views.png" alt="adding a field to pinned views"></p>
+<p>This can be particularly useful when introducing a multi-tenanting feature. Multi-tenanting means allowing different customers to access the same system, segregating their data so they each see only their own data. Part of the setup requires adding a new field to all (or most) of the views in the system.</p>
 
         <div class="section-index">
     
@@ -679,7 +686,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/4fa60f22f8aee52e07acf18b51f6ee89b1ae45d8">Refresh of all instructions to match v6 of the Agilebase development interface (4fa60f2)</a>
+  Last modified November 23, 2022: <a href="https://github.com/okohll/abdocs/commit/05f59050e3d6a981dce1bc680e2b373114f617b8">Creating field visibility rules, Adding a field to multiple views (05f5905)</a>
 </div>
 
 </div>
