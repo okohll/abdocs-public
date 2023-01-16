@@ -580,7 +580,7 @@ These are used to set up &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenantin
 &lt;h2 id=&#34;viewing-logs&#34;&gt;Viewing logs&lt;/h2&gt;
 &lt;p&gt;Changes to schemas (e.g. tables and views) can be seen in the editing panels for those objects. On the development homepage, a history of recent changes can be seen.&lt;/p&gt;
 &lt;p&gt;Changes to an individual record can be seen from the &amp;lsquo;history&amp;rsquo; link at the bottom left of any editing screen.&lt;/p&gt;
-&lt;p&gt;If the account has the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail&#34;&gt;enhanced audit trail&lt;/a&gt; then all data can be queried using agileBase views.&lt;/p&gt;
+&lt;p&gt;If the account has the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail&#34;&gt;enhanced audit trail&lt;/a&gt; then all data can be queried using Agilebase views.&lt;/p&gt;
 &lt;h2 id=&#34;retention-periods&#34;&gt;Retention periods&lt;/h2&gt;
 &lt;p&gt;Data is retained for 12 months as standard. The enhanced audit trail allows customers to define their own retention period, the maximum being unlimited.&lt;/p&gt;
 
