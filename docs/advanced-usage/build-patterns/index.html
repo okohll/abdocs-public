@@ -44,6 +44,10 @@
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
   crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
@@ -80,7 +84,21 @@ if (!doNotTrack) {
       </ul>
   </div>
   <div class="navbar-nav d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
     
+    data-offline-search-index-json-src="/offline-search-index.6d609968abc9cf0a64fcdfd9df0f02bb.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+
   </div>
 </nav>
     </header>
@@ -90,14 +108,25 @@ if (!doNotTrack) {
           <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
             
 <div id="td-sidebar-menu" class="td-sidebar__inner">
-  <div id="content-mobile">
   <form class="td-sidebar__search d-flex align-items-center">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    class="td-search__input form-control"
+    placeholder="Search this site…"
+    aria-label="Search this site…"
+    autocomplete="off"
     
+    data-offline-search-index-json-src="/offline-search-index.6d609968abc9cf0a64fcdfd9df0f02bb.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
     </button>
   </form>
-  </div>
-  <div id="content-desktop"></div>
   <nav class="collapse td-sidebar-nav" id="td-section-nav">
     <ul class="td-sidebar-nav__section pr-md-3 ul-0">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
@@ -728,7 +757,7 @@ if (!doNotTrack) {
 
     </div>
     
-  <script src="/js/main.min.fb710bcfe95ddcc48dfab97473e3c455ba0a4737b74d8774a4fbf6c369d242a4.js" integrity="sha256-&#43;3ELz&#43;ld3MSN&#43;rl0c&#43;PEVboKRze3TYd0pPv2w2nSQqQ=" crossorigin="anonymous"></script>
+  <script src="/js/main.min.2aff983e9d0d8ecff9ed53e14b657216e2d8d2aff059bf4a5651283020995f1b.js" integrity="sha256-Kv&#43;YPp0Njs/57VPhS2VyFuLY0q/wWb9KVlEoMCCZXxs=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
 
