@@ -89,7 +89,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.354cf35eeb772b8032de796847a575ed.json"
+    data-offline-search-index-json-src="/offline-search-index.965a84a3bd11a11b062aa00059c28bfa.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -114,7 +114,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.354cf35eeb772b8032de796847a575ed.json"
+    data-offline-search-index-json-src="/offline-search-index.965a84a3bd11a11b062aa00059c28bfa.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -441,6 +441,7 @@ if (!doNotTrack) {
         <li><a href="#joining-on-multiple-fields">Joining on multiple fields</a></li>
       </ul>
     </li>
+    <li><a href="#removing-joins">Removing joins</a></li>
   </ul>
 </nav>
       </div>
@@ -630,6 +631,15 @@ if (!doNotTrack) {
 <p>We&rsquo;d then create a calculation &lsquo;product month&rsquo; which would merge the product code and the month name. A similar calculation would be created in a &lsquo;sales&rsquo; view, which shows individual sale lines, each with a product and month.</p>
 <p>Finally, we&rsquo;d join the two views together, the product/month combinations on the left, the sales view on the right, choosing the &lsquo;product month&rsquo; calculations from each as the fields to match on.</p>
 <p>That would enable us to create a calculation totalling sales for each product/month, including zeros where there were no sales.</p>
+<h2 id="removing-joins">Removing joins</h2>
+<p>Before removing a join, you first need to remove any uses of the joined object (table or view) from the view. To do that</p>
+<ol>
+<li>In the &lsquo;fields&rsquo; panel of the view, remove any fields which are from the joined object. The source of each field is shown to the right of the field name. That includes any dimmed &lsquo;Link to&hellip;&rsquo; fields, which are primary keys.</li>
+<li>Still in the &lsquo;field&rsquo; panel, check if any fields from the joined object are referenced from any calculations (shown in purple in the fields list). If so, remove those calculations or edit them to remove the reference</li>
+<li>Check the <a href="/docs/views/filters/">filters</a> panel to see if any joined objects are used in a filter. If so, remove that filter</li>
+<li>It&rsquo;s also possible a join may be there as an intermediate to another join. In that case, you need to work backwards removing any dependent joins first.</li>
+</ol>
+<p>If you still can&rsquo;t remove a join, it may be that a field from the joined object is referenced elsewhere in the view setup - you can check other view panels like &lsquo;properties and options&rsquo; or the &lsquo;workflow&rsquo; panels.</p>
 
         <div class="section-index">
     
@@ -718,7 +728,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/4fa60f22f8aee52e07acf18b51f6ee89b1ae45d8">Refresh of all instructions to match v6 of the Agilebase development interface (4fa60f2)</a>
+  Last modified March 6, 2023: <a href="https://github.com/okohll/abdocs/commit/ef53b086e86b1f8903fc809596484c2a145cc128">Removing joins (ef53b08)</a>
 </div>
 
 </div>

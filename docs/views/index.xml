@@ -149,6 +149,15 @@
 &lt;p&gt;We&amp;rsquo;d then create a calculation &amp;lsquo;product month&amp;rsquo; which would merge the product code and the month name. A similar calculation would be created in a &amp;lsquo;sales&amp;rsquo; view, which shows individual sale lines, each with a product and month.&lt;/p&gt;
 &lt;p&gt;Finally, we&amp;rsquo;d join the two views together, the product/month combinations on the left, the sales view on the right, choosing the &amp;lsquo;product month&amp;rsquo; calculations from each as the fields to match on.&lt;/p&gt;
 &lt;p&gt;That would enable us to create a calculation totalling sales for each product/month, including zeros where there were no sales.&lt;/p&gt;
+&lt;h2 id=&#34;removing-joins&#34;&gt;Removing joins&lt;/h2&gt;
+&lt;p&gt;Before removing a join, you first need to remove any uses of the joined object (table or view) from the view. To do that&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the &amp;lsquo;fields&amp;rsquo; panel of the view, remove any fields which are from the joined object. The source of each field is shown to the right of the field name. That includes any dimmed &amp;lsquo;Link to&amp;hellip;&amp;rsquo; fields, which are primary keys.&lt;/li&gt;
+&lt;li&gt;Still in the &amp;lsquo;field&amp;rsquo; panel, check if any fields from the joined object are referenced from any calculations (shown in purple in the fields list). If so, remove those calculations or edit them to remove the reference&lt;/li&gt;
+&lt;li&gt;Check the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;filters&lt;/a&gt; panel to see if any joined objects are used in a filter. If so, remove that filter&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s also possible a join may be there as an intermediate to another join. In that case, you need to work backwards removing any dependent joins first.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you still can&amp;rsquo;t remove a join, it may be that a field from the joined object is referenced elsewhere in the view setup - you can check other view panels like &amp;lsquo;properties and options&amp;rsquo; or the &amp;lsquo;workflow&amp;rsquo; panels.&lt;/p&gt;
 
       </description>
     </item>
