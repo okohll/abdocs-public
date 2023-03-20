@@ -192,6 +192,7 @@
 &lt;p&gt;Optionally, the embedded data can be editable.&lt;/p&gt;
 &lt;p&gt;This can be used for many purposes, such as&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;showing warning or information messages in a form, based on criteria&lt;/li&gt;
 &lt;li&gt;showing calculations, e.g. when editing a recipe, you may want to show the total cost/kg of all ingredients and packaging in that recipe&lt;/li&gt;
 &lt;li&gt;embedding charts, e.g. in the record for a customer, you may want to show the last 12 months of sales data&lt;/li&gt;
 &lt;li&gt;allowing quick editing of related data, e.g. after selecting a customer contact for a sales opportunity, allow quick editing of their contact details without having to navigate away from the opportunity record&lt;/li&gt;
