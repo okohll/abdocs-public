@@ -53,6 +53,17 @@ To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &am
   &lt;iframe src=&#34;https://www.youtube.com/embed/Rojcf6OzdHw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
+&lt;h2 id=&#34;the-development-homepage&#34;&gt;The development homepage&lt;/h2&gt;
+&lt;p&gt;When development mode is toggled on from the homepage, the development homepage will show. There are three main areas:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;The lefthand sidebar&lt;/strong&gt;: this shows any objects (tables, views etc.) you&amp;rsquo;ve been working on recently, for quick access, or any that you have &amp;lsquo;pinned&amp;rsquo; (see below)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The map&lt;/strong&gt;: clicking this diagram shows the connections between tables in the system, i.e. the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relations&lt;/a&gt; between them. Clicking a table opens it for editing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lists&lt;/strong&gt;: to the right of the map, at the top, is a set of boxes which each load a different type of object, i.e. &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;tables&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/&#34;&gt;roles&lt;/a&gt;, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/&#34;&gt;users&lt;/a&gt; and different categories of &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt;. Clicking on each will load a list of objects, so you can see full details, edit and delete them.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;pinning-objects&#34;&gt;Pinning objects&lt;/h3&gt;
+&lt;p&gt;When you have an editing panel open, e.g. by clicking on an object from a list (see above), you can &amp;lsquo;pin&amp;rsquo; it by clicking the pushpin icon at the top left of the panel.&lt;/p&gt;
+&lt;p&gt;Pinned objects remain on screen for quick access at the top of the lefthand sidebar. They will also be remembered if you log out, for the next time you log in.&lt;/p&gt;
+&lt;p&gt;Pinned objects can also be quickly accessed at any time, even if the development homepage is not open, using the history menu in Agilebase&amp;rsquo;s top toolbar which is always present. The history icon is just to the right of the &amp;lsquo;back (&amp;lt;)&amp;rsquo; button.&lt;/p&gt;
 &lt;h2 id=&#34;accessing-additional-debugging-information&#34;&gt;Accessing additional debugging information&lt;/h2&gt;
 &lt;p&gt;Later on down the route of creating applications, you may wish the user interface to show additional information, specifically in views, to show the primary key values for each record - the internal row identifiers - which are normally hidden.&lt;/p&gt;
 &lt;p&gt;This can be useful when testing and debugging &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt; for example.&lt;/p&gt;

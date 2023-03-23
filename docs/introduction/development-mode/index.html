@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/introduction/development-mode/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2022-02-18T16:40:00+01:00" />
-<meta property="article:modified_time" content="2022-10-20T15:08:44+01:00" />
+<meta property="article:modified_time" content="2023-03-23T10:09:51+00:00" />
 <meta itemprop="name" content="Development Mode">
 <meta itemprop="description" content="How to toggle between development and standard user modes"><meta itemprop="datePublished" content="2022-02-18T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2022-10-20T15:08:44+01:00" />
-<meta itemprop="wordCount" content="414">
+<meta itemprop="dateModified" content="2023-03-23T10:09:51+00:00" />
+<meta itemprop="wordCount" content="649">
 <meta itemprop="keywords" content="Citizen Developer level 2,v6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Development Mode"/>
 <meta name="twitter:description" content="How to toggle between development and standard user modes"/>
@@ -93,7 +93,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c4ca46ae2b974453631123cab6b48338.json"
+    data-offline-search-index-json-src="/offline-search-index.86b0be78743ccbf7ded5fc8f5f614580.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -118,7 +118,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c4ca46ae2b974453631123cab6b48338.json"
+    data-offline-search-index-json-src="/offline-search-index.86b0be78743ccbf7ded5fc8f5f614580.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -437,6 +437,11 @@ if (!doNotTrack) {
   <ul>
     <li><a href="#toggling-development-mode-on-and-off">Toggling development mode on and off</a></li>
     <li><a href="#using-editing-panels">Using editing panels</a></li>
+    <li><a href="#the-development-homepage">The development homepage</a>
+      <ul>
+        <li><a href="#pinning-objects">Pinning objects</a></li>
+      </ul>
+    </li>
     <li><a href="#accessing-additional-debugging-information">Accessing additional debugging information</a></li>
   </ul>
 </nav>
@@ -575,6 +580,17 @@ To get started, you need to toggle from &rsquo;normal&rsquo; mode to &lsquo;deve
   <iframe src="https://www.youtube.com/embed/Rojcf6OzdHw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
+<h2 id="the-development-homepage">The development homepage</h2>
+<p>When development mode is toggled on from the homepage, the development homepage will show. There are three main areas:</p>
+<ol>
+<li><strong>The lefthand sidebar</strong>: this shows any objects (tables, views etc.) you&rsquo;ve been working on recently, for quick access, or any that you have &lsquo;pinned&rsquo; (see below)</li>
+<li><strong>The map</strong>: clicking this diagram shows the connections between tables in the system, i.e. the <a href="/docs/tables/relational-database-concepts/">relations</a> between them. Clicking a table opens it for editing.</li>
+<li><strong>Lists</strong>: to the right of the map, at the top, is a set of boxes which each load a different type of object, i.e. <a href="/docs/tables/">tables</a>, <a href="/docs/tiles/">tiles</a>, <a href="/docs/security-and-compliance/security-features/roles/">roles</a>, <a href="/docs/security-and-compliance/security-features/users/">users</a> and different categories of <a href="/docs/views/">view</a>. Clicking on each will load a list of objects, so you can see full details, edit and delete them.</li>
+</ol>
+<h3 id="pinning-objects">Pinning objects</h3>
+<p>When you have an editing panel open, e.g. by clicking on an object from a list (see above), you can &lsquo;pin&rsquo; it by clicking the pushpin icon at the top left of the panel.</p>
+<p>Pinned objects remain on screen for quick access at the top of the lefthand sidebar. They will also be remembered if you log out, for the next time you log in.</p>
+<p>Pinned objects can also be quickly accessed at any time, even if the development homepage is not open, using the history menu in Agilebase&rsquo;s top toolbar which is always present. The history icon is just to the right of the &lsquo;back (&lt;)&rsquo; button.</p>
 <h2 id="accessing-additional-debugging-information">Accessing additional debugging information</h2>
 <p>Later on down the route of creating applications, you may wish the user interface to show additional information, specifically in views, to show the primary key values for each record - the internal row identifiers - which are normally hidden.</p>
 <p>This can be useful when testing and debugging <a href="/docs/integrations/">APIs</a> for example.</p>
@@ -645,7 +661,7 @@ To get started, you need to toggle from &rsquo;normal&rsquo; mode to &lsquo;deve
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/4fa60f22f8aee52e07acf18b51f6ee89b1ae45d8">Refresh of all instructions to match v6 of the Agilebase development interface (4fa60f2)</a>
+  Last modified March 23, 2023: <a href="https://github.com/okohll/abdocs/commit/cf1ef4b4c5c009d44a58d22e88e2e06fc0f9d11e">Development homepage - pinning, plus user cloning (ref. fixes) (cf1ef4b)</a>
 </div>
 
 </div>

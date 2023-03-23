@@ -89,7 +89,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c4ca46ae2b974453631123cab6b48338.json"
+    data-offline-search-index-json-src="/offline-search-index.86b0be78743ccbf7ded5fc8f5f614580.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -114,7 +114,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c4ca46ae2b974453631123cab6b48338.json"
+    data-offline-search-index-json-src="/offline-search-index.86b0be78743ccbf7ded5fc8f5f614580.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -552,9 +552,17 @@ if (!doNotTrack) {
 		
 	</header>
 	<h2 id="adding-a-user">Adding a user</h2>
+<p>You can add a new user from scratch, or clone an existing one. To add:</p>
 <ol>
-<li>Go to the homepage and toggle development mode on</li>
+<li>Go to the homepage and <a href="/docs/introduction/development-mode/">toggle development mode on</a></li>
 <li>Click the &lsquo;+ USER&rsquo; button under Lists at the top of the screen</li>
+</ol>
+<p>To clone:</p>
+<ol>
+<li>Go to the homepage and <a href="/docs/introduction/development-mode/">toggle development mode on</a></li>
+<li>Click the Users box at the top right to load a list of existing users</li>
+<li>Click a user to clone to open up their editing panel</li>
+<li>At the bottom, press the Clone button</li>
 </ol>
 <p>If a cost is to be applied, this will be shown to you.</p>
 <p>You should now see an editing screen with the details of the user you just created.
@@ -608,10 +616,13 @@ if (!doNotTrack) {
 <h4 id="tiles">Tiles</h4>
 <p>Allows an admin to add/remove <a href="/docs/tiles/">tiles</a> for a user. By default users can add/remove tiles themselves too, although this can be disabled through the use of a <a href="#other-options">custom UI</a>.</p>
 <h2 id="viewing-users">Viewing users</h2>
-<p>Expand the <em>Administration</em> menu in the lefthand sidebar and click users. You&rsquo;ll see a list of existing user accounts. Their details are listed including 2FA status (whether they&rsquo;re using app-based 2FA or not) and when they last logged in.</p>
-<p>Each user&rsquo;s roles are shown. Any <a href="/docs/security-and-compliance/security-features/roles/#multi-tenanting">multi-tenanting</a> roles are marked in bold.</p>
+<p>From the homepage, <a href="/docs/introduction/development-mode/">toggle development mode on</a> and click the &lsquo;users&rsquo; box at the top right. You&rsquo;ll see a list of existing user accounts. Their details are listed including 2FA status (whether they&rsquo;re using app-based 2FA or not) and when they last logged in.</p>
+<p>Each user&rsquo;s roles are shown. Any <a href="/docs/security-and-compliance/security-features/roles/#multi-tenanting">multi-tenanting</a> roles are also included.</p>
+<blockquote>
+<p>The list of users can be exported to spreadsheet by clicking again on the &lsquo;users&rsquo; box at the top right of the screen.</p>
+</blockquote>
 <h2 id="removing-users">Removing users</h2>
-<p>To remove users, when viewing the list of users, tick those to remove and press the delete (cross) button in the top toolbar.</p>
+<p>To remove a user, click one in the list (see above) to open the user editing panel. At the bottom, click the Remove button.</p>
 <p>A user removal will have no effect on any data stored in the system. The user&rsquo;s previous comments will still be visible for example and their username will still be logged against any records they&rsquo;re marked as owner of. Their changes will still be in the audit trail and they will be marked as the creator/last editor of records where relevant.</p>
 <p>You may want to take some other actions after deletion e.g. to re-assign records they are assigned to.</p>
 <p>A deleted user&rsquo;s profile image will be replaced with a standard icon representing a deleted user, when displayed in comment streams etc.</p>
@@ -711,7 +722,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/4fa60f22f8aee52e07acf18b51f6ee89b1ae45d8">Refresh of all instructions to match v6 of the Agilebase development interface (4fa60f2)</a>
+  Last modified March 23, 2023: <a href="https://github.com/okohll/abdocs/commit/cf1ef4b4c5c009d44a58d22e88e2e06fc0f9d11e">Development homepage - pinning, plus user cloning (ref. fixes) (cf1ef4b)</a>
 </div>
 
 </div>
