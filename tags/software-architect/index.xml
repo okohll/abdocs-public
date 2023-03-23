@@ -123,6 +123,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;The list of users can be exported to spreadsheet by clicking again on the &amp;lsquo;users&amp;rsquo; box at the top right of the screen.&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;Note that if you want to see a full audit trail of what each user has done (editing, searching, exporting etc.), then you can use the optional &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail&#34;&gt;enhanced audit trail&lt;/a&gt; feature (only available on certain plans).&lt;/p&gt;
 &lt;h2 id=&#34;removing-users&#34;&gt;Removing users&lt;/h2&gt;
 &lt;p&gt;To remove a user, click one in the list (see above) to open the user editing panel. At the bottom, click the Remove button.&lt;/p&gt;
 &lt;p&gt;A user removal will have no effect on any data stored in the system. The user&amp;rsquo;s previous comments will still be visible for example and their username will still be logged against any records they&amp;rsquo;re marked as owner of. Their changes will still be in the audit trail and they will be marked as the creator/last editor of records where relevant.&lt;/p&gt;

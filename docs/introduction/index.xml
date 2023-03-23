@@ -149,6 +149,7 @@ To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &am
 &lt;/ol&gt;
 &lt;h3 id=&#34;pinning-objects&#34;&gt;Pinning objects&lt;/h3&gt;
 &lt;p&gt;When you have an editing panel open, e.g. by clicking on an object from a list (see above), you can &amp;lsquo;pin&amp;rsquo; it by clicking the pushpin icon at the top left of the panel.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/pinning.png&#34; alt=&#34;Pinning a view&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pinned objects remain on screen for quick access at the top of the lefthand sidebar. They will also be remembered if you log out, for the next time you log in.&lt;/p&gt;
 &lt;p&gt;Pinned objects can also be quickly accessed at any time, even if the development homepage is not open, using the history menu in Agilebase&amp;rsquo;s top toolbar which is always present. The history icon is just to the right of the &amp;lsquo;back (&amp;lt;)&amp;rsquo; button.&lt;/p&gt;
 &lt;h2 id=&#34;accessing-additional-debugging-information&#34;&gt;Accessing additional debugging information&lt;/h2&gt;

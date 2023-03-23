@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/views/creating-a-view/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-13T16:40:00+01:00" />
-<meta property="article:modified_time" content="2022-10-20T15:08:44+01:00" />
+<meta property="article:modified_time" content="2023-03-23T15:57:26+00:00" />
 <meta itemprop="name" content="Creating a view">
 <meta itemprop="description" content="How to create a new view and place it in a navigation structure"><meta itemprop="datePublished" content="2020-05-13T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2022-10-20T15:08:44+01:00" />
-<meta itemprop="wordCount" content="558">
+<meta itemprop="dateModified" content="2023-03-23T15:57:26+00:00" />
+<meta itemprop="wordCount" content="840">
 <meta itemprop="keywords" content="Citizen Developer level 2,v6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Creating a view"/>
 <meta name="twitter:description" content="How to create a new view and place it in a navigation structure"/>
@@ -93,7 +93,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.86b0be78743ccbf7ded5fc8f5f614580.json"
+    data-offline-search-index-json-src="/offline-search-index.c01229ac456be489e73111c137c807d4.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -118,7 +118,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.86b0be78743ccbf7ded5fc8f5f614580.json"
+    data-offline-search-index-json-src="/offline-search-index.c01229ac456be489e73111c137c807d4.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -437,6 +437,7 @@ if (!doNotTrack) {
   <ul>
     <li><a href="#to-create-a-view">To create a view</a></li>
     <li><a href="#organising-into-a-navigation-structure">Organising into a navigation structure</a></li>
+    <li><a href="#adding-and-removing-fields">Adding and removing fields</a></li>
     <li><a href="#using-a-view">Using a view</a>
       <ul>
         <li><a href="#finding-data">Finding data</a></li>
@@ -569,10 +570,20 @@ if (!doNotTrack) {
 <p>Within a tile, the view can be added to a menu by editing the view name. Simply prefix the view name with a menu name and a dash. So for example, naming a view <code>contacts - all contacts</code> will create a &lsquo;contacts&rsquo; menu containing the view &lsquo;all contacts&rsquo; visible to users.</p>
 <p>Entering a view <em>Help</em> in the space underneath the name will provide help text for the view. This will be displayed in the menu underneath the view name. Here&rsquo;s a screenshot of a sample menu, each with purpose completed.</p>
 <p><img src="/menu.png" alt="menu"></p>
+<h2 id="adding-and-removing-fields">Adding and removing fields</h2>
+<p>The core function of a view is usually to display a set of fields to people, as columns, so they can see data and search it.</p>
+<p>When you create a view, the first dozen or so fields in the table it was created from will be added automatically. You can hover over a field and click the cross icon to remove it from the view.</p>
+<p>To add a new field, make sure you&rsquo;re in the &lsquo;fields&rsquo; panel (the default). An &lsquo;Add Field&rsquo; section will be visible, with two selectors.
+The first on the left selects the source of data. This is typically a table, but can also be a view.</p>
+<p>The default source is the view&rsquo;s parent table. The system also intelligently presents any tables which are related - for example, when editing a view based on contacts, &lsquo;organisations&rsquo; may be available if each contact belongs to an organisation.
+Finally, any tables or views which are <a href="/docs/views/joins/">joined</a> to this view are available as sources.</p>
+<p>Once you&rsquo;ve selected a source (if not the default), you can choose a field to add.</p>
+<p>When you press the Add button you&rsquo;ll be prompted to edit the field name if you like. You can just press OK to accept the name of the field as it is, but if you like you can edit it first. That doesn&rsquo;t change the field name in its underlying table, but it does allow you to name the field something specific just for this view.
+For example, in your organisations table, you may have a field &lsquo;Organisation Name&rsquo;. In a view of invoices to customers, you may want to name this &lsquo;Customer Name&rsquo;, just for that view.</p>
 <h2 id="using-a-view">Using a view</h2>
 <p>Once the view is created, how can someone use it? We won&rsquo;t work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.</p>
 <h3 id="finding-data">Finding data</h3>
-<p>By default a search box appears under each column heading (the system can also be configured in a simplified way with a single search box to cover all fields).</p>
+<p>By default, a search box appears under each column heading (the system can also be configured in a simplified way with a single search box to cover all fields).</p>
 <p>The help icon (?) to the left of the search boxes details the types of search that can be performed. There are many, allowing for e.g. date-based searches, <em>and</em> and <em>or</em> searching, finding empty values etc. Helper features pop up for some field types, like date range pickers for example.</p>
 <h3 id="seeing-summary-stats">Seeing summary stats</h3>
 <p>Hovering over a column shows summary statistics, like a total and average (of all filtered records) for numeric fields, or a breakdown of dropdown/tags fields.</p>
@@ -646,7 +657,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/4fa60f22f8aee52e07acf18b51f6ee89b1ae45d8">Refresh of all instructions to match v6 of the Agilebase development interface (4fa60f2)</a>
+  Last modified March 23, 2023: <a href="https://github.com/okohll/abdocs/commit/84c021ee9afa523251e3cc0fa8ed2422ac9c6e8d">Addiing and removing view fields, pinning image (84c021e)</a>
 </div>
 
 </div>
