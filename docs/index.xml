@@ -1255,6 +1255,10 @@ Finally, any tables or views which are &lt;a href=&#34;https://docs.agilebase.co
 &lt;p&gt;Once you&amp;rsquo;ve selected a source (if not the default), you can choose a field to add.&lt;/p&gt;
 &lt;p&gt;When you press the Add button you&amp;rsquo;ll be prompted to edit the field name if you like. You can just press OK to accept the name of the field as it is, but if you like you can edit it first. That doesn&amp;rsquo;t change the field name in its underlying table, but it does allow you to name the field something specific just for this view.
 For example, in your organisations table, you may have a field &amp;lsquo;Organisation Name&amp;rsquo;. In a view of invoices to customers, you may want to name this &amp;lsquo;Customer Name&amp;rsquo;, just for that view.&lt;/p&gt;
+&lt;h3 id=&#34;applying-sorts&#34;&gt;Applying sorts&lt;/h3&gt;
+&lt;p&gt;When someone opens a view, they can sort it by any column they like by clicking the column header. However when building a view, you may want to set a default sort order.&lt;/p&gt;
+&lt;p&gt;To do that, when looking at the list of fields in a view, click the little up/down icon to the left of the fieldname. That will apply a sort to that field. Clicking it again will change the direction of the sort.&lt;/p&gt;
+&lt;p&gt;You can add sorts to multiple fields, they will take effect from the top down, i.e. the data will be sorted by the top field with a sort, then by the next one down etc.&lt;/p&gt;
 &lt;h2 id=&#34;using-a-view&#34;&gt;Using a view&lt;/h2&gt;
 &lt;p&gt;Once the view is created, how can someone use it? We won&amp;rsquo;t work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.&lt;/p&gt;
 &lt;h3 id=&#34;finding-data&#34;&gt;Finding data&lt;/h3&gt;

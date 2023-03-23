@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/views/creating-a-view/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-13T16:40:00+01:00" />
-<meta property="article:modified_time" content="2023-03-23T15:57:26+00:00" />
+<meta property="article:modified_time" content="2023-03-23T16:12:53+00:00" />
 <meta itemprop="name" content="Creating a view">
 <meta itemprop="description" content="How to create a new view and place it in a navigation structure"><meta itemprop="datePublished" content="2020-05-13T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2023-03-23T15:57:26+00:00" />
-<meta itemprop="wordCount" content="840">
+<meta itemprop="dateModified" content="2023-03-23T16:12:53+00:00" />
+<meta itemprop="wordCount" content="952">
 <meta itemprop="keywords" content="Citizen Developer level 2,v6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Creating a view"/>
 <meta name="twitter:description" content="How to create a new view and place it in a navigation structure"/>
@@ -93,7 +93,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c01229ac456be489e73111c137c807d4.json"
+    data-offline-search-index-json-src="/offline-search-index.061699514717a667fc0ed4ed02c7e411.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -118,7 +118,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c01229ac456be489e73111c137c807d4.json"
+    data-offline-search-index-json-src="/offline-search-index.061699514717a667fc0ed4ed02c7e411.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -437,7 +437,11 @@ if (!doNotTrack) {
   <ul>
     <li><a href="#to-create-a-view">To create a view</a></li>
     <li><a href="#organising-into-a-navigation-structure">Organising into a navigation structure</a></li>
-    <li><a href="#adding-and-removing-fields">Adding and removing fields</a></li>
+    <li><a href="#adding-and-removing-fields">Adding and removing fields</a>
+      <ul>
+        <li><a href="#applying-sorts">Applying sorts</a></li>
+      </ul>
+    </li>
     <li><a href="#using-a-view">Using a view</a>
       <ul>
         <li><a href="#finding-data">Finding data</a></li>
@@ -580,6 +584,10 @@ Finally, any tables or views which are <a href="/docs/views/joins/">joined</a> t
 <p>Once you&rsquo;ve selected a source (if not the default), you can choose a field to add.</p>
 <p>When you press the Add button you&rsquo;ll be prompted to edit the field name if you like. You can just press OK to accept the name of the field as it is, but if you like you can edit it first. That doesn&rsquo;t change the field name in its underlying table, but it does allow you to name the field something specific just for this view.
 For example, in your organisations table, you may have a field &lsquo;Organisation Name&rsquo;. In a view of invoices to customers, you may want to name this &lsquo;Customer Name&rsquo;, just for that view.</p>
+<h3 id="applying-sorts">Applying sorts</h3>
+<p>When someone opens a view, they can sort it by any column they like by clicking the column header. However when building a view, you may want to set a default sort order.</p>
+<p>To do that, when looking at the list of fields in a view, click the little up/down icon to the left of the fieldname. That will apply a sort to that field. Clicking it again will change the direction of the sort.</p>
+<p>You can add sorts to multiple fields, they will take effect from the top down, i.e. the data will be sorted by the top field with a sort, then by the next one down etc.</p>
 <h2 id="using-a-view">Using a view</h2>
 <p>Once the view is created, how can someone use it? We won&rsquo;t work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.</p>
 <h3 id="finding-data">Finding data</h3>
@@ -657,7 +665,7 @@ For example, in your organisations table, you may have a field &lsquo;Organisati
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified March 23, 2023: <a href="https://github.com/okohll/abdocs/commit/84c021ee9afa523251e3cc0fa8ed2422ac9c6e8d">Addiing and removing view fields, pinning image (84c021e)</a>
+  Last modified March 23, 2023: <a href="https://github.com/okohll/abdocs/commit/6a829b99ef03c60fe7c88607b4c8a98083463cd1">Applying sorts (6a829b9)</a>
 </div>
 
 </div>
