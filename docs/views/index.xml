@@ -26,6 +26,8 @@
         &lt;p&gt;In Agilebase, a view &amp;lsquo;belongs to&amp;rsquo; a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt;. We&amp;rsquo;ll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we&amp;rsquo;ll assume we pick a contacts table.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;ll also assume we already have some tables and some &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;to-create-a-view&#34;&gt;To create a view&lt;/h2&gt;
+&lt;p&gt;You can create a view from scratch, or clone an existing one then edit it.&lt;/p&gt;
+&lt;p&gt;To create from scratch&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Select (or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;create&lt;/a&gt; a new) table.&lt;/li&gt;
 &lt;li&gt;Click the table you want to create a view from&lt;/li&gt;
@@ -36,6 +38,13 @@
 &lt;blockquote&gt;
 &lt;p&gt;There is an option &lt;strong&gt;Populate the view with fields from this table&lt;/strong&gt; next to the &lt;em&gt;Add View&lt;/em&gt; button. This is a convenience feature, which is ticked by default. When it&amp;rsquo;s ticked, the view created will contain the first 10 fields from the table - you can then remove any you don&amp;rsquo;t need or add more. When un-ticked, the view will start with no fields so you can add just those you wish.&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;To clone an existing view&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open a view&lt;/li&gt;
+&lt;li&gt;Toggle on the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/introduction/development-mode/&#34;&gt;development mode&lt;/a&gt; and click &amp;rsquo;edit view&amp;rsquo; at the top left&lt;/li&gt;
+&lt;li&gt;Open the &amp;lsquo;properties and options&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;Scroll down to the bottom of the panel and press the &amp;lsquo;clone view&amp;rsquo; button&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;organising-into-a-navigation-structure&#34;&gt;Organising into a navigation structure&lt;/h2&gt;
 &lt;p&gt;On creating a view, its manage tab will appear. One of the first things it&amp;rsquo;s useful to do is put the field in a tile - use the &lt;em&gt;Tile&lt;/em&gt; dropdown option to do so.&lt;/p&gt;
 &lt;p&gt;Within a tile, the view can be added to a menu by editing the view name. Simply prefix the view name with a menu name and a dash. So for example, naming a view &lt;code&gt;contacts - all contacts&lt;/code&gt; will create a &amp;lsquo;contacts&amp;rsquo; menu containing the view &amp;lsquo;all contacts&amp;rsquo; visible to users.&lt;/p&gt;
@@ -87,7 +96,7 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
 &lt;p&gt;Agilebase will automatically pick out the common tables you may wish to join to, by seeing which are related via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation fields&lt;/a&gt;. Once you get used to the concepts, you may also wish sometimes to add joins manually to tables or views not automatically suggested. That will be covered at the end of this page.&lt;/p&gt;
 &lt;p&gt;To add a join&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Load the view you wish to add a join to and enable development mode&lt;/li&gt;
+&lt;li&gt;Load the view you wish to add a join to and toggle on development mode&lt;/li&gt;
 &lt;li&gt;Click the big pencil icon at the top left of the screen to bring up the &amp;lsquo;Edit view&amp;rsquo; panel&lt;/li&gt;
 &lt;li&gt;Click &amp;lsquo;joins&amp;rsquo;&lt;/li&gt;
 &lt;li&gt;A list of joins you can add will appear, each representing a link to a table with related data in it. Select one and the join will add&lt;/li&gt;

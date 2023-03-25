@@ -1335,7 +1335,7 @@ Now recurse and do step 2 again, for any of the new exploded ingredient lines th
       <description>
         
         
-        &lt;p&gt;Some workflows need to be run on an adhoc basis, initiated by a user.
+        &lt;p&gt;Some &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; need to be run on an adhoc basis, initiated by a user.
 In these instances it can be useful to assign the Workflow to run behind a Button.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;N.b. In both cases below it is necessary for the Workflow to marked as Manual.&lt;/p&gt;
