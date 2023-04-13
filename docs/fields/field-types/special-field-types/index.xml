@@ -49,6 +49,9 @@
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-comment.png&#34; alt=&#34;add comment&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The available recipients are those people who have privileges to view data in the table (it&amp;rsquo;s no use sending a comment to someone who can&amp;rsquo;t see the data being discussed).&lt;/p&gt;
 &lt;p&gt;The user interface intelligently selects an initial list of recipients from those available, but they can be added or removed by the user.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To add a user, type &amp;lsquo;@&amp;rsquo; then start typing their name. A dropdown list will appear from which you can pick the person.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;In this example, Cliff, Gemma and Mark have been set to receive email notifications as well. The email they receive will contain a link to take them directly to the record the comment was added to. They can reply to the email to log an additional comment.&lt;/p&gt;
 &lt;p&gt;People who aren&amp;rsquo;t recipients of a comment will still see the comment when they visit the record it&amp;rsquo;s been added to, they just won&amp;rsquo;t get a notification in their comments stream or elsewhere.&lt;/p&gt;
 &lt;p&gt;People who are mentioned by name in a comment (Mark in this example) will get an in-app alert as well as the comment appearing in their comment stream.&lt;/p&gt;

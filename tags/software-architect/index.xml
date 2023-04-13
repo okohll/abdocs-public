@@ -158,9 +158,9 @@
 &lt;ul&gt;
 &lt;li&gt;a &lt;em&gt;supplier&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;a &lt;em&gt;contractor&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;an &lt;em&gt;app&lt;/em&gt; user i.e. someone who utilises Agilebase functions via the API, using a third party app or website&lt;/li&gt;
 &lt;li&gt;or a &lt;em&gt;member of the public&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;So this mechanism is not applicable to employees of the company (or a parent company or subsidiary).&lt;/p&gt;
 &lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;
 &lt;h3 id=&#34;configuring-a-community-of-users&#34;&gt;Configuring a community of users&lt;/h3&gt;
 &lt;p&gt;To set up a new community of a certain type, a role must be created for them. The role privileges will determine which tables they have access to.&lt;/p&gt;
