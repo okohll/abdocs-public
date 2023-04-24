@@ -52,7 +52,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;We recommend the adoption of a password wallet service like &lt;a href=&#34;https://1password.com/&#34;&gt;1Password&lt;/a&gt;, &lt;a href=&#34;https://lastpass.com&#34;&gt;LastPass&lt;/a&gt; or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;notes-about-password-security&#34;&gt;Notes about password security&lt;/h3&gt;
+&lt;h4 id=&#34;notes-about-password-security&#34;&gt;Notes about password security&lt;/h4&gt;
 &lt;p&gt;Passwords must be a minimum of 8 characters.&lt;/p&gt;
 &lt;p&gt;When someone sets or changes their password, it&amp;rsquo;s checked against &lt;a href=&#34;https://haveibeenpwned.com/Passwords&#34;&gt;https://haveibeenpwned.com/Passwords&lt;/a&gt; to ensure it&amp;rsquo;s not a common one and is suitable for ongoing use.&lt;/p&gt;
 &lt;p&gt;Passwords are stored in our system &lt;a href=&#34;https://www.okta.com/blog/2019/03/what-are-salted-passwords-and-password-hashing/&#34;&gt;salted and hashed&lt;/a&gt; using the &lt;a href=&#34;https://en.wikipedia.org/wiki/Bcrypt&#34;&gt;bcrypt&lt;/a&gt; scheme, with 13 rounds. This means that we do not know what your passwords are and in the unfortunate event of our passwords database being hacked, the original passwords would still not be able to be retrieved.&lt;/p&gt;
@@ -65,6 +65,9 @@
 &lt;h4 id=&#34;mandating-2fa-for-everyone&#34;&gt;Mandating 2FA for everyone&lt;/h4&gt;
 &lt;p&gt;This can be done in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/#mandate-2fa&#34;&gt;company settings&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;other-options&#34;&gt;Other options&lt;/h3&gt;
+&lt;h4 id=&#34;learner-progression-level&#34;&gt;Learner Progression Level&lt;/h4&gt;
+&lt;p&gt;When created, the level defaults to being a &amp;lsquo;core user&amp;rsquo;, i.e. a standard user who has no special development privileges.&lt;/p&gt;
+&lt;p&gt;A software architect can change this to move any user up (or down) in learner development progress. Please see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/introduction/learner-progression/&#34;&gt;learner progression&lt;/a&gt; for more information on what abilities each level confers.&lt;/p&gt;
 &lt;h4 id=&#34;use-the-custom-agilechilli-ui-rather-than-agilebases&#34;&gt;Use the custom AgileChilli UI rather than Agilebase&amp;rsquo;s&lt;/h4&gt;
 &lt;p&gt;It&amp;rsquo;s possible for companies to apply their logo and custom login screen to the system. Please contact us if you&amp;rsquo;d like to set this up.&lt;/p&gt;
 &lt;h4 id=&#34;logout-after&#34;&gt;Logout after&lt;/h4&gt;

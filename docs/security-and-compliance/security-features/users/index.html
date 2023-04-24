@@ -54,6 +54,10 @@
         backdrop-filter: blur(5px) brightness(0.6);
         border-radius: 1em;
     }
+    .navbar-brand__logo.navbar-logo {
+        display: inline-block;
+        width: 3.5em;
+    }
 </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-00000000-0"></script>
@@ -97,7 +101,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.a35cff313c5936df49c7da8ddf0dd1c2.json"
+    data-offline-search-index-json-src="/offline-search-index.b01295e4a3ad69c1012fd9905fa12f3c.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -122,7 +126,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.a35cff313c5936df49c7da8ddf0dd1c2.json"
+    data-offline-search-index-json-src="/offline-search-index.b01295e4a3ad69c1012fd9905fa12f3c.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -442,7 +446,6 @@ if (!doNotTrack) {
     <li><a href="#adding-a-user">Adding a user</a>
       <ul>
         <li><a href="#passwords">Passwords</a></li>
-        <li><a href="#notes-about-password-security">Notes about password security</a></li>
         <li><a href="#two-factor-authentication">Two factor authentication</a></li>
         <li><a href="#other-options">Other options</a></li>
       </ul>
@@ -588,7 +591,7 @@ if (!doNotTrack) {
 <blockquote>
 <p>We recommend the adoption of a password wallet service like <a href="https://1password.com/">1Password</a>, <a href="https://lastpass.com">LastPass</a> or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.</p>
 </blockquote>
-<h3 id="notes-about-password-security">Notes about password security</h3>
+<h4 id="notes-about-password-security">Notes about password security</h4>
 <p>Passwords must be a minimum of 8 characters.</p>
 <p>When someone sets or changes their password, it&rsquo;s checked against <a href="https://haveibeenpwned.com/Passwords">https://haveibeenpwned.com/Passwords</a> to ensure it&rsquo;s not a common one and is suitable for ongoing use.</p>
 <p>Passwords are stored in our system <a href="https://www.okta.com/blog/2019/03/what-are-salted-passwords-and-password-hashing/">salted and hashed</a> using the <a href="https://en.wikipedia.org/wiki/Bcrypt">bcrypt</a> scheme, with 13 rounds. This means that we do not know what your passwords are and in the unfortunate event of our passwords database being hacked, the original passwords would still not be able to be retrieved.</p>
@@ -601,6 +604,9 @@ if (!doNotTrack) {
 <h4 id="mandating-2fa-for-everyone">Mandating 2FA for everyone</h4>
 <p>This can be done in the <a href="/docs/advanced-usage/company-settings/#mandate-2fa">company settings</a></p>
 <h3 id="other-options">Other options</h3>
+<h4 id="learner-progression-level">Learner Progression Level</h4>
+<p>When created, the level defaults to being a &lsquo;core user&rsquo;, i.e. a standard user who has no special development privileges.</p>
+<p>A software architect can change this to move any user up (or down) in learner development progress. Please see <a href="/docs/introduction/learner-progression/">learner progression</a> for more information on what abilities each level confers.</p>
 <h4 id="use-the-custom-agilechilli-ui-rather-than-agilebases">Use the custom AgileChilli UI rather than Agilebase&rsquo;s</h4>
 <p>It&rsquo;s possible for companies to apply their logo and custom login screen to the system. Please contact us if you&rsquo;d like to set this up.</p>
 <h4 id="logout-after">Logout after</h4>
@@ -731,7 +737,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified March 23, 2023: <a href="https://github.com/okohll/abdocs/commit/84c021ee9afa523251e3cc0fa8ed2422ac9c6e8d">Addiing and removing view fields, pinning image (84c021e)</a>
+  Last modified April 23, 2023: <a href="https://github.com/okohll/abdocs/commit/e7d252e9a56d769a6c2de8b3b261cae396e97b93">Learner level option for users (e7d252e)</a>
 </div>
 
 </div>
