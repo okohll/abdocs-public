@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.111.3">
+<meta name="generator" content="Hugo 0.112.5">
 <meta name="robots" content="index, follow">
 
 
@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2022-10-20T15:08:44+01:00" />
+<meta property="article:modified_time" content="2023-05-31T23:48:26+01:00" />
 <meta itemprop="name" content="Roles">
 <meta itemprop="description" content="Organising users into groups for better management"><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2022-10-20T15:08:44+01:00" />
-<meta itemprop="wordCount" content="1237">
+<meta itemprop="dateModified" content="2023-05-31T23:48:26+01:00" />
+<meta itemprop="wordCount" content="1359">
 <meta itemprop="keywords" content="Software Architect,v6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Roles"/>
 <meta name="twitter:description" content="Organising users into groups for better management"/>
@@ -105,7 +105,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b01295e4a3ad69c1012fd9905fa12f3c.json"
+    data-offline-search-index-json-src="/offline-search-index.aa9e3dbf43a5f5e2f2ae99507481c3f8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -130,7 +130,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b01295e4a3ad69c1012fd9905fa12f3c.json"
+    data-offline-search-index-json-src="/offline-search-index.aa9e3dbf43a5f5e2f2ae99507481c3f8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -455,6 +455,7 @@ if (!doNotTrack) {
     </li>
     <li><a href="#multi-tenanting">Multi-tenanting</a>
       <ul>
+        <li></li>
         <li><a href="#complex-multi-tenanting">Complex multi-tenanting</a></li>
       </ul>
     </li>
@@ -595,8 +596,8 @@ Users with <a href="/docs/security-and-compliance/security-features/privileges/"
 <li>click the &rsquo;edit filtered&rsquo; button which appears</li>
 <li>type in the value you want to apply and follow through the prompts</li>
 </ol>
-<p><strong>User Visibility</strong> and <strong>Restrict Data Access</strong><br>
-These are used to set up <a href="#multi-tenanting">multi-tenanting</a></p>
+<p><strong>User Visibility</strong> and <strong>Allow only multi-tenanting views to be seen</strong>
+Used to configure <a href="#multi-tenanting">multi-tenanting</a></p>
 <h3 id="members">Members</h3>
 <p>Tick each user to add them to the role. Users will gain all the privileges defined by the role.</p>
 <h3 id="privileges">Privileges</h3>
@@ -613,7 +614,7 @@ These are used to set up <a href="#multi-tenanting">multi-tenanting</a></p>
 <li>first <a href="/docs/fields/">add a text field</a> to all tables in the system for which you want data to be segragated. The field must be named the same in every table, for example&rsquo;s sake here let&rsquo;s assume it&rsquo;s called &lsquo;account name&rsquo;.</li>
 <li>Then create one role for each set of users who you want to segregate. We&rsquo;ll assume there&rsquo;s one called &lsquo;Customer A&rsquo;.</li>
 <li>In the role details screen for the Customer A role, tick <em>user visibility</em>. That means that users in this role won&rsquo;t see users in other roles with the same option ticked. In other words, users from Customer A won&rsquo;t be able to select Customer B or Customer C users when doing things like adding comments or assigning users to records.</li>
-<li>Under <em>restrict data access</em> in the role details, enter <code>account name = Customer A</code></li>
+<li>Under <em>restrict data access</em> in the role details, enter <code>account name = Customer A</code>, i.e. <em>Filter Field Name</em> = &lsquo;account name&rsquo;, <em>Filter Value</em> = &lsquo;Customer A&rsquo;</li>
 <li>Finally, ensure the account name field is present in all views based on the table. When creating a view, any fields used for multi-tenanting will automatically be added but you may need to retro-fit any existing views.</li>
 </ol>
 <p>This has two effects -</p>
@@ -623,6 +624,9 @@ These are used to set up <a href="#multi-tenanting">multi-tenanting</a></p>
 </ol>
 <p>Users who <strong>aren&rsquo;t</strong> a member of the role will see the account name field in the data editing form and in views. This can be useful for allowing e.g. group managers to see all data.</p>
 <p>If any multi-tenanting roles are set up, then views which <strong>don&rsquo;t</strong> contain a multi-tenanting field will be marked in red in the administration interface, as a warning. If a multi-tenanting user loads one of these views, they will see all records. Typically, practically all views will need the multi-tenanting field to be present.</p>
+<h4 id="allow-only-multi-tenanting-views-to-be-seen">Allow only multi-tenanting views to be seen</h4>
+<p>Optionally, this can be ticked. If ticked, user&rsquo;s will only be shown views which contain the multi-tenanting field, &lsquo;Account Name&rsquo; in the example above.</p>
+<p>This is an added protection - if the multi-tenanting field is removed from a view, the user won&rsquo;t see it any more. Otherwise they&rsquo;d be able to see all data in the view, even that which they shouldn&rsquo;t. This can also be useful to set when there is partial multi-tenanting set up, i.e. some views are multi-tenanted but others aren&rsquo;t and you only want certain groups (e.g. people outside the organisation) to see the multi-tenanted parts, not everything.</p>
 <h3 id="complex-multi-tenanting">Complex multi-tenanting</h3>
 <h4 id="multi-level">Multi-level</h4>
 <p>Users may be a member of more than one multi-tenanting role. For example you may use two multi-tenanting fields/roles, one for a company and another for a division. Members of a company role will be able to see data from all divisions in their company and members of both a company and a division role will only be able to see data for a single division.</p>
@@ -708,7 +712,7 @@ These are used to set up <a href="#multi-tenanting">multi-tenanting</a></p>
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/4fa60f22f8aee52e07acf18b51f6ee89b1ae45d8">Refresh of all instructions to match v6 of the Agilebase development interface (4fa60f2)</a>
+  Last modified May 31, 2023: <a href="https://github.com/okohll/abdocs/commit/5c83f6a9fa52d3dcbb7d8350e5e8f8fd199d51e3">Allow only multi-tenanting views to be seen (5c83f6a)</a>
 </div>
 
 </div>
