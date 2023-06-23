@@ -553,7 +553,7 @@ b) the value of the first field in the view above&lt;/p&gt;
         &lt;p&gt;A workflow is a task that processes data to achieve a particular function. Agilebase has a number of workflow functions that can be used to automate or simplify the activities users would otherwise need to perform manually.&lt;/p&gt;
 &lt;p&gt;Workflows can automatically edit records and create new records, saving a lot of manual typing. The system will follow rules for creating new records, editing values in existing records or taking other actions. The rules can be simple or complex, in fact anything that can be represented by a standard view, which makes it quite powerful.&lt;/p&gt;
 &lt;p&gt;Workflows can also send email notifications, generate documents and push data to 3rd parties. Importantly steps can be &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;chained together&lt;/a&gt;. Many business processes can therefore be fully automated. As an example if the system stores recipes, whenever an allergen is changed, a product specification doc can be generated and emailed to significant customers.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow.png&#34; alt=&#34;Workflow&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-edit.png&#34; alt=&#34;Workflow&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;creating-a-rule&#34;&gt;Creating a rule&lt;/h2&gt;
 &lt;p&gt;Here are the basics.&lt;/p&gt;
 &lt;ol&gt;
@@ -577,7 +577,6 @@ b) the value of the first field in the view above&lt;/p&gt;
 &lt;p&gt;Using &lt;em&gt;24 hours&lt;/em&gt; plus a filter on a &amp;rsquo;d&amp;rsquo;ay of the week&amp;rsquo; calculation allows you to run weekly workflows.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;For 24hr workflows you can optionally set a specific time of day for them to run.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow.png&#34; alt=&#34;Screenshot of workflow action&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
