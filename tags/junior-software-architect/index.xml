@@ -554,7 +554,7 @@ b) the value of the first field in the view above&lt;/p&gt;
 &lt;p&gt;Workflows can automatically edit records and create new records, saving a lot of manual typing. The system will follow rules for creating new records, editing values in existing records or taking other actions. The rules can be simple or complex, in fact anything that can be represented by a standard view, which makes it quite powerful.&lt;/p&gt;
 &lt;p&gt;Workflows can also send email notifications, generate documents and push data to 3rd parties. Importantly steps can be &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;chained together&lt;/a&gt;. Many business processes can therefore be fully automated. As an example if the system stores recipes, whenever an allergen is changed, a product specification doc can be generated and emailed to significant customers.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-edit.png&#34; alt=&#34;Workflow&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;creating-a-rule&#34;&gt;Creating a rule&lt;/h2&gt;
+&lt;h2 id=&#34;creating-a-workflow&#34;&gt;Creating a workflow&lt;/h2&gt;
 &lt;p&gt;Here are the basics.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;

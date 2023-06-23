@@ -1272,6 +1272,11 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
 &lt;p&gt;When someone opens a view, they can sort it by any column they like by clicking the column header. However when building a view, you may want to set a default sort order.&lt;/p&gt;
 &lt;p&gt;To do that, when looking at the list of fields in a view, click the little up/down icon to the left of the fieldname. That will apply a sort to that field. Clicking it again will change the direction of the sort.&lt;/p&gt;
 &lt;p&gt;You can add sorts to multiple fields, they will take effect from the top down, i.e. the data will be sorted by the top field with a sort, then by the next one down etc.&lt;/p&gt;
+&lt;h3 id=&#34;adding-sections&#34;&gt;Adding sections&lt;/h3&gt;
+&lt;p&gt;If a view has many fields, it can be beneficial to organise them into sections, just like you organise table fields into sections using &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/separators/&#34;&gt;separators&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To create a section, edit the field or calculation which should form the start of a section and enter some text describing the section into the &lt;em&gt;Section Name&lt;/em&gt; box.&lt;/p&gt;
+&lt;p&gt;When a user hovers over a column name which is the start of a section (identified by the vertical bar on screen), the section name is displayed. Here&amp;rsquo;s an example where the field Distinct Wish Count is the start of an &amp;lsquo;Actions&amp;rsquo; section.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/view-section.png&#34; alt=&#34;view section&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;using-a-view&#34;&gt;Using a view&lt;/h2&gt;
 &lt;p&gt;Once the view is created, how can someone use it? We won&amp;rsquo;t work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.&lt;/p&gt;
 &lt;h3 id=&#34;finding-data&#34;&gt;Finding data&lt;/h3&gt;

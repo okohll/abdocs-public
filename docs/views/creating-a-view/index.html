@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.114.0">
+<meta name="generator" content="Hugo 0.114.1">
 <meta name="robots" content="index, follow">
 
 
@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/views/creating-a-view/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-13T16:40:00+01:00" />
-<meta property="article:modified_time" content="2023-03-25T09:48:11+00:00" />
+<meta property="article:modified_time" content="2023-06-23T18:32:07+01:00" />
 <meta itemprop="name" content="Creating a view">
 <meta itemprop="description" content="How to create a new view and place it in a navigation structure"><meta itemprop="datePublished" content="2020-05-13T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2023-03-25T09:48:11+00:00" />
-<meta itemprop="wordCount" content="1011">
+<meta itemprop="dateModified" content="2023-06-23T18:32:07+01:00" />
+<meta itemprop="wordCount" content="1110">
 <meta itemprop="keywords" content="Citizen Developer level 2,v6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Creating a view"/>
 <meta name="twitter:description" content="How to create a new view and place it in a navigation structure"/>
@@ -105,7 +105,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.63b707485372bf56a994c857d89dfef0.json"
+    data-offline-search-index-json-src="/offline-search-index.7797abf9abadf387904a698d8e103ca6.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -130,7 +130,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.63b707485372bf56a994c857d89dfef0.json"
+    data-offline-search-index-json-src="/offline-search-index.7797abf9abadf387904a698d8e103ca6.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -452,6 +452,7 @@ if (!doNotTrack) {
     <li><a href="#adding-and-removing-fields">Adding and removing fields</a>
       <ul>
         <li><a href="#applying-sorts">Applying sorts</a></li>
+        <li><a href="#adding-sections">Adding sections</a></li>
       </ul>
     </li>
     <li><a href="#using-a-view">Using a view</a>
@@ -609,6 +610,11 @@ For example, in your organisations table, you may have a field &lsquo;Organisati
 <p>When someone opens a view, they can sort it by any column they like by clicking the column header. However when building a view, you may want to set a default sort order.</p>
 <p>To do that, when looking at the list of fields in a view, click the little up/down icon to the left of the fieldname. That will apply a sort to that field. Clicking it again will change the direction of the sort.</p>
 <p>You can add sorts to multiple fields, they will take effect from the top down, i.e. the data will be sorted by the top field with a sort, then by the next one down etc.</p>
+<h3 id="adding-sections">Adding sections</h3>
+<p>If a view has many fields, it can be beneficial to organise them into sections, just like you organise table fields into sections using <a href="/docs/fields/field-types/special-field-types/separators/">separators</a>.</p>
+<p>To create a section, edit the field or calculation which should form the start of a section and enter some text describing the section into the <em>Section Name</em> box.</p>
+<p>When a user hovers over a column name which is the start of a section (identified by the vertical bar on screen), the section name is displayed. Here&rsquo;s an example where the field Distinct Wish Count is the start of an &lsquo;Actions&rsquo; section.</p>
+<p><img src="/view-section.png" alt="view section"></p>
 <h2 id="using-a-view">Using a view</h2>
 <p>Once the view is created, how can someone use it? We won&rsquo;t work through every possibility here as this documentation is for administrators rather than users, but here are some of the most important points in brief you may like to be aware of in order to support apps you build.</p>
 <h3 id="finding-data">Finding data</h3>
@@ -686,7 +692,7 @@ For example, in your organisations table, you may have a field &lsquo;Organisati
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified March 25, 2023: <a href="https://github.com/okohll/abdocs/commit/19fdfc57eb7a44bb9d703db75540458aa0e6801d">Updates from working through learner progression actions - compile fix (19fdfc5)</a>
+  Last modified June 23, 2023: <a href="https://github.com/okohll/abdocs/commit/b9184727c72816855cda0868114330d56f11a6b0">View sections (b918472)</a>
 </div>
 
 </div>
