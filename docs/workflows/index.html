@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.112.5">
+<meta name="generator" content="Hugo 0.114.0">
 <link rel="alternate" type="application/rss&#43;xml" href="https://docs.agilebase.co.uk/docs/workflows/index.xml">
 <meta name="robots" content="index, follow">
 
@@ -101,7 +101,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.aa9e3dbf43a5f5e2f2ae99507481c3f8.json"
+    data-offline-search-index-json-src="/offline-search-index.63b707485372bf56a994c857d89dfef0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -126,7 +126,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.aa9e3dbf43a5f5e2f2ae99507481c3f8.json"
+    data-offline-search-index-json-src="/offline-search-index.63b707485372bf56a994c857d89dfef0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -546,27 +546,27 @@ if (!doNotTrack) {
 
 		
 	</header>
-	<p>A workflow is a task that processes data to acheive a particular function. AgileBase has a number of workflow functions that can be used to automate or simplify the activities users would otherwise need to perform manually.</p>
+	<p>A workflow is a task that processes data to achieve a particular function. Agilebase has a number of workflow functions that can be used to automate or simplify the activities users would otherwise need to perform manually.</p>
 <p>Workflows can automatically edit records and create new records, saving a lot of manual typing. The system will follow rules for creating new records, editing values in existing records or taking other actions. The rules can be simple or complex, in fact anything that can be represented by a standard view, which makes it quite powerful.</p>
 <p>Workflows can also send email notifications, generate documents and push data to 3rd parties. Importantly steps can be <a href="/docs/workflows/advanced/chaining-workflows/">chained together</a>. Many business processes can therefore be fully automated. As an example if the system stores recipes, whenever an allergen is changed, a product specification doc can be generated and emailed to significant customers.</p>
-<p><img src="/workflow-tab.png" alt="Workflow tab"></p>
+<p><img src="/workflow.png" alt="Workflow"></p>
 <h2 id="creating-a-rule">Creating a rule</h2>
 <p>Here are the basics.</p>
 <ol>
 <li>
-<p>A rule is represented by a view. First create the view to represent the rule. Choose what <strong>action</strong> you want the rule to perform</p>
+<p>A workflow is represented by a view. First create the view to represent the workflow</p>
 </li>
 <li>
-<p>Any records which become visible in your rule view will trigger the action selected. So add filters (on a calculation if necessary) to select only the records you wish to trigger the action.</p>
+<p>Any records which become visible in your workflow view will trigger the action selected. So add filters (on a calculation if necessary) to select only the records you wish to trigger the action.</p>
 </li>
 <li>
 <p>If creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.</p>
 </li>
 <li>
-<p>Once the view’s created, you finish setting up by going to manage -&gt; workflow. Fill in the options for ‘recording the time of the last action’ by selecting a date field in the table the view’s based on. This date will be updated every time the workflow runs. If there’s no relevant date field existing, add one to the table.</p>
+<p>Once the view fields and filters have been created, open up the &lsquo;workflow - edit records&rsquo; panel. Choose the type of workflow, e.g. &lsquo;create new records&rsquo; or &lsquo;update records&rsquo;. Fill in the options for ‘recording the time of the last action’ by selecting a date field in the table the view’s based on. This date will be updated every time the workflow runs. If there’s no relevant date field existing, add one to the table.</p>
 </li>
 <li>
-<p>Choose when the Workflow should be run. Use the option <em>manually only</em> if for example you want the workflow to run on a button press. Alternatively, set the frequency you wish the workflow to attempt to run. This determines how often the system should check whether there are records to process. The check is only done if there&rsquo;s been a relevant change to the state of the system e.g. records edited since the last workflow run. However all workflows with a check frequency are guaranteed to run at least once a day.</p>
+<p>Choose when the workflow should be run. Use the option <em>manually only</em> if for example you want the workflow to run on a button press. Alternatively, set the frequency you wish the workflow to attempt to run. This determines how often the system should check whether there are records to process. The check is only done if there&rsquo;s been a relevant change to the state of the system e.g. records edited since the last workflow run. However all workflows with a check frequency are guaranteed to run at least once a day.</p>
 </li>
 </ol>
 <blockquote>
@@ -710,7 +710,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/4fa60f22f8aee52e07acf18b51f6ee89b1ae45d8">Refresh of all instructions to match v6 of the Agilebase development interface (4fa60f2)</a>
+  Last modified June 23, 2023: <a href="https://github.com/okohll/abdocs/commit/edcc055d83f2e5e84868548167b4552fb176c162">Update workflow content (edcc055)</a>
 </div>
 
 </div>

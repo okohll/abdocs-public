@@ -1909,6 +1909,7 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
         
         
         &lt;p&gt;The workflow panel of a table shows any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; which act on data in that table. In other words, any workflow that updates records, creates new records in the table, or deletes records from it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-tab.png&#34; alt=&#34;Workflow tab&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Additionally, this panel allows you to choose a workflow to run whenever a new record is created, or (less frequently used) whenever a record is opened.&lt;/p&gt;
 &lt;p&gt;That can be very useful for setting initial values for fields, where those values may be more complex calculations than just a static default value.&lt;/p&gt;
 &lt;h2 id=&#34;when-a-records-created-run-workflow&#34;&gt;When a record&amp;rsquo;s created, run workflow&lt;/h2&gt;

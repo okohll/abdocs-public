@@ -102,7 +102,7 @@
 &lt;h4 id=&#34;use-the-custom-agilechilli-ui-rather-than-agilebases&#34;&gt;Use the custom AgileChilli UI rather than Agilebase&amp;rsquo;s&lt;/h4&gt;
 &lt;p&gt;It&amp;rsquo;s possible for companies to apply their logo and custom login screen to the system. Please contact us if you&amp;rsquo;d like to set this up.&lt;/p&gt;
 &lt;h4 id=&#34;logout-after&#34;&gt;Logout after&lt;/h4&gt;
-&lt;p&gt;Automatically end the user&amp;rsquo;s session after after this many minutes of inactivity. The user themselves can also change this setting.&lt;/p&gt;
+&lt;p&gt;Automatically end the user&amp;rsquo;s session after this many minutes of inactivity. The user themselves can also change this setting.&lt;/p&gt;
 &lt;h4 id=&#34;restrict-data-access&#34;&gt;Restrict data access&lt;/h4&gt;
 &lt;p&gt;Here, you can specify a field name, either an equals or a contains filter and a value. The button &lt;em&gt;set to user ID&lt;/em&gt; will set the value to the user&amp;rsquo;s ID.&lt;/p&gt;
 &lt;p&gt;The purpose of this is to limit the data rows a particular user sees in a view. If a field with the name you specify appears in a view, a filter will be automatically applied so the user only sees rows which match the filter.&lt;/p&gt;
@@ -905,6 +905,7 @@ export default LoginScreen;
         
         
         &lt;p&gt;The workflow panel of a table shows any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; which act on data in that table. In other words, any workflow that updates records, creates new records in the table, or deletes records from it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-tab.png&#34; alt=&#34;Workflow tab&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Additionally, this panel allows you to choose a workflow to run whenever a new record is created, or (less frequently used) whenever a record is opened.&lt;/p&gt;
 &lt;p&gt;That can be very useful for setting initial values for fields, where those values may be more complex calculations than just a static default value.&lt;/p&gt;
 &lt;h2 id=&#34;when-a-records-created-run-workflow&#34;&gt;When a record&amp;rsquo;s created, run workflow&lt;/h2&gt;

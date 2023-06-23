@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.112.5">
+<meta name="generator" content="Hugo 0.114.0">
 <meta name="robots" content="index, follow">
 
 
@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/workflows/send-email/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-29T12:35:00+01:00" />
-<meta property="article:modified_time" content="2023-02-09T19:05:35+00:00" />
+<meta property="article:modified_time" content="2023-06-23T16:24:17+01:00" />
 <meta itemprop="name" content="Send an email">
 <meta itemprop="description" content="Workflows can be used to send an email"><meta itemprop="datePublished" content="2020-05-29T12:35:00+01:00" />
-<meta itemprop="dateModified" content="2023-02-09T19:05:35+00:00" />
-<meta itemprop="wordCount" content="643">
+<meta itemprop="dateModified" content="2023-06-23T16:24:17+01:00" />
+<meta itemprop="wordCount" content="673">
 <meta itemprop="keywords" content="Junior Software Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Send an email"/>
 <meta name="twitter:description" content="Workflows can be used to send an email"/>
@@ -105,7 +105,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.aa9e3dbf43a5f5e2f2ae99507481c3f8.json"
+    data-offline-search-index-json-src="/offline-search-index.63b707485372bf56a994c857d89dfef0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -130,7 +130,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.aa9e3dbf43a5f5e2f2ae99507481c3f8.json"
+    data-offline-search-index-json-src="/offline-search-index.63b707485372bf56a994c857d89dfef0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -453,6 +453,7 @@ if (!doNotTrack) {
     <li><a href="#step-4-fill-in-an-email-template">Step 4: fill in an email template</a>
       <ul>
         <li><a href="#including-attachments">Including attachments</a></li>
+        <li><a href="#including-record-history">Including record history</a></li>
       </ul>
     </li>
     <li><a href="#rich-text-html-emails">Rich text (HTML) emails</a>
@@ -589,6 +590,10 @@ if (!doNotTrack) {
 </blockquote>
 <h3 id="including-attachments">Including attachments</h3>
 <p>If you add a file field to the view, it will be added to the outgoing email as an attachment. Note the ID field for the file field&rsquo;s parent table also needs to be present, which should happen automatically.</p>
+<h3 id="including-record-history">Including record history</h3>
+<p>To include a log of recent updates to a record (since the last notification was sent), just add the line</p>
+<p><code>ab_record_history</code></p>
+<p>to the body of the email.</p>
 <h2 id="rich-text-html-emails">Rich text (HTML) emails</h2>
 <p>HTML emails can now be sent by apps built on the Agilebase platform.
 That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.</p>
@@ -663,7 +668,7 @@ That means that your company can send out branded, rich-text emails (with attach
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified February 9, 2023: <a href="https://github.com/okohll/abdocs/commit/355209693beff0065f0185004f10780977debf11">Including attachments when sending notification emails (3552096)</a>
+  Last modified June 23, 2023: <a href="https://github.com/okohll/abdocs/commit/edcc055d83f2e5e84868548167b4552fb176c162">Update workflow content (edcc055)</a>
 </div>
 
 </div>

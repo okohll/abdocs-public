@@ -128,7 +128,7 @@ Now recurse and do step 2 again, for any of the new exploded ingredient lines th
       <description>
         
         
-        &lt;p&gt;This can be set up in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#when-a-records-created-run-this-workflow&#34;&gt;table options&lt;/a&gt;.&lt;/p&gt;
+        &lt;p&gt;This can be set up in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/workflow/&#34;&gt;table&amp;rsquo;s workflow options&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
