@@ -146,7 +146,7 @@
 &lt;/ol&gt;
 &lt;h2 id=&#34;finding-the-latest-child-record&#34;&gt;Finding the &amp;rsquo;latest&amp;rsquo; child record&lt;/h2&gt;
 &lt;p&gt;A common scenario occurs when you have a one to many relationship. You want a view which shows precise info from the &amp;rsquo;latest&amp;rsquo; child record.&lt;/p&gt;
-&lt;p&gt;Start with parent table and join to child, add the controlling field and set the correct order. For example, sorting by &amp;lsquo;created on [auto]&amp;rsquo; descending will give you the newest child record. Then go to &lt;em&gt;manage&lt;/em&gt; tab of the view and set the &lt;em&gt;Distinct Field&lt;/em&gt; option to the Parent table’s ID field.&lt;/p&gt;
+&lt;p&gt;Start with parent table and join to child, add the controlling field and set the correct order. For example, sorting by &amp;lsquo;created on [auto]&amp;rsquo; descending will give you the newest child record. Then go to &lt;em&gt;properties and options&lt;/em&gt; panel when editing the view and set the &lt;em&gt;Distinct Field&lt;/em&gt; option to the Parent table’s ID field.&lt;/p&gt;
 &lt;p&gt;You can now freely add what ever fields from the child record happy in the knowledge you’ll only have the one line per parent.&lt;/p&gt;
 
       </description>

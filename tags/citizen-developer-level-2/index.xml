@@ -1100,7 +1100,7 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
 &lt;ul&gt;
 &lt;li&gt;at the individual field level
 &lt;ul&gt;
-&lt;li&gt;add the help for each field in the &lt;em&gt;fields&lt;/em&gt; tab of a table&lt;/li&gt;
+&lt;li&gt;add the help for each field when &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#adding-a-field&#34;&gt;adding or editing a field&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;for a block of fields
@@ -1110,7 +1110,7 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
 &lt;/li&gt;
 &lt;li&gt;for a table
 &lt;ul&gt;
-&lt;li&gt;add the help in the &lt;em&gt;manage&lt;/em&gt; tab for the table&lt;/li&gt;
+&lt;li&gt;add the help in the &lt;em&gt;name and views&lt;/em&gt; panel when &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;editing a table&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;for a tab within a table

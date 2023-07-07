@@ -5,7 +5,7 @@
     <description>Recent content in v6 on Agilebase docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Jul 2022 12:15:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jul 2023 08:06:00 +0100</lastBuildDate>
     
 	  <atom:link href="https://docs.agilebase.co.uk/tags/v6/index.xml" rel="self" type="application/rss+xml" />
     
@@ -1621,7 +1621,6 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
 &lt;p&gt;For more advanced users, here&amp;rsquo;s a description of when each of the two options may be appropriate, with reasons why.&lt;/p&gt;
 &lt;h2 id=&#34;built-in-charting&#34;&gt;Built in charting&lt;/h2&gt;
 &lt;p&gt;This should be the default starting point. It&amp;rsquo;s great for ad-hoc charting, i.e. to get quick answers to questions you may have about the data in the view you&amp;rsquo;re looking at.&lt;/p&gt;
-&lt;p&gt;Charts can be easily created, modified and removed. People with MANAGE privileges on a table can create charts that all users will see, lower privileged users can create charts that only they see.&lt;/p&gt;
 &lt;p&gt;Creating charts can be used in conjunction with building views, in an agile fashion. For example, if you&amp;rsquo;re looking at a view of invoice and want to see a breakdown of totals for the year by customer type, but the customer type field isn&amp;rsquo;t in the view, no problem. Just&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;add the customer type field to the invoices view&lt;/li&gt;
@@ -1649,7 +1648,7 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
 &lt;ul&gt;
 &lt;li&gt;Any user connecting a BI tool will be shown a warning of these consequences, which they&amp;rsquo;ll need to accept prior to going ahead&lt;/li&gt;
 &lt;li&gt;Agilebase system administrators will get email notifications every time data in a view is made available to BI tools, containing information on whether that data is marked as sensitive or private&lt;/li&gt;
-&lt;li&gt;Only people with MANAGE privileges on a table can connect BI tools. They also have to have two factor authentication enabled&lt;/li&gt;
+&lt;li&gt;Only people with DEVELOP privileges on a table can connect BI tools. They also have to have two factor authentication enabled.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -2075,17 +2074,18 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
 &lt;li&gt;Use your operating system&amp;rsquo;s control panel to set up the ODBC driver, using the login details we supply. Ensure the SSL mode is set to &amp;lsquo;require&amp;rsquo;.&lt;/li&gt;
 &lt;li&gt;From Power BI, add a connection using the PostgreSQL ODBC driver, &lt;em&gt;not&lt;/em&gt; the built-in Power BI PostgreSQL driver.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;sending-data-to-power-bi&#34;&gt;Sending data to Power BI&lt;/h2&gt;
-&lt;p&gt;A developer with MANAGE privileges on a view&amp;rsquo;s parent table can set this up.&lt;/p&gt;
+&lt;h2 id=&#34;sending-data-to-your-external-reporting-tool&#34;&gt;Sending data to your external reporting tool&lt;/h2&gt;
+&lt;p&gt;A developer with DEVELOP privileges on a view&amp;rsquo;s parent table can set this up.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Before continuing, please also note that only users without any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; roles will be able to turn on external reporting.
+That&amp;rsquo;s because data sent this way doesn&amp;rsquo;t take account of multi-tenanting. Rather all data is sent, whatever the tenant.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;In Agilebase, open the view you wish to report on. Ensure it has all the necessary fields and calculations in it which you want to report on. If not, add them before continuing.&lt;/li&gt;
 &lt;li&gt;Click the charting icon to view the chart setup interface&lt;/li&gt;
 &lt;li&gt;At the bottom of the screen, tick &amp;lsquo;send data to a shareable dashboard&amp;rsquo;. As this makes data available &lt;a href=&#34;charting#privacy-and-data-security&#34;&gt;outside of Agilebase&lt;/a&gt;, you will be asked to confirm you will treat the data in a way which maintains privacy and security before enabling the feature.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Within a few seconds, the data will then be visible to your external application.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The first view set up in this way is free, further views can be purchased in bundles.&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;h3 id=&#34;changes&#34;&gt;Changes&lt;/h3&gt;
 &lt;p&gt;It&amp;rsquo;s easy for developers to make changes to views in Agilebase, for example adding / removing fields, changing calculations or just renaming a view.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -2093,7 +2093,7 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
 &lt;p&gt;That means that if you rename the view or move it, or rename/delete fields and calculations, you may afterwards need to check your charts in Superset / Power BI, to see if they need re-creating.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;daily-updates&#34;&gt;Daily updates&lt;/h3&gt;
-&lt;p&gt;Once the view has been set up, external applications will see a new read-only snapshot of data once a day. If your data needs to be updated more often, you can add a workflow button to accomplish that:&lt;/p&gt;
+&lt;p&gt;Once the view has been set up, external applications will see a new read-only snapshot of data once a day at a time you can specify on screen. If your data needs to be updated more often, you can add a workflow button to accomplish that:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Ensure that the view A is used for reporting only, in particular it doesn&amp;rsquo;t have any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; set up.&lt;/li&gt;
 &lt;li&gt;From another view B, edit the view and go to the &amp;lsquo;workflow - edit records&amp;rsquo; panel&lt;/li&gt;
@@ -2114,7 +2114,7 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
         
         
         &lt;p&gt;Any view with one or more date/time fields can have its data displayed in calendar form. If there are two date/time fields, the first will be the start time, the second the end time. If there&amp;rsquo;s only one, events will last 1 hour by default, unless the field is a date only, in which case they will be all day.&lt;/p&gt;
-&lt;p&gt;Data can also &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/calendar/&#34;&gt;sync to and from external calendars&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Data can also sync to and from external calendars using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Any user can add the calendar tile to their homepage, then select views containing dates to display in it. Data can be displayed in a number of formats, like standard month/week/day views but also timeline views for a gantt-style format, with each view in its own swim-lane.&lt;/p&gt;
 &lt;h2 id=&#34;default-views&#34;&gt;Default views&lt;/h2&gt;
 &lt;p&gt;Any views which are in a tile with the word &amp;lsquo;calendar&amp;rsquo; in the name will show by default when a user first opens the calendar tile.&lt;/p&gt;
