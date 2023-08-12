@@ -102,7 +102,7 @@
       <description>
         
         
-        &lt;p&gt;Firstly, identify the table into which you wish to recieve incoming data. Go to that table&amp;rsquo;s manage taband press &amp;lsquo;options’. Tick &amp;lsquo;Public form or API data entry’, which will create an API for the table.&lt;/p&gt;
+        &lt;p&gt;Firstly, identify the table into which you wish to receive incoming data. Edit that table and open the &lt;em&gt;API&lt;/em&gt; panel. Tick &amp;lsquo;Public form or API data entry’, which will create an API for the table.&lt;/p&gt;
 &lt;p&gt;To protect the system from spam input, we also suggest you tick &amp;lsquo;Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
 &lt;p&gt;Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming-data-api-new.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
@@ -283,8 +283,6 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;p&gt;With this option, just the JSON will be returned. This is the usual case required. Without it, complete Javascript will be returned defining the JSON as an object, i.e. &lt;code&gt;var abJson=[…]&lt;/code&gt; which can be useful if you want to run the result as Javascript.&lt;/p&gt;
 &lt;h4 id=&#34;returnposted_json&#34;&gt;return=posted_json&lt;/h4&gt;
 &lt;p&gt;Optional, if this is included, the return content will be JSON including the ID of the record as well as the full content of the data.&lt;/p&gt;
-&lt;h4 id=&#34;cache_secondsseconds&#34;&gt;cache_seconds=[seconds]&lt;/h4&gt;
-&lt;p&gt;How long to cache the results for (default 600 seconds i.e 10 minutes). Only un-filtered results are cached.&lt;/p&gt;
 &lt;h4 id=&#34;unencode_htmltrue&#34;&gt;unencode_html=true&lt;/h4&gt;
 &lt;p&gt;Causes characters which would normally be encoded as HTML entities (e.g. &lt;code&gt;&amp;amp;&lt;/code&gt; -&amp;gt; &lt;code&gt;&amp;amp;amp;&lt;/code&gt;) to be returned unencoded&lt;/p&gt;
 &lt;h4 id=&#34;exact_filterstruefalse-default-false&#34;&gt;exact_filters=true/false (default false)&lt;/h4&gt;
@@ -303,6 +301,11 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;li&gt;500: some other server error&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When there is an error, the X-AB-error header will be set and JSON returned representing the error, as happens with the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/#response&#34;&gt;POST API&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To ensure one customer&amp;rsquo;s use doesn&amp;rsquo;t consume an inordinate amount of resources, each customer can only process one pull API request at a time. Whilst a request is processing, any further incoming requests are held in a queue, then processed in order as the previous one finishes.
+If at any time, a request has been held up for 60 seconds, further requests result in the 429 error and they are discarded.&lt;/p&gt;
+&lt;p&gt;If this occurs, there are a number of tactics you can use to shorten individual response times or make less requests - please get in touch if you need help.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;generate-api-descriptions&#34;&gt;Generate API descriptions&lt;/h3&gt;
 &lt;p&gt;For developers who use the Agilebase API to create and update data within Agilebase from a third party product, there’s now a way to further automate the process.&lt;/p&gt;
 &lt;p&gt;Agilebase will now generate a &lt;a href=&#34;https://swagger.io/&#34;&gt;swagger.io&lt;/a&gt; compatible API description of any table you want to post to. That means if you deal with accounts for many Agilebase customers, you can with a common query get the API details needed to interact with them.&lt;/p&gt;
@@ -355,7 +358,7 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;p&gt;Under &lt;em&gt;choose trigger event&lt;/em&gt; two options will be shown - &lt;em&gt;Retrieve Poll&lt;/em&gt; and &lt;em&gt;Catch Hook&lt;/em&gt;. In brief, if you select &lt;em&gt;Retrieve Poll&lt;/em&gt;, Zapier will regularly poll Agilebase (say every 5 minutes) to check if there’s any new data to retrieve. If you select &lt;em&gt;Catch Hook&lt;/em&gt;, communication will instead be started by Agilebase, which will ‘push’ data to Zapier only when there is something new to send.&lt;/p&gt;
 &lt;p&gt;Here, we’ll use Catch Hook, which is generally recommended. It’s more efficient and a bit easier to set up, as Agilebase will automatically record the time each record is sent to Zapier. Otherwise, you’ll have to set up additional steps in Zapier to send this information back.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/zapier-catch-hook.png&#34; alt=&#34;Zapier catch hook&#34;&gt;&lt;/p&gt;
-&lt;p&gt;When you press Continue, Zapier will provide you with a custom URL and some additional options which can be left unchanged. Copy this URL and record it in Agilebase: go to the view’s &lt;em&gt;manage&lt;/em&gt; tab, show the &lt;em&gt;Send&lt;/em&gt; panel and select &lt;em&gt;send data to a third party system using the API&lt;/em&gt;. Paste the Zapier URL into the space provided:&lt;/p&gt;
+&lt;p&gt;When you press Continue, Zapier will provide you with a custom URL and some additional options which can be left unchanged. Copy this URL and record it in Agilebase: edit the view and open the &lt;em&gt;Use API&lt;/em&gt; panel. Paste the Zapier URL into the &lt;em&gt;Push URL&lt;/em&gt; space provided:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/zapier-ab-push.png&#34; alt=&#34;Zapier aB push&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Secondly, select the date &amp;amp; time field ‘Intro Text Sent’ (created above) in the dropdown. That means whenever a record is sent to Zapier, the timestamp will be recorded in that field. All other settings can be left on their defaults.&lt;/p&gt;
 &lt;p&gt;Finally, press the &lt;em&gt;Run Workflow Now&lt;/em&gt; button to send a test record to Zapier.&lt;/p&gt;
@@ -479,7 +482,7 @@ In short, we don&amp;rsquo;t need to worry about it. Endole provides the data to
         
         
         &lt;p&gt;Agilebase allows data to be imported from CSV (Comma Separated Variable) files. All popular spreadsheet software can save data in this format.&lt;/p&gt;
-&lt;p&gt;Anyone with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;&lt;strong&gt;manage&lt;/strong&gt; privileges&lt;/a&gt; on a table can import data into it.&lt;/p&gt;
+&lt;p&gt;Anyone with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;&lt;strong&gt;develop&lt;/strong&gt; privileges&lt;/a&gt; on a table can import data into it.&lt;/p&gt;
 &lt;p&gt;In the tiles interface, load any view created from the table to import into. Scroll to the bottom of the rows and press the cloud import icon, then follow through the prompts.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/import-link.png&#34; alt=&#34;import link&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Data can be imported in two ways.&lt;/p&gt;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.115.1">
+<meta name="generator" content="Hugo 0.117.0">
 <meta name="robots" content="index, follow">
 
 
@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-29T12:35:00+01:00" />
-<meta property="article:modified_time" content="2022-10-20T15:08:44+01:00" />
+<meta property="article:modified_time" content="2023-08-10T16:07:29+01:00" />
 <meta itemprop="name" content="Creating a PULL API">
 <meta itemprop="description" content="Control how third party systems read data from Agilebase"><meta itemprop="datePublished" content="2020-05-29T12:35:00+01:00" />
-<meta itemprop="dateModified" content="2022-10-20T15:08:44+01:00" />
-<meta itemprop="wordCount" content="1008">
+<meta itemprop="dateModified" content="2023-08-10T16:07:29+01:00" />
+<meta itemprop="wordCount" content="1090">
 <meta itemprop="keywords" content="Junior Software Architect,v6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Creating a PULL API"/>
 <meta name="twitter:description" content="Control how third party systems read data from Agilebase"/>
@@ -37,8 +37,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.03602f448b8c0bdc287fa6e1bbdd5891cac7f0fe286b38611f634c9d1eb2acf9.css" as="style">
-<link href="/scss/main.min.03602f448b8c0bdc287fa6e1bbdd5891cac7f0fe286b38611f634c9d1eb2acf9.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.58bba9cb2a6722cd2be240efbf03ad79276743b98c417caf9987a1ef900bb35c.css" as="style">
+<link href="/scss/main.min.58bba9cb2a6722cd2be240efbf03ad79276743b98c417caf9987a1ef900bb35c.css" rel="stylesheet" integrity="">
 
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -105,7 +105,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.fa723dc0f9d1104b6b98402a9229f10f.json"
+    data-offline-search-index-json-src="/offline-search-index.74f5589b4672e9123f9f54774cc01ee8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -130,7 +130,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.fa723dc0f9d1104b6b98402a9229f10f.json"
+    data-offline-search-index-json-src="/offline-search-index.74f5589b4672e9123f9f54774cc01ee8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -624,8 +624,6 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 <p>With this option, just the JSON will be returned. This is the usual case required. Without it, complete Javascript will be returned defining the JSON as an object, i.e. <code>var abJson=[…]</code> which can be useful if you want to run the result as Javascript.</p>
 <h4 id="returnposted_json">return=posted_json</h4>
 <p>Optional, if this is included, the return content will be JSON including the ID of the record as well as the full content of the data.</p>
-<h4 id="cache_secondsseconds">cache_seconds=[seconds]</h4>
-<p>How long to cache the results for (default 600 seconds i.e 10 minutes). Only un-filtered results are cached.</p>
 <h4 id="unencode_htmltrue">unencode_html=true</h4>
 <p>Causes characters which would normally be encoded as HTML entities (e.g. <code>&amp;</code> -&gt; <code>&amp;amp;</code>) to be returned unencoded</p>
 <h4 id="exact_filterstruefalse-default-false">exact_filters=true/false (default false)</h4>
@@ -644,6 +642,11 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 <li>500: some other server error</li>
 </ul>
 <p>When there is an error, the X-AB-error header will be set and JSON returned representing the error, as happens with the <a href="/docs/integrations/setting-up-the-post-api/#response">POST API</a>.</p>
+<blockquote>
+<p>To ensure one customer&rsquo;s use doesn&rsquo;t consume an inordinate amount of resources, each customer can only process one pull API request at a time. Whilst a request is processing, any further incoming requests are held in a queue, then processed in order as the previous one finishes.
+If at any time, a request has been held up for 60 seconds, further requests result in the 429 error and they are discarded.</p>
+<p>If this occurs, there are a number of tactics you can use to shorten individual response times or make less requests - please get in touch if you need help.</p>
+</blockquote>
 <h3 id="generate-api-descriptions">Generate API descriptions</h3>
 <p>For developers who use the Agilebase API to create and update data within Agilebase from a third party product, there’s now a way to further automate the process.</p>
 <p>Agilebase will now generate a <a href="https://swagger.io/">swagger.io</a> compatible API description of any table you want to post to. That means if you deal with accounts for many Agilebase customers, you can with a common query get the API details needed to interact with them.</p>
@@ -722,7 +725,7 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/4fa60f22f8aee52e07acf18b51f6ee89b1ae45d8">Refresh of all instructions to match v6 of the Agilebase development interface (4fa60f2)</a>
+  Last modified August 10, 2023: <a href="https://github.com/okohll/abdocs/commit/f5d67e28c7d197914b2862274314a43f7d80c5c3">Replace references to manage privileges and the manage tab of tables and views (f5d67e2)</a>
 </div>
 
 </div>

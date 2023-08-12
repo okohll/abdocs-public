@@ -598,7 +598,7 @@ b) the value of the first field in the view above&lt;/p&gt;
 &lt;li&gt;Those that send data to another system.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;alter-data&#34;&gt;Alter Data&lt;/h3&gt;
-&lt;p&gt;Use the dropdown within the &lt;em&gt;workflow&lt;/em&gt; section of the &lt;em&gt;manage&lt;/em&gt; tab of the view to control the action that will be applied to every record in the view.
+&lt;p&gt;Use the dropdown within the &lt;em&gt;workflow - edit records&lt;/em&gt; panel when editing the view to control the action that will be applied to every record in the view.
 Options are:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Create record - This will create a new item in the nominated table&lt;/li&gt;
@@ -722,7 +722,7 @@ Options are:&lt;/p&gt;
       <description>
         
         
-        &lt;p&gt;Firstly, identify the table into which you wish to recieve incoming data. Go to that table&amp;rsquo;s manage taband press &amp;lsquo;options’. Tick &amp;lsquo;Public form or API data entry’, which will create an API for the table.&lt;/p&gt;
+        &lt;p&gt;Firstly, identify the table into which you wish to receive incoming data. Edit that table and open the &lt;em&gt;API&lt;/em&gt; panel. Tick &amp;lsquo;Public form or API data entry’, which will create an API for the table.&lt;/p&gt;
 &lt;p&gt;To protect the system from spam input, we also suggest you tick &amp;lsquo;Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;
 &lt;p&gt;Optionally, you can add an email address to notify when a new item is added and an autoresponse text which will be sent to any email addresses found in the posted data.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/incoming-data-api-new.png&#34; alt=&#34;Configuring the POST API&#34;&gt;&lt;/p&gt;
@@ -889,7 +889,11 @@ The system will now make a POST to the URL specified in step 2 whenever there’
 &lt;p&gt;To set up a repeating monthly alert, you could add a filter &amp;ldquo;last notified is more than 1 month ago&amp;rdquo;, with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/#including-blank-values&#34;&gt;or is blank&lt;/a&gt; ticked:&lt;/p&gt;
 &lt;p&gt;If you have any difficulty thinking up what criteria you need for your purpose, please get in touch.&lt;/p&gt;
 &lt;h2 id=&#34;step-4-fill-in-an-email-template&#34;&gt;Step 4: fill in an email template&lt;/h2&gt;
-&lt;p&gt;In the view’s &lt;em&gt;manage&lt;/em&gt; tab, under &lt;em&gt;send&lt;/em&gt;, fill in the subject, to and body of the email. To merge in data from the view, use field names in lowercase surrounded by curly brackets. A typical template would look something like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Edit the view and open the &lt;em&gt;workflow - send emails&lt;/em&gt; panel&lt;/li&gt;
+&lt;li&gt;Select &lt;em&gt;email notification&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Fill in the subject, to and body of the email. To merge in data from the view, use field names in lowercase surrounded by curly brackets. A typical template would look something like this:&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/send-email-new.png&#34; alt=&#34;Workflow actions that alter data&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You can attach documents to the email by including the field name for a file in the message.&lt;/p&gt;
 &lt;p&gt;Under the email template, set “Notification time field” to the field that you created in step 1, e.g. “Last notified”&lt;/p&gt;
@@ -907,7 +911,7 @@ The system will now make a POST to the URL specified in step 2 whenever there’
 &lt;p&gt;HTML emails can now be sent by apps built on the Agilebase platform.
 That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.&lt;/p&gt;
 &lt;h3 id=&#34;setting-up&#34;&gt;Setting up&lt;/h3&gt;
-&lt;p&gt;Set up an email notification workflow as normal (in a view, use the manage -&amp;gt; send tab).&lt;/p&gt;
+&lt;p&gt;Set up an email notification workflow as normal (when editing a view, use the &lt;em&gt;workflow - send emails&lt;/em&gt; panel).&lt;/p&gt;
 &lt;p&gt;Start the body of the email with &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; and end with &lt;code&gt;&amp;lt;/html&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The email will then be interpreted as HTML, i.e. formatted.&lt;/p&gt;
 &lt;p&gt;You do need to know some basic HTML. If you’d like to get started there are plenty of great tutorials on the web - here’s an example: &lt;a href=&#34;http://www.htmldog.com&#34;&gt;www.htmldog.com&lt;/a&gt;&lt;/p&gt;
@@ -986,8 +990,6 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;p&gt;With this option, just the JSON will be returned. This is the usual case required. Without it, complete Javascript will be returned defining the JSON as an object, i.e. &lt;code&gt;var abJson=[…]&lt;/code&gt; which can be useful if you want to run the result as Javascript.&lt;/p&gt;
 &lt;h4 id=&#34;returnposted_json&#34;&gt;return=posted_json&lt;/h4&gt;
 &lt;p&gt;Optional, if this is included, the return content will be JSON including the ID of the record as well as the full content of the data.&lt;/p&gt;
-&lt;h4 id=&#34;cache_secondsseconds&#34;&gt;cache_seconds=[seconds]&lt;/h4&gt;
-&lt;p&gt;How long to cache the results for (default 600 seconds i.e 10 minutes). Only un-filtered results are cached.&lt;/p&gt;
 &lt;h4 id=&#34;unencode_htmltrue&#34;&gt;unencode_html=true&lt;/h4&gt;
 &lt;p&gt;Causes characters which would normally be encoded as HTML entities (e.g. &lt;code&gt;&amp;amp;&lt;/code&gt; -&amp;gt; &lt;code&gt;&amp;amp;amp;&lt;/code&gt;) to be returned unencoded&lt;/p&gt;
 &lt;h4 id=&#34;exact_filterstruefalse-default-false&#34;&gt;exact_filters=true/false (default false)&lt;/h4&gt;
@@ -1006,6 +1008,11 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;li&gt;500: some other server error&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;When there is an error, the X-AB-error header will be set and JSON returned representing the error, as happens with the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/#response&#34;&gt;POST API&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To ensure one customer&amp;rsquo;s use doesn&amp;rsquo;t consume an inordinate amount of resources, each customer can only process one pull API request at a time. Whilst a request is processing, any further incoming requests are held in a queue, then processed in order as the previous one finishes.
+If at any time, a request has been held up for 60 seconds, further requests result in the 429 error and they are discarded.&lt;/p&gt;
+&lt;p&gt;If this occurs, there are a number of tactics you can use to shorten individual response times or make less requests - please get in touch if you need help.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;generate-api-descriptions&#34;&gt;Generate API descriptions&lt;/h3&gt;
 &lt;p&gt;For developers who use the Agilebase API to create and update data within Agilebase from a third party product, there’s now a way to further automate the process.&lt;/p&gt;
 &lt;p&gt;Agilebase will now generate a &lt;a href=&#34;https://swagger.io/&#34;&gt;swagger.io&lt;/a&gt; compatible API description of any table you want to post to. That means if you deal with accounts for many Agilebase customers, you can with a common query get the API details needed to interact with them.&lt;/p&gt;
@@ -1053,7 +1060,7 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 &lt;p&gt;As an Agilebase administrator, if you want to set up your own chaser, here’s how to do so.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Create a view with a list of people to chase. In the view’s &lt;em&gt;manage&lt;/em&gt; tab, under &lt;em&gt;Send&lt;/em&gt;, choose &lt;em&gt;send email chasers&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Create a view with a list of people to chase. When editing the view, open the &lt;em&gt;workflow - send emails&lt;/em&gt; panel. &lt;em&gt;email chaser&lt;/em&gt; should be selected by default&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Tick &amp;rsquo;enable this chaser&#39;&lt;/p&gt;
@@ -1205,8 +1212,8 @@ XYZ&lt;/p&gt;
         
         
         &lt;h2 id=&#34;logging&#34;&gt;Logging&lt;/h2&gt;
-&lt;p&gt;If you are using the more advanced features of agilebase workflows then knowing where to look for logging information will become important. At the bottom fo the &lt;em&gt;workflow&lt;/em&gt; page of the &lt;em&gt;manage&lt;/em&gt; tab of a view is Logging information.&lt;/p&gt;
-&lt;p&gt;It will list the success and failures of past runs as well as the next time the workflow is scheduled to be run.&lt;/p&gt;
+&lt;p&gt;If you are using the more advanced features of agilebase workflows then knowing where to look for logging information will become important. At the bottom fo the &lt;em&gt;workflow - edit records&lt;/em&gt; panel when editing a view, recent logs are shown.&lt;/p&gt;
+&lt;p&gt;They will contain success and failures of past runs as well as the next time the workflow is scheduled to be run.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-history.png&#34; alt=&#34;Viewing the logging history of a Workflow&#34;&gt;&lt;/p&gt;
 
       </description>
@@ -1222,7 +1229,7 @@ XYZ&lt;/p&gt;
         
         
         &lt;h2 id=&#34;how-to-chain-workflows&#34;&gt;How to chain Workflows&lt;/h2&gt;
-&lt;p&gt;To set the next workflow in a chain, simply set the appropriate view in the Chain workflow section of the &lt;em&gt;workflow&lt;/em&gt; page of the &lt;em&gt;manage&lt;/em&gt; tab. The next workflow in the chain will run as soon as the previous finishes.&lt;/p&gt;
+&lt;p&gt;To set the next workflow in a chain, simply set the appropriate view in the Chain workflow section of the &lt;em&gt;workflow - edit records&lt;/em&gt; panel when editing a view. The next workflow in the chain will run as soon as the previous finishes.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-chain.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;auto-connect-new-records-to-records-created-in-previous-chained-workflow-steps&#34;&gt;Auto-connect new records to records created in previous chained workflow steps&lt;/h2&gt;
 &lt;p&gt;This option is available when using a workflow that creates new records. Say for example a workflow consists of two steps&lt;/p&gt;

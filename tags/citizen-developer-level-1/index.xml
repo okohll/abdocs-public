@@ -83,14 +83,14 @@
 &lt;li&gt;create &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt; and delete tiles they&amp;rsquo;ve added themselves&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;citizen-developer-level-3&#34;&gt;Citizen Developer Level 3&lt;/h2&gt;
-&lt;p&gt;A Software Architect (see below) can, at their discretion, assign a citizen developer 3 &amp;lsquo;manage&amp;rsquo; privileges on a table (or tables).&lt;/p&gt;
+&lt;p&gt;A Software Architect (see below) can, at their discretion, assign a citizen developer 3 &amp;lsquo;develop&amp;rsquo; privileges on a table (or tables).&lt;/p&gt;
 &lt;p&gt;That allows them to&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;add &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;fields&lt;/a&gt; to those table, excluding referenced fields&lt;/li&gt;
 &lt;li&gt;remove fields that they themselves have added (not others)&lt;/li&gt;
 &lt;li&gt;edit the basic properties of any field in those tables, e.g. the list of options in a dropdown box&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Additionally, actions not related to having manage privileges on a particular table are&lt;/p&gt;
+&lt;p&gt;Additionally, actions not related to having develop privileges on a particular table are&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;edit the basic properties of any regular view. However, workflow, API and some other types of system view will be read-only&lt;/li&gt;
 &lt;/ul&gt;
@@ -113,7 +113,7 @@
 &lt;li&gt;Edit company level settings (e.g. whether to enforce 2FA)&lt;/li&gt;
 &lt;li&gt;Change table &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/sensitive-data/&#34;&gt;sensitive and personal data&lt;/a&gt; settings (GDPR)&lt;/li&gt;
 &lt;li&gt;View and controls users&amp;rsquo; learner progression levels and &amp;lsquo;budget&amp;rsquo; limits&lt;/li&gt;
-&lt;li&gt;Assign any privileges up to the highest &amp;lsquo;manage&amp;rsquo; level&lt;/li&gt;
+&lt;li&gt;Assign any privileges up to the highest &amp;lsquo;develop&amp;rsquo; level&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>

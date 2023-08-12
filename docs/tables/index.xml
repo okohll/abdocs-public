@@ -284,7 +284,7 @@
         
         &lt;p&gt;To access these options, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;edit a table&lt;/a&gt; and select &amp;rsquo;tags and options&#39;.&lt;/p&gt;
 &lt;h2 id=&#34;allow-add&#34;&gt;Allow add&lt;/h2&gt;
-&lt;p&gt;If this is ticked (it is by default), users can add records to the table. Anyone with manage privileges on the table can add tables regardless.&lt;/p&gt;
+&lt;p&gt;If this is ticked (it is by default), users can add records to the table. Anyone with develop privileges on the table can add tables regardless.&lt;/p&gt;
 &lt;h3 id=&#34;only-from-within-tab&#34;&gt;Only from within tab&lt;/h3&gt;
 &lt;p&gt;If this is ticked, users can add records but only when accessing this table&amp;rsquo;s form from within a tab of a parent record. This can help ensure that child records are always connected to a parent and aren&amp;rsquo;t created as &amp;lsquo;orphans&amp;rsquo;.&lt;/p&gt;
 &lt;h2 id=&#34;allow-clone-and-merge&#34;&gt;Allow clone and merge&lt;/h2&gt;
@@ -292,7 +292,7 @@
 &lt;p&gt;Cloning makes a simple copy of all data in the record. The contents of tabs are not cloned. A more advanced clone facility can be created with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; if desired.&lt;/p&gt;
 &lt;p&gt;Merging allows the user to select another record to merge with this one. This is commonly use to resolve a situation where there are duplicate records. The contents of one are merged into the other, then the first deleted. A wizard will guide the user through selecting which data to keep from each record. Child records from the deleted record will be re-attached to the one remaining. So for example if Organisation 1 containing two contacts is merged with Organisation 2 containing 3, a single organisation with five contacts will result.&lt;/p&gt;
 &lt;h2 id=&#34;allow-remove&#34;&gt;Allow remove&lt;/h2&gt;
-&lt;p&gt;(On by default). Allow records to be deleted by people with EDIT privileges as well as people with MANAGE privileges, who can always delete.&lt;/p&gt;
+&lt;p&gt;(On by default). Allow records to be deleted by people with EDIT privileges as well as people with develop privileges, who can always delete.&lt;/p&gt;
 &lt;h2 id=&#34;allow-share&#34;&gt;Allow share&lt;/h2&gt;
 &lt;p&gt;Showa button which allows links to individual records to be shared between users using email. Note - recipients still need a login and relevant privileges to see the record.&lt;/p&gt;
 &lt;h2 id=&#34;data-entry-from-external-sources&#34;&gt;Data entry from external sources&lt;/h2&gt;
@@ -301,7 +301,7 @@
 &lt;h3 id=&#34;records-lockable&#34;&gt;Records lockable&lt;/h3&gt;
 &lt;p&gt;Records can be locked to prevent editing. You may like to do this based on criteria e.g. once a customer order has been sent, it should be locked against further changes.&lt;/p&gt;
 &lt;p&gt;To actually lock the record, a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; can be used.&lt;/p&gt;
-&lt;p&gt;Locked records can be manually unlocked by someone with manage privileges on the table, but only one at a time.&lt;/p&gt;
+&lt;p&gt;Locked records can be manually unlocked by someone with develop privileges on the table, but only one at a time.&lt;/p&gt;
 &lt;h3 id=&#34;email-notifications&#34;&gt;Email notifications&lt;/h3&gt;
 &lt;p&gt;When someone adds a comment to a record, when selecting recipients, they have the option to email those recipients, as well as adding the comment to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;comment stream&lt;/a&gt;. Ticking this table option sets the default to send emails for any comment added to this table. Users can override this on an individual comment basis and recipients can override in their notification preferences.&lt;/p&gt;
 &lt;h3 id=&#34;flag-records-with-colour&#34;&gt;Flag records with colour&lt;/h3&gt;
@@ -365,7 +365,7 @@
       <description>
         
         
-        &lt;p&gt;The &lt;em&gt;Roles and Privileges&lt;/em&gt; panel of a table&amp;rsquo;s manage tab allow privileges to be assigned to a user or role on a table. Please see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; page for more details.&lt;/p&gt;
+        &lt;p&gt;When editing a table, the &lt;em&gt;Roles and Privileges&lt;/em&gt; panel allows privileges to be assigned to a user or role on a table. Please see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; page for more details.&lt;/p&gt;
 
       </description>
     </item>

@@ -25,7 +25,7 @@
         
         
         &lt;h2 id=&#34;how-to-chain-workflows&#34;&gt;How to chain Workflows&lt;/h2&gt;
-&lt;p&gt;To set the next workflow in a chain, simply set the appropriate view in the Chain workflow section of the &lt;em&gt;workflow&lt;/em&gt; page of the &lt;em&gt;manage&lt;/em&gt; tab. The next workflow in the chain will run as soon as the previous finishes.&lt;/p&gt;
+&lt;p&gt;To set the next workflow in a chain, simply set the appropriate view in the Chain workflow section of the &lt;em&gt;workflow - edit records&lt;/em&gt; panel when editing a view. The next workflow in the chain will run as soon as the previous finishes.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-chain.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;auto-connect-new-records-to-records-created-in-previous-chained-workflow-steps&#34;&gt;Auto-connect new records to records created in previous chained workflow steps&lt;/h2&gt;
 &lt;p&gt;This option is available when using a workflow that creates new records. Say for example a workflow consists of two steps&lt;/p&gt;

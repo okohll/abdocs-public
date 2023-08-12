@@ -47,7 +47,7 @@
 &lt;li&gt;Scroll down to the bottom of the panel and press the &amp;lsquo;clone view&amp;rsquo; button&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;organising-into-a-navigation-structure&#34;&gt;Organising into a navigation structure&lt;/h2&gt;
-&lt;p&gt;On creating a view, its manage tab will appear. One of the first things it&amp;rsquo;s useful to do is put the field in a tile - use the &lt;em&gt;Tile&lt;/em&gt; dropdown option to do so.&lt;/p&gt;
+&lt;p&gt;On creating a view, its editing panel will open. One of the first things it&amp;rsquo;s useful to do is put the field in a tile - use the &lt;em&gt;Tile&lt;/em&gt; dropdown option, under &lt;em&gt;properties&lt;/em&gt; to do so.&lt;/p&gt;
 &lt;p&gt;Within a tile, the view can be added to a menu by editing the view name. Simply prefix the view name with a menu name and a dash. So for example, naming a view &lt;code&gt;contacts - all contacts&lt;/code&gt; will create a &amp;lsquo;contacts&amp;rsquo; menu containing the view &amp;lsquo;all contacts&amp;rsquo; visible to users.&lt;/p&gt;
 &lt;p&gt;Entering a view &lt;em&gt;Help&lt;/em&gt; in the space underneath the name will provide help text for the view. This will be displayed in the menu underneath the view name. Here&amp;rsquo;s a screenshot of a sample menu, each with purpose completed.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/menu.png&#34; alt=&#34;menu&#34;&gt;&lt;/p&gt;

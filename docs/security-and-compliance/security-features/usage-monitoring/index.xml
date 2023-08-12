@@ -65,7 +65,7 @@
 &lt;li&gt;Count - if many similar requests or API calls (to a particular view) reach the server in quick succession, they will be amalgamated together into one log line. The count then shows the number of requests the log line refers to, otherwise it will be 1. If more than one, then the &lt;em&gt;rows&lt;/em&gt;, &lt;em&gt;processing time&lt;/em&gt;, &lt;em&gt;of which q time&lt;/em&gt; and &lt;em&gt;bytes&lt;/em&gt; will represent the totals for all requests&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;table-schema-changes&#34;&gt;Table schema changes&lt;/h4&gt;
-&lt;p&gt;These are changes made to a table structure by someone with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;manage&lt;/a&gt; privileges, such as adding or removing a field.&lt;/p&gt;
+&lt;p&gt;These are changes made to a table structure by someone with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;develop&lt;/a&gt; privileges, such as adding or removing a field.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Date and time&lt;/li&gt;
 &lt;li&gt;Username&lt;/li&gt;
@@ -109,14 +109,14 @@
 &lt;p&gt;A quick overview of who is viewing data is shown in the administration interface for both tables and views.&lt;/p&gt;
 &lt;p&gt;For a table&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Open a table, under the &lt;em&gt;Build Tables&lt;/em&gt; section of the lefthand navigation&lt;/li&gt;
-&lt;li&gt;Go the the manage tab and click the &lt;em&gt;Usage&lt;/em&gt; icon&lt;/li&gt;
+&lt;li&gt;Edit the table&lt;/li&gt;
+&lt;li&gt;Open the &lt;em&gt;Recent Changes&lt;/em&gt; panel&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The report shows the number of times each user has viewed data from the table, per view. All views which contain any data from the table are included.&lt;/p&gt;
 &lt;p&gt;For a view&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Open a view from the lefthand navigation&lt;/li&gt;
-&lt;li&gt;Go to the manage tab and click the &lt;em&gt;Usage&lt;/em&gt; icon&lt;/li&gt;
+&lt;li&gt;Edit the view&lt;/li&gt;
+&lt;li&gt;Open to the &lt;em&gt;Recent Changes&lt;/em&gt; panel&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Similar data is show as for tables, but limited to the selected view.&lt;/p&gt;
 &lt;h2 id=&#34;individual-record-histories&#34;&gt;Individual record histories&lt;/h2&gt;

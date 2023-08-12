@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.115.1">
+<meta name="generator" content="Hugo 0.117.0">
 <meta name="robots" content="index, follow">
 
 
@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/integrations/push-example-zapier/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-06-02T16:40:00+01:00" />
-<meta property="article:modified_time" content="2022-10-20T15:08:44+01:00" />
+<meta property="article:modified_time" content="2023-08-10T16:07:29+01:00" />
 <meta itemprop="name" content="PUSH API worked example - Zapier">
 <meta itemprop="description" content="A worked example to send Agilebase data to a third party text messaging service using Zapier"><meta itemprop="datePublished" content="2020-06-02T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2022-10-20T15:08:44+01:00" />
-<meta itemprop="wordCount" content="1018">
+<meta itemprop="dateModified" content="2023-08-10T16:07:29+01:00" />
+<meta itemprop="wordCount" content="1007">
 <meta itemprop="keywords" content="Software Architect,v6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="PUSH API worked example - Zapier"/>
 <meta name="twitter:description" content="A worked example to send Agilebase data to a third party text messaging service using Zapier"/>
@@ -37,8 +37,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.03602f448b8c0bdc287fa6e1bbdd5891cac7f0fe286b38611f634c9d1eb2acf9.css" as="style">
-<link href="/scss/main.min.03602f448b8c0bdc287fa6e1bbdd5891cac7f0fe286b38611f634c9d1eb2acf9.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.58bba9cb2a6722cd2be240efbf03ad79276743b98c417caf9987a1ef900bb35c.css" as="style">
+<link href="/scss/main.min.58bba9cb2a6722cd2be240efbf03ad79276743b98c417caf9987a1ef900bb35c.css" rel="stylesheet" integrity="">
 
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -105,7 +105,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.fa723dc0f9d1104b6b98402a9229f10f.json"
+    data-offline-search-index-json-src="/offline-search-index.74f5589b4672e9123f9f54774cc01ee8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -130,7 +130,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.fa723dc0f9d1104b6b98402a9229f10f.json"
+    data-offline-search-index-json-src="/offline-search-index.74f5589b4672e9123f9f54774cc01ee8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -587,7 +587,7 @@ if (!doNotTrack) {
 <p>Under <em>choose trigger event</em> two options will be shown - <em>Retrieve Poll</em> and <em>Catch Hook</em>. In brief, if you select <em>Retrieve Poll</em>, Zapier will regularly poll Agilebase (say every 5 minutes) to check if there’s any new data to retrieve. If you select <em>Catch Hook</em>, communication will instead be started by Agilebase, which will ‘push’ data to Zapier only when there is something new to send.</p>
 <p>Here, we’ll use Catch Hook, which is generally recommended. It’s more efficient and a bit easier to set up, as Agilebase will automatically record the time each record is sent to Zapier. Otherwise, you’ll have to set up additional steps in Zapier to send this information back.</p>
 <p><img src="/zapier-catch-hook.png" alt="Zapier catch hook"></p>
-<p>When you press Continue, Zapier will provide you with a custom URL and some additional options which can be left unchanged. Copy this URL and record it in Agilebase: go to the view’s <em>manage</em> tab, show the <em>Send</em> panel and select <em>send data to a third party system using the API</em>. Paste the Zapier URL into the space provided:</p>
+<p>When you press Continue, Zapier will provide you with a custom URL and some additional options which can be left unchanged. Copy this URL and record it in Agilebase: edit the view and open the <em>Use API</em> panel. Paste the Zapier URL into the <em>Push URL</em> space provided:</p>
 <p><img src="/zapier-ab-push.png" alt="Zapier aB push"></p>
 <p>Secondly, select the date &amp; time field ‘Intro Text Sent’ (created above) in the dropdown. That means whenever a record is sent to Zapier, the timestamp will be recorded in that field. All other settings can be left on their defaults.</p>
 <p>Finally, press the <em>Run Workflow Now</em> button to send a test record to Zapier.</p>
@@ -674,7 +674,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified October 20, 2022: <a href="https://github.com/okohll/abdocs/commit/4fa60f22f8aee52e07acf18b51f6ee89b1ae45d8">Refresh of all instructions to match v6 of the Agilebase development interface (4fa60f2)</a>
+  Last modified August 10, 2023: <a href="https://github.com/okohll/abdocs/commit/f5d67e28c7d197914b2862274314a43f7d80c5c3">Replace references to manage privileges and the manage tab of tables and views (f5d67e2)</a>
 </div>
 
 </div>

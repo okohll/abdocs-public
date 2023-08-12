@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.115.1">
+<meta name="generator" content="Hugo 0.117.0">
 <meta name="robots" content="index, follow">
 
 
@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/workflows/send-email/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-29T12:35:00+01:00" />
-<meta property="article:modified_time" content="2023-06-23T16:24:17+01:00" />
+<meta property="article:modified_time" content="2023-08-10T16:07:29+01:00" />
 <meta itemprop="name" content="Send an email">
 <meta itemprop="description" content="Workflows can be used to send an email"><meta itemprop="datePublished" content="2020-05-29T12:35:00+01:00" />
-<meta itemprop="dateModified" content="2023-06-23T16:24:17+01:00" />
-<meta itemprop="wordCount" content="673">
+<meta itemprop="dateModified" content="2023-08-10T16:07:29+01:00" />
+<meta itemprop="wordCount" content="682">
 <meta itemprop="keywords" content="Junior Software Architect," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Send an email"/>
 <meta name="twitter:description" content="Workflows can be used to send an email"/>
@@ -37,8 +37,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.03602f448b8c0bdc287fa6e1bbdd5891cac7f0fe286b38611f634c9d1eb2acf9.css" as="style">
-<link href="/scss/main.min.03602f448b8c0bdc287fa6e1bbdd5891cac7f0fe286b38611f634c9d1eb2acf9.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.58bba9cb2a6722cd2be240efbf03ad79276743b98c417caf9987a1ef900bb35c.css" as="style">
+<link href="/scss/main.min.58bba9cb2a6722cd2be240efbf03ad79276743b98c417caf9987a1ef900bb35c.css" rel="stylesheet" integrity="">
 
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -105,7 +105,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.fa723dc0f9d1104b6b98402a9229f10f.json"
+    data-offline-search-index-json-src="/offline-search-index.74f5589b4672e9123f9f54774cc01ee8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -130,7 +130,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.fa723dc0f9d1104b6b98402a9229f10f.json"
+    data-offline-search-index-json-src="/offline-search-index.74f5589b4672e9123f9f54774cc01ee8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -580,7 +580,11 @@ if (!doNotTrack) {
 <p>To set up a repeating monthly alert, you could add a filter &ldquo;last notified is more than 1 month ago&rdquo;, with <a href="/docs/views/filters/#including-blank-values">or is blank</a> ticked:</p>
 <p>If you have any difficulty thinking up what criteria you need for your purpose, please get in touch.</p>
 <h2 id="step-4-fill-in-an-email-template">Step 4: fill in an email template</h2>
-<p>In the view’s <em>manage</em> tab, under <em>send</em>, fill in the subject, to and body of the email. To merge in data from the view, use field names in lowercase surrounded by curly brackets. A typical template would look something like this:</p>
+<ol>
+<li>Edit the view and open the <em>workflow - send emails</em> panel</li>
+<li>Select <em>email notification</em></li>
+<li>Fill in the subject, to and body of the email. To merge in data from the view, use field names in lowercase surrounded by curly brackets. A typical template would look something like this:</li>
+</ol>
 <p><img src="/send-email-new.png" alt="Workflow actions that alter data"></p>
 <p>You can attach documents to the email by including the field name for a file in the message.</p>
 <p>Under the email template, set “Notification time field” to the field that you created in step 1, e.g. “Last notified”</p>
@@ -598,7 +602,7 @@ if (!doNotTrack) {
 <p>HTML emails can now be sent by apps built on the Agilebase platform.
 That means that your company can send out branded, rich-text emails (with attachments) to customers, suppliers and anyone else you deal with.</p>
 <h3 id="setting-up">Setting up</h3>
-<p>Set up an email notification workflow as normal (in a view, use the manage -&gt; send tab).</p>
+<p>Set up an email notification workflow as normal (when editing a view, use the <em>workflow - send emails</em> panel).</p>
 <p>Start the body of the email with <code>&lt;html&gt;</code> and end with <code>&lt;/html&gt;</code>.</p>
 <p>The email will then be interpreted as HTML, i.e. formatted.</p>
 <p>You do need to know some basic HTML. If you’d like to get started there are plenty of great tutorials on the web - here’s an example: <a href="http://www.htmldog.com">www.htmldog.com</a></p>
@@ -668,7 +672,7 @@ That means that your company can send out branded, rich-text emails (with attach
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified June 23, 2023: <a href="https://github.com/okohll/abdocs/commit/edcc055d83f2e5e84868548167b4552fb176c162">Update workflow content (edcc055)</a>
+  Last modified August 10, 2023: <a href="https://github.com/okohll/abdocs/commit/f5d67e28c7d197914b2862274314a43f7d80c5c3">Replace references to manage privileges and the manage tab of tables and views (f5d67e2)</a>
 </div>
 
 </div>

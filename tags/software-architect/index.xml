@@ -90,7 +90,7 @@
 &lt;h3 id=&#34;two-factor-authentication&#34;&gt;Two factor authentication&lt;/h3&gt;
 &lt;p&gt;Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can&amp;rsquo;t do for them, but luckily it is quick and easy to do: &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/2fa-setup/&#34;&gt;here&amp;rsquo;s how&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Users without 2FA will be prompted to do so in the user interface and by email.&lt;/p&gt;
-&lt;p&gt;2FA is mandatory for &lt;a href=&#34;#roles&#34;&gt;administrators&lt;/a&gt; and necessary for a user to have before &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;manage&lt;/a&gt; privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.&lt;/p&gt;
+&lt;p&gt;2FA is mandatory for &lt;a href=&#34;#roles&#34;&gt;administrators&lt;/a&gt; and necessary for a user to have before &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;develop&lt;/a&gt; privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.&lt;/p&gt;
 &lt;p&gt;When enabled, a user will be prompted for the 2FA code as well as their password when they log in from a device or location they haven&amp;rsquo;t used in the past 30 days.&lt;/p&gt;
 &lt;p&gt;If a user encounters any problems with 2FA, e.g. they lose the device for generating their codes, you can temporarily disable 2FA on their account by going to their user details screen and un-ticking &amp;lsquo;use 2FA&amp;rsquo;. Of course, you need to be aware of the risks, for example double checking that a user who contacts you is really who they say they are. Once they can log in, they&amp;rsquo;ll be able to enable 2FA themselves again.&lt;/p&gt;
 &lt;h4 id=&#34;mandating-2fa-for-everyone&#34;&gt;Mandating 2FA for everyone&lt;/h4&gt;
@@ -419,7 +419,7 @@ Used to configure &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenanting&lt;/a
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;A user with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;manage privileges&lt;/a&gt; on the view&amp;rsquo;s parent table can bypass criteria 2 and 3. This privilege is not commonly applied to normal users.&lt;/p&gt;
+&lt;p&gt;A user with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;develop privileges&lt;/a&gt; on the view&amp;rsquo;s parent table can bypass criteria 2 and 3. This privilege is not commonly applied to normal users.&lt;/p&gt;
 &lt;h2 id=&#34;exporting&#34;&gt;Exporting&lt;/h2&gt;
 &lt;p&gt;A user with the ability to export can do so by opening the view, clicking the export icon near the top right and selecting &lt;em&gt;export&lt;/em&gt; from the options in the menu.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/export.png&#34; alt=&#34;exporting&#34;&gt;&lt;/p&gt;
@@ -492,7 +492,7 @@ Used to configure &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenanting&lt;/a
 &lt;li&gt;Count - if many similar requests or API calls (to a particular view) reach the server in quick succession, they will be amalgamated together into one log line. The count then shows the number of requests the log line refers to, otherwise it will be 1. If more than one, then the &lt;em&gt;rows&lt;/em&gt;, &lt;em&gt;processing time&lt;/em&gt;, &lt;em&gt;of which q time&lt;/em&gt; and &lt;em&gt;bytes&lt;/em&gt; will represent the totals for all requests&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;table-schema-changes&#34;&gt;Table schema changes&lt;/h4&gt;
-&lt;p&gt;These are changes made to a table structure by someone with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;manage&lt;/a&gt; privileges, such as adding or removing a field.&lt;/p&gt;
+&lt;p&gt;These are changes made to a table structure by someone with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;develop&lt;/a&gt; privileges, such as adding or removing a field.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Date and time&lt;/li&gt;
 &lt;li&gt;Username&lt;/li&gt;
@@ -536,14 +536,14 @@ Used to configure &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenanting&lt;/a
 &lt;p&gt;A quick overview of who is viewing data is shown in the administration interface for both tables and views.&lt;/p&gt;
 &lt;p&gt;For a table&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Open a table, under the &lt;em&gt;Build Tables&lt;/em&gt; section of the lefthand navigation&lt;/li&gt;
-&lt;li&gt;Go the the manage tab and click the &lt;em&gt;Usage&lt;/em&gt; icon&lt;/li&gt;
+&lt;li&gt;Edit the table&lt;/li&gt;
+&lt;li&gt;Open the &lt;em&gt;Recent Changes&lt;/em&gt; panel&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The report shows the number of times each user has viewed data from the table, per view. All views which contain any data from the table are included.&lt;/p&gt;
 &lt;p&gt;For a view&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Open a view from the lefthand navigation&lt;/li&gt;
-&lt;li&gt;Go to the manage tab and click the &lt;em&gt;Usage&lt;/em&gt; icon&lt;/li&gt;
+&lt;li&gt;Edit the view&lt;/li&gt;
+&lt;li&gt;Open to the &lt;em&gt;Recent Changes&lt;/em&gt; panel&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Similar data is show as for tables, but limited to the selected view.&lt;/p&gt;
 &lt;h2 id=&#34;individual-record-histories&#34;&gt;Individual record histories&lt;/h2&gt;
@@ -850,7 +850,7 @@ export default LoginScreen;
         
         &lt;p&gt;To access these options, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;edit a table&lt;/a&gt; and select &amp;rsquo;tags and options&#39;.&lt;/p&gt;
 &lt;h2 id=&#34;allow-add&#34;&gt;Allow add&lt;/h2&gt;
-&lt;p&gt;If this is ticked (it is by default), users can add records to the table. Anyone with manage privileges on the table can add tables regardless.&lt;/p&gt;
+&lt;p&gt;If this is ticked (it is by default), users can add records to the table. Anyone with develop privileges on the table can add tables regardless.&lt;/p&gt;
 &lt;h3 id=&#34;only-from-within-tab&#34;&gt;Only from within tab&lt;/h3&gt;
 &lt;p&gt;If this is ticked, users can add records but only when accessing this table&amp;rsquo;s form from within a tab of a parent record. This can help ensure that child records are always connected to a parent and aren&amp;rsquo;t created as &amp;lsquo;orphans&amp;rsquo;.&lt;/p&gt;
 &lt;h2 id=&#34;allow-clone-and-merge&#34;&gt;Allow clone and merge&lt;/h2&gt;
@@ -858,7 +858,7 @@ export default LoginScreen;
 &lt;p&gt;Cloning makes a simple copy of all data in the record. The contents of tabs are not cloned. A more advanced clone facility can be created with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; if desired.&lt;/p&gt;
 &lt;p&gt;Merging allows the user to select another record to merge with this one. This is commonly use to resolve a situation where there are duplicate records. The contents of one are merged into the other, then the first deleted. A wizard will guide the user through selecting which data to keep from each record. Child records from the deleted record will be re-attached to the one remaining. So for example if Organisation 1 containing two contacts is merged with Organisation 2 containing 3, a single organisation with five contacts will result.&lt;/p&gt;
 &lt;h2 id=&#34;allow-remove&#34;&gt;Allow remove&lt;/h2&gt;
-&lt;p&gt;(On by default). Allow records to be deleted by people with EDIT privileges as well as people with MANAGE privileges, who can always delete.&lt;/p&gt;
+&lt;p&gt;(On by default). Allow records to be deleted by people with EDIT privileges as well as people with develop privileges, who can always delete.&lt;/p&gt;
 &lt;h2 id=&#34;allow-share&#34;&gt;Allow share&lt;/h2&gt;
 &lt;p&gt;Showa button which allows links to individual records to be shared between users using email. Note - recipients still need a login and relevant privileges to see the record.&lt;/p&gt;
 &lt;h2 id=&#34;data-entry-from-external-sources&#34;&gt;Data entry from external sources&lt;/h2&gt;
@@ -867,7 +867,7 @@ export default LoginScreen;
 &lt;h3 id=&#34;records-lockable&#34;&gt;Records lockable&lt;/h3&gt;
 &lt;p&gt;Records can be locked to prevent editing. You may like to do this based on criteria e.g. once a customer order has been sent, it should be locked against further changes.&lt;/p&gt;
 &lt;p&gt;To actually lock the record, a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; can be used.&lt;/p&gt;
-&lt;p&gt;Locked records can be manually unlocked by someone with manage privileges on the table, but only one at a time.&lt;/p&gt;
+&lt;p&gt;Locked records can be manually unlocked by someone with develop privileges on the table, but only one at a time.&lt;/p&gt;
 &lt;h3 id=&#34;email-notifications&#34;&gt;Email notifications&lt;/h3&gt;
 &lt;p&gt;When someone adds a comment to a record, when selecting recipients, they have the option to email those recipients, as well as adding the comment to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;comment stream&lt;/a&gt;. Ticking this table option sets the default to send emails for any comment added to this table. Users can override this on an individual comment basis and recipients can override in their notification preferences.&lt;/p&gt;
 &lt;h3 id=&#34;flag-records-with-colour&#34;&gt;Flag records with colour&lt;/h3&gt;
@@ -1099,7 +1099,7 @@ and a video introduction to the concept here:&lt;/p&gt;
       <description>
         
         
-        &lt;p&gt;The &lt;em&gt;Roles and Privileges&lt;/em&gt; panel of a table&amp;rsquo;s manage tab allow privileges to be assigned to a user or role on a table. Please see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; page for more details.&lt;/p&gt;
+        &lt;p&gt;When editing a table, the &lt;em&gt;Roles and Privileges&lt;/em&gt; panel allows privileges to be assigned to a user or role on a table. Please see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; page for more details.&lt;/p&gt;
 
       </description>
     </item>
@@ -1428,7 +1428,7 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;p&gt;Under &lt;em&gt;choose trigger event&lt;/em&gt; two options will be shown - &lt;em&gt;Retrieve Poll&lt;/em&gt; and &lt;em&gt;Catch Hook&lt;/em&gt;. In brief, if you select &lt;em&gt;Retrieve Poll&lt;/em&gt;, Zapier will regularly poll Agilebase (say every 5 minutes) to check if there’s any new data to retrieve. If you select &lt;em&gt;Catch Hook&lt;/em&gt;, communication will instead be started by Agilebase, which will ‘push’ data to Zapier only when there is something new to send.&lt;/p&gt;
 &lt;p&gt;Here, we’ll use Catch Hook, which is generally recommended. It’s more efficient and a bit easier to set up, as Agilebase will automatically record the time each record is sent to Zapier. Otherwise, you’ll have to set up additional steps in Zapier to send this information back.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/zapier-catch-hook.png&#34; alt=&#34;Zapier catch hook&#34;&gt;&lt;/p&gt;
-&lt;p&gt;When you press Continue, Zapier will provide you with a custom URL and some additional options which can be left unchanged. Copy this URL and record it in Agilebase: go to the view’s &lt;em&gt;manage&lt;/em&gt; tab, show the &lt;em&gt;Send&lt;/em&gt; panel and select &lt;em&gt;send data to a third party system using the API&lt;/em&gt;. Paste the Zapier URL into the space provided:&lt;/p&gt;
+&lt;p&gt;When you press Continue, Zapier will provide you with a custom URL and some additional options which can be left unchanged. Copy this URL and record it in Agilebase: edit the view and open the &lt;em&gt;Use API&lt;/em&gt; panel. Paste the Zapier URL into the &lt;em&gt;Push URL&lt;/em&gt; space provided:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/zapier-ab-push.png&#34; alt=&#34;Zapier aB push&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Secondly, select the date &amp;amp; time field ‘Intro Text Sent’ (created above) in the dropdown. That means whenever a record is sent to Zapier, the timestamp will be recorded in that field. All other settings can be left on their defaults.&lt;/p&gt;
 &lt;p&gt;Finally, press the &lt;em&gt;Run Workflow Now&lt;/em&gt; button to send a test record to Zapier.&lt;/p&gt;

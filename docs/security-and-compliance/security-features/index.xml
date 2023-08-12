@@ -60,7 +60,7 @@
 &lt;h3 id=&#34;two-factor-authentication&#34;&gt;Two factor authentication&lt;/h3&gt;
 &lt;p&gt;Users are strongly encouraged to set up two factor authentication (2FA) using an app. Unfortunately this is one step an administrator can&amp;rsquo;t do for them, but luckily it is quick and easy to do: &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/2fa-setup/&#34;&gt;here&amp;rsquo;s how&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Users without 2FA will be prompted to do so in the user interface and by email.&lt;/p&gt;
-&lt;p&gt;2FA is mandatory for &lt;a href=&#34;#roles&#34;&gt;administrators&lt;/a&gt; and necessary for a user to have before &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;manage&lt;/a&gt; privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.&lt;/p&gt;
+&lt;p&gt;2FA is mandatory for &lt;a href=&#34;#roles&#34;&gt;administrators&lt;/a&gt; and necessary for a user to have before &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;develop&lt;/a&gt; privileges can be assigned to them. Users also need to have 2FA enabled in order to perform certain functions such as exporting to spreadsheet.&lt;/p&gt;
 &lt;p&gt;When enabled, a user will be prompted for the 2FA code as well as their password when they log in from a device or location they haven&amp;rsquo;t used in the past 30 days.&lt;/p&gt;
 &lt;p&gt;If a user encounters any problems with 2FA, e.g. they lose the device for generating their codes, you can temporarily disable 2FA on their account by going to their user details screen and un-ticking &amp;lsquo;use 2FA&amp;rsquo;. Of course, you need to be aware of the risks, for example double checking that a user who contacts you is really who they say they are. Once they can log in, they&amp;rsquo;ll be able to enable 2FA themselves again.&lt;/p&gt;
 &lt;h4 id=&#34;mandating-2fa-for-everyone&#34;&gt;Mandating 2FA for everyone&lt;/h4&gt;
@@ -283,7 +283,7 @@ Used to configure &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenanting&lt;/a
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;A user with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;manage privileges&lt;/a&gt; on the view&amp;rsquo;s parent table can bypass criteria 2 and 3. This privilege is not commonly applied to normal users.&lt;/p&gt;
+&lt;p&gt;A user with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;develop privileges&lt;/a&gt; on the view&amp;rsquo;s parent table can bypass criteria 2 and 3. This privilege is not commonly applied to normal users.&lt;/p&gt;
 &lt;h2 id=&#34;exporting&#34;&gt;Exporting&lt;/h2&gt;
 &lt;p&gt;A user with the ability to export can do so by opening the view, clicking the export icon near the top right and selecting &lt;em&gt;export&lt;/em&gt; from the options in the menu.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/export.png&#34; alt=&#34;exporting&#34;&gt;&lt;/p&gt;
