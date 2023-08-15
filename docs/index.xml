@@ -1577,6 +1577,7 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
 &lt;ul&gt;
 &lt;li&gt;supplier approval -&amp;gt; risk assessment -&amp;gt; risk assessment scores.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/grandchild-table.png&#34; alt=&#34;grandchild rows&#34;&gt;&lt;/p&gt;
 &lt;p&gt;When the user looks at a supplier approval record, the risk assessment summary and scores can both be seen at the same time.&lt;/p&gt;
 
       </description>
