@@ -5,7 +5,7 @@
     <description>Recent content in v6 on Agilebase docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Jul 2023 08:06:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 16 Aug 2023 13:00:00 +0100</lastBuildDate>
     
 	  <atom:link href="https://docs.agilebase.co.uk/tags/v6/index.xml" rel="self" type="application/rss+xml" />
     
@@ -400,7 +400,7 @@ To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &am
     </item>
     
     <item>
-      <title>Guides: Creating a basic task list</title>
+      <title>Guides: 1. Creating a basic task list</title>
       <link>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</link>
       <pubDate>Fri, 22 Apr 2022 13:00:00 +0100</pubDate>
       
@@ -804,6 +804,57 @@ Used to configure &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenanting&lt;/a
     </item>
     
     <item>
+      <title>Guides: 2. Capturing Company and Contact data (Introducing Relational Databases)</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/</link>
+      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create related Tables to demonstrate the power of relational databases&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Creating a basic task list” video&amp;quot;&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;In this step of the guide we will build the engine of our CRM and in doing so start to introduce the concept of a relational database. We will do this as a practical example and you’ll see how agilebase makes this straight forward. We will be building a bigger system, but for the most part it’s simply reusing things we’ve already covered.. Let’s start with building a table called ‘Organisations’&lt;/p&gt;
+&lt;h2 id=&#34;create-a-table-called-organisations&#34;&gt;Create a table called &amp;ldquo;Organisations&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;To get our CRM going we need somewhere to store information about the organisations we will interact with. This can easily be achieved by adding a new table, a tile and an initial view. If you need a quick refresher watch the video below, or if you need more detail go back to &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/&#34;&gt;step 1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[guide 2 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/F-4Qp-5udsU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;create-a-table-called-sites&#34;&gt;Create a table called &amp;ldquo;Sites&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;A company might have more than one location, so we will need a table to hold information about the various addresses they might have - &amp;lsquo;Sites&amp;rsquo;. This is the first example we have of adding a Relation field.
+If you want to learn more then please visit &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[guide 2 - video 2]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/psJRDyW3RMs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;create-a-table-called-contacts&#34;&gt;Create a table called &amp;lsquo;Contacts&amp;rsquo;&lt;/h2&gt;
+&lt;p&gt;Let’s add another table of data that is related to an Organisation, the people who work there - &amp;lsquo;Contacts&amp;rsquo;.
+We will link to two tables, the organisation they work for and the site they primarily work from.&lt;/p&gt;
+&lt;p&gt;[guide 2 - video 3]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Mrj6Iu7fxmg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;adding-tabs&#34;&gt;Adding tabs&lt;/h2&gt;
+&lt;p&gt;Viewing and adding data in isolation doesn’t feel very natural. What we want to do is look at an organisation’s records and see its list of contacts there and then. One way Agilebase does this is through adding ‘Tabs’ to a record.
+If you want to know more visit or documentation about &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/&#34;&gt;tabs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[guide 2 - video 4]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nRSQ3IARLVI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;optional---linking-tasks-to-organisations&#34;&gt;OPTIONAL - Linking Tasks to Organisations&lt;/h2&gt;
+&lt;p&gt;At this point you may decide to upgrade the Task system we created previously. If you want to do this you will need to update the Tasks table to have a Parent Org, adding a Relation field (to organisation) and then adding the new Tab to the Organisation table just as we’ve done before.
+You might also want to go back in to some of the views people use to access tasks and add a field so they know which organisation it&amp;rsquo;s for.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Tables</title>
       <link>https://docs.agilebase.co.uk/docs/tables/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
@@ -813,6 +864,59 @@ Used to configure &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenanting&lt;/a
         
         
         &lt;p&gt;These pages provide a guide to using tables, which are the backbone of data storage in Agilebase. Agilebase offers rich table functionality so that data can be processed in the optimal way for your application.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: 3. Adding a Sales Pipeline - Kanban</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/sales_pipeline/</link>
+      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/sales_pipeline/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;  Introduce Kanban / Card view. Power of dropdowns on fields. Show how easy to add graphs. Show off the advanced UI elements of aB&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Capturing Company and Contact details” video. Understand relational data&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;In this step of our guide we going to look at adding a dropdown field to &amp;ldquo;control&amp;rdquo; data input as we want to set up a Kanban board approach to managing Sales Opportunities.
+This video assumes you are happy creating tables so jumps to the point of adding the Dropdown field.
+If you are following along and want to build this table please copy the following table structure&lt;/p&gt;
+&lt;p&gt;Fields we will need: Organisation(relation to Organisation) Title (text), Detail (text large), Date of Enquiry (date), Source (text), Main Contact (relation to contact), Opp. Owner (text), Demo-Meeting (Separator), Date of Demo (date), Meeting Notes (text large), Quote (Separator), Quote Amount (number), Quote notes (text large), Outcome (Separator), Date Won (date), Date lost (date), Lost reason (text), closed by (text), closed date (date)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/Sales_Opportunity_pre_dropdown&#34; alt=&#34;Sales Opprtunity Fields before Status DropDown has been added&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-dropdown-field&#34;&gt;Adding a dropdown field&lt;/h2&gt;
+&lt;p&gt;A dropdown field is as simple to add as any other field type. However there are some considerations about how it is configured to help the user experience.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Having an initial comma in the list means the default value will be blank.&lt;/li&gt;
+&lt;li&gt;Adding an initial number to each option in the list is very useful to imply an order (an override the default alphabetical ordering).&lt;/li&gt;
+&lt;li&gt;Autofilling with a list of users. &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#lists-of-users&#34;&gt;Click here for more info&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In this stage of our guide we are going to add the stages a typical Sales opportunity will pass through.
+[step 3 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1PzY64hPWlE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;creating-a-kanban-view&#34;&gt;Creating a Kanban view&lt;/h2&gt;
+&lt;p&gt;We can now create a view to show all the Sales Opportunities we will be mansaging.
+This is the basically the same as we’ve done before
+&lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/#adding-views-that-show-all-the-tasks-that-have-been-createds&#34;&gt;Click here to see how add a view&lt;/a&gt;
+Before We set the interface option to be &amp;ldquo;Cards in Column&amp;rdquo; its important to move the controlling field to the top of the list. In this case we want ther Kanban board to be controlled by Status, therefore it should be the first DropDown field in the view.&lt;/p&gt;
+&lt;p&gt;[step 3 - video 2]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/ydCtGAdgqjk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;adding-graphs&#34;&gt;Adding Graphs!&lt;/h2&gt;
+&lt;p&gt;Sales teams love graphs. After all, a picture says a thousand words, and agileBase has an easy to use graphing facility to help you show off the insights your data contains.
+Creating graphs can be done by any user, but it usually helps if the developers take the lead and build the obvious ones.&lt;/p&gt;
+&lt;p&gt;This video demonstrates adding a pie chart to show the number of Sales Opportunites by Source, and also a column graph to show volume of sales enquires over time. It also shows the advanced option of using Stcaking to add more insights.&lt;/p&gt;
+&lt;p&gt;[step 3 - video 3]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/3FOOk8QS5RE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 
       </description>
     </item>
@@ -957,6 +1061,24 @@ Used to configure &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenanting&lt;/a
 &lt;p&gt;When editing a field, press &amp;lsquo;add to pinned views&amp;rsquo;. The field will then be added to all pinned views which don&amp;rsquo;t already contain it.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-to-pinned-views.png&#34; alt=&#34;adding a field to pinned views&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This can be particularly useful when introducing a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; feature. Multi-tenanting means allowing different customers to access the same system, segregating their data so they each see only their own data. Part of the setup requires adding a new field to all (or most) of the views in the system.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: 4. Calculated Datafields</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/calculated_datafields/</link>
+      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/calculated_datafields/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Introduce calculations and basic SQL&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have understanding of relational data&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;The ability to use your existing data to calculate new information will dramatically enhance the user interface, and lead your users to create new data!
+In this step fo the guide we&amp;rsquo;ll start with something simple, expanding the data we know about Organisations.&lt;/p&gt;
 
       </description>
     </item>
@@ -2542,130 +2664,6 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;However, as it stands, that would exclude any tasks which have &lt;strong&gt;never&lt;/strong&gt; had a notification sent for them, i.e. where the last notified field is blank.&lt;/p&gt;
 &lt;p&gt;To include those, just tick &amp;lsquo;or is blank&amp;rsquo; after creating the filter.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Checkbox Field Options</title>
-      <link>https://docs.agilebase.co.uk/docs/fields/field-options/checkbox-field-options/</link>
-      <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/checkbox-field-options/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;default-value&#34;&gt;Default value&lt;/h2&gt;
-&lt;p&gt;Simply whether the checkbox should default to ticked (true) or un-ticked (false) for new records.&lt;/p&gt;
-&lt;h2 id=&#34;dont-set-last-modified&#34;&gt;Don&amp;rsquo;t set last modified&lt;/h2&gt;
-&lt;p&gt;Whenever someone edits a record, Agilebase automatically updates the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#last-modified-auto&#34;&gt;Last Modified&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#modified-by-auto&#34;&gt;Modified By&lt;/a&gt; fields of the table. This option prevents that happening when the checkbox field is ticked or un-ticked. There would not usually be a need for this but it may be useful in a minority of cases.&lt;/p&gt;
-&lt;h2 id=&#34;show-digital-signature&#34;&gt;Show digital signature&lt;/h2&gt;
-&lt;p&gt;Causes the user interface to show the name &amp;amp; username of the person who last ticked or un-ticked the checkbox, along with a timestamp.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Note these can only be shown for the maximum time that record history (audit trail) data is stored for, by default 12 months. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail&#34;&gt;enhanced audit trail&lt;/a&gt; for details of extending this.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Comment Feeds</title>
-      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/</link>
-      <pubDate>Thu, 07 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Adding a comment feed to a table adds a discussion area to a form, transforming its usefulness.&lt;/p&gt;
-&lt;p&gt;Comment feeds in Agilebase are quite a large topic, as one of the most often used features central to the platform. It&amp;rsquo;s common for at least one comment feed to be added to every table in the system, allowing users to collaborate and discuss data wherever they are.&lt;/p&gt;
-&lt;p&gt;The ability to discuss and comment on data can be one of the most important mechanisms used to break down silo thinking and help organisations that wish to adopt a more systematic or process orientated view of things.&lt;/p&gt;
-&lt;h2 id=&#34;comment-feeds-in-action&#34;&gt;Comment feeds in action&lt;/h2&gt;
-&lt;p&gt;Here&amp;rsquo;s an example of a comment feed in a table, being used to add a new comment. Previous comments can be seen underneath, with the user and date/time of each.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-comment.png&#34; alt=&#34;add comment&#34;&gt;&lt;/p&gt;
-&lt;p&gt;The available recipients are those people who have privileges to view data in the table (it&amp;rsquo;s no use sending a comment to someone who can&amp;rsquo;t see the data being discussed).&lt;/p&gt;
-&lt;p&gt;The user interface intelligently selects an initial list of recipients from those available, but they can be added or removed by the user.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;To add a user, type &amp;lsquo;@&amp;rsquo; then start typing their name. A dropdown list will appear from which you can pick the person.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;In this example, Cliff, Gemma and Mark have been set to receive email notifications as well. The email they receive will contain a link to take them directly to the record the comment was added to. They can reply to the email to log an additional comment.&lt;/p&gt;
-&lt;p&gt;People who aren&amp;rsquo;t recipients of a comment will still see the comment when they visit the record it&amp;rsquo;s been added to, they just won&amp;rsquo;t get a notification in their comments stream or elsewhere.&lt;/p&gt;
-&lt;p&gt;People who are mentioned by name in a comment (Mark in this example) will get an in-app alert as well as the comment appearing in their comment stream.&lt;/p&gt;
-&lt;p&gt;A user&amp;rsquo;s notification options affect whether they receive comments from a particular table or person by default, and how they receive those comments. The table option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#accept-emails-to-this-address&#34;&gt;email notifications&lt;/a&gt; also affects this.&lt;/p&gt;
-&lt;h3 id=&#34;comments-to-other-fields&#34;&gt;Comments to other fields&lt;/h3&gt;
-&lt;p&gt;Although adding a comments feed field is the easiest way of allowing people to comment on data, users can at any time add a comment to &lt;strong&gt;any&lt;/strong&gt; field on the screen, by hovering over the field until an &amp;lsquo;add comment&amp;rsquo; icon appears. This opens a smaller, basic comment adding interface, without the options for choosing recipients above, rather the default set of recipients is always used.&lt;/p&gt;
-&lt;h2 id=&#34;the-comments-stream-tile&#34;&gt;The comments stream tile&lt;/h2&gt;
-&lt;p&gt;When someone&amp;rsquo;s the receipient of a comment, they&amp;rsquo;ll be able to see it in the comments stream tile on their homepage. Clicking on it will navigate to the related record. We won&amp;rsquo;t go into every detail of the user interface in this administrator documentation, but comments can be searched and the comments tile can be expanded to full screen like any other tile.&lt;/p&gt;
-&lt;h2 id=&#34;email-integration&#34;&gt;Email integration&lt;/h2&gt;
-&lt;p&gt;As above, anyone who receives a comment notification can reply to the email to add another comment (their email address must be their username or recorded in their user defailt), or they can click on a link to view the related record including previous comments.&lt;/p&gt;
-&lt;p&gt;However, comments are also the mechanism by which emails from external parties can be logged - see the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/#accept-emails-to-this-address&#34;&gt;accept emails to this address&lt;/a&gt; table option.&lt;/p&gt;
-&lt;p&gt;When a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;workflow&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt; sends an outgoing email, that is logged as a comment (including any attachments) too.&lt;/p&gt;
-&lt;h2 id=&#34;slack-integration&#34;&gt;Slack integration&lt;/h2&gt;
-&lt;p&gt;If &lt;a href=&#34;https://www.slack.com&#34;&gt;Slack&lt;/a&gt; is integrated via &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/&#34;&gt;company options&lt;/a&gt;, every comment added will also be sent to your Slack workspace.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Referenced data</title>
-      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/</link>
-      <pubDate>Thu, 07 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/referenced-data/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Most fields in a table allow data entry into that table, but referenced data fields allow data from &lt;strong&gt;other&lt;/strong&gt; places to be embedded, specifically &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;views&lt;/a&gt;, created from any table.&lt;/p&gt;
-&lt;p&gt;Optionally, the embedded data can be editable.&lt;/p&gt;
-&lt;p&gt;This can be used for many purposes, such as&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;showing warning or information messages in a form, based on criteria&lt;/li&gt;
-&lt;li&gt;showing calculations, e.g. when editing a recipe, you may want to show the total cost/kg of all ingredients and packaging in that recipe&lt;/li&gt;
-&lt;li&gt;embedding charts, e.g. in the record for a customer, you may want to show the last 12 months of sales data&lt;/li&gt;
-&lt;li&gt;allowing quick editing of related data, e.g. after selecting a customer contact for a sales opportunity, allow quick editing of their contact details without having to navigate away from the opportunity record&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Some more esoteric uses are also possible&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;referenced data can be used as a source of data to populate standard fields in the form, i.e. to provide default values for fields - see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#set-from-previous-referenced-field&#34;&gt;relation field options&lt;/a&gt; for more information&lt;/li&gt;
-&lt;li&gt;a referenced data field can be displayed as a button to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;manually run a workflow&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;adding-a-referenced-field&#34;&gt;Adding a referenced field&lt;/h2&gt;
-&lt;p&gt;Referenced fields are based on views. The contents of a view will be displayed in the form where a field referencing data from that view is added.&lt;/p&gt;
-&lt;p&gt;The way it works is that the chosen view must contain the ID field of the table the referenced field is added to. When displaying data, the view is filtered to only show records where the ID matches that of the record being edited.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s take an example - you wish to include details of any ingredients supplied by a company in a supplier details screen.&lt;/p&gt;
-&lt;p&gt;First, create a view of ingredients linked to each supplier. It may have data in it such as the following:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-source-view.png&#34; alt=&#34;referenced source view&#34;&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;There is some repetition in this view because each ingredient can be supplied by more than one supplier. Each line represents an ingredient/supplier combination. The supplier names aren&amp;rsquo;t included in this particular view.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;When a field referencing this view is added to the suppliers table, the output may display like this, when editing a particular supplier:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panels.png&#34; alt=&#34;referenced panels&#34;&gt;&lt;/p&gt;
-&lt;p&gt;So to summarise, the steps are&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;Create&lt;/a&gt; or find a view containing the data you wish to embed. It must contain the ID field of the table the data is embedded in (in this case &amp;lsquo;opportunities&amp;rsquo;).&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#adding-a-field&#34;&gt;Add a field&lt;/a&gt; of type &lt;em&gt;referenced data&lt;/em&gt;. Select the table your target view was created from, then the target view itself, before pressing &lt;em&gt;create field&lt;/em&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Actually, there is one case in which the rule that the view must contain the ID of the table the referenced data is being added to. That&amp;rsquo;s when you want to show &lt;strong&gt;all&lt;/strong&gt; rows from the view, without filtering.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This is typically used in a minority of cases, but can be useful when you want to embed data that isn&amp;rsquo;t related to the target table. For example, showing some global settings that may affect the functionality of a system.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;showing-one-or-more-rows&#34;&gt;Showing one or more rows&lt;/h2&gt;
-&lt;p&gt;If more than one row in the view has an ID matching the ID of the table being added to, all will be shown. There is limited space in a form, so if there are lots, then a &amp;lsquo;see more&amp;rsquo; option will appear after the first few rows. For a more compact view, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/#tabular-display&#34;&gt;tabular display&lt;/a&gt; can be chosen in the referenced field options.&lt;/p&gt;
-&lt;h2 id=&#34;showing-charts&#34;&gt;Showing charts&lt;/h2&gt;
-&lt;p&gt;If the view used has one or more &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;charts&lt;/a&gt;, they will be shown instead of the data rows. The filtering acts exactly the same way, only data matching the containing table&amp;rsquo;s ID is used as the source of the chart data.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/embedded-chart.png&#34; alt=&#34;embedded chart&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;showing-images-and-documents&#34;&gt;Showing images and documents&lt;/h2&gt;
-&lt;p&gt;Images and documents can be included in referenced panels too. Just include a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/&#34;&gt;file field&lt;/a&gt; in the view used for the panel.&lt;/p&gt;
-&lt;h2 id=&#34;making-referenced-data-editable&#34;&gt;Making referenced data editable&lt;/h2&gt;
-&lt;p&gt;Optionally, referenced data can be made editable by clicking on it.&lt;/p&gt;
-&lt;p&gt;A view containing the containing table&amp;rsquo;s ID can be created one of two ways.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Create a view from the containing table, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/&#34;&gt;joining&lt;/a&gt; to other tables&lt;/li&gt;
-&lt;li&gt;Create a view from another table, joining it to the containing table&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;If a view is built the second way and embedded into the table via a referenced field, the data will be editable: clicking on an element of referenced data will turn it into a data entry form.&lt;/p&gt;
-&lt;p&gt;If it&amp;rsquo;s built the first way, data will not be editable.&lt;/p&gt;
-&lt;p&gt;In an editable referenced field, only fields directly from the table made to create the view will be editable. Other fields will be read-only.&lt;/p&gt;
 
       </description>
     </item>

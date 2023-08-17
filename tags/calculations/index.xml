@@ -1,0 +1,37 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agilebase docs – Calculations</title>
+    <link>https://docs.agilebase.co.uk/tags/calculations/</link>
+    <description>Recent content in Calculations on Agilebase docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 16 Aug 2023 13:00:00 +0100</lastBuildDate>
+    
+	  <atom:link href="https://docs.agilebase.co.uk/tags/calculations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Guides: 4. Calculated Datafields</title>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/calculated_datafields/</link>
+      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/calculated_datafields/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Introduce calculations and basic SQL&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have understanding of relational data&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;The ability to use your existing data to calculate new information will dramatically enhance the user interface, and lead your users to create new data!
+In this step fo the guide we&amp;rsquo;ll start with something simple, expanding the data we know about Organisations.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

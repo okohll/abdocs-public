@@ -29,6 +29,9 @@
     <loc>https://docs.agilebase.co.uk/docs/introduction/development-mode/</loc>
     <lastmod>2023-03-23T15:57:26+00:00</lastmod>
   </url><url>
+    <loc>https://docs.agilebase.co.uk/guides/guide2-personalisation/</loc>
+    <lastmod>2023-08-16T15:29:03+01:00</lastmod>
+  </url><url>
     <loc>https://docs.agilebase.co.uk/guides/guide1-crm/</loc>
     <lastmod>2022-10-20T15:08:44+01:00</lastmod>
   </url><url>
@@ -48,7 +51,7 @@
     <lastmod>2023-04-06T13:38:56+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</loc>
-    <lastmod>2022-10-20T15:08:44+01:00</lastmod>
+    <lastmod>2023-08-16T15:29:03+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/introduction/why-use-agilebase/</loc>
     <lastmod>2022-10-20T10:51:42+01:00</lastmod>
@@ -65,11 +68,17 @@
     <loc>https://docs.agilebase.co.uk/docs/tiles/</loc>
     <lastmod>2023-08-10T16:07:29+01:00</lastmod>
   </url><url>
+    <loc>https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/</loc>
+    <lastmod>2023-08-17T09:25:26+01:00</lastmod>
+  </url><url>
     <loc>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/</loc>
     <lastmod>2022-10-20T15:20:52+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/tables/</loc>
     <lastmod>2022-10-20T15:08:44+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/guides/guide1-crm/sales_pipeline/</loc>
+    <lastmod>2023-08-17T09:25:26+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/introduction/who-can-use-it/</loc>
     <lastmod>2022-10-20T10:51:42+01:00</lastmod>
@@ -82,6 +91,9 @@
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/fields/</loc>
     <lastmod>2022-11-23T14:01:00+00:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/guides/guide1-crm/calculated_datafields/</loc>
+    <lastmod>2023-08-16T15:29:03+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/introduction/scaling-potential/</loc>
     <lastmod>2022-10-20T10:51:42+01:00</lastmod>
@@ -350,22 +362,40 @@
     <loc>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/</loc>
     <lastmod>2023-03-25T09:45:39+00:00</lastmod>
   </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/software-architect/</loc>
-    <lastmod>2023-08-10T16:07:29+01:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/</loc>
-    <lastmod>2023-08-15T09:02:10+01:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/v6/</loc>
-    <lastmod>2023-08-15T09:02:10+01:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/citizen-developer-level-3/</loc>
-    <lastmod>2023-08-10T16:07:29+01:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/citizen-developer-level-2/</loc>
-    <lastmod>2023-08-15T09:02:10+01:00</lastmod>
+    <loc>https://docs.agilebase.co.uk/tags/calculations/</loc>
+    <lastmod>2023-08-16T15:29:03+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/citizen-developer-level-1/</loc>
+    <lastmod>2023-08-16T15:29:03+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/citizen-developer-level-2/</loc>
+    <lastmod>2023-08-17T09:25:26+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/citizen-developer-level-3/</loc>
+    <lastmod>2023-08-16T15:29:03+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/dropdown/</loc>
+    <lastmod>2023-08-17T09:25:26+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/kanban/</loc>
+    <lastmod>2023-08-17T09:25:26+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/relational-data/</loc>
+    <lastmod>2023-08-17T09:25:26+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/sales/</loc>
+    <lastmod>2023-08-17T09:25:26+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/tabs/</loc>
+    <lastmod>2023-08-17T09:25:26+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/</loc>
+    <lastmod>2023-08-17T09:25:26+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/v6/</loc>
+    <lastmod>2023-08-17T09:25:26+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/software-architect/</loc>
     <lastmod>2023-08-10T16:07:29+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/junior-software-architect/</loc>
