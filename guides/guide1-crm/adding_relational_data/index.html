@@ -25,10 +25,10 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/" /><meta property="article:section" content="guides" />
 <meta property="article:published_time" content="2023-08-16T13:00:00+01:00" />
-<meta property="article:modified_time" content="2023-08-17T09:25:26+01:00" />
+<meta property="article:modified_time" content="2023-08-31T17:31:58+01:00" />
 <meta itemprop="name" content="2. Capturing Company and Contact data (Introducing Relational Databases)">
 <meta itemprop="description" content="Introducing the power of Relational Databases... adding the ability to capture Company and Contact information to start building our CRM."><meta itemprop="datePublished" content="2023-08-16T13:00:00+01:00" />
-<meta itemprop="dateModified" content="2023-08-17T09:25:26+01:00" />
+<meta itemprop="dateModified" content="2023-08-31T17:31:58+01:00" />
 <meta itemprop="wordCount" content="416">
 <meta itemprop="keywords" content="Citizen Developer level 2,v6,Relational Data,tabs," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="2. Capturing Company and Contact data (Introducing Relational Databases)"/>
@@ -99,6 +99,9 @@ if (!doNotTrack) {
       <li class="nav-item">
         <a class="nav-link" href="/docs/"><span>Docs</span></a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/guides/full-videos/"><span>Full Video Guides</span></a>
+      </li>
       </ul>
   </div>
   <div class="d-none d-lg-block">
@@ -111,7 +114,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.4e7a9c72e5a35f00300790406e75b6ed.json"
+    data-offline-search-index-json-src="/offline-search-index.5fc5cdaf5c52c4dfc265f63755c31fe3.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -136,7 +139,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.4e7a9c72e5a35f00300790406e75b6ed.json"
+    data-offline-search-index-json-src="/offline-search-index.5fc5cdaf5c52c4dfc265f63755c31fe3.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -150,9 +153,7 @@ if (!doNotTrack) {
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-guides-li">
   <a href="/guides/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-guides"><span class="">Guides</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-guidesguide2-personalisation-li">
-  <a href="/guides/guide2-personalisation/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-guidesguide2-personalisation"><span class="">Guide 2 - Personalisation Build a CRM</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-guidesguide1-crm-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-guidesguide1-crm-li">
   <a href="/guides/guide1-crm/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-guidesguide1-crm"><span class="">Guide 1 - Build a CRM</span></a>
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-guidesguide1-crmtasklist-li">
@@ -163,8 +164,23 @@ if (!doNotTrack) {
   <a href="/guides/guide1-crm/sales_pipeline/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide1-crmsales_pipeline"><span class="">3. Adding a Sales Pipeline - Kanban</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-guidesguide1-crmcalculated_datafields-li">
   <a href="/guides/guide1-crm/calculated_datafields/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide1-crmcalculated_datafields"><span class="">4. Calculated Datafields</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-guidesguide1-crmcross_reference_and_automations-li">
+  <a href="/guides/guide1-crm/cross_reference_and_automations/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide1-crmcross_reference_and_automations"><span class="">5. Cross References and Automations</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-guidesguide1-crmsecurity-and-access-control-li">
+  <a href="/guides/guide1-crm/security-and-access-control/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide1-crmsecurity-and-access-control"><span class="">6. Security and Access Control</span></a>
 </li>
   </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-guidesguide2-personalisation-li">
+  <a href="/guides/guide2-personalisation/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-guidesguide2-personalisation"><span class="">Guide 2 - Personalising our CRM</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-guidesguide2-personalisationcreating_personal_views-li">
+  <a href="/guides/guide2-personalisation/creating_personal_views/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide2-personalisationcreating_personal_views"><span class="">1. Personalising our CRM</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-guidesguide2-personalisationcreating_personal_charts-li">
+  <a href="/guides/guide2-personalisation/creating_personal_charts/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide2-personalisationcreating_personal_charts"><span class="">2. Personalising our CRM by adding charts</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-guidesfull-videos-li">
+  <a href="/guides/full-videos/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-guidesfull-videos"><span class="">Full Video Guides</span></a>
 </li>
   </ul>
 </li>
@@ -211,20 +227,30 @@ if (!doNotTrack) {
             <div class="taxonomy taxonomy-terms-cloud taxo-tags">
       <h5 class="taxonomy-title">Learner Levels</h5>
       <ul class="taxonomy-terms">
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/access-control/" data-taxonomy-term="access-control"><span class="taxonomy-label">Access control</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/automations/" data-taxonomy-term="automations"><span class="taxonomy-label">Automations</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/buttons/" data-taxonomy-term="buttons"><span class="taxonomy-label">buttons</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/calculations/" data-taxonomy-term="calculations"><span class="taxonomy-label">Calculations</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-1/" data-taxonomy-term="citizen-developer-level-1"><span class="taxonomy-label">Citizen Developer level 1</span><span class="taxonomy-count">6</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-2/" data-taxonomy-term="citizen-developer-level-2"><span class="taxonomy-label">Citizen Developer level 2</span><span class="taxonomy-count">30</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-3/" data-taxonomy-term="citizen-developer-level-3"><span class="taxonomy-label">Citizen Developer level 3</span><span class="taxonomy-count">10</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/charts/" data-taxonomy-term="charts"><span class="taxonomy-label">charts</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-1/" data-taxonomy-term="citizen-developer-level-1"><span class="taxonomy-label">Citizen Developer level 1</span><span class="taxonomy-count">8</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-2/" data-taxonomy-term="citizen-developer-level-2"><span class="taxonomy-label">Citizen Developer level 2</span><span class="taxonomy-count">29</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-3/" data-taxonomy-term="citizen-developer-level-3"><span class="taxonomy-label">Citizen Developer level 3</span><span class="taxonomy-count">11</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/core-user/" data-taxonomy-term="core-user"><span class="taxonomy-label">Core User</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/cross-references/" data-taxonomy-term="cross-references"><span class="taxonomy-label">Cross References</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/dropdown/" data-taxonomy-term="dropdown"><span class="taxonomy-label">DropDown</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/junior-software-architect/" data-taxonomy-term="junior-software-architect"><span class="taxonomy-label">Junior Software Architect</span><span class="taxonomy-count">30</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/email/" data-taxonomy-term="email"><span class="taxonomy-label">email</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/junior-software-architect/" data-taxonomy-term="junior-software-architect"><span class="taxonomy-label">Junior Software Architect</span><span class="taxonomy-count">33</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/kanban/" data-taxonomy-term="kanban"><span class="taxonomy-label">Kanban</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/pdfs/" data-taxonomy-term="pdfs"><span class="taxonomy-label">PDFS</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/personal/" data-taxonomy-term="personal"><span class="taxonomy-label">personal</span><span class="taxonomy-count">2</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/relational-data/" data-taxonomy-term="relational-data"><span class="taxonomy-label">Relational Data</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/requires-update/" data-taxonomy-term="requires-update"><span class="taxonomy-label">requires update</span><span class="taxonomy-count">2</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/sales/" data-taxonomy-term="sales"><span class="taxonomy-label">Sales</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span><span class="taxonomy-count">32</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/security/" data-taxonomy-term="security"><span class="taxonomy-label">Security</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span><span class="taxonomy-count">33</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/tabs/" data-taxonomy-term="tabs"><span class="taxonomy-label">tabs</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/v6/" data-taxonomy-term="v6"><span class="taxonomy-label">v6</span><span class="taxonomy-count">88</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/views/" data-taxonomy-term="views"><span class="taxonomy-label">views</span><span class="taxonomy-count">1</span></a></li>
         </ul>
     </div>
   
@@ -266,7 +292,7 @@ if (!doNotTrack) {
 <p>In this step of the guide we will build the engine of our CRM and in doing so start to introduce the concept of a relational database. We will do this as a practical example and you’ll see how agilebase makes this straight forward. We will be building a bigger system, but for the most part it’s simply reusing things we’ve already covered.. Let’s start with building a table called ‘Organisations’</p>
 <h2 id="create-a-table-called-organisations">Create a table called &ldquo;Organisations&rdquo;</h2>
 <p>To get our CRM going we need somewhere to store information about the organisations we will interact with. This can easily be achieved by adding a new table, a tile and an initial view. If you need a quick refresher watch the video below, or if you need more detail go back to <a href="/guides/guide1-crm/tasklist/">step 1</a></p>
-<p>[guide 2 - video 1]
+<p>[guide 1.2 - video 1]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/F-4Qp-5udsU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
@@ -274,7 +300,7 @@ if (!doNotTrack) {
 <h2 id="create-a-table-called-sites">Create a table called &ldquo;Sites&rdquo;</h2>
 <p>A company might have more than one location, so we will need a table to hold information about the various addresses they might have - &lsquo;Sites&rsquo;. This is the first example we have of adding a Relation field.
 If you want to learn more then please visit <a href="/docs/tables/relational-database-concepts/">relational database concepts</a></p>
-<p>[guide 2 - video 2]
+<p>[guide 1.2 - video 2]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/psJRDyW3RMs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
@@ -282,7 +308,7 @@ If you want to learn more then please visit <a href="/docs/tables/relational-dat
 <h2 id="create-a-table-called-contacts">Create a table called &lsquo;Contacts&rsquo;</h2>
 <p>Let’s add another table of data that is related to an Organisation, the people who work there - &lsquo;Contacts&rsquo;.
 We will link to two tables, the organisation they work for and the site they primarily work from.</p>
-<p>[guide 2 - video 3]
+<p>[guide 1.2 - video 3]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/Mrj6Iu7fxmg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
@@ -290,7 +316,7 @@ We will link to two tables, the organisation they work for and the site they pri
 <h2 id="adding-tabs">Adding tabs</h2>
 <p>Viewing and adding data in isolation doesn’t feel very natural. What we want to do is look at an organisation’s records and see its list of contacts there and then. One way Agilebase does this is through adding ‘Tabs’ to a record.
 If you want to know more visit or documentation about <a href="/docs/tables/hierarchy-navigation/tabs/">tabs</a></p>
-<p>[guide 2 - video 4]
+<p>[guide 1.2 - video 4]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/nRSQ3IARLVI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
@@ -361,7 +387,7 @@ You might also want to go back in to some of the views people use to access task
 
 		<br />
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified August 17, 2023: <a href="https://github.com/okohll/abdocs/commit/ff6620683567354daaa4e1303d9474cb194ae199">Minor relref fixes (ff66206)</a>
+  Last modified August 31, 2023: <a href="https://github.com/okohll/abdocs/commit/32b031b111bf04850e738e6014bf72b28b65a962">more updating Guides (32b031b)</a>
 </div>
 
 </div>

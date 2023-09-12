@@ -29,6 +29,44 @@
 &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
 &lt;p&gt;The ability to use your existing data to calculate new information will dramatically enhance the user interface, and lead your users to create new data!
 In this step fo the guide we&amp;rsquo;ll start with something simple, expanding the data we know about Organisations.&lt;/p&gt;
+&lt;h2 id=&#34;calculating-the-number-of-contacts-belonging-to-an-organisation&#34;&gt;Calculating the number of contacts belonging to an Organisation&lt;/h2&gt;
+&lt;p&gt;Using the All Organisations view as a starting point, clone it and rename it &amp;ldquo;Organisation - Calculations.
+We will need to join down to the Contacts table, before we create our calculation field.
+Go to “fields”, highlight the add a calculation section
+Add a calculation called “Number of Contacts”, of type ‘Whole number’.
+Press Add
+The important area is the ‘Calculation Definition’. In this example we want to count the number of contacts each organisation has. We can do this by using a SQL statement called Count.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;count()
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Between the brackets we choose which field we want to count. In this case the contact record&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;count({contacts.id:contacts})
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We now need to press update to tell agileBase we have finished editing our calculation. Press Update.
+As you can see the system has correctly identified that count is something known as an aggregate field and ticked the box for us.
+If you click back on Fields you should see the list and how calculations are highlighted in purple to distinguish from regular fields taken from a table definition. Lets drag our calculation near the front”
+Move the calc.
+Closing the edit allows us to see our results.
+This is a very simple example of an SQL calculation. For more examples as well as a link to the underlying Postgres documentation visit - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/examples/&#34;&gt;docs- calculation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[guide 1.4 - video 1]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/kxsIr6yHlNg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;calculating-the-date-of-our-latest-sale-to-create-a-our-customers-list&#34;&gt;Calculating the Date of our Latest Sale to create a &amp;ldquo;Our Customers&amp;rdquo; list&lt;/h2&gt;
+&lt;p&gt;A further useful example is to show how we can use the results of a calculation to create a Live view, for example &amp;ldquo;Our Customers&amp;rdquo;.
+Start by adding a join down to Sales opportunities
+Instead of adding an existing Sales opportunity field let’s add a calculation
+Go to list of fields and add a calculation called “Latest Sale”, which of course will be a ‘Date’ field.
+Press Add
+This time our SQL looks like&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; max({sales opportunities.date won})
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The same aggregate field option should be ticked for us.
+We can add a filter based on the values in the calculation e.g. where ‘Latest Sale’ is not blank!
+You should now see your list of Organisations has dramatically shrunk
+If you are following along, it makes sense for a Quick name change to make it “All customers”&lt;/p&gt;
+&lt;p&gt;[guide 1.4 - video 2]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/tGIsw4uhYZQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 
       </description>
     </item>

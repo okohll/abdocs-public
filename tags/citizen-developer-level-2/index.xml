@@ -75,19 +75,6 @@ To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &am
     </item>
     
     <item>
-      <title>Guides: Guide 1 - Build a CRM</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/</link>
-      <pubDate>Fri, 22 Apr 2022 13:00:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/</guid>
-      <description>
-        
-        
-        
-      </description>
-    </item>
-    
-    <item>
       <title>Guides: 1. Creating a basic task list</title>
       <link>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</link>
       <pubDate>Fri, 22 Apr 2022 13:00:00 +0100</pubDate>
@@ -103,7 +90,7 @@ To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &am
 Let us start by building a simple task list.&lt;/p&gt;
 &lt;h2 id=&#34;create-a-table-called-tasks&#34;&gt;Create a table called &amp;ldquo;Tasks&amp;rdquo;&lt;/h2&gt;
 &lt;p&gt;Our simple application will need to store information about the tasks our users create. This is done by creating a database table. In Agilebase this is achieved by navigating to the developer interface and pressing the “add new table button”.
-[guide 1 - video 1]
+[guide 1.1 - video 1]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/-kY2RRzKqxQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -113,7 +100,7 @@ Let us start by building a simple task list.&lt;/p&gt;
 Edit the table, type in the name of the field and choose the appropriate type. On creation of the field you will be able to set further options.
 For more detail visit - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/&#34;&gt;https://docs.agilebase.co.uk/docs/fields/field-types/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;In the following video we add the fields needed to for a simple Task
-[guide 1 - video 2]
+[guide 1.1 - video 2]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/SannBQNKlKk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -121,7 +108,7 @@ For more detail visit - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields
 &lt;h2 id=&#34;make-the-form-easier-to-understand-break-it-into-sections&#34;&gt;Make the form easier to understand. Break it into sections&lt;/h2&gt;
 &lt;p&gt;Now we have the data structure required to capture a simple task we can think about how it would be used. The user interface within Agilebase is controlled by the list of fields and their options. It is a simple task to reorder fields, just use the drag and drop facility when looking at the list of fields.
 Use a field of type separator to create sections within the user interface
-[guide 1 - video 3]
+[guide 1.1 - video 3]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/c8XMlhoiuSM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -136,14 +123,14 @@ Tiles are a way of grouping functionality together. Specifically, a data tile is
 &lt;h2 id=&#34;make-the-table-available-for-use&#34;&gt;Make the table available for use!&lt;/h2&gt;
 &lt;h3 id=&#34;adding-a-tile-to-the-homepage&#34;&gt;Adding a tile to the homepage&lt;/h3&gt;
 &lt;p&gt;The homepage of agilebase is made up of data tiles. We need to create a new tile to hold all the views of our taks data
-[guide 1 - video 4]
+[guide 1.1 - video 4]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/7hA7-VzX_A8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;adding-views-that-show-all-the-tasks-that-have-been-created&#34;&gt;Adding views that show all the tasks that have been created&lt;/h3&gt;
 &lt;p&gt;To provide the user access to a list of Task records we need to create a View. To start with we will create a view that will list ALL the data.   &lt;br&gt;
-[guide 1 - video 5]
+[guide 1.1 - video 5]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/ZwAcJz3jBhs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -151,7 +138,7 @@ Tiles are a way of grouping functionality together. Specifically, a data tile is
 &lt;h3 id=&#34;a-better-way-of-looking-at-data&#34;&gt;A better way of looking at data&lt;/h3&gt;
 &lt;p&gt;Many users will be familiar with a card or kanban style interface (such as Trello). Agilebase has a similar style of view that can often be useful.&lt;br&gt;
 Within a views “options” tab you can set its interface stylle to be “Cards in Columns”
-[guide 1 - video 6]
+[guide 1.1 - video 6]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/HeZxfiLZR_k&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -159,7 +146,7 @@ Within a views “options” tab you can set its interface stylle to be “Cards
 &lt;h3 id=&#34;making-views-for-a-specific-job&#34;&gt;Making views for a specific job&lt;/h3&gt;
 &lt;p&gt;Whilst users can apply their own filters and re-order data in a view, it is often a better user experience if there are dedicated views setup that match a particular job. For this example we want to create a list of all the completed tasks with the most recent at the top of the list.
 For more information on applying filters - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/filters/&#34;&gt;https://docs.agilebase.co.uk/docs/views/filters/&lt;/a&gt;
-[guide 1 - video 7]
+[guide 1.1 - video 7]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/2755kBKLKzk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -170,7 +157,7 @@ For more information on applying filters - &lt;a href=&#34;https://docs.agilebas
 &lt;h2 id=&#34;add-a-comments-field-to-a-table&#34;&gt;Add a Comments field to a table!&lt;/h2&gt;
 &lt;p&gt;Adding new fields to an existing table is no different to when creating from scratch. Simply add via the table edit screen.
 Adding collaboration functionality to an agileB\se application is as easy as adding any other field! Just add a field of type Comments as shown in the video below
-[guide 1 - video 8 *]
+[guide 1.1 - video 8 *]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/VqpAmdVJiVc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -180,7 +167,7 @@ Adding collaboration functionality to an agileB\se application is as easy as add
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;deleting-views&#34;&gt;Deleting Views&lt;/h2&gt;
 &lt;p&gt;Eventually you will want to remove unused views in order to reduce clutter and streamline the user experience. To do this go to the Properties and Options tab when editing the view and press Delete view
-[guide 1 - video 9 *]
+[guide 1.1 - video 9 *]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/YfCz-9Fjt7g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -189,7 +176,7 @@ Adding collaboration functionality to an agileB\se application is as easy as add
 &lt;p&gt;Keeping the user interface streamlined and uncluttered also includes the removal of unwanted or old data fields.
 It is straightforward to delete a field from a table. Either clicking the X icon on the RHS of the list of fields, or use the Remove field button on the fields definition. However, extra care needs to be taken as the field may be in use as the following video demonstrates.&lt;/p&gt;
 &lt;p&gt;N.b. to completely remove a table you are first required to delete ALL the fields it contains.
-[guide 1 - video 10 *]
+[guide 1.1 - video 10 *]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/5ExSypK06W8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -377,7 +364,7 @@ It is straightforward to delete a field from a table. Either clicking the X icon
 &lt;p&gt;In this step of the guide we will build the engine of our CRM and in doing so start to introduce the concept of a relational database. We will do this as a practical example and you’ll see how agilebase makes this straight forward. We will be building a bigger system, but for the most part it’s simply reusing things we’ve already covered.. Let’s start with building a table called ‘Organisations’&lt;/p&gt;
 &lt;h2 id=&#34;create-a-table-called-organisations&#34;&gt;Create a table called &amp;ldquo;Organisations&amp;rdquo;&lt;/h2&gt;
 &lt;p&gt;To get our CRM going we need somewhere to store information about the organisations we will interact with. This can easily be achieved by adding a new table, a tile and an initial view. If you need a quick refresher watch the video below, or if you need more detail go back to &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/&#34;&gt;step 1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[guide 2 - video 1]
+&lt;p&gt;[guide 1.2 - video 1]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/F-4Qp-5udsU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -385,7 +372,7 @@ It is straightforward to delete a field from a table. Either clicking the X icon
 &lt;h2 id=&#34;create-a-table-called-sites&#34;&gt;Create a table called &amp;ldquo;Sites&amp;rdquo;&lt;/h2&gt;
 &lt;p&gt;A company might have more than one location, so we will need a table to hold information about the various addresses they might have - &amp;lsquo;Sites&amp;rsquo;. This is the first example we have of adding a Relation field.
 If you want to learn more then please visit &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[guide 2 - video 2]
+&lt;p&gt;[guide 1.2 - video 2]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/psJRDyW3RMs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -393,7 +380,7 @@ If you want to learn more then please visit &lt;a href=&#34;https://docs.agileba
 &lt;h2 id=&#34;create-a-table-called-contacts&#34;&gt;Create a table called &amp;lsquo;Contacts&amp;rsquo;&lt;/h2&gt;
 &lt;p&gt;Let’s add another table of data that is related to an Organisation, the people who work there - &amp;lsquo;Contacts&amp;rsquo;.
 We will link to two tables, the organisation they work for and the site they primarily work from.&lt;/p&gt;
-&lt;p&gt;[guide 2 - video 3]
+&lt;p&gt;[guide 1.2 - video 3]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/Mrj6Iu7fxmg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -401,7 +388,7 @@ We will link to two tables, the organisation they work for and the site they pri
 &lt;h2 id=&#34;adding-tabs&#34;&gt;Adding tabs&lt;/h2&gt;
 &lt;p&gt;Viewing and adding data in isolation doesn’t feel very natural. What we want to do is look at an organisation’s records and see its list of contacts there and then. One way Agilebase does this is through adding ‘Tabs’ to a record.
 If you want to know more visit or documentation about &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/&#34;&gt;tabs&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[guide 2 - video 4]
+&lt;p&gt;[guide 1.2 - video 4]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/nRSQ3IARLVI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -452,7 +439,7 @@ If you are following along and want to build this table please copy the followin
 &lt;li&gt;Autofilling with a list of users. &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#lists-of-users&#34;&gt;Click here for more info&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;In this stage of our guide we are going to add the stages a typical Sales opportunity will pass through.
-[step 3 - video 1]
+[Guide 1.3 - video 1]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/1PzY64hPWlE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -462,7 +449,7 @@ If you are following along and want to build this table please copy the followin
 This is the basically the same as we’ve done before
 &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/#adding-views-that-show-all-the-tasks-that-have-been-createds&#34;&gt;Click here to see how add a view&lt;/a&gt;
 Before We set the interface option to be &amp;ldquo;Cards in Column&amp;rdquo; its important to move the controlling field to the top of the list. In this case we want ther Kanban board to be controlled by Status, therefore it should be the first DropDown field in the view.&lt;/p&gt;
-&lt;p&gt;[step 3 - video 2]
+&lt;p&gt;[Guide 1.3 - video 2]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/ydCtGAdgqjk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -471,7 +458,7 @@ Before We set the interface option to be &amp;ldquo;Cards in Column&amp;rdquo; i
 &lt;p&gt;Sales teams love graphs. After all, a picture says a thousand words, and agileBase has an easy to use graphing facility to help you show off the insights your data contains.
 Creating graphs can be done by any user, but it usually helps if the developers take the lead and build the obvious ones.&lt;/p&gt;
 &lt;p&gt;This video demonstrates adding a pie chart to show the number of Sales Opportunites by Source, and also a column graph to show volume of sales enquires over time. It also shows the advanced option of using Stcaking to add more insights.&lt;/p&gt;
-&lt;p&gt;[step 3 - video 3]
+&lt;p&gt;[Guide 1.3 - video 3]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/3FOOk8QS5RE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -546,7 +533,7 @@ Creating graphs can be done by any user, but it usually helps if the developers 
 &lt;li&gt;Click on the pencil icon above the record, if necessary, to edit the table&lt;/li&gt;
 &lt;li&gt;From the controls at the top of the list of existing fields:
 &lt;ul&gt;
-&lt;li&gt;Type in a field name, optional description, choose a type and press the &lt;em&gt;Create Field&lt;/em&gt; button&lt;/li&gt;
+&lt;li&gt;Type in a field name, optional description, choose a type and press the &lt;em&gt;Add&lt;/em&gt; button&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Optionally, drag and drop the field to a desired location relevant to other fields&lt;/li&gt;
@@ -708,6 +695,11 @@ Creating graphs can be done by any user, but it usually helps if the developers 
 &lt;li&gt;Open the &amp;lsquo;properties and options&amp;rsquo;&lt;/li&gt;
 &lt;li&gt;Scroll down to the bottom of the panel and press the &amp;lsquo;clone view&amp;rsquo; button&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;[snippet video  - cloning a view]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/zA2EEW7YLsA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
 &lt;h2 id=&#34;organising-into-a-navigation-structure&#34;&gt;Organising into a navigation structure&lt;/h2&gt;
 &lt;p&gt;On creating a view, its editing panel will open. One of the first things it&amp;rsquo;s useful to do is put the field in a tile - use the &lt;em&gt;Tile&lt;/em&gt; dropdown option, under &lt;em&gt;properties&lt;/em&gt; to do so.&lt;/p&gt;
 &lt;p&gt;Within a tile, the view can be added to a menu by editing the view name. Simply prefix the view name with a menu name and a dash. So for example, naming a view &lt;code&gt;contacts - all contacts&lt;/code&gt; will create a &amp;lsquo;contacts&amp;rsquo; menu containing the view &amp;lsquo;all contacts&amp;rsquo; visible to users.&lt;/p&gt;

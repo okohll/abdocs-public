@@ -30,7 +30,7 @@
 &lt;p&gt;In this step of the guide we will build the engine of our CRM and in doing so start to introduce the concept of a relational database. We will do this as a practical example and you’ll see how agilebase makes this straight forward. We will be building a bigger system, but for the most part it’s simply reusing things we’ve already covered.. Let’s start with building a table called ‘Organisations’&lt;/p&gt;
 &lt;h2 id=&#34;create-a-table-called-organisations&#34;&gt;Create a table called &amp;ldquo;Organisations&amp;rdquo;&lt;/h2&gt;
 &lt;p&gt;To get our CRM going we need somewhere to store information about the organisations we will interact with. This can easily be achieved by adding a new table, a tile and an initial view. If you need a quick refresher watch the video below, or if you need more detail go back to &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/&#34;&gt;step 1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[guide 2 - video 1]
+&lt;p&gt;[guide 1.2 - video 1]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/F-4Qp-5udsU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -38,7 +38,7 @@
 &lt;h2 id=&#34;create-a-table-called-sites&#34;&gt;Create a table called &amp;ldquo;Sites&amp;rdquo;&lt;/h2&gt;
 &lt;p&gt;A company might have more than one location, so we will need a table to hold information about the various addresses they might have - &amp;lsquo;Sites&amp;rsquo;. This is the first example we have of adding a Relation field.
 If you want to learn more then please visit &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[guide 2 - video 2]
+&lt;p&gt;[guide 1.2 - video 2]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/psJRDyW3RMs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -46,7 +46,7 @@ If you want to learn more then please visit &lt;a href=&#34;https://docs.agileba
 &lt;h2 id=&#34;create-a-table-called-contacts&#34;&gt;Create a table called &amp;lsquo;Contacts&amp;rsquo;&lt;/h2&gt;
 &lt;p&gt;Let’s add another table of data that is related to an Organisation, the people who work there - &amp;lsquo;Contacts&amp;rsquo;.
 We will link to two tables, the organisation they work for and the site they primarily work from.&lt;/p&gt;
-&lt;p&gt;[guide 2 - video 3]
+&lt;p&gt;[guide 1.2 - video 3]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/Mrj6Iu7fxmg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -54,7 +54,7 @@ We will link to two tables, the organisation they work for and the site they pri
 &lt;h2 id=&#34;adding-tabs&#34;&gt;Adding tabs&lt;/h2&gt;
 &lt;p&gt;Viewing and adding data in isolation doesn’t feel very natural. What we want to do is look at an organisation’s records and see its list of contacts there and then. One way Agilebase does this is through adding ‘Tabs’ to a record.
 If you want to know more visit or documentation about &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/&#34;&gt;tabs&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[guide 2 - video 4]
+&lt;p&gt;[guide 1.2 - video 4]
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/nRSQ3IARLVI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
