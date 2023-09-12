@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/guides/guide1-crm/cross_reference_and_automations/" /><meta property="article:section" content="guides" />
 
-<meta property="article:modified_time" content="2023-09-12T14:32:24+01:00" />
+<meta property="article:modified_time" content="2023-09-12T15:18:36+01:00" />
 <meta itemprop="name" content="5. Cross References and Automations">
 <meta itemprop="description" content="Introducing more advanced features such as cross referencing data and building a utomations">
-<meta itemprop="dateModified" content="2023-09-12T14:32:24+01:00" />
-<meta itemprop="wordCount" content="2285">
+<meta itemprop="dateModified" content="2023-09-12T15:18:36+01:00" />
+<meta itemprop="wordCount" content="2281">
 <meta itemprop="keywords" content="Citizen Developer level 3,Junior Software Architect,Cross References,Automations,email,buttons,PDFS," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="5. Cross References and Automations"/>
 <meta name="twitter:description" content="Introducing more advanced features such as cross referencing data and building a utomations"/>
@@ -99,9 +99,6 @@ if (!doNotTrack) {
       <li class="nav-item">
         <a class="nav-link" href="/docs/"><span>Docs</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/guides/full-videos/"><span>Full Video Guides</span></a>
-      </li>
       </ul>
   </div>
   <div class="d-none d-lg-block">
@@ -114,7 +111,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.405cdaf28411ad92acf8fddd5b5c1c3c.json"
+    data-offline-search-index-json-src="/offline-search-index.37d19b2ee7e18e164ae75addbda80439.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -139,7 +136,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.405cdaf28411ad92acf8fddd5b5c1c3c.json"
+    data-offline-search-index-json-src="/offline-search-index.37d19b2ee7e18e164ae75addbda80439.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -254,8 +251,8 @@ if (!doNotTrack) {
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/calculations/" data-taxonomy-term="calculations"><span class="taxonomy-label">Calculations</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/charts/" data-taxonomy-term="charts"><span class="taxonomy-label">charts</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer/" data-taxonomy-term="citizen-developer"><span class="taxonomy-label">Citizen Developer</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-1/" data-taxonomy-term="citizen-developer-level-1"><span class="taxonomy-label">Citizen Developer level 1</span><span class="taxonomy-count">8</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-2/" data-taxonomy-term="citizen-developer-level-2"><span class="taxonomy-label">Citizen Developer level 2</span><span class="taxonomy-count">29</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-1/" data-taxonomy-term="citizen-developer-level-1"><span class="taxonomy-label">Citizen Developer level 1</span><span class="taxonomy-count">9</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-2/" data-taxonomy-term="citizen-developer-level-2"><span class="taxonomy-label">Citizen Developer level 2</span><span class="taxonomy-count">30</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-3/" data-taxonomy-term="citizen-developer-level-3"><span class="taxonomy-label">Citizen Developer level 3</span><span class="taxonomy-count">11</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/core-user/" data-taxonomy-term="core-user"><span class="taxonomy-label">Core User</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/cross-references/" data-taxonomy-term="cross-references"><span class="taxonomy-label">Cross References</span><span class="taxonomy-count">1</span></a></li>
@@ -322,147 +319,153 @@ if (!doNotTrack) {
 </div>
 </p>
 <h2 id="getting-things-ready">Getting things ready</h2>
-<p>As a system starts to get bigger it helps to organise the &ldquo;behind the scenes&rdquo; views as much as the tiles and views that out users interact with. It is good practice to create a collection of System Tiles where you can file the &ldquo;behind the scenes&rdquo; work.
-We would suggest the following tiles:
-&ldquo;System - Cross Reference&rdquo; for the lookup style views that will add data to our forms
-&ldquo;System - Workflow&rdquo; for the automations
-&ldquo;System - Visibility&rdquo; for the rules that control the visibility of specific User Interface items
-&ldquo;System - Tabs&rdquo; for the views that control the list of child items seen on a forms tab<br>
-&ldquo;System - General&rdquo; for everything else</p>
+<p>As a system starts to get bigger it helps to organise the &ldquo;behind the scenes&rdquo; views as much as the tiles and views that out users interact with. It is good practice to create a collection of System Tiles where you can file the &ldquo;behind the scenes&rdquo; work.</p>
+<p>We would suggest the following tiles:</p>
+<ul>
+<li>&ldquo;System - Cross Reference&rdquo; for the lookup style views that will add data to our forms</li>
+<li>&ldquo;System - Workflow&rdquo; for the automations</li>
+<li>&ldquo;System - Visibility&rdquo; for the rules that control the visibility of specific User Interface items</li>
+<li>&ldquo;System - Tabs&rdquo; for the views that control the list of child items seen on a forms tab</li>
+<li>&ldquo;System - General&rdquo; for everything else</li>
+</ul>
 <h2 id="adding-look-up-data-to-a-form">Adding Look Up data to a Form</h2>
-<p>In this first example we want to show the user who the owner of the company is rather than letting the user set it.
-Start from the Tiles interface, and enter the build interface.
-We first need to build a view that will look up the data for us.
-Find the Sales Opportunity table, click to Edit, navigate to Names and Views, and Create a new view (with out all fields) in the Tile called ‘System - Cross Referenced’&hellip; Try using the name “xref - Sales Opportunity Organisation Owner”
-To find out who the company owner is we need to navigate the relational database. In this case, UP to the organisation, then DOWN to contacts.
-Add the joins!!!
-Typically, Cross reference views only have a few key fields of information&hellip;
-Add Name, tel and email
-However, we only want contacts that we know are the Owners, so add a filter on the contact role where Role contains &ldquo;Owner&rdquo;
-At this point its useful to look at the data and judge whetehr it seems about right
-Now we need to add this data to the Sales Opportunity.
-Go back and Edit the Sales Opportunity table and show the list of fields.
-Add a Cross reference Fields&quot;. They are just a special type of field that need a little bit more setting up than a regular field.
-Add the new field, name “Company Owner(s)”,  type cross referenced data
-Table to Use: Sales Opportunities
-View to use:  ‘xref - Sales Opportunity Organisation Owner’
-Move it to right place (probably near the top)
-Close the edit, navigate to a Sales opportunity record and see how it looks</p>
-<p><strong>TIPS</strong> You have a little bit of control how it appears on the form, by choosing ‘Tabular display’ and or the drop down ‘display of fields’</p>
+<p>In this first example we want to show the user who the owner of the company is rather than letting the user set it.</p>
+<p>Start from the Tiles interface, and enter the build interface.</p>
+<p>We first need to build a view that will look up the data for us.</p>
+<p>Find the Sales Opportunity table, click to Edit, navigate to Names and Views, and Create a new view (with out all fields) in the Tile called ‘System - Cross Referenced’&hellip; Try using the name “xref - Sales Opportunity Organisation Owner”</p>
+<p>To find out who the company owner is we need to navigate the relational database. In this case, UP to the organisation, then DOWN to contacts.</p>
+<p>Add the joins!!!</p>
+<p>Typically, Cross reference views only have a few key fields of information&hellip;</p>
+<p>Add Name, tel and email</p>
+<p>However, we only want contacts that we know are the Owners, so add a filter on the contact role where Role contains &ldquo;Owner&rdquo;</p>
+<p>At this point it&rsquo;s useful to look at the data and judge whether it seems about right</p>
+<p>Now we need to add this data to the Sales Opportunity.</p>
+<p>Go back and Edit the Sales Opportunity table and show the list of fields.</p>
+<p>Add a Cross reference field. This is just a special type of field that needs a little bit more setting up than a regular field.</p>
+<p>Add the new field, name “Company Owner(s)”,  set the type to &lsquo;cross referenced data&rsquo;</p>
+<p>Table to Use: Sales Opportunities</p>
+<p>View to use:  ‘xref - Sales Opportunity Organisation Owner’</p>
+<p>Move it to right place (probably near the top)</p>
+<p>Close the edit, navigate to a Sales opportunity record and see how it looks</p>
+<blockquote>
+<p>You have a little bit of control how it appears on the form, by choosing ‘Tabular display’ and or the drop down ‘display of fields’</p>
+</blockquote>
 <h2 id="automations---sending-an-email">Automations - sending an email</h2>
 <p>Our second example is going to demonstrate the power of Workflows. We can configure the system to be working when we’re not! We will now add an internal ‘Reminder’ email that will prompt the owner of our Sales opportunities to update their progress.
 You can read about this facility at <a href="/docs/workflows/send-email/">docs workflows - sending an email</a></p>
-<p>$$
-IMPORTANT NOTE - Whilst Agilebase can be used to send emails, it should NOT be used for marketing purposes. Rather it should be used as a method to notify people about data associated to the system. In this instance we are going to remind people that they have ‘Sales opportunities requiring updates’
-$$</p>
+<blockquote>
+<p>IMPORTANT NOTE - Whilst Agilebase can be used to send emails, it should NOT be used for marketing purposes. Rather it should be used as a method to notify people about data associated to the system. In this instance we are going to remind people that they have ‘Sales opportunities requiring updates’</p>
+</blockquote>
 <p>[guide 1.5 - video 2]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/CG4y7jclRK8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 </p>
 <h3 id="1-starting-from-the-view-of-tiles-enter-the-build-interface">1. Starting from the view of Tiles, enter the build interface.</h3>
-<p>We first need to create the Workflow that will do all the work for us.
-Find the Sales Opportunity table, click to Edit, navigate to Names and Views, and Create a new view (with out all fields) in the Tile called ‘System - Workflows’. We suggest a name like “WF email - Sales opportunities requiring updates”
-<strong>TIPS</strong> Prefixing with WF, along with some text, makes it clear to future developers what action the Workflow performs.</p>
+<p>We first need to create the Workflow that will do all the work for us.</p>
+<p>Find the Sales Opportunity table, click to Edit, navigate to Names and Views, and Create a new view (without all fields) in the Tile called ‘System - Workflows’. We suggest a name like “WF email - Sales opportunities requiring updates”</p>
+<blockquote>
+<p>Prefixing with WF, along with some text, makes it clear to future developers what action the Workflow performs.</p>
+</blockquote>
 <h3 id="2-our-intial-task-is-to-add-all-the-fields-we-wish-to-use-in-the-email">2. Our intial task is to add all the fields we wish to use in the email</h3>
-<p>Add the join to get the Main contact’s full name
-Add Title, Date of Enquiry, Main Contact, Owner, Last updated</p>
+<p>Add the join to get the Main contact’s full name</p>
+<p>Add Title, Date of Enquiry, Main Contact, Owner, Last updated</p>
 <h3 id="3-now-add-the-filters-so-we-only-get-the-records-that-need-chasing">3. Now Add the filters so we only get the records that need chasing.</h3>
-<p>Obviously we only want to chase Opportunities that have not been updated recently
-Add a filter for Last Updated that is older than 1 week
-We also only want to chase Opportunities that are ‘In Progress’. Our Status field uses a number prefix to make this easy&hellip; Opportunities that still need to be progressed have a prefix number lower than 4, therefore add a second filter for Status Less Than 4</p>
+<p>Obviously we only want to chase Opportunities that have not been updated recently</p>
+<p>Add a filter for Last Updated that is older than 1 week</p>
+<p>We also only want to chase Opportunities that are ‘In Progress’. Our Status field uses a number prefix to make this easy&hellip; Opportunities that still need to be progressed have a prefix number lower than 4, therefore add a second filter for Status Less Than 4</p>
 <h3 id="4-setup-the-email">4. Setup the email</h3>
-<p>Click on the &ldquo;Workflow - send emails&rdquo; option on the Left hand Side of the Edit pop-up.
-We are sending an internal ‘email notification’, so click the right hand option
-Set the options much like you would a mailmerge in Word. In agileBase you use the Curly brackets to let the system know where to insert the data (notice the list of fields available to you above the To input field.
-For example we want the &ldquo;To&rdquo; field is set to the {owner}
-Subject can be set to ‘Sales Opp Update needed for {title}‘
-And the Body of the email can be set to</p>
+<p>Click on the &ldquo;Workflow - send emails&rdquo; option on the Left hand Side of the Edit pop-up.</p>
+<p>We are sending an internal ‘email notification’, so click the right hand option</p>
+<p>Set the options much like you would a mailmerge in Word. In agileBase you use the Curly brackets to let the system know where to insert the data (notice the list of fields available to you above the To input field.</p>
+<p>For example we want the &ldquo;To&rdquo; field to be set to {owner}</p>
+<p>Subject can be set to ‘Sales Opp Update needed for {title}‘</p>
+<p>And the Body of the email can be set to</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">‘</span>Hi {owner}
 </span></span><span style="display:flex;"><span>You have a Sales opportunity called <span style="color:#f92672">-</span> {Title} <span style="color:#f92672">from</span> {Date of Enquiry} that has <span style="color:#f92672">not</span> been updated since {Last updated}<span style="color:#f92672">.</span> Please contact {full name} <span style="color:#f92672">and</span> do what a good salesperson does <span style="color:#f92672">and</span> close the deal<span style="color:#960050;background-color:#1e0010">!!!</span>
 </span></span><span style="display:flex;"><span>Regards
-</span></span><span style="display:flex;"><span>Your AgileBase Overlords<span style="color:#960050;background-color:#1e0010">’</span>
+</span></span><span style="display:flex;"><span>Agilebase<span style="color:#960050;background-color:#1e0010">’</span>
 </span></span></code></pre></div><p>The system will colour the text red if you get any of the merge fields incorrect</p>
 <h3 id="5-setting-up-the-workflow">5. Setting up the workflow</h3>
-<p>Set the Workflow to run everyday
-Set the Log send time and choose every 24 hours. Once set to 24hours you can specify a time the workflow should run. Dont forget to log when it sends to a new field called ‘wf_SalesOpDateChaseSent’
-Behind the scenes agileBase has automatically added a filter that means this Workflow will only ever chase once. Whilst this is probably the case in 90% of cases when we chase things by email, in this example we want to chase every 7 days. So we can alter the Filter.
-Navigate to the filters option
-Remove the automatically created filter on ‘wf_SalesOpDateChaseSent’.
-Now, add one back in with ‘wf_SalesOpDateChaseSent’ must be older than a week, and then click the ‘or blank’.
-Finally, if you click on the view title, the display will load in the list of records that the system will email next time the Workflow runs - which should be tomorrow at your specified time.</p>
+<p>Set the Workflow to run everyday</p>
+<p>Set the Log send time and choose every 24 hours. Once set to 24hours you can specify a time the workflow should run. Dont forget to log when it sends to a new field called ‘wf_SalesOpDateChaseSent’</p>
+<p>Behind the scenes agileBase has automatically added a filter that means this Workflow will only ever chase once. Whilst this is probably the case in 90% of cases when we chase things by email, in this example we want to chase every 7 days. So we can alter the Filter.</p>
+<p>Navigate to the filters option</p>
+<p>Remove the automatically created filter on ‘wf_SalesOpDateChaseSent’.</p>
+<p>Now, add one back in with ‘wf_SalesOpDateChaseSent’ must be older than a week, and then click the ‘or blank’.</p>
+<p>Finally, if you click on the view title, the display will load in the list of records that the system will email next time the Workflow runs - which should be tomorrow at your specified time.</p>
 <p><strong>TIPS</strong>
-Go to ‘Properties and options’, and set the ‘Row limit’ to 1
-You’ll see the view only has one item in it.
-If we now go to ‘workflow - edit records’, we can press ‘Run Workflow Now’, and it will only send the one email!
-We can also see evidence of the email being sent in the Logs, recent messages section.</p>
-<p>Now don&rsquo;t forget to go back and remove the Row limit!!!”</p>
+Go to ‘Properties and options’, and set the ‘Row limit’ to 1</p>
+<p>You’ll see the view only has one item in it.</p>
+<p>If we now go to ‘workflow - edit records’, we can press ‘Run Workflow Now’, and it will only send the one email!</p>
+<p>We can also see evidence of the email being sent in the Logs, recent messages section.</p>
+<p>Now don&rsquo;t forget to go back and remove the Row limit!”</p>
 <h2 id="a-look-at-the-chaser">A look at the &ldquo;Chaser&rdquo;</h2>
-<p>The email notification option usually sends a single email per record. The Chaser is a built in feature that is preconfigured to send repeat emails. This is a bigger, more feature rich version of what we just setup. Again, it’s something that runs in the background.
-It’s specifically aimed at automating those emails you send to 3rd parties chasing for specific information. But can also be used for internal chasers&hellip; which is what we are going to demonstrate with a chaser for Outstanding Tasks”</p>
+<p>The email notification option usually sends a single email per record. The Chaser is a built in feature that is preconfigured to send repeat emails. This is a bigger, more feature rich version of what we just setup. Again, it’s something that runs in the background.</p>
+<p>It’s specifically aimed at automating those emails you send to 3rd parties chasing for specific information. But can also be used for internal chasers&hellip; which is what we are going to demonstrate with a chaser for Outstanding Tasks”</p>
 <p>[guide 1.5 - video 2a]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/bAF7T_Ip2eA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 </p>
 <h3 id="setting-up-a-chaser">Setting Up a chaser</h3>
-<p>Go in to development mode and find the Tasks table.
-As we’ve done before add a new view to the workflow tile and call it ‘wf chaser - outstanding tasks’.
-Go to the send emails option and choose the chaser option.
-Click the first tickbox and enable the chaser.
-The system does a lot of the heavy lifting for you, adding fields, and creating the calcs and views needed for it to work, but dont forget to check what time of day you wish the chaser to run.</p>
+<p>Go in to development mode and find the Tasks table.</p>
+<p>As we’ve done before add a new view to the workflow tile and call it ‘wf chaser - outstanding tasks’.</p>
+<p>Go to the send emails option and choose the chaser option.</p>
+<p>Click the first tickbox and enable the chaser.</p>
+<p>The system does a lot of the heavy lifting for you, adding fields, and creating the calcs and views needed for it to work, but dont forget to check what time of day you wish the chaser to run.</p>
 <p><img src="/workflow_chaser.png" alt="List of fields created and added by the chaser"></p>
-<p>You can see in the screeshot above how the system has created several calculations setting things like ‘Chase every’ and ‘escalate after’ and ‘escalate to’ which the system references to control the way the chaser works.
-For more information please visit <a href="/docs/workflows/send-chaser/">docs sending a chaser</a></p>
-<p>At a bare minimum you will need to change who we are sending the email to.
-Edit the “To” calculation and change it to be the “assigned to” user.
-And add the appropriate filters which in this case are when the “Due” date has passed (older than 1 day). And the status is not equal to completed.</p>
+<p>You can see in the screeshot above how the system has created several calculations setting things like ‘Chase every’ and ‘escalate after’ and ‘escalate to’ which the system references to control the way the chaser works.</p>
+<p>For more information please visit <a href="/docs/workflows/send-chaser/">docs sending a chaser</a></p>
+<p>At a bare minimum you will need to change who we are sending the email to.</p>
+<p>Edit the “To” calculation and change it to be the “assigned to” user.</p>
+<p>And add the appropriate filters which in this case are when the “Due” date has passed (older than 1 day). And the status is not equal to completed.</p>
 <p>Sepping back and looking at the data returned by the view we can see in its current form the chaser will send an email every 8 days, and after 5 attempts will stop but as we have NOT set the escalate to field no one will be notified that this task has failed to be completed!!!</p>
 <h2 id="adding-a-button-to-a-form">Adding a button to a form</h2>
 <p>In this third example we want to add a button to the user interface so that when the Sales Opportunity is won, we want that button to set the status AND log who did it AND when!</p>
-<p>Start from the Tiles interface, and enter the build interface.
-We first need to build a Workflow that will do the actual work of setting the data for us.
-Find the Sales Opportunity table, click to Edit, navigate to Names and Views, and Create a new view (with out all fields) in the Tile called ‘System - Workflows’. We suggest a name like “Sales opportunity WON”
-N.b. We have NOT prefixed this workflow ad the Name of the view will what the User sees on the form&rsquo;s interface</p>
+<p>Start from the Tiles interface, and enter the build interface.</p>
+<p>We first need to build a Workflow that will do the actual work of setting the data for us.</p>
+<p>Find the Sales Opportunity table, click to Edit, navigate to Names and Views, and Create a new view (without all fields) in the Tile called ‘System - Workflows’. We suggest a name like “Sales opportunity WON”</p>
+<p>N.b. We have NOT prefixed this workflow and the name of the view will be what the user sees on the form&rsquo;s interface</p>
 <p>[guide 1.5 - video 3]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/QkkFtW2CpuU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 </p>
 <h3 id="1-setting-data">1. Setting DATA</h3>
-<p>For our workflow to set data we need to create a calculation.
-We learnt how to create calculations in a previous video
-In this case we want a ‘text’ calculation.
-It is essential that we use the same name as the field we wish to set. In this case ‘Status’.
-The correct way to write SQL for Text fields involves using single quotes to hold our value. It is also important that we set the field to be the right option in our Status drop down -  in this case it must include the number prefix. Set the calculation value to be&hellip;</p>
+<p>For our workflow to set data we need to create a calculation.</p>
+<p>We learnt how to create calculations in a previous video</p>
+<p>In this case we want a ‘text’ calculation.</p>
+<p>It is essential that we use the same name as the field we wish to set. In this case ‘Status’.</p>
+<p>The correct way to write SQL for Text fields involves using single quotes to hold our value. It is also important that we set the field to be the right option in our Status drop down -  in this case it must include the number prefix. Set the calculation value to be&hellip;</p>
 <pre tabindex="0"><code>‘4) Won’ 
-</code></pre><p>We also want to set WHO closed the Sales Op. This is another text field but this time the destination field is called ‘closed by’.”
-We can use a special bit of SQL called a variable to find out who is logged in.</p>
+</code></pre><p>We also want to set WHO closed the Sales Op. This is another text field but this time the destination field is called ‘closed by’.”</p>
+<p>We can use a special bit of SQL called a variable to find out who is logged in.</p>
 <p><img src="/calculation_variables.png" alt="List of variables avaialble to a calculation"></p>
 <p>From the list above we can see we need our calculation text to be</p>
 <pre tabindex="0"><code>ab_userid()
 </code></pre><h3 id="3-setting-up-the-workflow">3. Setting up the WORKFLOW</h3>
-<p>Finally we need to turn this view into a Workflow that does something!
-If we choose the workflow - edit records section we can change the Action to ‘Update the Matching Sales Opportunity’
-We can use the fact that the system needs to store the date it perfomed the action by setting &ldquo;log update to&rdquo; to the exisitng &ldquo;Closed date” field
-We will leave Frequency as ‘Manual’ as we want the user to use a button to fire this workflow</p>
+<p>Finally we need to turn this view into a Workflow that does something!</p>
+<p>If we choose the workflow - edit records section we can change the Action to ‘Update the Matching Sales Opportunity’</p>
+<p>We can use the fact that the system needs to store the date it perfomed the action by setting &ldquo;log update to&rdquo; to the exisitng &ldquo;Closed date” field</p>
+<p>We will leave Frequency as ‘Manual’ as we want the user to use a button to fire this workflow</p>
 <h3 id="adding-the-button-to-the-ui">Adding the Button to the UI</h3>
-<p>At last we are ready to add the button to the user interface
-Go back to Edit Sales opportunity table and show the list of fields
-Buttons are just Cross reference Fields that are setup to be workflows
-Add the new field to the table&hellip; name “BTN - Sales Op WON”,  type cross referenced data
-Table to Use: Sales Opportunities
-View to use:  ‘Sales Op WON’
-Move it to right place, probably near the bottom, and see how it looks</p>
+<p>At last we are ready to add the button to the user interface</p>
+<p>Go back to Edit Sales opportunity table and show the list of fields</p>
+<p>Buttons are just Cross reference Fields that are setup to be workflows</p>
+<p>Add the new field to the table&hellip; name “BTN - Sales Op WON”,  type cross referenced data</p>
+<p>Table to Use: Sales Opportunities</p>
+<p>View to use:  ‘Sales Op WON’</p>
+<p>Move it to right place, probably near the bottom, and see how it looks</p>
 <h3 id="hiding-the-button-when-we-dont-want-it">Hiding the button when we dont want it!!!</h3>
-<p>First of all try pressing the button
-You can see that the status is now Won
-However, at the moment, even though the button has been pressed and we’ve set the status to Won we can still press the button again!!!
-To stop this we need to apply a visibility rule to that Button to hide it. In this case we want the button to be hidden if the Sales opportunity is already marked as Won.</p>
+<p>First of all try pressing the button</p>
+<p>You can see that the status is now Won</p>
+<p>However, at the moment, even though the button has been pressed and we’ve set the status to Won we can still press the button again!!!</p>
+<p>To stop this we need to apply a visibility rule to that button to hide it. In this case we want the button to be hidden if the sales opportunity is already marked as Won.</p>
 <p><img src="/button_visibility_rule.png" alt="Visibility rule added to the field"></p>
-<p>Go back to Edit Sales opportunity table, show the list of fields and click to edit the BTN field
-Scroll down a little and you can see the section about Field Visibility.
-Simply set the filter required - In our case this means the status value is less than 4 as seen in the screenshot above.</p>
+<p>Go back to Edit Sales opportunity table, show the list of fields and click to edit the BTN field</p>
+<p>Scroll down a little and you can see the section about Field Visibility.</p>
+<p>Simply set the filter required - In our case this means the status value is less than 4 as seen in the screenshot above.</p>
 <h2 id="other-types-of-automations">Other types of Automations</h2>
 <p>There are several other types of automations&hellip; we’ve already seen sending emails in this guide, but you can also create new records and generate PDFs. If you are interested please take a look at our other guides linked below and the associated documentation</p>
 <p><a href="/docs/workflows/send-chaser/">List of different types of workflows</a></p>
@@ -529,7 +532,7 @@ Simply set the filter required - In our case this means the status value is less
 
 		<br />
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified September 12, 2023: <a href="https://github.com/okohll/abdocs/commit/2f0deaaaa4f334b3ef6c773a4e4f3f3c49a33ad5">Link trailing slashes (2f0deaa)</a>
+  Last modified September 12, 2023: <a href="https://github.com/okohll/abdocs/commit/ad686192041ec5cd3ed2452817c5b92ca6db0eb3">Learner progression levels under introduction (ad68619)</a>
 </div>
 
 </div>

@@ -105,28 +105,14 @@ From now on, when you click on the CRM tile it goes straight to the most useful 
 &lt;h3 id=&#34;setting-up-the-chart&#34;&gt;Setting up the chart&lt;/h3&gt;
 &lt;p&gt;Press ‘add chart or map’ and work your way through the steps.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Add data for the x-axis&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;For this example we can show the distribution in age of the Organisation records.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;We can therefore choose Incorporation Date for the X axis, specifically &amp;lsquo;by Year&amp;rsquo;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;For the Y-axis we want to know how many, which is a ‘Count’ of each Organisation record.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;We can skip advanced settings and choose an appropriate Chart type. In this example ‘Packed Columns”&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Finally we can change the name of the chart, and press save.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Hopefully a picture says a thousand words as we look at the graph!&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;Add data for the x-axis&lt;/li&gt;
+&lt;li&gt;For this example we can show the distribution in age of the Organisation records.&lt;/li&gt;
+&lt;li&gt;We can therefore choose Incorporation Date for the X axis, specifically &amp;lsquo;by Year&amp;rsquo;.&lt;/li&gt;
+&lt;li&gt;For the Y-axis we want to know how many, which is a ‘Count’ of each Organisation record.&lt;/li&gt;
+&lt;li&gt;We can skip advanced settings and choose an appropriate Chart type. In this example ‘Packed Columns”&lt;/li&gt;
+&lt;li&gt;Finally we can change the name of the chart, and press save.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;Hopefully a picture says a thousand words as we look at the graph!&lt;/p&gt;
 &lt;p&gt;For more information about graphs in agilebase please have a look at &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;docs charting&lt;/a&gt;&lt;/p&gt;
 
       </description>

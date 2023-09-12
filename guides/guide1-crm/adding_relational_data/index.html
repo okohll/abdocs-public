@@ -25,10 +25,10 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/" /><meta property="article:section" content="guides" />
 <meta property="article:published_time" content="2023-08-16T13:00:00+01:00" />
-<meta property="article:modified_time" content="2023-08-31T17:31:58+01:00" />
+<meta property="article:modified_time" content="2023-09-12T15:18:36+01:00" />
 <meta itemprop="name" content="2. Capturing Company and Contact data (Introducing Relational Databases)">
 <meta itemprop="description" content="Introducing the power of Relational Databases... adding the ability to capture Company and Contact information to start building our CRM."><meta itemprop="datePublished" content="2023-08-16T13:00:00+01:00" />
-<meta itemprop="dateModified" content="2023-08-31T17:31:58+01:00" />
+<meta itemprop="dateModified" content="2023-09-12T15:18:36+01:00" />
 <meta itemprop="wordCount" content="416">
 <meta itemprop="keywords" content="Citizen Developer level 2,v6,Relational Data,tabs," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="2. Capturing Company and Contact data (Introducing Relational Databases)"/>
@@ -99,9 +99,6 @@ if (!doNotTrack) {
       <li class="nav-item">
         <a class="nav-link" href="/docs/"><span>Docs</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/guides/full-videos/"><span>Full Video Guides</span></a>
-      </li>
       </ul>
   </div>
   <div class="d-none d-lg-block">
@@ -114,7 +111,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.405cdaf28411ad92acf8fddd5b5c1c3c.json"
+    data-offline-search-index-json-src="/offline-search-index.37d19b2ee7e18e164ae75addbda80439.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -139,7 +136,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.405cdaf28411ad92acf8fddd5b5c1c3c.json"
+    data-offline-search-index-json-src="/offline-search-index.37d19b2ee7e18e164ae75addbda80439.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -234,8 +231,8 @@ if (!doNotTrack) {
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/calculations/" data-taxonomy-term="calculations"><span class="taxonomy-label">Calculations</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/charts/" data-taxonomy-term="charts"><span class="taxonomy-label">charts</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer/" data-taxonomy-term="citizen-developer"><span class="taxonomy-label">Citizen Developer</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-1/" data-taxonomy-term="citizen-developer-level-1"><span class="taxonomy-label">Citizen Developer level 1</span><span class="taxonomy-count">8</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-2/" data-taxonomy-term="citizen-developer-level-2"><span class="taxonomy-label">Citizen Developer level 2</span><span class="taxonomy-count">29</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-1/" data-taxonomy-term="citizen-developer-level-1"><span class="taxonomy-label">Citizen Developer level 1</span><span class="taxonomy-count">9</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-2/" data-taxonomy-term="citizen-developer-level-2"><span class="taxonomy-label">Citizen Developer level 2</span><span class="taxonomy-count">30</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-3/" data-taxonomy-term="citizen-developer-level-3"><span class="taxonomy-label">Citizen Developer level 3</span><span class="taxonomy-count">11</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/core-user/" data-taxonomy-term="core-user"><span class="taxonomy-label">Core User</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/cross-references/" data-taxonomy-term="cross-references"><span class="taxonomy-label">Cross References</span><span class="taxonomy-count">1</span></a></li>
@@ -317,16 +314,18 @@ We will link to two tables, the organisation they work for and the site they pri
 </div>
 </p>
 <h2 id="adding-tabs">Adding tabs</h2>
-<p>Viewing and adding data in isolation doesn’t feel very natural. What we want to do is look at an organisation’s records and see its list of contacts there and then. One way Agilebase does this is through adding ‘Tabs’ to a record.
-If you want to know more visit or documentation about <a href="/docs/tables/hierarchy-navigation/tabs/">tabs</a></p>
+<p>Viewing and adding data in isolation doesn’t feel very natural. What we want to do is look at an organisation’s records and see its list of contacts there and then. One way Agilebase does this is through adding ‘Tabs’ to a record.</p>
+<blockquote>
+<p>If you want to know more visit or documentation about <a href="/docs/tables/hierarchy-navigation/tabs/">tabs</a></p>
+</blockquote>
 <p>[guide 1.2 - video 4]
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/nRSQ3IARLVI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 </p>
 <h2 id="optional---linking-tasks-to-organisations">OPTIONAL - Linking Tasks to Organisations</h2>
-<p>At this point you may decide to upgrade the Task system we created previously. If you want to do this you will need to update the Tasks table to have a Parent Org, adding a Relation field (to organisation) and then adding the new Tab to the Organisation table just as we’ve done before.
-You might also want to go back in to some of the views people use to access tasks and add a field so they know which organisation it&rsquo;s for.</p>
+<p>At this point you may decide to upgrade the Task system we created previously. If you want to do this you will need to update the Tasks table to have a Parent Org, adding a Relation field (to organisation) and then adding the new Tab to the Organisation table just as we’ve done before.</p>
+<p>You might also want to go back in to some of the views people use to access tasks and add a field so they know which organisation it&rsquo;s for.</p>
 
 	<style>
   .feedback--answer {
@@ -390,7 +389,7 @@ You might also want to go back in to some of the views people use to access task
 
 		<br />
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified August 31, 2023: <a href="https://github.com/okohll/abdocs/commit/32b031b111bf04850e738e6014bf72b28b65a962">more updating Guides (32b031b)</a>
+  Last modified September 12, 2023: <a href="https://github.com/okohll/abdocs/commit/ad686192041ec5cd3ed2452817c5b92ca6db0eb3">Learner progression levels under introduction (ad68619)</a>
 </div>
 
 </div>

@@ -15,5 +15,84 @@
       
     
     
+    <item>
+      <title>Docs: Citizen Developer Level 1</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-1/</link>
+      <pubDate>Mon, 12 Sep 2022 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-1/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;This is the start of the Agilebase journey. At this level you can create your own customisations, using no coding.&lt;/p&gt;
+&lt;p&gt;An Agilebase citizen developer can create &amp;lsquo;personal copies&amp;rsquo; of any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; and edit those copies&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;remove or add fields, excepting any that are marked &amp;lsquo;confidential&amp;rsquo; (only higher level developers can access those fields)&lt;/li&gt;
+&lt;li&gt;rearrange fields&lt;/li&gt;
+&lt;li&gt;change field sorting&lt;/li&gt;
+&lt;li&gt;add filters or remove filters (except on &amp;lsquo;confidential&amp;rsquo; fields)&lt;/li&gt;
+&lt;li&gt;add and remove &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;charts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A confidential field is one that has a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;visibility&lt;/a&gt; rule, or is used for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The personal copy of the view is seen only by them. For example, a citizen developer may create a list of records filtered to show ones assigned to them. Everyone else in the organisation sees only the original view.&lt;/p&gt;
+&lt;p&gt;You earn the Citizen Developer title once you have carried out standard functions. These include adding and editing records. The title is assigned to internal staff not to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/community-users/&#34;&gt;community users&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
+&lt;p&gt;Visit our helpful introductory guide to personalising your agileBase experience by visiting &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide2-personalisation/&#34;&gt;Guide 2 - Personalisation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For more information about:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Accessing &lt;a href=&#34;https://docs.agilebase.co.uk/docs/introduction/development-mode/&#34;&gt;Developer mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/built-in-charting/&#34;&gt;Built in Charting&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Citizen Developer Level 2</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-2/</link>
+      <pubDate>Mon, 12 Sep 2022 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-2/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;You are now well on your way through the Agilebase journey.&lt;/p&gt;
+&lt;p&gt;This level is suggested or &amp;lsquo;unlocked&amp;rsquo; once a citizen developer has carried out a certain number of citizen development functions and has therefore started to learn how no code development works in a safe environment.&lt;/p&gt;
+&lt;p&gt;However to activate the level, it must be manually assigned by a Software Architect level user, as it allows changes to the system which can affect other users.&lt;/p&gt;
+&lt;p&gt;A citizen developer level 2 can&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;create new views that everyone can see, from any table
+&lt;ul&gt;
+&lt;li&gt;edit them as per the citizen developer functionality above&lt;/li&gt;
+&lt;li&gt;additionally they can add and remove simple joins, to include data from other tables in a view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;remove views that they themselves have created (not those that others have)&lt;/li&gt;
+&lt;li&gt;create their own &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;tables&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;add, edit and remove fields and tabs from those tables&lt;/li&gt;
+&lt;li&gt;edit basic properties of the fields&lt;/li&gt;
+&lt;li&gt;assign privileges (up to edit) on those tables, using existing roles or direct user privileges&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;create &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt; and delete tiles they&amp;rsquo;ve added themselves&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
+&lt;p&gt;Learn how to add functionality by watching our guide &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/&#34;&gt;Creating a basic task list&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For more information about:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;Relational Database Concepts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/&#34;&gt;Adding and editing tables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;What is a view&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;COMING SOON How to control the Interface&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
