@@ -98,20 +98,36 @@ From now on, when you click on the CRM tile it goes straight to the most useful 
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;adding-a-chart&#34;&gt;Adding a Chart&lt;/h2&gt;
-&lt;p&gt;Navigate to the view containing the data for your chart
-As a Citizen Developer level 1 you are able to add charts to your own views.
-You don’t need to be in developer mode, simply click the graph icon top right.
-&lt;img src=&#34;https://docs.agilebase.co.uk/graph-button.png&#34; alt=&#34;Location of the graph button&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Navigate to the view containing the data for your chart&lt;/p&gt;
+&lt;p&gt;As a Citizen Developer level 1 you are able to add charts to your own views.&lt;/p&gt;
+&lt;p&gt;You don’t need to be in developer mode, simply click the graph icon top right.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/graph-button.png&#34; alt=&#34;Location of the graph button&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;setting-up-the-chart&#34;&gt;Setting up the chart&lt;/h3&gt;
-&lt;p&gt;Press ‘add chart or map’ and work your way through the steps.
-Add data for the x-axis
-For this example we can show the distribution in age of the Organisation records.
-We can therefore choose Incorporation Date for the X axis, specifically ‘by Year’.
-For the Y-axis we want to know how many, which is a ‘Count’ of each Organisation record.
-We can skip advanced settings and choose an appropriate Chart type. In this example ‘Packed Columns”
-Finally we can change the name of the chart, and press save.
-Hopefully a picture says a thousand words as we look at the graph!
-For more information about graphs in agilebase please have a look at &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;docs charting&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Press ‘add chart or map’ and work your way through the steps.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Add data for the x-axis&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For this example we can show the distribution in age of the Organisation records.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We can therefore choose Incorporation Date for the X axis, specifically &amp;lsquo;by Year&amp;rsquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For the Y-axis we want to know how many, which is a ‘Count’ of each Organisation record.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We can skip advanced settings and choose an appropriate Chart type. In this example ‘Packed Columns”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally we can change the name of the chart, and press save.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hopefully a picture says a thousand words as we look at the graph!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For more information about graphs in agilebase please have a look at &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;docs charting&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
