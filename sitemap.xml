@@ -9,13 +9,16 @@
     <lastmod>2022-10-20T10:51:42+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/guides/</loc>
-    <lastmod>2023-08-31T17:31:58+01:00</lastmod>
+    <lastmod>2023-10-03T11:55:22+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/introduction/</loc>
     <lastmod>2022-10-20T10:51:42+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/the-user-experience/</loc>
     <lastmod>2022-10-20T10:51:42+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/docs/introduction/development-mode/</loc>
+    <lastmod>2023-10-03T11:55:22+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/introduction/</loc>
     <lastmod>2022-10-20T15:08:44+01:00</lastmod>
@@ -25,9 +28,6 @@
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/introduction/learner-progression/</loc>
     <lastmod>2023-08-10T16:07:29+01:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/docs/introduction/development-mode/</loc>
-    <lastmod>2023-03-23T15:57:26+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/</loc>
     <lastmod>2023-09-12T14:52:29+01:00</lastmod>
@@ -50,14 +50,14 @@
     <loc>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/community-users/</loc>
     <lastmod>2023-04-06T13:38:56+01:00</lastmod>
   </url><url>
+    <loc>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-1/</loc>
+    <lastmod>2023-10-03T11:55:22+01:00</lastmod>
+  </url><url>
     <loc>https://docs.agilebase.co.uk/guides/guide2-personalisation/creating_personal_views/</loc>
     <lastmod>2023-09-12T13:53:43+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/guides/guide2-personalisation/</loc>
-    <lastmod>2023-08-31T17:31:58+01:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-1/</loc>
-    <lastmod>2023-09-12T15:18:36+01:00</lastmod>
+    <lastmod>2023-10-03T11:55:22+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</loc>
     <lastmod>2023-08-31T17:31:58+01:00</lastmod>
@@ -77,14 +77,14 @@
     <loc>https://docs.agilebase.co.uk/docs/tiles/</loc>
     <lastmod>2023-08-10T16:07:29+01:00</lastmod>
   </url><url>
+    <loc>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-2/</loc>
+    <lastmod>2023-10-03T11:55:22+01:00</lastmod>
+  </url><url>
     <loc>https://docs.agilebase.co.uk/guides/guide2-personalisation/creating_personal_charts/</loc>
     <lastmod>2023-09-12T15:18:36+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/</loc>
     <lastmod>2023-09-12T15:18:36+01:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-2/</loc>
-    <lastmod>2023-09-12T15:26:11+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/</loc>
     <lastmod>2022-10-20T15:20:52+01:00</lastmod>
@@ -240,7 +240,7 @@
     <lastmod>2022-10-20T15:08:44+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/guides/full-videos/</loc>
-    <lastmod>2023-09-12T15:06:02+01:00</lastmod>
+    <lastmod>2023-10-03T11:55:22+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/views/special-uses/</loc>
     <lastmod>2022-10-20T15:08:44+01:00</lastmod>
@@ -392,19 +392,22 @@
     <loc>https://docs.agilebase.co.uk/tags/citizen-developer/</loc>
     <lastmod>2023-09-12T14:52:29+01:00</lastmod>
   </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/citizen-developer-level-1/</loc>
+    <lastmod>2023-10-03T11:55:22+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/citizen-developer-level-2/</loc>
+    <lastmod>2023-10-03T11:55:22+01:00</lastmod>
+  </url><url>
     <loc>https://docs.agilebase.co.uk/tags/learner-progression/</loc>
     <lastmod>2023-09-12T14:52:29+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/</loc>
-    <lastmod>2023-09-12T15:26:11+01:00</lastmod>
+    <lastmod>2023-10-03T11:55:22+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/access-control/</loc>
     <lastmod>2023-09-12T13:53:43+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/charts/</loc>
-    <lastmod>2023-09-12T15:18:36+01:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/citizen-developer-level-1/</loc>
     <lastmod>2023-09-12T15:18:36+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/junior-software-architect/</loc>
@@ -421,9 +424,6 @@
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/calculations/</loc>
     <lastmod>2023-09-12T15:18:36+01:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/citizen-developer-level-2/</loc>
-    <lastmod>2023-09-12T15:26:11+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/citizen-developer-level-3/</loc>
     <lastmod>2023-09-12T15:18:36+01:00</lastmod>
@@ -444,7 +444,7 @@
     <lastmod>2023-09-12T15:18:36+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/v6/</loc>
-    <lastmod>2023-09-12T15:18:36+01:00</lastmod>
+    <lastmod>2023-10-03T11:55:22+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/software-architect/</loc>
     <lastmod>2023-08-31T17:31:58+01:00</lastmod>

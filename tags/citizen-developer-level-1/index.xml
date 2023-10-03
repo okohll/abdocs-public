@@ -5,7 +5,7 @@
     <description>Recent content in Citizen Developer level 1 on Agilebase docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 31 Aug 2023 13:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 12 Sep 2023 13:00:00 +0100</lastBuildDate>
     
 	  <atom:link href="https://docs.agilebase.co.uk/tags/citizen-developer-level-1/index.xml" rel="self" type="application/rss+xml" />
     
@@ -120,6 +120,41 @@
     </item>
     
     <item>
+      <title>Docs: Citizen Developer Level 1</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-1/</link>
+      <pubDate>Tue, 12 Sep 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-1/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;This is the start of the Agilebase journey. At this level you can create your own customisations, using no coding.&lt;/p&gt;
+&lt;p&gt;An Agilebase citizen developer can create &amp;lsquo;personal copies&amp;rsquo; of any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; and edit those copies&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;remove or add fields, excepting any that are marked &amp;lsquo;confidential&amp;rsquo; (only higher level developers can access those fields)&lt;/li&gt;
+&lt;li&gt;rearrange fields&lt;/li&gt;
+&lt;li&gt;change field sorting&lt;/li&gt;
+&lt;li&gt;add filters or remove filters (except on &amp;lsquo;confidential&amp;rsquo; fields)&lt;/li&gt;
+&lt;li&gt;add and remove &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;charts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A confidential field is one that has a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;visibility&lt;/a&gt; rule, or is used for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The personal copy of the view is seen only by them. For example, a citizen developer may create a list of records filtered to show ones assigned to them. Everyone else in the organisation sees only the original view.&lt;/p&gt;
+&lt;p&gt;You earn the Citizen Developer title once you have carried out standard functions. These include adding and editing records. The title is assigned to internal staff not to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/community-users/&#34;&gt;community users&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
+&lt;p&gt;Visit our helpful introductory guide to personalising your agileBase experience by visiting &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide2-personalisation/&#34;&gt;Guide 2 - Personalisation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For more information about:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Accessing &lt;a href=&#34;https://docs.agilebase.co.uk/docs/introduction/development-mode/&#34;&gt;Developer mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/built-in-charting/&#34;&gt;Built in Charting&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Guides: 1. Personalising our CRM</title>
       <link>https://docs.agilebase.co.uk/guides/guide2-personalisation/creating_personal_views/</link>
       <pubDate>Thu, 31 Aug 2023 13:00:00 +0100</pubDate>
@@ -193,41 +228,6 @@ From now on, when you click on the CRM tile it goes straight to the most useful 
         
         
         
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Citizen Developer Level 1</title>
-      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-1/</link>
-      <pubDate>Mon, 12 Sep 2022 13:00:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-1/</guid>
-      <description>
-        
-        
-        &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
-&lt;p&gt;This is the start of the Agilebase journey. At this level you can create your own customisations, using no coding.&lt;/p&gt;
-&lt;p&gt;An Agilebase citizen developer can create &amp;lsquo;personal copies&amp;rsquo; of any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; and edit those copies&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;remove or add fields, excepting any that are marked &amp;lsquo;confidential&amp;rsquo; (only higher level developers can access those fields)&lt;/li&gt;
-&lt;li&gt;rearrange fields&lt;/li&gt;
-&lt;li&gt;change field sorting&lt;/li&gt;
-&lt;li&gt;add filters or remove filters (except on &amp;lsquo;confidential&amp;rsquo; fields)&lt;/li&gt;
-&lt;li&gt;add and remove &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;charts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A confidential field is one that has a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;visibility&lt;/a&gt; rule, or is used for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The personal copy of the view is seen only by them. For example, a citizen developer may create a list of records filtered to show ones assigned to them. Everyone else in the organisation sees only the original view.&lt;/p&gt;
-&lt;p&gt;You earn the Citizen Developer title once you have carried out standard functions. These include adding and editing records. The title is assigned to internal staff not to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/community-users/&#34;&gt;community users&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
-&lt;p&gt;Visit our helpful introductory guide to personalising your agileBase experience by visiting &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide2-personalisation/&#34;&gt;Guide 2 - Personalisation&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;For more information about:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Accessing &lt;a href=&#34;https://docs.agilebase.co.uk/docs/introduction/development-mode/&#34;&gt;Developer mode&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Using the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/built-in-charting/&#34;&gt;Built in Charting&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
       </description>
     </item>
     

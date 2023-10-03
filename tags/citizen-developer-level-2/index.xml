@@ -5,7 +5,7 @@
     <description>Recent content in Citizen Developer level 2 on Agilebase docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Aug 2023 13:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 12 Sep 2023 13:00:00 +0100</lastBuildDate>
     
 	  <atom:link href="https://docs.agilebase.co.uk/tags/citizen-developer-level-2/index.xml" rel="self" type="application/rss+xml" />
     
@@ -26,8 +26,9 @@
         
         &lt;p&gt;As a no-code platform, Agilebase allows you to easily construct (and later de-construct or &amp;lsquo;refactor&amp;rsquo;) and change your software.&lt;/p&gt;
 &lt;h2 id=&#34;toggling-development-mode-on-and-off&#34;&gt;Toggling development mode on and off&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/toggle-build-mode.png&#34; alt=&#34;Toggle development mode&#34;&gt;
-To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &amp;lsquo;development&amp;rsquo; mode. You can do this wherever you are in the system and you will switch to building or developing the item you&amp;rsquo;re looking at. The three main areas this covers are:&lt;/p&gt;
+&lt;p&gt;To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &amp;lsquo;development&amp;rsquo; mode.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/toggle-build-mode.png&#34; alt=&#34;Toggle development mode&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can do this wherever you are in the system and you will switch to building or developing the item you&amp;rsquo;re looking at. The three main areas this covers are:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;The homepage. Toggling to development mode on the homepage shows an overview of everything in the system - tables, views, tiles, roles and users can all be listed and edited. Furthermore, the connections between different objects can be shown. More advanced users will typically use this area, when working on larger systems. 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -350,6 +351,49 @@ It is straightforward to delete a field from a table. Either clicking the X icon
     </item>
     
     <item>
+      <title>Docs: Citizen Developer Level 2</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-2/</link>
+      <pubDate>Tue, 12 Sep 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-2/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;You are now well on your way through the Agilebase journey.&lt;/p&gt;
+&lt;p&gt;This level is suggested or &amp;lsquo;unlocked&amp;rsquo; once a citizen developer has carried out a certain number of citizen development functions and has therefore started to learn how no code development works in a safe environment.&lt;/p&gt;
+&lt;p&gt;However to activate the level, it must be manually assigned by a Software Architect level user, as it allows changes to the system which can affect other users.&lt;/p&gt;
+&lt;p&gt;A citizen developer level 2 can&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;create new views that everyone can see, from any table
+&lt;ul&gt;
+&lt;li&gt;edit them as per the citizen developer functionality above&lt;/li&gt;
+&lt;li&gt;additionally they can add and remove simple joins, to include data from other tables in a view&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;remove views that they themselves have created (not those that others have)&lt;/li&gt;
+&lt;li&gt;create their own &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;tables&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;add, edit and remove fields and tabs from those tables&lt;/li&gt;
+&lt;li&gt;edit basic properties of the fields&lt;/li&gt;
+&lt;li&gt;assign privileges (up to edit) on those tables, using existing roles or direct user privileges&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;create &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt; and delete tiles they&amp;rsquo;ve added themselves&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
+&lt;p&gt;Learn how to add functionality by watching our guide &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/&#34;&gt;Creating a basic task list&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For more information about:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;Relational Database Concepts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/&#34;&gt;Adding and editing tables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;What is a view&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Guides: 2. Capturing Company and Contact data (Introducing Relational Databases)</title>
       <link>https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/</link>
       <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
@@ -398,50 +442,6 @@ We will link to two tables, the organisation they work for and the site they pri
 &lt;h2 id=&#34;optional---linking-tasks-to-organisations&#34;&gt;OPTIONAL - Linking Tasks to Organisations&lt;/h2&gt;
 &lt;p&gt;At this point you may decide to upgrade the Task system we created previously. If you want to do this you will need to update the Tasks table to have a Parent Org, adding a Relation field (to organisation) and then adding the new Tab to the Organisation table just as we’ve done before.&lt;/p&gt;
 &lt;p&gt;You might also want to go back in to some of the views people use to access tasks and add a field so they know which organisation it&amp;rsquo;s for.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Citizen Developer Level 2</title>
-      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-2/</link>
-      <pubDate>Mon, 12 Sep 2022 13:00:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-2/</guid>
-      <description>
-        
-        
-        &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
-&lt;p&gt;You are now well on your way through the Agilebase journey.&lt;/p&gt;
-&lt;p&gt;This level is suggested or &amp;lsquo;unlocked&amp;rsquo; once a citizen developer has carried out a certain number of citizen development functions and has therefore started to learn how no code development works in a safe environment.&lt;/p&gt;
-&lt;p&gt;However to activate the level, it must be manually assigned by a Software Architect level user, as it allows changes to the system which can affect other users.&lt;/p&gt;
-&lt;p&gt;A citizen developer level 2 can&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;create new views that everyone can see, from any table
-&lt;ul&gt;
-&lt;li&gt;edit them as per the citizen developer functionality above&lt;/li&gt;
-&lt;li&gt;additionally they can add and remove simple joins, to include data from other tables in a view&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;remove views that they themselves have created (not those that others have)&lt;/li&gt;
-&lt;li&gt;create their own &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;tables&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;add, edit and remove fields and tabs from those tables&lt;/li&gt;
-&lt;li&gt;edit basic properties of the fields&lt;/li&gt;
-&lt;li&gt;assign privileges (up to edit) on those tables, using existing roles or direct user privileges&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;create &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt; and delete tiles they&amp;rsquo;ve added themselves&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
-&lt;p&gt;Learn how to add functionality by watching our guide &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/&#34;&gt;Creating a basic task list&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;For more information about:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;Relational Database Concepts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/&#34;&gt;Adding and editing tables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;What is a view&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;COMING SOON How to control the Interface&lt;/p&gt;
 
       </description>
     </item>
