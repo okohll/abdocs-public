@@ -5,7 +5,7 @@
     <description>Recent content in Junior Software Architect on Agilebase docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 31 Aug 2023 13:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 03 Oct 2023 13:00:00 +0100</lastBuildDate>
     
 	  <atom:link href="https://docs.agilebase.co.uk/tags/junior-software-architect/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,11 +29,50 @@
     </item>
     
     <item>
+      <title>Docs: Junior Software Architect</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/junior-software-architect/</link>
+      <pubDate>Tue, 03 Oct 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/junior-software-architect/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;A junior software architect can use practically all of the application building functionality of Agilebase. For example&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; (including chasers, document generation)&lt;/li&gt;
+&lt;li&gt;Set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add complex &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/&#34;&gt;joins&lt;/a&gt; to views&lt;/li&gt;
+&lt;li&gt;Create, edit and delete &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/&#34;&gt;roles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Assign &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; to roles or users up to the &amp;rsquo;edit&amp;rsquo; level&lt;/li&gt;
+&lt;li&gt;Remove fields, views etc. created by anyone&lt;/li&gt;
+&lt;li&gt;Edit the advanced properties of fields and views, including field visibility rules (confidentiality rules) for example&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Their only limitations are to do with managing the organisation as a whole, including other users.&lt;/p&gt;
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
+&lt;p&gt;Boost your learning by watching our more advanced guides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/cross-reference-and-automations/&#34;&gt;Cross Refereances and Automations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/&#34;&gt;Security and Access Control&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information about:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/&#34;&gt;Security Features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/altering-data/&#34;&gt;Workflows - Altering Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;Workflows - Doc Gen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;Workflows - Sending an email&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;Workflows - Using the email chaser&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Guides: 5. Cross References and Automations</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/cross_reference_and_automations/</link>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/cross-reference-and-automations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/cross_reference_and_automations/</guid>
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/cross-reference-and-automations/</guid>
       <description>
         
         

@@ -5,7 +5,7 @@
     <description>Recent content in Software Architect on Agilebase docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Jul 2023 08:06:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 03 Oct 2023 13:00:00 +0100</lastBuildDate>
     
 	  <atom:link href="https://docs.agilebase.co.uk/tags/software-architect/index.xml" rel="self" type="application/rss+xml" />
     
@@ -615,6 +615,45 @@ Used to configure &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenanting&lt;/a
 &lt;p&gt;If the account has the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail&#34;&gt;enhanced audit trail&lt;/a&gt; then all data can be queried using Agilebase views.&lt;/p&gt;
 &lt;h2 id=&#34;retention-periods&#34;&gt;Retention periods&lt;/h2&gt;
 &lt;p&gt;Data is retained for 12 months as standard. The enhanced audit trail allows customers to define their own retention period, the maximum being unlimited.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Software Architect</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/software-architect/</link>
+      <pubDate>Tue, 03 Oct 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/software-architect/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;As well as building and disassembling applications, software architects can set company-wide settings and manage the account as a whole. They can&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add and remove &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/&#34;&gt;users&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Edit company level settings (e.g. whether to enforce 2FA)&lt;/li&gt;
+&lt;li&gt;Change table &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/sensitive-data/&#34;&gt;sensitive and personal data&lt;/a&gt; settings (GDPR)&lt;/li&gt;
+&lt;li&gt;View and controls users&amp;rsquo; learner progression levels&lt;/li&gt;
+&lt;li&gt;Assign privileges&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;dont-know-where-to-start&#34;&gt;Don&amp;rsquo;t know where to start?&lt;/h2&gt;
+&lt;p&gt;If your company has just started building using Agilebase and you are reading this, then you&amp;rsquo;re probably feeling that you&amp;rsquo;ve been thrown in to the deep end!
+Don&amp;rsquo;t worry - using Agilebase will feel like you&amp;rsquo;ve been given a life buoy on &amp;hellip; with an outboard motor&amp;hellip; in lovely warm water&amp;hellip; next to the 5 star all inclusive carribean resort!
+To kick off, watch the following guide which will walk you through building a fully functional sales CRM.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/&#34;&gt;Build a CRM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
+&lt;p&gt;Looking for some guides to help you&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;COMING SOON - Video about debugging tips and advice on managing Agilebase development projects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information about:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-data-to-a-third-party-via-api/&#34;&gt;Using the API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/&#34;&gt;Build Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
       </description>
     </item>

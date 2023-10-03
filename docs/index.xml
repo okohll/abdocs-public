@@ -367,7 +367,7 @@ A good example would be making your own view of a list of organisations that is 
   &lt;iframe src=&#34;https://www.youtube.com/embed/D_400LI_O_g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
-&lt;h2 id=&#34;introducing-devloper-mode&#34;&gt;Introducing Devloper Mode&lt;/h2&gt;
+&lt;h2 id=&#34;introducing-developer-mode&#34;&gt;Introducing Developer Mode&lt;/h2&gt;
 &lt;p&gt;Navigate to the view you wish to personalise
 Then simply toggle the development mode icon that you’ll find top left of the page.
 You can see some new icons on the user interface.
@@ -832,10 +832,10 @@ Used to configure &lt;a href=&#34;#multi-tenanting&#34;&gt;multi-tenanting&lt;/a
     
     <item>
       <title>Guides: 2. Capturing Company and Contact data (Introducing Relational Databases)</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/</link>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/adding-relational-data/</link>
       <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/adding_relational_data/</guid>
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/adding-relational-data/</guid>
       <description>
         
         
@@ -948,11 +948,43 @@ We will link to two tables, the organisation they work for and the site they pri
     </item>
     
     <item>
+      <title>Docs: Citizen Developer Level 3</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-3/</link>
+      <pubDate>Tue, 03 Oct 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-3/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;A Software Architect (see below) can, at their discretion, assign a citizen developer 3 &amp;lsquo;develop&amp;rsquo; privileges on a table (or tables).&lt;/p&gt;
+&lt;p&gt;That allows them to&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;add &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;fields&lt;/a&gt; to those table, excluding referenced fields&lt;/li&gt;
+&lt;li&gt;remove fields that they themselves have added (not others)&lt;/li&gt;
+&lt;li&gt;edit the basic properties of any field in those tables, e.g. the list of options in a dropdown box&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Additionally, actions not related to having develop privileges on a particular table are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;edit the basic properties of any regular view. However, workflow, API and some other types of system view will be read-only&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
+&lt;p&gt;COMING SOON - Video about hot to control the UI&lt;/p&gt;
+&lt;p&gt;For more information about:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;Setting up Tiles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;Using Calculations&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Guides: 3. Adding a Sales Pipeline - Kanban</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/sales_pipeline/</link>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</link>
       <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/sales_pipeline/</guid>
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</guid>
       <description>
         
         
@@ -1121,11 +1153,50 @@ Creating graphs can be done by any user, but it usually helps if the developers 
     </item>
     
     <item>
+      <title>Docs: Junior Software Architect</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/junior-software-architect/</link>
+      <pubDate>Tue, 03 Oct 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/junior-software-architect/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;A junior software architect can use practically all of the application building functionality of Agilebase. For example&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; (including chasers, document generation)&lt;/li&gt;
+&lt;li&gt;Set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Add complex &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/&#34;&gt;joins&lt;/a&gt; to views&lt;/li&gt;
+&lt;li&gt;Create, edit and delete &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/&#34;&gt;roles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Assign &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;privileges&lt;/a&gt; to roles or users up to the &amp;rsquo;edit&amp;rsquo; level&lt;/li&gt;
+&lt;li&gt;Remove fields, views etc. created by anyone&lt;/li&gt;
+&lt;li&gt;Edit the advanced properties of fields and views, including field visibility rules (confidentiality rules) for example&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Their only limitations are to do with managing the organisation as a whole, including other users.&lt;/p&gt;
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
+&lt;p&gt;Boost your learning by watching our more advanced guides:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/cross-reference-and-automations/&#34;&gt;Cross Refereances and Automations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/&#34;&gt;Security and Access Control&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information about:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/&#34;&gt;Security Features&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/altering-data/&#34;&gt;Workflows - Altering Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;Workflows - Doc Gen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;Workflows - Sending an email&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;Workflows - Using the email chaser&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Guides: 4. Calculated Datafields</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/calculated_datafields/</link>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/calculated-datafields/</link>
       <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/calculated_datafields/</guid>
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/calculated-datafields/</guid>
       <description>
         
         
@@ -1431,6 +1502,45 @@ Creating graphs can be done by any user, but it usually helps if the developers 
 &lt;p&gt;To set one or more fields to include in the title, use the field option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#use-as-record-title&#34;&gt;use as record title&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
 &lt;p&gt;When a relation field is near the top of the form, it&amp;rsquo;s also moved to the record title level to become a title link, allowing navigation upwards to the &amp;lsquo;parent&amp;rsquo; record. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/&#34;&gt;hierarchy navigation&lt;/a&gt; for info about upwards, and downwards, navigation.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Software Architect</title>
+      <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/software-architect/</link>
+      <pubDate>Tue, 03 Oct 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/software-architect/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;As well as building and disassembling applications, software architects can set company-wide settings and manage the account as a whole. They can&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add and remove &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/&#34;&gt;users&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Edit company level settings (e.g. whether to enforce 2FA)&lt;/li&gt;
+&lt;li&gt;Change table &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/sensitive-data/&#34;&gt;sensitive and personal data&lt;/a&gt; settings (GDPR)&lt;/li&gt;
+&lt;li&gt;View and controls users&amp;rsquo; learner progression levels&lt;/li&gt;
+&lt;li&gt;Assign privileges&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;dont-know-where-to-start&#34;&gt;Don&amp;rsquo;t know where to start?&lt;/h2&gt;
+&lt;p&gt;If your company has just started building using Agilebase and you are reading this, then you&amp;rsquo;re probably feeling that you&amp;rsquo;ve been thrown in to the deep end!
+Don&amp;rsquo;t worry - using Agilebase will feel like you&amp;rsquo;ve been given a life buoy on &amp;hellip; with an outboard motor&amp;hellip; in lovely warm water&amp;hellip; next to the 5 star all inclusive carribean resort!
+To kick off, watch the following guide which will walk you through building a fully functional sales CRM.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide1-crm/&#34;&gt;Build a CRM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
+&lt;p&gt;Looking for some guides to help you&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;COMING SOON - Video about debugging tips and advice on managing Agilebase development projects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information about:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-data-to-a-third-party-via-api/&#34;&gt;Using the API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/&#34;&gt;Build Patterns&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
       </description>
     </item>
@@ -1774,10 +1884,10 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
     
     <item>
       <title>Guides: 5. Cross References and Automations</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/cross_reference_and_automations/</link>
+      <link>https://docs.agilebase.co.uk/guides/guide1-crm/cross-reference-and-automations/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/cross_reference_and_automations/</guid>
+      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/cross-reference-and-automations/</guid>
       <description>
         
         
@@ -2688,144 +2798,6 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;The functions above highlight just a few of the many possibilities. Please feel free to read up on PostgreSQL some more and if you come up with any neat calculations yourself in your everyday work, please do send them to &lt;a href=&#34;mailto:support@agilebase.co.uk&#34;&gt;support@agilebase.co.uk&lt;/a&gt; so we can add them to this page (with credit).&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Types of Join</title>
-      <link>https://docs.agilebase.co.uk/docs/views/joins/types-of-join/</link>
-      <pubDate>Fri, 15 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/views/joins/types-of-join/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Here&amp;rsquo;s a Youtube video explaining the concept of joins and running through the various types.&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/9yeOJ0ZMUYw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Just remember, when using third party resources to learn about joins (or other SQL features), you don&amp;rsquo;t need to write the SQL code in Agilebase, it&amp;rsquo;s generated for you behind the scenes.&lt;/p&gt;
-&lt;h2 id=&#34;left-outer-and-inner-joins&#34;&gt;Left outer and inner joins&lt;/h2&gt;
-&lt;p&gt;The left outer join is the default type used when a join is added to a view in Agilebase. It suits most cases, but can be changed after join creation if needed.&lt;/p&gt;
-&lt;p&gt;A left outer join type will ensure that every row from the left source (table or view) is visible in output, whether or not the data links to a row on the right side. Conversely, when an inner join&amp;rsquo;s used, data from the left will be hidden unless it links to data on the right.&lt;/p&gt;
-&lt;p&gt;That may sound rather abstract: working with an example, we can see what it means in practice.&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s take the common and straightforward example of linking contacts to organisations. We start by creating a view from the contacts table, so that&amp;rsquo;s on the left side. We then join from contacts to an organisations table, on the right. This join looks as follows:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/example-join.png&#34; alt=&#34;example join&#34;&gt;&lt;/p&gt;
-&lt;p&gt;That gives us a view where we can add fields from the organisation table into the view of contacts data. The output may look something like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/view-contacts.png&#34; alt=&#34;contacts view&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Each row representing a contact, has the contact details (name, email address etc.) and from the organisations table, you can see the name and website of the organisation they belong to.&lt;/p&gt;
-&lt;p&gt;But wait a minute, what&amp;rsquo;s that contact with blank spaces for the organisation name and website? That represents a &lt;strong&gt;contact which is not yet linked to an organisation&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;I guess to be nit-picky, it could represent a contact joined to an organisation without a name or website address added, but here we&amp;rsquo;ll assume all organisations have those details filled in.&lt;/p&gt;
-&lt;p&gt;When the join type is &lt;strong&gt;left outer&lt;/strong&gt;, then this row will be shown, as seen. However, if it&amp;rsquo;s changed to an &lt;strong&gt;inner&lt;/strong&gt; join, then it will be hidden.&lt;/p&gt;
-&lt;p&gt;That&amp;rsquo;s why left outer is the safest type to use by default. Otherwise with an inner, if a user adds a new contact, fills in all their basic details but doesn&amp;rsquo;t link her or him to an organisation (perhaps they don&amp;rsquo;t know the organisation or it doesn&amp;rsquo;t exist in the system yet), then they won&amp;rsquo;t be able to see that contact in the view. And if they can&amp;rsquo;t see it, then they can&amp;rsquo;t click on it to load it - it will have vanished for good (well, until the join is changed back to a left outer).&lt;/p&gt;
-&lt;p&gt;Sometimes of course, inner joins are very useful - but it makes sense that there must be a conscious decision to change a join to that type.&lt;/p&gt;
-&lt;h2 id=&#34;right-outer-and-full-outer&#34;&gt;Right outer and full outer&lt;/h2&gt;
-&lt;p&gt;You may think, if there&amp;rsquo;s a left outer, is there also a right outer? There is, it means all data from the right side is always visible, whether or not there&amp;rsquo;s a match on the left. So in our contacts/organisations example, all organisations would be visible, whether or not any contacts belonged to them.&lt;/p&gt;
-&lt;p&gt;Practically, this isn&amp;rsquo;t used much, as a right outer join is just the same as a left outer join started from the other table. There&amp;rsquo;s no difference in the data visible, but using a left outer works better in Agilebase because you can be guaranteed that clicking on a row will load a record (with a right outer, if there&amp;rsquo;s no data on the left side, then no record can be loaded when the row&amp;rsquo;s clicked).&lt;/p&gt;
-&lt;p&gt;You may also hear of a full outer join - this again has a very small number of useful cases, but you can &lt;a href=&#34;https://stackoverflow.com/questions/2094793/when-is-a-good-situation-to-use-a-full-outer-join&#34;&gt;read about them online&lt;/a&gt; if interested.&lt;/p&gt;
-&lt;h2 id=&#34;venn-diagram&#34;&gt;Venn diagram&lt;/h2&gt;
-&lt;p&gt;Joins are often represented visually with Venn diagrams. Here&amp;rsquo;s one, showing that for a left outer join, all the data from the left side is visible, whether or not a matching row exists on the right, and for an inner join, data from the left is excluded without a match. The results of right outer and full outer are also visualised.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/joins-venn.png&#34; alt=&#34;Joins Venn diagram&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;cross-join&#34;&gt;Cross join&lt;/h2&gt;
-&lt;p&gt;There&amp;rsquo;s one final type to consider that can be used in Agilebase. Strictly speaking, it isn&amp;rsquo;t a join at all, but it does bring together data from left and right sides in a particular way, so we&amp;rsquo;ll think of it as a join here and it&amp;rsquo;s treated as such in Agilebase.&lt;/p&gt;
-&lt;p&gt;If you have a mathematical background, it may help to know that it produces a cartesian product, or cross product, of all rows in the left and right sides.&lt;/p&gt;
-&lt;p&gt;However if you don&amp;rsquo;t, not to worry, it can be easily explained without maths. Basically, every combination of each row on the left with each row on the right is output. So if you have three rows, A, B and C on the left and another three X, Y and Z on the right, then you would get as output: data from&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Row A with row X&lt;/li&gt;
-&lt;li&gt;Row A with row Y&lt;/li&gt;
-&lt;li&gt;Row A with row Z&lt;/li&gt;
-&lt;li&gt;Row B with row X&lt;/li&gt;
-&lt;li&gt;Row B with row Y&lt;/li&gt;
-&lt;li&gt;Row B with row Z&lt;/li&gt;
-&lt;li&gt;Row C with row X&lt;/li&gt;
-&lt;li&gt;Row C with row Y&lt;/li&gt;
-&lt;li&gt;Row C with row Z&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You can see that you need to be careful when creating cross joins that results won&amp;rsquo;t balloon up into massive numbers of rows that are hard to deal with. For example, if two tables, each with a hundred thousand rows in, are joined by cross join, then 100,000 x 100,000 = 10,000,000,000 (ten billion) rows would output.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Once again, potential uses may be most easily explained by a real world example.&lt;/p&gt;
-&lt;p&gt;Cross joins can be used when reporting, to find data that&amp;rsquo;s &lt;strong&gt;not&lt;/strong&gt; there (to get a bit Zen). For example, say we have two tables&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;customers&lt;/li&gt;
-&lt;li&gt;products&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We may want to create output representing the combination of every customer with every product - we could then further join this to sales data to find which products a customer isn&amp;rsquo;t buying, or which products are being bought by most and fewest customers.&lt;/p&gt;
-&lt;p&gt;Firstly, we need all combinations. Create a cross join between customers and products, in a &amp;lsquo;customer products&amp;rsquo; view.&lt;/p&gt;
-&lt;p&gt;The next step is similar to our reporting example of &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#joining-on-multiple-fields&#34;&gt;joining on multiple fields&lt;/a&gt;. Create a calculation &amp;lsquo;customer product&amp;rsquo; which concatenates together customer ID and product ID. Create the same calculation in a view of sales (each sale of a product to a customer). Then join this sales view into our customer products view and bingo, we can display the total sales, whether zero or more, of each product to each customer.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;If you haven&amp;rsquo;t yet read up on &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculations&lt;/a&gt;, you may need to do that in order to accomplish everything above&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;adding-a-cross-join&#34;&gt;Adding a cross join&lt;/h3&gt;
-&lt;p&gt;Adding a cross join is a little different to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#adding-a-join&#34;&gt;adding a normal join&lt;/a&gt;. The left and right fields don&amp;rsquo;t matter (as we want to apply any exclusion rules, we just want every combination of rows possible).&lt;/p&gt;
-&lt;p&gt;So follow the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#complex-joins&#34;&gt;normal process for a complex join&lt;/a&gt;, but just select the left and right tables (or views), leave the fields at their default values.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Filters</title>
-      <link>https://docs.agilebase.co.uk/docs/views/filters/</link>
-      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/views/filters/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Filters can be applied permanently to a view, allowing an administrator to specify the subset of records that should be displayed. This is often for convenience and to create more useful systems. For example, if you have a database of suppliers, you may want to create views showing those which are approved, those which aren&amp;rsquo;t, those which are local etc. Each view would have a different set of filters applied.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Remember people can apply additional &amp;lsquo;ad-hoc&amp;rsquo; or temporary filters to a view at any time using the filter boxes at the top of the screen, so it may not be necessary to create filtered views for every eventuality.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;A filter can act on any field or calculation in the view, as well as on any in joined tables or views.&lt;/p&gt;
-&lt;p&gt;Multiple filters act like they have AND between them, i.e. they are applied additively. If you wish to apply a filters with OR between them, or if you wish to apply a filter on the reult of the comparison of fields, then simply create the relevant &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculation&lt;/a&gt;. For example, if you added two filters to a suppliers view&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;status equals approved&lt;/strong&gt; and &lt;strong&gt;status equals pending&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;then you would get no records showing - a status can&amp;rsquo;t be both one thing and another. However if you created a boolean calculation &amp;lsquo;pending or approved&amp;rsquo;, with definition&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;{status} like &#39;approved&#39; or {status} like &#39;pending&#39;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;you could then add a filter on that calculation&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;pending or approved equals true&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;adding-a-filter&#34;&gt;Adding a filter&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open the view you want to edit&lt;/li&gt;
-&lt;li&gt;Toggle development mode on and click the big pencil at the top left of the screen&lt;/li&gt;
-&lt;li&gt;Under &lt;em&gt;filters&lt;/em&gt;, choose a type, give it a name and press &lt;em&gt;Add&lt;/em&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;There are 26 types of filter to choose from, from the simple &amp;rsquo;equals&amp;rsquo; and &amp;rsquo;not equal to&amp;rsquo;, to more complex pattern matching using &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP&#34;&gt;regular expressions&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Some filters apply to multiple data types, others only to specific types. For example, &amp;rsquo;newer than X days ago&amp;rsquo; only applies to date fields.&lt;/p&gt;
-&lt;p&gt;Once you&amp;rsquo;ve added a filter, you&amp;rsquo;ll be able to type in a description for it. If no description is entered, the system will automatically generate one, which you&amp;rsquo;ll be able to see.&lt;/p&gt;
-&lt;p&gt;This description is shown to users as help in particular circumstances, e.g. when the view is used as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt;, so it&amp;rsquo;s a good idea to check it makes sense.&lt;/p&gt;
-&lt;h3 id=&#34;including-blank-values&#34;&gt;Including blank values&lt;/h3&gt;
-&lt;p&gt;Once a filter has been created, when you hover over it you&amp;rsquo;ll see an option to tick &amp;lsquo;or is blank&amp;rsquo;. This is useful to ensure blank values aren&amp;rsquo;t excluded by your filter, which they typically would be otherwise.&lt;/p&gt;
-&lt;p&gt;For example, imaging you&amp;rsquo;re setting up an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email notification workflow&lt;/a&gt; to send a notification to people once a week of any outstanding tasks. You&amp;rsquo;d likely need two filters, the first to find any tasks with an &amp;lsquo;outstanding&amp;rsquo; status and the second to only include tasks for which no notifications have been sent within the last 7 days.&lt;/p&gt;
-&lt;p&gt;For that second filter, you would set it up as&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&#39;last notified&#39; is more than 7 days ago
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;However, as it stands, that would exclude any tasks which have &lt;strong&gt;never&lt;/strong&gt; had a notification sent for them, i.e. where the last notified field is blank.&lt;/p&gt;
-&lt;p&gt;To include those, just tick &amp;lsquo;or is blank&amp;rsquo; after creating the filter.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Checkbox Field Options</title>
-      <link>https://docs.agilebase.co.uk/docs/fields/field-options/checkbox-field-options/</link>
-      <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/fields/field-options/checkbox-field-options/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;default-value&#34;&gt;Default value&lt;/h2&gt;
-&lt;p&gt;Simply whether the checkbox should default to ticked (true) or un-ticked (false) for new records.&lt;/p&gt;
-&lt;h2 id=&#34;dont-set-last-modified&#34;&gt;Don&amp;rsquo;t set last modified&lt;/h2&gt;
-&lt;p&gt;Whenever someone edits a record, Agilebase automatically updates the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#last-modified-auto&#34;&gt;Last Modified&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#modified-by-auto&#34;&gt;Modified By&lt;/a&gt; fields of the table. This option prevents that happening when the checkbox field is ticked or un-ticked. There would not usually be a need for this but it may be useful in a minority of cases.&lt;/p&gt;
-&lt;h2 id=&#34;show-digital-signature&#34;&gt;Show digital signature&lt;/h2&gt;
-&lt;p&gt;Causes the user interface to show the name &amp;amp; username of the person who last ticked or un-ticked the checkbox, along with a timestamp.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Note these can only be shown for the maximum time that record history (audit trail) data is stored for, by default 12 months. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail&#34;&gt;enhanced audit trail&lt;/a&gt; for details of extending this.&lt;/p&gt;
-&lt;/blockquote&gt;
 
       </description>
     </item>

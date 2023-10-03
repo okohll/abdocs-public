@@ -173,7 +173,7 @@ A good example would be making your own view of a list of organisations that is 
   &lt;iframe src=&#34;https://www.youtube.com/embed/D_400LI_O_g&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/p&gt;
-&lt;h2 id=&#34;introducing-devloper-mode&#34;&gt;Introducing Devloper Mode&lt;/h2&gt;
+&lt;h2 id=&#34;introducing-developer-mode&#34;&gt;Introducing Developer Mode&lt;/h2&gt;
 &lt;p&gt;Navigate to the view you wish to personalise
 Then simply toggle the development mode icon that you’ll find top left of the page.
 You can see some new icons on the user interface.
