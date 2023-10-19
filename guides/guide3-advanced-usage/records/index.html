@@ -25,12 +25,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/guides/guide3-advanced-usage/records/" /><meta property="article:section" content="guides" />
 <meta property="article:published_time" content="2023-10-17T13:00:00+01:00" />
-<meta property="article:modified_time" content="2023-10-19T12:56:57+01:00" />
+<meta property="article:modified_time" content="2023-10-19T22:42:33+01:00" />
 <meta itemprop="name" content="Guide 3.3 - Records: Advanced UI Control">
 <meta itemprop="description" content="Records - A look at how to control the Full Record View"><meta itemprop="datePublished" content="2023-10-17T13:00:00+01:00" />
-<meta itemprop="dateModified" content="2023-10-19T12:56:57+01:00" />
-<meta itemprop="wordCount" content="2030">
-<meta itemprop="keywords" content="System Architect,Junior System Architect," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="dateModified" content="2023-10-19T22:42:33+01:00" />
+<meta itemprop="wordCount" content="2043">
+<meta itemprop="keywords" content="System Architect,Junior System Architect,Citizen Developer level 3," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Guide 3.3 - Records: Advanced UI Control"/>
 <meta name="twitter:description" content="Records - A look at how to control the Full Record View"/>
 
@@ -111,7 +111,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.63c8d1d5210bef02df8c75ba200755dc.json"
+    data-offline-search-index-json-src="/offline-search-index.c138b74712965392ba8e3d3e55921aac.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -136,7 +136,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.63c8d1d5210bef02df8c75ba200755dc.json"
+    data-offline-search-index-json-src="/offline-search-index.c138b74712965392ba8e3d3e55921aac.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -243,7 +243,7 @@ if (!doNotTrack) {
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer/" data-taxonomy-term="citizen-developer"><span class="taxonomy-label">Citizen Developer</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-1/" data-taxonomy-term="citizen-developer-level-1"><span class="taxonomy-label">Citizen Developer level 1</span><span class="taxonomy-count">9</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-2/" data-taxonomy-term="citizen-developer-level-2"><span class="taxonomy-label">Citizen Developer level 2</span><span class="taxonomy-count">30</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-3/" data-taxonomy-term="citizen-developer-level-3"><span class="taxonomy-label">Citizen Developer level 3</span><span class="taxonomy-count">12</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-3/" data-taxonomy-term="citizen-developer-level-3"><span class="taxonomy-label">Citizen Developer level 3</span><span class="taxonomy-count">13</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/core-user/" data-taxonomy-term="core-user"><span class="taxonomy-label">Core User</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/cross-references/" data-taxonomy-term="cross-references"><span class="taxonomy-label">Cross References</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/dropdown/" data-taxonomy-term="dropdown"><span class="taxonomy-label">DropDown</span><span class="taxonomy-count">1</span></a></li>
@@ -292,13 +292,14 @@ if (!doNotTrack) {
   <ul class="taxonomy-terms">
     <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/system-architect/" data-taxonomy-term="system-architect"><span class="taxonomy-label">System Architect</span></a></li>
     <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/junior-system-architect/" data-taxonomy-term="junior-system-architect"><span class="taxonomy-label">Junior System Architect</span></a></li>
+    <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/citizen-developer-level-3/" data-taxonomy-term="citizen-developer-level-3"><span class="taxonomy-label">Citizen Developer level 3</span></a></li>
     </ul>
 </div>
 
   </header>
 	<h2 id="records">Records</h2>
 <p>The Full record view is the interface that a user uses to update and create data in the underlying source Table.</p>
-<p>This User interface isn’t simply every field shown on the screen. The power of agilebase comes from providing facilities to control how the user interacts with their data. Put another way, by allowing developers to control individual fields, decide when to show them and group them together etc, the job of entering data becomes a pleasant user experience.</p>
+<p>This User Interface isn’t simply every field shown on the screen. The power of agilebase comes from providing facilities to control how the user interacts with their data. Put another way, by allowing developers to control individual fields, decide when to show them and group them together etc, the job of entering data becomes a pleasant user experience.</p>
 <p>There is plenty of help available in the agileBase Docs system - <a href="/docs/fields/">Help on Fields</a>
 So, we will focus on a couple of key features that have a big impact on the user interface</p>
 <p>Let’s start with the simplest Field type, a <strong>text box</strong>. It actually has some of the most powerful options. This can be setup to accept “anything” - and you can choose how much text is “expected” from the user by setting small, medium or large.</p>
@@ -310,11 +311,11 @@ N.b. A dropdown with 3 or less options will appear as button switches. We can us
 <p>It can be very useful to prefix each option with a number to help with ordering when alphabetical is insufficient. For example if we want Yes before No!
 Its during this scenario that being able to “Swap colours” can also be be handy</p>
 <p>There is a further option to “load” the options with the list of Users in the system - very useful when assigning ownership e.g. Account Manager or Task Assigned to
-<img src="/text-field-dropdown.png" alt="Example of a drop down field restricted toa  drop down of users">
-(video coming soon)</p>
+<img src="/text-field-dropdown.png" alt="Example of a drop down field restricted toa  drop down of users"></p>
+<p>(video coming soon)</p>
 <p><strong>A couple of quickies…</strong></p>
-<p>Date fields -  you can control the date format (e.g. use the 3 letter month name not a number) as well as the accuracy required on data entry.
-Number fields -  a hidden option on a decimal field is the ability to use “as duration”. Make sure you have 2 decimal places of accuracy and the user will see a time or duration… so instead of seeing a value like “17.5” they will see 17:30.</p>
+<p>Date fields -  you can control the date format (e.g. use the 3 letter month name not a number) as well as the accuracy required on data entry.</p>
+<p>Number fields -  a hidden option on a decimal field is the ability to use “as duration”. Make sure you have 2 decimal places of accuracy and the user will see a time or duration… so instead of seeing a value like “17.5” they will see 17:30.</p>
 <p>(video coming soon)</p>
 <h3 id="relation-fields">Relation fields</h3>
 <p>These are the cornerstone of agileBase. Controlling and helping the user “pick” the right relation can make or break the usability of a system. It is worth spending the extra time to ensure the right “picker” is set up on a relation field. This is done by setting the “view to use” to be a tailored view dedicated to the job…</p>
@@ -328,36 +329,35 @@ One of the simplest Use Cases is to turn an editable field in to read only. For 
 <p>To do this, start by creating a view based from the appropriate table. The name of the view is only important to the developer, but it can be useful to adopt a naming convention and filing system to help manage the back-end of the system. In this example we&rsquo;ll call it &ldquo;Xref - Date Created&rdquo; and file it in the tile &ldquo;System - Cross Referenced&rdquo;.</p>
 <p>Now, simply add a calculation, giving it an appropriate name.
 Bear in mind this name will most likely appear to the user so we will call it &ldquo;Date Created&rdquo;.
-The contents of the calculation will be {sales opportunities.creation time [auto]}
-Now return to the Table and add a field of type Cross reference.
-Find your view and press add. After positioning it somewhere appropriate the UI should look something like&hellip;
-{screenshot}
-<img src="/xref-date-created-setup.png" alt="Example of the definition of a cross Reference lookup field">
-<img src="/xref-date-created-example.png" alt="Example of how a cross Reference lookup field appears"></p>
+The contents of the calculation will be {sales opportunities.creation time [auto]}</p>
+<p><img src="/xref-date-created-setup.png" alt="Example of the definition of a cross Reference lookup field"></p>
+<p>Now return to the Table and add a field of type Cross reference.
+Find your view and press add. After positioning it somewhere appropriate the UI should look something like&hellip;</p>
+<p><img src="/xref-date-created-example.png" alt="Example of how a cross Reference lookup field appears"></p>
 <p>You have a couple of options about how the data appears.
 The <strong>Tabular Display</strong> checkbox does what its says on the tin. It is most useful when the Xref returns multiple lines of data.
 If unticked then the <strong>Display of Fields</strong> options come in to play.
 <img src="/xref-display-options.png" alt="options for controlling how Xref data appears"></p>
-<p>Cross references can return a lot more than a single field of datat&hellip; the next example returns a table of data.
-In this example we will create a view from the organisation that joins DOWN to the Contacts table and pull through a few key fields of information.
-<img src="/xref-tabular.png" alt="options for controlling how Xref data appears">
-We can now see the Organisation&rsquo;s contact list embedded in the Organisation record</p>
+<p>Cross references can return a lot more than a single field of data&hellip; the next example returns a table of data.</p>
+<p>In this example we will create a view from the organisation that joins DOWN to the Contacts table and pull through a few key fields of information.
+<img src="/xref-tabular.png" alt="options for controlling how Xref data appears"></p>
+<p>We can now see the Organisation&rsquo;s contact list embedded in the Organisation record</p>
 <p>(video coming soon)</p>
 <h4 id="important-concept-for-building-cross-references">Important Concept for building Cross References</h4>
 <p>How you start building a Cross Reference view will effect how the UI uses it.
 In this next example we will repeat the task but start by building our cross reference view from the contacts table and join UP to the organisation.
-We will pull through the same few key fields and add the cross reference to the Organisation table.
-<img src="/xref-add-contact.png" alt="Alternative Cross reference enabling adding a child record">
-As you can see we get more than a list, in fact we can add new contacts and edit existing ones.
+We will pull through the same few key fields and add the cross reference to the Organisation table.</p>
+<p><img src="/xref-add-contact.png" alt="Alternative Cross reference enabling adding a child record"></p>
+<p>As you can see we get more than a list, in fact we can add new contacts and edit existing ones.
 In this configuration this Cross reference is an alternative to using the contacts tab.
-As the developer the choice is yours to use the mechanism which you feel is best.
-For this use case it would make sense to keep the Contacts tab, and use the first style of cross reference (read only mode) but only after its been tweaked to return those contacts who are flagged as the Owner or CEO.</p>
+As the developer the choice is yours to use the mechanism which you feel is best.</p>
+<p>For this use case it would make sense to keep the Contacts tab, and use the first style of cross reference (read only mode) but only after its been tweaked to return those contacts who are flagged as the Owner or CEO.</p>
 <p>(video coming soon)</p>
-<h4 id="xref-as-workflows">Xref as Workflows</h4>
-<p>If you have read some of our other guides you&rsquo;ll know that a view can be configured to be a WorkFlow and perform an action. And since a cross reference is also a view we can use this &ldquo;double life&rdquo; and use a cross reference WorkFlow to make a Button!
-It is as simple as adding any other Cross reference&hellip; although the name of the view you add will become the button title! So again, with a little bit of housekeeping it can be useful to have a tile called &ldquo;System - Buttons&rdquo; to keep them all in.
-A typical Use Case would be to use a series of buttons to move a record through a series of &ldquo;states&rdquo;. This is especially useful if only certain users are allowed to change the state at certain stages.
-For example: a Non Conformance may be marked as &ldquo;Completed&rdquo; by anyone, but only &ldquo;admins&rdquo; are allowed to mark completed tasks as &ldquo;Verification Complete&rdquo;. The right combination of buttons and visibility rules will make the UX smooth and seamless.</p>
+<h4 id="xref-as-workflows-to-create-a-button">Xref as Workflows to create a Button</h4>
+<p>If you have read some of our other guides you&rsquo;ll know that a view can be configured to be a WorkFlow and perform an action. And since a cross reference is also a view we can use this &ldquo;double life&rdquo; and use a cross reference WorkFlow to make a Button!</p>
+<p>It is as simple as adding any other Cross reference&hellip; although the name of the view you add will become the button title! So again, with a little bit of housekeeping it can be useful to have a tile called &ldquo;System - Buttons&rdquo; to keep them all in.</p>
+<p>A typical Use Case would be to use a series of buttons to move a record through a series of &ldquo;states&rdquo;. This is especially useful if only certain users are allowed to change the state at certain stages.
+For example: a Non Conformance may be marked as &ldquo;Completed&rdquo; by anyone, but only &ldquo;admins&rdquo; are allowed to mark it as &ldquo;Verification Complete&rdquo;. The right combination of buttons and visibility rules will make the UX smooth and seamless.</p>
 <p>To acheive this you will need to add a total of 3 cross reference fields.
 The first is a simple &ldquo;data&rdquo; that shows the user the current &ldquo;Status&rdquo;.
 The other 2 cross references, both Workflows, each set the &ldquo;hidden&rdquo; status to the appropriate value.
@@ -397,8 +397,8 @@ Enabling the ‘use as record title’ option also has the effect of enabling du
 Depending on the table layout, these blocks will be displayed in different ways, but in all cases will form a distinct group of fields.</p>
 <p><img src="/record-separator.png" alt="Screenshot of the defintion of a separator field"></p>
 <p>Not only is the separator a useful mechanism for breaking up complicated forms of data, but it acts as a container allowing you to control visibility of the whole block. Simply apply your visibility rule to the container and all fields within it are controlled too.
-Some use cases require optional data to be captured&hellip; in these instances it can be useful to have sections that are closed by default. You can even use a &ldquo;logic&rdquo; rule to make them open once a user has decided to enter data in to them.</p>
-<p>Another setting with the Separator is “has tabs”.
+Some use cases require optional data to be captured&hellip; in these instances it can be useful to have sections that are closed by default. You can  use a &ldquo;logic&rdquo; rule to make them open once a user has decided to enter data in to them.</p>
+<p>Another setting with the Separator is “has tabs”. This simple tickbox probably has the biggest effect on the user interface&hellip;<br>
 The last Separator to have this option &ldquo;ticked&rdquo; will be the first &ldquo;block&rdquo; contained under the first record tab.</p>
 <p><strong>Form layout</strong>
 <a href="/docs/tables/table-layouts/">For more information on layout options visit </a></p>
@@ -466,7 +466,7 @@ The last Separator to have this option &ldquo;ticked&rdquo; will be the first &l
 
 		<br />
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified October 19, 2023: <a href="https://github.com/okohll/abdocs/commit/2cccbe580b14fa2fb640c96b073a74f4621d6dd8">relref syntax fix (2cccbe5)</a>
+  Last modified October 19, 2023: <a href="https://github.com/okohll/abdocs/commit/fee2952326b097f59a6fe4729ad04ce3c6310ddf">Link fix (fee2952)</a>
 </div>
 
 </div>
