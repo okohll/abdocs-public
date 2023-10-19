@@ -948,6 +948,43 @@ We will link to two tables, the organisation they work for and the site they pri
     </item>
     
     <item>
+      <title>Guides: Guide 3.1 - Tiles: Advanced UI Control</title>
+      <link>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/tiles/</link>
+      <pubDate>Tue, 17 Oct 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/tiles/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;tiles&#34;&gt;Tiles&lt;/h2&gt;
+&lt;p&gt;A tile on a user’s home screen represents an application or module of an application. It is a collection of data and functionality that forms a coherent whole
+&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;For detailed information about Tiles visit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Let’s start by looking at the collection of tiles this system has configured
+Using the developer interface you can access your list of current tiles.
+&lt;img src=&#34;https://docs.agilebase.co.uk/tile-list.png&#34; alt=&#34;Developer view - list of tiles&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Clicking on one provides access to the configuration options.
+&lt;img src=&#34;https://docs.agilebase.co.uk/tile-individual-details.png&#34; alt=&#34;Tile details&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Obviously setting the title is key as it provides the primary information to the user as to what purpose it serves.
+You can provide a visual clue by choosing an appropriate Icon
+[Video how to set an Icon]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/yfjLrL1xLN8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;We would also suggest you set a description for the tile.
+This will appear as a hover over when your user places their cursor above it. Consider it as the first level of user help and should answer the question &amp;ldquo;What functionality does this tile contain?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;You can control the order the tile appears by setting an index number.
+Additionally you can provide &amp;ldquo;breaks&amp;rdquo; in the list of tiles by giving them a section. You can see how this affects the UI below
+&lt;img src=&#34;https://docs.agilebase.co.uk/tile-individual-details.png&#34; alt=&#34;Tile details&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When assigning a tile to a user we can set a &amp;ldquo;Default View&amp;rdquo;.
+When choosing a default view it makes sense to aim your user towards the one they would most
+frequently use. If you&amp;rsquo;re not sure then the most frequently used would be a good place to start.
+&lt;img src=&#34;https://docs.agilebase.co.uk/adding-tile-to-user.png&#34; alt=&#34;Adding a tile to a user&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Citizen Developer Level 3</title>
       <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-3/</link>
       <pubDate>Tue, 03 Oct 2023 13:00:00 +0100</pubDate>
@@ -969,7 +1006,7 @@ We will link to two tables, the organisation they work for and the site they pri
 &lt;li&gt;edit the basic properties of any regular view. However, workflow, API and some other types of system view will be read-only&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;
-&lt;p&gt;COMING SOON - Video about hot to control the UI&lt;/p&gt;
+&lt;p&gt;Videos about how to control the UI &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide3-advanced-usage/&#34;&gt;Guide 3 - Advanced UI Usage&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;For more information about:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;Setting up Tiles&lt;/a&gt;&lt;/li&gt;
@@ -1148,6 +1185,72 @@ Creating graphs can be done by any user, but it usually helps if the developers 
 &lt;/ul&gt;
 &lt;p&gt;To configure these options, see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/options/&#34;&gt;tables&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You may also want to set an export prompt message to show people when they request an export, to remind people of their data protection obligations under the GDPR for example. This can be done in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/#export-message&#34;&gt;company settings&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: Guide 3.2 - Views: Advanced UI Control</title>
+      <link>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/views/</link>
+      <pubDate>Tue, 17 Oct 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/views/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;views&#34;&gt;Views&lt;/h2&gt;
+&lt;p&gt;There are several videos and help pages you can find about creating views. We are going to concentrate on the parts that affect how the user interacts with them.
+Let us start with an important concept&amp;hellip; Your views name, and how a naming convention affects the menu.
+{video coming soon}
+Start by giving your view a simple name, you can see it is listed under a menu title that is the name of the tile.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/view-title.png&#34; alt=&#34;Original View title&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you change the name and use a hyphen, the system will detect the hyphen and use the initial part as the menu group. This is a useful way of grouping views together. You can go further and use a number prefix after the hyphen to control the order of the views within the menu. This is often a vital step when building a system that takes a user through a step by step process.&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t forget to provide your user with a description for the view&amp;hellip;. it provides the first level of user help.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll notice that when you provide a description it will replace the system-created description. This auto-generated description is based on the filters you have set&amp;hellip; &amp;ldquo;isValid = true, quote amount greater than zero&amp;rdquo; won’t make much sense to your users. Wouldn&amp;rsquo;t you much rather read something like &amp;ldquo;All Open Sales Opportunities with an estimate&amp;rdquo; ?
+&lt;img src=&#34;https://docs.agilebase.co.uk/view-title-updated.png&#34; alt=&#34;Updated View title with description&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;view-interface-options&#34;&gt;View Interface Options&lt;/h3&gt;
+&lt;p&gt;There are 3 options… Standard, Inline editing and Kanban&lt;/p&gt;
+&lt;p&gt;“Standard” provides the classic Table of data view of your records. However, you may wish to additionally allow your users to edit data “inline” - i.e. without requiring them to navigate through to the full record. If so, you have two options, either allowing them to toggle the inline edit mode on, or to have it on by default.&lt;br&gt;
+&lt;img src=&#34;https://docs.agilebase.co.uk/view-options.png&#34; alt=&#34;View options dropdown&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Finally, you can also enable the “Cards in Column” interface view (some people may know it as Kanban.)
+This option will show mini cards for each record, stacked in to columns based on the first field that is a “use only given values” Drop Down. By using drag and drop, the user is changing the value of this drop down field. The first few fields in your view will be used in the summary view.
+&lt;img src=&#34;https://docs.agilebase.co.uk/view-kanban-example.png&#34; alt=&#34;Example of Kanban or Cards View&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For the Tabular list of records you have the further option of how to control the “headings”.
+&lt;img src=&#34;https://docs.agilebase.co.uk/view-heading-options.png&#34; alt=&#34;View Heading Options&#34;&gt;
+Spreadsheet is as it sounds with a column heading per row.
+Headings and rows will group records by the first value.
+Long headings and rows will group by the first “few” values that are from the same source.
+&lt;img src=&#34;https://docs.agilebase.co.uk/view-heading.png&#34; alt=&#34;View Heading and Rows&#34;&gt;
+&lt;img src=&#34;https://docs.agilebase.co.uk/view-long-heading.png&#34; alt=&#34;View Heading and Rows&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Obviously these last two options are for when you want to group together data…. This typically occurs when records share a similar value. This will naturally occur when displaying Parent Child data (e.g. Organisations list of contacts) but equally when records share a finite list of options (e.g. Contacts by source).&lt;/p&gt;
+&lt;p&gt;{video coming soon}&lt;/p&gt;
+&lt;h3 id=&#34;adding-a-button-to-a-view&#34;&gt;Adding a Button to a view&lt;/h3&gt;
+&lt;p&gt;A useful feature in agileBase is to provide a button on a view that your user can press that will fire a WorkFlow that performs a function appropriate to the views content.
+Example 1: your view shows a list of Food Samples that are to be created Today. The button at the top could fire a WorkFlow that generates the PDF of labels for use in sending out the resulting samples!
+Example 2: your view shows a list of customer orders for delivery today. The button placed at the top of the view fires a workflow that updates the list and places the orders in a suggested sequence order for the delivery driver to follow.&lt;/p&gt;
+&lt;p&gt;To add a button to a view follow the following steps:
+Edit the view used by the User… goto workflow edit records.
+Do NOT set an action, instead simply set “Log update to” to be an appropriate field and leave “Frequency” on manual only.
+Set the “Next: when this workflow finishes, also run” to be the Work Flow you wish to appear at the top. Obviously this needs to be a fully functional workflow.&lt;/p&gt;
+&lt;p&gt;{video coming soon}&lt;/p&gt;
+&lt;h3 id=&#34;graphs&#34;&gt;Graphs&lt;/h3&gt;
+&lt;p&gt;Visit this page to find out more about &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide2-personalisation/creating_personal_charts/&#34;&gt;how to add graphs to a view&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Just a quick note about how graphs affect the views user interface…
+The drop down list of views will use a little graph icon next to to a view that contains a graph
+&lt;img src=&#34;https://docs.agilebase.co.uk/views-graph-icon.png&#34; alt=&#34;Graph icon on list of Views&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The view is toggled between showing data or the graph by pressing the graph button top right.
+&lt;img src=&#34;https://docs.agilebase.co.uk/graph-button.png&#34; alt=&#34;Button to toggle between graph and list&#34;&gt;
+There is the ability to show the graphs by default when a user visits the view.
+Edit the view and click on the “properties and options” of the view. Simply tick the “Show Charts by default” options&lt;/p&gt;
+&lt;p&gt;For information about embedding a graph on a record see {insert link here}}.&lt;/p&gt;
+&lt;p&gt;{video coming soon}&lt;/p&gt;
+&lt;h3 id=&#34;sparkline--activity-histogram&#34;&gt;Sparkline / Activity Histogram&lt;/h3&gt;
+&lt;p&gt;These are mini little graphs that you can set to appear next to each record in a view.
+With sparklines next to every record on screen, you can quickly get an idea of the relative activity of each.
+&lt;img src=&#34;https://docs.agilebase.co.uk/sparkine.png&#34; alt=&#34;Example of sparkline on a view&#34;&gt;&lt;/p&gt;
+&lt;p&gt;They are added to the view like any other field - simply choose “Activity histogram [auto]” from the dropdown list of fields for the appropriate table.
+&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#activity-histogram-auto&#34;&gt;For more information visit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;{video coming soon}&lt;/p&gt;
 
       </description>
     </item>
@@ -1502,6 +1605,126 @@ Creating graphs can be done by any user, but it usually helps if the developers 
 &lt;p&gt;To set one or more fields to include in the title, use the field option &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#use-as-record-title&#34;&gt;use as record title&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;see-also&#34;&gt;See also&lt;/h2&gt;
 &lt;p&gt;When a relation field is near the top of the form, it&amp;rsquo;s also moved to the record title level to become a title link, allowing navigation upwards to the &amp;lsquo;parent&amp;rsquo; record. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/&#34;&gt;hierarchy navigation&lt;/a&gt; for info about upwards, and downwards, navigation.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: Guide 3.3 - Records: Advanced UI Control</title>
+      <link>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/records/</link>
+      <pubDate>Tue, 17 Oct 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/records/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;records&#34;&gt;Records&lt;/h2&gt;
+&lt;p&gt;The Full record view is the interface that a user uses to update and create data in the underlying source Table.&lt;/p&gt;
+&lt;p&gt;This User interface isn’t simply every field shown on the screen. The power of agilebase comes from providing facilities to control how the user interacts with their data. Put another way, by allowing developers to control individual fields, decide when to show them and group them together etc, the job of entering data becomes a pleasant user experience.&lt;/p&gt;
+&lt;p&gt;There is plenty of help available in the agileBase Docs system - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;Help on Fields&lt;/a&gt;
+So, we will focus on a couple of key features that have a big impact on the user interface&lt;/p&gt;
+&lt;p&gt;Let’s start with the simplest Field type, a &lt;strong&gt;text box&lt;/strong&gt;. It actually has some of the most powerful options. This can be setup to accept “anything” - and you can choose how much text is “expected” from the user by setting small, medium or large.&lt;/p&gt;
+&lt;p&gt;Or you can decide to control/restrict the data entered&amp;hellip;
+Choosing “Use as DropDown” or “Use tags” changes the text box from free form text entry to selecting from a list. Use as dropdown restricts the user to a single option, whilst tags allows multiple choice.
+Ticking “use only given values” restricts the options the user can choose from to be from the comma separated list of values.
+N.b. A dropdown with 3 or less options will appear as button switches. We can use this facility to create a pleasing UI when the user is faced with a series of Choices.
+&lt;img src=&#34;https://docs.agilebase.co.uk/example-button-switch.png&#34; alt=&#34;Example of a series of button switches&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It can be very useful to prefix each option with a number to help with ordering when alphabetical is insufficient. For example if we want Yes before No!
+Its during this scenario that being able to “Swap colours” can also be be handy&lt;/p&gt;
+&lt;p&gt;There is a further option to “load” the options with the list of Users in the system - very useful when assigning ownership e.g. Account Manager or Task Assigned to
+&lt;img src=&#34;https://docs.agilebase.co.uk/text-field-dropdown.png&#34; alt=&#34;Example of a drop down field restricted toa  drop down of users&#34;&gt;
+(video coming soon)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A couple of quickies…&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Date fields -  you can control the date format (e.g. use the 3 letter month name not a number) as well as the accuracy required on data entry.
+Number fields -  a hidden option on a decimal field is the ability to use “as duration”. Make sure you have 2 decimal places of accuracy and the user will see a time or duration… so instead of seeing a value like “17.5” they will see 17:30.&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+&lt;h3 id=&#34;relation-fields&#34;&gt;Relation fields&lt;/h3&gt;
+&lt;p&gt;These are the cornerstone of agileBase. Controlling and helping the user “pick” the right relation can make or break the usability of a system. It is worth spending the extra time to ensure the right “picker” is set up on a relation field. This is done by setting the “view to use” to be a tailored view dedicated to the job…&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+&lt;h3 id=&#34;cross-reference-fields&#34;&gt;Cross Reference fields&lt;/h3&gt;
+&lt;p&gt;One of the most powerful features a developer can use when defining a table and its user interface is a cross referenced field.
+This field type isn&amp;rsquo;t for storing data directly, rather its for looking up existing data!
+The Cross Reference (Xref for short) is a link to a view that navigates the relational database in order to calculate or lookup relevant information for the record being looked at by the user.
+There are lots of use cases and lots of options when setting up the Xref in order to optimise their use.
+One of the simplest Use Cases is to turn an editable field in to read only. For example, displaying the date when the record was created.&lt;/p&gt;
+&lt;p&gt;To do this, start by creating a view based from the appropriate table. The name of the view is only important to the developer, but it can be useful to adopt a naming convention and filing system to help manage the back-end of the system. In this example we&amp;rsquo;ll call it &amp;ldquo;Xref - Date Created&amp;rdquo; and file it in the tile &amp;ldquo;System - Cross Referenced&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Now, simply add a calculation, giving it an appropriate name.
+Bear in mind this name will most likely appear to the user so we will call it &amp;ldquo;Date Created&amp;rdquo;.
+The contents of the calculation will be {sales opportunities.creation time [auto]}
+Now return to the Table and add a field of type Cross reference.
+Find your view and press add. After positioning it somewhere appropriate the UI should look something like&amp;hellip;
+{screenshot}
+&lt;img src=&#34;https://docs.agilebase.co.uk/xref-date-created-setup.png&#34; alt=&#34;Example of the definition of a cross Reference lookup field&#34;&gt;
+&lt;img src=&#34;https://docs.agilebase.co.uk/xref-date-created-example.png&#34; alt=&#34;Example of how a cross Reference lookup field appears&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You have a couple of options about how the data appears.
+The &lt;strong&gt;Tabular Display&lt;/strong&gt; checkbox does what its says on the tin. It is most useful when the Xref returns multiple lines of data.
+If unticked then the &lt;strong&gt;Display of Fields&lt;/strong&gt; options come in to play.
+&lt;img src=&#34;https://docs.agilebase.co.uk/xref-display-options.png&#34; alt=&#34;options for controlling how Xref data appears&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Cross references can return a lot more than a single field of datat&amp;hellip; the next example returns a table of data.
+In this example we will create a view from the organisation that joins DOWN to the Contacts table and pull through a few key fields of information.
+&lt;img src=&#34;https://docs.agilebase.co.uk/xref-tabular.png&#34; alt=&#34;options for controlling how Xref data appears&#34;&gt;
+We can now see the Organisation&amp;rsquo;s contact list embedded in the Organisation record&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+&lt;h4 id=&#34;important-concept-for-building-cross-references&#34;&gt;Important Concept for building Cross References&lt;/h4&gt;
+&lt;p&gt;How you start building a Cross Reference view will effect how the UI uses it.
+In this next example we will repeat the task but start by building our cross reference view from the contacts table and join UP to the organisation.
+We will pull through the same few key fields and add the cross reference to the Organisation table.
+&lt;img src=&#34;https://docs.agilebase.co.uk/xref-add-contact.png&#34; alt=&#34;Alternative Cross reference enabling adding a child record&#34;&gt;
+As you can see we get more than a list, in fact we can add new contacts and edit existing ones.
+In this configuration this Cross reference is an alternative to using the contacts tab.
+As the developer the choice is yours to use the mechanism which you feel is best.
+For this use case it would make sense to keep the Contacts tab, and use the first style of cross reference (read only mode) but only after its been tweaked to return those contacts who are flagged as the Owner or CEO.&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+&lt;h4 id=&#34;xref-as-workflows&#34;&gt;Xref as Workflows&lt;/h4&gt;
+&lt;p&gt;If you have read some of our other guides you&amp;rsquo;ll know that a view can be configured to be a WorkFlow and perform an action. And since a cross reference is also a view we can use this &amp;ldquo;double life&amp;rdquo; and use a cross reference WorkFlow to make a Button!
+It is as simple as adding any other Cross reference&amp;hellip; although the name of the view you add will become the button title! So again, with a little bit of housekeeping it can be useful to have a tile called &amp;ldquo;System - Buttons&amp;rdquo; to keep them all in.
+A typical Use Case would be to use a series of buttons to move a record through a series of &amp;ldquo;states&amp;rdquo;. This is especially useful if only certain users are allowed to change the state at certain stages.
+For example: a Non Conformance may be marked as &amp;ldquo;Completed&amp;rdquo; by anyone, but only &amp;ldquo;admins&amp;rdquo; are allowed to mark completed tasks as &amp;ldquo;Verification Complete&amp;rdquo;. The right combination of buttons and visibility rules will make the UX smooth and seamless.&lt;/p&gt;
+&lt;p&gt;To acheive this you will need to add a total of 3 cross reference fields.
+The first is a simple &amp;ldquo;data&amp;rdquo; that shows the user the current &amp;ldquo;Status&amp;rdquo;.
+The other 2 cross references, both Workflows, each set the &amp;ldquo;hidden&amp;rdquo; status to the appropriate value.
+The visibility rule applied to each is very important - they need to check a combination of status and user role to ensure that the button is only visible at the right time to the right people.&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+&lt;h4 id=&#34;xref-to-embed-graphs&#34;&gt;Xref to embed Graphs&lt;/h4&gt;
+&lt;p&gt;The final use of cross reference fields is to embed graphs in to the User Interface.
+If you add a simple &amp;ldquo;data&amp;rdquo; style Cross reference, but have gone into that view as a user and added a graph, then the system will choose to display the Graph instead.
+Whilst the Cross reference may return a large data table (and corrsponding graph) when we look at the cross reference embed on the full record you can see the graph is only displaying results related to the record, in this case the organisation.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/xref-graph.png&#34; alt=&#34;options for controlling how Xref data appears&#34;&gt;&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+&lt;h3 id=&#34;controlling-access-to-a-field&#34;&gt;Controlling access to a Field&lt;/h3&gt;
+&lt;p&gt;The roles and permissions system gives you top level control as to the whether the whole table is accessible to a user. However, you often need more fined grained control on field by field basis.
+There are two complimentary ways of controlling &lt;em&gt;access&lt;/em&gt; to a table&amp;rsquo;s field.
+We have already briefly mentioned visibility rules, but there are also rules for locking.
+The key difference is whether you want the end user to &lt;strong&gt;see&lt;/strong&gt; the data or not!
+In both cases you can make the decision once, choosing &amp;ldquo;always&amp;rdquo; or &amp;ldquo;never&amp;rdquo;, or a much powerful option is to use a calculation to make the decision.
+It is very similar to creating and using a cross reference&amp;hellip; a view is created&amp;hellip; in this case its a mechanism to hold the logic. The system uses the existence of the record within this &amp;ldquo;logic&amp;rdquo; view to control whether the field being looked at should be locked or is even visible.&lt;/p&gt;
+&lt;p&gt;There is actually a shortcut to a regularly used &amp;ldquo;locking&amp;rdquo; use case&amp;hellip; Often you want a field to be non-editable once filled in. In this case you dont need to write the logic an apply the view, simply tick the option on the field options screen
+&lt;img src=&#34;https://docs.agilebase.co.uk/lock-value-when-set.png&#34; alt=&#34;Image of Lock value when set&#34;&gt;&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+&lt;h3 id=&#34;form-titles&#34;&gt;Form Titles&lt;/h3&gt;
+&lt;h4 id=&#34;record-title&#34;&gt;Record Title&lt;/h4&gt;
+&lt;p&gt;The user interface has the ability to highlight the importance of certain fields by showing their contents in large font at the top of the record data. For example, a Company Name field may be the record title for an organisation record.&lt;/p&gt;
+&lt;p&gt;This option can be selected for multiple fields in a table. In that case, the first field will be the main title, others will appear as subtitles.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also important to consider the position of the relation fields in your table.
+In this first example the Organisation field is the first field in the table definition. It is given elevated status and appears as large link above the record title.
+&lt;img src=&#34;https://docs.agilebase.co.uk/record-title.png&#34; alt=&#34;example of having relation field first and using record title option on text field&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In this second example the organisation field is second in the list and the record title field is not flagged as such.
+&lt;img src=&#34;https://docs.agilebase.co.uk/record-title-v2.png&#34; alt=&#34;example of NOT having relation field first and NOT using record title option on text field&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Preventing duplicates&lt;/strong&gt;
+Enabling the ‘use as record title’ option also has the effect of enabling duplicate detection. The system will detect when a value is entered that is close to an existing value in the system. Any ‘close’ values that are found are displayed as links to the relevant records.&lt;/p&gt;
+&lt;p&gt;This can be useful when e.g. entering company names. Although a field can be marked unique to prevent exact duplicates, that won’t pick up near matches, which this duplicate detection will. For example, ‘The Universoty Of Bristol’ and ‘University Of Bristol (UOB)’ will be detected as close matches, or ‘Agilebase’ and ‘Agilebase Ltd’.&lt;/p&gt;
+&lt;p&gt;The system uses trigram matching to detect similar values.&lt;/p&gt;
+&lt;h3 id=&#34;sections&#34;&gt;Sections&lt;/h3&gt;
+&lt;p&gt;A separator field doesn’t actually store any data, but is used as a marker of the start of a block of fields. Create a separator and move it to just before the field which should be the first in a block.
+Depending on the table layout, these blocks will be displayed in different ways, but in all cases will form a distinct group of fields.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/record-separator.png&#34; alt=&#34;Screenshot of the defintion of a separator field&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Not only is the separator a useful mechanism for breaking up complicated forms of data, but it acts as a container allowing you to control visibility of the whole block. Simply apply your visibility rule to the container and all fields within it are controlled too.
+Some use cases require optional data to be captured&amp;hellip; in these instances it can be useful to have sections that are closed by default. You can even use a &amp;ldquo;logic&amp;rdquo; rule to make them open once a user has decided to enter data in to them.&lt;/p&gt;
+&lt;p&gt;Another setting with the Separator is “has tabs”.
+The last Separator to have this option &amp;ldquo;ticked&amp;rdquo; will be the first &amp;ldquo;block&amp;rdquo; contained under the first record tab.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Form layout&lt;/strong&gt;
+&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/table-layouts/&#34;&gt;For more information on layout options visit &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
 
       </description>
     </item>
@@ -2547,257 +2770,6 @@ That&amp;rsquo;s because data sent this way doesn&amp;rsquo;t take account of mu
 &lt;p&gt;Sometimes, fields must be unique &lt;strong&gt;in combination&lt;/strong&gt;. For example, imagine you have a system for recording customer complaints. One of the fields might be a customer&amp;rsquo;s reference number, another a relation to the customer record.&lt;/p&gt;
 &lt;p&gt;You want to avoid duplicates being entered, so could make the customer reference number unique. However it could be that two different customers could use the same reference number independently, so that wouldn&amp;rsquo;t really work.&lt;/p&gt;
 &lt;p&gt;The solution is to add a multi-field unique constraint on customer and customer reference number. That way, a reference number won&amp;rsquo;t be able to be re-used for a complaint from the same customer, but more than one customer is allowed to use the same reference.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Options</title>
-      <link>https://docs.agilebase.co.uk/docs/tables/options/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/tables/options/</guid>
-      <description>
-        
-        
-        &lt;p&gt;To access these options, &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;edit a table&lt;/a&gt; and select &amp;rsquo;tags and options&#39;.&lt;/p&gt;
-&lt;h2 id=&#34;allow-add&#34;&gt;Allow add&lt;/h2&gt;
-&lt;p&gt;If this is ticked (it is by default), users can add records to the table. Anyone with develop privileges on the table can add tables regardless.&lt;/p&gt;
-&lt;h3 id=&#34;only-from-within-tab&#34;&gt;Only from within tab&lt;/h3&gt;
-&lt;p&gt;If this is ticked, users can add records but only when accessing this table&amp;rsquo;s form from within a tab of a parent record. This can help ensure that child records are always connected to a parent and aren&amp;rsquo;t created as &amp;lsquo;orphans&amp;rsquo;.&lt;/p&gt;
-&lt;h2 id=&#34;allow-clone-and-merge&#34;&gt;Allow clone and merge&lt;/h2&gt;
-&lt;p&gt;(Off by default). Show a clone/merge record button when a user is viewing a record.&lt;/p&gt;
-&lt;p&gt;Cloning makes a simple copy of all data in the record. The contents of tabs are not cloned. A more advanced clone facility can be created with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; if desired.&lt;/p&gt;
-&lt;p&gt;Merging allows the user to select another record to merge with this one. This is commonly use to resolve a situation where there are duplicate records. The contents of one are merged into the other, then the first deleted. A wizard will guide the user through selecting which data to keep from each record. Child records from the deleted record will be re-attached to the one remaining. So for example if Organisation 1 containing two contacts is merged with Organisation 2 containing 3, a single organisation with five contacts will result.&lt;/p&gt;
-&lt;h2 id=&#34;allow-remove&#34;&gt;Allow remove&lt;/h2&gt;
-&lt;p&gt;(On by default). Allow records to be deleted by people with EDIT privileges as well as people with develop privileges, who can always delete.&lt;/p&gt;
-&lt;h2 id=&#34;allow-share&#34;&gt;Allow share&lt;/h2&gt;
-&lt;p&gt;Showa button which allows links to individual records to be shared between users using email. Note - recipients still need a login and relevant privileges to see the record.&lt;/p&gt;
-&lt;h2 id=&#34;data-entry-from-external-sources&#34;&gt;Data entry from external sources&lt;/h2&gt;
-&lt;p&gt;The options in this section are for configuring the table to allow an API request from an external source to create and edit records. See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API use&lt;/a&gt; for more information.&lt;/p&gt;
-&lt;h2 id=&#34;other-options&#34;&gt;Other options&lt;/h2&gt;
-&lt;h3 id=&#34;records-lockable&#34;&gt;Records lockable&lt;/h3&gt;
-&lt;p&gt;Records can be locked to prevent editing. You may like to do this based on criteria e.g. once a customer order has been sent, it should be locked against further changes.&lt;/p&gt;
-&lt;p&gt;To actually lock the record, a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; can be used.&lt;/p&gt;
-&lt;p&gt;Locked records can be manually unlocked by someone with develop privileges on the table, but only one at a time.&lt;/p&gt;
-&lt;h3 id=&#34;email-notifications&#34;&gt;Email notifications&lt;/h3&gt;
-&lt;p&gt;When someone adds a comment to a record, when selecting recipients, they have the option to email those recipients, as well as adding the comment to the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;comment stream&lt;/a&gt;. Ticking this table option sets the default to send emails for any comment added to this table. Users can override this on an individual comment basis and recipients can override in their notification preferences.&lt;/p&gt;
-&lt;h3 id=&#34;flag-records-with-colour&#34;&gt;Flag records with colour&lt;/h3&gt;
-&lt;p&gt;Enter a field name here and add a field with the same name to a view, to flag records. The contents of the field must be one of the colour names as given on the screen. The field added to the view can be a calculation, specifically a hidden calculation. This will flag the view without showing the colour name on screen.&lt;/p&gt;
-&lt;p&gt;This option can also be used to colour items in a junction chooser (see tab option: &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#choose-a-record-when-a-new-item-is-added&#34;&gt;Choose a record when a new item is added&lt;/a&gt;). In the junction table, set this option, then in the view used as a relation picker (set in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/relation-field-options/#view-to-use&#34;&gt;relation field options&lt;/a&gt;), add the colour calculation.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;It&amp;rsquo;s also possible to colour individual table fields or calculations in a view (as opposed to this option which flags the whole row). See the options for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/text-field-options/#colour-words&#34;&gt;field colouring&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/#colouring&#34;&gt;calculation colouring&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;accept-emails-to-this-address&#34;&gt;Accept emails to this address&lt;/h3&gt;
-&lt;p&gt;The system can accept incoming emails and attach them to relevant records e.g. attaching an email from a customer to that customer&amp;rsquo;s record.&lt;/p&gt;
-&lt;p&gt;A particular email address can be set up to receive emails. The system can be configured to either accept emails from anyone, or just from users. If just from users, then users can forward any emails they receive to the system to have them imported, or BCC the address when sending to people.&lt;/p&gt;
-&lt;p&gt;The email text will be logged as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/comment-feeds/&#34;&gt;comment&lt;/a&gt; against the record, with the full email attached if it is HTML formatted or includes attachments. The table must have a comments field.&lt;/p&gt;
-&lt;p&gt;Please &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; if you&amp;rsquo;d like to set that up.&lt;/p&gt;
-&lt;p&gt;Emails are matched by creating a view containing the email addresses of potential recipients. An incoming email is attached to the record from this view which matches the sender&amp;rsquo;s email address. If there is no match, it is added to a &amp;lsquo;holding bay&amp;rsquo; where users can view and manually attach emails to records.&lt;/p&gt;
-&lt;h4 id=&#34;configuring-the-email-address-used&#34;&gt;Configuring the email address used&lt;/h4&gt;
-&lt;p&gt;An email address of the form &lt;a href=&#34;mailto:viewname@accountname.domainname&#34;&gt;viewname@accountname.domainname&lt;/a&gt; will be set up, e.g. &lt;a href=&#34;mailto:contacts@mycompany.agilebase.co.uk&#34;&gt;contacts@mycompany.agilebase.co.uk&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;viewname&lt;/em&gt; determines the view which Agilebase queries to find the recipient email address. The comment will be added to the matching record in the view&amp;rsquo;s parent table, or a tab of the table, if &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/#accept-emails-from-parent-table&#34;&gt;Accept emails from parent table&lt;/a&gt; is enabled in a tab. If multiple tabs have this option enabled, then the tab with a name also matching &lt;em&gt;viewname&lt;/em&gt; is used&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;accountname&lt;/em&gt; determines the company account to look in&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;domainname&lt;/em&gt; is the domain name of the Agilebase server&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;information&#34;&gt;Information&lt;/h2&gt;
-&lt;p&gt;After the options, some structural information is shown, such as which tables depend on this one i.e. have a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation&lt;/a&gt; to it, how many fields and views per tile there are. See also the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#the-dashboard&#34;&gt;usage dashboard&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Workflow</title>
-      <link>https://docs.agilebase.co.uk/docs/tables/workflow/</link>
-      <pubDate>Wed, 11 May 2022 12:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/tables/workflow/</guid>
-      <description>
-        
-        
-        &lt;p&gt;The workflow panel of a table shows any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; which act on data in that table. In other words, any workflow that updates records, creates new records in the table, or deletes records from it.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-tab.png&#34; alt=&#34;Workflow tab&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Additionally, this panel allows you to choose a workflow to run whenever a new record is created, or (less frequently used) whenever a record is opened.&lt;/p&gt;
-&lt;p&gt;That can be very useful for setting initial values for fields, where those values may be more complex calculations than just a static default value.&lt;/p&gt;
-&lt;h2 id=&#34;when-a-records-created-run-workflow&#34;&gt;When a record&amp;rsquo;s created, run workflow&lt;/h2&gt;
-&lt;p&gt;Run a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflow&lt;/a&gt; immediately after the creation of a record. The workflow runs after any field default values have been set.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The workflow &amp;lsquo;knows&amp;rsquo; metadata such as which user is logged in, which tile is open etc., so if you want to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/#special-functions&#34;&gt;use those in a calculation&lt;/a&gt; in the workflow, you can do.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Note that only workflows which have &lt;strong&gt;Frequency = manual&lt;/strong&gt; set can be chosen to be run when a record is created. That&amp;rsquo;s because a single workflow can&amp;rsquo;t be used both to set initial values &lt;em&gt;and&lt;/em&gt; to run every X minutes.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;run-this-workflow-whenever-each-record-is-viewed&#34;&gt;Run this workflow whenever each record is viewed&lt;/h3&gt;
-&lt;p&gt;As well as running the workflow on record creation, also run it whenever a user views a record in this table. Be aware this may have a performance impact for users, if the workflow is resource intensive and/or multi-step, particularly if records are also viewed frequently.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Calculation Examples</title>
-      <link>https://docs.agilebase.co.uk/docs/views/calculations/examples/</link>
-      <pubDate>Tue, 19 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/views/calculations/examples/</guid>
-      <description>
-        
-        
-        &lt;p&gt;The database which underpins Agilebase is &lt;a href=&#34;https://www.postgresql.org&#34;&gt;PostgreSQL&lt;/a&gt; - &amp;lsquo;The World&amp;rsquo;s Most Advanced Open Source Relational Database&amp;rsquo;.&lt;/p&gt;
-&lt;p&gt;This page will just be an introduction to some of the things you can do with calculations.&lt;/p&gt;
-&lt;p&gt;A comprehensive definition and reference for all of the functions possible can be found here: &lt;a href=&#34;https://www.postgresql.org/docs/current/functions.html&#34;&gt;https://www.postgresql.org/docs/current/functions.html&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;example-functions-for-each-type-of-field&#34;&gt;Example functions for each type of field&lt;/h2&gt;
-&lt;p&gt;Here are some &amp;lsquo;starters for 10&amp;rsquo; that may be useful day to day.&lt;/p&gt;
-&lt;h3 id=&#34;general-functions&#34;&gt;General functions&lt;/h3&gt;
-&lt;p&gt;There are a couple of functions that are particularly useful to know about, to keep in your calculations toolkit. These are&lt;/p&gt;
-&lt;h4 id=&#34;coalesce&#34;&gt;Coalesce&lt;/h4&gt;
-&lt;p&gt;The coalesce function lets you deal sensibly with empty values, which we call &amp;rsquo;null&amp;rsquo; values. Normally, if any field you reference is null, then the result of the calculation is also null. Coalesce is a way to provide a default value. So for example, if a view of customer order lines has a quantity and a price field, but the quantity may be blank, then&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;coalesce({quantity}, 0) * {price}&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;would calculate the line value, outputting zero if the quantity is not filled in.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Coalesce can be used with more than two arguments - the first non-null value it encounters, from left to right, will be output to be used in further calculation steps&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;case&#34;&gt;Case&lt;/h4&gt;
-&lt;p&gt;A case statement can be used to add &amp;lsquo;if/then/else&amp;rsquo; logic. An example is&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;case
-  when {due date} is null then &amp;#39;unknown&amp;#39;
-  when {due date} &amp;lt; now() then &amp;#39;overdue&amp;#39;
-  when {due date} &amp;lt; now() + interval &amp;#39;7 days&amp;#39; then &amp;#39;due soon&amp;#39;
-  else &amp;#39;not due yet&amp;#39;
-end
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(We&amp;rsquo;ll cover date calculations more below).&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Note the top clauses of a case statement are evaluated first, so put more specific things at the top if multiple lines may match.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;number-functions&#34;&gt;Number functions&lt;/h3&gt;
-&lt;p&gt;Common mathematical functions can be found here: &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-math.html&#34;&gt;https://www.postgresql.org/docs/current/functions-math.html&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;text-functions&#34;&gt;Text functions&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;{field 1} || &#39; &#39; || {field 2}&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Two vertical bars are used to join bits of text together (this seems an odd choice to use rather than something like an ampersand or + sign, but there you go, that&amp;rsquo;s what it is). A literal piece of text is surrounded by single quotes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;substring({text field} FROM 1 FOR 1)&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Extracts the first letter (or other character e.g. number) from some text.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;regexp_replace({full name}, &#39;\\s.*&#39;, &#39;&#39;)&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A simplistic way of extracting a person&amp;rsquo;s first name from a full name - strip out everything from the first space onwards.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;regexp_replace(
-  {account owner},
-  &amp;#39;.*\\((.*)\\).*&amp;#39;,
-  &amp;#39;\\1&amp;#39;
-)
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;A more complex example. Given an &amp;lsquo;account owner&amp;rsquo; value in the format &lt;strong&gt;Forename Surname (username)&lt;/strong&gt;, extract the username, i.e. everything between the brackets.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The last two are slightly more complex because they use a powerful text matching/search and replace facility called &lt;strong&gt;regular expressions&lt;/strong&gt;, or regexes for short. Again, this is a standard facility and there&amp;rsquo;s lots of documentation available on the &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP&#34;&gt;PostgreSQL website&lt;/a&gt; and elsewhere if you&amp;rsquo;d like to learn more.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The only difference from standard to be aware of is that when entering a regex into a calculation in Agilebase, you must use two backslashes instead of one.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;like&lt;/code&gt; compares two elements of text and &lt;code&gt;ilike&lt;/code&gt; does so case-insensitively. A percentage sign means &amp;lsquo;match any text&amp;rsquo;. So for example:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;case
-  when {postcode} ilike &amp;#39;bs%&amp;#39; then &amp;#39;Bristol&amp;#39;
-  else &amp;#39;elsewhere&amp;#39;
-end
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;Outputs &amp;lsquo;Bristol&amp;rsquo; if the postcode field starts with &amp;lsquo;BS&amp;rsquo; (or &amp;lsquo;bs&amp;rsquo;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;date-functions&#34;&gt;Date functions&lt;/h3&gt;
-&lt;p&gt;The database has very strong support for working with dates and time - you can do many calculations on them. Here are a few examples.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;{date field} + &#39;1 year&#39;::interval&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;adds a year on to the given date&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You can do the same with months, week, days etc. and combinations like &amp;lsquo;1 week 1 day&amp;rsquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;date_part(&#39;year&#39;, {date field})&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;date_part(&#39;dow&#39;, {date field})&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;These two extract different parts of the date - the first just the year, the second the day of the week as a number 0 - 6. More info is available in the &lt;a href=&#34;https://www.postgresql.org/docs/current/static/functions-datetime.html#FUNCTIONS-DATETIME-EXTRACT%22&#34;&gt;PostgreSQL documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;date_part(&#39;days&#39;, ((date_trunc(&#39;month&#39;, now()) + &#39;1 month&#39;::interval) - now()))&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Works out how many days are left in the current month. This example introduces a couple more date functions:
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;now()&lt;/code&gt; gives the current date and time&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;date_trunc&lt;/code&gt; &amp;rsquo;truncates&amp;rsquo; a date to the month in this case (in other words rounding it down to the nearest month)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;to_char(&#39;19 May 2020&#39;::timestamp, &#39;Day&#39;)&lt;/code&gt; - outputs &amp;lsquo;Tuesday&amp;rsquo;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;to_char(&#39;19 May 2020&#39;::timestamp, &#39;Mon yyyy&#39;)&lt;/code&gt; - outputs &amp;lsquo;May 2020&amp;rsquo;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.postgresql.org/docs/current/functions-formatting.html&#34;&gt;to_char&lt;/a&gt; formats a date (it also works with numbers)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;date_part(&#39;weeks&#39;,{date field 1} - {date field 2})&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Counts the number of weeks between two dates&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;aggregate-calculations&#34;&gt;Aggregate calculations&lt;/h2&gt;
-&lt;p&gt;All of the examples above work within one row, or record, of data. Aggregate calculations are different, the take many rows of data and condense them down into one result - one number, or piece of text, etc.&lt;/p&gt;
-&lt;p&gt;They&amp;rsquo;re very useful for creating summaries of data, such as total sales per product, counts of complaints per month per category, total value of an order (summing individual order lines) etc.&lt;/p&gt;
-&lt;h3 id=&#34;aggregates-of-child-rows&#34;&gt;Aggregates of child rows&lt;/h3&gt;
-&lt;p&gt;To make an aggregate you have to have something to summarise by and something to aggregate. The easiest way of doing this is to create a view with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#upwards-and-downwards-joins&#34;&gt;join down&lt;/a&gt; from a parent table to a child. You can then summarise, or group by each parent row and aggregate one (or more) of the fields in the child table.&lt;/p&gt;
-&lt;p&gt;For example, if we have an invoices table and an invoice lines table, assuming there is a relation linking each invoice line to its parent invoice:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;create a view&lt;/a&gt; from the invoices table - we&amp;rsquo;ll call it &amp;lsquo;invoice totals&amp;rsquo;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/&#34;&gt;add a join&lt;/a&gt; down to invoice lines&lt;/li&gt;
-&lt;li&gt;Add the calculation &lt;code&gt;sum({line total})&lt;/code&gt; to the view&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;You should then have a view with just one row per invoice line, showing the invoice total. &lt;strong&gt;sum&lt;/strong&gt; is an example of an aggregate calculation. Another common example is &lt;strong&gt;count&lt;/strong&gt;. If you replaced &lt;code&gt;sum({line total})&lt;/code&gt; with &lt;code&gt;count(*)&lt;/code&gt;, that would count the number of invoice lines in the invoice, instead of totalling the values up.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Note - the aggregate calculation groups by all non-aggregate fields in a view. For example, if you added the product name into ou invoice totals view, you&amp;rsquo;d get a total per product per invoice, rather than a total for each whole invoice.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;aggregates-without-child-rows&#34;&gt;Aggregates without child rows&lt;/h3&gt;
-&lt;p&gt;There&amp;rsquo;s another way to create aggregates, which can be used without joining down to a child table or view.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;In the tiles interface, open the view you wish to edit&lt;/li&gt;
-&lt;li&gt;Click your user icon at the top right and select &lt;em&gt;admin - edit view&lt;/em&gt; from the menu&lt;/li&gt;
-&lt;li&gt;Tick &lt;em&gt;Group by all non-aggregate fields&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Add any fields you wish to group by to the view. Remove any you don&amp;rsquo;t wish to group by &lt;strong&gt;including any hidden fields&lt;/strong&gt; such as the IDs of joined tables&lt;/li&gt;
-&lt;li&gt;Add the aggregate calculation e.g. &lt;code&gt;sum({my field})&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;expanding-rows&#34;&gt;Expanding rows&lt;/h3&gt;
-&lt;p&gt;Some functions do the opposite of an aggregate function - rather than condensing and summarising many rows into one, they split one row up into many. For example, if one of your fields is a comma separated list, you could split that up into many rows, one per item in the list.&lt;/p&gt;
-&lt;p&gt;Say for example you import data from a form on a website which produces a comma separated list of products ordered.&lt;/p&gt;
-&lt;p&gt;Adding the calculation&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;regexp_split_to_table({products ordered}, &#39;,&#39;)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;would produce one output row per product in the list. That could then be joined to other data in the system such as pricing.&lt;/p&gt;
-&lt;h3 id=&#34;window-functions&#34;&gt;Window functions&lt;/h3&gt;
-&lt;p&gt;Window functions are somewhat like aggregate functions in that they can act on many rows, not just one. However, they don&amp;rsquo;t condense down into a single row. An example would be calculating a rolling average or cumulative total as each row is shown.&lt;/p&gt;
-&lt;p&gt;Effectively, they look at a &amp;lsquo;window&amp;rsquo;, also called a partition, of rows around the current row and calculate a result based on those. That could be for example&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the current row, the one before and the one after it&lt;/li&gt;
-&lt;li&gt;every row up to the current row&lt;/li&gt;
-&lt;li&gt;every row&lt;/li&gt;
-&lt;li&gt;every row which is similar in some way e.g. has the same value for a &amp;lsquo;category&amp;rsquo; field&lt;/li&gt;
-&lt;li&gt;etc.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;As an example,&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;{price} - avg({price}) over (partition by {category})&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;would calculate for each item, the difference from the average price of items with the same category.&lt;/p&gt;
-&lt;p&gt;This again is much too large a topic to cover in an introductory page, there&amp;rsquo;s plenty of documentation here: &lt;a href=&#34;https://www.postgresql.org/docs/current/tutorial-window.html&#34;&gt;https://www.postgresql.org/docs/current/tutorial-window.html&lt;/a&gt;
-and a video introduction to the concept here:&lt;/p&gt;
-
- &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-   &lt;iframe src=&#34;https://www.youtube.com/embed/blHEnrYwySE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
- &lt;/div&gt;
-
-&lt;h3 id=&#34;series-generation&#34;&gt;Series generation&lt;/h3&gt;
-&lt;p&gt;Sometimes you need to &lt;strong&gt;generate&lt;/strong&gt; a set of rows, as opposed to having the data stored in the database. Here are some quick examples:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;generate_series(1,10)&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;generates the numbers 1 to 10, each one in a different row&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;generate_series(now() - &#39;10 years&#39;::interval, now(), &#39;1 month&#39;::interval)&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;generates one row per month, from 10 years ago up until this month&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;The functions above highlight just a few of the many possibilities. Please feel free to read up on PostgreSQL some more and if you come up with any neat calculations yourself in your everyday work, please do send them to &lt;a href=&#34;mailto:support@agilebase.co.uk&#34;&gt;support@agilebase.co.uk&lt;/a&gt; so we can add them to this page (with credit).&lt;/p&gt;
 
       </description>
     </item>

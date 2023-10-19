@@ -15,5 +15,228 @@
       
     
     
+    <item>
+      <title>Guides: Guide 3.1 - Tiles: Advanced UI Control</title>
+      <link>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/tiles/</link>
+      <pubDate>Tue, 17 Oct 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/tiles/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;tiles&#34;&gt;Tiles&lt;/h2&gt;
+&lt;p&gt;A tile on a user’s home screen represents an application or module of an application. It is a collection of data and functionality that forms a coherent whole
+&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;For detailed information about Tiles visit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Let’s start by looking at the collection of tiles this system has configured
+Using the developer interface you can access your list of current tiles.
+&lt;img src=&#34;https://docs.agilebase.co.uk/tile-list.png&#34; alt=&#34;Developer view - list of tiles&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Clicking on one provides access to the configuration options.
+&lt;img src=&#34;https://docs.agilebase.co.uk/tile-individual-details.png&#34; alt=&#34;Tile details&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Obviously setting the title is key as it provides the primary information to the user as to what purpose it serves.
+You can provide a visual clue by choosing an appropriate Icon
+[Video how to set an Icon]
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/yfjLrL1xLN8&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;We would also suggest you set a description for the tile.
+This will appear as a hover over when your user places their cursor above it. Consider it as the first level of user help and should answer the question &amp;ldquo;What functionality does this tile contain?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;You can control the order the tile appears by setting an index number.
+Additionally you can provide &amp;ldquo;breaks&amp;rdquo; in the list of tiles by giving them a section. You can see how this affects the UI below
+&lt;img src=&#34;https://docs.agilebase.co.uk/tile-individual-details.png&#34; alt=&#34;Tile details&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When assigning a tile to a user we can set a &amp;ldquo;Default View&amp;rdquo;.
+When choosing a default view it makes sense to aim your user towards the one they would most
+frequently use. If you&amp;rsquo;re not sure then the most frequently used would be a good place to start.
+&lt;img src=&#34;https://docs.agilebase.co.uk/adding-tile-to-user.png&#34; alt=&#34;Adding a tile to a user&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: Guide 3.2 - Views: Advanced UI Control</title>
+      <link>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/views/</link>
+      <pubDate>Tue, 17 Oct 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/views/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;views&#34;&gt;Views&lt;/h2&gt;
+&lt;p&gt;There are several videos and help pages you can find about creating views. We are going to concentrate on the parts that affect how the user interacts with them.
+Let us start with an important concept&amp;hellip; Your views name, and how a naming convention affects the menu.
+{video coming soon}
+Start by giving your view a simple name, you can see it is listed under a menu title that is the name of the tile.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/view-title.png&#34; alt=&#34;Original View title&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you change the name and use a hyphen, the system will detect the hyphen and use the initial part as the menu group. This is a useful way of grouping views together. You can go further and use a number prefix after the hyphen to control the order of the views within the menu. This is often a vital step when building a system that takes a user through a step by step process.&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t forget to provide your user with a description for the view&amp;hellip;. it provides the first level of user help.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll notice that when you provide a description it will replace the system-created description. This auto-generated description is based on the filters you have set&amp;hellip; &amp;ldquo;isValid = true, quote amount greater than zero&amp;rdquo; won’t make much sense to your users. Wouldn&amp;rsquo;t you much rather read something like &amp;ldquo;All Open Sales Opportunities with an estimate&amp;rdquo; ?
+&lt;img src=&#34;https://docs.agilebase.co.uk/view-title-updated.png&#34; alt=&#34;Updated View title with description&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;view-interface-options&#34;&gt;View Interface Options&lt;/h3&gt;
+&lt;p&gt;There are 3 options… Standard, Inline editing and Kanban&lt;/p&gt;
+&lt;p&gt;“Standard” provides the classic Table of data view of your records. However, you may wish to additionally allow your users to edit data “inline” - i.e. without requiring them to navigate through to the full record. If so, you have two options, either allowing them to toggle the inline edit mode on, or to have it on by default.&lt;br&gt;
+&lt;img src=&#34;https://docs.agilebase.co.uk/view-options.png&#34; alt=&#34;View options dropdown&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Finally, you can also enable the “Cards in Column” interface view (some people may know it as Kanban.)
+This option will show mini cards for each record, stacked in to columns based on the first field that is a “use only given values” Drop Down. By using drag and drop, the user is changing the value of this drop down field. The first few fields in your view will be used in the summary view.
+&lt;img src=&#34;https://docs.agilebase.co.uk/view-kanban-example.png&#34; alt=&#34;Example of Kanban or Cards View&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For the Tabular list of records you have the further option of how to control the “headings”.
+&lt;img src=&#34;https://docs.agilebase.co.uk/view-heading-options.png&#34; alt=&#34;View Heading Options&#34;&gt;
+Spreadsheet is as it sounds with a column heading per row.
+Headings and rows will group records by the first value.
+Long headings and rows will group by the first “few” values that are from the same source.
+&lt;img src=&#34;https://docs.agilebase.co.uk/view-heading.png&#34; alt=&#34;View Heading and Rows&#34;&gt;
+&lt;img src=&#34;https://docs.agilebase.co.uk/view-long-heading.png&#34; alt=&#34;View Heading and Rows&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Obviously these last two options are for when you want to group together data…. This typically occurs when records share a similar value. This will naturally occur when displaying Parent Child data (e.g. Organisations list of contacts) but equally when records share a finite list of options (e.g. Contacts by source).&lt;/p&gt;
+&lt;p&gt;{video coming soon}&lt;/p&gt;
+&lt;h3 id=&#34;adding-a-button-to-a-view&#34;&gt;Adding a Button to a view&lt;/h3&gt;
+&lt;p&gt;A useful feature in agileBase is to provide a button on a view that your user can press that will fire a WorkFlow that performs a function appropriate to the views content.
+Example 1: your view shows a list of Food Samples that are to be created Today. The button at the top could fire a WorkFlow that generates the PDF of labels for use in sending out the resulting samples!
+Example 2: your view shows a list of customer orders for delivery today. The button placed at the top of the view fires a workflow that updates the list and places the orders in a suggested sequence order for the delivery driver to follow.&lt;/p&gt;
+&lt;p&gt;To add a button to a view follow the following steps:
+Edit the view used by the User… goto workflow edit records.
+Do NOT set an action, instead simply set “Log update to” to be an appropriate field and leave “Frequency” on manual only.
+Set the “Next: when this workflow finishes, also run” to be the Work Flow you wish to appear at the top. Obviously this needs to be a fully functional workflow.&lt;/p&gt;
+&lt;p&gt;{video coming soon}&lt;/p&gt;
+&lt;h3 id=&#34;graphs&#34;&gt;Graphs&lt;/h3&gt;
+&lt;p&gt;Visit this page to find out more about &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide2-personalisation/creating_personal_charts/&#34;&gt;how to add graphs to a view&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Just a quick note about how graphs affect the views user interface…
+The drop down list of views will use a little graph icon next to to a view that contains a graph
+&lt;img src=&#34;https://docs.agilebase.co.uk/views-graph-icon.png&#34; alt=&#34;Graph icon on list of Views&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The view is toggled between showing data or the graph by pressing the graph button top right.
+&lt;img src=&#34;https://docs.agilebase.co.uk/graph-button.png&#34; alt=&#34;Button to toggle between graph and list&#34;&gt;
+There is the ability to show the graphs by default when a user visits the view.
+Edit the view and click on the “properties and options” of the view. Simply tick the “Show Charts by default” options&lt;/p&gt;
+&lt;p&gt;For information about embedding a graph on a record see {insert link here}}.&lt;/p&gt;
+&lt;p&gt;{video coming soon}&lt;/p&gt;
+&lt;h3 id=&#34;sparkline--activity-histogram&#34;&gt;Sparkline / Activity Histogram&lt;/h3&gt;
+&lt;p&gt;These are mini little graphs that you can set to appear next to each record in a view.
+With sparklines next to every record on screen, you can quickly get an idea of the relative activity of each.
+&lt;img src=&#34;https://docs.agilebase.co.uk/sparkine.png&#34; alt=&#34;Example of sparkline on a view&#34;&gt;&lt;/p&gt;
+&lt;p&gt;They are added to the view like any other field - simply choose “Activity histogram [auto]” from the dropdown list of fields for the appropriate table.
+&lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/automatically-present-fields/#activity-histogram-auto&#34;&gt;For more information visit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;{video coming soon}&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Guides: Guide 3.3 - Records: Advanced UI Control</title>
+      <link>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/records/</link>
+      <pubDate>Tue, 17 Oct 2023 13:00:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/records/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;records&#34;&gt;Records&lt;/h2&gt;
+&lt;p&gt;The Full record view is the interface that a user uses to update and create data in the underlying source Table.&lt;/p&gt;
+&lt;p&gt;This User interface isn’t simply every field shown on the screen. The power of agilebase comes from providing facilities to control how the user interacts with their data. Put another way, by allowing developers to control individual fields, decide when to show them and group them together etc, the job of entering data becomes a pleasant user experience.&lt;/p&gt;
+&lt;p&gt;There is plenty of help available in the agileBase Docs system - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;Help on Fields&lt;/a&gt;
+So, we will focus on a couple of key features that have a big impact on the user interface&lt;/p&gt;
+&lt;p&gt;Let’s start with the simplest Field type, a &lt;strong&gt;text box&lt;/strong&gt;. It actually has some of the most powerful options. This can be setup to accept “anything” - and you can choose how much text is “expected” from the user by setting small, medium or large.&lt;/p&gt;
+&lt;p&gt;Or you can decide to control/restrict the data entered&amp;hellip;
+Choosing “Use as DropDown” or “Use tags” changes the text box from free form text entry to selecting from a list. Use as dropdown restricts the user to a single option, whilst tags allows multiple choice.
+Ticking “use only given values” restricts the options the user can choose from to be from the comma separated list of values.
+N.b. A dropdown with 3 or less options will appear as button switches. We can use this facility to create a pleasing UI when the user is faced with a series of Choices.
+&lt;img src=&#34;https://docs.agilebase.co.uk/example-button-switch.png&#34; alt=&#34;Example of a series of button switches&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It can be very useful to prefix each option with a number to help with ordering when alphabetical is insufficient. For example if we want Yes before No!
+Its during this scenario that being able to “Swap colours” can also be be handy&lt;/p&gt;
+&lt;p&gt;There is a further option to “load” the options with the list of Users in the system - very useful when assigning ownership e.g. Account Manager or Task Assigned to
+&lt;img src=&#34;https://docs.agilebase.co.uk/text-field-dropdown.png&#34; alt=&#34;Example of a drop down field restricted toa  drop down of users&#34;&gt;
+(video coming soon)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A couple of quickies…&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Date fields -  you can control the date format (e.g. use the 3 letter month name not a number) as well as the accuracy required on data entry.
+Number fields -  a hidden option on a decimal field is the ability to use “as duration”. Make sure you have 2 decimal places of accuracy and the user will see a time or duration… so instead of seeing a value like “17.5” they will see 17:30.&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+&lt;h3 id=&#34;relation-fields&#34;&gt;Relation fields&lt;/h3&gt;
+&lt;p&gt;These are the cornerstone of agileBase. Controlling and helping the user “pick” the right relation can make or break the usability of a system. It is worth spending the extra time to ensure the right “picker” is set up on a relation field. This is done by setting the “view to use” to be a tailored view dedicated to the job…&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+&lt;h3 id=&#34;cross-reference-fields&#34;&gt;Cross Reference fields&lt;/h3&gt;
+&lt;p&gt;One of the most powerful features a developer can use when defining a table and its user interface is a cross referenced field.
+This field type isn&amp;rsquo;t for storing data directly, rather its for looking up existing data!
+The Cross Reference (Xref for short) is a link to a view that navigates the relational database in order to calculate or lookup relevant information for the record being looked at by the user.
+There are lots of use cases and lots of options when setting up the Xref in order to optimise their use.
+One of the simplest Use Cases is to turn an editable field in to read only. For example, displaying the date when the record was created.&lt;/p&gt;
+&lt;p&gt;To do this, start by creating a view based from the appropriate table. The name of the view is only important to the developer, but it can be useful to adopt a naming convention and filing system to help manage the back-end of the system. In this example we&amp;rsquo;ll call it &amp;ldquo;Xref - Date Created&amp;rdquo; and file it in the tile &amp;ldquo;System - Cross Referenced&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Now, simply add a calculation, giving it an appropriate name.
+Bear in mind this name will most likely appear to the user so we will call it &amp;ldquo;Date Created&amp;rdquo;.
+The contents of the calculation will be {sales opportunities.creation time [auto]}
+Now return to the Table and add a field of type Cross reference.
+Find your view and press add. After positioning it somewhere appropriate the UI should look something like&amp;hellip;
+{screenshot}
+&lt;img src=&#34;https://docs.agilebase.co.uk/xref-date-created-setup.png&#34; alt=&#34;Example of the definition of a cross Reference lookup field&#34;&gt;
+&lt;img src=&#34;https://docs.agilebase.co.uk/xref-date-created-example.png&#34; alt=&#34;Example of how a cross Reference lookup field appears&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You have a couple of options about how the data appears.
+The &lt;strong&gt;Tabular Display&lt;/strong&gt; checkbox does what its says on the tin. It is most useful when the Xref returns multiple lines of data.
+If unticked then the &lt;strong&gt;Display of Fields&lt;/strong&gt; options come in to play.
+&lt;img src=&#34;https://docs.agilebase.co.uk/xref-display-options.png&#34; alt=&#34;options for controlling how Xref data appears&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Cross references can return a lot more than a single field of datat&amp;hellip; the next example returns a table of data.
+In this example we will create a view from the organisation that joins DOWN to the Contacts table and pull through a few key fields of information.
+&lt;img src=&#34;https://docs.agilebase.co.uk/xref-tabular.png&#34; alt=&#34;options for controlling how Xref data appears&#34;&gt;
+We can now see the Organisation&amp;rsquo;s contact list embedded in the Organisation record&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+&lt;h4 id=&#34;important-concept-for-building-cross-references&#34;&gt;Important Concept for building Cross References&lt;/h4&gt;
+&lt;p&gt;How you start building a Cross Reference view will effect how the UI uses it.
+In this next example we will repeat the task but start by building our cross reference view from the contacts table and join UP to the organisation.
+We will pull through the same few key fields and add the cross reference to the Organisation table.
+&lt;img src=&#34;https://docs.agilebase.co.uk/xref-add-contact.png&#34; alt=&#34;Alternative Cross reference enabling adding a child record&#34;&gt;
+As you can see we get more than a list, in fact we can add new contacts and edit existing ones.
+In this configuration this Cross reference is an alternative to using the contacts tab.
+As the developer the choice is yours to use the mechanism which you feel is best.
+For this use case it would make sense to keep the Contacts tab, and use the first style of cross reference (read only mode) but only after its been tweaked to return those contacts who are flagged as the Owner or CEO.&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+&lt;h4 id=&#34;xref-as-workflows&#34;&gt;Xref as Workflows&lt;/h4&gt;
+&lt;p&gt;If you have read some of our other guides you&amp;rsquo;ll know that a view can be configured to be a WorkFlow and perform an action. And since a cross reference is also a view we can use this &amp;ldquo;double life&amp;rdquo; and use a cross reference WorkFlow to make a Button!
+It is as simple as adding any other Cross reference&amp;hellip; although the name of the view you add will become the button title! So again, with a little bit of housekeeping it can be useful to have a tile called &amp;ldquo;System - Buttons&amp;rdquo; to keep them all in.
+A typical Use Case would be to use a series of buttons to move a record through a series of &amp;ldquo;states&amp;rdquo;. This is especially useful if only certain users are allowed to change the state at certain stages.
+For example: a Non Conformance may be marked as &amp;ldquo;Completed&amp;rdquo; by anyone, but only &amp;ldquo;admins&amp;rdquo; are allowed to mark completed tasks as &amp;ldquo;Verification Complete&amp;rdquo;. The right combination of buttons and visibility rules will make the UX smooth and seamless.&lt;/p&gt;
+&lt;p&gt;To acheive this you will need to add a total of 3 cross reference fields.
+The first is a simple &amp;ldquo;data&amp;rdquo; that shows the user the current &amp;ldquo;Status&amp;rdquo;.
+The other 2 cross references, both Workflows, each set the &amp;ldquo;hidden&amp;rdquo; status to the appropriate value.
+The visibility rule applied to each is very important - they need to check a combination of status and user role to ensure that the button is only visible at the right time to the right people.&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+&lt;h4 id=&#34;xref-to-embed-graphs&#34;&gt;Xref to embed Graphs&lt;/h4&gt;
+&lt;p&gt;The final use of cross reference fields is to embed graphs in to the User Interface.
+If you add a simple &amp;ldquo;data&amp;rdquo; style Cross reference, but have gone into that view as a user and added a graph, then the system will choose to display the Graph instead.
+Whilst the Cross reference may return a large data table (and corrsponding graph) when we look at the cross reference embed on the full record you can see the graph is only displaying results related to the record, in this case the organisation.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/xref-graph.png&#34; alt=&#34;options for controlling how Xref data appears&#34;&gt;&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+&lt;h3 id=&#34;controlling-access-to-a-field&#34;&gt;Controlling access to a Field&lt;/h3&gt;
+&lt;p&gt;The roles and permissions system gives you top level control as to the whether the whole table is accessible to a user. However, you often need more fined grained control on field by field basis.
+There are two complimentary ways of controlling &lt;em&gt;access&lt;/em&gt; to a table&amp;rsquo;s field.
+We have already briefly mentioned visibility rules, but there are also rules for locking.
+The key difference is whether you want the end user to &lt;strong&gt;see&lt;/strong&gt; the data or not!
+In both cases you can make the decision once, choosing &amp;ldquo;always&amp;rdquo; or &amp;ldquo;never&amp;rdquo;, or a much powerful option is to use a calculation to make the decision.
+It is very similar to creating and using a cross reference&amp;hellip; a view is created&amp;hellip; in this case its a mechanism to hold the logic. The system uses the existence of the record within this &amp;ldquo;logic&amp;rdquo; view to control whether the field being looked at should be locked or is even visible.&lt;/p&gt;
+&lt;p&gt;There is actually a shortcut to a regularly used &amp;ldquo;locking&amp;rdquo; use case&amp;hellip; Often you want a field to be non-editable once filled in. In this case you dont need to write the logic an apply the view, simply tick the option on the field options screen
+&lt;img src=&#34;https://docs.agilebase.co.uk/lock-value-when-set.png&#34; alt=&#34;Image of Lock value when set&#34;&gt;&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+&lt;h3 id=&#34;form-titles&#34;&gt;Form Titles&lt;/h3&gt;
+&lt;h4 id=&#34;record-title&#34;&gt;Record Title&lt;/h4&gt;
+&lt;p&gt;The user interface has the ability to highlight the importance of certain fields by showing their contents in large font at the top of the record data. For example, a Company Name field may be the record title for an organisation record.&lt;/p&gt;
+&lt;p&gt;This option can be selected for multiple fields in a table. In that case, the first field will be the main title, others will appear as subtitles.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also important to consider the position of the relation fields in your table.
+In this first example the Organisation field is the first field in the table definition. It is given elevated status and appears as large link above the record title.
+&lt;img src=&#34;https://docs.agilebase.co.uk/record-title.png&#34; alt=&#34;example of having relation field first and using record title option on text field&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In this second example the organisation field is second in the list and the record title field is not flagged as such.
+&lt;img src=&#34;https://docs.agilebase.co.uk/record-title-v2.png&#34; alt=&#34;example of NOT having relation field first and NOT using record title option on text field&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Preventing duplicates&lt;/strong&gt;
+Enabling the ‘use as record title’ option also has the effect of enabling duplicate detection. The system will detect when a value is entered that is close to an existing value in the system. Any ‘close’ values that are found are displayed as links to the relevant records.&lt;/p&gt;
+&lt;p&gt;This can be useful when e.g. entering company names. Although a field can be marked unique to prevent exact duplicates, that won’t pick up near matches, which this duplicate detection will. For example, ‘The Universoty Of Bristol’ and ‘University Of Bristol (UOB)’ will be detected as close matches, or ‘Agilebase’ and ‘Agilebase Ltd’.&lt;/p&gt;
+&lt;p&gt;The system uses trigram matching to detect similar values.&lt;/p&gt;
+&lt;h3 id=&#34;sections&#34;&gt;Sections&lt;/h3&gt;
+&lt;p&gt;A separator field doesn’t actually store any data, but is used as a marker of the start of a block of fields. Create a separator and move it to just before the field which should be the first in a block.
+Depending on the table layout, these blocks will be displayed in different ways, but in all cases will form a distinct group of fields.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/record-separator.png&#34; alt=&#34;Screenshot of the defintion of a separator field&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Not only is the separator a useful mechanism for breaking up complicated forms of data, but it acts as a container allowing you to control visibility of the whole block. Simply apply your visibility rule to the container and all fields within it are controlled too.
+Some use cases require optional data to be captured&amp;hellip; in these instances it can be useful to have sections that are closed by default. You can even use a &amp;ldquo;logic&amp;rdquo; rule to make them open once a user has decided to enter data in to them.&lt;/p&gt;
+&lt;p&gt;Another setting with the Separator is “has tabs”.
+The last Separator to have this option &amp;ldquo;ticked&amp;rdquo; will be the first &amp;ldquo;block&amp;rdquo; contained under the first record tab.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Form layout&lt;/strong&gt;
+&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/table-layouts/&#34;&gt;For more information on layout options visit &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(video coming soon)&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
