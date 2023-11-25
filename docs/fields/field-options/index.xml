@@ -434,6 +434,8 @@
 &lt;p&gt;The system will look in this view for a template with the name specified above.&lt;/p&gt;
 &lt;h2 id=&#34;paper-size&#34;&gt;Paper size&lt;/h2&gt;
 &lt;p&gt;When a PDF is generated, base it on this size of paper. The default is A4, changing this can be useful if e.g. you want to use the system to print labels.&lt;/p&gt;
+&lt;h2 id=&#34;zoom-&#34;&gt;Zoom %&lt;/h2&gt;
+&lt;p&gt;Setting this to smaller than 100 will make text and other content appear smaller on the page, similarly larger bigger&lt;/p&gt;
 &lt;h2 id=&#34;footer&#34;&gt;Footer&lt;/h2&gt;
 &lt;p&gt;Optionally, add a footer to every page of a generated document, including the name of the document, page number and total number of pages.&lt;/p&gt;
 &lt;blockquote&gt;
