@@ -741,16 +741,17 @@ b) the value of the first field in the view above&lt;/p&gt;
 &lt;td&gt;As per $view.htmlTable(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;) but again with swapped axes&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;$view.htmlTablePivot(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;)&lt;/td&gt;
-&lt;td&gt;Create a &lt;a href=&#34;https://en.wikipedia.org/wiki/Pivot_table&#34;&gt;pivot table&lt;/a&gt; output. The first column in the view will be the heading (portion size in the example below). The second will be the &amp;lsquo;vertical&amp;rsquo; category (nutrition in the example) and all other fields will be values&lt;/td&gt;
+&lt;td&gt;$view.htmlTablePivot(&amp;ldquo;table name&amp;rdquo;, &amp;ldquo;child view name&amp;rdquo;, &amp;ldquo;separator&amp;rdquo;)&lt;/td&gt;
+&lt;td&gt;Create a &lt;a href=&#34;https://en.wikipedia.org/wiki/Pivot_table&#34;&gt;pivot table&lt;/a&gt; output. The first column in the view will be the heading (portion size in the example below). The second will be the &amp;lsquo;vertical&amp;rsquo; category (nutrition in the example) and all other fields will be values. The &amp;lsquo;separator&amp;rsquo; parameter is a string (text) used to join all the values to gether into one cell, if there&amp;rsquo;s more than one. If unsure, try using a comma. An empty string can also be supplied, meaning no separation&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Pivot table example: source view
-&lt;img src=&#34;https://docs.agilebase.co.uk/pivot-source.png&#34; alt=&#34;pivot table source data&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Pivot table example: output
-&lt;img src=&#34;https://docs.agilebase.co.uk/pivot-table-example.png&#34; alt=&#34;pivot table example example output&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&amp;hellip;and here are some of the most commonly used session functions. Each user gets a new session when they log in, it stores information about the system&amp;rsquo;s current state for them.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/pivot-source.png&#34; alt=&#34;pivot table source data&#34;&gt;
+&lt;em&gt;Pivot table example: source view&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/pivot-table-example.png&#34; alt=&#34;pivot table example example output&#34;&gt;
+&lt;em&gt;Pivot table example: output produced from the source view&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;session-functions&#34;&gt;Session functions&lt;/h3&gt;
+&lt;p&gt;Here are some of the most commonly used session functions. Each user gets a new session when they log in, it stores information about the system&amp;rsquo;s current state for them.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
