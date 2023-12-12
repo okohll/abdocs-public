@@ -73,6 +73,10 @@
 &lt;p&gt;It&amp;rsquo;s possible for companies to apply their logo and custom login screen to the system. Please contact us if you&amp;rsquo;d like to set this up.&lt;/p&gt;
 &lt;h4 id=&#34;logout-after&#34;&gt;Logout after&lt;/h4&gt;
 &lt;p&gt;Automatically end the user&amp;rsquo;s session after this many minutes of inactivity. The user themselves can also change this setting.&lt;/p&gt;
+&lt;h4 id=&#34;disable&#34;&gt;Disable&lt;/h4&gt;
+&lt;p&gt;Ticking the &amp;lsquo;disable&amp;rsquo; option for a user ensures they won&amp;rsquo;t be able to log in.&lt;/p&gt;
+&lt;p&gt;It may be useful to use this instead of removing a user if you may want to re-instate them in the future, for example a regular contractor. All their privileges, tiles etc. will remain in place.&lt;/p&gt;
+&lt;p&gt;For security, the system will automatically disable users if they haven&amp;rsquo;t logged in for a long period of time. You can then un-tick this to enable them again if necessary.&lt;/p&gt;
 &lt;h4 id=&#34;restrict-data-access&#34;&gt;Restrict data access&lt;/h4&gt;
 &lt;p&gt;Here, you can specify a field name, either an equals or a contains filter and a value. The button &lt;em&gt;set to user ID&lt;/em&gt; will set the value to the user&amp;rsquo;s ID.&lt;/p&gt;
 &lt;p&gt;The purpose of this is to limit the data rows a particular user sees in a view. If a field with the name you specify appears in a view, a filter will be automatically applied so the user only sees rows which match the filter.&lt;/p&gt;
