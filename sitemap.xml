@@ -47,6 +47,9 @@
     <loc>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/</loc>
     <lastmod>2023-12-12T21:29:37+00:00</lastmod>
   </url><url>
+    <loc>https://docs.agilebase.co.uk/docs/artificial-intelligence/</loc>
+    <lastmod>2024-02-07T18:15:05+00:00</lastmod>
+  </url><url>
     <loc>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/community-users/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
@@ -108,13 +111,13 @@
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/tables/adding-and-removing/</loc>
-    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
+    <lastmod>2024-02-07T18:15:05+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/fields/</loc>
-    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
+    <lastmod>2024-02-07T18:15:05+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/views/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
@@ -330,7 +333,7 @@
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</loc>
-    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
+    <lastmod>2024-02-05T16:30:38+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
@@ -377,10 +380,10 @@
     <loc>https://docs.agilebase.co.uk/docs/integrations/complex-example/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
-    <loc>https://docs.agilebase.co.uk/docs/integrations/exporting-to-spreadsheet/</loc>
-    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
+    <loc>https://docs.agilebase.co.uk/docs/integrations/comments-integration/</loc>
+    <lastmod>2024-02-05T16:30:38+00:00</lastmod>
   </url><url>
-    <loc>https://docs.agilebase.co.uk/docs/integrations/slack-integration/</loc>
+    <loc>https://docs.agilebase.co.uk/docs/integrations/exporting-to-spreadsheet/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/integrations/importing/</loc>
@@ -407,6 +410,15 @@
     <loc>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/software-architect/</loc>
+    <lastmod>2024-02-07T18:15:05+00:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/</loc>
+    <lastmod>2024-02-07T18:15:05+00:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/v6/</loc>
+    <lastmod>2024-02-07T18:15:05+00:00</lastmod>
+  </url><url>
     <loc>https://docs.agilebase.co.uk/tags/citizen-developer-level-3/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
@@ -416,14 +428,8 @@
     <loc>https://docs.agilebase.co.uk/tags/system-architect/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/</loc>
-    <lastmod>2023-12-12T21:29:37+00:00</lastmod>
-  </url><url>
     <loc>https://docs.agilebase.co.uk/tags/junior-software-architect/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/software-architect/</loc>
-    <lastmod>2023-12-12T21:29:37+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/architect/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
@@ -435,7 +441,7 @@
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/citizen-developer-level-2/</loc>
-    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
+    <lastmod>2024-02-07T18:15:05+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/learner-progression/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
@@ -472,9 +478,6 @@
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/tabs/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/v6/</loc>
-    <lastmod>2023-12-12T21:29:37+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/requires-update/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>

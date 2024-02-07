@@ -5,7 +5,7 @@
     <description>Recent content in v6 on Agilebase docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Aug 2023 13:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 07 Feb 2024 14:30:00 +0100</lastBuildDate>
     
 	  <atom:link href="https://docs.agilebase.co.uk/tags/v6/index.xml" rel="self" type="application/rss+xml" />
     
@@ -339,6 +339,31 @@
 &lt;p&gt;A user removal will have no effect on any data stored in the system. The user&amp;rsquo;s previous comments will still be visible for example and their username will still be logged against any records they&amp;rsquo;re marked as owner of. Their changes will still be in the audit trail and they will be marked as the creator/last editor of records where relevant.&lt;/p&gt;
 &lt;p&gt;You may want to take some other actions after deletion e.g. to re-assign records they are assigned to.&lt;/p&gt;
 &lt;p&gt;A deleted user&amp;rsquo;s profile image will be replaced with a standard icon representing a deleted user, when displayed in comment streams etc.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Artificial Intelligence (AI)</title>
+      <link>https://docs.agilebase.co.uk/docs/artificial-intelligence/</link>
+      <pubDate>Wed, 07 Feb 2024 14:30:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/artificial-intelligence/</guid>
+      <description>
+        
+        
+        &lt;p&gt;AI is used in many core features of Agilebase: to give you ideas about what to build, help to build those systems and build more advanced features more quickly than you would be able to do on your own as you progress your learning.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s possible, with a few simple prompts, for Agilebase&amp;rsquo;s AI to build a complete system for you from scratch, for whatever you want (a CRM system for a charity, an asset tracking system for a film production company, or whatever you want to describe).&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/sBYr8Sf6hAI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then when fleshing it out, the AI can help with more complex tasks like adding calculations for reporting.&lt;/p&gt;
+&lt;p&gt;However, AI isn&amp;rsquo;t a replacement for your own understanding, more of an aid. It&amp;rsquo;s always a good idea to have some knowledge of the principles of how database systems work and Agilebase in particular - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; is a good starting point.&lt;/p&gt;
+&lt;h2 id=&#34;data-privacy&#34;&gt;Data Privacy&lt;/h2&gt;
+&lt;p&gt;Whenever you use AI features, which are marked with a &amp;lsquo;sparkles&amp;rsquo; icon and the word AI inside a button, you should be aware that the prompts that you provide, along with other information from the Agilebase system (explained in the documentation for each feature) is sent to a third party AI.&lt;/p&gt;
+&lt;p&gt;At the time of writing, we use OpenAI&amp;rsquo;s ChatGPT API. Their terms and policies, including their privacy policy are located here: &lt;a href=&#34;https://openai.com/policies&#34;&gt;https://openai.com/policies&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -938,13 +963,42 @@ Creating graphs can be done by any user, but it usually helps if the developers 
         
         
         &lt;p&gt;A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an Agilebase application.&lt;/p&gt;
-&lt;h2 id=&#34;adding-a-table&#34;&gt;Adding a table&lt;/h2&gt;
+&lt;h2 id=&#34;using-ai-to-add-multiple-tables&#34;&gt;Using AI to add multiple tables&lt;/h2&gt;
+&lt;p&gt;Providing a short text prompt to the AI will let it suggest a suite of tables which will comprise a complete system.&lt;/p&gt;
+&lt;p&gt;For example, asking for a &amp;lsquo;Gym Membership system&amp;rsquo; might result in tables for&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;membership types&lt;/li&gt;
+&lt;li&gt;members&lt;/li&gt;
+&lt;li&gt;subscriptions&lt;/li&gt;
+&lt;li&gt;payments&lt;/li&gt;
+&lt;li&gt;classes&lt;/li&gt;
+&lt;li&gt;class registrations&lt;/li&gt;
+&lt;li&gt;trainers&lt;/li&gt;
+&lt;li&gt;trainer schedules&lt;/li&gt;
+&lt;li&gt;equipment&lt;/li&gt;
+&lt;li&gt;equipment usage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Agilebase will create all of these tables for you.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/sBYr8Sf6hAI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To start this process:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;On the homepage, click the &amp;rsquo;toggle&amp;rsquo; button in the top-right of the screen to enable dev mode (if it is not enabled already)&lt;/li&gt;
+&lt;li&gt;On the homepage, click the &amp;rsquo;toggle&amp;rsquo; button in the top-right of the screen to enable development mode (if it is not enabled already)&lt;/li&gt;
+&lt;li&gt;Press &lt;em&gt;AI: Create System&lt;/em&gt; at the top, then enter a short (or more detailed) description of what you&amp;rsquo;d like to create&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note that the prompt you provide, along with a list of existing tables in your system (so duplicates can be avoided) will be sent to the third party AI provider.
+Please check that you are happy with their &lt;a href=&#34;https://docs.agilebase.co.uk/docs/artificial-intelligence/#data-privacy&#34;&gt;privacy policy&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;adding-a-single-table&#34;&gt;Adding a single table&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;On the homepage, click the &amp;rsquo;toggle&amp;rsquo; button in the top-right of the screen to enable development mode (if it is not enabled already)&lt;/li&gt;
 &lt;li&gt;Click &lt;em&gt;+ Table&lt;/em&gt;, choosing a name for the new table&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;TODO: images&lt;/strong&gt;
-&lt;img src=&#34;https://docs.agilebase.co.uk/add-table-button.png&#34; alt=&#34;Add Table Button&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-table-button.png&#34; alt=&#34;Add Table Button&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You can change the table&amp;rsquo;s name and add a longer description under &lt;strong&gt;Help&lt;/strong&gt;. This description will be used as help text in the user interface.&lt;/p&gt;
 &lt;h3 id=&#34;naming-tables&#34;&gt;Naming tables&lt;/h3&gt;
 &lt;p&gt;When naming a table, it&amp;rsquo;s best to use a plural form. Also avoid filler endings like &amp;lsquo;info&amp;rsquo; or &amp;lsquo;details&amp;rsquo;. So rather than &amp;lsquo;company info&amp;rsquo;, you might call a table &amp;lsquo;companies&amp;rsquo;.&lt;/p&gt;
@@ -964,6 +1018,9 @@ Creating graphs can be done by any user, but it usually helps if the developers 
 &lt;h3 id=&#34;from-editing-a-record&#34;&gt;From editing a record&lt;/h3&gt;
 &lt;p&gt;When build mode is enabled, if you are viewing an individual record then clicking the big pencil at the top left of the screen lets you edit the underlying table.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/editing-a-record.png&#34; alt=&#34;Editing a record&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-fields&#34;&gt;Adding fields&lt;/h2&gt;
+&lt;p&gt;Once the table is created, you can use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#adding-fields-automatically-using-ai&#34;&gt;AI to populate it&lt;/a&gt; with a set of relevant fields, or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#adding-a-field-manually&#34;&gt;add each field you want individually&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The AI will also link your table to other existing tables, where relevant, by adding relation fields.&lt;/p&gt;
 &lt;h2 id=&#34;removing-a-table&#34;&gt;Removing a table&lt;/h2&gt;
 &lt;p&gt;Before removing a table, you first need to remove all views and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#removing-a-field&#34;&gt;fields&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s not necessary to remove actual data records from the table first.&lt;/p&gt;
@@ -1038,11 +1095,25 @@ Creating graphs can be done by any user, but it usually helps if the developers 
         
         &lt;p&gt;Adding fields to a table creates a form by which people (and other sources such as the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt;) can enter data.&lt;/p&gt;
 &lt;p&gt;There are various types of fields and field options which this section will cover.&lt;/p&gt;
-&lt;h2 id=&#34;adding-a-field&#34;&gt;Adding a field&lt;/h2&gt;
+&lt;h2 id=&#34;adding-fields-automatically-using-ai&#34;&gt;Adding fields automatically using AI&lt;/h2&gt;
+&lt;p&gt;If you are starting from scratch, Agilebase&amp;rsquo;s AI can propose a set of sensible fields for your table. Each can then be accepted or rejected according to your needs.&lt;/p&gt;
+&lt;p&gt;That includes adding relation fields to link your table with other existing tables in the system, for example to link a contact to an organisation.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This feature is only relevant to tables which don&amp;rsquo;t yet have any fields&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ol&gt;
-&lt;li&gt;Ensure &lt;a href=&#34;https://docs.agilebase.co.uk/docs/introduction/development-mode/&#34;&gt;development mode&lt;/a&gt; is toggled on&lt;/li&gt;
-&lt;li&gt;Select the table to add a field to&lt;/li&gt;
-&lt;li&gt;Click on the pencil icon above the record, if necessary, to edit the table&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;Edit the table&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Enter or edit a brief description of what the table will be used for&lt;/li&gt;
+&lt;li&gt;Press the &amp;lsquo;AI: Auto Populate&amp;rsquo; button&lt;/li&gt;
+&lt;li&gt;When the list is provided, un-tick any you don&amp;rsquo;t want and press &amp;lsquo;Accept&amp;rsquo;, or alternatively press &amp;lsquo;Reject All&amp;rsquo; to go back, tweak the description and try again.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: when you use the AI, the description you provide, along with a list of other tables in the system (to allow relation fields to be added) is sent to the third party AI provider.
+Please check that you are happy with their &lt;a href=&#34;https://docs.agilebase.co.uk/docs/artificial-intelligence/#data-privacy&#34;&gt;privacy policy&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;adding-a-field-manually&#34;&gt;Adding a field manually&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#editing-a-table&#34;&gt;Edit the table&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;From the controls at the top of the list of existing fields:
 &lt;ul&gt;
 &lt;li&gt;Type in a field name, optional description, choose a type and press the &lt;em&gt;Add&lt;/em&gt; button&lt;/li&gt;
@@ -2676,48 +2747,6 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;h3 id=&#34;adding-a-cross-join&#34;&gt;Adding a cross join&lt;/h3&gt;
 &lt;p&gt;Adding a cross join is a little different to &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#adding-a-join&#34;&gt;adding a normal join&lt;/a&gt;. The left and right fields don&amp;rsquo;t matter (as we want to apply any exclusion rules, we just want every combination of rows possible).&lt;/p&gt;
 &lt;p&gt;So follow the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#complex-joins&#34;&gt;normal process for a complex join&lt;/a&gt;, but just select the left and right tables (or views), leave the fields at their default values.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Filters</title>
-      <link>https://docs.agilebase.co.uk/docs/views/filters/</link>
-      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/views/filters/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Filters can be applied permanently to a view, allowing an administrator to specify the subset of records that should be displayed. This is often for convenience and to create more useful systems. For example, if you have a database of suppliers, you may want to create views showing those which are approved, those which aren&amp;rsquo;t, those which are local etc. Each view would have a different set of filters applied.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Remember people can apply additional &amp;lsquo;ad-hoc&amp;rsquo; or temporary filters to a view at any time using the filter boxes at the top of the screen, so it may not be necessary to create filtered views for every eventuality.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;A filter can act on any field or calculation in the view, as well as on any in joined tables or views.&lt;/p&gt;
-&lt;p&gt;Multiple filters act like they have AND between them, i.e. they are applied additively. If you wish to apply a filters with OR between them, or if you wish to apply a filter on the reult of the comparison of fields, then simply create the relevant &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/calculations/&#34;&gt;calculation&lt;/a&gt;. For example, if you added two filters to a suppliers view&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;status equals approved&lt;/strong&gt; and &lt;strong&gt;status equals pending&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;then you would get no records showing - a status can&amp;rsquo;t be both one thing and another. However if you created a boolean calculation &amp;lsquo;pending or approved&amp;rsquo;, with definition&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;{status} like &#39;approved&#39; or {status} like &#39;pending&#39;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;you could then add a filter on that calculation&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;pending or approved equals true&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;adding-a-filter&#34;&gt;Adding a filter&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open the view you want to edit&lt;/li&gt;
-&lt;li&gt;Toggle development mode on and click the big pencil at the top left of the screen&lt;/li&gt;
-&lt;li&gt;Under &lt;em&gt;filters&lt;/em&gt;, choose a type, give it a name and press &lt;em&gt;Add&lt;/em&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;There are 26 types of filter to choose from, from the simple &amp;rsquo;equals&amp;rsquo; and &amp;rsquo;not equal to&amp;rsquo;, to more complex pattern matching using &lt;a href=&#34;https://www.postgresql.org/docs/current/functions-matching.html#FUNCTIONS-POSIX-REGEXP&#34;&gt;regular expressions&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Some filters apply to multiple data types, others only to specific types. For example, &amp;rsquo;newer than X days ago&amp;rsquo; only applies to date fields.&lt;/p&gt;
-&lt;p&gt;Once you&amp;rsquo;ve added a filter, you&amp;rsquo;ll be able to type in a description for it. If no description is entered, the system will automatically generate one, which you&amp;rsquo;ll be able to see.&lt;/p&gt;
-&lt;p&gt;This description is shown to users as help in particular circumstances, e.g. when the view is used as a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chaser&lt;/a&gt;, so it&amp;rsquo;s a good idea to check it makes sense.&lt;/p&gt;
-&lt;h3 id=&#34;including-blank-values&#34;&gt;Including blank values&lt;/h3&gt;
-&lt;p&gt;Once a filter has been created, when you hover over it you&amp;rsquo;ll see an option to tick &amp;lsquo;or is blank&amp;rsquo;. This is useful to ensure blank values aren&amp;rsquo;t excluded by your filter, which they typically would be otherwise.&lt;/p&gt;
-&lt;p&gt;For example, imaging you&amp;rsquo;re setting up an &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;email notification workflow&lt;/a&gt; to send a notification to people once a week of any outstanding tasks. You&amp;rsquo;d likely need two filters, the first to find any tasks with an &amp;lsquo;outstanding&amp;rsquo; status and the second to only include tasks for which no notifications have been sent within the last 7 days.&lt;/p&gt;
-&lt;p&gt;For that second filter, you would set it up as&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&#39;last notified&#39; is more than 7 days ago
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;However, as it stands, that would exclude any tasks which have &lt;strong&gt;never&lt;/strong&gt; had a notification sent for them, i.e. where the last notified field is blank.&lt;/p&gt;
-&lt;p&gt;To include those, just tick &amp;lsquo;or is blank&amp;rsquo; after creating the filter.&lt;/p&gt;
 
       </description>
     </item>

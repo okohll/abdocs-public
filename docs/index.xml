@@ -1100,13 +1100,42 @@ Creating graphs can be done by any user, but it usually helps if the developers 
         
         
         &lt;p&gt;A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an Agilebase application.&lt;/p&gt;
-&lt;h2 id=&#34;adding-a-table&#34;&gt;Adding a table&lt;/h2&gt;
+&lt;h2 id=&#34;using-ai-to-add-multiple-tables&#34;&gt;Using AI to add multiple tables&lt;/h2&gt;
+&lt;p&gt;Providing a short text prompt to the AI will let it suggest a suite of tables which will comprise a complete system.&lt;/p&gt;
+&lt;p&gt;For example, asking for a &amp;lsquo;Gym Membership system&amp;rsquo; might result in tables for&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;membership types&lt;/li&gt;
+&lt;li&gt;members&lt;/li&gt;
+&lt;li&gt;subscriptions&lt;/li&gt;
+&lt;li&gt;payments&lt;/li&gt;
+&lt;li&gt;classes&lt;/li&gt;
+&lt;li&gt;class registrations&lt;/li&gt;
+&lt;li&gt;trainers&lt;/li&gt;
+&lt;li&gt;trainer schedules&lt;/li&gt;
+&lt;li&gt;equipment&lt;/li&gt;
+&lt;li&gt;equipment usage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Agilebase will create all of these tables for you.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/sBYr8Sf6hAI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To start this process:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;On the homepage, click the &amp;rsquo;toggle&amp;rsquo; button in the top-right of the screen to enable dev mode (if it is not enabled already)&lt;/li&gt;
+&lt;li&gt;On the homepage, click the &amp;rsquo;toggle&amp;rsquo; button in the top-right of the screen to enable development mode (if it is not enabled already)&lt;/li&gt;
+&lt;li&gt;Press &lt;em&gt;AI: Create System&lt;/em&gt; at the top, then enter a short (or more detailed) description of what you&amp;rsquo;d like to create&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note that the prompt you provide, along with a list of existing tables in your system (so duplicates can be avoided) will be sent to the third party AI provider.
+Please check that you are happy with their &lt;a href=&#34;https://docs.agilebase.co.uk/docs/artificial-intelligence/#data-privacy&#34;&gt;privacy policy&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;adding-a-single-table&#34;&gt;Adding a single table&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;On the homepage, click the &amp;rsquo;toggle&amp;rsquo; button in the top-right of the screen to enable development mode (if it is not enabled already)&lt;/li&gt;
 &lt;li&gt;Click &lt;em&gt;+ Table&lt;/em&gt;, choosing a name for the new table&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;TODO: images&lt;/strong&gt;
-&lt;img src=&#34;https://docs.agilebase.co.uk/add-table-button.png&#34; alt=&#34;Add Table Button&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/add-table-button.png&#34; alt=&#34;Add Table Button&#34;&gt;&lt;/p&gt;
 &lt;p&gt;You can change the table&amp;rsquo;s name and add a longer description under &lt;strong&gt;Help&lt;/strong&gt;. This description will be used as help text in the user interface.&lt;/p&gt;
 &lt;h3 id=&#34;naming-tables&#34;&gt;Naming tables&lt;/h3&gt;
 &lt;p&gt;When naming a table, it&amp;rsquo;s best to use a plural form. Also avoid filler endings like &amp;lsquo;info&amp;rsquo; or &amp;lsquo;details&amp;rsquo;. So rather than &amp;lsquo;company info&amp;rsquo;, you might call a table &amp;lsquo;companies&amp;rsquo;.&lt;/p&gt;
@@ -1126,6 +1155,9 @@ Creating graphs can be done by any user, but it usually helps if the developers 
 &lt;h3 id=&#34;from-editing-a-record&#34;&gt;From editing a record&lt;/h3&gt;
 &lt;p&gt;When build mode is enabled, if you are viewing an individual record then clicking the big pencil at the top left of the screen lets you edit the underlying table.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/editing-a-record.png&#34; alt=&#34;Editing a record&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;adding-fields&#34;&gt;Adding fields&lt;/h2&gt;
+&lt;p&gt;Once the table is created, you can use the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#adding-fields-automatically-using-ai&#34;&gt;AI to populate it&lt;/a&gt; with a set of relevant fields, or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#adding-a-field-manually&#34;&gt;add each field you want individually&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The AI will also link your table to other existing tables, where relevant, by adding relation fields.&lt;/p&gt;
 &lt;h2 id=&#34;removing-a-table&#34;&gt;Removing a table&lt;/h2&gt;
 &lt;p&gt;Before removing a table, you first need to remove all views and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/#removing-a-field&#34;&gt;fields&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s not necessary to remove actual data records from the table first.&lt;/p&gt;

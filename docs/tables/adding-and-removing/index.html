@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/tables/adding-and-removing/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2023-11-27T10:15:18+00:00" />
+<meta property="article:modified_time" content="2024-02-07T18:15:05+00:00" />
 <meta itemprop="name" content="Adding, editing and removing">
 <meta itemprop="description" content="The basics of working with tables"><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00" />
-<meta itemprop="wordCount" content="577">
+<meta itemprop="dateModified" content="2024-02-07T18:15:05+00:00" />
+<meta itemprop="wordCount" content="773">
 <meta itemprop="keywords" content="Citizen Developer level 2,v6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Adding, editing and removing"/>
 <meta name="twitter:description" content="The basics of working with tables"/>
@@ -111,7 +111,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.7450c8f74a661b19e7a7298551a923b4.json"
+    data-offline-search-index-json-src="/offline-search-index.d656ea1781e606f0fce5c8625d499df4.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -136,7 +136,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.7450c8f74a661b19e7a7298551a923b4.json"
+    data-offline-search-index-json-src="/offline-search-index.d656ea1781e606f0fce5c8625d499df4.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -210,6 +210,8 @@ if (!doNotTrack) {
   <a href="/docs/security-and-compliance/policies/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docssecurity-and-compliancepolicies"><span class="">Policies</span></a>
 </li>
   </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsartificial-intelligence-li">
+  <a href="/docs/artificial-intelligence/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsartificial-intelligence"><span class="">Artificial Intelligence (AI)</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docstiles-li">
   <a href="/docs/tiles/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docstiles"><span class="">Tiles</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docstables-li">
@@ -384,10 +386,10 @@ if (!doNotTrack) {
   <a href="/docs/integrations/push-example-zapier/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationspush-example-zapier"><span class="">PUSH API worked example - Zapier</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationscomplex-example-li">
   <a href="/docs/integrations/complex-example/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationscomplex-example"><span class="">Complete API worked example</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationscomments-integration-li">
+  <a href="/docs/integrations/comments-integration/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationscomments-integration"><span class="">Comments integration</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationsexporting-to-spreadsheet-li">
   <a href="/docs/integrations/exporting-to-spreadsheet/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationsexporting-to-spreadsheet"><span class="">Exporting to spreadsheet</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationsslack-integration-li">
-  <a href="/docs/integrations/slack-integration/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationsslack-integration"><span class="">Slack integration</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationsimporting-li">
   <a href="/docs/integrations/importing/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationsimporting"><span class="">Importing from spreadsheet</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationstesting-a-login-li">
@@ -468,7 +470,8 @@ if (!doNotTrack) {
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#adding-a-table">Adding a table</a>
+    <li><a href="#using-ai-to-add-multiple-tables">Using AI to add multiple tables</a></li>
+    <li><a href="#adding-a-single-table">Adding a single table</a>
       <ul>
         <li><a href="#naming-tables">Naming tables</a></li>
       </ul>
@@ -479,6 +482,7 @@ if (!doNotTrack) {
         <li><a href="#from-editing-a-record">From editing a record</a></li>
       </ul>
     </li>
+    <li><a href="#adding-fields">Adding fields</a></li>
     <li><a href="#removing-a-table">Removing a table</a></li>
   </ul>
 </nav>
@@ -511,10 +515,10 @@ if (!doNotTrack) {
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/requires-update/" data-taxonomy-term="requires-update"><span class="taxonomy-label">requires update</span><span class="taxonomy-count">2</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/sales/" data-taxonomy-term="sales"><span class="taxonomy-label">Sales</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/security/" data-taxonomy-term="security"><span class="taxonomy-label">Security</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span><span class="taxonomy-count">34</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span><span class="taxonomy-count">35</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/system-architect/" data-taxonomy-term="system-architect"><span class="taxonomy-label">System Architect</span><span class="taxonomy-count">4</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/tabs/" data-taxonomy-term="tabs"><span class="taxonomy-label">tabs</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/v6/" data-taxonomy-term="v6"><span class="taxonomy-label">v6</span><span class="taxonomy-count">88</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/v6/" data-taxonomy-term="v6"><span class="taxonomy-label">v6</span><span class="taxonomy-count">89</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/views/" data-taxonomy-term="views"><span class="taxonomy-label">views</span><span class="taxonomy-count">1</span></a></li>
         </ul>
     </div>
@@ -550,13 +554,42 @@ if (!doNotTrack) {
 
   </header>
 	<p>A table is a store of data of a particular type e.g. a company, contact, product or invoice. Tables are the fundamental building blocks of an Agilebase application.</p>
-<h2 id="adding-a-table">Adding a table</h2>
+<h2 id="using-ai-to-add-multiple-tables">Using AI to add multiple tables</h2>
+<p>Providing a short text prompt to the AI will let it suggest a suite of tables which will comprise a complete system.</p>
+<p>For example, asking for a &lsquo;Gym Membership system&rsquo; might result in tables for</p>
+<ul>
+<li>membership types</li>
+<li>members</li>
+<li>subscriptions</li>
+<li>payments</li>
+<li>classes</li>
+<li>class registrations</li>
+<li>trainers</li>
+<li>trainer schedules</li>
+<li>equipment</li>
+<li>equipment usage</li>
+</ul>
+<p>Agilebase will create all of these tables for you.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/sBYr8Sf6hAI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>To start this process:</p>
 <ol>
-<li>On the homepage, click the &rsquo;toggle&rsquo; button in the top-right of the screen to enable dev mode (if it is not enabled already)</li>
+<li>On the homepage, click the &rsquo;toggle&rsquo; button in the top-right of the screen to enable development mode (if it is not enabled already)</li>
+<li>Press <em>AI: Create System</em> at the top, then enter a short (or more detailed) description of what you&rsquo;d like to create</li>
+</ol>
+<blockquote>
+<p>Note that the prompt you provide, along with a list of existing tables in your system (so duplicates can be avoided) will be sent to the third party AI provider.
+Please check that you are happy with their <a href="/docs/artificial-intelligence/#data-privacy">privacy policy</a></p>
+</blockquote>
+<h2 id="adding-a-single-table">Adding a single table</h2>
+<ol>
+<li>On the homepage, click the &rsquo;toggle&rsquo; button in the top-right of the screen to enable development mode (if it is not enabled already)</li>
 <li>Click <em>+ Table</em>, choosing a name for the new table</li>
 </ol>
-<p><strong>TODO: images</strong>
-<img src="/add-table-button.png" alt="Add Table Button"></p>
+<p><img src="/add-table-button.png" alt="Add Table Button"></p>
 <p>You can change the table&rsquo;s name and add a longer description under <strong>Help</strong>. This description will be used as help text in the user interface.</p>
 <h3 id="naming-tables">Naming tables</h3>
 <p>When naming a table, it&rsquo;s best to use a plural form. Also avoid filler endings like &lsquo;info&rsquo; or &lsquo;details&rsquo;. So rather than &lsquo;company info&rsquo;, you might call a table &lsquo;companies&rsquo;.</p>
@@ -576,6 +609,9 @@ if (!doNotTrack) {
 <h3 id="from-editing-a-record">From editing a record</h3>
 <p>When build mode is enabled, if you are viewing an individual record then clicking the big pencil at the top left of the screen lets you edit the underlying table.</p>
 <p><img src="/editing-a-record.png" alt="Editing a record"></p>
+<h2 id="adding-fields">Adding fields</h2>
+<p>Once the table is created, you can use the <a href="/docs/fields/#adding-fields-automatically-using-ai">AI to populate it</a> with a set of relevant fields, or <a href="/docs/fields/#adding-a-field-manually">add each field you want individually</a>.</p>
+<p>The AI will also link your table to other existing tables, where relevant, by adding relation fields.</p>
 <h2 id="removing-a-table">Removing a table</h2>
 <p>Before removing a table, you first need to remove all views and <a href="/docs/fields/#removing-a-field">fields</a>.</p>
 <p>It&rsquo;s not necessary to remove actual data records from the table first.</p>
@@ -647,7 +683,7 @@ if (!doNotTrack) {
 
 		<br />
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified November 27, 2023: <a href="https://github.com/okohll/abdocs/commit/80c844c5df1fab3cd59b900dcfdb667c41d9613c">Pivot table example (80c844c)</a>
+  Last modified February 7, 2024: <a href="https://github.com/okohll/abdocs/commit/fddf24605a3593f4bfe036f2058d228ef8aa514f">AI features (fddf246)</a>
 </div>
 
 </div>
@@ -682,7 +718,7 @@ if (!doNotTrack) {
         
       </div>
       <div class="td-footer__copyright-etc col-12 col-sm-4 text-center py-2 order-sm-2">
-        <span>&copy; 2023 agileBase Ltd All Rights Reserved</span>
+        <span>&copy; 2024 agileBase Ltd All Rights Reserved</span>
         <span class="ms-1"><a href="https://agilechilli.com/help-centre/agilebase/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
         
       </div>

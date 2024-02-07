@@ -5,7 +5,7 @@
     <description>Recent content in Software Architect on Agilebase docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Oct 2023 13:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 07 Feb 2024 14:30:00 +0100</lastBuildDate>
     
 	  <atom:link href="https://docs.agilebase.co.uk/tags/software-architect/index.xml" rel="self" type="application/rss+xml" />
     
@@ -150,6 +150,31 @@
 &lt;p&gt;A user removal will have no effect on any data stored in the system. The user&amp;rsquo;s previous comments will still be visible for example and their username will still be logged against any records they&amp;rsquo;re marked as owner of. Their changes will still be in the audit trail and they will be marked as the creator/last editor of records where relevant.&lt;/p&gt;
 &lt;p&gt;You may want to take some other actions after deletion e.g. to re-assign records they are assigned to.&lt;/p&gt;
 &lt;p&gt;A deleted user&amp;rsquo;s profile image will be replaced with a standard icon representing a deleted user, when displayed in comment streams etc.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Artificial Intelligence (AI)</title>
+      <link>https://docs.agilebase.co.uk/docs/artificial-intelligence/</link>
+      <pubDate>Wed, 07 Feb 2024 14:30:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/artificial-intelligence/</guid>
+      <description>
+        
+        
+        &lt;p&gt;AI is used in many core features of Agilebase: to give you ideas about what to build, help to build those systems and build more advanced features more quickly than you would be able to do on your own as you progress your learning.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s possible, with a few simple prompts, for Agilebase&amp;rsquo;s AI to build a complete system for you from scratch, for whatever you want (a CRM system for a charity, an asset tracking system for a film production company, or whatever you want to describe).&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/sBYr8Sf6hAI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then when fleshing it out, the AI can help with more complex tasks like adding calculations for reporting.&lt;/p&gt;
+&lt;p&gt;However, AI isn&amp;rsquo;t a replacement for your own understanding, more of an aid. It&amp;rsquo;s always a good idea to have some knowledge of the principles of how database systems work and Agilebase in particular - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; is a good starting point.&lt;/p&gt;
+&lt;h2 id=&#34;data-privacy&#34;&gt;Data Privacy&lt;/h2&gt;
+&lt;p&gt;Whenever you use AI features, which are marked with a &amp;lsquo;sparkles&amp;rsquo; icon and the word AI inside a button, you should be aware that the prompts that you provide, along with other information from the Agilebase system (explained in the documentation for each feature) is sent to a third party AI.&lt;/p&gt;
+&lt;p&gt;At the time of writing, we use OpenAI&amp;rsquo;s ChatGPT API. Their terms and policies, including their privacy policy are located here: &lt;a href=&#34;https://openai.com/policies&#34;&gt;https://openai.com/policies&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -1295,8 +1320,8 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;p&gt;You may wish to instead use email addresses from your own domain name, especially if the system sends emails to people outside your organisation, like customers or suppliers.&lt;/p&gt;
 &lt;p&gt;To allow this, you will need to use your own SMTP server, or a third party trusted system authenticated against your domain name. Using a service like &lt;a href=&#34;http://www.authsmtp.com/&#34;&gt;AuthSmtp&lt;/a&gt;, &lt;a href=&#34;http://www.sendgrid.com/&#34;&gt;SendGrid&lt;/a&gt; or &lt;a href=&#34;https://aws.amazon.com/ses/&#34;&gt;Amazon Simple Email Service&lt;/a&gt; is probably the most straightforward way of setting this up - their instructions will tell you how to set up facilities such as Sender Policy Framework and DomainKeys in order to increase email deliverability.&lt;/p&gt;
 &lt;p&gt;Once you have the SMTP server address, username and password from your service, enter them into the details in this section in Agilebase.&lt;/p&gt;
-&lt;h3 id=&#34;slack-webhook-url&#34;&gt;Slack Webhook URL&lt;/h3&gt;
-&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/slack-integration/&#34;&gt;Integrations - Slack&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;comments-webhook-url&#34;&gt;Comments Webhook URL&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/comments-integration/&#34;&gt;Integrations - Comments&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;send-chart-subscriptions-from&#34;&gt;Send chart subscriptions from&lt;/h3&gt;
 &lt;p&gt;Users can opt to have daily, weekly or monthly emails sent to them containing all the charts they&amp;rsquo;ve subscribed to for that period. The emails will come from an email address @notifications.agilebase.co.uk by default, this option will allow you to specify your own address.&lt;/p&gt;
 &lt;p&gt;If used, then the SMTP details above also need to be completed.&lt;/p&gt;
@@ -1569,16 +1594,18 @@ In short, we don&amp;rsquo;t need to worry about it. Endole provides the data to
     </item>
     
     <item>
-      <title>Docs: Slack integration</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/slack-integration/</link>
+      <title>Docs: Comments integration</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/comments-integration/</link>
       <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
       
-      <guid>https://docs.agilebase.co.uk/docs/integrations/slack-integration/</guid>
+      <guid>https://docs.agilebase.co.uk/docs/integrations/comments-integration/</guid>
       <description>
         
         
-        &lt;p&gt;When a comment is added to a record in Agilebase, a copy can be sent to your Slack or Teams workspace, to a specific channel appropriate to the tile. Instructions are in progress, in the meantime please &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; for help setting this up.&lt;/p&gt;
-&lt;p&gt;Integration with other similar services is also possible should a customer wish - please get in touch if so.&lt;/p&gt;
+        &lt;p&gt;When a comment is added to a record in Agilebase, a copy can be sent to your Slack or Teams workspace, to a specific channel appropriate to the tile.&lt;/p&gt;
+&lt;p&gt;In fact, the comment can be sent to any external service that accepts push notifications to a URL. We recommend setting up a webhook URL via an easy to use integration tool like Zapier or Microsoft Power Automate. That tool can then be set up to post the message to any supported service of your choice.&lt;/p&gt;
+&lt;p&gt;Every time a comment is added, the full text and additional details will be posted in JSON format to the URL specified.&lt;/p&gt;
+&lt;p&gt;Enter the comments webhook URL in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/company-settings#comments-webhook-url&#34;&gt;company settings&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>

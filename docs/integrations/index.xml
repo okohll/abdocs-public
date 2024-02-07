@@ -443,6 +443,23 @@ In short, we don&amp;rsquo;t need to worry about it. Endole provides the data to
     </item>
     
     <item>
+      <title>Docs: Comments integration</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/comments-integration/</link>
+      <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/integrations/comments-integration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;When a comment is added to a record in Agilebase, a copy can be sent to your Slack or Teams workspace, to a specific channel appropriate to the tile.&lt;/p&gt;
+&lt;p&gt;In fact, the comment can be sent to any external service that accepts push notifications to a URL. We recommend setting up a webhook URL via an easy to use integration tool like Zapier or Microsoft Power Automate. That tool can then be set up to post the message to any supported service of your choice.&lt;/p&gt;
+&lt;p&gt;Every time a comment is added, the full text and additional details will be posted in JSON format to the URL specified.&lt;/p&gt;
+&lt;p&gt;Enter the comments webhook URL in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/company-settings#comments-webhook-url&#34;&gt;company settings&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Exporting to spreadsheet</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/exporting-to-spreadsheet/</link>
       <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
@@ -453,21 +470,6 @@ In short, we don&amp;rsquo;t need to worry about it. Endole provides the data to
         
         &lt;p&gt;A spreadsheet export is the simplest way for everyday users to get data out of Agilebase without requiring that an administrator sets up an integration.&lt;/p&gt;
 &lt;p&gt;Details of how to allow this are in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/&#34;&gt;security and compliance&lt;/a&gt; section.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Slack integration</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/slack-integration/</link>
-      <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
-      
-      <guid>https://docs.agilebase.co.uk/docs/integrations/slack-integration/</guid>
-      <description>
-        
-        
-        &lt;p&gt;When a comment is added to a record in Agilebase, a copy can be sent to your Slack or Teams workspace, to a specific channel appropriate to the tile. Instructions are in progress, in the meantime please &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; for help setting this up.&lt;/p&gt;
-&lt;p&gt;Integration with other similar services is also possible should a customer wish - please get in touch if so.&lt;/p&gt;
 
       </description>
     </item>

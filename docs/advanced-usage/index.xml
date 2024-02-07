@@ -39,8 +39,8 @@
 &lt;p&gt;You may wish to instead use email addresses from your own domain name, especially if the system sends emails to people outside your organisation, like customers or suppliers.&lt;/p&gt;
 &lt;p&gt;To allow this, you will need to use your own SMTP server, or a third party trusted system authenticated against your domain name. Using a service like &lt;a href=&#34;http://www.authsmtp.com/&#34;&gt;AuthSmtp&lt;/a&gt;, &lt;a href=&#34;http://www.sendgrid.com/&#34;&gt;SendGrid&lt;/a&gt; or &lt;a href=&#34;https://aws.amazon.com/ses/&#34;&gt;Amazon Simple Email Service&lt;/a&gt; is probably the most straightforward way of setting this up - their instructions will tell you how to set up facilities such as Sender Policy Framework and DomainKeys in order to increase email deliverability.&lt;/p&gt;
 &lt;p&gt;Once you have the SMTP server address, username and password from your service, enter them into the details in this section in Agilebase.&lt;/p&gt;
-&lt;h3 id=&#34;slack-webhook-url&#34;&gt;Slack Webhook URL&lt;/h3&gt;
-&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/slack-integration/&#34;&gt;Integrations - Slack&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;comments-webhook-url&#34;&gt;Comments Webhook URL&lt;/h3&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/comments-integration/&#34;&gt;Integrations - Comments&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;send-chart-subscriptions-from&#34;&gt;Send chart subscriptions from&lt;/h3&gt;
 &lt;p&gt;Users can opt to have daily, weekly or monthly emails sent to them containing all the charts they&amp;rsquo;ve subscribed to for that period. The emails will come from an email address @notifications.agilebase.co.uk by default, this option will allow you to specify your own address.&lt;/p&gt;
 &lt;p&gt;If used, then the SMTP details above also need to be completed.&lt;/p&gt;
