@@ -172,6 +172,8 @@
 
 &lt;p&gt;Then when fleshing it out, the AI can help with more complex tasks like adding calculations for reporting.&lt;/p&gt;
 &lt;p&gt;However, AI isn&amp;rsquo;t a replacement for your own understanding, more of an aid. It&amp;rsquo;s always a good idea to have some knowledge of the principles of how database systems work and Agilebase in particular - &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/relational-database-concepts/&#34;&gt;relational database concepts&lt;/a&gt; is a good starting point.&lt;/p&gt;
+&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;
+&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/adding-and-removing/#using-ai-to-add-multiple-tables&#34;&gt;Using AI to add multiple tables&lt;/a&gt; as the starting point for building a complete system, or extending an existing system with new applications&lt;/p&gt;
 &lt;h2 id=&#34;data-privacy&#34;&gt;Data Privacy&lt;/h2&gt;
 &lt;p&gt;Whenever you use AI features, which are marked with a &amp;lsquo;sparkles&amp;rsquo; icon and the word AI inside a button, you should be aware that the prompts that you provide, along with other information from the Agilebase system (explained in the documentation for each feature) is sent to a third party AI.&lt;/p&gt;
 &lt;p&gt;At the time of writing, we use OpenAI&amp;rsquo;s ChatGPT API. Their terms and policies, including their privacy policy are located here: &lt;a href=&#34;https://openai.com/policies&#34;&gt;https://openai.com/policies&lt;/a&gt;&lt;/p&gt;
