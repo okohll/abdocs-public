@@ -1408,7 +1408,7 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
     </item>
     
     <item>
-      <title>Docs: Cross Reference Field Options</title>
+      <title>Docs: Referenced Data Field Options</title>
       <link>https://docs.agilebase.co.uk/docs/fields/field-options/referenced-field-options/</link>
       <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
       
@@ -1416,27 +1416,32 @@ For example, in your organisations table, you may have a field &amp;lsquo;Organi
       <description>
         
         
-        &lt;h2 id=&#34;tabular-display&#34;&gt;Tabular display&lt;/h2&gt;
-&lt;p&gt;Rather than displaying rows from the referenced view as panels&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panels.png&#34; alt=&#34;Panels screenshot&#34;&gt;&lt;/p&gt;
-&lt;p&gt;show a table&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-tabular.png&#34; alt=&#34;Table screenshot&#34;&gt;&lt;/p&gt;
-&lt;p&gt;which is a more compact form allowing a greater volume of data to be shown in a smaller area.&lt;/p&gt;
-&lt;h2 id=&#34;use-as-a-filter-for-relations&#34;&gt;Use as a filter for relations&lt;/h2&gt;
+        &lt;h2 id=&#34;use-as-a-filter-for-relations&#34;&gt;Use as a filter for relations&lt;/h2&gt;
 &lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#custom-filtering-when-choosing-a-relation&#34;&gt;Common build patters - custom filtering when using a relation&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;
 &lt;p&gt;Make the background of the referenced panel bright red - useful for showing warnings on screen.&lt;/p&gt;
 &lt;h2 id=&#34;display-of-fields&#34;&gt;Display of fields&lt;/h2&gt;
-&lt;p&gt;Controls whether field names are displayed in the panel as well as values. Hiding the field name can be useful if for example you wish to create a referenced panel showing a warning message. You may want to just show the contents of the warning. In other cases, you may wish to hide the field if it&amp;rsquo;s not necessary as it&amp;rsquo;s obvious what the values are without additional context.&lt;/p&gt;
-&lt;p&gt;This option actually controls two types of field name, that of the referenced panel itself and also those of fields displayed inside the panel.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panel-fields.png&#34; alt=&#34;Panel field names&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Controls the display style - what content should be included the output, and also the format of the output: a standard panel, or various tabular styles, often used when there&amp;rsquo;s lots of data.&lt;/p&gt;
 &lt;p&gt;The options are&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Content fieldnames - show the names of fields inside the panel, but not the fieldname of the panel itself (the default)&lt;/li&gt;
-&lt;li&gt;Panel fieldnames and content fieldnames - show all, as per the above screenshot&lt;/li&gt;
-&lt;li&gt;Panel fieldname, no content fieldnames&lt;/li&gt;
-&lt;li&gt;No fieldnames - show only the field values, useful particularly when there is only one value and when the context is obvious&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content fieldnames&lt;/strong&gt; - show the names of fields inside the panel, but not the fieldname of the panel itself (the default)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Panel fieldnames and content fieldnames&lt;/strong&gt; - show all, as per the above screenshot&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Panel fieldname, no content fieldnames&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;No fieldnames&lt;/strong&gt; - show only the field values, useful particularly when there is only one value and when the context is obvious&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tabular&lt;/strong&gt; - show all data from the referenced view in a table&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tabular - transposed axes&lt;/strong&gt; - the same data but with rows and columns (x and y axes) swapped&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tabular - key/value&lt;/strong&gt; - similar to the standard panel format, but in a table, i.e. the first column is for the field names, the second for values&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tabular - pivot table&lt;/strong&gt; - a pivot table where the first field in the view is used as a heading, the second as a vertical column. All other data is amalgamated and displayed in the cell for each heading/vertical combination.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+&lt;p&gt;A simple example, the field name can be hidden, which can be useful if for example you wish to create a referenced panel showing a warning message. You may want to just show the contents of the warning. In other cases, you may wish to hide the field if it&amp;rsquo;s not necessary as it&amp;rsquo;s obvious what the values are without additional context.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panel-fields.png&#34; alt=&#34;Panel field names&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A panel display style&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-panels.png&#34; alt=&#34;Panels screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;One of the tabular styles&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/referenced-tabular.png&#34; alt=&#34;Table screenshot&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A pivot table&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/pivot-table-example.png&#34; alt=&#34;pivot table example example output&#34;&gt;&lt;/p&gt;
 
       </description>
     </item>
