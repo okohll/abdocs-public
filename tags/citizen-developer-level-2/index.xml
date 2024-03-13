@@ -70,7 +70,7 @@
 &lt;h2 id=&#34;accessing-additional-debugging-information&#34;&gt;Accessing additional debugging information&lt;/h2&gt;
 &lt;p&gt;Later on down the route of creating applications, you may wish the user interface to show additional information, specifically in views, to show the primary key values for each record - the internal row identifiers - which are normally hidden.&lt;/p&gt;
 &lt;p&gt;This can be useful when testing and debugging &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt; for example.&lt;/p&gt;
-&lt;p&gt;To enable this, add &lt;code&gt;&amp;amp;set_context=systadmin&lt;/code&gt; to the URL in the browser. To revert to normal mode, replace it with &lt;code&gt;&amp;amp;set_context=business&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To enable this, add &lt;code&gt;&amp;amp;set_context=sysadmin&lt;/code&gt; to the URL in the browser. To revert to normal mode, replace it with &lt;code&gt;&amp;amp;set_context=business&lt;/code&gt;.&lt;/p&gt;
 
       </description>
     </item>

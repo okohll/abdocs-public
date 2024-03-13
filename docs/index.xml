@@ -70,7 +70,7 @@
 &lt;h2 id=&#34;accessing-additional-debugging-information&#34;&gt;Accessing additional debugging information&lt;/h2&gt;
 &lt;p&gt;Later on down the route of creating applications, you may wish the user interface to show additional information, specifically in views, to show the primary key values for each record - the internal row identifiers - which are normally hidden.&lt;/p&gt;
 &lt;p&gt;This can be useful when testing and debugging &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;APIs&lt;/a&gt; for example.&lt;/p&gt;
-&lt;p&gt;To enable this, add &lt;code&gt;&amp;amp;set_context=systadmin&lt;/code&gt; to the URL in the browser. To revert to normal mode, replace it with &lt;code&gt;&amp;amp;set_context=business&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To enable this, add &lt;code&gt;&amp;amp;set_context=sysadmin&lt;/code&gt; to the URL in the browser. To revert to normal mode, replace it with &lt;code&gt;&amp;amp;set_context=business&lt;/code&gt;.&lt;/p&gt;
 
       </description>
     </item>
@@ -290,12 +290,13 @@
 &lt;p&gt;The following restrictions appropriate to users of an outside community are applied.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;a community users role can be set to allow VIEW access to up to 10 tables, plus EDIT privileges on up to 3 additional tables&lt;/li&gt;
-&lt;li&gt;for the 3 tables which allow editing, community users can only see and edit records they themselves have created. All records from read-only tables can be seen.
-&lt;ul&gt;
-&lt;li&gt;for example, a user may have read-only access to a list of companies. Against each company, they can add and edit timesheet records&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;community users only see comments added by themselves or specifically sent to them (comments are commonly used for internal company discussions)&lt;/li&gt;
+&lt;!--
+* for the 3 tables which allow editing, community users can only see and edit records they themselves have created. All records from read-only tables can be seen.
+    * for example, a user may have read-only access to a list of companies. Against each company, they can add and edit timesheet records
+* community users only see comments added by themselves or specifically sent to them (comments are commonly used for internal company discussions)
+--&gt;
+&lt;ul&gt;
 &lt;li&gt;a community user can have up to 6 tiles on their homepage&lt;/li&gt;
 &lt;li&gt;the homepage is fixed for community users, they can&amp;rsquo;t add or remove tiles&lt;/li&gt;
 &lt;/ul&gt;
