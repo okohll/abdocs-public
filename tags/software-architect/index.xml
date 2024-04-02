@@ -5,7 +5,7 @@
     <description>Recent content in Software Architect on Agilebase docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Feb 2024 14:30:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 02 Apr 2024 09:30:00 +0100</lastBuildDate>
     
 	  <atom:link href="https://docs.agilebase.co.uk/tags/software-architect/index.xml" rel="self" type="application/rss+xml" />
     
@@ -1301,6 +1301,72 @@ and a video introduction to the concept here:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;When carrying out changes to critical systems which the business relies on, you may wish to take advantage of a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/test-server/&#34;&gt;test server&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Tips and Tricks</title>
+      <link>https://docs.agilebase.co.uk/docs/tips-and-tricks/</link>
+      <pubDate>Tue, 02 Apr 2024 09:30:00 +0100</pubDate>
+      
+      <guid>https://docs.agilebase.co.uk/docs/tips-and-tricks/</guid>
+      <description>
+        
+        
+        &lt;p&gt;WInteresting solutions for customers will be described here.&lt;/p&gt;
+&lt;h2 id=&#34;manually-formatting-a-2dp-decimal-as-a-duration&#34;&gt;Manually Formatting a 2dp decimal as a Duration&lt;/h2&gt;
+&lt;p&gt;Numeric fields can be marked as “Use Duration” which will nicely display the field as a time - really useful for event start times etc.
+However, sometimes you need to do the formatting yourself and it can be fiddly.
+Use the following code to help…&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    to_char( trunc ( {start time} ), ‘00’ )
+    || ‘:’ ||
+    trim(
+    to_char( ( {start time} - trunc ( {start time} ) ) * 60, ‘00’)
+    )
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;adding-a-carriage-return-to-a-calculated-string---n&#34;&gt;Adding a carriage return to a calculated string - ‘\n’&lt;/h2&gt;
+&lt;p&gt;A new line can be inserted by using the correct escape character so…&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;some text before || ‘\n’ ||some text after ==
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(It may be simple, but I always end up looking this up on Postgres forums so thought it useful for this forum!)&lt;/p&gt;
+&lt;h2 id=&#34;sql-to-return-the-full-name-of-the-logged-in-user&#34;&gt;SQL to return the full name of the logged in User&lt;/h2&gt;
+&lt;p&gt;The inbuilt function abuserid() returns the user’s identity, which is great for setting dropdowns that are filled with users, but not so good when you don’t want their username (e.g. the sign off an email or in Doc gen).&lt;/p&gt;
+&lt;p&gt;Try using the following to get just the user’s full name&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;left(ab_userid(), position(‘(’ in ab_userid()) -2)
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;finding-records-without-any-child-records&#34;&gt;Finding records without any child records&lt;/h2&gt;
+&lt;p&gt;A customer came up with an interesting question this morning - how to find records without any connected child records, in this case companies with no opportunities logged.&lt;/p&gt;
+&lt;p&gt;Here are a couple of ways of doing that which come to mind:&lt;/p&gt;
+&lt;p&gt;One would be&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;create a view from the companies table&lt;/li&gt;
+&lt;li&gt;add a join down to opportunities (it should be one of the suggested joins as there is a relationship between the two tables)&lt;/li&gt;
+&lt;li&gt;add a filter ‘id:opportunities is blank’&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;i.e. there is no opportunity found for the company.&lt;/p&gt;
+&lt;p&gt;Another way would be&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;create a view from the companies table&lt;/li&gt;
+&lt;li&gt;add a join down to opportunities, just like above&lt;/li&gt;
+&lt;li&gt;add a calculation which is count({id:opportunities}).
+You should now see the number 0 next to any company which has no opportunities&lt;/li&gt;
+&lt;li&gt;add a filter on the calculation, i.e. ‘count = 0’&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I’d suggest using the method which makes most sense, i.e. the easiest to understand logic.&lt;/p&gt;
+&lt;h2 id=&#34;ranking-results-with-an-increment-value-in-a-view&#34;&gt;Ranking results with an increment value in a view&lt;/h2&gt;
+&lt;p&gt;The below statement is calculating the rank of each row within each partition, based on the descending order of the {price list lines.id:price list lines} column.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;rank() over(
+  partition by {pricelists - price lines.code and customer}
+  order by
+    {price list lines.id:price list lines} desc
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We use this form of statement to highlight any duplicate values falling within our pricelists within our system. Anything with a value greater than 2 is a duplicate.&lt;/p&gt;
+&lt;p&gt;This statement could be applied to several cases, ranking best selling products for a customer or the highest weighted ingredient in a recipe.&lt;/p&gt;
+&lt;h2 id=&#34;first-day-of-last-month&#34;&gt;First day of last month&lt;/h2&gt;
+&lt;p&gt;Simples&amp;hellip;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;date_trunc(‘month’, now()) - interval ‘1 month’
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;random-password&#34;&gt;Random Password&lt;/h2&gt;
+&lt;p&gt;Useful for creating a random password or code&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;substring(md5(random() :: text), 0, 7)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Using 7 gives you a 6 digit code!?!?&lt;/p&gt;
 
       </description>
     </item>

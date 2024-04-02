@@ -1659,8 +1659,8 @@ In these instances it can be useful to assign the Workflow to run behind a Butto
 &lt;p&gt;N.b. In both cases below it is necessary for the Workflow to marked as Manual.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;workflow-buttons-on-a-form&#34;&gt;Workflow Buttons on a Form&lt;/h2&gt;
-&lt;p&gt;To add the Workflow button to a Table&amp;rsquo;s form simply create a new field of type Cross Reference with the workflow as the source.
-When the Workflow is run, it will be filtered by the Id of the record. (You may wish read up about &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;Chaining Workflows&lt;/a&gt; )
+&lt;p&gt;To add the Workflow button to a Table&amp;rsquo;s form simply create a new field of type &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;Referenced Data&lt;/a&gt; with the workflow as the source.
+When the Workflow is run, it will be filtered by the ID of the record. (You may wish read up about &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;Chaining Workflows&lt;/a&gt; )
 It is often necessary to put some thought in to the visibility of the button - it can be confusing to the user that a button is present when it does nothing due to filters they cann not know about.&lt;/p&gt;
 &lt;h2 id=&#34;workflow-buttons-on-views&#34;&gt;Workflow Buttons on Views&lt;/h2&gt;
 &lt;p&gt;Some Manual workflows are more appropriately run on a number of records. As such the ability to run them is likely to be associated to a list presented in a view.&lt;/p&gt;
