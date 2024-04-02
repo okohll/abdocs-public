@@ -1330,10 +1330,11 @@ Use the following code to help…&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;#39;some text before&amp;#39; || &amp;#39;\n&amp;#39; || &amp;#39;some text after&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(It may be simple, but I always end up looking this up on Postgres forums so thought it useful for this forum!)&lt;/p&gt;
 &lt;h2 id=&#34;sql-to-return-the-full-name-of-the-logged-in-user&#34;&gt;SQL to return the full name of the logged in User&lt;/h2&gt;
-&lt;p&gt;The inbuilt function abuserid() returns the user’s identity, which is great for setting dropdowns that are filled with users, but not so good when you don’t want their username (e.g. the sign off an email or in Doc gen).&lt;/p&gt;
+&lt;p&gt;The inbuilt function ab_userid() returns the user’s identity, which is great for setting dropdowns that are filled with users, but not so good when you don’t want their username (e.g. the sign off an email or in Doc gen).&lt;/p&gt;
 &lt;p&gt;Try using the following to get just the user’s full name&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;left(ab_userid(), position(‘(’ in ab_userid()) -2)
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;finding-records-without-any-child-records&#34;&gt;Finding records without any child records&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That will transform e.g. &amp;lsquo;Jane Smith (&lt;a href=&#34;mailto:jane@gmail.com&#34;&gt;jane@gmail.com&lt;/a&gt;)&amp;rsquo; to &amp;lsquo;Jane Smith&amp;rsquo;.&lt;/p&gt;
+&lt;h2 id=&#34;finding-records-without-any-child-records&#34;&gt;Finding records without any child records&lt;/h2&gt;
 &lt;p&gt;A customer came up with an interesting question this morning - how to find records without any connected child records, in this case companies with no opportunities logged.&lt;/p&gt;
 &lt;p&gt;Here are a couple of ways of doing that which come to mind:&lt;/p&gt;
 &lt;p&gt;One would be&lt;/p&gt;

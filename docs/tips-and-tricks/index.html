@@ -107,7 +107,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.1286ef639d5120a648d20b7823cb40f4.json"
+    data-offline-search-index-json-src="/offline-search-index.9b85673a1babe8de6c61b9a5e303bcc4.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -132,7 +132,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.1286ef639d5120a648d20b7823cb40f4.json"
+    data-offline-search-index-json-src="/offline-search-index.9b85673a1babe8de6c61b9a5e303bcc4.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -558,10 +558,11 @@ Use the following code to help…</p>
 <pre tabindex="0"><code>&#39;some text before&#39; || &#39;\n&#39; || &#39;some text after&#39;
 </code></pre><p>(It may be simple, but I always end up looking this up on Postgres forums so thought it useful for this forum!)</p>
 <h2 id="sql-to-return-the-full-name-of-the-logged-in-user">SQL to return the full name of the logged in User</h2>
-<p>The inbuilt function abuserid() returns the user’s identity, which is great for setting dropdowns that are filled with users, but not so good when you don’t want their username (e.g. the sign off an email or in Doc gen).</p>
+<p>The inbuilt function ab_userid() returns the user’s identity, which is great for setting dropdowns that are filled with users, but not so good when you don’t want their username (e.g. the sign off an email or in Doc gen).</p>
 <p>Try using the following to get just the user’s full name</p>
 <pre tabindex="0"><code>left(ab_userid(), position(‘(’ in ab_userid()) -2)
-</code></pre><h2 id="finding-records-without-any-child-records">Finding records without any child records</h2>
+</code></pre><p>That will transform e.g. &lsquo;Jane Smith (<a href="mailto:jane@gmail.com">jane@gmail.com</a>)&rsquo; to &lsquo;Jane Smith&rsquo;.</p>
+<h2 id="finding-records-without-any-child-records">Finding records without any child records</h2>
 <p>A customer came up with an interesting question this morning - how to find records without any connected child records, in this case companies with no opportunities logged.</p>
 <p>Here are a couple of ways of doing that which come to mind:</p>
 <p>One would be</p>
@@ -669,7 +670,7 @@ You should now see the number 0 next to any company which has no opportunities</
 </script>
 <br />
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified April 2, 2024: <a href="https://github.com/okohll/abdocs/commit/8176b6bc35d254d0b2eeca4b558752fb6723b181">Tips &amp; tricks tweak (8176b6b)</a>
+  Last modified April 2, 2024: <a href="https://github.com/okohll/abdocs/commit/f8136ccc6ed72cf10858611b9affae40e4cce6e3">Tips &amp; tricks tweak (f8136cc)</a>
 </div>
 </div>
 
