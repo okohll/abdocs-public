@@ -1314,7 +1314,7 @@ and a video introduction to the concept here:&lt;/p&gt;
       <description>
         
         
-        &lt;p&gt;WInteresting solutions for customers will be described here.&lt;/p&gt;
+        &lt;p&gt;Interesting solutions for customers will be described here.&lt;/p&gt;
 &lt;h2 id=&#34;manually-formatting-a-2dp-decimal-as-a-duration&#34;&gt;Manually Formatting a 2dp decimal as a Duration&lt;/h2&gt;
 &lt;p&gt;Numeric fields can be marked as “Use Duration” which will nicely display the field as a time - really useful for event start times etc.
 However, sometimes you need to do the formatting yourself and it can be fiddly.
@@ -1324,9 +1324,10 @@ Use the following code to help…&lt;/p&gt;
     trim(
     to_char( ( {start time} - trunc ( {start time} ) ) * 60, ‘00’)
     )
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;adding-a-carriage-return-to-a-calculated-string---n&#34;&gt;Adding a carriage return to a calculated string - ‘\n’&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Using that, the number 0.5 would be transformed to &amp;lsquo;00:30&amp;rsquo; (half an hour) for example.&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-carriage-return-to-a-calculated-string---n&#34;&gt;Adding a carriage return to a calculated string - ‘\n’&lt;/h2&gt;
 &lt;p&gt;A new line can be inserted by using the correct escape character so…&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;some text before || ‘\n’ ||some text after ==
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;#39;some text before&amp;#39; || &amp;#39;\n&amp;#39; || &amp;#39;some text after&amp;#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;(It may be simple, but I always end up looking this up on Postgres forums so thought it useful for this forum!)&lt;/p&gt;
 &lt;h2 id=&#34;sql-to-return-the-full-name-of-the-logged-in-user&#34;&gt;SQL to return the full name of the logged in User&lt;/h2&gt;
 &lt;p&gt;The inbuilt function abuserid() returns the user’s identity, which is great for setting dropdowns that are filled with users, but not so good when you don’t want their username (e.g. the sign off an email or in Doc gen).&lt;/p&gt;

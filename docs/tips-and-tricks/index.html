@@ -20,15 +20,15 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Tips and Tricks | Agilebase docs</title>
-<meta name="description" content="Some interesting solutions for common problems encountered when building solutions in Agilebase">
+<meta name="description" content="Some interesting solutions for common problems encountered when building apps with Agilebase">
 <meta property="og:title" content="Tips and Tricks" />
-<meta property="og:description" content="Some interesting solutions for common problems encountered when building solutions in Agilebase" />
+<meta property="og:description" content="Some interesting solutions for common problems encountered when building apps with Agilebase" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/tips-and-tricks/" />
 <meta itemprop="name" content="Tips and Tricks">
-<meta itemprop="description" content="Some interesting solutions for common problems encountered when building solutions in Agilebase"><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="Some interesting solutions for common problems encountered when building apps with Agilebase"><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tips and Tricks"/>
-<meta name="twitter:description" content="Some interesting solutions for common problems encountered when building solutions in Agilebase"/>
+<meta name="twitter:description" content="Some interesting solutions for common problems encountered when building apps with Agilebase"/>
 
 
 
@@ -107,7 +107,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.d90008004a496713100bbae97c44ce5a.json"
+    data-offline-search-index-json-src="/offline-search-index.1286ef639d5120a648d20b7823cb40f4.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -132,7 +132,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.d90008004a496713100bbae97c44ce5a.json"
+    data-offline-search-index-json-src="/offline-search-index.1286ef639d5120a648d20b7823cb40f4.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -531,7 +531,7 @@ if (!doNotTrack) {
             
 <div class="td-content">
 	<h1>Tips and Tricks</h1>
-  <div class="lead">Some interesting solutions for common problems encountered when building solutions in Agilebase</div>
+  <div class="lead">Some interesting solutions for common problems encountered when building apps with Agilebase</div>
 	<header class="article-meta">
 		<div class="taxonomy taxonomy-terms-article taxo-tags">
   <h5 class="taxonomy-title">Tags:</h5>
@@ -542,7 +542,7 @@ if (!doNotTrack) {
 </div>
 
   </header>
-	<p>WInteresting solutions for customers will be described here.</p>
+	<p>Interesting solutions for customers will be described here.</p>
 <h2 id="manually-formatting-a-2dp-decimal-as-a-duration">Manually Formatting a 2dp decimal as a Duration</h2>
 <p>Numeric fields can be marked as “Use Duration” which will nicely display the field as a time - really useful for event start times etc.
 However, sometimes you need to do the formatting yourself and it can be fiddly.
@@ -552,9 +552,10 @@ Use the following code to help…</p>
     trim(
     to_char( ( {start time} - trunc ( {start time} ) ) * 60, ‘00’)
     )
-</code></pre><h2 id="adding-a-carriage-return-to-a-calculated-string---n">Adding a carriage return to a calculated string - ‘\n’</h2>
+</code></pre><p>Using that, the number 0.5 would be transformed to &lsquo;00:30&rsquo; (half an hour) for example.</p>
+<h2 id="adding-a-carriage-return-to-a-calculated-string---n">Adding a carriage return to a calculated string - ‘\n’</h2>
 <p>A new line can be inserted by using the correct escape character so…</p>
-<pre tabindex="0"><code>some text before || ‘\n’ ||some text after ==
+<pre tabindex="0"><code>&#39;some text before&#39; || &#39;\n&#39; || &#39;some text after&#39;
 </code></pre><p>(It may be simple, but I always end up looking this up on Postgres forums so thought it useful for this forum!)</p>
 <h2 id="sql-to-return-the-full-name-of-the-logged-in-user">SQL to return the full name of the logged in User</h2>
 <p>The inbuilt function abuserid() returns the user’s identity, which is great for setting dropdowns that are filled with users, but not so good when you don’t want their username (e.g. the sign off an email or in Doc gen).</p>
@@ -668,7 +669,7 @@ You should now see the number 0 next to any company which has no opportunities</
 </script>
 <br />
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified April 2, 2024: <a href="https://github.com/okohll/abdocs/commit/4bfc77a7cb5aef0c11b1ae997b58dc688bc7cab7">Remove references to old Element support (4bfc77a)</a>
+  Last modified April 2, 2024: <a href="https://github.com/okohll/abdocs/commit/8176b6bc35d254d0b2eeca4b558752fb6723b181">Tips &amp; tricks tweak (8176b6b)</a>
 </div>
 </div>
 
