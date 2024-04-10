@@ -272,7 +272,7 @@ It is straightforward to delete a field from a table. Either clicking the X icon
         
         
         &lt;p&gt;A tile on a user&amp;rsquo;s home screen represents an application or module of an application - a collection of data and functionality that forms a coherent whole.&lt;/p&gt;
-&lt;p&gt;There are five types of tile, each of which present data in a different way.&lt;/p&gt;
+&lt;p&gt;There are four types of tile, each of which present data in a different way.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Data tile
 &lt;ul&gt;
@@ -287,11 +287,6 @@ It is straightforward to delete a field from a table. Either clicking the X icon
 &lt;li&gt;Calendar
 &lt;ul&gt;
 &lt;li&gt;can display any views in the system containing date/time fields in calendar formats, such as a standard month layout, or gannt-like chart&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Visualisations
-&lt;ul&gt;
-&lt;li&gt;rather than a collection of views, displays a collection of charts&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Comment stream
