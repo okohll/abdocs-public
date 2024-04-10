@@ -388,6 +388,7 @@
 &lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#custom-filtering-when-choosing-a-relation&#34;&gt;Common build patters - custom filtering when using a relation&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;
 &lt;p&gt;Make the background of the referenced panel bright red - useful for showing warnings on screen.&lt;/p&gt;
+&lt;p&gt;If the referenced field is a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;workflow button&lt;/a&gt;, then it will become mandatory - it will need to be pressed on every visit to a record, if the field is &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#field-visibility&#34;&gt;visible&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;display-of-fields&#34;&gt;Display of fields&lt;/h2&gt;
 &lt;p&gt;Controls the display style - what content should be included the output, and also the format of the output: a standard panel, or various tabular styles, often used when there&amp;rsquo;s lots of data.&lt;/p&gt;
 &lt;p&gt;The options are&lt;/p&gt;
