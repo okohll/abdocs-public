@@ -295,6 +295,10 @@ XYZ&lt;/p&gt;
 &lt;p&gt;If you are using the more advanced features of agilebase workflows then knowing where to look for logging information will become important. At the bottom fo the &lt;em&gt;workflow - edit records&lt;/em&gt; panel when editing a view, recent logs are shown.&lt;/p&gt;
 &lt;p&gt;They will contain success and failures of past runs as well as the next time the workflow is scheduled to be run.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-history.png&#34; alt=&#34;Viewing the logging history of a Workflow&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;workflow-privileges&#34;&gt;Workflow privileges&lt;/h2&gt;
+&lt;p&gt;If workflows are run in the background on a timed basis, e.g. every 10 minutes, they don&amp;rsquo;t need privileges on the tables they act on. They effectively run as a &amp;lsquo;system user&amp;rsquo;, not a real person.&lt;/p&gt;
+&lt;p&gt;If workflows are however kicked off by a person pressing a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;workflow button&lt;/a&gt;, or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-on-create/&#34;&gt;creating or opening a record&lt;/a&gt;, they run with the privileges of that user.&lt;/p&gt;
+&lt;p&gt;That can be overridden by ticking the option &lt;em&gt;Allow workflow to act on any table&lt;/em&gt; when editing the workflow. If for example you have a workflow button which creates a new purchase order when the user presses it, but the user has no privileges on the purchase orders table, that option will allow the workflow to run successfully.&lt;/p&gt;
 
       </description>
     </item>

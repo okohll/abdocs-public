@@ -306,6 +306,9 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 If at any time, a request has been held up for 60 seconds, further requests result in the 429 error and they are discarded.&lt;/p&gt;
 &lt;p&gt;If this occurs, there are a number of tactics you can use to shorten individual response times or make less requests - please get in touch if you need help.&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;h3 id=&#34;security&#34;&gt;Security&lt;/h3&gt;
+&lt;p&gt;Note that you won&amp;rsquo;t be able to make calls to Agilebase APIs using Javascript from web browsers. You&amp;rsquo;ll only be able to use server-side technologies to call these &amp;lsquo;pull&amp;rsquo; APIs, or third party tools such as Zapier or Microsoft Power Automate.&lt;/p&gt;
+&lt;p&gt;The reason is that browsers block access for security reasons. The API typically needs an Authorization key to work, which can be hidden from users if the call is made server-side, but which can&amp;rsquo;t if it&amp;rsquo;s done from the browser. If that was allowed, any user of the website could find the Authorization key and make it public. Please see the &lt;a href=&#34;https://stackoverflow.com/questions/11470389/how-to-protect-an-api-key-when-using-javascript&#34;&gt;discussion here&lt;/a&gt; for further details.&lt;/p&gt;
 &lt;h3 id=&#34;generate-api-descriptions&#34;&gt;Generate API descriptions&lt;/h3&gt;
 &lt;p&gt;For developers who use the Agilebase API to create and update data within Agilebase from a third party product, there’s now a way to further automate the process.&lt;/p&gt;
 &lt;p&gt;Agilebase will now generate a &lt;a href=&#34;https://swagger.io/&#34;&gt;swagger.io&lt;/a&gt; compatible API description of any table you want to post to. That means if you deal with accounts for many Agilebase customers, you can with a common query get the API details needed to interact with them.&lt;/p&gt;

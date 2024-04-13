@@ -107,7 +107,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.dccc7650a678882694e2c6f95c80a251.json"
+    data-offline-search-index-json-src="/offline-search-index.329584e19a7403fe7601dfba58dbed8e.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -132,7 +132,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.dccc7650a678882694e2c6f95c80a251.json"
+    data-offline-search-index-json-src="/offline-search-index.329584e19a7403fe7601dfba58dbed8e.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -469,6 +469,7 @@ if (!doNotTrack) {
         <nav id="TableOfContents">
   <ul>
     <li><a href="#logging">Logging</a></li>
+    <li><a href="#workflow-privileges">Workflow privileges</a></li>
   </ul>
 </nav>
       </div>
@@ -542,6 +543,10 @@ if (!doNotTrack) {
 <p>If you are using the more advanced features of agilebase workflows then knowing where to look for logging information will become important. At the bottom fo the <em>workflow - edit records</em> panel when editing a view, recent logs are shown.</p>
 <p>They will contain success and failures of past runs as well as the next time the workflow is scheduled to be run.</p>
 <p><img src="/workflow-history.png" alt="Viewing the logging history of a Workflow"></p>
+<h2 id="workflow-privileges">Workflow privileges</h2>
+<p>If workflows are run in the background on a timed basis, e.g. every 10 minutes, they don&rsquo;t need privileges on the tables they act on. They effectively run as a &lsquo;system user&rsquo;, not a real person.</p>
+<p>If workflows are however kicked off by a person pressing a <a href="/docs/workflows/advanced/workflow-buttons/">workflow button</a>, or <a href="/docs/workflows/advanced/workflow-on-create/">creating or opening a record</a>, they run with the privileges of that user.</p>
+<p>That can be overridden by ticking the option <em>Allow workflow to act on any table</em> when editing the workflow. If for example you have a workflow button which creates a new purchase order when the user presses it, but the user has no privileges on the purchase orders table, that option will allow the workflow to run successfully.</p>
 
   <div class="section-index">
     
@@ -649,7 +654,7 @@ if (!doNotTrack) {
 </script>
 <br />
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified November 27, 2023: <a href="https://github.com/okohll/abdocs/commit/80c844c5df1fab3cd59b900dcfdb667c41d9613c">Pivot table example (80c844c)</a>
+  Last modified April 11, 2024: <a href="https://github.com/okohll/abdocs/commit/0b485859f59f0a14b6a9f62d8af11f9770987505">Add workflow privileges section (0b48585)</a>
 </div>
 </div>
 

@@ -874,7 +874,7 @@ b) the value of the first field in the view above&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Using &lt;em&gt;24 hours&lt;/em&gt; plus a filter on a &amp;rsquo;d&amp;rsquo;ay of the week&amp;rsquo; calculation allows you to run weekly workflows.&lt;/p&gt;
+&lt;p&gt;Using &lt;em&gt;24 hours&lt;/em&gt; plus a filter on a &amp;lsquo;day of the week&amp;rsquo; calculation allows you to run weekly workflows.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;For 24hr workflows you can optionally set a specific time of day for them to run.&lt;/p&gt;
 
@@ -1320,6 +1320,9 @@ With simple_format=false, a more complex but more robust format it used. Rather 
 If at any time, a request has been held up for 60 seconds, further requests result in the 429 error and they are discarded.&lt;/p&gt;
 &lt;p&gt;If this occurs, there are a number of tactics you can use to shorten individual response times or make less requests - please get in touch if you need help.&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;h3 id=&#34;security&#34;&gt;Security&lt;/h3&gt;
+&lt;p&gt;Note that you won&amp;rsquo;t be able to make calls to Agilebase APIs using Javascript from web browsers. You&amp;rsquo;ll only be able to use server-side technologies to call these &amp;lsquo;pull&amp;rsquo; APIs, or third party tools such as Zapier or Microsoft Power Automate.&lt;/p&gt;
+&lt;p&gt;The reason is that browsers block access for security reasons. The API typically needs an Authorization key to work, which can be hidden from users if the call is made server-side, but which can&amp;rsquo;t if it&amp;rsquo;s done from the browser. If that was allowed, any user of the website could find the Authorization key and make it public. Please see the &lt;a href=&#34;https://stackoverflow.com/questions/11470389/how-to-protect-an-api-key-when-using-javascript&#34;&gt;discussion here&lt;/a&gt; for further details.&lt;/p&gt;
 &lt;h3 id=&#34;generate-api-descriptions&#34;&gt;Generate API descriptions&lt;/h3&gt;
 &lt;p&gt;For developers who use the Agilebase API to create and update data within Agilebase from a third party product, there’s now a way to further automate the process.&lt;/p&gt;
 &lt;p&gt;Agilebase will now generate a &lt;a href=&#34;https://swagger.io/&#34;&gt;swagger.io&lt;/a&gt; compatible API description of any table you want to post to. That means if you deal with accounts for many Agilebase customers, you can with a common query get the API details needed to interact with them.&lt;/p&gt;
@@ -1522,6 +1525,10 @@ XYZ&lt;/p&gt;
 &lt;p&gt;If you are using the more advanced features of agilebase workflows then knowing where to look for logging information will become important. At the bottom fo the &lt;em&gt;workflow - edit records&lt;/em&gt; panel when editing a view, recent logs are shown.&lt;/p&gt;
 &lt;p&gt;They will contain success and failures of past runs as well as the next time the workflow is scheduled to be run.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-history.png&#34; alt=&#34;Viewing the logging history of a Workflow&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;workflow-privileges&#34;&gt;Workflow privileges&lt;/h2&gt;
+&lt;p&gt;If workflows are run in the background on a timed basis, e.g. every 10 minutes, they don&amp;rsquo;t need privileges on the tables they act on. They effectively run as a &amp;lsquo;system user&amp;rsquo;, not a real person.&lt;/p&gt;
+&lt;p&gt;If workflows are however kicked off by a person pressing a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;workflow button&lt;/a&gt;, or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-on-create/&#34;&gt;creating or opening a record&lt;/a&gt;, they run with the privileges of that user.&lt;/p&gt;
+&lt;p&gt;That can be overridden by ticking the option &lt;em&gt;Allow workflow to act on any table&lt;/em&gt; when editing the workflow. If for example you have a workflow button which creates a new purchase order when the user presses it, but the user has no privileges on the purchase orders table, that option will allow the workflow to run successfully.&lt;/p&gt;
 
       </description>
     </item>
