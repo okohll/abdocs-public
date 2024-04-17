@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/integrations/importing/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-06-03T16:40:00+01:00" />
-<meta property="article:modified_time" content="2023-11-27T10:15:18+00:00" />
+<meta property="article:modified_time" content="2024-04-17T14:54:18+01:00" />
 <meta itemprop="name" content="Importing from spreadsheet">
 <meta itemprop="description" content="Adding to or updating existing data in a table using a spreadsheet import"><meta itemprop="datePublished" content="2020-06-03T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00" />
-<meta itemprop="wordCount" content="457">
+<meta itemprop="dateModified" content="2024-04-17T14:54:18+01:00" />
+<meta itemprop="wordCount" content="724">
 <meta itemprop="keywords" content="Citizen Developer level 3,v6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Importing from spreadsheet"/>
 <meta name="twitter:description" content="Adding to or updating existing data in a table using a spreadsheet import"/>
@@ -111,7 +111,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.5ed48985d55a7aa583b9a6ef1e6fa31d.json"
+    data-offline-search-index-json-src="/offline-search-index.9e61f30f3eeed335a3e006c4aad9f8e3.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -136,7 +136,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.5ed48985d55a7aa583b9a6ef1e6fa31d.json"
+    data-offline-search-index-json-src="/offline-search-index.9e61f30f3eeed335a3e006c4aad9f8e3.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -472,6 +472,11 @@ if (!doNotTrack) {
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
+    <li>
+      <ul>
+        <li><a href="#relations">Relations</a></li>
+      </ul>
+    </li>
     <li><a href="#updating-existing-records">Updating existing records</a></li>
     <li><a href="#notes-on-special-fields">Notes on special fields</a></li>
   </ul>
@@ -554,6 +559,15 @@ if (!doNotTrack) {
 </ul>
 <p>Inserting new records will create a new record in the database for every line in the CSV file. Updating existing records will attempt to match each line in the file with an existing record and update all field values from the CSV. This can be useful when merging in data from an external source, or exporting, altering with a third party system and re-importing. Another use can be updating one field based on another - you can <a href="/docs/security-and-compliance/security-features/exporting/">export</a>, update the fields as necessary and re-import.</p>
 <p>In either case, the CSV file must contain fields in the same order as they are in the table being imported into. The column titles don’t need to be the same though, it’s the order which is important. The import screen will show you the column order which is necessary.</p>
+<h3 id="relations">Relations</h3>
+<p>A relation field is matched to a column in the import CSV file just like any other field. The values that should be in that column should be those of a unique field in the related table.</p>
+<p>When doing the import, the system will prompt you to select</p>
+<p>For example, if you have an existing table of organisations and you want to import contacts related to each, your contacts table will have a relation field pointing to the organisations table. In the organisations table, you could make the &lsquo;organisation name&rsquo; field unique. Then in the contacts CSV, include the organisation name (or other unique field) exactly as it appears in the organisation record. Select &lsquo;organisation name&rsquo; for the organisation values when prompted, when doing the import.</p>
+<p>Note that the unique field doesn&rsquo;t strictly need to have the &lsquo;unique&rsquo; option ticked to force it to be unique, but it will help prevent import mixups if it is.</p>
+<p>Alternatively, if you have no fields that are unique and can&rsquo;t add any, it&rsquo;s possible to specify the internal (usually hidden) unique IDs that Agilebase automatically generates for each record. To find these, do an export from the related table, &lsquo;organisations&rsquo; in the example above. The first column in the exported spreadsheet will be the internal ID. Then when importing contacts, specify one of those IDs in the organisation column, for each row of the data.</p>
+<blockquote>
+<p>When importing relations, if you use numbers, they will be interpreted as these internal unique values. Therefore you can&rsquo;t use any other numeric, your own unique fields used for import matching must be text.</p>
+</blockquote>
 <h2 id="updating-existing-records">Updating existing records</h2>
 <p>When updating records, a key field must be selected to match records up. This can be any field that has the <a href="/docs/fields/field-options/common-options/#unique">unique</a> property set. Alternatively the internal Agilebase rowID can be used. This field is included as the first field in any data export.</p>
 <p>Sometimes, admins will want to do an export -&gt; modify spreadsheet -&gt; re-import workflow. This is straightforward:</p>
@@ -635,7 +649,7 @@ if (!doNotTrack) {
 
 		<br />
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified November 27, 2023: <a href="https://github.com/okohll/abdocs/commit/80c844c5df1fab3cd59b900dcfdb667c41d9613c">Pivot table example (80c844c)</a>
+  Last modified April 17, 2024: <a href="https://github.com/okohll/abdocs/commit/13159b5097e91d1c9147153e5bef36ed3901b352">Add a bit about importing relations (13159b5)</a>
 </div>
 
 </div>
