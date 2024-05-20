@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/integrations/importing/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-06-03T16:40:00+01:00" />
-<meta property="article:modified_time" content="2024-04-17T15:04:54+01:00" />
+<meta property="article:modified_time" content="2024-05-20T16:40:37+01:00" />
 <meta itemprop="name" content="Importing from spreadsheet">
 <meta itemprop="description" content="Adding to or updating existing data in a table using a spreadsheet import"><meta itemprop="datePublished" content="2020-06-03T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2024-04-17T15:04:54+01:00" />
-<meta itemprop="wordCount" content="712">
+<meta itemprop="dateModified" content="2024-05-20T16:40:37+01:00" />
+<meta itemprop="wordCount" content="713">
 <meta itemprop="keywords" content="Citizen Developer level 3,v6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Importing from spreadsheet"/>
 <meta name="twitter:description" content="Adding to or updating existing data in a table using a spreadsheet import"/>
@@ -111,7 +111,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.455ca6798d471515e02bbe593b80b4a8.json"
+    data-offline-search-index-json-src="/offline-search-index.c8cf390076da839c0b437b0277196b8f.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -136,7 +136,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.455ca6798d471515e02bbe593b80b4a8.json"
+    data-offline-search-index-json-src="/offline-search-index.c8cf390076da839c0b437b0277196b8f.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -565,7 +565,7 @@ if (!doNotTrack) {
 <p>Note that the unique field doesn&rsquo;t strictly need to have the &lsquo;unique&rsquo; option ticked to force it to be unique, but it will help prevent import mixups if it is.</p>
 <p>Alternatively, if you have no fields that are unique and can&rsquo;t add any, it&rsquo;s possible to specify the internal (usually hidden) unique IDs that Agilebase automatically generates for each record. To find these, do an export from the related table, &lsquo;organisations&rsquo; in the example above. The first column in the exported spreadsheet will be the internal ID. Then when importing contacts, specify one of those IDs in the organisation column, for each row of the data.</p>
 <blockquote>
-<p>When importing relations, if you use numbers, they will be interpreted as these internal unique values. Therefore you can&rsquo;t use any other numeric, your own unique fields used for import matching must be text.</p>
+<p>When importing relations, if you use numbers, they will be interpreted as these internal unique values. Therefore you can&rsquo;t use any other numeric values, your own unique fields used for import matching must be text.</p>
 </blockquote>
 <h2 id="updating-existing-records">Updating existing records</h2>
 <p>When updating records, a key field must be selected to match records up. This can be any field that has the <a href="/docs/fields/field-options/common-options/#unique">unique</a> property set. Alternatively the internal Agilebase rowID can be used. This field is included as the first field in any data export.</p>
@@ -648,7 +648,7 @@ if (!doNotTrack) {
 
 		<br />
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified April 17, 2024: <a href="https://github.com/okohll/abdocs/commit/58f89c2273f754214df7601f75d3ff2d0c4c42f4">Add a bit about importing relations (58f89c2)</a>
+  Last modified May 20, 2024: <a href="https://github.com/okohll/abdocs/commit/91127c99ffb4c9bc28d891e8a3553cb4025749ef">Outputting charts (91127c9)</a>
 </div>
 
 </div>

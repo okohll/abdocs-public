@@ -94,7 +94,7 @@
 &lt;p&gt;The recommended way to set passwords is for the user to choose their own, which they can do once they have a username and email address filled in. They will need to visit the login page, click the &amp;lsquo;reset password&amp;rsquo; link and type in their username. They will be emailed a link which will let them set a password.&lt;/p&gt;
 &lt;p&gt;As an administrator, you can also manually reset someone&amp;rsquo;s password by clicking &amp;lsquo;change password&amp;rsquo; in their user details screen.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;We recommend the adoption of a password wallet service like &lt;a href=&#34;https://1password.com/&#34;&gt;1Password&lt;/a&gt;, &lt;a href=&#34;https://lastpass.com&#34;&gt;LastPass&lt;/a&gt; or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.&lt;/p&gt;
+&lt;p&gt;We strongly recommend the adoption of a password wallet service like &lt;a href=&#34;https://1password.com/&#34;&gt;1Password&lt;/a&gt;, &lt;a href=&#34;https://bitwarden.com&#34;&gt;Bitwarden&lt;/a&gt; or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;notes-about-password-security&#34;&gt;Notes about password security&lt;/h4&gt;
 &lt;p&gt;Passwords must be a minimum of 8 characters.&lt;/p&gt;

@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-05-08T16:40:00+01:00" />
-<meta property="article:modified_time" content="2023-11-27T10:15:18+00:00" />
+<meta property="article:modified_time" content="2024-05-20T16:40:37+01:00" />
 <meta itemprop="name" content="Document templates">
 <meta itemprop="description" content="Templates allow the automatic generation of PDF documents, or printouts"><meta itemprop="datePublished" content="2020-05-08T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00" />
-<meta itemprop="wordCount" content="1171">
+<meta itemprop="dateModified" content="2024-05-20T16:40:37+01:00" />
+<meta itemprop="wordCount" content="1211">
 <meta itemprop="keywords" content="Junior Software Architect,v6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Document templates"/>
 <meta name="twitter:description" content="Templates allow the automatic generation of PDF documents, or printouts"/>
@@ -111,7 +111,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.455ca6798d471515e02bbe593b80b4a8.json"
+    data-offline-search-index-json-src="/offline-search-index.c8cf390076da839c0b437b0277196b8f.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -136,7 +136,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.455ca6798d471515e02bbe593b80b4a8.json"
+    data-offline-search-index-json-src="/offline-search-index.c8cf390076da839c0b437b0277196b8f.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -701,6 +701,10 @@ b) the value of the first field in the view above</p>
 <td>$view.htmlTablePivot(&ldquo;table name&rdquo;, &ldquo;child view name&rdquo;, &ldquo;separator&rdquo;)</td>
 <td>Create a <a href="https://en.wikipedia.org/wiki/Pivot_table">pivot table</a> output. The first column in the view will be the heading (portion size in the example below). The second will be the &lsquo;vertical&rsquo; category (nutrition in the example) and all other fields will be values. The &lsquo;separator&rsquo; parameter is a string (text) used to join all the values to gether into one cell, if there&rsquo;s more than one. If unsure, try using a comma. An empty string can also be supplied, meaning no separation</td>
 </tr>
+<tr>
+<td>$view.charts(&ldquo;table name&rdquo;, &ldquo;view name&rdquo;)</td>
+<td>Render all the charts in the given view. If you want to target the charts for CSS (sizing etc.), they will be in an element with class &lsquo;saved_charts&rsquo;. Each individual chart will have the class &lsquo;summary_chart&rsquo;</td>
+</tr>
 </tbody>
 </table>
 <p><img src="/pivot-source.png" alt="pivot table source data">
@@ -802,7 +806,7 @@ b) the value of the first field in the view above</p>
 
 		<br />
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified November 27, 2023: <a href="https://github.com/okohll/abdocs/commit/80c844c5df1fab3cd59b900dcfdb667c41d9613c">Pivot table example (80c844c)</a>
+  Last modified May 20, 2024: <a href="https://github.com/okohll/abdocs/commit/91127c99ffb4c9bc28d891e8a3553cb4025749ef">Outputting charts (91127c9)</a>
 </div>
 
 </div>
