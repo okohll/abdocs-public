@@ -107,7 +107,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c8cf390076da839c0b437b0277196b8f.json"
+    data-offline-search-index-json-src="/offline-search-index.cf99e58f463f3cb770beeaecc875b11c.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -132,7 +132,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c8cf390076da839c0b437b0277196b8f.json"
+    data-offline-search-index-json-src="/offline-search-index.cf99e58f463f3cb770beeaecc875b11c.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -468,7 +468,11 @@ if (!doNotTrack) {
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#creating-a-tile">Creating a tile</a></li>
+    <li><a href="#creating-a-tile">Creating a tile</a>
+      <ul>
+        <li><a href="#sections">Sections</a></li>
+      </ul>
+    </li>
     <li><a href="#adding-views-to-a-data-tile">Adding views to a data tile</a></li>
     <li><a href="#adding-and-removing-tiles-from-users">Adding and removing tiles from users</a>
       <ul>
@@ -581,15 +585,16 @@ if (!doNotTrack) {
 <p>The available options are</p>
 <ul>
 <li>Name - the tile name</li>
-<li>Section - optional. If you have a large number of tiles, you can organise them into sections. This is an aid for administrators only, it doesn&rsquo;t affect end users</li>
+<li>Section - optional. If you have a large number of tiles, you can organise them into sections - see below.</li>
 <li>Index - affects the order of tiles on screen, lower numbered tiles appear before higher</li>
 <li>Purpose - can be used as help content to tell users about this tile</li>
 <li>Colour - the colour will be automatically chosen to avoid as much colour duplication as possible, however you can manually change the colour if you like, e.g. to organise similarly themed or related tiles together visually</li>
 <li>Icon - a tile icon can be chosen from the icon panel</li>
 </ul>
-<blockquote>
-<p>A multitude of icons are available, from <a href="https://fontawesome.com">Font Awesome</a>. They are constantly adding more so if you see one that&rsquo;s available on their website that&rsquo;s not in our set yet then just let us know.</p>
-</blockquote>
+<h3 id="sections">Sections</h3>
+<p>If you give a tile a Section name, a section heading will be displayed above that tile, forming a block of tiles. You don&rsquo;t need to set the section name for every tile, the section will last until you fill in a different section name for a following tile.</p>
+<p>Here&rsquo;s what sections look like on screen - if there are four or more, a navigation menu appears to the left of the tiles.</p>
+<p><img src="/tile-sections.png" alt="Sections"></p>
 <h2 id="adding-views-to-a-data-tile">Adding views to a data tile</h2>
 <p>Data tiles need to contain one or more views to be useful. If you have no tables or views yet, you may want to check out the <a href="/guides/">Quick Start Guides</a>, or see <a href="/docs/views/">Views</a> for full details on view creation.</p>
 <p>When editing a view, in the <em>properties</em> panel, choose the tile which you want to place it in from the <em>Tile</em> dropdown.</p>
@@ -686,7 +691,7 @@ if (!doNotTrack) {
 </script>
 <br />
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified April 10, 2024: <a href="https://github.com/okohll/abdocs/commit/c89233806abf35d698c0566ace0541df6155c21f">Remove visualisations tile (c892338)</a>
+  Last modified May 23, 2024: <a href="https://github.com/okohll/abdocs/commit/145a115ea9ef10db5f622304915b2b99f7e0e4dd">Sections for tiles (145a115)</a>
 </div>
 </div>
 
