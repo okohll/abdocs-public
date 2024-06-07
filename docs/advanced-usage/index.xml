@@ -38,12 +38,14 @@
 &lt;p&gt;Agilebase &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-email/&#34;&gt;workflows&lt;/a&gt; and &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-chaser/&#34;&gt;chasers&lt;/a&gt; that send emails use an @notifications.agilebase.co.uk email address by default.&lt;/p&gt;
 &lt;p&gt;You may wish to instead use email addresses from your own domain name, especially if the system sends emails to people outside your organisation, like customers or suppliers.&lt;/p&gt;
 &lt;p&gt;To allow this, you will need to use your own SMTP server, or a third party trusted system authenticated against your domain name. Using a service like &lt;a href=&#34;http://www.authsmtp.com/&#34;&gt;AuthSmtp&lt;/a&gt;, &lt;a href=&#34;http://www.sendgrid.com/&#34;&gt;SendGrid&lt;/a&gt; or &lt;a href=&#34;https://aws.amazon.com/ses/&#34;&gt;Amazon Simple Email Service&lt;/a&gt; is probably the most straightforward way of setting this up - their instructions will tell you how to set up facilities such as Sender Policy Framework and DomainKeys in order to increase email deliverability.&lt;/p&gt;
-&lt;p&gt;Once you have the SMTP server address, username and password from your service, enter them into the details in this section in Agilebase.&lt;/p&gt;
+&lt;p&gt;Once you have the SMTP server address, username and password from your service, enter them into the details in this section.&lt;/p&gt;
+&lt;h3 id=&#34;default-from-address&#34;&gt;Default From: Address&lt;/h3&gt;
+&lt;p&gt;This is the email address that email messages (workflows and chasers as above) come from, unless overridden in the individual notification or chaser view settings.&lt;/p&gt;
+&lt;p&gt;You should set it to be an address from your own domain name.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also the address that [chart subscription emails] get sent from.&lt;/p&gt;
+&lt;p&gt;If the SMTP server details above aren&amp;rsquo;t filled in, this has no effect, emails will come from &lt;em&gt;anaddress&lt;/em&gt;@.notifications.agilebase.co.uk&lt;/p&gt;
 &lt;h3 id=&#34;comments-webhook-url&#34;&gt;Comments Webhook URL&lt;/h3&gt;
 &lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/comments-integration/&#34;&gt;Integrations - Comments&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;send-chart-subscriptions-from&#34;&gt;Send chart subscriptions from&lt;/h3&gt;
-&lt;p&gt;Users can opt to have daily, weekly or monthly emails sent to them containing all the charts they&amp;rsquo;ve subscribed to for that period. The emails will come from an email address @notifications.agilebase.co.uk by default, this option will allow you to specify your own address.&lt;/p&gt;
-&lt;p&gt;If used, then the SMTP details above also need to be completed.&lt;/p&gt;
 &lt;h3 id=&#34;export-message&#34;&gt;Export message&lt;/h3&gt;
 &lt;p&gt;As you will know, your organisation is required to protect personal data, as per the GDPR. One thing to watch out for is what happens to data that is exported to spreadsheet?&lt;/p&gt;
 &lt;p&gt;There are various &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/&#34;&gt;rules&lt;/a&gt; you can set up to control exports that are well worth familiarising yourself with, as an administrator. These control who can export, what they can export and how much can be exported. Once data is in a spreadsheet of course, the system no longer has any control over it. It can be emailed, shared etc. as the spreadsheet owner wishes.&lt;/p&gt;

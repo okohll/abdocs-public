@@ -25,11 +25,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/" /><meta property="article:section" content="docs" />
 <meta property="article:published_time" content="2020-04-24T16:40:00+01:00" />
-<meta property="article:modified_time" content="2024-02-05T16:30:38+00:00" />
+<meta property="article:modified_time" content="2024-06-07T18:36:12+01:00" />
 <meta itemprop="name" content="Company Settings">
 <meta itemprop="description" content="These settings apply to the whole Agilebase account"><meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00" />
-<meta itemprop="dateModified" content="2024-02-05T16:30:38+00:00" />
-<meta itemprop="wordCount" content="463">
+<meta itemprop="dateModified" content="2024-06-07T18:36:12+01:00" />
+<meta itemprop="wordCount" content="471">
 <meta itemprop="keywords" content="Software Architect,v6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Company Settings"/>
 <meta name="twitter:description" content="These settings apply to the whole Agilebase account"/>
@@ -69,16 +69,7 @@
     }
 </style>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-00000000-0"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'UA-00000000-0');
-}
-</script>
+
   </head>
   <body class="td-page">
     <header>
@@ -111,7 +102,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.cf99e58f463f3cb770beeaecc875b11c.json"
+    data-offline-search-index-json-src="/offline-search-index.288db25381a501d592c15d18e584cea5.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -136,7 +127,7 @@ if (!doNotTrack) {
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.cf99e58f463f3cb770beeaecc875b11c.json"
+    data-offline-search-index-json-src="/offline-search-index.288db25381a501d592c15d18e584cea5.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -476,8 +467,8 @@ if (!doNotTrack) {
       <ul>
         <li><a href="#mandate-2fa">Mandate 2FA</a></li>
         <li><a href="#smtp-server">SMTP server</a></li>
+        <li><a href="#default-from-address">Default From: Address</a></li>
         <li><a href="#comments-webhook-url">Comments Webhook URL</a></li>
-        <li><a href="#send-chart-subscriptions-from">Send chart subscriptions from</a></li>
         <li><a href="#export-message">Export message</a></li>
       </ul>
     </li>
@@ -564,80 +555,21 @@ if (!doNotTrack) {
 <p>Agilebase <a href="/docs/workflows/send-email/">workflows</a> and <a href="/docs/workflows/send-chaser/">chasers</a> that send emails use an @notifications.agilebase.co.uk email address by default.</p>
 <p>You may wish to instead use email addresses from your own domain name, especially if the system sends emails to people outside your organisation, like customers or suppliers.</p>
 <p>To allow this, you will need to use your own SMTP server, or a third party trusted system authenticated against your domain name. Using a service like <a href="http://www.authsmtp.com/">AuthSmtp</a>, <a href="http://www.sendgrid.com/">SendGrid</a> or <a href="https://aws.amazon.com/ses/">Amazon Simple Email Service</a> is probably the most straightforward way of setting this up - their instructions will tell you how to set up facilities such as Sender Policy Framework and DomainKeys in order to increase email deliverability.</p>
-<p>Once you have the SMTP server address, username and password from your service, enter them into the details in this section in Agilebase.</p>
+<p>Once you have the SMTP server address, username and password from your service, enter them into the details in this section.</p>
+<h3 id="default-from-address">Default From: Address</h3>
+<p>This is the email address that email messages (workflows and chasers as above) come from, unless overridden in the individual notification or chaser view settings.</p>
+<p>You should set it to be an address from your own domain name.</p>
+<p>It&rsquo;s also the address that [chart subscription emails] get sent from.</p>
+<p>If the SMTP server details above aren&rsquo;t filled in, this has no effect, emails will come from <em>anaddress</em>@.notifications.agilebase.co.uk</p>
 <h3 id="comments-webhook-url">Comments Webhook URL</h3>
 <p>See <a href="/docs/integrations/comments-integration/">Integrations - Comments</a></p>
-<h3 id="send-chart-subscriptions-from">Send chart subscriptions from</h3>
-<p>Users can opt to have daily, weekly or monthly emails sent to them containing all the charts they&rsquo;ve subscribed to for that period. The emails will come from an email address @notifications.agilebase.co.uk by default, this option will allow you to specify your own address.</p>
-<p>If used, then the SMTP details above also need to be completed.</p>
 <h3 id="export-message">Export message</h3>
 <p>As you will know, your organisation is required to protect personal data, as per the GDPR. One thing to watch out for is what happens to data that is exported to spreadsheet?</p>
 <p>There are various <a href="/docs/security-and-compliance/security-features/exporting/">rules</a> you can set up to control exports that are well worth familiarising yourself with, as an administrator. These control who can export, what they can export and how much can be exported. Once data is in a spreadsheet of course, the system no longer has any control over it. It can be emailed, shared etc. as the spreadsheet owner wishes.</p>
 <p>This option allows you to set the text of a prompt that users see before exporting. It can be used to remind people of their obligations and point them to any further information provided by your organisation. They will need to tick to accept before performing the export.</p>
 
-	<style>
-  .feedback--answer {
-    display: inline-block;
-  }
-  .feedback--answer-no {
-    margin-left: 1em;
-  }
-  .feedback--response {
-    display: none;
-    margin-top: 1em;
-  }
-  .feedback--response__visible {
-    display: block;
-  }
-</style>
-<div class="d-print-none">
-<h2 class="feedback--title">Feedback</h2>
-<p class="feedback--question">Was this page helpful?</p>
-<button class="btn btn-primary mb-4 feedback--answer feedback--answer-yes">Yes</button>
-<button class="btn btn-primary mb-4 feedback--answer feedback--answer-no">No</button>
-<p class="feedback--response feedback--response-yes">
-  Glad to hear it! Please <a href="https://github.com/okohll/abdocs/issues/new">tell us how we can improve</a>.
-</p>
-<p class="feedback--response feedback--response-no">
-  Sorry to hear that. Please <a href="https://github.com/okohll/abdocs/issues/new">tell us how we can improve</a>.
-</p>
-</div>
-<script>
-  const yesButton = document.querySelector('.feedback--answer-yes');
-  const noButton = document.querySelector('.feedback--answer-no');
-  const yesResponse = document.querySelector('.feedback--response-yes');
-  const noResponse = document.querySelector('.feedback--response-no');
-  const disableButtons = () => {
-    yesButton.disabled = true;
-    noButton.disabled = true;
-  };
-  const sendFeedback = (value) => {
-    if (typeof ga !== 'function') return;
-    const args = {
-      command: 'send',
-      hitType: 'event',
-      category: 'Helpful',
-      action: 'click',
-      label: window.location.pathname,
-      value: value
-    };
-    ga(args.command, args.hitType, args.category, args.action, args.label, args.value);
-  };
-  yesButton.addEventListener('click', () => {
-    yesResponse.classList.add('feedback--response__visible');
-    disableButtons();
-    sendFeedback(1);
-  });
-  noButton.addEventListener('click', () => {
-    noResponse.classList.add('feedback--response__visible');
-    disableButtons();
-    sendFeedback(0);
-  });
-</script>
-
-		<br />
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified February 5, 2024: <a href="https://github.com/okohll/abdocs/commit/4188f00955cfd85238c0a0cad7fee98c40c1edb0">Send comments to a configurable location e.g. Teams instead of Slack (4188f00)</a>
+  Last modified June 7, 2024: <a href="https://github.com/okohll/abdocs/commit/b9cb10d37445560df663d2ec053d908ef3b89507">Disable Google Analytics (b9cb10d)</a>
 </div>
 
 </div>
