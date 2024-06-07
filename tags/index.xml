@@ -1,19 +1,215 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Agilebase docs – Tags</title>
+    <title>Tags on Agilebase docs</title>
     <link>https://docs.agilebase.co.uk/tags/</link>
     <description>Recent content in Tags on Agilebase docs</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Apr 2024 09:30:00 +0100</lastBuildDate>
-    
-	  <atom:link href="https://docs.agilebase.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <lastBuildDate>Fri, 07 Jun 2024 18:36:12 +0100</lastBuildDate>
+    <atom:link href="https://docs.agilebase.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software Architect</title>
+      <link>https://docs.agilebase.co.uk/tags/software-architect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/software-architect/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>V6</title>
+      <link>https://docs.agilebase.co.uk/tags/v6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/v6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Citizen Developer Level 3</title>
+      <link>https://docs.agilebase.co.uk/tags/citizen-developer-level-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/citizen-developer-level-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Junior System Architect</title>
+      <link>https://docs.agilebase.co.uk/tags/junior-system-architect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/junior-system-architect/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>System Architect</title>
+      <link>https://docs.agilebase.co.uk/tags/system-architect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/system-architect/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Junior Software Architect</title>
+      <link>https://docs.agilebase.co.uk/tags/junior-software-architect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/junior-software-architect/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Architect</title>
+      <link>https://docs.agilebase.co.uk/tags/architect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/architect/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Citizen Developer</title>
+      <link>https://docs.agilebase.co.uk/tags/citizen-developer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/citizen-developer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Citizen Developer Level 1</title>
+      <link>https://docs.agilebase.co.uk/tags/citizen-developer-level-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/citizen-developer-level-1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Citizen Developer Level 2</title>
+      <link>https://docs.agilebase.co.uk/tags/citizen-developer-level-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/citizen-developer-level-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learner Progression</title>
+      <link>https://docs.agilebase.co.uk/tags/learner-progression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/learner-progression/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Access Control</title>
+      <link>https://docs.agilebase.co.uk/tags/access-control/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/access-control/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Charts</title>
+      <link>https://docs.agilebase.co.uk/tags/charts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/charts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Personal</title>
+      <link>https://docs.agilebase.co.uk/tags/personal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/personal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>https://docs.agilebase.co.uk/tags/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Views</title>
+      <link>https://docs.agilebase.co.uk/tags/views/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/views/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Calculations</title>
+      <link>https://docs.agilebase.co.uk/tags/calculations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/calculations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DropDown</title>
+      <link>https://docs.agilebase.co.uk/tags/dropdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/dropdown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kanban</title>
+      <link>https://docs.agilebase.co.uk/tags/kanban/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/kanban/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Relational Data</title>
+      <link>https://docs.agilebase.co.uk/tags/relational-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/relational-data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sales</title>
+      <link>https://docs.agilebase.co.uk/tags/sales/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/sales/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tabs</title>
+      <link>https://docs.agilebase.co.uk/tags/tabs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/tabs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Requires Update</title>
+      <link>https://docs.agilebase.co.uk/tags/requires-update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/requires-update/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Core User</title>
+      <link>https://docs.agilebase.co.uk/tags/core-user/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/core-user/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automations</title>
+      <link>https://docs.agilebase.co.uk/tags/automations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/automations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Buttons</title>
+      <link>https://docs.agilebase.co.uk/tags/buttons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/buttons/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cross References</title>
+      <link>https://docs.agilebase.co.uk/tags/cross-references/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/cross-references/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Email</title>
+      <link>https://docs.agilebase.co.uk/tags/email/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/email/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PDFS</title>
+      <link>https://docs.agilebase.co.uk/tags/pdfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/tags/pdfs/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

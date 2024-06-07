@@ -1,19 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Agilebase docs – Introduction</title>
+    <title>Introduction on Agilebase docs</title>
     <link>https://docs.agilebase.co.uk/introduction/</link>
     <description>Recent content in Introduction on Agilebase docs</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Apr 2020 16:57:55 +0100</lastBuildDate>
-    
-	  <atom:link href="https://docs.agilebase.co.uk/introduction/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <lastBuildDate>Mon, 27 Nov 2023 10:15:18 +0000</lastBuildDate>
+    <atom:link href="https://docs.agilebase.co.uk/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is low code / no code?</title>
+      <link>https://docs.agilebase.co.uk/introduction/what-is-no-code/</link>
+      <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/introduction/what-is-no-code/</guid>
+      <description>Over the last two years low code / no code software has appeared to burst onto the scene from nowhere. The truth however is a bit less spectacular. Low code / no code platforms have been in development under the radar for at least a decade. What has changed now is the promise has become a reality.&#xA;Low code / no code promised to give users the power to produce bespoke systems, rather than have to rely on developers.</description>
+    </item>
+    <item>
+      <title>What is a back office system?</title>
+      <link>https://docs.agilebase.co.uk/introduction/what-is-a-back-office-system/</link>
+      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/introduction/what-is-a-back-office-system/</guid>
+      <description>Back-office software solutions evolved with the emergence of cloud-based software as a service (SaaS) as a way of distinguishing them from front-office software, (which typically refers to software used for processes related to things like marketing, sales, interaction tracking, project management and other customer-facing activities).&#xA;Whilst Agilebase is widely used as front-office platform our unique strength is in our ability to support not only this front end but also the back-office.</description>
+    </item>
+    <item>
+      <title>Why use Agilebase?</title>
+      <link>https://docs.agilebase.co.uk/introduction/why-use-agilebase/</link>
+      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/introduction/why-use-agilebase/</guid>
+      <description>&#xA;Agilebase has been created with some important aims in mind&#xA;to create software that people find enjoyable to use, which manifests in many ways, most obviously the attractive and colourful user interface, but also because it can match user&amp;rsquo;s requirements exactly to support the full ambitions of business owners. It&amp;rsquo;s simple to get started but the platform has a very high technical ceiling - there&amp;rsquo;s not much you can&amp;rsquo;t accomplish to make the most out of an organisation workforce&amp;rsquo;s perhaps un-tapped skills and experience, allowing people to take full ownership of their own areas of their business </description>
+    </item>
+    <item>
+      <title>Who can use it?</title>
+      <link>https://docs.agilebase.co.uk/introduction/who-can-use-it/</link>
+      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/introduction/who-can-use-it/</guid>
+      <description>Firstly, no formal programming experience is necessary.&#xA;Often, people who are interested in building applications tend to be those who have created spreadsheets to run business processes but have become aware of the limitations and want to move to the next level.&#xA;Following training, anyone with the requisite interest, ability and ambition can progress from making simple changes and additions to existing applications, to building complex applications&#xA;Citizen Developers People working within an organisation at any level can be trained in the technology and thought patterns necessary to build useful applications.</description>
+    </item>
+    <item>
+      <title>Scaling potential</title>
+      <link>https://docs.agilebase.co.uk/introduction/scaling-potential/</link>
+      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/introduction/scaling-potential/</guid>
+      <description>Using Agilebase you can start small (perhaps in one team or department) and build apps iteratively to encompass a constantly widening range of business requirements. Many back office and CRM systems don&amp;rsquo;t typically store high volumes of data, but as systems grow its not uncommon to add transactional apps such as customer order processing for example, which can experience high throughput.&#xA;Agilebase supports all three stages of an organisation&amp;rsquo;s lifecycle - startup, scaling and growth.</description>
+    </item>
+    <item>
+      <title>Costing structure</title>
+      <link>https://docs.agilebase.co.uk/introduction/costing-structure/</link>
+      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/introduction/costing-structure/</guid>
+      <description>A large variety of applications can be built using the Agilebase platform. Customers can start small (perhaps in one team or department, or a new startup business) and build apps iteratively to encompass a constantly widening range of business requirements.&#xA;Our costing structure has been developed to ensure fairness and affordability however far along an organisation is in their growth.&#xA;Costing is controlled by five factors&#xA;Users - the number of people who can log in Tables - a measure of the size of an application - how many capabilities does it cover?</description>
+    </item>
   </channel>
 </rss>
