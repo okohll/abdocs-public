@@ -27,15 +27,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-04-24T16:40:00+01:00">
-    <meta property="article:modified_time" content="2023-11-27T10:15:18+00:00">
+    <meta property="article:modified_time" content="2024-07-01T22:22:34+01:00">
     <meta property="article:tag" content="Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Build Patterns">
   <meta itemprop="description" content="Common patterns, or recipes for accomplishing useful tasks">
   <meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00">
-  <meta itemprop="wordCount" content="1104">
+  <meta itemprop="dateModified" content="2024-07-01T22:22:34+01:00">
+  <meta itemprop="wordCount" content="1559">
   <meta itemprop="keywords" content="Software Architect,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Build Patterns">
@@ -109,7 +109,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.883a2e45595e1b659db9ab173fe0e663.json"
+    data-offline-search-index-json-src="/offline-search-index.9e4eea925605363762cd5322ecc8f7c8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -133,7 +133,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.883a2e45595e1b659db9ab173fe0e663.json"
+    data-offline-search-index-json-src="/offline-search-index.9e4eea925605363762cd5322ecc8f7c8.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -472,6 +472,7 @@
     <li><a href="#snapshots-idea">Snapshots idea</a></li>
     <li><a href="#gap-filling-in-monthly-or-other-period-reporting">Gap filling in monthly (or other period) reporting</a></li>
     <li><a href="#joining-on-compound-keys">Joining on compound keys</a></li>
+    <li><a href="#creating-chooser-views-which-exclude-already-chosen-items">Creating chooser views which exclude already chosen items</a></li>
     <li><a href="#including-multiple-aggregates-from-different-sources">Including multiple aggregates from different sources</a></li>
     <li><a href="#calculating-the-number-of-weekdays-or-weekends-between-two-dates">Calculating the number of weekdays or weekends between two dates</a></li>
     <li><a href="#outputting-a-pivoted-view-in-a-printout">Outputting a ‘pivoted’ view in a printout</a></li>
@@ -576,6 +577,35 @@
 <p><code>{customers.id:customers} || ‘_’ || {products.id:products}</code></p>
 <p>Use the same calculation in views you want to join to and join on it.</p>
 <p>This is much better than the &rsquo;naive&rsquo; idea of creating separate joins to each table, which won’t work.</p>
+<h2 id="creating-chooser-views-which-exclude-already-chosen-items">Creating chooser views which exclude already chosen items</h2>
+<p>This is a hard one to explain in abstract, but an example might help.</p>
+<p>Say you have a many to many relationship, represented with three tables</p>
+<ol>
+<li>Courses</li>
+<li>Trainers</li>
+<li>Course Trainers</li>
+</ol>
+<p>The last table is a &lsquo;junction table&rsquo;, i.e. one which contains a relation field to courses, and another to trainers, allowing you to link trainers to courses in a many-to-many fashion. One course can have many trainers, but also trainers can train on a number of different courses each.</p>
+<p>When editing a trainer, you want to be able to add a list of courses they teach. That can be done by creating records in the Course Trainers table, e.g. if Trainers has a <a href="/docs/tables/hierarchy-navigation/tabs/">tab</a> for Course Trainers.</p>
+<p>However, you don&rsquo;t want to be able to select the same course twice for a trainer (or the same trainer more than once for a course). The way you do that is to create a view for choosing a course which excludes already chosen courses (then similar for choosing a trainer).</p>
+<p>To do that</p>
+<ol>
+<li>Create a new view from the Courses table, to use as a chooser for a course. Let&rsquo;s call it &lsquo;all possible course trainers&rsquo; (we&rsquo;ll see why in a mo.)</li>
+<li>Add a <a href="/docs/views/joins/types-of-join/#cross-join">cross join</a> from courses to trainers.
+We now have a view of all possible combinations of course and trainer</li>
+<li>Give each combination a unique ID by adding a text calculation <code>{courses.id:courses} || '_' || {trainers.id:trainers}</code></li>
+<li>Now we want to exclude the existing courses for each trainer, i.e. the existing combinations: Firstly create a new view from the Course Trainers table, &rsquo;existing course trainers&rsquo;</li>
+<li>To that view, join to both courses and trainers, then add the same calculation <code>{courses.id:courses} || '_' || {trainers.id:trainers}</code></li>
+<li>From the first &lsquo;all possible course trainers&rsquo; view, join on the calculation to the calculation in the second &rsquo;existing course trainers&rsquo; view</li>
+<li>Add a filter to &lsquo;all possible course trainers&rsquo; - ensure the ID from the existing course trainers &lsquo;is blank&rsquo;, i.e. meaning the combination Course Trainers ID doesn&rsquo;t exist in the list of existing course trainers.</li>
+<li>We now have our list of all possible course trainer combinations, <strong>excluding</strong> those which already exist in the data. Now just use this by making it the &lsquo;view to use&rsquo; in the field options for the Course relation field in the Course Trainers table</li>
+</ol>
+<p>There are two key concepts that make this work:</p>
+<ol>
+<li>The concept of cross joining, to give all possible values</li>
+<li>The concept of filtering to subtract the existing &lsquo;real&rsquo; values</li>
+</ol>
+<p>Together these can be useful in many other similar situations, for where you have events assigned to dates, but wish to show a list of all dates, whether they have events or not.</p>
 <h2 id="including-multiple-aggregates-from-different-sources">Including multiple aggregates from different sources</h2>
 <p>Joining from one table down to multiple child tables in order to perform aggregates will not work - you&rsquo;ll experience double counting.</p>
 <p>For example, if a customers table joins down to both &lsquo;customer invoices&rsquo; and &lsquo;customer complaints&rsquo;, then a <code>count(*)</code> calculation will return neither the number of invoices or complaints, but the product of the two i.e. the number of invoices times the number of complaints.</p>
@@ -695,7 +725,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified November 27, 2023: <a href="https://github.com/okohll/abdocs/commit/80c844c5df1fab3cd59b900dcfdb667c41d9613c">Pivot table example (80c844c)</a>
+  Last modified July 1, 2024: <a href="https://github.com/okohll/abdocs/commit/d4cba55e1bd3654b32a850f1c280b8f021bfedb9">Creating chooser views which exclude already chosen items (d4cba55)</a>
 </div>
 
 </div>
