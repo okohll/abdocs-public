@@ -27,15 +27,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-06-01T16:40:00+01:00">
-    <meta property="article:modified_time" content="2023-11-27T10:15:18+00:00">
+    <meta property="article:modified_time" content="2024-07-15T15:55:37+01:00">
     <meta property="article:tag" content="Junior Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Creating a PUSH API">
   <meta itemprop="description" content="A powerful automation feature that can send data to third party systems.">
   <meta itemprop="datePublished" content="2020-06-01T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00">
-  <meta itemprop="wordCount" content="386">
+  <meta itemprop="dateModified" content="2024-07-15T15:55:37+01:00">
+  <meta itemprop="wordCount" content="749">
   <meta itemprop="keywords" content="Junior Software Architect,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Creating a PUSH API">
@@ -109,7 +109,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.9e4eea925605363762cd5322ecc8f7c8.json"
+    data-offline-search-index-json-src="/offline-search-index.2bfe01a902972c25d9d62a9647b3a1ec.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -133,7 +133,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.9e4eea925605363762cd5322ecc8f7c8.json"
+    data-offline-search-index-json-src="/offline-search-index.2bfe01a902972c25d9d62a9647b3a1ec.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -468,9 +468,18 @@
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#specifying-the-data-format">Specifying the data format</a>
       <ul>
-        <li><a href="#selecting-data-to-push">Selecting data to push</a></li>
+        <li><a href="#data-format--json-content-body-zapier-compatible">Data Format = JSON content body (Zapier compatible)</a></li>
+        <li><a href="#data-format--json-content-body-agilebase-compatible">Data Format = JSON content body (Agilebase compatible)</a></li>
+        <li><a href="#data-format--form-post-with-data-parameter">Data Format = Form post with data parameter</a></li>
+      </ul>
+    </li>
+    <li><a href="#selecting-data-to-push">Selecting data to push</a>
+      <ul>
+        <li><a href="#pushing-any-data-modified-since-it-was-last-pushed">Pushing any data modified since it was last pushed</a></li>
+        <li><a href="#pushing-any-new-rows-that-have-never-been-pushed-before">Pushing any new rows that have never been pushed before</a></li>
+        <li><a href="#pushing-only-rows-not-yet-marked-as-received">Pushing only rows not yet marked as received</a></li>
       </ul>
     </li>
   </ul>
@@ -543,28 +552,77 @@
 
   </header>
 	<ol>
-<li>Firstly, create a a view which contains the data you wish to send</li>
+<li>Firstly, create a view which contains the data you wish to send</li>
 <li>In the &lsquo;Use API&rsquo; panel, enter a URL into the <em>Push URL</em> field. This is the URL that Agilebase will POST to when there’s new data.</li>
 <li>In the table that the API view was created from, add a new date/time field, accurate to the second, for the system to record when the API push was last used</li>
 <li>Go back to the view and the &lsquo;Use API&rsquo; panel and select the field you just created for the &lsquo;Log Time Of Push To&rsquo; field.
 The system will now make a POST to the URL specified in step 2 whenever there’s new data to send. It will contain one parameter, ‘json’, which is a JSON representation of all the data in the view.</li>
 </ol>
 <p><img src="/workflow-push-new.png" alt="Configuring the PUSH API"></p>
-<h3 id="selecting-data-to-push">Selecting data to push</h3>
+<p>The data posted will be a JSON array of objects, each object representing a row in the view.</p>
+<h2 id="specifying-the-data-format">Specifying the data format</h2>
+<p>Using the <em>Data Format</em> selector and <em>Generate &lsquo;simple format&rsquo;</em> options in the API panel, you can choose various formats to send</p>
+<h3 id="data-format--json-content-body-zapier-compatible">Data Format = JSON content body (Zapier compatible)</h3>
+<p>This is obviously what to choose if sending to zapier.com, but there&rsquo;s nothing stopping you from using if for other systems too.</p>
+<p>The contents of the view are posted to the URL as JSON, as the body of the HTTP request.</p>
+<p>The body (JSON) will consist of two properties, &lsquo;fields&rsquo;, listing the field names and types and mapping them to internal field IDs, then &lsquo;data&rsquo;, an array of objects, one for each row. Here&rsquo;s an example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;fields&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;exampletext_yhgfwesdf&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Example Text&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;desc&#34;</span>: <span style="color:#e6db74">&#34;Example description for the first field&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;datatype&#34;</span>: <span style="color:#e6db74">&#34;VARCHAR&#34;</span>
+</span></span><span style="display:flex;"><span>    }, {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;examplenumber_sdfjbv&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Example Number&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;desc&#34;</span>: <span style="color:#e6db74">&#34;Example description for the second field&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;datatype&#34;</span>: <span style="color:#e6db74">&#34;BIGINT&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;data&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;exampletext_yhgfwesdf&#34;</span>: <span style="color:#e6db74">&#34;Some text&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;examplenumber_sdfjbv&#34;</span>: <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>    }, {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;exampletext_yhgfwesdf&#34;</span>: <span style="color:#e6db74">&#34;Some more text&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;examplenumber_sdfjbv&#34;</span>: <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="generate-simple-format">Generate &lsquo;simple format&rsquo;</h4>
+<p>If this option is left un-ticked, then internal field IDs will be used as the property keys in JSON objects representing each row in the view. Internal field names are un-changing but are less &lsquo;human readable&rsquo;. This is generally the best option to use as it ensures that if someone changes the name of a field in the view, the data structure won&rsquo;t change.</p>
+<p>If ticked, then &lsquo;human friendly&rsquo; keys will be used, e.g. a field called &lsquo;First Name&rsquo; will be represented with key &lsquo;first_name&rsquo;. The &lsquo;fields&rsquo; array will also be omitted, so the example above would become</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;data&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;example_text&#34;</span>: <span style="color:#e6db74">&#34;Some text&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;example_number&#34;</span>: <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>    }, {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;example_text&#34;</span>: <span style="color:#e6db74">&#34;Some more text&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;example_number&#34;</span>: <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="data-format--json-content-body-agilebase-compatible">Data Format = JSON content body (Agilebase compatible)</h3>
+<p>This is a format used only for pushing data from one Agilebase server to another, please contact us for details if necessary.</p>
+<h3 id="data-format--form-post-with-data-parameter">Data Format = Form post with data parameter</h3>
+<p>The JSON is the same, but rather than being submitted as the body of the request, a &lsquo;json&rsquo; parameter is submitted containing it.</p>
+<h2 id="selecting-data-to-push">Selecting data to push</h2>
 <p>How do we know which data is new and wants to be sent out via the API?</p>
 <p>That’s up to you - any filters can be added to the view to select data you want. Commonly, you’d use the date/time field set up in step 3. When a push successfully completes, every record in the view has this field set to the current time.</p>
 <blockquote>
 <p>Note: if the push encounters an error for any reason, say the third party system returns a HTTP error code rather than the expected ‘200’ code for success, the timestamp won’t be set.</p>
 </blockquote>
 <p>A few common scenarios would be:</p>
-<h4 id="pushing-any-data-modified-since-it-was-last-pushed">Pushing any data modified since it was last pushed</h4>
+<h3 id="pushing-any-data-modified-since-it-was-last-pushed">Pushing any data modified since it was last pushed</h3>
 <p>To do this, add a boolean calculation to your view, something like</p>
 <p>needs pushing = <code>{last modified [auto]} &gt; {last pushed}</code></p>
 <p>where ‘last pushed’ is the name of the timestamp field you added in step 3 above.</p>
 <p>Then add a filter on the view ‘needs pushing equals true’.</p>
-<h4 id="pushing-any-new-rows-that-have-never-been-pushed-before">Pushing any new rows that have never been pushed before</h4>
+<h3 id="pushing-any-new-rows-that-have-never-been-pushed-before">Pushing any new rows that have never been pushed before</h3>
 <p>For this scenario, simply add a filter to the view ‘last pushed is empty’.</p>
-<h4 id="pushing-only-rows-not-yet-marked-as-received">Pushing only rows not yet marked as received</h4>
+<h3 id="pushing-only-rows-not-yet-marked-as-received">Pushing only rows not yet marked as received</h3>
 <p>In some cases, you may want to be even more prudent than using the internal timestamp. The third party system could make a separate API call to Agilebase for every row that’s received, telling it to update the row with an ID to prove receipt. That’s more API calls of course, but some situations may warrant it.</p>
 
 	<style>
@@ -624,7 +682,7 @@ The system will now make a POST to the URL specified in step 2 whenever there’
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified November 27, 2023: <a href="https://github.com/okohll/abdocs/commit/80c844c5df1fab3cd59b900dcfdb667c41d9613c">Pivot table example (80c844c)</a>
+  Last modified July 15, 2024: <a href="https://github.com/okohll/abdocs/commit/3e1f50c188a04a5daa78aa700f53f77b9ca3cc79">JSON examples and details for the PUSH API (3e1f50c)</a>
 </div>
 
 </div>

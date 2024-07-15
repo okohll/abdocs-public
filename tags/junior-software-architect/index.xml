@@ -6,7 +6,7 @@
     <description>Recent content in Junior Software Architect on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Jul 2024 22:20:47 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2024 15:55:37 +0100</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/tags/junior-software-architect/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Guide 1 - Build a CRM</title>
@@ -160,7 +160,7 @@
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</link>
       <pubDate>Mon, 01 Jun 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</guid>
-      <description>Firstly, create a a view which contains the data you wish to send In the &amp;lsquo;Use API&amp;rsquo; panel, enter a URL into the Push URL field. This is the URL that Agilebase will POST to when there’s new data. In the table that the API view was created from, add a new date/time field, accurate to the second, for the system to record when the API push was last used Go back to the view and the &amp;lsquo;Use API&amp;rsquo; panel and select the field you just created for the &amp;lsquo;Log Time Of Push To&amp;rsquo; field.</description>
+      <description>Firstly, create a view which contains the data you wish to send In the &amp;lsquo;Use API&amp;rsquo; panel, enter a URL into the Push URL field. This is the URL that Agilebase will POST to when there’s new data. In the table that the API view was created from, add a new date/time field, accurate to the second, for the system to record when the API push was last used Go back to the view and the &amp;lsquo;Use API&amp;rsquo; panel and select the field you just created for the &amp;lsquo;Log Time Of Push To&amp;rsquo; field.</description>
     </item>
     <item>
       <title>Send an email</title>
