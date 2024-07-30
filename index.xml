@@ -516,7 +516,7 @@
       <link>https://docs.agilebase.co.uk/docs/workflows/altering-data/</link>
       <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/workflows/altering-data/</guid>
-      <description>The following Workflows alter data within the system&#xA;Create record - This will create a new item in the nominated table Update record - This will alter the values of the record. Lock record - This will apply a record level lock on the item. Delete record - This will totally remove the record. When creating or editing a record, the fields in the view will populate the new or existing record.</description>
+      <description>The following Workflows alter data within the system&#xA;Create record - This will create a new item in the nominated table Update record - This will alter the values of the record. Lock record - This will apply a record level lock on the item. Delete record - This will totally remove the record. Specifying field values to save When creating or editing a record, the fields in the view will populate the new or existing record.</description>
     </item>
     <item>
       <title>Referenced Data Panels</title>
@@ -558,7 +558,7 @@
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</link>
       <pubDate>Mon, 01 Jun 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</guid>
-      <description>Firstly, create a view which contains the data you wish to send In the &amp;lsquo;Use API&amp;rsquo; panel, enter a URL into the Push URL field. This is the URL that Agilebase will POST to when there’s new data. In the table that the API view was created from, add a new date/time field, accurate to the second, for the system to record when the API push was last used Go back to the view and the &amp;lsquo;Use API&amp;rsquo; panel and select the field you just created for the &amp;lsquo;Log Time Of Push To&amp;rsquo; field.</description>
+      <description>Firstly, create a view which contains the data you wish to send In the &amp;lsquo;Use API&amp;rsquo; panel, enter a URL into the Push URL field. This is the URL that Agilebase will POST to when there’s new data. In the dropdown under that, Log time of push to, create a new date field (or choose an existing one). The API will update this field in a record when that record is included in a push to the external system The system will now make a POST to the URL specified in step 2 whenever there’s new data to send.</description>
     </item>
     <item>
       <title>Send Data to a third party via API</title>

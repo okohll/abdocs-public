@@ -27,15 +27,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-06-01T16:40:00+01:00">
-    <meta property="article:modified_time" content="2024-07-15T15:55:37+01:00">
+    <meta property="article:modified_time" content="2024-07-30T14:43:47+01:00">
     <meta property="article:tag" content="Junior Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Creating a PUSH API">
   <meta itemprop="description" content="A powerful automation feature that can send data to third party systems.">
   <meta itemprop="datePublished" content="2020-06-01T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2024-07-15T15:55:37+01:00">
-  <meta itemprop="wordCount" content="749">
+  <meta itemprop="dateModified" content="2024-07-30T14:43:47+01:00">
+  <meta itemprop="wordCount" content="840">
   <meta itemprop="keywords" content="Junior Software Architect,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Creating a PUSH API">
@@ -109,7 +109,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.2bfe01a902972c25d9d62a9647b3a1ec.json"
+    data-offline-search-index-json-src="/offline-search-index.5ce349a8d21071e75eb46a3fb5de9d1b.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -133,7 +133,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.2bfe01a902972c25d9d62a9647b3a1ec.json"
+    data-offline-search-index-json-src="/offline-search-index.5ce349a8d21071e75eb46a3fb5de9d1b.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -482,6 +482,7 @@
         <li><a href="#pushing-only-rows-not-yet-marked-as-received">Pushing only rows not yet marked as received</a></li>
       </ul>
     </li>
+    <li><a href="#openapi-swagger-description">OpenAPI (Swagger) description</a></li>
   </ul>
 </nav>
       </div>
@@ -554,9 +555,8 @@
 	<ol>
 <li>Firstly, create a view which contains the data you wish to send</li>
 <li>In the &lsquo;Use API&rsquo; panel, enter a URL into the <em>Push URL</em> field. This is the URL that Agilebase will POST to when there’s new data.</li>
-<li>In the table that the API view was created from, add a new date/time field, accurate to the second, for the system to record when the API push was last used</li>
-<li>Go back to the view and the &lsquo;Use API&rsquo; panel and select the field you just created for the &lsquo;Log Time Of Push To&rsquo; field.
-The system will now make a POST to the URL specified in step 2 whenever there’s new data to send. It will contain one parameter, ‘json’, which is a JSON representation of all the data in the view.</li>
+<li>In the dropdown under that, <em>Log time of push to</em>, create a new date field (or choose an existing one). The API will update this field in a record when that record is included in a push to the external system
+The system will now make a POST to the URL specified in step 2 whenever there’s new data to send. It will contain a JSON representation of all the data in the view.</li>
 </ol>
 <p><img src="/workflow-push-new.png" alt="Configuring the PUSH API"></p>
 <p>The data posted will be a JSON array of objects, each object representing a row in the view.</p>
@@ -621,9 +621,15 @@ The system will now make a POST to the URL specified in step 2 whenever there’
 <p>where ‘last pushed’ is the name of the timestamp field you added in step 3 above.</p>
 <p>Then add a filter on the view ‘needs pushing equals true’.</p>
 <h3 id="pushing-any-new-rows-that-have-never-been-pushed-before">Pushing any new rows that have never been pushed before</h3>
-<p>For this scenario, simply add a filter to the view ‘last pushed is empty’.</p>
+<p>The view will actually default to this. It will automatically add a filter on the date field you select in step 3 at the top of this page, so only rows with nothing set for that date will be included.</p>
+<p>If you want to cancel this and always send all rows, or a custom selection, just remove this filter and add any specific filters you like.</p>
 <h3 id="pushing-only-rows-not-yet-marked-as-received">Pushing only rows not yet marked as received</h3>
 <p>In some cases, you may want to be even more prudent than using the internal timestamp. The third party system could make a separate API call to Agilebase for every row that’s received, telling it to update the row with an ID to prove receipt. That’s more API calls of course, but some situations may warrant it.</p>
+<h2 id="openapi-swagger-description">OpenAPI (Swagger) description</h2>
+<p>You can see an OpenAPI description of the API in the <em>Use API</em> panel when editing the view. The &lsquo;View / download OpenAPI definition of this API&rsquo; link will let you access it.</p>
+<p>Alternatively, if you don&rsquo;t have a login for Agilebase, you can call a public URL</p>
+<p><a href="https://cloud.agilebase.co.uk/Agilebase/Public.ab?describe_table=true&amp;c=%5Bmycompanyidentifier%5D&amp;t=%5Bmytableidentifier%5D&amp;r=%5Bmyviewidentifier%5D">https://cloud.agilebase.co.uk/Agilebase/Public.ab?describe_table=true&amp;c=[mycompanyidentifier]&amp;t=[mytableidentifier]&amp;r=[myviewidentifier]</a></p>
+<p>whilst also providing the required Authorization header.</p>
 
 	<style>
   .feedback--answer {
@@ -682,7 +688,7 @@ The system will now make a POST to the URL specified in step 2 whenever there’
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified July 15, 2024: <a href="https://github.com/okohll/abdocs/commit/3e1f50c188a04a5daa78aa700f53f77b9ca3cc79">JSON examples and details for the PUSH API (3e1f50c)</a>
+  Last modified July 30, 2024: <a href="https://github.com/okohll/abdocs/commit/b866978d1d14fe57a87565dd0a1488c646afb219">OpenAPI updates (b866978)</a>
 </div>
 
 </div>
