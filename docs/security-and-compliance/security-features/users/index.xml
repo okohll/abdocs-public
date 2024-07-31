@@ -6,7 +6,7 @@
     <description>Recent content in Users on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 13 Mar 2024 20:25:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jul 2024 09:18:58 +0100</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2FA setup</title>
@@ -21,6 +21,13 @@
       <pubDate>Fri, 05 Nov 2021 12:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/community-users/</guid>
       <description>Agilebase is primarily a platform for building back office systems for employees (or members of the organisation) to use.&#xA;However, it&amp;rsquo;s common to allow access to people outside the organisation to perform limited data entry tasks. For example, you may wish your suppliers to be able to upload certificates of conformances to items they sell you, or you may have a large workforce of contractors who you require to fill in timesheets.</description>
+    </item>
+    <item>
+      <title>Login troubleshooting</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/user_troubleshooting/</link>
+      <pubDate>Wed, 31 Jul 2024 08:52:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/user_troubleshooting/</guid>
+      <description>As a software architect in charge of the Agilebase system for your organisation, you may be called on to help people who have forgotten their password, or are having problems logging in for another reason.&#xA;Here are a few things you can do and check to help them get back in.&#xA;Precursor Firstly, if anyone reports login issues, make absolutely sure that it is really them requesting help. There are unfortunately an increasing number of ways that malicious people try to gain access to systems, so have a process to check.</description>
     </item>
   </channel>
 </rss>

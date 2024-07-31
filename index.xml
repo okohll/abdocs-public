@@ -428,6 +428,13 @@
       <description>This panel shows a list of views that contain data from the table. Any view with data is included, not just those directly created from the table.&#xA;See usage reporting for more info.</description>
     </item>
     <item>
+      <title>Login troubleshooting</title>
+      <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/user_troubleshooting/</link>
+      <pubDate>Wed, 31 Jul 2024 08:52:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/user_troubleshooting/</guid>
+      <description>As a software architect in charge of the Agilebase system for your organisation, you may be called on to help people who have forgotten their password, or are having problems logging in for another reason.&#xA;Here are a few things you can do and check to help them get back in.&#xA;Precursor Firstly, if anyone reports login issues, make absolutely sure that it is really them requesting help. There are unfortunately an increasing number of ways that malicious people try to gain access to systems, so have a process to check.</description>
+    </item>
+    <item>
       <title>Number Field Options</title>
       <link>https://docs.agilebase.co.uk/docs/fields/field-options/number-field-options/</link>
       <pubDate>Tue, 12 May 2020 16:40:00 +0100</pubDate>
