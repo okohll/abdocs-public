@@ -6,7 +6,7 @@
     <description>Recent content in Users on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 31 Jul 2024 09:24:09 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jul 2024 09:25:12 +0100</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2FA setup</title>
@@ -27,7 +27,7 @@
       <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/user_troubleshooting/</link>
       <pubDate>Wed, 31 Jul 2024 08:52:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/user_troubleshooting/</guid>
-      <description>As a software architect in charge of the Agilebase system for your organisation, you may be called on to help people who have forgotten their password, or are having problems logging in for another reason.&#xA;Here are a few things you can do and check to help them get back in.&#xA;Precursor Firstly, if anyone reports login issues, make absolutely sure that it is really them requesting help. There are unfortunately an increasing number of ways that malicious people try to gain access to systems, so have a process to check.</description>
+      <description>As a software architect in charge of the Agilebase system for your organisation, you may be called on to help people who have forgotten their password, or are having problems logging in for another reason.&#xA;Here are a few things you can do and check to help them get back in.&#xA;Precursor Firstly, if anyone reports login issues, make absolutely sure that it is really them requesting help. There are unfortunately an increasing number of ways that malicious people try to gain access to systems*, so have a process to check.</description>
     </item>
   </channel>
 </rss>
