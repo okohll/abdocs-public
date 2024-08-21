@@ -27,14 +27,14 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-05-29T12:35:00+01:00">
-    <meta property="article:modified_time" content="2024-07-30T14:43:47+01:00">
+    <meta property="article:modified_time" content="2024-08-21T09:12:37+01:00">
     <meta property="article:tag" content="Junior Software Architect">
 
   <meta itemprop="name" content="Altering Data">
   <meta itemprop="description" content="Workflows can be used to alter data within the system">
   <meta itemprop="datePublished" content="2020-05-29T12:35:00+01:00">
-  <meta itemprop="dateModified" content="2024-07-30T14:43:47+01:00">
-  <meta itemprop="wordCount" content="285">
+  <meta itemprop="dateModified" content="2024-08-21T09:12:37+01:00">
+  <meta itemprop="wordCount" content="312">
   <meta itemprop="keywords" content="Junior Software Architect">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Altering Data">
@@ -159,7 +159,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.3e059e62e85d005d6dc5211ea71ec050.json"
+    data-offline-search-index-json-src="/offline-search-index.b29111f817b3aa30699f910f04e1023a.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -183,7 +183,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.3e059e62e85d005d6dc5211ea71ec050.json"
+    data-offline-search-index-json-src="/offline-search-index.b29111f817b3aa30699f910f04e1023a.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -525,6 +525,7 @@
         <li><a href="#relation-fields">Relation fields</a></li>
       </ul>
     </li>
+    <li><a href="#options">Options</a></li>
   </ul>
 </nav>
       </div>
@@ -593,13 +594,16 @@
 </div>
 
   </header>
-	<p>The following Workflows alter data within the system</p>
+	<p>The following workflow types alter data within the system</p>
 <ol>
 <li>Create record - This will create a new item in the nominated table</li>
 <li>Update record - This will alter the values of the record.</li>
 <li>Lock record - This will apply a record level lock on the item.</li>
 <li>Delete record - This will totally remove the record.</li>
 </ol>
+<blockquote>
+<p>Deleting records is not reversible. Please use with caution.</p>
+</blockquote>
 <h2 id="specifying-field-values-to-save">Specifying field values to save</h2>
 <p>When creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.</p>
 <p>Fields which will be saved, i.e. those which match a calculation or field in the view will be marked in white at the top of the workflow panel.</p>
@@ -607,9 +611,8 @@
 <p>If you want your workflow to set the value of a relation find, i.e. link to a particular record, there’s no need to create a calculation for it, just include the ID field for the record you want to link to in the view.</p>
 <p>If creating a calculation is easier, you can still do that. Either create a numeric calculation which outputs the internal row ID of the record to link to, or the text of the primary value for the relation. If the latter case, the field for the primary value in the related table should be unique and marked as such in the field options.</p>
 <p>To set a relation field to blank, add a numeric calculation with the name of the field as normal, but set it to output the value -1.</p>
-<blockquote>
-<p>Deleting records is not reversible. Please use with caution.</p>
-</blockquote>
+<h2 id="options">Options</h2>
+<p>When using a workflow to create new records or update existing ones, there are some other options in the workflow editing panel which are relevant:</p>
 
 	<style>
   .feedback--answer {
@@ -668,7 +671,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified July 30, 2024: <a href="https://github.com/okohll/abdocs/commit/b866978d1d14fe57a87565dd0a1488c646afb219">OpenAPI updates (b866978)</a>
+  Last modified August 21, 2024: <a href="https://github.com/okohll/abdocs/commit/fb20c6747aad19cd97702256c767a8661fdfcfbe">Document workflow options (fb20c67)</a>
 </div>
 
 </div>

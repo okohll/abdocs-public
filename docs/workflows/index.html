@@ -30,8 +30,8 @@
   <meta itemprop="name" content="Workflows">
   <meta itemprop="description" content="A powerful set of automation features">
   <meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2024-04-11T11:38:13+01:00">
-  <meta itemprop="wordCount" content="456">
+  <meta itemprop="dateModified" content="2024-08-21T09:12:37+01:00">
+  <meta itemprop="wordCount" content="977">
   <meta itemprop="keywords" content="Junior Software Architect">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Workflows">
@@ -156,7 +156,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.3e059e62e85d005d6dc5211ea71ec050.json"
+    data-offline-search-index-json-src="/offline-search-index.b29111f817b3aa30699f910f04e1023a.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -180,7 +180,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.3e059e62e85d005d6dc5211ea71ec050.json"
+    data-offline-search-index-json-src="/offline-search-index.b29111f817b3aa30699f910f04e1023a.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -518,6 +518,15 @@
         <nav id="TableOfContents">
   <ul>
     <li><a href="#creating-a-workflow">Creating a workflow</a></li>
+    <li><a href="#workflow-options">Workflow options</a>
+      <ul>
+        <li><a href="#run-with-system-privileges">Run with system privileges</a></li>
+        <li><a href="#auto-connect-new-records-to-records-created-in-the-previous-chained-workflow-steps">Auto-connect new records to records created in the previous chained workflow steps</a></li>
+        <li><a href="#make-subsequent-steps-act-on-the-same-record-as-this-one">Make subsequent steps act on the same record as this one</a></li>
+        <li><a href="#recurse">Recurse</a></li>
+        <li><a href="#show-the-record-when-the-workflow-chain-completes">Show the record when the workflow (chain) completes</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </div>
@@ -591,26 +600,43 @@
 <h2 id="creating-a-workflow">Creating a workflow</h2>
 <p>Here are the basics.</p>
 <ol>
-<li>
-<p>A workflow is represented by a view. First create the view to represent the workflow</p>
+<li>A workflow is represented by a view. First create the view to represent the workflow.
+<ul>
+<li>From the development homepage, click the &lsquo;+ Workflow&rsquo; button</li>
+</ul>
 </li>
-<li>
-<p>Any records which become visible in your workflow view will trigger the action selected. So add filters (on a calculation if necessary) to select only the records you wish to trigger the action.</p>
-</li>
-<li>
-<p>If creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.</p>
-</li>
-<li>
-<p>Once the view fields and filters have been created, open up the &lsquo;workflow - edit records&rsquo; panel. Choose the type of workflow, e.g. &lsquo;create new records&rsquo; or &lsquo;update records&rsquo;. Fill in the options for ‘recording the time of the last action’ by selecting a date field in the table the view’s based on. This date will be updated every time the workflow runs. If there’s no relevant date field existing, add one to the table.</p>
-</li>
-<li>
-<p>Choose when the workflow should be run. Use the option <em>manually only</em> if for example you want the workflow to run on a button press. Alternatively, set the frequency you wish the workflow to attempt to run. This determines how often the system should check whether there are records to process. The check is only done if there&rsquo;s been a relevant change to the state of the system e.g. records edited since the last workflow run. However all workflows with a check frequency are guaranteed to run at least once a day.</p>
-</li>
+<li>Open up the &lsquo;workflow - edit records&rsquo; panel. Choose the type of workflow, e.g. &lsquo;create new records&rsquo; or &lsquo;update records&rsquo;. Fill in the options for ‘recording the time of the last action’ by selecting a date field in the table the view’s based on. This date will be updated every time the workflow runs. If there’s no relevant date field existing, you can create one here.</li>
+<li>Any records which become visible in your workflow view will trigger the action selected. So add <a href="/docs/views/filters/">filters</a> (on a calculation if necessary) to select only the records you wish to trigger the action.</li>
+<li>If creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.</li>
+<li>Choose when the workflow should be run. Use the option <em>manually only</em> if for example you want the workflow to run on a button press. Alternatively, set the frequency you wish the workflow to attempt to run. This determines how often the system should check whether there are records to process. The check is only done if there&rsquo;s been a relevant change to the state of the system e.g. records edited since the last workflow run. However all workflows with a check frequency are guaranteed to run at least once a day.</li>
 </ol>
 <blockquote>
 <p>Using <em>24 hours</em> plus a filter on a &lsquo;day of the week&rsquo; calculation allows you to run weekly workflows.</p>
 </blockquote>
 <p>For 24hr workflows you can optionally set a specific time of day for them to run.</p>
+<h2 id="workflow-options">Workflow options</h2>
+<p>Some of these options will be relevant only for certain types of workflow, or in certain cases.</p>
+<h3 id="run-with-system-privileges">Run with system privileges</h3>
+<p>Relevant only for workflows which are run manually by users, through the use of <a href="/docs/workflows/advanced/workflow-buttons/">workflow buttons</a>.</p>
+<p>Workflows which run automatically in the background, on a timed basis, always run with system privileges. In other words they can take any action on any record. However when someone runs a workflow manually by pressing a button, the workflow by default runs with the privileges of the logged in person. So for example if the workflow is set up to edit records in a particular table, but the user doesn&rsquo;t have privileges to edit that table, it will fail.</p>
+<p>This option allows the developer of the workflow to override that, making the workflow able to act on any table and even on locked records.</p>
+<h3 id="auto-connect-new-records-to-records-created-in-the-previous-chained-workflow-steps">Auto-connect new records to records created in the previous chained workflow steps</h3>
+<p>This option works if a previous workflow step creates a new record, and <strong>one record only</strong>.</p>
+<p>If a record is created by <em>this</em> step, and the table contains a relation to the table in the previous step, the relation will be set to link to it.
+For example, if step 1 creates a company record and step 2 creates a contact (containing a relation to a company), the contact will be linked to the company.</p>
+<p>This doesn&rsquo;t work if the first step creates multiple companies.</p>
+<h3 id="make-subsequent-steps-act-on-the-same-record-as-this-one">Make subsequent steps act on the same record as this one</h3>
+<p>Like &lsquo;run with system privileges&rsquo;, this only takes effect if a workflow is run manually, from a button in a record.</p>
+<p>When running a workflow from a button, the workflow is automatically filtered to make it only run on the single record which the button was pressed in. This option makes subsequent steps in the workflow chain also act only on that record (as long as those views are created from the same table, or contain its primary key).</p>
+<h3 id="recurse">Recurse</h3>
+<p>Make the workflow run repeatedly until there are no more rows to process, before finishing or moving on to the next step in the chain.</p>
+<p>This can be useful for making <a href="/docs/workflows/advanced/recursive-workflows/">recursive workflows</a>, or just if there are lots of rows to process in one go (otherwise a max. of 10,000 rows will be processed).</p>
+<p>Note the workflow will not recurse indefinitely, it wil allow 50 iterations at most for one run.</p>
+<h3 id="show-the-record-when-the-workflow-chain-completes">Show the record when the workflow (chain) completes</h3>
+<p>This is only relevant if a workflow is run manually by a logged in user, and also only makes sense if the workflow step acts on one record only.</p>
+<p>If a workflow step creates a record, or otherwise acts on a record, ticking this option will make the user interface redirect to that record following completion of the workflow, or the entire chain if more than one are linked together.</p>
+<p>Only one workflow in a chain can have this option ticked.</p>
+<p>For example, if a user presses a button which creates an invoice record and document, ticking this option will ensure the user sees that invoice once it&rsquo;s created.</p>
 
   <div class="section-index">
     
@@ -716,7 +742,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified April 11, 2024: <a href="https://github.com/okohll/abdocs/commit/0b485859f59f0a14b6a9f62d8af11f9770987505">Add workflow privileges section (0b48585)</a>
+  Last modified August 21, 2024: <a href="https://github.com/okohll/abdocs/commit/fb20c6747aad19cd97702256c767a8661fdfcfbe">Document workflow options (fb20c67)</a>
 </div>
 </div>
 

@@ -523,7 +523,7 @@
       <link>https://docs.agilebase.co.uk/docs/workflows/altering-data/</link>
       <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/workflows/altering-data/</guid>
-      <description>The following Workflows alter data within the system&#xA;Create record - This will create a new item in the nominated table Update record - This will alter the values of the record. Lock record - This will apply a record level lock on the item. Delete record - This will totally remove the record. Specifying field values to save When creating or editing a record, the fields in the view will populate the new or existing record.</description>
+      <description>The following workflow types alter data within the system&#xA;Create record - This will create a new item in the nominated table Update record - This will alter the values of the record. Lock record - This will apply a record level lock on the item. Delete record - This will totally remove the record. Deleting records is not reversible. Please use with caution.&#xA;Specifying field values to save When creating or editing a record, the fields in the view will populate the new or existing record.</description>
     </item>
     <item>
       <title>Referenced Data Panels</title>
