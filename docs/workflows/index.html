@@ -30,8 +30,8 @@
   <meta itemprop="name" content="Workflows">
   <meta itemprop="description" content="A powerful set of automation features">
   <meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2024-08-21T09:12:37+01:00">
-  <meta itemprop="wordCount" content="977">
+  <meta itemprop="dateModified" content="2024-10-17T13:39:53+01:00">
+  <meta itemprop="wordCount" content="1208">
   <meta itemprop="keywords" content="Junior Software Architect">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Workflows">
@@ -156,7 +156,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.11bb5f173c1b46269528aad549de9ab7.json"
+    data-offline-search-index-json-src="/offline-search-index.02a65e28080d36b18667157949aa0563.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -180,7 +180,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.11bb5f173c1b46269528aad549de9ab7.json"
+    data-offline-search-index-json-src="/offline-search-index.02a65e28080d36b18667157949aa0563.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -518,6 +518,7 @@
         <nav id="TableOfContents">
   <ul>
     <li><a href="#creating-a-workflow">Creating a workflow</a></li>
+    <li><a href="#scheduling">Scheduling</a></li>
     <li><a href="#workflow-options">Workflow options</a>
       <ul>
         <li><a href="#run-with-system-privileges">Run with system privileges</a></li>
@@ -610,10 +611,42 @@
 <li>If creating or editing a record, the fields in the view will populate the new or existing record. Any fields in the view with the same name as a field in the table will populate that field with its data. The view field can be a calculation as well as a standard field.</li>
 <li>Choose when the workflow should be run. Use the option <em>manually only</em> if for example you want the workflow to run on a button press. Alternatively, set the frequency you wish the workflow to attempt to run. This determines how often the system should check whether there are records to process. The check is only done if there&rsquo;s been a relevant change to the state of the system e.g. records edited since the last workflow run. However all workflows with a check frequency are guaranteed to run at least once a day.</li>
 </ol>
+<h2 id="scheduling">Scheduling</h2>
+<p>The <em>Frequency</em> option sets when the workflow runs.</p>
+<ul>
+<li>
+<p>Manually Only</p>
+<ul>
+<li>This can be used if you want the workflow to run on a button press by users for example. See <a href="/docs/workflows/advanced/workflow-buttons/">workflow buttons</a></li>
+</ul>
+</li>
+<li>
+<p>Every 24 hours</p>
+<ul>
+<li>
+<p>The workflow is guaranteed to run once a day at the time you specify (accurate to a minute or two, there may be slight tweaks depending on how many other workflows are scheduled to run at the same time).</p>
 <blockquote>
-<p>Using <em>24 hours</em> plus a filter on a &lsquo;day of the week&rsquo; calculation allows you to run weekly workflows.</p>
+<p>Note 1: the workflow may actually run more than once a day in some cases, e.g. if a server reboots for upgrade purposes. Please bear this in mind in the design of your workflows. You may want to add a filter on the field used to record the time of last action, to prevent duplicate runs within e.g. 12 hours.</p>
 </blockquote>
-<p>For 24hr workflows you can optionally set a specific time of day for them to run.</p>
+<blockquote>
+<p>Note 2: the scheduling is done once a day around 8am. So if at 10am, you set a workflow to run in the afternoon, the first run won&rsquo;t be until the next day</p>
+</blockquote>
+<blockquote>
+<p>Note 3: Using <em>24 hours</em> plus a filter on a &lsquo;day of the week&rsquo; calculation allows you to run weekly workflows, similar for monthly etc.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>Other times: every 5 mins, 10 mins, 20 mins etc.</p>
+<ul>
+<li>
+<p>These are scheduled to run whenever someone edits data that could effect the workflow view.</p>
+<p>For example, if a 10-minute workflow view has a filter on it that filters for only records where a &lsquo;status&rsquo; field is &lsquo;completed&rsquo;, then it will be scheduled to run in 10 minutes time whenever someone changes a status. All pending records will be processed at that time.</p>
+</li>
+</ul>
+</li>
+</ul>
 <h2 id="workflow-options">Workflow options</h2>
 <p>Some of these options will be relevant only for certain types of workflow, or in certain cases.</p>
 <h3 id="run-with-system-privileges">Run with system privileges</h3>
@@ -742,7 +775,7 @@ For example, if step 1 creates a company record and step 2 creates a contact (co
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified August 21, 2024: <a href="https://github.com/okohll/abdocs/commit/fb20c6747aad19cd97702256c767a8661fdfcfbe">Document workflow options (fb20c67)</a>
+  Last modified October 17, 2024: <a href="https://github.com/okohll/abdocs/commit/ff41b77dbe7f9cfcc1b88b00fa24bd19f688ef25">Add scheduling details to the workflows page (ff41b77)</a>
 </div>
 </div>
 
