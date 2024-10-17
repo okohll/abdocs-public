@@ -30,7 +30,7 @@
   <meta itemprop="name" content="Workflows">
   <meta itemprop="description" content="A powerful set of automation features">
   <meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2024-10-17T13:39:53+01:00">
+  <meta itemprop="dateModified" content="2024-10-17T13:50:38+01:00">
   <meta itemprop="wordCount" content="1208">
   <meta itemprop="keywords" content="Junior Software Architect">
   <meta name="twitter:card" content="summary">
@@ -156,7 +156,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.02a65e28080d36b18667157949aa0563.json"
+    data-offline-search-index-json-src="/offline-search-index.696778c74e763fc68e6b140938f793d9.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -180,7 +180,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.02a65e28080d36b18667157949aa0563.json"
+    data-offline-search-index-json-src="/offline-search-index.696778c74e763fc68e6b140938f793d9.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -629,7 +629,7 @@
 <p>Note 1: the workflow may actually run more than once a day in some cases, e.g. if a server reboots for upgrade purposes. Please bear this in mind in the design of your workflows. You may want to add a filter on the field used to record the time of last action, to prevent duplicate runs within e.g. 12 hours.</p>
 </blockquote>
 <blockquote>
-<p>Note 2: the scheduling is done once a day around 8am. So if at 10am, you set a workflow to run in the afternoon, the first run won&rsquo;t be until the next day</p>
+<p>Note 2: scheduling is typically done once a day around 8am. So if at 10am, you set a workflow to run in the afternoon, the first run won&rsquo;t be until the next day</p>
 </blockquote>
 <blockquote>
 <p>Note 3: Using <em>24 hours</em> plus a filter on a &lsquo;day of the week&rsquo; calculation allows you to run weekly workflows, similar for monthly etc.</p>
@@ -641,7 +641,7 @@
 <p>Other times: every 5 mins, 10 mins, 20 mins etc.</p>
 <ul>
 <li>
-<p>These are scheduled to run whenever someone edits data that could effect the workflow view.</p>
+<p>These are scheduled to run whenever someone edits data that could affect the workflow view.</p>
 <p>For example, if a 10-minute workflow view has a filter on it that filters for only records where a &lsquo;status&rsquo; field is &lsquo;completed&rsquo;, then it will be scheduled to run in 10 minutes time whenever someone changes a status. All pending records will be processed at that time.</p>
 </li>
 </ul>
@@ -775,7 +775,7 @@ For example, if step 1 creates a company record and step 2 creates a contact (co
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified October 17, 2024: <a href="https://github.com/okohll/abdocs/commit/ff41b77dbe7f9cfcc1b88b00fa24bd19f688ef25">Add scheduling details to the workflows page (ff41b77)</a>
+  Last modified October 17, 2024: <a href="https://github.com/okohll/abdocs/commit/8688532abb1e8395cb64dfcb7bd72ce4c4485431">Add scheduling details to the workflows page (8688532)</a>
 </div>
 </div>
 
