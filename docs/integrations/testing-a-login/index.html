@@ -27,14 +27,14 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2021-01-19T12:41:00+01:00">
-    <meta property="article:modified_time" content="2023-11-27T10:15:18+00:00">
+    <meta property="article:modified_time" content="2024-11-05T15:30:25+00:00">
     <meta property="article:tag" content="Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Authenticating users via the API">
   <meta itemprop="description" content="Logging in as a user">
   <meta itemprop="datePublished" content="2021-01-19T12:41:00+01:00">
-  <meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00">
+  <meta itemprop="dateModified" content="2024-11-05T15:30:25+00:00">
   <meta itemprop="wordCount" content="190">
   <meta itemprop="keywords" content="Software Architect,V6">
   <meta name="twitter:card" content="summary">
@@ -160,7 +160,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.696778c74e763fc68e6b140938f793d9.json"
+    data-offline-search-index-json-src="/offline-search-index.9376b9775bdb8f1d3375efc0d76a3813.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -184,7 +184,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.696778c74e763fc68e6b140938f793d9.json"
+    data-offline-search-index-json-src="/offline-search-index.9376b9775bdb8f1d3375efc0d76a3813.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -601,7 +601,7 @@
 <p>The API mechanisms described in this section (push, pull etc.) don&rsquo;t require a login to use, they work only via the API keys as described, however your app may still wish to test a users login to ensure they are a valid user.</p>
 <p>To do that, the third party app must act exactly as if it were a web browser allowing the user to log in. In other words it must follow this process:</p>
 <ol>
-<li>Visit <a href="https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details">https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details</a></li>
+<li>Visit <a href="https://cloud.agilebase.co.uk/agileBase/AppController.servlet?return=user_details">https://cloud.agilebase.co.uk/agileBase/AppController.servlet?return=user_details</a></li>
 <li>The page will return a login form and a cookie JSESSIONID</li>
 <li>Post the form i.e. submit values j_username and j_password, along with the cookie</li>
 <li>If the username and password are correct, a JSON object will be returned in the response, containing the user&rsquo;s details. If not, an error page will be returned</li>
@@ -671,7 +671,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified November 27, 2023: <a href="https://github.com/okohll/abdocs/commit/80c844c5df1fab3cd59b900dcfdb667c41d9613c">Pivot table example (80c844c)</a>
+  Last modified November 5, 2024: <a href="https://github.com/okohll/abdocs/commit/a74fc63ffb40575602948d49bf4a85d5042ff163">New URL (a74fc63)</a>
 </div>
 
 </div>

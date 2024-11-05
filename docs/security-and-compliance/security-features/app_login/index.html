@@ -27,14 +27,14 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2021-06-20T09:20:00+01:00">
-    <meta property="article:modified_time" content="2023-11-27T10:15:18+00:00">
+    <meta property="article:modified_time" content="2024-11-05T15:30:25+00:00">
     <meta property="article:tag" content="Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Logging in from an app">
   <meta itemprop="description" content="Validating logins from a third party app">
   <meta itemprop="datePublished" content="2021-06-20T09:20:00+01:00">
-  <meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00">
+  <meta itemprop="dateModified" content="2024-11-05T15:30:25+00:00">
   <meta itemprop="wordCount" content="607">
   <meta itemprop="keywords" content="Software Architect,V6">
   <meta name="twitter:card" content="summary">
@@ -160,7 +160,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.696778c74e763fc68e6b140938f793d9.json"
+    data-offline-search-index-json-src="/offline-search-index.9376b9775bdb8f1d3375efc0d76a3813.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -184,7 +184,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.696778c74e763fc68e6b140938f793d9.json"
+    data-offline-search-index-json-src="/offline-search-index.9376b9775bdb8f1d3375efc0d76a3813.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -602,7 +602,7 @@
 <h2 id="general-principle">General Principle</h2>
 <p>The application must reproduce the same login process as a human would, using a HTTP client. Importantly, the HTTP client must support cookies, as the login process depends on them, in particular setting a <code>JSESSIONID</code> cookie.</p>
 <ol>
-<li>Make a request to load the page <a href="https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details">https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details</a>. This will return the login page and set the cookie value.</li>
+<li>Make a request to load the page <a href="https://cloud.agilebase.co.uk/agileBase/AppController.servlet?return=user_details">https://cloud.agilebase.co.uk/agileBase/AppController.servlet?return=user_details</a>. This will return the login page and set the cookie value.</li>
 <li>Submit the login form using the user&rsquo;s username and password. If using a programattic process i.e. making the calls from code rather than using a web view, this means making a form POST to <code>/Agilebase/j_security_check</code> with the parameters <code>j_username</code> and <code>j_password</code></li>
 <li>Detect whether the login&rsquo;s successful. If not, the standard Agilebase login failure page will be returned</li>
 <li>If successful, a HTML page will be returned containing three hidden input fields, <code>username</code>, <code>forename</code>, <code>surname</code> containing relevant details for the logged in user. If being called from a React Native Web View, the page will also post back messages to React using this JavaScript:</li>
@@ -678,7 +678,7 @@ const LoginScreen = (props) =&gt; {
             &lt;StatusBar backgroundColor={Colors.black} barStyle={&#39;dark-content&#39;}/&gt;
             {(netInfo?.isInternetReachable &amp;&amp; !user_data?.surname) ?
                 &lt;WebView
-                    source={{uri: &#39;https://appserver.gtportalbase.com/Agilebase/AppController.servlet?return=user_details&#39;}}
+                    source={{uri: &#39;https://cloud.agilebase.co.uk/agileBase/AppController.servlet?return=user_details&#39;}}
                     onMessage={onResponseFromWebView}
                     textZoom={100}
                     sharedCookiesEnabled={true}
@@ -750,7 +750,7 @@ export default LoginScreen;
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified November 27, 2023: <a href="https://github.com/okohll/abdocs/commit/80c844c5df1fab3cd59b900dcfdb667c41d9613c">Pivot table example (80c844c)</a>
+  Last modified November 5, 2024: <a href="https://github.com/okohll/abdocs/commit/a74fc63ffb40575602948d49bf4a85d5042ff163">New URL (a74fc63)</a>
 </div>
 
 </div>
