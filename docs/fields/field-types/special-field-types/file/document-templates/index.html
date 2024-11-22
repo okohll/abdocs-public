@@ -27,15 +27,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-05-08T16:40:00+01:00">
-    <meta property="article:modified_time" content="2024-05-20T16:40:37+01:00">
+    <meta property="article:modified_time" content="2024-11-22T16:42:47+00:00">
     <meta property="article:tag" content="Junior Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Document templates">
   <meta itemprop="description" content="Templates allow the automatic generation of PDF documents, or printouts">
   <meta itemprop="datePublished" content="2020-05-08T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2024-05-20T16:40:37+01:00">
-  <meta itemprop="wordCount" content="1211">
+  <meta itemprop="dateModified" content="2024-11-22T16:42:47+00:00">
+  <meta itemprop="wordCount" content="1224">
   <meta itemprop="keywords" content="Junior Software Architect,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Document templates">
@@ -160,7 +160,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.1992efa8b1b593e5d54ba891ec8de352.json"
+    data-offline-search-index-json-src="/offline-search-index.9b8d0de2564ea2e4f775a40dcd918727.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -184,7 +184,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.1992efa8b1b593e5d54ba891ec8de352.json"
+    data-offline-search-index-json-src="/offline-search-index.9b8d0de2564ea2e4f775a40dcd918727.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -528,7 +528,7 @@
     </li>
     <li><a href="#including-data">Including data</a>
       <ul>
-        <li><a href="#using-templates">Using templates</a></li>
+        <li><a href="#embedding-images">Embedding images</a></li>
       </ul>
     </li>
     <li><a href="#advanced-templating">Advanced templating</a>
@@ -615,7 +615,7 @@
 
   </header>
 	<p>Document templates in Agilebase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.</p>
-<p>The same templating system is used for both generating documents (which can be done automatically with a <a href="/docs/workflows/send-document-generator/">workflow</a> or manually) and displaying output to be printed.</p>
+<p>The same templating system is used for both generating documents (which can be done automatically with a <a href="/docs/workflows/send-document-generator/">workflow</a> or <a href="/docs/fields/field-options/file-field-options/#template">manually</a>) and displaying output to be printed.</p>
 <p>Each template is attached to a view and given a name.</p>
 <h2 id="creating-a-template">Creating a template</h2>
 <p>Templates can be created using the built-in WYSIWYG editor, which allows simple presentation controls, like adding tables, headings and text formatting.</p>
@@ -647,10 +647,11 @@ b) the value of the first field in the view above</p>
 </ul>
 <p>Here&rsquo;s an example of a template being updated in the WYSYWIG editor:</p>
 <p><img src="/template-editor.png" alt="Template editing"></p>
-<h3 id="using-templates">Using templates</h3>
-<p>Templates can be used when generating documents, <a href="/docs/fields/field-options/file-field-options/#template">manually</a> or using an <a href="/docs/workflows/send-document-generator/">automated workflow</a>.</p>
-<p>They can also be used as printout templates to let users print data from the system formatted as you wish.</p>
-<h2 id="advanced-templating">Advanced templating</h2>
+<h3 id="embedding-images">Embedding images</h3>
+<p>If you have an image file in your view, you can reference it by adding _path to the variable name.</p>
+<p>For example, if you have a file with field name &ldquo;Company Logo&rdquo;, you could embed the image in a template with the code</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;$company_logo_path&#34;</span> /&gt;
+</span></span></code></pre></div><h2 id="advanced-templating">Advanced templating</h2>
 <h3 id="convenience-features">Convenience features</h3>
 <p>As well as data, various convenience features are available for insertion into a template.</p>
 <p>Here are some of the most commonly used utility functions.</p>
@@ -850,7 +851,7 @@ b) the value of the first field in the view above</p>
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified May 20, 2024: <a href="https://github.com/okohll/abdocs/commit/91127c99ffb4c9bc28d891e8a3553cb4025749ef">Outputting charts (91127c9)</a>
+  Last modified November 22, 2024: <a href="https://github.com/okohll/abdocs/commit/a565845ea3e8f15c46e8f55e670330017f63904c">Using images in templates (a565845)</a>
 </div>
 
 </div>
