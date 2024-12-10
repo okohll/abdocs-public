@@ -27,14 +27,14 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-06-04T16:40:00+01:00">
-    <meta property="article:modified_time" content="2024-04-16T11:49:53+01:00">
+    <meta property="article:modified_time" content="2024-12-10T10:45:28+00:00">
     <meta property="article:tag" content="Junior Software Architect">
 
   <meta itemprop="name" content="File Field Options">
   <meta itemprop="description" content="Options specific to file fields, including for generating documents">
   <meta itemprop="datePublished" content="2020-06-04T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2024-04-16T11:49:53+01:00">
-  <meta itemprop="wordCount" content="389">
+  <meta itemprop="dateModified" content="2024-12-10T10:45:28+00:00">
+  <meta itemprop="wordCount" content="400">
   <meta itemprop="keywords" content="Junior Software Architect">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="File Field Options">
@@ -159,7 +159,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.9b8d0de2564ea2e4f775a40dcd918727.json"
+    data-offline-search-index-json-src="/offline-search-index.1ab4ec37cffce6f3f9b55b6c0f3db71e.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -183,7 +183,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.9b8d0de2564ea2e4f775a40dcd918727.json"
+    data-offline-search-index-json-src="/offline-search-index.1ab4ec37cffce6f3f9b55b6c0f3db71e.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -526,7 +526,7 @@
     <li><a href="#view-to-use">View to use</a></li>
     <li><a href="#paper-size">Paper size</a></li>
     <li><a href="#zoom-">Zoom %</a></li>
-    <li><a href="#footer">Footer</a></li>
+    <li><a href="#footer-style">Footer style</a></li>
   </ul>
 </nav>
       </div>
@@ -615,9 +615,10 @@
 <p>When a PDF is generated, base it on this size of paper. The default is A4, changing this can be useful if e.g. you want to use the system to print labels.</p>
 <h2 id="zoom-">Zoom %</h2>
 <p>Setting this to smaller than 100 will make text and other content appear smaller on the page, similarly larger bigger</p>
-<h2 id="footer">Footer</h2>
+<h2 id="footer-style">Footer style</h2>
 <p>Optionally, add a footer to every page of a generated document, including e.g. the name of the document, page number and total number of pages.</p>
-<p>If you like, you can define a completely custom footer in HTML. Add a <code>&lt;div&gt;</code> element to your HTML template with the id &lsquo;ab_pdf_footer&rsquo;.
+<p>Set to either <code>footer</code> or <code>no footer</code>.</p>
+<p>With footer set, you can define a completely custom footer in HTML if you like. Add a <code>&lt;div&gt;</code> element to your HTML template with the id &lsquo;ab_pdf_footer&rsquo;.
 The footer element may use only inline CSS styles, classes will be ignored. However, so the footer element <em>only</em> appears in the footer, we suggest adding a class to it to hide it in the main document, for example</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>#ab_pdf_footer {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">none</span>;
@@ -684,7 +685,7 @@ The footer element may use only inline CSS styles, classes will be ignored. Howe
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified April 16, 2024: <a href="https://github.com/okohll/abdocs/commit/75f2aed080cfe27da71cf987e269ee8d10e11fe4">Footer CSS code correction (75f2aed)</a>
+  Last modified December 10, 2024: <a href="https://github.com/okohll/abdocs/commit/90b10aa5ae7783d16c7f2db56803d271a573886d">Use social login and match on the email address (90b10aa)</a>
 </div>
 
 </div>
