@@ -27,15 +27,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-05-29T12:35:00+01:00">
-    <meta property="article:modified_time" content="2025-01-21T22:17:40+00:00">
+    <meta property="article:modified_time" content="2025-01-27T23:05:35+00:00">
     <meta property="article:tag" content="Junior Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Creating a PULL API">
   <meta itemprop="description" content="Control how third party systems read data from Agilebase">
   <meta itemprop="datePublished" content="2020-05-29T12:35:00+01:00">
-  <meta itemprop="dateModified" content="2025-01-21T22:17:40+00:00">
-  <meta itemprop="wordCount" content="1290">
+  <meta itemprop="dateModified" content="2025-01-27T23:05:35+00:00">
+  <meta itemprop="wordCount" content="1292">
   <meta itemprop="keywords" content="Junior Software Architect,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Creating a PULL API">
@@ -160,7 +160,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.af75b1df6dc66a67f0fc529aad4a57d5.json"
+    data-offline-search-index-json-src="/offline-search-index.1889943b9f02acfea02e455dc2511e0e.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -184,7 +184,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.af75b1df6dc66a67f0fc529aad4a57d5.json"
+    data-offline-search-index-json-src="/offline-search-index.1889943b9f02acfea02e455dc2511e0e.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -696,7 +696,7 @@ Optional, if this is included, the return content will be JSON including the ID 
 <p>To filter on a particular field, add a HTTP parameter for it, with the value the filter you want.</p>
 <p>For parameter names, just use the internal Agilebase field identifiers. These can be seen in the API panel when editing a view, or the field properties when editing an individual field.</p>
 <p>Alternatively you can use the &lsquo;simple&rsquo; version of the field name, which is the name in lowercase with all &lsquo;special&rsquo; characters removed and spaces replaced by underscores. This might be easier to look at, however has the disadvantage that user-facing names may change over time whereas internal field IDs will remain constant.</p>
-<p>By specifying exact_filters=true, an exact match rather than a &lsquo;contains&rsquo; match will be used for text field filters supplied. Using this, your filter can also contain symbols such as &lsquo;&gt;&rsquo; or words like &rsquo; OR &rsquo; which would otherwise change the behaviour of the filter.</p>
+<p>By specifying exact_filters=true, an exact match rather than a &lsquo;contains&rsquo; match will be used for text field filters supplied. Using this, your filter can also contain symbols such as &lsquo;&gt;&rsquo; or words like &rsquo; OR &rsquo; which would otherwise change the behaviour of the filter as below.</p>
 <p>Standard Agilebase quick filters can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, &gt; and &lt; for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.</p>
 <h3 id="response-codes">Response codes</h3>
 <ul>
@@ -787,7 +787,7 @@ If at any time, a request has been held up for 60 seconds, further requests resu
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified January 21, 2025: <a href="https://github.com/okohll/abdocs/commit/21d4cf1dd7a80717b84abe5aed7b99f7dfe26e54">Simple field names in API filters (21d4cf1)</a>
+  Last modified January 27, 2025: <a href="https://github.com/okohll/abdocs/commit/1e6aa17675e8c03badce5616841b8fc81dc7beed">Importing special characters (1e6aa17)</a>
 </div>
 
 </div>

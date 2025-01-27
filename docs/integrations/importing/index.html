@@ -27,15 +27,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-06-03T16:40:00+01:00">
-    <meta property="article:modified_time" content="2024-05-20T16:40:37+01:00">
+    <meta property="article:modified_time" content="2025-01-27T23:05:35+00:00">
     <meta property="article:tag" content="Citizen Developer Level 3">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Importing from spreadsheet">
   <meta itemprop="description" content="Adding to or updating existing data in a table using a spreadsheet import">
   <meta itemprop="datePublished" content="2020-06-03T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2024-05-20T16:40:37+01:00">
-  <meta itemprop="wordCount" content="713">
+  <meta itemprop="dateModified" content="2025-01-27T23:05:35+00:00">
+  <meta itemprop="wordCount" content="772">
   <meta itemprop="keywords" content="Citizen Developer Level 3,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Importing from spreadsheet">
@@ -160,7 +160,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.af75b1df6dc66a67f0fc529aad4a57d5.json"
+    data-offline-search-index-json-src="/offline-search-index.1889943b9f02acfea02e455dc2511e0e.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -184,7 +184,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.af75b1df6dc66a67f0fc529aad4a57d5.json"
+    data-offline-search-index-json-src="/offline-search-index.1889943b9f02acfea02e455dc2511e0e.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -528,6 +528,7 @@
     </li>
     <li><a href="#updating-existing-records">Updating existing records</a></li>
     <li><a href="#notes-on-special-fields">Notes on special fields</a></li>
+    <li><a href="#importing-special-characters">Importing special characters</a></li>
   </ul>
 </nav>
       </div>
@@ -634,6 +635,9 @@
 <p>For a file field, please leave an empty column in the spreadsheet in that position. If you wish to do a bulk upload of many images or documents, please contact <a href="https://agilechilli.com/contact-us/">support</a>.</p>
 <p>Columns for <a href="/docs/fields/field-types/special-field-types/separators/">separator</a> and <a href="/docs/fields/field-types/special-field-types/referenced-data/">referenced data</a> fields should not be included in the import spreadsheet as these field types don&rsquo;t store data.</p>
 <p>Data can be imported into <a href="/docs/fields/field-types/special-field-types/comment-feeds/">comment fields</a> as per any other field.</p>
+<h2 id="importing-special-characters">Importing special characters</h2>
+<p>CSV files should be saved with the <strong>UTF-8</strong> character encoding. There may be an option to select the encoding when exporting to CSV.</p>
+<p>This is important if any of the text includes accented characters i.e. diacritics, e.g. é, â etc., or indeed any other special characters, otherwise you may find they don&rsquo;t appear correctly after import.</p>
 
 	<style>
   .feedback--answer {
@@ -692,7 +696,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified May 20, 2024: <a href="https://github.com/okohll/abdocs/commit/91127c99ffb4c9bc28d891e8a3553cb4025749ef">Outputting charts (91127c9)</a>
+  Last modified January 27, 2025: <a href="https://github.com/okohll/abdocs/commit/1e6aa17675e8c03badce5616841b8fc81dc7beed">Importing special characters (1e6aa17)</a>
 </div>
 
 </div>
