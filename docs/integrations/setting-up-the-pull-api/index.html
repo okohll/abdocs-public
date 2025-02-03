@@ -27,14 +27,14 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-05-29T12:35:00+01:00">
-    <meta property="article:modified_time" content="2025-02-03T12:27:10+00:00">
+    <meta property="article:modified_time" content="2025-02-03T13:29:18+00:00">
     <meta property="article:tag" content="Junior Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Creating a PULL API">
   <meta itemprop="description" content="Control how third party systems read data from Agilebase">
   <meta itemprop="datePublished" content="2020-05-29T12:35:00+01:00">
-  <meta itemprop="dateModified" content="2025-02-03T12:27:10+00:00">
+  <meta itemprop="dateModified" content="2025-02-03T13:29:18+00:00">
   <meta itemprop="wordCount" content="1275">
   <meta itemprop="keywords" content="Junior Software Architect,V6">
   <meta name="twitter:card" content="summary">
@@ -160,7 +160,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.a7cebbeb99aa846c3183d28cd9aee27c.json"
+    data-offline-search-index-json-src="/offline-search-index.4f64d1752a1a10c68bd728f86d376eab.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -184,7 +184,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.a7cebbeb99aa846c3183d28cd9aee27c.json"
+    data-offline-search-index-json-src="/offline-search-index.4f64d1752a1a10c68bd728f86d376eab.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -674,8 +674,8 @@
 </span></span></code></pre></div><h3 id="request-options">Request options</h3>
 <p>Here are the options that can be provided as parameters to the request</p>
 <h4 id="simple_formattruefalse-default-false">simple_format=true/false (default false)</h4>
-<p>This option controls the JSON format returned. With simple_format=true, the response will be a simple array of objects, each containing keys for the field names as above. Keys are basically lowercase field names with spaces replaced by underscores, so “Email address” would become “email_address”
-With simple_format=false, a more complex but more robust format it used. Rather than field names, internal Agilebase field identifiers are used as keys. This has the advantage that if the field names are changed (easy for an Agilebase administrator to do), the JSON will remain the same. The first object in the JSON will be a dictionary mapping internal identifier to field name.</p>
+<p>This option controls the JSON format returned. With simple_format=true, the response will be a simple array of objects, each containing keys for the field names as above. Keys are basically lowercase field names with spaces replaced by underscores, so “Email address” would become “email_address”.</p>
+<p>With simple_format=false, a more complex but more robust format it used. Rather than field names, internal Agilebase field identifiers are used as keys. This has the advantage that if the field names are changed (easy for an Agilebase administrator to do), the JSON will remain the same. The first object in the JSON will be a dictionary mapping internal identifier to field name.</p>
 <blockquote>
 <p>We recommend that simple_format=false is specified in most cases, as it ensures APIs will remain reliable over the long term.</p>
 </blockquote>
@@ -780,7 +780,7 @@ If at any time, a request has been held up for 60 seconds, further requests resu
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified February 3, 2025: <a href="https://github.com/okohll/abdocs/commit/8b12d056520649b754a64f67705634df97015a3c">New style pull API (8b12d05)</a>
+  Last modified February 3, 2025: <a href="https://github.com/okohll/abdocs/commit/ccf8ec130daefc5fb4110c7de5c4163bba4e3d19">New style pull API (ccf8ec1)</a>
 </div>
 
 </div>
