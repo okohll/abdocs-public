@@ -30,8 +30,8 @@
   <meta itemprop="name" content="Calculations">
   <meta itemprop="description" content="Adding calculations to a view">
   <meta itemprop="datePublished" content="2020-05-13T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2024-08-22T10:13:08+01:00">
-  <meta itemprop="wordCount" content="1359">
+  <meta itemprop="dateModified" content="2025-02-18T19:10:41+00:00">
+  <meta itemprop="wordCount" content="1383">
   <meta itemprop="keywords" content="Citizen Developer Level 3,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Calculations">
@@ -156,7 +156,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.4f64d1752a1a10c68bd728f86d376eab.json"
+    data-offline-search-index-json-src="/offline-search-index.dd5ace5df03eb3f977af5d2cbd3e8558.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -180,7 +180,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.4f64d1752a1a10c68bd728f86d376eab.json"
+    data-offline-search-index-json-src="/offline-search-index.dd5ace5df03eb3f977af5d2cbd3e8558.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -458,6 +458,8 @@
   <a href="/docs/workflows/send-chaser/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowssend-chaser"><span class="">Send a Chaser email</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowssend-document-generator-li">
   <a href="/docs/workflows/send-document-generator/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowssend-document-generator"><span class="">Send to Document Generator</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsworkflowsai-workflows-li">
+  <a href="/docs/workflows/ai-workflows/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsworkflowsai-workflows"><span class="">AI workflows</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsworkflowsadvanced-li">
   <a href="/docs/workflows/advanced/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsworkflowsadvanced"><span class="">Advanced information on Workflows</span></a>
   <ul class="ul-3 foldable">
@@ -528,6 +530,7 @@
         <li><a href="#centralise-calculations">Centralise calculations</a></li>
         <li><a href="#avoid-mixing-aggregates-and-non-aggregates">Avoid mixing aggregates and non-aggregates</a></li>
         <li><a href="#splitting-complex-calculations-into-parts">Splitting complex calculations into parts</a></li>
+        <li><a href="#comments">Comments</a></li>
         <li><a href="#troubleshooting-errors">Troubleshooting errors</a></li>
       </ul>
     </li>
@@ -552,7 +555,7 @@
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/cross-references/" data-taxonomy-term="cross-references"><span class="taxonomy-label">Cross References</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/dropdown/" data-taxonomy-term="dropdown"><span class="taxonomy-label">DropDown</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/email/" data-taxonomy-term="email"><span class="taxonomy-label">Email</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/junior-software-architect/" data-taxonomy-term="junior-software-architect"><span class="taxonomy-label">Junior Software Architect</span><span class="taxonomy-count">34</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/junior-software-architect/" data-taxonomy-term="junior-software-architect"><span class="taxonomy-label">Junior Software Architect</span><span class="taxonomy-count">35</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/junior-system-architect/" data-taxonomy-term="junior-system-architect"><span class="taxonomy-label">Junior System Architect</span><span class="taxonomy-count">4</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/kanban/" data-taxonomy-term="kanban"><span class="taxonomy-label">Kanban</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/learner-progression/" data-taxonomy-term="learner-progression"><span class="taxonomy-label">Learner Progression</span><span class="taxonomy-count">1</span></a></li>
@@ -686,6 +689,9 @@ Please check that you are happy with their <a href="/docs/artificial-intelligenc
 <blockquote>
 <p>Just be aware that if you update one of the composite parts, you then need to update any calculations that depend on it. The system won&rsquo;t automatically update them to reference the new version. This is due to the way the database works under the hood - it doesn&rsquo;t natively support referencing one calculation from another, so we add that layer in Agilebase functionality.</p>
 </blockquote>
+<h3 id="comments">Comments</h3>
+<p>You may find it helpful to add comments to complex calculations to explain to others (or your later self) how it works:</p>
+<p><a href="https://www.postgresql.org/docs/17/sql-syntax-lexical.html#SQL-SYNTAX-COMMENTS">https://www.postgresql.org/docs/17/sql-syntax-lexical.html#SQL-SYNTAX-COMMENTS</a></p>
 <h3 id="troubleshooting-errors">Troubleshooting errors</h3>
 <p>If there is an error in a view, it&rsquo;s more than likely the culprit is a calculation, as they are one of the more complex facilities of Agilebase and the only one where SQL can be entered by the user, as opposed to be automatically generated. You may see messages like <strong>view broken</strong> or errors when you try to change a view e.g. move a field.</p>
 <p>Errors can occur due to data changing. Division by zero errors are automatically handled by Agilebase (null is returned), but other types of calculation can also cause errors in certain circumstances. For example if a calculation squares a field, if someone enters a really large number into that field in a particular record, then an overflow error may occur.</p>
@@ -760,7 +766,7 @@ Please check that you are happy with their <a href="/docs/artificial-intelligenc
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified August 22, 2024: <a href="https://github.com/okohll/abdocs/commit/4c1583da5d699f0d8049dccd7aeacc1e6e7e76fd">For those of you who may have used SQL before, remember you don&#39;t need to start the calculation with , you&#39;re not writing a whole statement, just a snippet of SQL to form a calculation (4c1583d)</a>
+  Last modified February 18, 2025: <a href="https://github.com/okohll/abdocs/commit/df4daea7159af5bfca8880f09184045fa20a4c4a">AI workflows (df4daea)</a>
 </div>
 </div>
 

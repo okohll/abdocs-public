@@ -6,7 +6,7 @@
     <description>Recent content in Junior Software Architect on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Feb 2025 13:29:18 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Feb 2025 19:10:41 +0000</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/tags/junior-software-architect/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Guide 1 - Build a CRM</title>
@@ -210,6 +210,13 @@
       <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/exporting-to-spreadsheet/</guid>
       <description>A spreadsheet export is the simplest way for everyday users to get data out of Agilebase without requiring that an administrator sets up an integration.&#xA;Details of how to allow this are in the security and compliance section.</description>
+    </item>
+    <item>
+      <title>AI workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/ai-workflows/</link>
+      <pubDate>Sun, 16 Feb 2025 12:35:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/workflows/ai-workflows/</guid>
+      <description>Standard workflows are automations that create, update or delete records.&#xA;AI workflows are exactly the same in that regard: a view is created which select the records to act on by filtering.&#xA;The only difference is that a standard workflow to update or create records will use SQL calculations to define the contents of the field values to be saved. For example, if a workflow creates an invoice record, it might define a calculation to save to a VAT amount field as</description>
     </item>
     <item>
       <title>Advanced information on Workflows</title>

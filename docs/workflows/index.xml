@@ -6,7 +6,7 @@
     <description>Recent content in Workflows on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 21 Aug 2024 09:12:37 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 18 Feb 2025 19:10:41 +0000</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/docs/workflows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Types of Workflow Actions</title>
@@ -49,6 +49,13 @@
       <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/workflows/send-document-generator/</guid>
       <description>Automated bulk document generation Automatically generating PDF documents based on criteria you specify is a powerful feature. For example, if your system tracks exam marks, you may wish to automatically generate a certificate whenever someone passes. Another more common example might be generating invoices for all the work carried out each month.&#xA;Setting up The concept works much like email notifications or syncing events to Google calendar. A view must be set up that contains the records that you want to generate documents for.</description>
+    </item>
+    <item>
+      <title>AI workflows</title>
+      <link>https://docs.agilebase.co.uk/docs/workflows/ai-workflows/</link>
+      <pubDate>Sun, 16 Feb 2025 12:35:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/workflows/ai-workflows/</guid>
+      <description>Standard workflows are automations that create, update or delete records.&#xA;AI workflows are exactly the same in that regard: a view is created which select the records to act on by filtering.&#xA;The only difference is that a standard workflow to update or create records will use SQL calculations to define the contents of the field values to be saved. For example, if a workflow creates an invoice record, it might define a calculation to save to a VAT amount field as</description>
     </item>
   </channel>
 </rss>
