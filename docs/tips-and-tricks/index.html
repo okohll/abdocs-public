@@ -30,8 +30,8 @@
   <meta itemprop="name" content="Tips and Tricks">
   <meta itemprop="description" content="Some interesting solutions for common problems encountered when building apps with Agilebase">
   <meta itemprop="datePublished" content="2024-04-02T09:30:00+01:00">
-  <meta itemprop="dateModified" content="2024-04-02T17:44:02+01:00">
-  <meta itemprop="wordCount" content="534">
+  <meta itemprop="dateModified" content="2025-05-27T19:53:19+01:00">
+  <meta itemprop="wordCount" content="519">
   <meta itemprop="keywords" content="Software Architect,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Tips and Tricks">
@@ -156,7 +156,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.3823ee3f44127a6d504ba98ab3081e22.json"
+    data-offline-search-index-json-src="/offline-search-index.72f5075dac91fd843cf731acd16cab66.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -180,7 +180,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.3823ee3f44127a6d504ba98ab3081e22.json"
+    data-offline-search-index-json-src="/offline-search-index.72f5075dac91fd843cf731acd16cab66.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -598,11 +598,12 @@
 <p>Numeric fields can be marked as “Use Duration” which will nicely display the field as a time - really useful for event start times etc.
 However, sometimes you need to do the formatting yourself and it can be fiddly.
 Use the following code to help…</p>
-<pre tabindex="0"><code>    to_char( trunc ( {start time} ), ‘00’ )
-    || ‘:’ ||
-    trim(
-    to_char( ( {start time} - trunc ( {start time} ) ) * 60, ‘00’)
-    )
+<pre tabindex="0"><code>    to_char(
+    (
+      to_timestamp(1.5 * 3600.0) AT TIME ZONE &#39;UTC&#39;
+    ),
+    &#39;HH24:MI&#39;
+  )
 </code></pre><p>Using that, the number 0.5 would be transformed to &lsquo;00:30&rsquo; (half an hour) for example.</p>
 <h2 id="adding-a-carriage-return-to-a-calculated-string---n">Adding a carriage return to a calculated string - ‘\n’</h2>
 <p>A new line can be inserted by using the correct escape character so…</p>
@@ -710,7 +711,7 @@ You should now see the number 0 next to any company which has no opportunities</
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified April 2, 2024: <a href="https://github.com/okohll/abdocs/commit/f8136ccc6ed72cf10858611b9affae40e4cce6e3">Tips &amp; tricks tweak (f8136cc)</a>
+  Last modified May 27, 2025: <a href="https://github.com/okohll/abdocs/commit/64db6d9f1b75fd95bf3ea2a0d9ee12795137eea9">Better duration calc. from Rich (64db6d9)</a>
 </div>
 </div>
 

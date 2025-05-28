@@ -27,15 +27,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-05-29T12:35:00+01:00">
-    <meta property="article:modified_time" content="2025-02-03T13:29:18+00:00">
+    <meta property="article:modified_time" content="2025-05-28T10:40:19+01:00">
     <meta property="article:tag" content="Junior Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Creating a PULL API">
   <meta itemprop="description" content="Control how third party systems read data from Agilebase">
   <meta itemprop="datePublished" content="2020-05-29T12:35:00+01:00">
-  <meta itemprop="dateModified" content="2025-02-03T13:29:18+00:00">
-  <meta itemprop="wordCount" content="1275">
+  <meta itemprop="dateModified" content="2025-05-28T10:40:19+01:00">
+  <meta itemprop="wordCount" content="1299">
   <meta itemprop="keywords" content="Junior Software Architect,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Creating a PULL API">
@@ -160,7 +160,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.3823ee3f44127a6d504ba98ab3081e22.json"
+    data-offline-search-index-json-src="/offline-search-index.72f5075dac91fd843cf731acd16cab66.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -184,7 +184,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.3823ee3f44127a6d504ba98ab3081e22.json"
+    data-offline-search-index-json-src="/offline-search-index.72f5075dac91fd843cf731acd16cab66.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -696,6 +696,7 @@
 <h3 id="response-codes">Response codes</h3>
 <ul>
 <li>200: request successful</li>
+<li>400: this can occur if a required parameter for the request isn&rsquo;t present, or if parameter values aren&rsquo;t URL encoded in a GET request</li>
 <li>401: unauthorised: the API key is missing or incorrect</li>
 <li>404: not found: an object identifier (company ID, table ID or report ID) was supplied that wasn’t found in the system</li>
 <li>429: too many requests: the frequency of requests is too high, please throttle them back</li>
@@ -782,7 +783,7 @@ If at any time, a request has been held up for 60 seconds, further requests resu
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified February 3, 2025: <a href="https://github.com/okohll/abdocs/commit/ccf8ec130daefc5fb4110c7de5c4163bba4e3d19">New style pull API (ccf8ec1)</a>
+  Last modified May 28, 2025: <a href="https://github.com/okohll/abdocs/commit/57096063161e52205acfc12720329eb0ecb4b7d2">Document 400 error (5709606)</a>
 </div>
 
 </div>
