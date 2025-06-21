@@ -680,18 +680,18 @@
       <description>Sometimes when developing an app that integrates with Agilebase, you may want to allow it to query the system to check the login details a user provides. In other words, let a user &amp;rsquo;log in&amp;rsquo; via your app.&#xA;The API mechanisms described in this section (push, pull etc.) don&amp;rsquo;t require a login to use, they work only via the API keys as described, however your app may still wish to test a users login to ensure they are a valid user.</description>
     </item>
     <item>
+      <title>Email Integration</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/email-integration/</link>
+      <pubDate>Fri, 20 Jun 2025 17:54:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/integrations/email-integration/</guid>
+      <description>Agilebase can accept incoming emails and attach them to relevant records e.g. attaching an email from a customer to that customer&amp;rsquo;s record.&#xA;This works by creating an email address for the system. Any emails forwarded to that address, or cc&amp;rsquo;d or bcc&amp;rsquo;d to it will be saved in the database. Agilebase will check the people involved in the email (to:, from: and cc: addresses) and find the right record to attach it to.</description>
+    </item>
+    <item>
       <title>AI workflows</title>
       <link>https://docs.agilebase.co.uk/docs/workflows/ai-workflows/</link>
       <pubDate>Sun, 16 Feb 2025 12:35:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/workflows/ai-workflows/</guid>
       <description>Standard workflows are automations that create, update or delete records.&#xA;AI workflows are exactly the same in that regard: a view is created which select the records to act on by filtering.&#xA;The only difference is that a standard workflow to update or create records will use SQL calculations to define the contents of the field values to be saved. For example, if a workflow creates an invoice record, it might define a calculation to save to a VAT amount field as</description>
-    </item>
-    <item>
-      <title>Creating user accounts with the API</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/</link>
-      <pubDate>Wed, 14 Apr 2021 10:41:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/</guid>
-      <description>Normally, a user account can only be created by a system administrator - see adding a user.&#xA;However there&amp;rsquo;s one special case in which the organisation runs a multi-tenanted Agilebase account. In that case, you can use an API call to create a new tenant in the account and new user(s) for that tenant.&#xA;For example, imagine your organisation is a body for football clubs around the country, where each club was a tenant, i.</description>
     </item>
     <item>
       <title>Chaining Workflows</title>

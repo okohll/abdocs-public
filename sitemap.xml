@@ -75,7 +75,7 @@
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/</loc>
-    <lastmod>2024-10-17T13:39:53+01:00</lastmod>
+    <lastmod>2025-06-21T10:02:03+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/tiles/</loc>
     <lastmod>2024-05-23T15:21:45+01:00</lastmod>
@@ -231,7 +231,7 @@
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/tables/options/</loc>
-    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
+    <lastmod>2025-06-21T09:56:17+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/tables/workflow/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
@@ -291,7 +291,7 @@
     <lastmod>2024-10-17T13:50:38+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/integrations/test-server/</loc>
-    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
+    <lastmod>2025-06-21T09:56:17+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/fields/field-options/sequence-field-options/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
@@ -398,11 +398,11 @@
     <loc>https://docs.agilebase.co.uk/docs/integrations/testing-a-login/</loc>
     <lastmod>2024-12-10T11:08:47+00:00</lastmod>
   </url><url>
+    <loc>https://docs.agilebase.co.uk/docs/integrations/email-integration/</loc>
+    <lastmod>2025-06-21T09:56:17+01:00</lastmod>
+  </url><url>
     <loc>https://docs.agilebase.co.uk/docs/workflows/ai-workflows/</loc>
     <lastmod>2025-03-05T16:16:13+00:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/</loc>
-    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/workflows/advanced/</loc>
     <lastmod>2024-04-11T11:38:13+01:00</lastmod>
@@ -419,16 +419,16 @@
     <loc>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/</loc>
     <lastmod>2024-08-21T09:12:37+01:00</lastmod>
   </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/junior-software-architect/</loc>
-    <lastmod>2025-05-31T10:33:56+01:00</lastmod>
+    <loc>https://docs.agilebase.co.uk/tags/software-architect/</loc>
+    <lastmod>2025-06-21T10:02:03+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/</loc>
-    <lastmod>2025-05-31T10:33:56+01:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/software-architect/</loc>
-    <lastmod>2025-05-27T19:53:19+01:00</lastmod>
+    <lastmod>2025-06-21T10:02:03+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/v6/</loc>
+    <lastmod>2025-06-21T10:02:03+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/junior-software-architect/</loc>
     <lastmod>2025-05-31T10:33:56+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/tags/citizen-developer-level-3/</loc>
@@ -488,11 +488,11 @@
     <loc>https://docs.agilebase.co.uk/tags/tabs/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
-    <loc>https://docs.agilebase.co.uk/tags/requires-update/</loc>
-    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
-  </url><url>
     <loc>https://docs.agilebase.co.uk/tags/core-user/</loc>
     <lastmod>2024-07-31T09:18:58+01:00</lastmod>
+  </url><url>
+    <loc>https://docs.agilebase.co.uk/tags/requires-update/</loc>
+    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>

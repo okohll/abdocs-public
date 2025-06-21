@@ -6,7 +6,7 @@
     <description>Recent content in V6 on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 31 May 2025 10:33:56 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jun 2025 10:02:03 +0100</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/tags/v6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security Features</title>
@@ -637,6 +637,13 @@
       <pubDate>Tue, 19 Jan 2021 12:41:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/testing-a-login/</guid>
       <description>Sometimes when developing an app that integrates with Agilebase, you may want to allow it to query the system to check the login details a user provides. In other words, let a user &amp;rsquo;log in&amp;rsquo; via your app.&#xA;The API mechanisms described in this section (push, pull etc.) don&amp;rsquo;t require a login to use, they work only via the API keys as described, however your app may still wish to test a users login to ensure they are a valid user.</description>
+    </item>
+    <item>
+      <title>Email Integration</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/email-integration/</link>
+      <pubDate>Fri, 20 Jun 2025 17:54:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/integrations/email-integration/</guid>
+      <description>Agilebase can accept incoming emails and attach them to relevant records e.g. attaching an email from a customer to that customer&amp;rsquo;s record.&#xA;This works by creating an email address for the system. Any emails forwarded to that address, or cc&amp;rsquo;d or bcc&amp;rsquo;d to it will be saved in the database. Agilebase will check the people involved in the email (to:, from: and cc: addresses) and find the right record to attach it to.</description>
     </item>
     <item>
       <title>Advanced information on Workflows</title>

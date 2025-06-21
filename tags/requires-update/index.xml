@@ -15,12 +15,5 @@
       <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/</guid>
       <description>In Agilebase, there are three privilege levels, as well as a special &amp;lsquo;develop&amp;rsquo; privilege.&#xA;The three privileges take effect per table, i.e. a user/role can have certain privileges on one table and different ones on another.&#xA;Privileges are additive - if a user is a member of multiple roles, they gain all the privileges from each of those roles added together, plus any they may have individually assigned.&#xA;Privilege levels View: ability to see data in a table Edit: ability to create, edit and delete data in a table (create and delete subject to various table options) Develop: the privilege that allows you to use the &amp;lsquo;application building&amp;rsquo; features of Agilebase, relating to a table.</description>
     </item>
-    <item>
-      <title>Creating user accounts with the API</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/</link>
-      <pubDate>Wed, 14 Apr 2021 10:41:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/docs/integrations/creating-user-accounts/</guid>
-      <description>Normally, a user account can only be created by a system administrator - see adding a user.&#xA;However there&amp;rsquo;s one special case in which the organisation runs a multi-tenanted Agilebase account. In that case, you can use an API call to create a new tenant in the account and new user(s) for that tenant.&#xA;For example, imagine your organisation is a body for football clubs around the country, where each club was a tenant, i.</description>
-    </item>
   </channel>
 </rss>
