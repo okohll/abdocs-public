@@ -27,15 +27,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2022-05-22T16:00:00+01:00">
-    <meta property="article:modified_time" content="2023-11-27T10:15:18+00:00">
+    <meta property="article:modified_time" content="2025-07-07T17:37:57+01:00">
     <meta property="article:tag" content="Citizen Developer Level 3">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Behaviour Options">
   <meta itemprop="description" content="These options affect the behaviour of a view">
   <meta itemprop="datePublished" content="2022-05-22T16:00:00+01:00">
-  <meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00">
-  <meta itemprop="wordCount" content="648">
+  <meta itemprop="dateModified" content="2025-07-07T17:37:57+01:00">
+  <meta itemprop="wordCount" content="1166">
   <meta itemprop="keywords" content="Citizen Developer Level 3,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Behaviour Options">
@@ -160,7 +160,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.6bed17c7a5b591e0928f169c0c11f46d.json"
+    data-offline-search-index-json-src="/offline-search-index.881e965aa510615e17f99f5da6ec1c63.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -184,7 +184,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.6bed17c7a5b591e0928f169c0c11f46d.json"
+    data-offline-search-index-json-src="/offline-search-index.881e965aa510615e17f99f5da6ec1c63.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -528,7 +528,13 @@
     <li><a href="#record-limit">Record limit</a></li>
     <li><a href="#distinct-fields">Distinct fields</a></li>
     <li><a href="#amalgamate-with">Amalgamate with</a></li>
-    <li><a href="#cache-view-rows">Cache view rows</a></li>
+    <li><a href="#cache-view-rows">Cache view rows</a>
+      <ul>
+        <li><a href="#speeding-up-other-views">Speeding up <em>other</em> views</a></li>
+        <li><a href="#things-to-watch-out-for">Things to watch out for</a></li>
+        <li><a href="#technical-details">Technical details</a></li>
+      </ul>
+    </li>
     <li><a href="#query-plan">Query Plan</a></li>
   </ul>
 </nav>
@@ -627,32 +633,52 @@
 <p>If you have two views with fields of the same type in the same order, then you can merge them together into one. The field names don&rsquo;t necessarily need to be the same.</p>
 <p>This is done using an <a href="https://www.sqltutorial.org/sql-union/">SQL UNION</a> clause.</p>
 <h2 id="cache-view-rows">Cache view rows</h2>
-<p>Caching can speed up views. It doesn&rsquo;t need to be used often as the underlying database PostgreSQL is great at dealing with large data problems, but when it is necessary it can significantly speed up access, allowing faster loading and searching. Caching works well when</p>
+<p>Caching can speed up views. It works well when</p>
 <ul>
 <li>a view is complex and slow to load</li>
 <li>it doesn&rsquo;t contain a massive number of rows - in this case the issue is likely to be the raw volume of data, rather than the complexity of calculations</li>
 </ul>
-<p>If both those criteria are met, then turning on caching can significantly speed a view up, allowing faster loading and searching. There are three options</p>
+<p>If both those criteria are met, then turning on caching can significantly speed a view up, allowing faster loading and searching. The options are</p>
 <ul>
 <li>no caching (the default)</li>
-<li>cache view, update on record save
+<li>cache view, update when data changes
 <ul>
 <li>this means when a view is opened or searched, if there have been changes to data in any tables used by the view since it was last opened, then the cache will be updated</li>
 </ul>
 </li>
-<li>cache view, update once a day
+<li>update every 10 minutes or hourly</li>
+<li>update once a day
 <ul>
 <li>useful for views that don&rsquo;t need to be updated often, e.g. monthly reporting figures</li>
 </ul>
 </li>
 </ul>
+<p>It&rsquo;s best to choose the longest time you can get away with as the cache will need to be refreshed less frequently, reducing the load on the server and speeding things up the most.
+However sometimes you may need data to be absolutely up to date, in which case the &lsquo;update when data changes&rsquo; option is necessary.</p>
+<h3 id="speeding-up-other-views">Speeding up <em>other</em> views</h3>
+<p>If a view is cached and other views reference (are joined to) it, those other views will also speed up too.</p>
+<p>For example, say you have a top level view &lsquo;monthly invoicing&rsquo;, which shows the total invoice amount per customer per month.</p>
+<p>To allow it to work, it joins to another view &lsquo;invoice amuounts&rsquo;, which per invoice, adds up all the invoice line values.</p>
+<p>Now, absent of any caching, the <em>monthly invoicing</em> view would need to do all the work of <em>invoice amounts</em> every time it was viewed, as well as its own work of totaling per month per customer.</p>
+<p>If the view <em>invoice totals</em> were cached, <em>monthly invoicing</em> be able to just &rsquo;look up&rsquo; the total of each invoice from the cache, potentially speeding things up significantly.</p>
+<p>The advantage of caching the lower level <em>invoice totals</em> view rather than the top level view is that it&rsquo;s not unlikely that <em>invoice totals</em> is referenced by other views as well - so you get more bang from your buck by caching it, you potentially speed up lots of views in one go.</p>
+<h3 id="things-to-watch-out-for">Things to watch out for</h3>
+<h4 id="the-cache-is-updated-too-often">The cache is updated too often</h4>
+<p>Sometimes views may need to be always up to date when viewing them and also update so often that the cache would need to be refreshed almost every time the view was looked at.
+In that case, there&rsquo;s no benefit to caching and to speed it up, you&rsquo;d need to look at <a href="/docs/advanced-usage/performance-optimisation/">other methods</a>.</p>
+<h4 id="the-system-cant-detect-when-a-cache-update-is-necessary">The system can&rsquo;t detect when a cache update is necessary.</h4>
+<p>In some cases, the system might not be able to properly detect every time the cache needs to be updated. To explain this, we&rsquo;ll need to look at how the caching works:</p>
+<p>Every time someone edits (adds, updates or deletes) a record in Agilebase, it performs a check to see which views might be affected.
+Not every view may be - for example if the change is to a field which doesn&rsquo;t appear in a view and which isn&rsquo;t used in a filter, then it can be guaranteed not to affect it.
+If any of those views are cached, a cache refresh is triggered, either for some specific time in the future, or when the view is next read (depending on the caching option selected).</p>
+<p>However, not all changes to a view might be detectable. For example, if a view has a filter on &lsquo;creation time is older than 10 minutes ago&rsquo;, then the contents of the view will change 10 minutes after the creation time of the oldest record in it, whether or not any actual data in the database changes.</p>
+<p>To help mitigate that, such views are detected and <em>any</em> change to data in joined tables will trigger a refresh, regardless of whether the change could affect the view. However that still doesn&rsquo;t help if there aren&rsquo;t any data changes at all.</p>
+<p>For views like that, a warning is shown on screen when you enable caching. It doesn&rsquo;t mean that you can&rsquo;t cache it necessarily, just that you should be aware of the risk that it might not <em>always</em> be updated in a timely manner.</p>
 <blockquote>
-<p>If a view is cached and other views reference it, those other views will also speed up too.</p>
+<p>Note: 24 hour workflows are excluded from this concern, they&rsquo;re always guaranteed to run once a day</p>
 </blockquote>
+<h3 id="technical-details">Technical details</h3>
 <p>Caching is implemented using <a href="https://en.wikipedia.org/wiki/Materialized_view">materialized views</a>.</p>
-<blockquote>
-<p>If you find a view is slow, feel free to <a href="https://agilechilli.com/contact-us/">contact us</a> for support before trying options like caching, there are many other targeted options we can look at first, such as adding indexes.</p>
-</blockquote>
 <h2 id="query-plan">Query Plan</h2>
 <p>The majority of the time you will not need to change this setting. However here&rsquo;s what it does in case you do:</p>
 <p>When getting data from a view (the list of rows), the database internally uses a <a href="https://www.postgresql.org/docs/current/planner-optimizer.html">query planner</a>. The planner works out the quickest way to return the results, as for complex queries there may be many possible ways.</p>
@@ -718,7 +744,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified November 27, 2023: <a href="https://github.com/okohll/abdocs/commit/80c844c5df1fab3cd59b900dcfdb667c41d9613c">Pivot table example (80c844c)</a>
+  Last modified July 7, 2025: <a href="https://github.com/okohll/abdocs/commit/7158cffee8886e11eeb1af885d0e50795aa84ebb">Caching explanation (7158cff)</a>
 </div>
 
 </div>
