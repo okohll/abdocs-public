@@ -27,14 +27,14 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2022-05-22T16:00:00+01:00">
-    <meta property="article:modified_time" content="2025-07-07T17:37:57+01:00">
+    <meta property="article:modified_time" content="2025-07-07T22:52:31+01:00">
     <meta property="article:tag" content="Citizen Developer Level 3">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Behaviour Options">
   <meta itemprop="description" content="These options affect the behaviour of a view">
   <meta itemprop="datePublished" content="2022-05-22T16:00:00+01:00">
-  <meta itemprop="dateModified" content="2025-07-07T17:37:57+01:00">
+  <meta itemprop="dateModified" content="2025-07-07T22:52:31+01:00">
   <meta itemprop="wordCount" content="1166">
   <meta itemprop="keywords" content="Citizen Developer Level 3,V6">
   <meta name="twitter:card" content="summary">
@@ -160,7 +160,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.881e965aa510615e17f99f5da6ec1c63.json"
+    data-offline-search-index-json-src="/offline-search-index.c35e51b0ac026e7a18f050fcee7fdf15.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -184,7 +184,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.881e965aa510615e17f99f5da6ec1c63.json"
+    data-offline-search-index-json-src="/offline-search-index.c35e51b0ac026e7a18f050fcee7fdf15.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -654,14 +654,14 @@
 </li>
 </ul>
 <p>It&rsquo;s best to choose the longest time you can get away with as the cache will need to be refreshed less frequently, reducing the load on the server and speeding things up the most.
-However sometimes you may need data to be absolutely up to date, in which case the &lsquo;update when data changes&rsquo; option is necessary.</p>
+However sometimes you may need data to be absolutely up to date, in which case &lsquo;update when data changes&rsquo; is the only option.</p>
 <h3 id="speeding-up-other-views">Speeding up <em>other</em> views</h3>
 <p>If a view is cached and other views reference (are joined to) it, those other views will also speed up too.</p>
 <p>For example, say you have a top level view &lsquo;monthly invoicing&rsquo;, which shows the total invoice amount per customer per month.</p>
-<p>To allow it to work, it joins to another view &lsquo;invoice amuounts&rsquo;, which per invoice, adds up all the invoice line values.</p>
+<p>To allow it to work, it joins to another view &lsquo;invoice amounts&rsquo;, which per invoice, adds up all the invoice line values.</p>
 <p>Now, absent of any caching, the <em>monthly invoicing</em> view would need to do all the work of <em>invoice amounts</em> every time it was viewed, as well as its own work of totaling per month per customer.</p>
 <p>If the view <em>invoice totals</em> were cached, <em>monthly invoicing</em> be able to just &rsquo;look up&rsquo; the total of each invoice from the cache, potentially speeding things up significantly.</p>
-<p>The advantage of caching the lower level <em>invoice totals</em> view rather than the top level view is that it&rsquo;s not unlikely that <em>invoice totals</em> is referenced by other views as well - so you get more bang from your buck by caching it, you potentially speed up lots of views in one go.</p>
+<p>An advantage of caching the lower level <em>invoice totals</em> view rather than the top level view is that it&rsquo;s not unlikely that <em>invoice totals</em> is referenced by other views as well - so you get more bang from your buck by caching it, you potentially speed up lots of views in one go.</p>
 <h3 id="things-to-watch-out-for">Things to watch out for</h3>
 <h4 id="the-cache-is-updated-too-often">The cache is updated too often</h4>
 <p>Sometimes views may need to be always up to date when viewing them and also update so often that the cache would need to be refreshed almost every time the view was looked at.
@@ -744,7 +744,7 @@ If any of those views are cached, a cache refresh is triggered, either for some 
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified July 7, 2025: <a href="https://github.com/okohll/abdocs/commit/7158cffee8886e11eeb1af885d0e50795aa84ebb">Caching explanation (7158cff)</a>
+  Last modified July 7, 2025: <a href="https://github.com/okohll/abdocs/commit/1762e7fc696f8912fcc2c814901c0603df611f1c">Performance suggestions (1762e7f)</a>
 </div>
 
 </div>

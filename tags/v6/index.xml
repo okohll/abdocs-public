@@ -6,7 +6,7 @@
     <description>Recent content in V6 on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 07 Jul 2025 17:37:57 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 07 Jul 2025 22:53:06 +0100</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/tags/v6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security Features</title>
@@ -580,7 +580,7 @@
       <link>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/</guid>
-      <description>Agilebase automatically takes some measures behind the scenes to maintain high performance as data volumes grow.&#xA;There are other mechanisms that can be manually enabled such as caching and increasing the memory assigned to particular views.&#xA;Finally, we will be happy to to do all we can to speed up any parts of your application that require it if you contact us. Often, a solution as simple as manually adding an index to a particular field can speed up requests by multiple orders of magnitude.</description>
+      <description>Agilebase automatically takes some measures behind the scenes to maintain high performance as data volumes grow. And the underlying PostgreSQL database is pretty good at running queries very quickly.&#xA;As your system matures, you may find there are tweaks you can make to keep it running fast so that there&amp;rsquo;s a good user experience.&#xA;What can cause slowdowns? If anything seems to be running a bit slow it will almost always be down to the performance of a view.</description>
     </item>
     <item>
       <title>Creating a PULL API</title>

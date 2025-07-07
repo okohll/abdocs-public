@@ -27,15 +27,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-04-24T16:40:00+01:00">
-    <meta property="article:modified_time" content="2023-11-27T10:15:18+00:00">
+    <meta property="article:modified_time" content="2025-07-07T22:53:06+01:00">
     <meta property="article:tag" content="Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Performance Optimisation">
   <meta itemprop="description" content="Working with big data and complex views">
   <meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00">
-  <meta itemprop="wordCount" content="113">
+  <meta itemprop="dateModified" content="2025-07-07T22:53:06+01:00">
+  <meta itemprop="wordCount" content="881">
   <meta itemprop="keywords" content="Software Architect,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Performance Optimisation">
@@ -160,7 +160,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.881e965aa510615e17f99f5da6ec1c63.json"
+    data-offline-search-index-json-src="/offline-search-index.c35e51b0ac026e7a18f050fcee7fdf15.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -184,7 +184,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.881e965aa510615e17f99f5da6ec1c63.json"
+    data-offline-search-index-json-src="/offline-search-index.c35e51b0ac026e7a18f050fcee7fdf15.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -520,7 +520,30 @@
 </div>
 
 
-            
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-can-cause-slowdowns">What can cause slowdowns?</a></li>
+    <li><a href="#examining-performance">Examining performance</a>
+      <ul>
+        <li><a href="#views">Views</a></li>
+        <li><a href="#tables">Tables</a></li>
+      </ul>
+    </li>
+    <li><a href="#speeding-things-up">Speeding things up</a>
+      <ul>
+        <li><a href="#show-only-the-data-necessary">Show only the data necessary</a></li>
+        <li><a href="#look-at-joined-views">Look at joined views</a></li>
+        <li><a href="#query-plan-selection">Query plan selection</a></li>
+        <li><a href="#caching">Caching</a></li>
+        <li><a href="#using-a-tool-to-examine-the-query-plan">Using a tool to examine the query plan</a></li>
+        <li><a href="#adding-indexes">Adding indexes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
             <div class="taxonomy taxonomy-terms-cloud taxo-tags">
       <h5 class="taxonomy-title">Learner Levels</h5>
       <ul class="taxonomy-terms">
@@ -586,9 +609,69 @@
 </div>
 
   </header>
-	<p>Agilebase automatically takes some measures behind the scenes to maintain high performance as data volumes grow.</p>
-<p>There are other mechanisms that can be manually enabled such as <a href="/docs/views/options/behaviour-options/#cache-view-rows">caching</a> and increasing the memory assigned to particular views.</p>
-<p>Finally, we will be happy to to do all we can to speed up any parts of your application that require it if you <a href="https://agilechilli.com/contact-us/">contact us</a>. Often, a solution as simple as manually adding an index to a particular field can speed up requests by multiple orders of magnitude.</p>
+	<p>Agilebase automatically takes some measures behind the scenes to maintain high performance as data volumes grow. And the underlying PostgreSQL database is pretty good at running queries very quickly.</p>
+<p>As your system matures, you may find there are tweaks you can make to keep it running fast so that there&rsquo;s a good user experience.</p>
+<h2 id="what-can-cause-slowdowns">What can cause slowdowns?</h2>
+<p>If anything seems to be running a bit slow it will almost always be down to the performance of a view. Views can involve lots of data and complex calculations. Also lots of things depend on views, some examples (a non-exhaustive list):</p>
+<ul>
+<li>obviously opening a view itself in a tile and searching it</li>
+<li>opening a record can be affected if
+<ul>
+<li>it has referenced fields embedded in it (to show charts or data for example)</li>
+<li>there are visibility rules on fields (which depend on views)</li>
+<li>a workflow view is set to run every time a record is opened</li>
+</ul>
+</li>
+<li>showing charts (which get their data from views)</li>
+<li>making a call to an API view</li>
+</ul>
+<p>A fuller list can be seen at <a href="/docs/views/special-uses/">view special uses</a>.</p>
+<h2 id="examining-performance">Examining performance</h2>
+<p>Agilebase gives you some tools to enable you to see where performance issues might be surfacing:</p>
+<p>Performance suggestions may be shown on the <a href="/docs/introduction/development-mode/">development homepage</a>, when you first toggle it on.</p>
+<h3 id="views">Views</h3>
+<p>Also on the development homepage, the list of &lsquo;all views&rsquo; has three columns of interest:</p>
+<ul>
+<li>popularity (calls per day)</li>
+<li>query seconds</li>
+<li>load factor (popularity x query seconds)</li>
+</ul>
+<p>Sorting by query seconds (click on the column heading, then click again to sort descending) will show you a list of the slowest views in absolute terms.
+If a view takes 10 seconds to load, you will probably want to speed it up.</p>
+<p>If it&rsquo;s a popular view, i.e. there are people looking at it all the time, then doubly so. The third column <em>load factor (popularity x query seconds)</em> gives you an easy way to look at those factors together.</p>
+<h3 id="tables">Tables</h3>
+<p>If records from a table are taking significant time to open, then a breakdown of what is causing the slowdown will be displayed on screen in the list of fields as you&rsquo;re editing the table.
+Orange bars will show how much each field is contributing to the slowness, cumulatively (to reach 100% at the bottom of the list).</p>
+<p>In this example, you can see that the field <strong>Project Phase</strong> is the main contributor. Since it has a visibility view (denoted by the eye symbol), that is probably the cause. You can drill into the detials by clicking on the view.</p>
+<p><img src="/table_speed.png" alt="table slowdown contributors"></p>
+<p>Note that if a table has the <a href="/docs/tables/workflow/#run-this-workflow-whenever-each-record-is-viewed">Run this workflow whenever each record is viewed</a> option, the speed of the workflow view(s) used can also contribute to loading time.</p>
+<h2 id="speeding-things-up">Speeding things up</h2>
+<p>There are a number of ways that view performance can be optimised.</p>
+<h3 id="show-only-the-data-necessary">Show only the data necessary</h3>
+<p>The simplest starting point is to ensure that only the data necessary for the intended task is included in the view. That goes for both roles and columns.</p>
+<p>So for example, with a list of opportunities for salespeople to work, you probably only need the live enquiries, not the closed ones. If you do want a view of all historical records, you can of course create a second one for that purpose.
+Also, limit the fields displayed to only those which are necessary.</p>
+<h3 id="look-at-joined-views">Look at joined views</h3>
+<p>The same thing goes for the joined views. If for example you have a joined view which calculates the distance in miles or km to each company in the above opportunities list above, ensure that view itself only calculates data for the live opportinities.</p>
+<p>There&rsquo;s a bit of a trade-off with practicality here sometimes. You may have a view of distances to different companies which serves lots of different other views, so may not want to create a different one for each list the data&rsquo;s used in..
+However for particularly problematic views you may want to consider it.</p>
+<h3 id="query-plan-selection">Query plan selection</h3>
+<p>&quot;
+Agilebase will automatically compare different plans and suggest the best one, but that can change over time. To verify it yourself, use the <a href="/docs/views/options/behaviour-options/#query-plan">query plan</a> option.</p>
+<h3 id="caching">Caching</h3>
+<p>For a complete discussion of what caching is and when it works, please see the <a href="/docs/views/options/behaviour-options/#cache-view-rows">cache view rows</a> option.</p>
+<h3 id="using-a-tool-to-examine-the-query-plan">Using a tool to examine the query plan</h3>
+<p>Postgresql can generate very detailed information detailing exactly what it&rsquo;s doing under the hood to generate the query results.</p>
+<p>To show this, double click anywhere in the <em>properties and options</em> panel when editing a view. Scroll down to the view definition which appears and press the EXPLAIN button.</p>
+<p>The &rsquo;explain&rsquo; output will then appear and can be copied and pasted. To interpret it and get some suggestions, it&rsquo;s easiest to paste it into a tool such as</p>
+<p><a href="https://explain.depesz.com">https://explain.depesz.com</a></p>
+<p>or</p>
+<p><a href="https://pgmustard.com">https://pgmustard.com</a></p>
+<blockquote>
+<p>Be careful about privacy and security - some tools make your content public by default, you may wish to disable that.</p>
+</blockquote>
+<h3 id="adding-indexes">Adding indexes</h3>
+<p>This is something we will need to do for you, but if you have filtered a view down to the minimum number of rows and it hasn&rsquo;t speeded up, it may help. Please <a href="https://agilechilli.com/contact-us/">contact us</a>.</p>
 <p>For really big data projects, there&rsquo;s also the option of utilising PostgreSQL-compatible database services designed for such tasks, like <a href="https://www.citusdata.com/">Citus Data</a>, which we will be happy to provision.</p>
 
 	<style>
@@ -648,7 +731,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified November 27, 2023: <a href="https://github.com/okohll/abdocs/commit/80c844c5df1fab3cd59b900dcfdb667c41d9613c">Pivot table example (80c844c)</a>
+  Last modified July 7, 2025: <a href="https://github.com/okohll/abdocs/commit/6d918e6d0665273eb8a53def08dc524743938089">Performance suggestions (6d918e6)</a>
 </div>
 
 </div>
