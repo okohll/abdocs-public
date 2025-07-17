@@ -27,14 +27,14 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-05-29T12:35:00+01:00">
-    <meta property="article:modified_time" content="2023-11-27T10:15:18+00:00">
+    <meta property="article:modified_time" content="2025-07-17T08:59:46+01:00">
     <meta property="article:tag" content="Junior Software Architect">
 
   <meta itemprop="name" content="Send a Chaser email">
   <meta itemprop="description" content="Chasers are dedicated functionality that use email to ask third parties for relevant information">
   <meta itemprop="datePublished" content="2020-05-29T12:35:00+01:00">
-  <meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00">
-  <meta itemprop="wordCount" content="941">
+  <meta itemprop="dateModified" content="2025-07-17T08:59:46+01:00">
+  <meta itemprop="wordCount" content="1051">
   <meta itemprop="keywords" content="Junior Software Architect">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Send a Chaser email">
@@ -159,7 +159,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c35e51b0ac026e7a18f050fcee7fdf15.json"
+    data-offline-search-index-json-src="/offline-search-index.4acac8f0a132b92fe19e4cf17333d97b.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -183,7 +183,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c35e51b0ac026e7a18f050fcee7fdf15.json"
+    data-offline-search-index-json-src="/offline-search-index.4acac8f0a132b92fe19e4cf17333d97b.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -526,6 +526,7 @@
     <li><a href="#setup">Setup</a>
       <ul>
         <li><a href="#including-attachments">Including attachments</a></li>
+        <li><a href="#customising-with-a-logo">Customising with a logo</a></li>
         <li><a href="#receiving-a-response">Receiving a response</a></li>
         <li><a href="#sending-thank-you-emails">Sending thank you emails</a></li>
         <li><a href="#errors">Errors</a></li>
@@ -648,6 +649,11 @@ The system will automatically create a form containing these fields (excluding a
 <blockquote>
 <p>Don&rsquo;t worry that the view then contains multiple rows per email. The chaser is clever enough to only send one email, but merge in all the files from the multiple rows.</p>
 </blockquote>
+<h3 id="customising-with-a-logo">Customising with a logo</h3>
+<p>When the recipient receives the chaser email, they can click on a link to fill in a form and supply the requested information.</p>
+<p>That form can be customised by adding a logo at the top. To do that, a file field named <em>Logo</em> must be added to the chaser view.</p>
+<p>If the same logo is to be used for all messages, the simplest way of accomplishing this is to put the Logo file field in a table with only a single record in it.
+Then add a <a href="/docs/views/joins/types-of-join/#cross-join">cross join</a> from the chaser to that table, to allow you to add the Logo field to the view.</p>
 <h3 id="receiving-a-response">Receiving a response</h3>
 <p>When a response is received to a chaser, as well as saving the documents / fields the chaser asked for, a comment will be logged to the first comment field in the parent table (if there is a comment field).</p>
 <p>An email will also be sent to a user notifying them of the response. The logic for who to send that notification to is:</p>
@@ -725,7 +731,7 @@ The system will automatically create a form containing these fields (excluding a
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified November 27, 2023: <a href="https://github.com/okohll/abdocs/commit/80c844c5df1fab3cd59b900dcfdb667c41d9613c">Pivot table example (80c844c)</a>
+  Last modified July 17, 2025: <a href="https://github.com/okohll/abdocs/commit/5349f1b51e794d25e083cdddf9009b3128b2f269">Customising with a logo (5349f1b)</a>
 </div>
 
 </div>

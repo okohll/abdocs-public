@@ -27,15 +27,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-04-24T16:40:00+01:00">
-    <meta property="article:modified_time" content="2025-07-07T22:53:06+01:00">
+    <meta property="article:modified_time" content="2025-07-07T23:00:14+01:00">
     <meta property="article:tag" content="Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Performance Optimisation">
   <meta itemprop="description" content="Working with big data and complex views">
   <meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2025-07-07T22:53:06+01:00">
-  <meta itemprop="wordCount" content="881">
+  <meta itemprop="dateModified" content="2025-07-07T23:00:14+01:00">
+  <meta itemprop="wordCount" content="880">
   <meta itemprop="keywords" content="Software Architect,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Performance Optimisation">
@@ -160,7 +160,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c35e51b0ac026e7a18f050fcee7fdf15.json"
+    data-offline-search-index-json-src="/offline-search-index.4acac8f0a132b92fe19e4cf17333d97b.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -184,7 +184,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c35e51b0ac026e7a18f050fcee7fdf15.json"
+    data-offline-search-index-json-src="/offline-search-index.4acac8f0a132b92fe19e4cf17333d97b.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -642,7 +642,7 @@ If a view takes 10 seconds to load, you will probably want to speed it up.</p>
 <h3 id="tables">Tables</h3>
 <p>If records from a table are taking significant time to open, then a breakdown of what is causing the slowdown will be displayed on screen in the list of fields as you&rsquo;re editing the table.
 Orange bars will show how much each field is contributing to the slowness, cumulatively (to reach 100% at the bottom of the list).</p>
-<p>In this example, you can see that the field <strong>Project Phase</strong> is the main contributor. Since it has a visibility view (denoted by the eye symbol), that is probably the cause. You can drill into the detials by clicking on the view.</p>
+<p>In this example, you can see that the field <strong>Project Phase</strong> is the main contributor. Since it has a visibility view (denoted by the eye symbol), that is probably the cause. You can drill into the details by clicking on the field.</p>
 <p><img src="/table_speed.png" alt="table slowdown contributors"></p>
 <p>Note that if a table has the <a href="/docs/tables/workflow/#run-this-workflow-whenever-each-record-is-viewed">Run this workflow whenever each record is viewed</a> option, the speed of the workflow view(s) used can also contribute to loading time.</p>
 <h2 id="speeding-things-up">Speeding things up</h2>
@@ -656,8 +656,7 @@ Also, limit the fields displayed to only those which are necessary.</p>
 <p>There&rsquo;s a bit of a trade-off with practicality here sometimes. You may have a view of distances to different companies which serves lots of different other views, so may not want to create a different one for each list the data&rsquo;s used in..
 However for particularly problematic views you may want to consider it.</p>
 <h3 id="query-plan-selection">Query plan selection</h3>
-<p>&quot;
-Agilebase will automatically compare different plans and suggest the best one, but that can change over time. To verify it yourself, use the <a href="/docs/views/options/behaviour-options/#query-plan">query plan</a> option.</p>
+<p>Agilebase will automatically compare different plans and suggest the best one, but that can change over time. To verify it yourself, use the <a href="/docs/views/options/behaviour-options/#query-plan">query plan</a> option.</p>
 <h3 id="caching">Caching</h3>
 <p>For a complete discussion of what caching is and when it works, please see the <a href="/docs/views/options/behaviour-options/#cache-view-rows">cache view rows</a> option.</p>
 <h3 id="using-a-tool-to-examine-the-query-plan">Using a tool to examine the query plan</h3>
@@ -731,7 +730,7 @@ Agilebase will automatically compare different plans and suggest the best one, b
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified July 7, 2025: <a href="https://github.com/okohll/abdocs/commit/6d918e6d0665273eb8a53def08dc524743938089">Performance suggestions (6d918e6)</a>
+  Last modified July 7, 2025: <a href="https://github.com/okohll/abdocs/commit/c5b04245f3023bcee4075cf2a048785fa86f6c98">Performance suggestions - typos (c5b0424)</a>
 </div>
 
 </div>
