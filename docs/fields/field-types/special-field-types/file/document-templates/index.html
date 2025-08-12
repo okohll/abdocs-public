@@ -27,15 +27,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-05-08T16:40:00+01:00">
-    <meta property="article:modified_time" content="2025-03-05T16:16:13+00:00">
+    <meta property="article:modified_time" content="2025-08-10T20:58:42-07:00">
     <meta property="article:tag" content="Junior Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Document templates">
   <meta itemprop="description" content="Templates allow the automatic generation of PDF documents, or printouts">
   <meta itemprop="datePublished" content="2020-05-08T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2025-03-05T16:16:13+00:00">
-  <meta itemprop="wordCount" content="1224">
+  <meta itemprop="dateModified" content="2025-08-10T20:58:42-07:00">
+  <meta itemprop="wordCount" content="1430">
   <meta itemprop="keywords" content="Junior Software Architect,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Document templates">
@@ -160,7 +160,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.4acac8f0a132b92fe19e4cf17333d97b.json"
+    data-offline-search-index-json-src="/offline-search-index.7bae985b81a6598d74042e29f6f34225.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -184,7 +184,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.4acac8f0a132b92fe19e4cf17333d97b.json"
+    data-offline-search-index-json-src="/offline-search-index.7bae985b81a6598d74042e29f6f34225.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -754,6 +754,10 @@ b) the value of the first field in the view above</p>
 <td>Create a <a href="https://en.wikipedia.org/wiki/Pivot_table">pivot table</a> output. The first column in the view will be the heading (portion size in the example below). The second will be the &lsquo;vertical&rsquo; category (nutrition in the example) and all other fields will be values. The &lsquo;separator&rsquo; parameter is a string (text) used to join all the values to gether into one cell, if there&rsquo;s more than one. If unsure, try using a comma. An empty string can also be supplied, meaning no separation</td>
 </tr>
 <tr>
+<td>$view.htmlTableKeyValue(&ldquo;table name&rdquo;, &ldquo;child view name&rdquo;)</td>
+<td>Output a table with two columns, the first for the field names and the second for the value of each field. Every field will be a new table row. So if there are 5 rows of data in the view and 10 fields, there will be 50 table rows output</td>
+</tr>
+<tr>
 <td>$view.charts(&ldquo;table name&rdquo;, &ldquo;view name&rdquo;)</td>
 <td>Render all the charts in the given view. If you want to target the charts for CSS (sizing etc.), they will be in an element with class &lsquo;saved_charts&rsquo;. Each individual chart will have the class &lsquo;summary_chart&rsquo;</td>
 </tr>
@@ -763,6 +767,18 @@ b) the value of the first field in the view above</p>
 <em>Pivot table example: source view</em></p>
 <p><img src="/pivot-table-example.png" alt="pivot table example example output">
 <em>Pivot table example: output produced from the source view</em></p>
+<h4 id="styling-tables">Styling tables</h4>
+<p>If tables are added to the template with one of the <code>htmlTable...</code> functions above, then certain CSS classes will be applied to them, so you can change the styling of the tables if you know CSS, by including a <code>&lt;style&gt;</code> element in the HTML template. You will need to edit the template source code to do that.</p>
+<p>The table itself will always have the classes <code>childData</code> and <code>referenced_report_data</code>. Then depending on the type of table output, it will also have the class</p>
+<ul>
+<li><code>standard</code> for the output of <code>htmlTable</code></li>
+<li><code>transposed</code> for <code>htmlTableTransposed</code></li>
+<li><code>pivot</code> for <code>htmlTablePivot</code></li>
+<li><code>keyValue</code> for <code>htmlTableKeyValue</code></li>
+</ul>
+<p>Within the table, heading cells will be <code>&lt;th&gt;</code> elements and standard data <code>&lt;td&gt;</code>s.</p>
+<p>Some table types (currently only key/value tables) will add classes to each <code>th</code> or <code>td</code> depending on the datatype of the field, so one of</p>
+<p><code>varchar</code> (for text fields), <code>timestamp</code>, <code>float</code> (fields are actually double precision), <code>bigint</code> or <code>boolean</code>.</p>
 <h3 id="session-functions">Session functions</h3>
 <p>Here are some of the most commonly used session functions. Each user gets a new session when they log in, it stores information about the system&rsquo;s current state for them.</p>
 <table>
@@ -853,7 +869,7 @@ b) the value of the first field in the view above</p>
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified March 5, 2025: <a href="https://github.com/okohll/abdocs/commit/aeea37caf7ad39c449ab48a6a317871626be106b">htmlTableTransposed (aeea37c)</a>
+  Last modified August 10, 2025: <a href="https://github.com/okohll/abdocs/commit/c1bd4122f13bb716e9d86a2fcc0ce90b4947cd51">Document table classes for PDF generation (c1bd412)</a>
 </div>
 
 </div>
