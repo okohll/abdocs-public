@@ -30,8 +30,8 @@
   <meta itemprop="name" content="Calculations">
   <meta itemprop="description" content="Adding calculations to a view">
   <meta itemprop="datePublished" content="2020-05-13T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2025-02-18T19:10:41+00:00">
-  <meta itemprop="wordCount" content="1383">
+  <meta itemprop="dateModified" content="2025-08-19T16:44:20+01:00">
+  <meta itemprop="wordCount" content="1451">
   <meta itemprop="keywords" content="Citizen Developer Level 3,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Calculations">
@@ -156,7 +156,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.33b58c2d3fc9fe704a15cb0430f54a62.json"
+    data-offline-search-index-json-src="/offline-search-index.692511ce634d8625ce4986806d055c87.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -180,7 +180,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.33b58c2d3fc9fe704a15cb0430f54a62.json"
+    data-offline-search-index-json-src="/offline-search-index.692511ce634d8625ce4986806d055c87.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -694,8 +694,12 @@ Please check that you are happy with their <a href="/docs/artificial-intelligenc
 <p><a href="https://www.postgresql.org/docs/17/sql-syntax-lexical.html#SQL-SYNTAX-COMMENTS">https://www.postgresql.org/docs/17/sql-syntax-lexical.html#SQL-SYNTAX-COMMENTS</a></p>
 <h3 id="troubleshooting-errors">Troubleshooting errors</h3>
 <p>If there is an error in a view, it&rsquo;s more than likely the culprit is a calculation, as they are one of the more complex facilities of Agilebase and the only one where SQL can be entered by the user, as opposed to be automatically generated. You may see messages like <strong>view broken</strong> or errors when you try to change a view e.g. move a field.</p>
+<h4 id="bad-data">Bad data</h4>
 <p>Errors can occur due to data changing. Division by zero errors are automatically handled by Agilebase (null is returned), but other types of calculation can also cause errors in certain circumstances. For example if a calculation squares a field, if someone enters a really large number into that field in a particular record, then an overflow error may occur.</p>
 <p>This can be resolved by temporarily filtering out the problem data, then the view can be edited to handle the issue, or perhaps a <a href="/docs/tables/data-integrity-checks/">data integrity check</a> can be added to disallow problem data in future.</p>
+<h4 id="wrong-datatypes">Wrong datatypes</h4>
+<p>If a calculation is set to be a number type but outputs text, that will cause an immediate issue. A more pernicious problem can be caused the other way round. If a calculation is expected to be a number, and used by other calculations as a number, but has actually been set or left as text (the default type), errors can occur.</p>
+<h4 id="persistent-errors">Persistent errors</h4>
 <p>If there is a persistent issue, one way of dealing with it is to temporarily delete all the calculation definitions - you can copy and paste them somewhere else for record-keeping, perhaps into each calculation&rsquo;s notes entry. Then once the view is working again, add the calculation definitions back one by one until you find the problem.</p>
 
   <div class="section-index">
@@ -766,7 +770,7 @@ Please check that you are happy with their <a href="/docs/artificial-intelligenc
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified February 18, 2025: <a href="https://github.com/okohll/abdocs/commit/df4daea7159af5bfca8880f09184045fa20a4c4a">AI workflows (df4daea)</a>
+  Last modified August 19, 2025: <a href="https://github.com/okohll/abdocs/commit/d1497d365783fa78c14e8885c8a5ded6acd9787f">Referenced data use as filter notes (d1497d3)</a>
 </div>
 </div>
 

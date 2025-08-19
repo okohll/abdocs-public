@@ -27,15 +27,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-04-24T16:40:00+01:00">
-    <meta property="article:modified_time" content="2025-03-05T16:16:13+00:00">
+    <meta property="article:modified_time" content="2025-08-19T16:44:20+01:00">
     <meta property="article:tag" content="Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Build Patterns">
   <meta itemprop="description" content="Common patterns, or recipes for accomplishing useful tasks">
   <meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2025-03-05T16:16:13+00:00">
-  <meta itemprop="wordCount" content="1577">
+  <meta itemprop="dateModified" content="2025-08-19T16:44:20+01:00">
+  <meta itemprop="wordCount" content="1695">
   <meta itemprop="keywords" content="Software Architect,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Build Patterns">
@@ -160,7 +160,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.33b58c2d3fc9fe704a15cb0430f54a62.json"
+    data-offline-search-index-json-src="/offline-search-index.692511ce634d8625ce4986806d055c87.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -184,7 +184,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.33b58c2d3fc9fe704a15cb0430f54a62.json"
+    data-offline-search-index-json-src="/offline-search-index.692511ce634d8625ce4986806d055c87.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -706,9 +706,15 @@ We now have a view of all possible combinations of course and trainer</li>
 <ol>
 <li>In the relation chooser view, create a calculation e.g. ‘my relation filter’ and set it to contain the contents of what you want to filter on e.g. some other field. The calculation can be hidden.</li>
 <li>From the main table, create a new view. In that view, create a calculation with the same name and contents.</li>
-<li>Add that a cross-reference field into the main table, utilising that view. In the field options, tick <a href="/docs/fields/field-options/referenced-field-options/#use-as-a-filter-for-relations">use as filter</a></li>
+<li>Add that a referenced data field into the main table, utilising that view. In the field options, tick <a href="/docs/fields/field-options/referenced-field-options/#use-as-a-filter-for-relations">use as filter</a></li>
 </ol>
 <p>In that way, you can set the chooser to only show options relevant to the situation at hand.</p>
+<blockquote>
+<p>Note 1: there&rsquo;s no need to set the visibility of the referenced data field to hide it, ticking &lsquo;use as filter&rsquo; will hide it automatically. You can if you like use the visibility to toggle it on or off, as when hidden it won&rsquo;t take effect</p>
+</blockquote>
+<blockquote>
+<p>Note 2: remember that the chooser view will already be filtering by the IDs of any other relations in the form. For example if you&rsquo;re editing a contact and there&rsquo;s a relation to an organisation, the chooser will filter by that organisation <strong>if it contains the organisation ID</strong>. If you want to filter <em>only</em> using your referenced data field, make sure to remove any extra ID fields in the chooser view.</p>
+</blockquote>
 <h2 id="switching-a-field-from-one-type-to-another">Switching a field from one type to another</h2>
 <p>For example, converting a whole number field into a decimal number</p>
 <ol>
@@ -781,7 +787,7 @@ We now have a view of all possible combinations of course and trainer</li>
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified March 5, 2025: <a href="https://github.com/okohll/abdocs/commit/aeea37caf7ad39c449ab48a6a317871626be106b">htmlTableTransposed (aeea37c)</a>
+  Last modified August 19, 2025: <a href="https://github.com/okohll/abdocs/commit/d1497d365783fa78c14e8885c8a5ded6acd9787f">Referenced data use as filter notes (d1497d3)</a>
 </div>
 
 </div>
