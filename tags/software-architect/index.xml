@@ -6,7 +6,7 @@
     <description>Recent content in Software Architect on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 31 Aug 2025 15:25:23 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 31 Aug 2025 15:28:33 +0100</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/tags/software-architect/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security Features</title>
@@ -231,6 +231,13 @@
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/</guid>
       <description>Agilebase automatically takes some measures behind the scenes to maintain high performance as data volumes grow. And the underlying PostgreSQL database is pretty good at running queries very quickly.&#xA;As your system matures, you may find there are tweaks you can make to keep it running fast so that there&amp;rsquo;s a good user experience.&#xA;What can cause slowdowns? If anything seems to be running a bit slow it will almost always be down to the performance of a view.</description>
+    </item>
+    <item>
+      <title>Examining Performance</title>
+      <link>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/examining-performance/</link>
+      <pubDate>Sun, 31 Aug 2025 14:00:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/examining-performance/</guid>
+      <description>Performance suggestions Performance suggestions may be shown on the development homepage, when you first toggle it on.&#xA;They are organised into categories:&#xA;Cacheable views - the system automatically determines when caching particular views would be beneficial, based on many factors. For more information, please see the cache view rows view option. The system will also highlight any cached views which maybe shouldn&amp;rsquo;t be. Views which have millions of rows will have a large caching overhead for example</description>
     </item>
     <item>
       <title>Speeding Things Up</title>
