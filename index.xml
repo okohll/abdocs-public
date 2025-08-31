@@ -589,11 +589,11 @@
       <description>Some of these are just useful ideas, some are tips and tricks and some are larger-scale build patterns for more complex tasks commonly undertaken by customers.&#xA;These tips will link to various other places in the documentation, but it will still be useful to have some experience of building in Agilebase before reading.&#xA;Settings table idea To use a single store of a common setting throughout the application. When a setting is changed it will then automatically take effect throught the whole application.</description>
     </item>
     <item>
-      <title>Performance Optimisation</title>
-      <link>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/</guid>
-      <description>Agilebase automatically takes some measures behind the scenes to maintain high performance as data volumes grow. And the underlying PostgreSQL database is pretty good at running queries very quickly.&#xA;As your system matures, you may find there are tweaks you can make to keep it running fast so that there&amp;rsquo;s a good user experience.&#xA;What can cause slowdowns? If anything seems to be running a bit slow it will almost always be down to the performance of a view.</description>
+      <title>Speeding Things Up</title>
+      <link>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/speeding-things-up/</link>
+      <pubDate>Sun, 31 Aug 2025 14:00:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/speeding-things-up/</guid>
+      <description>Once you&amp;rsquo;ve identified which views might be performance hogs, what can you do about it?&#xA;There are a number of options to look at.&#xA;Firstly, if a view is really slow you might want to temporarily speed it up with a quick fix to allow you to work on it. One way to do that can be to add a filter to the view to make it not show any data.</description>
     </item>
     <item>
       <title>Send an email</title>
@@ -720,6 +720,13 @@
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/</guid>
       <description>Some workflows need to be run on an adhoc basis, initiated by a user. In these instances it can be useful to assign the Workflow to run behind a Button.&#xA;N.b. In both cases below it is necessary for the Workflow to marked as Manual.&#xA;Workflow Buttons on a Form To add the Workflow button to a Table&amp;rsquo;s form simply create a new field of type Referenced Data with the workflow as the source.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/examining-performance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/examining-performance/</guid>
+      <description>`&amp;mdash; title: &amp;ldquo;Examining Performance&amp;rdquo; date: 2025-08-31T14:00:00+01:00 type: docs weight: 131 description: Agilebase gives you some tools to enable you to see where performance issues might be surfacing tags:&#xA;Software Architect v6 &amp;mdash;` Performance suggestions Performance suggestions may be shown on the development homepage, when you first toggle it on.&#xA;They are organised into categories:&#xA;Cacheable views - the system automatically determines when caching particular views would be beneficial, based on many factors.</description>
     </item>
     <item>
       <title>Search Results</title>

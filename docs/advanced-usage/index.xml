@@ -22,12 +22,5 @@
       <guid>https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/</guid>
       <description>Some of these are just useful ideas, some are tips and tricks and some are larger-scale build patterns for more complex tasks commonly undertaken by customers.&#xA;These tips will link to various other places in the documentation, but it will still be useful to have some experience of building in Agilebase before reading.&#xA;Settings table idea To use a single store of a common setting throughout the application. When a setting is changed it will then automatically take effect throught the whole application.</description>
     </item>
-    <item>
-      <title>Performance Optimisation</title>
-      <link>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/</guid>
-      <description>Agilebase automatically takes some measures behind the scenes to maintain high performance as data volumes grow. And the underlying PostgreSQL database is pretty good at running queries very quickly.&#xA;As your system matures, you may find there are tweaks you can make to keep it running fast so that there&amp;rsquo;s a good user experience.&#xA;What can cause slowdowns? If anything seems to be running a bit slow it will almost always be down to the performance of a view.</description>
-    </item>
   </channel>
 </rss>
