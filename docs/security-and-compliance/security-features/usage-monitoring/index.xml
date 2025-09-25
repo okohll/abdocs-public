@@ -13,7 +13,7 @@
       <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/</guid>
-      <description>Log data reporting provides a rich view of system usage.&#xA;Enhanced audit trail For organisations who have activated the enhanced audit trail, all logs are stored in user-accessible tables which are just like any other tables in the system, the only difference being the data is read only. This means an administrator can use the full power of the built in Agilebase reporting features, to create views, add calculations, charts etc.</description>
+      <description>&lt;p&gt;Log data reporting provides a rich view of system usage.&lt;/p&gt;&#xA;&lt;h2 id=&#34;enhanced-audit-trail&#34;&gt;Enhanced audit trail&lt;/h2&gt;&#xA;&lt;p&gt;For organisations who have activated the enhanced audit trail, all logs are stored in user-accessible tables which are just like any other tables in the system, the only difference being the data is read only. This means an administrator can use the full power of the built in Agilebase reporting features, to create views, add calculations, charts etc., even export via the API.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

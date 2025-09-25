@@ -13,14 +13,14 @@
       <link>https://docs.agilebase.co.uk/docs/charting/built-in-charting/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/charting/built-in-charting/</guid>
-      <description>Charting is not strictly an administrator function, as any user can create charts and other data visualisations, such as maps and word clouds.&#xA;However, it&amp;rsquo;s useful for administrators to know how the system works in outline, so they can support users and also because creating charts may be a key part of building an application.&#xA;In Agilebase, charts &amp;lsquo;belong to&amp;rsquo; a view. Each view can have a collection of charts. Users can toggle between viewing data rows and looking at charts based on those rows.</description>
+      <description>&lt;p&gt;Charting is not strictly an administrator function, as any user can create charts and other data visualisations, such as maps and word clouds.&lt;/p&gt;&#xA;&lt;p&gt;However, it&amp;rsquo;s useful for administrators to know how the system works in outline, so they can support users and also because creating charts may be a key part of building an application.&lt;/p&gt;&#xA;&lt;p&gt;In Agilebase, charts &amp;lsquo;belong to&amp;rsquo; a view. Each view can have a collection of charts. Users can toggle between viewing data rows and looking at charts based on those rows. When a user filters data using the quick filter boxes at the top of the screen, the data or charts (whichever is shown) will update to match the filtered results.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Business Intelligence</title>
       <link>https://docs.agilebase.co.uk/docs/charting/business-intelligence/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/charting/business-intelligence/</guid>
-      <description>Before setting up a BI connection, please be aware of the data privacy and security considerations.&#xA;Any tool which utilises ODBC can be used, such as Excel for example. Power BI is a common one.&#xA;Initial Setup The first step is to contact us to request we prepare your account. This will also allow connections from Power BI or any other tool which can connect to ODBC).&#xA;If you use Power BI, then the process is as follows</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Before setting up a BI connection, please be aware of the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting#privacy-and-data-security&#34;&gt;data privacy and security&lt;/a&gt; considerations.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Any tool which utilises &lt;a href=&#34;https://en.wikipedia.org/wiki/Open_Database_Connectivity&#34;&gt;ODBC&lt;/a&gt; can be used, such as Excel for example. Power BI is a common one.&lt;/p&gt;&#xA;&lt;h2 id=&#34;initial-setup&#34;&gt;Initial Setup&lt;/h2&gt;&#xA;&lt;p&gt;The first step is to &lt;a href=&#34;https://agilechilli.com/contact-us/&#34;&gt;contact us&lt;/a&gt; to request we prepare your account. This will also allow connections from Power BI or any other tool which can connect to ODBC).&lt;/p&gt;&#xA;&lt;p&gt;If you use Power BI, then the process is as follows&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

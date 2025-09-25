@@ -6,13 +6,14 @@
     <description>Recent content in Automations on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <lastBuildDate>Mon, 27 Nov 2023 10:15:18 +0000</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/tags/automations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>5. Cross References and Automations</title>
       <link>https://docs.agilebase.co.uk/guides/guide1-crm/cross-reference-and-automations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/guides/guide1-crm/cross-reference-and-automations/</guid>
-      <description>Learning Aim: Using Cross Reference (Xref) fields in a table definition to display related info. Introduce WorkFlows (Buttons, sending emails, document generation). Being organised by using a naming convention!&#xA;Prerequisites: User to have watched “Add a Sales Pipeline” and “Introducing calculated” video. Understand how to create calculations in views.&#xA;Introduction This part of the guide starts to introduce some more powerful and advanced features of the agileBase system. It looks at how we can give users of our basic CRM some power ups that make it a better user experience.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Using Cross Reference (Xref) fields in a table definition to display related info. Introduce WorkFlows (Buttons, sending emails, document generation). Being organised by using a naming convention!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Add a Sales Pipeline” and “Introducing calculated” video. Understand how to create calculations in views.&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;This part of the guide starts to introduce some more powerful and advanced features of the agileBase system. It looks at how we can give users of our basic CRM some power ups that make it a better user experience. Let’s continue with our Sales Opportunities and introduce the concept of cross referencing data before adding an automated email ‘reminder’ and a button to the user interface…&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

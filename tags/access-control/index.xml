@@ -13,7 +13,7 @@
       <link>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</link>
       <pubDate>Thu, 31 Aug 2023 13:00:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</guid>
-      <description>Learning Aim: Understand basic database privileges&amp;hellip; Roles and giving them to Users!&#xA;Prerequisites: To have built a multi table system, to have more than themselves as users.&#xA;Introduction AgileBase uses the classic concept of Roles to help you control the access users have to the system you are building. A classic metaphor would be the manager of an office has the keys to the building, whilst the staff do not. The person acting as the manager may change overtime, but the permission and privileges (in this case having keys) does not!</description>
+      <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Understand basic database privileges&amp;hellip; Roles and giving them to Users!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; To have built a multi table system, to have more than themselves as users.&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;AgileBase uses the classic concept of Roles to help you control the access users have to the system you are building.&#xA;A classic metaphor would be the manager of an office has the keys to the building, whilst the staff do not. The person acting as the manager may change overtime, but the permission and privileges (in this case having keys) does not!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

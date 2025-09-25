@@ -6,14 +6,21 @@
     <description>Recent content in File fields on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Aug 2025 07:16:54 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 25 Sep 2025 09:30:47 +0100</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Document templates</title>
       <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/</link>
       <pubDate>Fri, 08 May 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/document-templates/</guid>
-      <description>Document templates in Agilebase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.&#xA;The same templating system is used for both generating documents (which can be done automatically with a workflow or manually) and displaying output to be printed.</description>
+      <description>&lt;p&gt;Document templates in Agilebase are typically used to create output that needs to be printed or emailed, for example form letters and especially anything that needs to be branded. They can be used for some quite complex and large documents, for example one customer uses them to create branded multi-page reports that are sold to customers, complete with custom fonts, layouts, images and colours.&lt;/p&gt;&#xA;&lt;p&gt;The same templating system is used for both generating documents (which can be done automatically with a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/send-document-generator/&#34;&gt;workflow&lt;/a&gt; or &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/file-field-options/#template&#34;&gt;manually&lt;/a&gt;) and displaying output to be printed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Merging PDFs</title>
+      <link>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/merging-pdfs/</link>
+      <pubDate>Thu, 25 Sep 2025 09:00:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/merging-pdfs/</guid>
+      <description>&lt;p&gt;Merging is a special case of PDF generation. It&amp;rsquo;s possible to combine PDF documents from different fields and indeed different tables into one, which gets created when you press the &amp;lsquo;generate&amp;rsquo; button or the workflow to generate a file runs.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Add a file field to a table, to store the combined PDF&lt;/li&gt;&#xA;&lt;li&gt;Create a single view containing the file fields you want to merge, each field a separate column.&lt;/li&gt;&#xA;&lt;li&gt;Edit the file field from step 1. Set the template name to &amp;lsquo;_merge&amp;rsquo; and for the &amp;lsquo;view to use&amp;rsquo;, select the view above&lt;/li&gt;&#xA;&lt;li&gt;Edit the view and turn it into a document generation workflow&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Under &amp;lsquo;workflow - PDFS&amp;rsquo;, set or create the &amp;rsquo;log update to&amp;rsquo; date field&lt;/li&gt;&#xA;&lt;li&gt;If you want the workflow to run automatically, also choose a frequency&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
   </channel>
 </rss>

@@ -13,21 +13,21 @@
       <link>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/</link>
       <pubDate>Mon, 04 May 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/</guid>
-      <description>Tabs are one way of exposing relationships between tables, to allow the user to navigate the structure of an application. For example, in a companies table, a contacts tab may show all the people employed at that particular company.&#xA;The user interface can display more than two levels of structure on screen in other ways (e.g. showing a menu in a tab) and wherever the user is, they can navigate up or down the hierarchy of data.</description>
+      <description>&lt;p&gt;Tabs are one way of exposing relationships between tables, to allow the user to navigate the structure of an application. For example, in a companies table, a contacts tab may show all the people employed at that particular company.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;The user interface can display more than two levels of structure on screen in other ways (e.g. showing a menu in a tab) and wherever the user is, they can navigate up or down the hierarchy of data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>To grandchild records</title>
       <link>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/to-grandchild-records/</link>
       <pubDate>Mon, 04 May 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/to-grandchild-records/</guid>
-      <description>Tabs allow navigation from a parent record to a child, e.g. an organisation to a contact, order to order line, recipe to ingredient etc.&#xA;Of course, that child record may itself have subsidiary records of its own, e.g. a contact may have a tab for their training records.&#xA;When that&amp;rsquo;s the case, Agilebase exposes both tiers of data on screen so the user can jump from the top level, in this example the organisation, directly to a contact&amp;rsquo;s training records.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/tabs/&#34;&gt;Tabs&lt;/a&gt; allow navigation from a parent record to a child, e.g. an organisation to a contact, order to order line, recipe to ingredient etc.&lt;/p&gt;&#xA;&lt;p&gt;Of course, that child record may itself have subsidiary records of its own, e.g. a contact may have a tab for their training records.&lt;/p&gt;&#xA;&lt;p&gt;When that&amp;rsquo;s the case, Agilebase exposes both tiers of data on screen so the user can jump from the top level, in this example the organisation, directly to a contact&amp;rsquo;s training records.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Upwards Navigation</title>
       <link>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/upwards-navigation/</link>
       <pubDate>Mon, 04 May 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/tables/hierarchy-navigation/upwards-navigation/</guid>
-      <description>Whenever a relation field is used in a table, the user has the option to navigate to the related record by clicking a link next to the relation.&#xA;However its useful to know that if the relation is one of the first fields in the table, i.e. at the top of the form, then it will be treated as having greater importance by the user interface. In this case, the relation will appear as a relation heading, making it clear the &amp;lsquo;parent-child&amp;rsquo; relationship i.</description>
+      <description>&lt;p&gt;Whenever a relation field is used in a table, the user has the option to navigate to the related record by clicking a link next to the relation.&lt;/p&gt;&#xA;&lt;p&gt;However its useful to know that if the relation is one of the &lt;strong&gt;first fields&lt;/strong&gt; in the table, i.e. at the top of the form, then it will be treated as having greater importance by the user interface. In this case, the relation will appear as a relation heading, making it clear the &amp;lsquo;parent-child&amp;rsquo; relationship i.e. that one record &amp;lsquo;belongs&amp;rsquo; to another.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

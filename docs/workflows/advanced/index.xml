@@ -13,28 +13,28 @@
       <link>https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/</guid>
-      <description>How to chain Workflows To set the next workflow in a chain, simply set the appropriate view in the Chain workflow section of the workflow - edit records panel when editing a view. The next workflow in the chain will run as soon as the previous finishes.&#xA;Auto-connect new records to records created in previous chained workflow steps This option is available when using a workflow that creates new records. Say for example a workflow consists of two steps</description>
+      <description>&lt;h2 id=&#34;how-to-chain-workflows&#34;&gt;How to chain Workflows&lt;/h2&gt;&#xA;&lt;p&gt;To set the next workflow in a chain, simply set the appropriate view in the Chain workflow section of the &lt;em&gt;workflow - edit records&lt;/em&gt; panel when editing a view. The next workflow in the chain will run as soon as the previous finishes.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-chain.png&#34; alt=&#34;Configuring the PULL API&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;auto-connect-new-records-to-records-created-in-previous-chained-workflow-steps&#34;&gt;Auto-connect new records to records created in previous chained workflow steps&lt;/h2&gt;&#xA;&lt;p&gt;This option is available when using a workflow that creates new records. Say for example a workflow consists of two steps&lt;/p&gt;</description>
     </item>
     <item>
       <title>Recursive Workflows</title>
       <link>https://docs.agilebase.co.uk/docs/workflows/advanced/recursive-workflows/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/recursive-workflows/</guid>
-      <description>Recursion is a rather heavyweight feature of the workflow capabilities of the Agilebase platform.&#xA;If you’re interested in a bit of maths and want to know what that means, there’s a great tutorial about the concept at the Khan Academy.&#xA;If not, never mind, the takeaway is it allows an administrator to set up workflows that weren’t possible before, particularly where you have networks of people or things. For example, if your CRM links people who know each other, you could create a list of all people 1 step removed, 2 steps etc.</description>
+      <description>&lt;p&gt;Recursion is a rather heavyweight feature of the workflow capabilities of the Agilebase platform.&lt;/p&gt;&#xA;&lt;p&gt;If you’re interested in a bit of maths and want to know what that means, there’s a great &lt;a href=&#34;https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/recursion&#34;&gt;tutorial about the concept at the Khan Academy&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;If not, never mind, the takeaway is it allows an administrator to set up workflows that weren’t possible before, particularly where you have networks of people or things. For example, if your CRM links people who know each other, you could create a list of all people 1 step removed, 2 steps etc.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Running on record creation or load</title>
       <link>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-on-create/</link>
       <pubDate>Tue, 31 Aug 2021 16:00:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-on-create/</guid>
-      <description>This can be set up in the table&amp;rsquo;s workflow options.</description>
+      <description>&lt;p&gt;This can be set up in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/workflow/&#34;&gt;table&amp;rsquo;s workflow options&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Workflows Buttons</title>
       <link>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/</guid>
-      <description>Some workflows need to be run on an adhoc basis, initiated by a user. In these instances it can be useful to assign the Workflow to run behind a Button.&#xA;N.b. In both cases below it is necessary for the Workflow to marked as Manual.&#xA;Workflow Buttons on a Form To add the Workflow button to a Table&amp;rsquo;s form simply create a new field of type Referenced Data with the workflow as the source.</description>
+      <description>&lt;p&gt;Some &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/&#34;&gt;workflows&lt;/a&gt; need to be run on an adhoc basis, initiated by a user.&#xA;In these instances it can be useful to assign the Workflow to run behind a Button.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;N.b. In both cases below it is necessary for the Workflow to marked as Manual.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;workflow-buttons-on-a-form&#34;&gt;Workflow Buttons on a Form&lt;/h2&gt;&#xA;&lt;p&gt;To add the Workflow button to a Table&amp;rsquo;s form simply create a new field of type &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;Referenced Data&lt;/a&gt; with the workflow as the source.&#xA;When the Workflow is run, it will be filtered by the ID of the record. (You may wish read up about &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/chaining-workflows/&#34;&gt;Chaining Workflows&lt;/a&gt; )&#xA;It is often necessary to put some thought in to the visibility of the button - it can be confusing to the user that a button is present when it does nothing due to filters they cannot know about.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

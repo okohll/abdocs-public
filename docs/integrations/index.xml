@@ -13,84 +13,84 @@
       <link>https://docs.agilebase.co.uk/docs/integrations/test-server/</link>
       <pubDate>Thu, 07 Jul 2022 12:15:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/test-server/</guid>
-      <description>When systems get to a certain size, in particular when you start integrating with apps representing other parts of the business, then it can be beneficial to be able to test new developments and changes before putting them live.&#xA;For example, when accepting orders via an e-commerce website, or sending invoices to an accounting package, or accepting incoming stock change records from Goods In staff using a bar code scanning application.</description>
+      <description>&lt;p&gt;When systems get to a certain size, in particular when you start integrating with apps representing other parts of the business, then it can be beneficial to be able to test new developments and changes before putting them live.&lt;/p&gt;&#xA;&lt;p&gt;For example, when accepting orders via an e-commerce website, or sending invoices to an accounting package, or accepting incoming stock change records from Goods In staff using a bar code scanning application.&lt;/p&gt;</description>
     </item>
     <item>
       <title>External Reporting</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/external-reporting/</link>
       <pubDate>Fri, 07 Jul 2023 08:06:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/external-reporting/</guid>
-      <description>As well as using the REST API, an ODBC database link can send data to external tools such as Power BI, Tableau, Apache Superset or preset.io or even just Excel.&#xA;Please see Business Intelligence for full details.</description>
+      <description>&lt;p&gt;As well as using the REST API, an ODBC database link can send data to external tools such as Power BI, Tableau, Apache Superset or preset.io or even just Excel.&lt;/p&gt;&#xA;&lt;p&gt;Please see &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/business-intelligence/&#34;&gt;Business Intelligence&lt;/a&gt; for full details.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a POST API</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</guid>
-      <description>Firstly, identify the table into which you wish to receive incoming data. Edit that table and open the API panel. Tick &amp;lsquo;Public form or API data entry’, which will create an API for the table.&#xA;To protect the system from spam input, we also suggest you tick &amp;lsquo;Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.</description>
+      <description>&lt;p&gt;Firstly, identify the table into which you wish to receive incoming data. Edit that table and open the &lt;em&gt;API&lt;/em&gt; panel. Tick &amp;lsquo;Public form or API data entry’, which will create an API for the table.&lt;/p&gt;&#xA;&lt;p&gt;To protect the system from spam input, we also suggest you tick &amp;lsquo;Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a PUSH API</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</link>
       <pubDate>Mon, 01 Jun 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</guid>
-      <description>Firstly, create a view which contains the data you wish to send In the &amp;lsquo;Use API&amp;rsquo; panel, enter a URL into the Push URL field. This is the URL that Agilebase will POST to when there’s new data. In the dropdown under that, Log time of push to, create a new date field (or choose an existing one). The API will update this field in a record when that record is included in a push to the external system The system will now make a POST to the URL specified in step 2 whenever there’s new data to send.</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;Firstly, create a view which contains the data you wish to send&lt;/li&gt;&#xA;&lt;li&gt;In the &amp;lsquo;Use API&amp;rsquo; panel, enter a URL into the &lt;em&gt;Push URL&lt;/em&gt; field. This is the URL that Agilebase will POST to when there’s new data.&lt;/li&gt;&#xA;&lt;li&gt;In the dropdown under that, &lt;em&gt;Log time of push to&lt;/em&gt;, create a new date field (or choose an existing one). The API will update this field in a record when that record is included in a push to the external system&#xA;The system will now make a POST to the URL specified in step 2 whenever there’s new data to send. It will contain a JSON representation of all the data in the view.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-push-new.png&#34; alt=&#34;Configuring the PUSH API&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a PULL API</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/</link>
       <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/</guid>
-      <description>Connections to Agilebase are made using standard HTTP calls. This makes it easy for developers in any language, so PHP, Java, even JavaScript in a browser can be used.&#xA;The first step is to create a view in Agilebase that contains the data you want to make available to other apps. You can use the standard view creation features of the administrator interface, including adding fields and calculations, sorts and filters.</description>
+      <description>&lt;p&gt;Connections to Agilebase are made using standard HTTP calls. This makes it easy for developers in any language, so PHP, Java, even JavaScript in a browser can be used.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The first step is to create a view in Agilebase that contains the data you want to make available to other apps. You can use the standard view creation features of the administrator interface, including adding fields and calculations, sorts and filters.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PUSH API worked example - Zapier</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/push-example-zapier/</link>
       <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/push-example-zapier/</guid>
-      <description>One of the most common methods of pushing data into other systems is to use Zapier, which is a ‘drag and drop’ integration tool that requires no programming (just like Agilebase itself).&#xA;We will use a worked example: building a system to send a ‘hello’ SMS message whenever a new contact is added to our database. In real life, you may send appointment reminders or other notifications by text. Of course Zapier integrations aren&amp;rsquo;t limited to sending text messages, there are tons of third party systems you can use, under many different categories, but text messages are a nice simple example to work through.</description>
+      <description>&lt;p&gt;One of the most common methods of pushing data into other systems is to use &lt;a href=&#34;https://zapier.com&#34;&gt;Zapier&lt;/a&gt;, which is a ‘drag and drop’ integration tool that requires no programming (just like Agilebase itself).&lt;/p&gt;&#xA;&lt;p&gt;We will use a worked example: building a system to send a ‘hello’ SMS message whenever a new contact is added to our database. In real life, you may send appointment reminders or other notifications by text. Of course Zapier integrations aren&amp;rsquo;t limited to sending text messages, there are tons of third party systems you can use, under many different categories, but text messages are a nice simple example to work through.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Complete API worked example</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/complex-example/</link>
       <pubDate>Fri, 29 Oct 2021 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/complex-example/</guid>
-      <description>Here&amp;rsquo;s a great example of using an API to provide business benefits, that we use ourselves here at agileChilli. As well as outlining the steps necessary to set up the API, with links to other documentation pages where relevant, we also include other elements of the solution, like workflows and charting, which often form a part of integrations.&#xA;The scenario is that we want to be able to look up and store multiple years worth of financial data for any UK company we hold in our CRM system.</description>
+      <description>&lt;p&gt;Here&amp;rsquo;s a great example of using an API to provide business benefits, that we use ourselves here at agileChilli. As well as outlining the steps necessary to set up the API, with links to other documentation pages where relevant, we also include other elements of the solution, like workflows and charting, which often form a part of integrations.&lt;/p&gt;&#xA;&lt;p&gt;The scenario is that we want to be able to look up and store multiple years worth of financial data for any UK company we hold in our CRM system. It can be useful to be able to have this data to hand to aid sales, when considering partnering or when doing competitor/market analysis for example - see our &lt;a href=&#34;https://blog.agilebase.co.uk/2021/11/01/the-value-of-integrating-with-endole/&#34;&gt;CEO&amp;rsquo;s blog post&lt;/a&gt; on the subject.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Comments integration</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/comments-integration/</link>
       <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/comments-integration/</guid>
-      <description>When a comment is added to a record in Agilebase, a copy can be sent to your Slack or Teams workspace, to a specific channel appropriate to the tile.&#xA;In fact, the comment can be sent to any external service that accepts push notifications to a URL. We recommend setting up a webhook URL via an easy to use integration tool like Zapier or Microsoft Power Automate. That tool can then be set up to post the message to any supported service of your choice.</description>
+      <description>&lt;p&gt;When a comment is added to a record in Agilebase, a copy can be sent to your Slack or Teams workspace, to a specific channel appropriate to the tile.&lt;/p&gt;&#xA;&lt;p&gt;In fact, the comment can be sent to any external service that accepts push notifications to a URL. We recommend setting up a webhook URL via an easy to use integration tool like Zapier or Microsoft Power Automate. That tool can then be set up to post the message to any supported service of your choice.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exporting to spreadsheet</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/exporting-to-spreadsheet/</link>
       <pubDate>Tue, 02 Jun 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/exporting-to-spreadsheet/</guid>
-      <description>A spreadsheet export is the simplest way for everyday users to get data out of Agilebase without requiring that an administrator sets up an integration.&#xA;Details of how to allow this are in the security and compliance section.</description>
+      <description>&lt;p&gt;A spreadsheet export is the simplest way for everyday users to get data out of Agilebase without requiring that an administrator sets up an integration.&lt;/p&gt;&#xA;&lt;p&gt;Details of how to allow this are in the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/exporting/&#34;&gt;security and compliance&lt;/a&gt; section.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Importing from spreadsheet</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/importing/</link>
       <pubDate>Wed, 03 Jun 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/importing/</guid>
-      <description>Agilebase allows data to be imported from CSV (Comma Separated Variable) files. All popular spreadsheet software can save data in this format.&#xA;Anyone with develop privileges on a table can import data into it.&#xA;In the tiles interface, load any view created from the table to import into. Scroll to the bottom of the rows and press the cloud import icon, then follow through the prompts.&#xA;Data can be imported in two ways.</description>
+      <description>&lt;p&gt;Agilebase allows data to be imported from CSV (Comma Separated Variable) files. All popular spreadsheet software can save data in this format.&lt;/p&gt;&#xA;&lt;p&gt;Anyone with &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/privileges/&#34;&gt;&lt;strong&gt;develop&lt;/strong&gt; privileges&lt;/a&gt; on a table can import data into it.&lt;/p&gt;&#xA;&lt;p&gt;In the tiles interface, load any view created from the table to import into. Scroll to the bottom of the rows and press the cloud import icon, then follow through the prompts.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/import-link.png&#34; alt=&#34;import link&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Data can be imported in two ways.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Authenticating users via the API</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/testing-a-login/</link>
       <pubDate>Tue, 19 Jan 2021 12:41:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/testing-a-login/</guid>
-      <description>Sometimes when developing an app that integrates with Agilebase, you may want to allow it to query the system to check the login details a user provides. In other words, let a user &amp;rsquo;log in&amp;rsquo; via your app.&#xA;The API mechanisms described in this section (push, pull etc.) don&amp;rsquo;t require a login to use, they work only via the API keys as described, however your app may still wish to test a users login to ensure they are a valid user.</description>
+      <description>&lt;p&gt;Sometimes when developing an app that integrates with Agilebase, you may want to allow it to query the system to check the login details a user provides. In other words, let a user &amp;rsquo;log in&amp;rsquo; via your app.&lt;/p&gt;&#xA;&lt;p&gt;The API mechanisms described in this section (push, pull etc.) don&amp;rsquo;t require a login to use, they work only via the API keys as described, however your app may still wish to test a users login to ensure they are a valid user.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Email Integration</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/email-integration/</link>
       <pubDate>Fri, 20 Jun 2025 17:54:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/email-integration/</guid>
-      <description>Agilebase can accept incoming emails and attach them to relevant records e.g. attaching an email from a customer to that customer&amp;rsquo;s record.&#xA;This works by creating an email address for the system. Any emails forwarded to that address, or cc&amp;rsquo;d or bcc&amp;rsquo;d to it will be saved in the database. Agilebase will check the people involved in the email (to:, from: and cc: addresses) and find the right record to attach it to.</description>
+      <description>&lt;p&gt;Agilebase can accept incoming emails and attach them to relevant records e.g. attaching an email from a customer to that customer&amp;rsquo;s record.&lt;/p&gt;&#xA;&lt;p&gt;This works by creating an email address for the system. Any emails forwarded to that address, or cc&amp;rsquo;d or bcc&amp;rsquo;d to it will be saved in the database. Agilebase will check the people involved in the email (to:, from: and cc: addresses) and find the right record to attach it to.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -13,21 +13,21 @@
       <link>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/tiles/</link>
       <pubDate>Tue, 17 Oct 2023 13:00:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/tiles/</guid>
-      <description>Tiles A tile on a user’s home screen represents an application or module of an application. It is a collection of data and functionality that forms a coherent whole For detailed information about Tiles visit&#xA;Let’s start by looking at the collection of tiles this system has configured Using the developer interface you can access your list of current tiles. Clicking on one provides access to the configuration options. Obviously setting the title is key as it provides the primary information to the user as to what purpose it serves.</description>
+      <description>&lt;h2 id=&#34;tiles&#34;&gt;Tiles&lt;/h2&gt;&#xA;&lt;p&gt;A tile on a user’s home screen represents an application or module of an application. It is a collection of data and functionality that forms a coherent whole&#xA;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;For detailed information about Tiles visit&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Let’s start by looking at the collection of tiles this system has configured&#xA;Using the developer interface you can access your list of current tiles.&#xA;&lt;img src=&#34;https://docs.agilebase.co.uk/tile-list.png&#34; alt=&#34;Developer view - list of tiles&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Clicking on one provides access to the configuration options.&#xA;&lt;img src=&#34;https://docs.agilebase.co.uk/tile-individual-details.png&#34; alt=&#34;Tile details&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Guide 3.2 - Views: Advanced UI Control</title>
       <link>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/views/</link>
       <pubDate>Tue, 17 Oct 2023 13:00:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/views/</guid>
-      <description>Views There are several videos and help pages you can find about creating views. We are going to concentrate on the parts that affect how the user interacts with them. Let us start with an important concept&amp;hellip; Your views name, and how a naming convention affects the menu. (video coming soon} Start by giving your view a simple name, you can see it is listed under a menu title that is the name of the tile.</description>
+      <description>&lt;h2 id=&#34;views&#34;&gt;Views&lt;/h2&gt;&#xA;&lt;p&gt;There are several videos and help pages you can find about creating views. We are going to concentrate on the parts that affect how the user interacts with them.&#xA;Let us start with an important concept&amp;hellip; Your views name, and how a naming convention affects the menu.&#xA;(video coming soon}&#xA;Start by giving your view a simple name, you can see it is listed under a menu title that is the name of the tile.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Guide 3.3 - Records: Advanced UI Control</title>
       <link>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/records/</link>
       <pubDate>Tue, 17 Oct 2023 13:00:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/records/</guid>
-      <description>Records The Full record view is the interface that a user uses to update and create data in the underlying source Table.&#xA;This User Interface isn’t simply every field shown on the screen. The power of agilebase comes from providing facilities to control how the user interacts with their data. Put another way, by allowing developers to control individual fields, decide when to show them and group them together etc, the job of entering data becomes a pleasant user experience.</description>
+      <description>&lt;h2 id=&#34;records&#34;&gt;Records&lt;/h2&gt;&#xA;&lt;p&gt;The Full record view is the interface that a user uses to update and create data in the underlying source Table.&lt;/p&gt;&#xA;&lt;p&gt;This User Interface isn’t simply every field shown on the screen. The power of agilebase comes from providing facilities to control how the user interacts with their data. Put another way, by allowing developers to control individual fields, decide when to show them and group them together etc, the job of entering data becomes a pleasant user experience.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

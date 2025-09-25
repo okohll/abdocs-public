@@ -13,7 +13,7 @@
       <link>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</link>
       <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</guid>
-      <description>Learning Aim: Introduce Kanban / Card view. Power of dropdowns on fields. Show how easy to add graphs. Show off the advanced UI elements of aB&#xA;Prerequisites: User to have watched “Capturing Company and Contact details” video. Understand relational data&#xA;Introduction In this step of our guide we going to look at adding a dropdown field to &amp;ldquo;control&amp;rdquo; data input as we want to set up a Kanban board approach to managing Sales Opportunities.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;  Introduce Kanban / Card view. Power of dropdowns on fields. Show how easy to add graphs. Show off the advanced UI elements of aB&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Capturing Company and Contact details” video. Understand relational data&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;In this step of our guide we going to look at adding a dropdown field to &amp;ldquo;control&amp;rdquo; data input as we want to set up a Kanban board approach to managing Sales Opportunities.&#xA;This video assumes you are happy creating tables so jumps to the point of adding the Dropdown field.&#xA;If you are following along and want to build this table please copy the following table structure&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
