@@ -6,14 +6,14 @@
     <description>Recent content in Field Options on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 10 Dec 2024 10:45:28 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Oct 2025 10:33:02 +0100</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/docs/fields/field-options/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Common Options</title>
       <link>https://docs.agilebase.co.uk/docs/fields/field-options/common-options/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/fields/field-options/common-options/</guid>
-      <description>&lt;h2 id=&#34;capitalise-field-name&#34;&gt;Capitalise field name&lt;/h2&gt;&#xA;&lt;p&gt;By default Agilebase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. &amp;lsquo;pH&amp;rsquo; or &amp;lsquo;Length (m)&amp;rsquo;, which would otherwise show as &amp;lsquo;PH&amp;rsquo; and &amp;lsquo;Length (M)&amp;rsquo;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;icon&#34;&gt;Icon&lt;/h2&gt;&#xA;&lt;p&gt;Rather than displaying a field name, show an icon, chosen from &lt;a href=&#34;https://fontawesome.com/icons&#34;&gt;https://fontawesome.com/icons&lt;/a&gt;. For example, to show a phone icon for a phone number field, you could enter &lt;code&gt;phone&lt;/code&gt;, for an email field &lt;code&gt;envelope&lt;/code&gt; or a twitter handle &lt;code&gt;twitter&lt;/code&gt;.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;capitalise-field-name&#34;&gt;Capitalise field name&lt;/h2&gt;&#xA;&lt;p&gt;By default Agilebase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. &amp;lsquo;pH&amp;rsquo; or &amp;lsquo;Length (m)&amp;rsquo;, which would otherwise show as &amp;lsquo;PH&amp;rsquo; and &amp;lsquo;Length (M)&amp;rsquo;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;icon&#34;&gt;Icon&lt;/h2&gt;&#xA;&lt;p&gt;Rather than displaying a field name, show an icon, chosen from &lt;a href=&#34;https://fontawesome.com/icons&#34;&gt;https://fontawesome.com/icons&lt;/a&gt;. For example, to show a phone icon for a phone number field, you could enter &lt;code&gt;fa-phone&lt;/code&gt;, for an email field &lt;code&gt;fa-envelope&lt;/code&gt; or a twitter handle &lt;code&gt;fa-twitter&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Text Field Options</title>

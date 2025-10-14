@@ -6,7 +6,7 @@
     <description>Recent content in V6 on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Sep 2025 09:30:47 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 14 Oct 2025 10:33:02 +0100</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/tags/v6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security Features</title>
@@ -160,7 +160,7 @@
       <link>https://docs.agilebase.co.uk/docs/fields/field-options/common-options/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/fields/field-options/common-options/</guid>
-      <description>&lt;h2 id=&#34;capitalise-field-name&#34;&gt;Capitalise field name&lt;/h2&gt;&#xA;&lt;p&gt;By default Agilebase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. &amp;lsquo;pH&amp;rsquo; or &amp;lsquo;Length (m)&amp;rsquo;, which would otherwise show as &amp;lsquo;PH&amp;rsquo; and &amp;lsquo;Length (M)&amp;rsquo;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;icon&#34;&gt;Icon&lt;/h2&gt;&#xA;&lt;p&gt;Rather than displaying a field name, show an icon, chosen from &lt;a href=&#34;https://fontawesome.com/icons&#34;&gt;https://fontawesome.com/icons&lt;/a&gt;. For example, to show a phone icon for a phone number field, you could enter &lt;code&gt;phone&lt;/code&gt;, for an email field &lt;code&gt;envelope&lt;/code&gt; or a twitter handle &lt;code&gt;twitter&lt;/code&gt;.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;capitalise-field-name&#34;&gt;Capitalise field name&lt;/h2&gt;&#xA;&lt;p&gt;By default Agilebase displays field names in Title Case. Un-ticking this option disables that, which can be useful for special cases like e.g. &amp;lsquo;pH&amp;rsquo; or &amp;lsquo;Length (m)&amp;rsquo;, which would otherwise show as &amp;lsquo;PH&amp;rsquo; and &amp;lsquo;Length (M)&amp;rsquo;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;icon&#34;&gt;Icon&lt;/h2&gt;&#xA;&lt;p&gt;Rather than displaying a field name, show an icon, chosen from &lt;a href=&#34;https://fontawesome.com/icons&#34;&gt;https://fontawesome.com/icons&lt;/a&gt;. For example, to show a phone icon for a phone number field, you could enter &lt;code&gt;fa-phone&lt;/code&gt;, for an email field &lt;code&gt;fa-envelope&lt;/code&gt; or a twitter handle &lt;code&gt;fa-twitter&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Field Types</title>
@@ -552,7 +552,7 @@
       <link>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</guid>
-      <description>&lt;p&gt;To access them:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the administration interface, expand the &lt;em&gt;Administration&lt;/em&gt; section at the bottom left&lt;/li&gt;&#xA;&lt;li&gt;Select &lt;em&gt;company&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;Click the pencil icon in the top toolbar to edit&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;mandate-2fa&#34;&gt;Mandate 2FA&lt;/h3&gt;&#xA;&lt;p&gt;When this is ticked, all users in the organisation will be required to set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/2fa-setup/&#34;&gt;Two Factor Authentication&lt;/a&gt; before they can see or use any features of the application.&lt;/p&gt;&#xA;&lt;p&gt;We recommend that all administrators enable this if possible. Even when 2FA is mandated, admins can still &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#two-factor-authentication&#34;&gt;disable it temporarily&lt;/a&gt; on a per-user basis. The next time they log in they will be prompted to set it up again.&lt;/p&gt;</description>
+      <description>&lt;p&gt;To access them:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;From the homepage, click your user icon at the top right of the screen and choose &lt;em&gt;Profile&lt;/em&gt; from the menu&lt;/li&gt;&#xA;&lt;li&gt;Go to Account -&amp;gt; Organisation Settings from the lefthand navigation bar&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;mandate-2fa&#34;&gt;Mandate 2FA&lt;/h3&gt;&#xA;&lt;p&gt;When this is ticked, all users in the organisation will be required to set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/2fa-setup/&#34;&gt;Two Factor Authentication&lt;/a&gt; before they can see or use any features of the application.&lt;/p&gt;&#xA;&lt;p&gt;We recommend that all administrators enable this if possible. Even when 2FA is mandated, admins can still &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#two-factor-authentication&#34;&gt;disable it temporarily&lt;/a&gt; on a per-user basis. The next time they log in they will be prompted to set it up again.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a POST API</title>
