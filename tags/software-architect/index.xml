@@ -6,7 +6,7 @@
     <description>Recent content in Software Architect on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 14 Oct 2025 10:33:02 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 16 Oct 2025 20:20:45 +0100</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/tags/software-architect/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security Features</title>
@@ -209,7 +209,7 @@
       <link>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</guid>
-      <description>&lt;p&gt;To access them:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;From the homepage, click your user icon at the top right of the screen and choose &lt;em&gt;Profile&lt;/em&gt; from the menu&lt;/li&gt;&#xA;&lt;li&gt;Go to Account -&amp;gt; Organisation Settings from the lefthand navigation bar&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;mandate-2fa&#34;&gt;Mandate 2FA&lt;/h3&gt;&#xA;&lt;p&gt;When this is ticked, all users in the organisation will be required to set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/2fa-setup/&#34;&gt;Two Factor Authentication&lt;/a&gt; before they can see or use any features of the application.&lt;/p&gt;&#xA;&lt;p&gt;We recommend that all administrators enable this if possible. Even when 2FA is mandated, admins can still &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#two-factor-authentication&#34;&gt;disable it temporarily&lt;/a&gt; on a per-user basis. The next time they log in they will be prompted to set it up again.&lt;/p&gt;</description>
+      <description>&lt;p&gt;To access them:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;From the homepage, click your user icon at the top right of the screen and choose &lt;em&gt;Profile&lt;/em&gt; from the menu&lt;/li&gt;&#xA;&lt;li&gt;Go to &lt;em&gt;Account&lt;/em&gt; -&amp;gt; &lt;em&gt;Organisation Settings&lt;/em&gt; from the lefthand navigation bar&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;mandate-2fa&#34;&gt;Mandate 2FA&lt;/h3&gt;&#xA;&lt;p&gt;When this is ticked, all users in the organisation will be required to set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/2fa-setup/&#34;&gt;Two Factor Authentication&lt;/a&gt; before they can see or use any features of the application.&lt;/p&gt;&#xA;&lt;p&gt;We recommend that all administrators enable this if possible. Even when 2FA is mandated, admins can still &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#two-factor-authentication&#34;&gt;disable it temporarily&lt;/a&gt; on a per-user basis. The next time they log in they will be prompted to set it up again.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Send Data to a third party via API</title>
