@@ -27,14 +27,14 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-04-24T16:40:00+01:00">
-    <meta property="article:modified_time" content="2025-05-31T10:33:56+01:00">
+    <meta property="article:modified_time" content="2025-10-23T14:15:54+01:00">
     <meta property="article:tag" content="Junior Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Creating a POST API">
   <meta itemprop="description" content="A powerful automation feature that can allow a third party system to POST data in to Agilebase.">
   <meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2025-05-31T10:33:56+01:00">
+  <meta itemprop="dateModified" content="2025-10-23T14:15:54+01:00">
   <meta itemprop="wordCount" content="1175">
   <meta itemprop="keywords" content="Junior Software Architect,V6">
   <meta name="twitter:card" content="summary">
@@ -155,7 +155,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.7dede0530aa100b093a2b0fc5d88f3fd.json"
+    data-offline-search-index-json-src="/offline-search-index.85b99cd36a401fe219535ed3620152e1.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -179,7 +179,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.7dede0530aa100b093a2b0fc5d88f3fd.json"
+    data-offline-search-index-json-src="/offline-search-index.85b99cd36a401fe219535ed3620152e1.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -616,11 +616,11 @@
 <h2 id="openapi-swagger-description">OpenAPI (Swagger) description</h2>
 <p>You can see an OpenAPI description of the API in the <em>Use API</em> panel when editing the table. The &lsquo;View / download OpenAPI definition of this API&rsquo; link will let you access it.</p>
 <p>Alternatively, if you don&rsquo;t have a login for Agilebase, you can call use a public URL</p>
-<p><a href="https://cloud.agilebase.co.uk/Agilebase/Public.ab?describe_table=true&amp;c=%5Bmycompanyidentifier%5D&amp;t=%5Bmytableidentifier%5D">https://cloud.agilebase.co.uk/Agilebase/Public.ab?describe_table=true&amp;c=[mycompanyidentifier]&amp;t=[mytableidentifier]</a></p>
+<p><a href="https://cloud.agilebase.co.uk/agileBase/Public.ab?describe_table=true&amp;c=%5Bmycompanyidentifier%5D&amp;t=%5Bmytableidentifier%5D">https://cloud.agilebase.co.uk/agileBase/Public.ab?describe_table=true&amp;c=[mycompanyidentifier]&amp;t=[mytableidentifier]</a></p>
 <p>whilst also providing the required Authorization header.</p>
 <h2 id="posting-data">Posting data</h2>
 <p>Firstly, identify the Agilebase account by including a &lsquo;c&rsquo; parameter in the URL, i.e.</p>
-<p><a href="https://cloud.agilebase.co.uk/Agilebase/Public.ab?save_records=true&amp;c=%5Bmycompanyidentifier%5D">https://cloud.agilebase.co.uk/Agilebase/Public.ab?save_records=true&amp;c=[mycompanyidentifier]</a></p>
+<p><a href="https://cloud.agilebase.co.uk/agileBase/Public.ab?save_records=true&amp;c=%5Bmycompanyidentifier%5D">https://cloud.agilebase.co.uk/agileBase/Public.ab?save_records=true&amp;c=[mycompanyidentifier]</a></p>
 <p>The <em>API</em> panel will provide that URL for you.</p>
 <p>As the body of the post, provide a JSON object containing an array of records to save or update, &ldquo;data&rdquo;.</p>
 <p>Each object in the array must have parameters</p>
@@ -679,7 +679,7 @@ However that may change in future, if we add the facility to use a single Author
 <li><em>t = [internaltableid]</em></li>
 </ul>
 <p>The post URL is</p>
-<p><a href="https://cloud.agilebase.co.uk/Agilebase/Public.ab">https://cloud.agilebase.co.uk/Agilebase/Public.ab</a></p>
+<p><a href="https://cloud.agilebase.co.uk/agileBase/Public.ab">https://cloud.agilebase.co.uk/agileBase/Public.ab</a></p>
 <p>The form needs to be posted using the method POST.</p>
 <p>Remember also to set the &lsquo;Authorization&rsquo; HTTP header if that option has been selected.</p>
 <h4 id="specifying-the-data-to-save">Specifying the data to save</h4>
@@ -791,7 +791,7 @@ However that may change in future, if we add the facility to use a single Author
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified May 31, 2025: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/8ac17af0c3db7a24031f01526f6f9af83a770621">Document post multiple records response (8ac17af)</a>
+  Last modified October 23, 2025: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/f3be03cfea8872218423c9a896575ce36505ffb2">API URL fixes (f3be03c)</a>
 </div>
 
 </div>
