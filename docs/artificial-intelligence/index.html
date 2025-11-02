@@ -30,8 +30,8 @@
   <meta itemprop="name" content="Artificial Intelligence (AI)">
   <meta itemprop="description" content="How AI and No Code work together in Agilebase">
   <meta itemprop="datePublished" content="2024-02-07T14:30:00+01:00">
-  <meta itemprop="dateModified" content="2024-02-08T12:50:29+00:00">
-  <meta itemprop="wordCount" content="305">
+  <meta itemprop="dateModified" content="2025-11-02T15:11:01+00:00">
+  <meta itemprop="wordCount" content="366">
   <meta itemprop="keywords" content="Software Architect,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Artificial Intelligence (AI)">
@@ -151,7 +151,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.85b99cd36a401fe219535ed3620152e1.json"
+    data-offline-search-index-json-src="/offline-search-index.35b5c085060e2a86b37a2e6256ac440e.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -175,7 +175,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.85b99cd36a401fe219535ed3620152e1.json"
+    data-offline-search-index-json-src="/offline-search-index.35b5c085060e2a86b37a2e6256ac440e.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -476,7 +476,7 @@
   <a href="/docs/advanced-usage/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsadvanced-usage"><span class="">Advanced Usage</span></a>
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvanced-usagecompany-settings-li">
-  <a href="/docs/advanced-usage/company-settings/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvanced-usagecompany-settings"><span class="">Company Settings</span></a>
+  <a href="/docs/advanced-usage/company-settings/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvanced-usagecompany-settings"><span class="">Organisation Settings</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvanced-usagebuild-patterns-li">
   <a href="/docs/advanced-usage/build-patterns/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvanced-usagebuild-patterns"><span class="">Build Patterns</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsadvanced-usageperformance-optimisation-li">
@@ -524,7 +524,11 @@
         <nav id="TableOfContents">
   <ul>
     <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#data-privacy">Data Privacy</a></li>
+    <li><a href="#private-ai">Private AI</a>
+      <ul>
+        <li><a href="#self-hosted-models">Self hosted models</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </div>
@@ -601,15 +605,18 @@
 <p>However, AI isn&rsquo;t a replacement for your own understanding, more of an aid. It&rsquo;s always a good idea to have some knowledge of the principles of how database systems work and Agilebase in particular - <a href="/docs/tables/relational-database-concepts/">relational database concepts</a> is a good starting point.</p>
 <h2 id="getting-started">Getting Started</h2>
 <p>See <a href="/docs/tables/adding-and-removing/#using-ai-to-add-multiple-tables">Using AI to add multiple tables</a> as the starting point for building a complete system, or extending an existing system with new applications</p>
-<h2 id="data-privacy">Data Privacy</h2>
-<p>Whenever you use AI features, which are marked with a &lsquo;sparkles&rsquo; icon and the word AI inside a button, you should be aware that the prompts that you provide, along with other information from the Agilebase system (explained in the documentation for each feature) is sent to a third party AI.</p>
-<p>In summary, when you</p>
+<h2 id="private-ai">Private AI</h2>
+<p>Where AI features are available in Agilebase, EU AI providers bound by strict GDPR regulations are used. Contractually, data is never shared or used for model training purposes.</p>
+<p>Whenever you use AI features, which are marked with a &lsquo;sparkles&rsquo; icon and the word AI inside a button, the prompts that you provide, along with other information from the Agilebase system (explained in the documentation for each feature) is sent to the AI.</p>
+<p>For example, when you</p>
 <ul>
-<li><a href="/docs/tables/adding-and-removing/#using-ai-to-add-multiple-tables">create a system</a> - the prompt you enter is sent</li>
+<li><a href="/docs/tables/adding-and-removing/#using-ai-to-add-multiple-tables">create a system</a> - the prompt you provide, plus a list of existing tables in the system is sent</li>
 <li><a href="/docs/fields/#adding-fields-automatically-using-ai">add fields to a table</a> - the prompt you provide, plus a list of existing tables in the system is sent</li>
 <li><a href="/docs/views/calculations/#using-the-ai">create a calculation</a> - the prompt you provide, plus a list of existing fields in all joined tables/views, is sent</li>
+<li><a href="/docs/charting/built-in-charting/">create a chart</a> - the chart description you provide, the view name and a list of fields in the view is sent</li>
 </ul>
-<p>At the time of writing, we use OpenAI&rsquo;s ChatGPT API. Their terms and policies, including their privacy policy are located here: <a href="https://openai.com/policies">https://openai.com/policies</a></p>
+<h3 id="self-hosted-models">Self hosted models</h3>
+<p>Should you wish, you can <a href="/docs/advanced-usage/company-settings/">configure your organisation settings</a> to use your own choice of AI, including self-hosted models to ensure traffic never leaves your own controlled infrastructure.</p>
 
 	<div class="section-index">
     
@@ -672,7 +679,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified February 8, 2024: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/13a78636ba05286d03652e476f62036892fd5e4f">Summarise privacy (13a7863)</a>
+  Last modified November 2, 2025: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/15170e843a08fa5767a8ac5b740753995a1fca99">AI privacy info (15170e8)</a>
 </div>
 </div>
 

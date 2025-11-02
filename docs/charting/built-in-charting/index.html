@@ -27,15 +27,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-04-24T16:40:00+01:00">
-    <meta property="article:modified_time" content="2023-11-27T10:15:18+00:00">
+    <meta property="article:modified_time" content="2025-11-02T15:25:29+00:00">
     <meta property="article:tag" content="Citizen Developer Level 1">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Built In Charting">
   <meta itemprop="description" content="Building and working with charts">
   <meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00">
-  <meta itemprop="wordCount" content="568">
+  <meta itemprop="dateModified" content="2025-11-02T15:25:29+00:00">
+  <meta itemprop="wordCount" content="640">
   <meta itemprop="keywords" content="Citizen Developer Level 1,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Built In Charting">
@@ -155,7 +155,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.85b99cd36a401fe219535ed3620152e1.json"
+    data-offline-search-index-json-src="/offline-search-index.35b5c085060e2a86b37a2e6256ac440e.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -179,7 +179,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.85b99cd36a401fe219535ed3620152e1.json"
+    data-offline-search-index-json-src="/offline-search-index.35b5c085060e2a86b37a2e6256ac440e.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -480,7 +480,7 @@
   <a href="/docs/advanced-usage/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsadvanced-usage"><span class="">Advanced Usage</span></a>
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvanced-usagecompany-settings-li">
-  <a href="/docs/advanced-usage/company-settings/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvanced-usagecompany-settings"><span class="">Company Settings</span></a>
+  <a href="/docs/advanced-usage/company-settings/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvanced-usagecompany-settings"><span class="">Organisation Settings</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvanced-usagebuild-patterns-li">
   <a href="/docs/advanced-usage/build-patterns/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvanced-usagebuild-patterns"><span class="">Build Patterns</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsadvanced-usageperformance-optimisation-li">
@@ -527,7 +527,8 @@
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#creating-a-chart">Creating a chart</a></li>
+    <li><a href="#generate-a-chart-with-ai">Generate a chart with AI</a></li>
+    <li><a href="#creating-a-chart-manually">Creating a chart manually</a></li>
     <li><a href="#embedding-charts-in-forms">Embedding charts in forms</a></li>
     <li><a href="#embedding-charts-in-tabs">Embedding charts in tabs</a></li>
     <li><a href="#subscribing-users-or-roles-to-charts">Subscribing users or roles to charts</a></li>
@@ -602,11 +603,19 @@
 	<p>Charting is not strictly an administrator function, as any user can create charts and other data visualisations, such as maps and word clouds.</p>
 <p>However, it&rsquo;s useful for administrators to know how the system works in outline, so they can support users and also because creating charts may be a key part of building an application.</p>
 <p>In Agilebase, charts &lsquo;belong to&rsquo; a view. Each view can have a collection of charts. Users can toggle between viewing data rows and looking at charts based on those rows. When a user filters data using the quick filter boxes at the top of the screen, the data or charts (whichever is shown) will update to match the filtered results.</p>
-<h2 id="creating-a-chart">Creating a chart</h2>
+<h2 id="generate-a-chart-with-ai">Generate a chart with AI</h2>
 <ol>
 <li>In the tiles interface, open the tile and view to use as a source of chart data</li>
 <li>Click the charts button at the top right of the screen</li>
-<li>Click the <em>add/edit chart or map</em> button</li>
+<li>Fill in the &lsquo;describe required chart&rsquo; field and press the add chart button</li>
+</ol>
+<blockquote>
+<p>The AI can only make use of fields which are in the view, so you may wish to consider adding fields or <a href="/docs/views/calculations/">calculations</a> before charting</p></blockquote>
+<h2 id="creating-a-chart-manually">Creating a chart manually</h2>
+<ol>
+<li>In the tiles interface, open the tile and view to use as a source of chart data</li>
+<li>Click the charts button at the top right of the screen</li>
+<li>Click the <em>add/Add chart or map</em> button</li>
 <li>Follow each of the steps (1 - 3) on screen to build the chart</li>
 <li>In the last step, give a name to the chart and press <em>save</em></li>
 </ol>
@@ -691,7 +700,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified November 27, 2023: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/80c844c5df1fab3cd59b900dcfdb667c41d9613c">Pivot table example (80c844c)</a>
+  Last modified November 2, 2025: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/dfbd991483e64e3abb53eb34b5050d629be15434">AI charting (dfbd991)</a>
 </div>
 
 </div>

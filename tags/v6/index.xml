@@ -6,7 +6,7 @@
     <description>Recent content in V6 on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Oct 2025 14:15:54 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 02 Nov 2025 15:25:29 +0000</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/tags/v6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security Features</title>
@@ -548,18 +548,18 @@
       <description>&lt;h2 id=&#34;use-as-a-filter-for-relations&#34;&gt;Use as a filter for relations&lt;/h2&gt;&#xA;&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#custom-filtering-when-choosing-a-relation&#34;&gt;Common build patters - custom filtering when using a relation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;&#xA;&lt;p&gt;Make the background of the referenced panel bright red - useful for showing warnings on screen.&lt;/p&gt;&#xA;&lt;p&gt;If the referenced field is a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;workflow button&lt;/a&gt;, then it will become mandatory - it will need to be pressed on every visit to a record, if the field is &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#field-visibility&#34;&gt;visible&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;display-of-fields&#34;&gt;Display of fields&lt;/h2&gt;&#xA;&lt;p&gt;Controls the display style - what content should be included the output, and also the format of the output: a standard panel, or various tabular styles, often used when there&amp;rsquo;s lots of data.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Company Settings</title>
-      <link>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</guid>
-      <description>&lt;p&gt;To access them:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;From the homepage, click your user icon at the top right of the screen and choose &lt;em&gt;Profile&lt;/em&gt; from the menu&lt;/li&gt;&#xA;&lt;li&gt;Go to &lt;em&gt;Account&lt;/em&gt; -&amp;gt; &lt;em&gt;Organisation Settings&lt;/em&gt; from the lefthand navigation bar&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;mandate-2fa&#34;&gt;Mandate 2FA&lt;/h3&gt;&#xA;&lt;p&gt;When this is ticked, all users in the organisation will be required to set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/2fa-setup/&#34;&gt;Two Factor Authentication&lt;/a&gt; before they can see or use any features of the application.&lt;/p&gt;&#xA;&lt;p&gt;We recommend that all administrators enable this if possible. Even when 2FA is mandated, admins can still &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#two-factor-authentication&#34;&gt;disable it temporarily&lt;/a&gt; on a per-user basis. The next time they log in they will be prompted to set it up again.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Creating a POST API</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</guid>
       <description>&lt;p&gt;Firstly, identify the table into which you wish to receive incoming data. Edit that table and open the &lt;em&gt;API&lt;/em&gt; panel. Tick &amp;lsquo;Public form or API data entry’, which will create an API for the table.&lt;/p&gt;&#xA;&lt;p&gt;To protect the system from spam input, we also suggest you tick &amp;lsquo;Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Organisation Settings</title>
+      <link>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</guid>
+      <description>&lt;p&gt;To access them:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;From the homepage, click your user icon at the top right of the screen and choose &lt;em&gt;Profile&lt;/em&gt; from the menu&lt;/li&gt;&#xA;&lt;li&gt;Go to &lt;em&gt;Account&lt;/em&gt; -&amp;gt; &lt;em&gt;Organisation Settings&lt;/em&gt; from the lefthand navigation bar&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;mandate-2fa&#34;&gt;Mandate 2FA&lt;/h3&gt;&#xA;&lt;p&gt;When this is ticked, all users in the organisation will be required to set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/2fa-setup/&#34;&gt;Two Factor Authentication&lt;/a&gt; before they can see or use any features of the application.&lt;/p&gt;&#xA;&lt;p&gt;We recommend that all administrators enable this if possible. Even when 2FA is mandated, admins can still &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#two-factor-authentication&#34;&gt;disable it temporarily&lt;/a&gt; on a per-user basis. The next time they log in they will be prompted to set it up again.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a PUSH API</title>
