@@ -31,7 +31,7 @@
   <meta itemprop="description" content="Adding calculations to a view">
   <meta itemprop="datePublished" content="2020-05-13T16:40:00+01:00">
   <meta itemprop="dateModified" content="2025-08-19T16:44:20+01:00">
-  <meta itemprop="wordCount" content="1451">
+  <meta itemprop="wordCount" content="918">
   <meta itemprop="keywords" content="Citizen Developer Level 3,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Calculations">
@@ -151,7 +151,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.49d2fdf922600f050cbfaaad7f738555.json"
+    data-offline-search-index-json-src="/offline-search-index.415f5b7c1669ad46c9fa582db8947f87.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -175,7 +175,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.49d2fdf922600f050cbfaaad7f738555.json"
+    data-offline-search-index-json-src="/offline-search-index.415f5b7c1669ad46c9fa582db8947f87.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -366,6 +366,8 @@
   <ul class="ul-3 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsviewscalculationsexamples-li">
   <a href="/docs/views/calculations/examples/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsviewscalculationsexamples"><span class="">Calculation Examples</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsviewscalculationsbest_practices-li">
+  <a href="/docs/views/calculations/best_practices/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsviewscalculationsbest_practices"><span class="">Calculation Best Practices</span></a>
 </li>
   </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsviewsfilters-li">
@@ -529,15 +531,7 @@
     <li><a href="#referencing-fields">Referencing fields</a></li>
     <li><a href="#special-functions">Special functions</a></li>
     <li><a href="#colouring">Colouring</a></li>
-    <li><a href="#best-practices">Best practices</a>
-      <ul>
-        <li><a href="#centralise-calculations">Centralise calculations</a></li>
-        <li><a href="#avoid-mixing-aggregates-and-non-aggregates">Avoid mixing aggregates and non-aggregates</a></li>
-        <li><a href="#splitting-complex-calculations-into-parts">Splitting complex calculations into parts</a></li>
-        <li><a href="#comments">Comments</a></li>
-        <li><a href="#troubleshooting-errors">Troubleshooting errors</a></li>
-      </ul>
-    </li>
+    <li><a href="#automatic-suggestions">Automatic suggestions</a></li>
   </ul>
 </nav>
       </div>
@@ -569,10 +563,10 @@
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/requires-update/" data-taxonomy-term="requires-update"><span class="taxonomy-label">Requires Update</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/sales/" data-taxonomy-term="sales"><span class="taxonomy-label">Sales</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/security/" data-taxonomy-term="security"><span class="taxonomy-label">Security</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span><span class="taxonomy-count">39</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span><span class="taxonomy-count">40</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/system-architect/" data-taxonomy-term="system-architect"><span class="taxonomy-label">System Architect</span><span class="taxonomy-count">4</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/tabs/" data-taxonomy-term="tabs"><span class="taxonomy-label">Tabs</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/v6/" data-taxonomy-term="v6"><span class="taxonomy-label">V6</span><span class="taxonomy-count">95</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/v6/" data-taxonomy-term="v6"><span class="taxonomy-label">V6</span><span class="taxonomy-count">96</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/views/" data-taxonomy-term="views"><span class="taxonomy-label">Views</span><span class="taxonomy-count">1</span></a></li>
         </ul>
     </div>
@@ -673,32 +667,9 @@ Please check that you are happy with their <a href="/docs/artificial-intelligenc
 <h2 id="colouring">Colouring</h2>
 <p>Text calculations can be coloured in the same way as text fields. Underneath the calculation definition and words, tick <em>colour words</em>. If a calculation outputs one of the following words, they cell in the view be coloured.</p>
 <p><img src="/word-colours.png" alt="Word Colours"></p>
-<h2 id="best-practices">Best practices</h2>
-<p>A few tips for working with calculations.</p>
-<h3 id="centralise-calculations">Centralise calculations</h3>
-<p>If a particular calculation is used in a number of different views, then it&rsquo;s a good idea to create it once in a &lsquo;utility&rsquo; view, then <a href="/docs/views/joins/#joining-to-a-view">join to that view</a> from any others that want to include it.</p>
-<p>To take a simple example, a VAT calculation <code>{net price} * 0.2</code> may be created in a &lsquo;vat calculation&rsquo; view. Then any view wanting to display the VAT can just join to it and include the field. If any changes to the calculation need to be made in future, they then only need to be done in one place. The benefits of this increase as calculations become more complex.</p>
-<h3 id="avoid-mixing-aggregates-and-non-aggregates">Avoid mixing aggregates and non-aggregates</h3>
-<p>Avoid mixing an <a href="/docs/views/calculations/examples/#aggregate-calculations">aggregate</a> and non-aggrete parts in a single calculation. E.g. calculations of the form <code>sum({field 1}) + {field 2}</code> should be avoided. You may find they cause errors.</p>
-<p>The recommended way to create a calculation like this is to make the aggregate part in a separate view, then join to it, as described under <a href="#centralise-calculations">centralise calculations</a> above.</p>
-<h3 id="splitting-complex-calculations-into-parts">Splitting complex calculations into parts</h3>
-<p>If a calculation is particularly complex, you can if you like split apart into multiple calculations, to improve readability. A final calculation can then reference the parts, like e.g.</p>
-<p><code>({really complex calculation 1} + {really complex calculation 2}) / {really complex calculation 3}</code></p>
-<p>The rule not to mix aggregate parts and non-aggregate parts, as above, still holds.</p>
-<blockquote>
-<p>Just be aware that if you update one of the composite parts, you then need to update any calculations that depend on it. The system won&rsquo;t automatically update them to reference the new version. This is due to the way the database works under the hood - it doesn&rsquo;t natively support referencing one calculation from another, so we add that layer in Agilebase functionality.</p></blockquote>
-<h3 id="comments">Comments</h3>
-<p>You may find it helpful to add comments to complex calculations to explain to others (or your later self) how it works:</p>
-<p><a href="https://www.postgresql.org/docs/17/sql-syntax-lexical.html#SQL-SYNTAX-COMMENTS">https://www.postgresql.org/docs/17/sql-syntax-lexical.html#SQL-SYNTAX-COMMENTS</a></p>
-<h3 id="troubleshooting-errors">Troubleshooting errors</h3>
-<p>If there is an error in a view, it&rsquo;s more than likely the culprit is a calculation, as they are one of the more complex facilities of Agilebase and the only one where SQL can be entered by the user, as opposed to be automatically generated. You may see messages like <strong>view broken</strong> or errors when you try to change a view e.g. move a field.</p>
-<h4 id="bad-data">Bad data</h4>
-<p>Errors can occur due to data changing. Division by zero errors are automatically handled by Agilebase (null is returned), but other types of calculation can also cause errors in certain circumstances. For example if a calculation squares a field, if someone enters a really large number into that field in a particular record, then an overflow error may occur.</p>
-<p>This can be resolved by temporarily filtering out the problem data, then the view can be edited to handle the issue, or perhaps a <a href="/docs/tables/data-integrity-checks/">data integrity check</a> can be added to disallow problem data in future.</p>
-<h4 id="wrong-datatypes">Wrong datatypes</h4>
-<p>If a calculation is set to be a number type but outputs text, that will cause an immediate issue. A more pernicious problem can be caused the other way round. If a calculation is expected to be a number, and used by other calculations as a number, but has actually been set or left as text (the default type), errors can occur.</p>
-<h4 id="persistent-errors">Persistent errors</h4>
-<p>If there is a persistent issue, one way of dealing with it is to temporarily delete all the calculation definitions - you can copy and paste them somewhere else for record-keeping, perhaps into each calculation&rsquo;s notes entry. Then once the view is working again, add the calculation definitions back one by one until you find the problem.</p>
+<h2 id="automatic-suggestions">Automatic suggestions</h2>
+<p>It doesn&rsquo;t pay to re-invent the wheel. As systems become larger, it&rsquo;s likely calculation written for one view might be useful for another as well.</p>
+<p>In some cases, when you start to type the name of a calculation to add, the system will syggest already existing calculations from other views. Clicking those will import them as references, so you don&rsquo;t have to recreate it again from scratch. Choosing a datatype (text, number, date etc.) will change the suggestions to only those of a matching type.</p>
 
 	<div class="section-index">
     
@@ -709,6 +680,12 @@ Please check that you are happy with their <a href="/docs/artificial-intelligenc
                     <a href="/docs/views/calculations/examples/">Calculation Examples</a>
                 </h5>
                 <p>Some examples of useful calculations for each type of field (text, number etc.)</p>
+            </div>
+        <div class="entry">
+                <h5>
+                    <a href="/docs/views/calculations/best_practices/">Calculation Best Practices</a>
+                </h5>
+                <p>A few tips for working with calculations.</p>
             </div>
         </div>
 <style>

@@ -170,6 +170,13 @@
       <description>&lt;p&gt;This panel shows a list of views that contain data from the table. Any view with data is included, not just those directly created from the table.&lt;/p&gt;&#xA;&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/&#34;&gt;usage reporting&lt;/a&gt; for more info.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/new-table-usage.png&#34; alt=&#34;table usage&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Calculation Best Practices</title>
+      <link>https://docs.agilebase.co.uk/docs/views/calculations/best_practices/</link>
+      <pubDate>Tue, 19 May 2020 16:40:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/views/calculations/best_practices/</guid>
+      <description>&lt;h2 id=&#34;centralise-calculations&#34;&gt;Centralise calculations&lt;/h2&gt;&#xA;&lt;p&gt;If a particular calculation is used in a number of different views, then it&amp;rsquo;s a good idea to create it once in a &amp;lsquo;utility&amp;rsquo; view, then &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#joining-to-a-view&#34;&gt;join to that view&lt;/a&gt; from any others that want to include it.&lt;/p&gt;&#xA;&lt;p&gt;To take a simple example, a VAT calculation &lt;code&gt;{net price} * 0.2&lt;/code&gt; may be created in a &amp;lsquo;vat calculation&amp;rsquo; view. Then any view wanting to display the VAT can just join to it and include the field. If any changes to the calculation need to be made in future, they then only need to be done in one place. The benefits of this increase as calculations become more complex.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Login troubleshooting</title>
       <link>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/user_troubleshooting/</link>
       <pubDate>Wed, 31 Jul 2024 08:52:00 +0100</pubDate>

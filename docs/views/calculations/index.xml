@@ -15,5 +15,12 @@
       <guid>https://docs.agilebase.co.uk/docs/views/calculations/examples/</guid>
       <description>&lt;p&gt;The database which underpins Agilebase is &lt;a href=&#34;https://www.postgresql.org&#34;&gt;PostgreSQL&lt;/a&gt; - &amp;lsquo;The World&amp;rsquo;s Most Advanced Open Source Relational Database&amp;rsquo;.&lt;/p&gt;&#xA;&lt;p&gt;This page will just be an introduction to some of the things you can do with calculations.&lt;/p&gt;&#xA;&lt;p&gt;A comprehensive definition and reference for all of the functions possible can be found here: &lt;a href=&#34;https://www.postgresql.org/docs/current/functions.html&#34;&gt;https://www.postgresql.org/docs/current/functions.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;example-functions-for-each-type-of-field&#34;&gt;Example functions for each type of field&lt;/h2&gt;&#xA;&lt;p&gt;Here are some &amp;lsquo;starters for 10&amp;rsquo; that may be useful day to day.&lt;/p&gt;&#xA;&lt;h3 id=&#34;general-functions&#34;&gt;General functions&lt;/h3&gt;&#xA;&lt;p&gt;There are a couple of functions that are particularly useful to know about, to keep in your calculations toolkit. These are&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Calculation Best Practices</title>
+      <link>https://docs.agilebase.co.uk/docs/views/calculations/best_practices/</link>
+      <pubDate>Tue, 19 May 2020 16:40:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/views/calculations/best_practices/</guid>
+      <description>&lt;h2 id=&#34;centralise-calculations&#34;&gt;Centralise calculations&lt;/h2&gt;&#xA;&lt;p&gt;If a particular calculation is used in a number of different views, then it&amp;rsquo;s a good idea to create it once in a &amp;lsquo;utility&amp;rsquo; view, then &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#joining-to-a-view&#34;&gt;join to that view&lt;/a&gt; from any others that want to include it.&lt;/p&gt;&#xA;&lt;p&gt;To take a simple example, a VAT calculation &lt;code&gt;{net price} * 0.2&lt;/code&gt; may be created in a &amp;lsquo;vat calculation&amp;rsquo; view. Then any view wanting to display the VAT can just join to it and include the field. If any changes to the calculation need to be made in future, they then only need to be done in one place. The benefits of this increase as calculations become more complex.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
