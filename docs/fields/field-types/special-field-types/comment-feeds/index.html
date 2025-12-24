@@ -53,15 +53,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-05-07T16:40:00+01:00">
-    <meta property="article:modified_time" content="2023-11-27T10:15:18+00:00">
+    <meta property="article:modified_time" content="2025-12-23T23:12:04+00:00">
     <meta property="article:tag" content="Citizen Developer Level 2">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Comment Feeds">
   <meta itemprop="description" content="Comment feeds allow collaboration between users of a system">
   <meta itemprop="datePublished" content="2020-05-07T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00">
-  <meta itemprop="wordCount" content="600">
+  <meta itemprop="dateModified" content="2025-12-23T23:12:04+00:00">
+  <meta itemprop="wordCount" content="732">
   <meta itemprop="keywords" content="Citizen Developer Level 2,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Comment Feeds">
@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c681342b023c64e7dcc9a1a00f00eafb.json"
+    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.c681342b023c64e7dcc9a1a00f00eafb.json"
+    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -566,7 +566,8 @@
     </li>
     <li><a href="#the-comments-stream-tile">The comments stream tile</a></li>
     <li><a href="#email-integration">Email integration</a></li>
-    <li><a href="#slack-integration">Slack integration</a></li>
+    <li><a href="#integration">Integration</a></li>
+    <li><a href="#comments-as-a-system-table">Comments as a system table</a></li>
   </ul>
 </nav>
   </div>
@@ -661,8 +662,24 @@
 <p>As above, anyone who receives a comment notification can reply to the email to add another comment (their email address must be their username or recorded in their user defailt), or they can click on a link to view the related record including previous comments.</p>
 <p>However, comments are also the mechanism by which emails from external parties can be logged - see the <a href="/docs/tables/options/#accept-emails-to-this-address">accept emails to this address</a> table option.</p>
 <p>When a <a href="/docs/workflows/send-email/">workflow</a> or <a href="/docs/workflows/send-chaser/">chaser</a> sends an outgoing email, that is logged as a comment (including any attachments) too.</p>
-<h2 id="slack-integration">Slack integration</h2>
-<p>If <a href="https://www.slack.com">Slack</a> is integrated via <a href="/docs/advanced-usage/company-settings/">company options</a>, every comment added will also be sent to your Slack workspace.</p>
+<h2 id="integration">Integration</h2>
+<p>If an integration is set up via <a href="/docs/advanced-usage/company-settings/#comments-webhook-url">company options</a>, every comment added will also be sent to the service used e.g. Slack, Teams, Google Workspace etc.</p>
+<h2 id="comments-as-a-system-table">Comments as a system table</h2>
+<p>Just like audit trail tables can surface system logs so that system architects (or anyone they allow) will be able to see the data, the same can be set up for a comments table.</p>
+<p>All comments added to any record will be saved in this table, allowing e.g. views to be created which amalgamate comments from many different tables into one place.</p>
+<p>To set this up, just create a table with a name &lsquo;ab comments&rsquo;. Prefixes are allowed so e.g. &lsquo;z) ab comments&rsquo; would also work. Then the following fields <em>must</em> be added:</p>
+<ul>
+<li>author (text)</li>
+<li>author id (text)</li>
+<li>field id (text)</li>
+<li>row id (whole number)</li>
+<li>text (text, large)</li>
+<li>record data (text, large)</li>
+<li>participants (text)</li>
+<li>file (file)</li>
+<li>tags (text)</li>
+<li>table (text)</li>
+</ul>
 
 	<style>
   .feedback--answer {
@@ -721,7 +738,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified November 27, 2023: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/80c844c5df1fab3cd59b900dcfdb667c41d9613c">Pivot table example (80c844c)</a>
+  Last modified December 23, 2025: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/6812395df2234a55ea01ffe869201ba12ba939b2">Comments as a system table (6812395)</a>
 </div>
 
 </div>
