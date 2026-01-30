@@ -6,7 +6,7 @@
     <description>Recent content in V6 on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 30 Jan 2026 13:30:49 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jan 2026 13:48:24 +0000</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/tags/v6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security Features</title>
@@ -679,6 +679,13 @@
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/workflows/advanced/</guid>
       <description>&lt;h2 id=&#34;logging&#34;&gt;Logging&lt;/h2&gt;&#xA;&lt;p&gt;If you are using the more advanced features of agilebase workflows then knowing where to look for logging information will become important. At the bottom fo the &lt;em&gt;workflow - edit records&lt;/em&gt; panel when editing a view, recent logs are shown.&lt;/p&gt;&#xA;&lt;p&gt;They will contain success and failures of past runs as well as the next time the workflow is scheduled to be run.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/workflow-history.png&#34; alt=&#34;Viewing the logging history of a Workflow&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>API response codes</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/api-response-codes/</link>
+      <pubDate>Fri, 30 Jan 2026 13:00:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/integrations/api-response-codes/</guid>
+      <description>&lt;p&gt;If an API request succeeds, the standard HTTP success code, 200 will be returned as the response status.&lt;/p&gt;&#xA;&lt;p&gt;If there is any error and the request fails, a different code will be returned.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;400: bad request, e.g. a necessary parameter for the request is missing, such as &amp;rsquo;t&amp;rsquo; to identify a table&lt;/li&gt;&#xA;&lt;li&gt;401: unauthorised e.g. the API key is missing or invalid&lt;/li&gt;&#xA;&lt;li&gt;403: forbidden, e.g. an action was requested that can&amp;rsquo;t be carried out in the circumstances, e.g. an attempt was made to alter a locked record&lt;/li&gt;&#xA;&lt;li&gt;404: not found, an object identified in the request was not found e.g. no match was found for a table ID specified with the &amp;rsquo;t&amp;rsquo; parameter&lt;/li&gt;&#xA;&lt;li&gt;409: conflict, e.g. data was supplied that doesn&amp;rsquo;t pass checks, such as a date outside of the field&amp;rsquo;s allowable range&lt;/li&gt;&#xA;&lt;li&gt;424: failed dependency, e.g. a third party service which Agilebase calls in the process of completing an action has failed&lt;/li&gt;&#xA;&lt;li&gt;429: too many requests e.g. the frequency of requests is too high, please throttle them back&lt;/li&gt;&#xA;&lt;li&gt;507: insufficient storage e.g. when creating a record, the limit set on the number of records which can be stored has been reached&lt;/li&gt;&#xA;&lt;li&gt;500: some other server error&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;When there is an error, a response header X-AB-error is also set with the type and content of the error message. That should help developers to troubleshoot and find the cause of the issue.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
