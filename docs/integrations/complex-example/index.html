@@ -66,8 +66,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Complete API worked example">
   <meta name="twitter:description" content="A more complex API example showing a real world integration consisting of multiple steps">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -659,7 +659,8 @@
 <p>Note that the value for the Organisation relation field we mentioned in the start is given as an ID. This is the internal ID of the organisation which the company number belongs to. Zapier can find this as Agilebase includes it in every push or pull API request as the &lsquo;id&rsquo; parameter, whether we ask for it or not. It can be really useful for linking data in different tables together, as we&rsquo;re doing here.</p>
 <blockquote>
 <p>You may be thinking that this data looks like it represents one year&rsquo;s worth of financial data, but we want a full history covering multiple years. How do we get that?
-In short, we don&rsquo;t need to worry about it. Endole provides the data to Zapier as an array, one entry for each year. Zapier transparenty handles that, sending one PUSH request to Agilebase per entry.</p></blockquote>
+In short, we don&rsquo;t need to worry about it. Endole provides the data to Zapier as an array, one entry for each year. Zapier transparenty handles that, sending one PUSH request to Agilebase per entry.</p>
+</blockquote>
 <p>Now we have everything we need regarding the integration! We could set the workflow to run in the background, so whenever a new organisation with a company number is entered into the CRM, the integration goes off and finds the financial data. However, because we have many thousands of organistions in our database, we want to be a bit more judicious about our use. Each API request to Endole costs only a small amount, but costs could add up if we were to automatically run it for every organisation, particularly if we include historical records.</p>
 <p>So in this case, we&rsquo;ll add a &lsquo;retrieve financials&rsquo; <a href="/docs/workflows/advanced/workflow-buttons/">workflow button</a> to the organisation screen to kick off the workflow on demand. It looks like this on the screen:</p>
 <p><img src="/retrieve-financials.png" alt="Retrieve Financials"></p>
@@ -760,7 +761,7 @@ In short, we don&rsquo;t need to worry about it. Endole provides the data to Zap
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

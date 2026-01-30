@@ -62,8 +62,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Workflows">
   <meta name="twitter:description" content="A powerful set of automation features">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -178,7 +178,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -202,7 +202,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -663,11 +663,14 @@
 <li>
 <p>The workflow is guaranteed to run once a day at the time you specify (accurate to a minute or two, there may be slight tweaks depending on how many other workflows are scheduled to run at the same time).</p>
 <blockquote>
-<p>Note 1: the workflow may actually run more than once a day in some cases, e.g. if a server reboots for upgrade purposes. Please bear this in mind in the design of your workflows. You may want to add a filter on the field used to record the time of last action, to prevent duplicate runs within e.g. 12 hours.</p></blockquote>
+<p>Note 1: the workflow may actually run more than once a day in some cases, e.g. if a server reboots for upgrade purposes. Please bear this in mind in the design of your workflows. You may want to add a filter on the field used to record the time of last action, to prevent duplicate runs within e.g. 12 hours.</p>
+</blockquote>
 <blockquote>
-<p>Note 2: scheduling is typically done once a day around 8am. So if at 10am, you set a workflow to run in the afternoon, the first run won&rsquo;t be until the next day</p></blockquote>
+<p>Note 2: scheduling is typically done once a day around 8am. So if at 10am, you set a workflow to run in the afternoon, the first run won&rsquo;t be until the next day</p>
+</blockquote>
 <blockquote>
-<p>Note 3: Using <em>24 hours</em> plus a filter on a &lsquo;day of the week&rsquo; calculation allows you to run weekly workflows, similar for monthly etc.</p></blockquote>
+<p>Note 3: Using <em>24 hours</em> plus a filter on a &lsquo;day of the week&rsquo; calculation allows you to run weekly workflows, similar for monthly etc.</p>
+</blockquote>
 </li>
 </ul>
 </li>
@@ -840,7 +843,7 @@ For example, if step 1 creates a company record and step 2 creates a contact (co
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

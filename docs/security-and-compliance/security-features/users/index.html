@@ -62,8 +62,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Users">
   <meta name="twitter:description" content="Adding, viewing and removing users">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -178,7 +178,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -202,7 +202,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -661,7 +661,8 @@
 <p>The recommended way to set passwords is for the user to choose their own, which they can do once they have a username and email address filled in. They will need to visit the login page, click the &lsquo;reset password&rsquo; link and type in their username. They will be emailed a link which will let them set a password.</p>
 <p>As an administrator, you can also manually reset someone&rsquo;s password by clicking &lsquo;change password&rsquo; in their user details screen.</p>
 <blockquote>
-<p>We strongly recommend the adoption of a password wallet service like <a href="https://1password.com/">1Password</a>, <a href="https://bitwarden.com">Bitwarden</a> or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.</p></blockquote>
+<p>We strongly recommend the adoption of a password wallet service like <a href="https://1password.com/">1Password</a>, <a href="https://bitwarden.com">Bitwarden</a> or built-in browser features to generate and store passwords. That lets passwords become much more secure and harder to guess whilst not requiring users to remember them.</p>
+</blockquote>
 <h4 id="notes-about-password-security">Notes about password security</h4>
 <p>Passwords must be a minimum of 8 characters.</p>
 <p>When someone sets or changes their password, it&rsquo;s checked against <a href="https://haveibeenpwned.com/Passwords">https://haveibeenpwned.com/Passwords</a> to ensure it&rsquo;s not a common one and is suitable for ongoing use.</p>
@@ -699,7 +700,8 @@
 <h4 id="privileges">Privileges</h4>
 <p>Assign individual table <a href="/docs/security-and-compliance/security-features/privileges/">privileges</a> to a user.</p>
 <blockquote>
-<p>When dealing with larger numbers of users it&rsquo;s usually more manageable if you use roles to assign privileges.</p></blockquote>
+<p>When dealing with larger numbers of users it&rsquo;s usually more manageable if you use roles to assign privileges.</p>
+</blockquote>
 <p>If a user has a privilege due to being a member of a role, that privilege is shown with a shaded blue background. Any additional privileges individually assigned to them are shown in green.</p>
 <h4 id="tiles">Tiles</h4>
 <p>Allows an admin to add/remove <a href="/docs/tiles/">tiles</a> for a user. By default users can add/remove tiles themselves too, although this can be disabled through the use of a <a href="#other-options">custom UI</a>.</p>
@@ -707,7 +709,8 @@
 <p>From the homepage, <a href="/docs/introduction/development-mode/">toggle development mode on</a> and click the &lsquo;users&rsquo; box at the top right. You&rsquo;ll see a list of existing user accounts. Their details are listed including 2FA status (whether they&rsquo;re using app-based 2FA or not) and when they last logged in.</p>
 <p>Each user&rsquo;s roles are shown. Any <a href="/docs/security-and-compliance/security-features/roles/#multi-tenanting">multi-tenanting</a> roles are also included.</p>
 <blockquote>
-<p>The list of users can be exported to spreadsheet by clicking again on the &lsquo;users&rsquo; box at the top right of the screen.</p></blockquote>
+<p>The list of users can be exported to spreadsheet by clicking again on the &lsquo;users&rsquo; box at the top right of the screen.</p>
+</blockquote>
 <p>Note that if you want to see a full audit trail of what each user has done (editing, searching, exporting etc.), then you can use the optional <a href="/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/#enhanced-audit-trail">enhanced audit trail</a> feature (only available on certain plans).</p>
 <h2 id="removing-users">Removing users</h2>
 <p>To remove a user, click one in the list (see above) to open the user editing panel. At the bottom, click the Remove button.</p>
@@ -820,7 +823,7 @@
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

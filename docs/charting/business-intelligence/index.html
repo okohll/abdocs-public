@@ -66,8 +66,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Business Intelligence">
   <meta name="twitter:description" content="Visualising data in third party Business Intelligence tools">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -635,7 +635,8 @@
 
   </header>
 	<blockquote>
-<p>Before setting up a BI connection, please be aware of the <a href="/docs/charting#privacy-and-data-security">data privacy and security</a> considerations.</p></blockquote>
+<p>Before setting up a BI connection, please be aware of the <a href="/docs/charting#privacy-and-data-security">data privacy and security</a> considerations.</p>
+</blockquote>
 <p>Any tool which utilises <a href="https://en.wikipedia.org/wiki/Open_Database_Connectivity">ODBC</a> can be used, such as Excel for example. Power BI is a common one.</p>
 <h2 id="initial-setup">Initial Setup</h2>
 <p>The first step is to <a href="https://agilechilli.com/contact-us/">contact us</a> to request we prepare your account. This will also allow connections from Power BI or any other tool which can connect to ODBC).</p>
@@ -649,7 +650,8 @@
 <p>A developer with DEVELOP privileges on a view&rsquo;s parent table can set this up.</p>
 <blockquote>
 <p>Before continuing, please also note that only users without any <a href="/docs/security-and-compliance/security-features/roles/#multi-tenanting">multi-tenanting</a> roles will be able to turn on external reporting.
-That&rsquo;s because data sent this way doesn&rsquo;t take account of multi-tenanting. Rather all data is sent, whatever the tenant.</p></blockquote>
+That&rsquo;s because data sent this way doesn&rsquo;t take account of multi-tenanting. Rather all data is sent, whatever the tenant.</p>
+</blockquote>
 <ol>
 <li>In Agilebase, open the view you wish to report on. Ensure it has all the necessary fields and calculations in it which you want to report on. If not, add them before continuing.</li>
 <li>Click the charting icon to view the chart setup interface</li>
@@ -660,7 +662,8 @@ That&rsquo;s because data sent this way doesn&rsquo;t take account of multi-tena
 <p>It&rsquo;s easy for developers to make changes to views in Agilebase, for example adding / removing fields, changing calculations or just renaming a view.</p>
 <blockquote>
 <p>However, when the BI connection is active, bear in mind that certain changes could break it. The reason is that once data is set up to transfer to a separate system, the other system typically expects it to remain in the same format.</p>
-<p>That means that if you rename the view or move it, or rename/delete fields and calculations, you may afterwards need to check your charts in Superset / Power BI, to see if they need re-creating.</p></blockquote>
+<p>That means that if you rename the view or move it, or rename/delete fields and calculations, you may afterwards need to check your charts in Superset / Power BI, to see if they need re-creating.</p>
+</blockquote>
 <h3 id="daily-updates">Daily updates</h3>
 <p>Once the view has been set up, external applications will see a new read-only snapshot of data once a day at a time you can specify on screen. If your data needs to be updated more often, you can add a workflow button to accomplish that:</p>
 <ol>
@@ -754,7 +757,7 @@ That&rsquo;s because data sent this way doesn&rsquo;t take account of multi-tena
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

@@ -66,8 +66,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Types of Join">
   <meta name="twitter:description" content="Left outer, inner and cross joins">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -680,7 +680,8 @@
 <li>Row C with row Z</li>
 </ul>
 <blockquote>
-<p>You can see that you need to be careful when creating cross joins that results won&rsquo;t balloon up into massive numbers of rows that are hard to deal with. For example, if two tables, each with a hundred thousand rows in, are joined by cross join, then 100,000 x 100,000 = 10,000,000,000 (ten billion) rows would output.</p></blockquote>
+<p>You can see that you need to be careful when creating cross joins that results won&rsquo;t balloon up into massive numbers of rows that are hard to deal with. For example, if two tables, each with a hundred thousand rows in, are joined by cross join, then 100,000 x 100,000 = 10,000,000,000 (ten billion) rows would output.</p>
+</blockquote>
 <p>Once again, potential uses may be most easily explained by a real world example.</p>
 <p>Cross joins can be used when reporting, to find data that&rsquo;s <strong>not</strong> there (to get a bit Zen). For example, say we have two tables</p>
 <ul>
@@ -691,7 +692,8 @@
 <p>Firstly, we need all combinations. Create a cross join between customers and products, in a &lsquo;customer products&rsquo; view.</p>
 <p>The next step is similar to our reporting example of <a href="/docs/views/joins/#joining-on-multiple-fields">joining on multiple fields</a>. Create a calculation &lsquo;customer product&rsquo; which concatenates together customer ID and product ID. Create the same calculation in a view of sales (each sale of a product to a customer). Then join this sales view into our customer products view and bingo, we can display the total sales, whether zero or more, of each product to each customer.</p>
 <blockquote>
-<p>If you haven&rsquo;t yet read up on <a href="/docs/views/calculations/">calculations</a>, you may need to do that in order to accomplish everything above</p></blockquote>
+<p>If you haven&rsquo;t yet read up on <a href="/docs/views/calculations/">calculations</a>, you may need to do that in order to accomplish everything above</p>
+</blockquote>
 <h3 id="adding-a-cross-join">Adding a cross join</h3>
 <p>Adding a cross join is a little different to <a href="/docs/views/joins/#adding-a-join">adding a normal join</a>. The left and right fields don&rsquo;t matter (as we want to apply any exclusion rules, we just want every combination of rows possible).</p>
 <p>So follow the <a href="/docs/views/joins/#complex-joins">normal process for a complex join</a>, but just select the left and right tables (or views), leave the fields at their default values.</p>
@@ -780,7 +782,7 @@
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

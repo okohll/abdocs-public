@@ -65,8 +65,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Send an email">
   <meta name="twitter:description" content="Workflows can be used to send an email">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -181,7 +181,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -205,7 +205,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -641,7 +641,8 @@
   </header>
 	<p>Agilebase can be used to send emails. This facility should <strong>NOT</strong> be used for marketing purposes, rather as a method to notify people about data associated to the system. For marketing emails, there are more appropriate specifically designed third party apps.</p>
 <blockquote>
-<p>Note: When setting up an email alert, the system needs to know the email address of the recipient. Sometimes this may be very simple, when you always want to send the alert to the same person. For some alerts though you may wish to change who gets it depending on the data, e.g. each salesperson may get the leads assigned to them. In this case, the system will need to know the email address, so it needs to be stored somewhere. For Agilebase users, if they use their email address as their username, the system can pick this up when a user’s assigned to a record, either manually or as part of the automatic ‘created by’ and ‘modified by’ fields</p></blockquote>
+<p>Note: When setting up an email alert, the system needs to know the email address of the recipient. Sometimes this may be very simple, when you always want to send the alert to the same person. For some alerts though you may wish to change who gets it depending on the data, e.g. each salesperson may get the leads assigned to them. In this case, the system will need to know the email address, so it needs to be stored somewhere. For Agilebase users, if they use their email address as their username, the system can pick this up when a user’s assigned to a record, either manually or as part of the automatic ‘created by’ and ‘modified by’ fields</p>
+</blockquote>
 <h2 id="step-1-add-a-necessary-field">Step 1: add a necessary field</h2>
 <p>Select the table which has the alert data in it and add a date/time field with SECOND accuracy called e.g. “Last notified”. This will be used by the system to store when the last notification was sent for each record.</p>
 <h2 id="step-2-create-a-new-view">Step 2: create a new view</h2>
@@ -662,7 +663,8 @@
 <p>Under the email template, set “Notification time field” to the field that you created in step 1, e.g. “Last notified”</p>
 <p>Note in the To: field, you can include email addresses manually, or merge them in from the view. If you are assigning records to users in Agilebase, you can use that field and the system will automatically pick out the email address for them.</p>
 <blockquote>
-<p>That’s it! Note when testing, we recommend setting the “To:” value to your own email address, just until you’re sure everything’s working properly.</p></blockquote>
+<p>That’s it! Note when testing, we recommend setting the “To:” value to your own email address, just until you’re sure everything’s working properly.</p>
+</blockquote>
 <h3 id="including-attachments">Including attachments</h3>
 <p>If you add a file field to the view, it will be added to the outgoing email as an attachment. Note the ID field for the file field&rsquo;s parent table also needs to be present, which should happen automatically.</p>
 <h3 id="including-record-history">Including record history</h3>
@@ -762,7 +764,7 @@ That means that your company can send out branded, rich-text emails (with attach
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

@@ -66,8 +66,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Authenticating users via the API">
   <meta name="twitter:description" content="Logging in as a user">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -657,7 +657,8 @@
 <p>You should receive a user identifier for the valid login, such as their email address.</p>
 <p>Ensure the usernames in Agilebase match the identifiers returned.</p>
 <blockquote>
-<p>Note: if you can&rsquo;t ensure that usernames in both systems match, you can create a lookup table in Agilebase, to map one to the other, then join to that in your API views.</p></blockquote>
+<p>Note: if you can&rsquo;t ensure that usernames in both systems match, you can create a lookup table in Agilebase, to map one to the other, then join to that in your API views.</p>
+</blockquote>
 <h2 id="returning-the-correct-data-for-the-user">Returning the correct data for the user</h2>
 <p>Either way, you should now have a user identifier for an authenticated person.</p>
 <ol>
@@ -668,7 +669,8 @@
 <blockquote>
 <p><strong>To avoid the possibility of one person&rsquo;s username being a subset of another, it&rsquo;s recommended when filtering that you pass in the exact string as output by the Agilebase view.</strong></p>
 <p>In the case of the Created By [Auto] and Modified By [Auto] fields, that will be the format <code>Forename Surname (username)</code>. If you want just the username, you can extract it with a calculation.</p>
-<p>Then use exact filtering in the API, e.g. by prepending the filter value with an equals sign</p></blockquote>
+<p>Then use exact filtering in the API, e.g. by prepending the filter value with an equals sign</p>
+</blockquote>
 <p>Otherwise, you may find for example that filtering for &lsquo;alice&rsquo; returns data for users &lsquo;alice.smith&rsquo;, &lsquo;<a href="mailto:alice@example.com">alice@example.com</a>&rsquo; and &rsquo;louise_alice_jones&rsquo;.</p>
 <h2 id="resources--examples">Resources / Examples</h2>
 <p>These are examples for approach 1 above.</p>
@@ -763,7 +765,7 @@
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

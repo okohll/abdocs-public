@@ -62,8 +62,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Joins">
   <meta name="twitter:description" content="Using joins to merge data from multiple sources into one view">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -178,7 +178,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -202,7 +202,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -667,7 +667,8 @@
 <p>Joins to views aren&rsquo;t automatically suggested, but you can still add them.</p>
 <blockquote>
 <p>When might this be useful? Well one example is if you have a view containing a complex calculation and you wish to include the results of that calculation in lots of other views in different places.</p>
-<p>Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a <a href="/docs/workflows/">workflow view</a>) and perhaps product labels as well, using a view to send data to third party labelling equipment using an <a href="/docs/integrations/">API</a>.</p></blockquote>
+<p>Say you calculate various nutritional values of a recipe, such as the energy, salt and fats contents. You may wish to display that information in a few views for different people to query, as well as include them in product specification documents (which can be generated from a <a href="/docs/workflows/">workflow view</a>) and perhaps product labels as well, using a view to send data to third party labelling equipment using an <a href="/docs/integrations/">API</a>.</p>
+</blockquote>
 <p>To add a join to a view:</p>
 <ol>
 <li>Edit the view and open the <em>Joins</em> panel as above</li>
@@ -707,7 +708,8 @@
 <p>You&rsquo;ll then be able to add the name of the restaurant(s) in each signup&rsquo;s area to the view. This could be to send them a special offer for their local restaurant for example.</p>
 <p>As you can see, this also demonstrates creating a join on a calculation.</p>
 <blockquote>
-<p>When you make a join on a field or calculation that isn&rsquo;t an ID, be careful to ensure that the data is <strong>exactly the same</strong> on both sides. In this example, the postcode fields on both sides must be the same case (e.g. uppercase). Otherwise they won&rsquo;t be picked up in the match.</p></blockquote>
+<p>When you make a join on a field or calculation that isn&rsquo;t an ID, be careful to ensure that the data is <strong>exactly the same</strong> on both sides. In this example, the postcode fields on both sides must be the same case (e.g. uppercase). Otherwise they won&rsquo;t be picked up in the match.</p>
+</blockquote>
 <h3 id="joining-on-multiple-fields">Joining on multiple fields</h3>
 <p>Extending &lsquo;creating a join on a calculation&rsquo; from the above example, here we can use a calculation to create a <strong>composite field</strong> to join on. This can be used when you want to join on a number of fields at once, not just one.</p>
 <p>This can sometimes be useful in financial reporting. Our example here is creating a report totalling up sales by product by month. The twist is we also want to include product/month combinations in which there were no sales of a particular product for the month.</p>
@@ -818,7 +820,7 @@
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

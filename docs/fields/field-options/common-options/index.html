@@ -66,8 +66,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Common Options">
   <meta name="twitter:description" content="Options common to all fields of any type">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -651,14 +651,16 @@
 <p>You can click the &lsquo;visibility view&rsquo; link to go to that view and edit it to add more complex conditions if you wish.</p>
 <blockquote>
 <p>As the conditions are created in a view, this mechanism is really powerful. You can create simple or very complex critera, including all of the filter options in a view, for example basing a filter on a calculation and combining multiple filters.</p>
-<p>So you could make a field appear only when a particular point is reached in a process, or a status is changed elsewhere in a form, or perhaps it should only be visible to people who are <a href="/docs/security-and-compliance/security-features/roles/">members of a certain role</a>. See <a href="/docs/views/filters/">view filters</a> for more information.</p></blockquote>
+<p>So you could make a field appear only when a particular point is reached in a process, or a status is changed elsewhere in a form, or perhaps it should only be visible to people who are <a href="/docs/security-and-compliance/security-features/roles/">members of a certain role</a>. See <a href="/docs/views/filters/">view filters</a> for more information.</p>
+</blockquote>
 <p>Two special options are available</p>
 <ul>
 <li>show always - the default state</li>
 <li>show never - useful for hiding fields used for internal purposes, e.g. which help the internal workings of a <a href="/docs/workflows/">workflow</a></li>
 </ul>
 <blockquote>
-<p>If this option is used on a <a href="/docs/fields/field-types/special-field-types/separators/">separator</a> field, then the visibility rule will apply to the entire block of fields under that separator.</p></blockquote>
+<p>If this option is used on a <a href="/docs/fields/field-types/special-field-types/separators/">separator</a> field, then the visibility rule will apply to the entire block of fields under that separator.</p>
+</blockquote>
 <h2 id="lock-when-value-set">Lock when value set</h2>
 <p>If the field is blank, allow a value to be entered, however as soon as it has a value, lock to prevent further editing. The user can manually unlock, but will be prompted for a reason for doing so, which will be logged against the field as a comment.</p>
 <p>This can be used to prevent accidental editing of important fields which should not usually be changed, for example a product&rsquo;s stock code.</p>
@@ -667,7 +669,8 @@
 <h2 id="required">Required</h2>
 <p>If ticked, prompt the user for a value when they try to leave a record without one. Note we can&rsquo;t force the value, as the user could refresh the browser as a workaround.</p>
 <blockquote>
-<p>For dropdown fields with the value(s) set to <a href="/docs/fields/field-options/text-field-options/#lists-of-users">Lists of users</a>, this has the special effect of defaulting the field to the ID of the currently logged in user.</p></blockquote>
+<p>For dropdown fields with the value(s) set to <a href="/docs/fields/field-options/text-field-options/#lists-of-users">Lists of users</a>, this has the special effect of defaulting the field to the ID of the currently logged in user.</p>
+</blockquote>
 <h2 id="prominent">Prominent</h2>
 <p>Prominently highlight the field on the screen, e.g. if it&rsquo;s one that is important to fill out, without actually requiring a value to be supplied.</p>
 <h2 id="set-from-previous-referenced-field">Set from previous referenced field</h2>
@@ -680,13 +683,15 @@
 <li>Add the internal row ID for the company to the referenced field&rsquo;s view. This should be the <strong>last</strong> field in the view</li>
 </ul>
 <blockquote>
-<p>Note that another way of setting a value on record creation is to use a workflow set to <a href="/docs/tables/options/#when-a-records-created-run-this-workflow ">run on record creation</a>. If you need to set the value on record creation, using a workflow is the best way - it will seem slightly quicker to the user. However if you need to be able to wait a while before automatically setting the value of a field, perhaps until another field has been filled in, then using this referenced field option is the way to go.</p></blockquote>
+<p>Note that another way of setting a value on record creation is to use a workflow set to <a href="/docs/tables/options/#when-a-records-created-run-this-workflow ">run on record creation</a>. If you need to set the value on record creation, using a workflow is the best way - it will seem slightly quicker to the user. However if you need to be able to wait a while before automatically setting the value of a field, perhaps until another field has been filled in, then using this referenced field option is the way to go.</p>
+</blockquote>
 <h2 id="unique">Unique</h2>
 <p>Disallow any duplicate values from being entered. No records in the table can have the same value as each other.</p>
 <h2 id="change-causes-record-refresh">Change causes record refresh</h2>
 <p>Through the use of some field options like <a href="#show-if-record-in-view">Show if record in view</a> above, the screen can change based on what&rsquo;s entered into a form. This option can work as a switch to refresh the configuration of the screen if it does change as someone enters new data.</p>
 <blockquote>
-<p>For example, if there is a table to store sales opportunities, one field may be the status. If the status changes to <code>won</code> or <code>lost</code>, then you may wish to show some extra fields like &lsquo;date won&rsquo; or &lsquo;reason why lost&rsquo; for example. To allow this, tick the &lsquo;change causes record refresh&rsquo; option on the status field. Then whenever the status changes, these fields will automatically appear if relevant.</p></blockquote>
+<p>For example, if there is a table to store sales opportunities, one field may be the status. If the status changes to <code>won</code> or <code>lost</code>, then you may wish to show some extra fields like &lsquo;date won&rsquo; or &lsquo;reason why lost&rsquo; for example. To allow this, tick the &lsquo;change causes record refresh&rsquo; option on the status field. Then whenever the status changes, these fields will automatically appear if relevant.</p>
+</blockquote>
 
 	<style>
   .feedback--answer {
@@ -772,7 +777,7 @@
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

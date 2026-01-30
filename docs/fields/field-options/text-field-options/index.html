@@ -66,8 +66,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Text Field Options">
   <meta name="twitter:description" content="Options specific to text fields">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -654,14 +654,16 @@
 <p>When this field is included in a view, highlight it with a colour if the content is one of a number of words. The most up-to-date values to be highlighted are shown in the administrator interface, but as of the latest update of this page, they are</p>
 <p><img src="/word-colours.png" alt="Word Colours"></p>
 <blockquote>
-<p>Text calculations can also be coloured based on the same words - see the <a href="/docs/views/calculations/#colouring">calculation options</a></p></blockquote>
+<p>Text calculations can also be coloured based on the same words - see the <a href="/docs/views/calculations/#colouring">calculation options</a></p>
+</blockquote>
 <blockquote>
 <p>Words will also automatically be coloured when a &lsquo;radio button&rsquo; style is used for a field, i.e. when</p>
 <ul>
 <li>&lsquo;use dropdown&rsquo; is ticked</li>
 <li>&lsquo;use only given values&rsquo; is ticked</li>
 <li>there are three or fewer values to choose from</li>
-</ul></blockquote>
+</ul>
+</blockquote>
 <h2 id="swap-colours">Swap colours</h2>
 <p>When words are coloured (see above), &lsquo;yes&rsquo; will usually be coloured green and &rsquo;no&rsquo; red etc. However depending on the field name or question being asked, you may want to swap the colours.</p>
 <p>For example, for a field &lsquo;Passport Checked&rsquo;, you might want yes to be green, but for a field &lsquo;Dangerous Substances Detected&rsquo;, yes should be red and no should be green. In that case, use this option to swap the colours.</p>
@@ -678,20 +680,24 @@
 <h2 id="use-tags">Use tags</h2>
 <p>Similar to Use dropdown, but rather than only letting the user select one value, multiple values can be chosen at once.</p>
 <blockquote>
-<p>An example use may be selecting countries of origin for an ingredient, where it may come from different countries (perhaps via different suppliers).</p></blockquote>
+<p>An example use may be selecting countries of origin for an ingredient, where it may come from different countries (perhaps via different suppliers).</p>
+</blockquote>
 <p>The list of available options is specified in exactly the same way as for dropdowns above.</p>
 <h2 id="use-only-given-values">Use only given values</h2>
 <p>If a dropdown or tags list is used as above, ticking this option enforces the use of one of the provided values.</p>
 <p>If it&rsquo;s un-ticked, then an &lsquo;add new entry&rsquo; option will be available for users to manually add values which aren&rsquo;t yet in the list. Added values will be visible to all.</p>
 <blockquote>
-<p>In some circumstances, it can be useful to leave this un-ticked and let options grow organically, until a certain point. Administrators can then rationalise and &lsquo;hard-code&rsquo; values from the most commonly entered. In other situations, it may be best to specify available options right from the start.</p></blockquote>
+<p>In some circumstances, it can be useful to leave this un-ticked and let options grow organically, until a certain point. Administrators can then rationalise and &lsquo;hard-code&rsquo; values from the most commonly entered. In other situations, it may be best to specify available options right from the start.</p>
+</blockquote>
 <h3 id="use-only-given-values-for-relation-fields">&lsquo;Use only given values&rsquo; for relation fields</h3>
 <blockquote>
-<p>For relation fields, this option has a <a href="/docs/fields/field-options/relation-field-options/#use-only-given-values">different use</a></p></blockquote>
+<p>For relation fields, this option has a <a href="/docs/fields/field-options/relation-field-options/#use-only-given-values">different use</a></p>
+</blockquote>
 <h2 id="values">Value(s)</h2>
 <p>For basic text fields, i.e. not those which display as dropdowns or tag lists (see below), this simply provides a default value to set the field to when a new record&rsquo;s created. If not provided, the field value will be blank on creation.</p>
 <blockquote>
-<p>Field defaults can also be calculated, with a simple or arbitratily complex calculation. To do that, instead use the <a href="/docs/fields/field-options/common-options/#set-from-previous-referenced-field">Set from previous referenced field</a> option.</p></blockquote>
+<p>Field defaults can also be calculated, with a simple or arbitratily complex calculation. To do that, instead use the <a href="/docs/fields/field-options/common-options/#set-from-previous-referenced-field">Set from previous referenced field</a> option.</p>
+</blockquote>
 <h3 id="specifying-dropdown-lists-and-tags-fields">Specifying dropdown lists and tags fields</h3>
 <p>If either <a href="#use-dropdown">Use dropdown</a> or <a href="#use-tags">Use tags</a> is selected, the value(s) option provides a <strong>list</strong> of options with which to populate the dropdown, or a set of tags to choose from. Enter each option here separated by commas.</p>
 <p>If the list <strong>starts with</strong> a comma, that means the field should be blank by default when a record is created. If not, then the default will be the first value in the comma separated list.</p>
@@ -706,7 +712,8 @@
 <p>Also for dropdown lists and tags fields, Agilebase can generate dropdown contents based on a list of users and/or roles in the system. To do that, select <code>users</code> or <code>users and roles</code> from the &lsquo;fill with&rsquo; selector just below the value(s) input. The standard user ID format throughout the system is used, &lsquo;Forename Surname (username)&rsquo;.</p>
 <p>Only users/roles which have privileges to view the data in this particular table will be shown in the list. That can keep things manageable if a system has hundreds or more users.</p>
 <blockquote>
-<p>An example use would be assigning an account manager to a customer, selecting from a list of staff members (who are users).</p></blockquote>
+<p>An example use would be assigning an account manager to a customer, selecting from a list of staff members (who are users).</p>
+</blockquote>
 <p>When a user is selected in this way, more options for use are opened up, such as automatically emailing the selected person when there&rsquo;s a status change or something is overdue for example. Agilebase can look up the user&rsquo;s email address to accomplish this, See <a href="/docs/workflows/send-email/">email workflows</a> for details.</p>
 <p>When using &lsquo;fill with users&rsquo;, the list of users to appear in the dropdown can further be narrowed down by role if required. To do that, enter the text</p>
 <p><code>_users|role1,role2,role3</code></p>
@@ -814,7 +821,7 @@
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

@@ -53,21 +53,21 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2020-05-29T12:35:00+01:00">
-    <meta property="article:modified_time" content="2025-10-23T14:15:54+01:00">
+    <meta property="article:modified_time" content="2026-01-30T13:30:49+00:00">
     <meta property="article:tag" content="Junior Software Architect">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Creating a PULL API">
   <meta itemprop="description" content="Control how third party systems read data from Agilebase">
   <meta itemprop="datePublished" content="2020-05-29T12:35:00+01:00">
-  <meta itemprop="dateModified" content="2025-10-23T14:15:54+01:00">
-  <meta itemprop="wordCount" content="1335">
+  <meta itemprop="dateModified" content="2026-01-30T13:30:49+00:00">
+  <meta itemprop="wordCount" content="1249">
   <meta itemprop="keywords" content="Junior Software Architect,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Creating a PULL API">
   <meta name="twitter:description" content="Control how third party systems read data from Agilebase">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -714,7 +714,8 @@
 <p>This option controls the JSON format returned. With simple_format=true, the response will be a simple array of objects, each containing keys for the field names as above. Keys are basically lowercase field names with spaces replaced by underscores, so “Email address” would become “email_address”.</p>
 <p>With simple_format=false, a more complex but more robust format it used. Rather than field names, internal Agilebase field identifiers are used as keys. This has the advantage that if the field names are changed (easy for an Agilebase administrator to do), the JSON will remain the same. The first object in the JSON will be a dictionary mapping internal identifier to field name.</p>
 <blockquote>
-<p>We recommend that simple_format=false is specified in most cases, as it ensures APIs will remain reliable over the long term.</p></blockquote>
+<p>We recommend that simple_format=false is specified in most cases, as it ensures APIs will remain reliable over the long term.</p>
+</blockquote>
 <h4 id="unencode_htmltrue">unencode_html=true</h4>
 <p>Causes characters which would normally be encoded as HTML entities (e.g. <code>&amp;</code> -&gt; <code>&amp;amp;</code>) to be returned unencoded</p>
 <h4 id="exact_filterstruefalse-default-false">exact_filters=true/false (default false)</h4>
@@ -729,19 +730,12 @@
 <p>Standard Agilebase quick filters can be used for preparing complex criteria on multiple fields, for example in each field using “?” to find blank records, &gt; and &lt; for numbers and date ranges, phrases like “last month” for dates, “=[word]” for exact matches, “:word” for starts with, and “!word” for doesn’t contain.</p>
 <p>For dates, many common formats can be used, for example ISO format dates like &ldquo;2020-01-01&rdquo;, &ldquo;7 May 2027&rdquo;, or even computer epochs, i.e. the number of seconds since 1st Jan 1970 (sometimes used in data transfers).</p>
 <h3 id="response-codes">Response codes</h3>
-<ul>
-<li>200: request successful</li>
-<li>400: this can occur if a required parameter for the request isn&rsquo;t present, or if parameter values aren&rsquo;t URL encoded in a GET request</li>
-<li>401: unauthorised: the API key is missing or incorrect</li>
-<li>404: not found: an object identifier (company ID, table ID or report ID) was supplied that wasn’t found in the system</li>
-<li>429: too many requests: the frequency of requests is too high, please throttle them back</li>
-<li>500: some other server error</li>
-</ul>
-<p>When there is an error, the X-AB-error header will be set and JSON returned representing the error, as happens with the <a href="/docs/integrations/setting-up-the-post-api/#response">POST API</a>.</p>
+<p>[response codes here]</p>
 <blockquote>
 <p>To ensure one customer&rsquo;s use doesn&rsquo;t consume an inordinate amount of resources, each customer can only process one pull API request at a time. Whilst a request is processing, any further incoming requests are held in a queue, then processed in order as the previous one finishes.
 If at any time, a request has been held up for 60 seconds, further requests result in the 429 error and they are discarded.</p>
-<p>If this occurs, there are a number of tactics you can use to shorten individual response times or make less requests - please get in touch if you need help.</p></blockquote>
+<p>If this occurs, there are a number of tactics you can use to shorten individual response times or make less requests - please get in touch if you need help. Alternatively, you can upgrade to one of our &lsquo;isolated environment&rsquo; plans.</p>
+</blockquote>
 <h3 id="security">Security</h3>
 <p>Note that you won&rsquo;t be able to make calls to Agilebase APIs using Javascript from web browsers. You&rsquo;ll only be able to use server-side technologies to call these &lsquo;pull&rsquo; APIs, or third party tools such as Zapier or Microsoft Power Automate.</p>
 <p>The reason is that browsers block access for security reasons. The API typically needs an Authorization key to work, which can be hidden from users if the call is made server-side, but which can&rsquo;t if it&rsquo;s done from the browser. If that was allowed, any user of the website could find the Authorization key and make it public. Please see the <a href="https://stackoverflow.com/questions/11470389/how-to-protect-an-api-key-when-using-javascript">discussion here</a> for further details.</p>
@@ -817,7 +811,7 @@ If at any time, a request has been held up for 60 seconds, further requests resu
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified October 23, 2025: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/f3be03cfea8872218423c9a896575ce36505ffb2">API URL fixes (f3be03c)</a>
+  Last modified January 30, 2026: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/83516ae5482b15e8ae85a51d9bcbaa79d138ed93">Error codes rationalisation (83516ae)</a>
 </div>
 
 </div>
@@ -844,7 +838,7 @@ If at any time, a request has been held up for 60 seconds, further requests resu
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

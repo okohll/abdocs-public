@@ -70,8 +70,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="5. Cross References and Automations">
   <meta name="twitter:description" content="Introducing more advanced features such as cross referencing data and building a utomations">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -186,7 +186,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -210,7 +210,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -435,12 +435,14 @@
 <p>Move it to right place (probably near the top)</p>
 <p>Close the edit, navigate to a Sales opportunity record and see how it looks</p>
 <blockquote>
-<p>You have a little bit of control how it appears on the form, by choosing ‘Tabular display’ and or the drop down ‘display of fields’</p></blockquote>
+<p>You have a little bit of control how it appears on the form, by choosing ‘Tabular display’ and or the drop down ‘display of fields’</p>
+</blockquote>
 <h2 id="automations---sending-an-email">Automations - sending an email</h2>
 <p>Our second example is going to demonstrate the power of Workflows. We can configure the system to be working when we’re not! We will now add an internal ‘Reminder’ email that will prompt the owner of our Sales opportunities to update their progress.
 You can read about this facility at <a href="/docs/workflows/send-email/">docs workflows - sending an email</a></p>
 <blockquote>
-<p>IMPORTANT NOTE - Whilst Agilebase can be used to send emails, it should NOT be used for marketing purposes. Rather it should be used as a method to notify people about data associated to the system. In this instance we are going to remind people that they have ‘Sales opportunities requiring updates’</p></blockquote>
+<p>IMPORTANT NOTE - Whilst Agilebase can be used to send emails, it should NOT be used for marketing purposes. Rather it should be used as a method to notify people about data associated to the system. In this instance we are going to remind people that they have ‘Sales opportunities requiring updates’</p>
+</blockquote>
 <p>[guide 1.5 - video 2]<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/CG4y7jclRK8?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
@@ -449,7 +451,8 @@ You can read about this facility at <a href="/docs/workflows/send-email/">docs w
 <p>We first need to create the Workflow that will do all the work for us.</p>
 <p>Find the Sales Opportunity table, click to Edit, navigate to Names and Views, and Create a new view (without all fields) in the Tile called ‘System - Workflows’. We suggest a name like “WF email - Sales opportunities requiring updates”</p>
 <blockquote>
-<p>Prefixing with WF, along with some text, makes it clear to future developers what action the Workflow performs.</p></blockquote>
+<p>Prefixing with WF, along with some text, makes it clear to future developers what action the Workflow performs.</p>
+</blockquote>
 <h3 id="2-our-intial-task-is-to-add-all-the-fields-we-wish-to-use-in-the-email">2. Our intial task is to add all the fields we wish to use in the email</h3>
 <p>Add the join to get the Main contact’s full name</p>
 <p>Add Title, Date of Enquiry, Main Contact, Owner, Last updated</p>
@@ -635,7 +638,7 @@ Go to ‘Properties and options’, and set the ‘Row limit’ to 1</p>
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

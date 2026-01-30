@@ -66,8 +66,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Basic Field Types">
   <meta name="twitter:description" content="Text, number, date/time, auto-generated number sequence and checkbox fields">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -641,13 +641,15 @@
 <h2 id="number">Number</h2>
 <p>When adding a number field, select a <em>precision</em> from the dropdown. If <code>0</code> is chosen, then it will be a whole number (integer) field. If any other value is chosen, it will be a decimal field. The decimal precision can be changed at any time in the field options, but a whole number can&rsquo;t be converted to a decimal or vice versa via field options.</p>
 <blockquote>
-<p>See <a href="/docs/advanced-usage/build-patterns/#switching-a-field-from-one-type-to-another">changing field types</a> for more information.</p></blockquote>
+<p>See <a href="/docs/advanced-usage/build-patterns/#switching-a-field-from-one-type-to-another">changing field types</a> for more information.</p>
+</blockquote>
 <h2 id="date">Date</h2>
 <p>Represents a date or date/time, of any precision from year to second.</p>
 <h2 id="auto-generated-number-sequence">Auto-generated number sequence</h2>
 <p>The value of this field will be generated automatically, incremented by one each time a record is created.</p>
 <blockquote>
-<p>Sequence numbers are never rolled back, even on the deletion of a record, so they can&rsquo;t be used if a gapless assignment of numbers is required. To accomplish that, calculate a value with a <a href="/docs/fields/field-options/common-options/#set-from-previous-referenced-field">cross-referenced field</a>.</p></blockquote>
+<p>Sequence numbers are never rolled back, even on the deletion of a record, so they can&rsquo;t be used if a gapless assignment of numbers is required. To accomplish that, calculate a value with a <a href="/docs/fields/field-options/common-options/#set-from-previous-referenced-field">cross-referenced field</a>.</p>
+</blockquote>
 <h2 id="relation">Relation</h2>
 <p>Adding a relation creates a link from one table to another. For example, a contacts table may contain a relation linking to an organisations table, to allow a person to belong to an organisation. See <a href="/docs/tables/relational-database-concepts/">relational database concepts</a> for further info.</p>
 <h2 id="checkbox">Checkbox</h2>
@@ -737,7 +739,7 @@
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

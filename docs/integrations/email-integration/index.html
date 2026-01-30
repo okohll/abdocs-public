@@ -66,8 +66,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Email Integration">
   <meta name="twitter:description" content="Importing emails into Agilebase">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -648,12 +648,14 @@
 <li>Create a view from that table to look up relevant email addresses for. For example, if the table is for sales enquiries you might want to create one which contains the email addresses of all contacts for the organisation the enquiry is for.
 <blockquote>
 <p>The email address field used must be a text field have one or more of these options ticked: &lsquo;use in title&rsquo;; &lsquo;required&rsquo;; &lsquo;prominent&rsquo;; &lsquo;unique&rsquo;, or be a calculation which references a text field which does.
-The name of the field doesn&rsquo;t matter, it doesn&rsquo;t have to have the word email in it for example</p></blockquote>
+The name of the field doesn&rsquo;t matter, it doesn&rsquo;t have to have the word email in it for example</p>
+</blockquote>
 </li>
 <li>In that view, go to the <em>use API</em> and tick &lsquo;allow incoming email&rsquo;</li>
 <li>Name the view to match the part of the email address in 1 before the @ sign. If the email address is <a href="mailto:contactimport@mycompanyname.agilebase.co.uk">contactimport@mycompanyname.agilebase.co.uk</a>, then the view&rsquo;s name must be &lsquo;contactimport&rsquo;
 <blockquote>
-<p>The view can be in any menu, that part of the name doesn&rsquo;t matter</p></blockquote>
+<p>The view can be in any menu, that part of the name doesn&rsquo;t matter</p>
+</blockquote>
 </li>
 </ol>
 <h2 id="to-make-each-incoming-email-create-a-new-record-in-a-child-table">To make each incoming email create a new record in a child table</h2>
@@ -661,7 +663,8 @@ The name of the field doesn&rsquo;t matter, it doesn&rsquo;t have to have the wo
 <ol>
 <li>Create or select a child table to accept emails. A new record will be created in this table for each incoming email
 <blockquote>
-<p>The child table must include a relation field pointing to the parent table</p></blockquote>
+<p>The child table must include a relation field pointing to the parent table</p>
+</blockquote>
 </li>
 <li>Ensure there is a <a href="/docs/tables/hierarchy-navigation/tabs/">tab</a> for that child table in the parent table</li>
 <li>Edit the tab options and tick &lsquo;accept emails from parent table&rsquo;</li>
@@ -751,7 +754,7 @@ The name of the field doesn&rsquo;t matter, it doesn&rsquo;t have to have the wo
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

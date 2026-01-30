@@ -66,8 +66,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Relation Field Options">
   <meta name="twitter:description" content="Options specific to relation fields, which determine how tables link together">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -652,7 +652,8 @@
 <h2 id="do-not-auto-populate">Do not auto-populate</h2>
 <p>This is ticked by default. When un-ticked, this means that when you add a new record, the relation field will automatically be populated with a link to the last &lsquo;parent&rsquo; item you were looking at. For example, if you edit an organisation, then move away somewhere else in the system, finally load a contacts screen and create a new contact, that contact will link to the organisation you were editing (assuming there&rsquo;s a relation field linking contacts and organisations).</p>
 <blockquote>
-<p>A <a href="/docs/fields/field-options/sequence-field-options/">similarly named option</a> exists for sequence fields, to prevent auto-population of sequence numbers</p></blockquote>
+<p>A <a href="/docs/fields/field-options/sequence-field-options/">similarly named option</a> exists for sequence fields, to prevent auto-population of sequence numbers</p>
+</blockquote>
 <h2 id="on-parent-delete">On parent delete</h2>
 <p>This is an important option for controlling what happens when a parent record is deleted.</p>
 <p>Let&rsquo;s assume we have a table of customers and one of invoices, each invoice linked to a customer by a relation field in the invoices table, so the invoice is a &lsquo;child record&rsquo; of the customer. What would happen if a customer is deleted? This setting controls that and there are three options.</p>
@@ -664,7 +665,8 @@
 </li>
 </ul>
 <blockquote>
-<p>This is the safest option and the default</p></blockquote>
+<p>This is the safest option and the default</p>
+</blockquote>
 <ul>
 <li>cascade delete
 <ul>
@@ -678,7 +680,8 @@
 </li>
 </ul>
 <blockquote>
-<p>Note that this option is set on the <em>child</em> relation field, not on the parent side. Therefore you can have different rules for different child tables. A good practice is to set this to <em>disallow deletion</em> for any important information in the system, that you wouldn&rsquo;t want to be lost (like invoices) and for other tables choose one of the other options appropriately.</p></blockquote>
+<p>Note that this option is set on the <em>child</em> relation field, not on the parent side. Therefore you can have different rules for different child tables. A good practice is to set this to <em>disallow deletion</em> for any important information in the system, that you wouldn&rsquo;t want to be lost (like invoices) and for other tables choose one of the other options appropriately.</p>
+</blockquote>
 <h2 id="value-to-display">Value to display</h2>
 <p>The field from the parent table that easily identified the record, to show in the child editing form. For example, for the &lsquo;company&rsquo; relation field in a contacts table, you might select &lsquo;company name&rsquo;.</p>
 <h2 id="secondary-value-to-display">Secondary value to display</h2>
@@ -688,9 +691,11 @@
 <p>When the user is selecting a parent record to link to a particular child, they will be able to use this view to show a list of parent records to choose from. Therefore the view must be created from the parent table.</p>
 <p>They will be able to filter on any field in the view to search for a record.</p>
 <blockquote>
-<p>Using pre-set <a href="/docs/views/filters/">view filters</a> to narrow down the list of relevant records can be helpful, e.g. if only records of a certain category are required.</p></blockquote>
+<p>Using pre-set <a href="/docs/views/filters/">view filters</a> to narrow down the list of relevant records can be helpful, e.g. if only records of a certain category are required.</p>
+</blockquote>
 <blockquote>
-<p>If that&rsquo;s not sufficient for your needs, you can go further and pass in your own <a href="/docs/advanced-usage/build-patterns/#custom-filtering-when-choosing-a-relation">contextual information to filter by</a></p></blockquote>
+<p>If that&rsquo;s not sufficient for your needs, you can go further and pass in your own <a href="/docs/advanced-usage/build-patterns/#custom-filtering-when-choosing-a-relation">contextual information to filter by</a></p>
+</blockquote>
 <h2 id="use-only-given-values">Use only given values</h2>
 <p>When this is un-ticked, allow the user to create a new parent record directly from the child record&rsquo;s editing screen. Relation fields allow you to type the name of a parent record to find and select one. If no matches are found, a prompt will appear allowing the user to create one.</p>
 <p>It will also restrict people to only being able to choose values from the <strong>view to use</strong> (see above). With the option un-ticked, they can use any view from the related table to pick records from.</p>
@@ -781,7 +786,7 @@
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

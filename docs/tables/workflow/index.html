@@ -65,8 +65,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Workflow">
   <meta name="twitter:description" content="Running a workflow whenever a record is added">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -181,7 +181,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -205,7 +205,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -637,9 +637,11 @@
 <h2 id="when-a-records-created-run-workflow">When a record&rsquo;s created, run workflow</h2>
 <p>Run a <a href="/docs/workflows/">workflow</a> immediately after the creation of a record. The workflow runs after any field default values have been set.</p>
 <blockquote>
-<p>The workflow &lsquo;knows&rsquo; metadata such as which user is logged in, which tile is open etc., so if you want to <a href="/docs/views/calculations/#special-functions">use those in a calculation</a> in the workflow, you can do.</p></blockquote>
+<p>The workflow &lsquo;knows&rsquo; metadata such as which user is logged in, which tile is open etc., so if you want to <a href="/docs/views/calculations/#special-functions">use those in a calculation</a> in the workflow, you can do.</p>
+</blockquote>
 <blockquote>
-<p>Note that only workflows which have <strong>Frequency = manual</strong> set can be chosen to be run when a record is created. That&rsquo;s because a single workflow can&rsquo;t be used both to set initial values <em>and</em> to run every X minutes.</p></blockquote>
+<p>Note that only workflows which have <strong>Frequency = manual</strong> set can be chosen to be run when a record is created. That&rsquo;s because a single workflow can&rsquo;t be used both to set initial values <em>and</em> to run every X minutes.</p>
+</blockquote>
 <h3 id="run-this-workflow-whenever-each-record-is-viewed">Run this workflow whenever each record is viewed</h3>
 <p>As well as running the workflow on record creation, also run it whenever a user views a record in this table. Be aware this may have a performance impact for users, if the workflow is resource intensive and/or multi-step, particularly if records are also viewed frequently.</p>
 
@@ -727,7 +729,7 @@
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>

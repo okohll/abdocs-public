@@ -66,8 +66,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Build Patterns">
   <meta name="twitter:description" content="Common patterns, or recipes for accomplishing useful tasks">
-<link rel="preload" href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" as="style" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
-<link href="/scss/main.min.bb7424dd8c9a38e83d0dc3ccedd23df71ba68fe43fc13066df57bc51e5706198.css" rel="stylesheet" integrity="sha256-u3Qk3YyaOOg9DcPM7dI99xumj&#43;Q/wTBm31e8UeVwYZg=" crossorigin="anonymous">
+<link rel="preload" href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" as="style" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
+<link href="/scss/main.min.ba8fa509183cd77e54796a8c9d2f6dbf74adda0b81f6ca7746c89ee29f16e90c.css" rel="stylesheet" integrity="sha256-uo&#43;lCRg8135UeWqMnS9tv3St2guB9sp3Rsie4p8W6Qw=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b0c989eec0ffd02b41d184a3a8f807cb.json"
+    data-offline-search-index-json-src="/offline-search-index.b5183018b86286c52f2944cb5fe09df0.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -646,11 +646,13 @@
 <h2 id="settings-table-idea">Settings table idea</h2>
 <p>To use a single store of a common setting throughout the application. When a setting is changed it will then automatically take effect throught the whole application.</p>
 <blockquote>
-<p>Example: VAT rate</p></blockquote>
+<p>Example: VAT rate</p>
+</blockquote>
 <h2 id="snapshots-idea">Snapshots idea</h2>
 <p>Taking snapshots of a set of rows from a table at a point in time allows a comparison of earlier snapshots with later ones, or the current state, to show differences.</p>
 <blockquote>
-<p>Example: delivery van loading reports. An initial snapshot of tomorrow’s orders shows what product quantities to load onto the vans. Later snapshots, taken at any point, will show any additions/removals needed at that time, by subtracting the current order lines from previous ones.</p></blockquote>
+<p>Example: delivery van loading reports. An initial snapshot of tomorrow’s orders shows what product quantities to load onto the vans. Later snapshots, taken at any point, will show any additions/removals needed at that time, by subtracting the current order lines from previous ones.</p>
+</blockquote>
 <h2 id="gap-filling-in-monthly-or-other-period-reporting">Gap filling in monthly (or other period) reporting</h2>
 <p>When reporting monthly figures in a view (e.g. quantities sold per product per month), if there may be some gaps, they can be filled with zeros.</p>
 <p>In outline, the solution is to</p>
@@ -708,7 +710,8 @@ We now have a view of all possible combinations of course and trainer</li>
 <li>From a separate view, join to this series and count up all the cases where it&rsquo;s not a weekend</li>
 </ol>
 <blockquote>
-<p>This is necessary as calculations on the results of a generate_series often need to be done from a separate view</p></blockquote>
+<p>This is necessary as calculations on the results of a generate_series often need to be done from a separate view</p>
+</blockquote>
 <h2 id="outputting-a-pivoted-view-in-a-printout">Outputting a ‘pivoted’ view in a printout</h2>
 <p>In a template, <code>$view.htmlTable(“table name”, “view name”)</code> outputs the contents of the view.</p>
 <p>Use <code>$view.htmlTableTransposed(“table name”, “view name”)</code> instead for a pivoted version with columns and rows swapped.</p>
@@ -742,9 +745,11 @@ We now have a view of all possible combinations of course and trainer</li>
 </ol>
 <p>In that way, you can set the chooser to only show options relevant to the situation at hand.</p>
 <blockquote>
-<p>Note 1: there&rsquo;s no need to set the visibility of the referenced data field to hide it, ticking &lsquo;use as filter&rsquo; will hide it automatically. You can if you like use the visibility to toggle it on or off, as when hidden it won&rsquo;t take effect</p></blockquote>
+<p>Note 1: there&rsquo;s no need to set the visibility of the referenced data field to hide it, ticking &lsquo;use as filter&rsquo; will hide it automatically. You can if you like use the visibility to toggle it on or off, as when hidden it won&rsquo;t take effect</p>
+</blockquote>
 <blockquote>
-<p>Note 2: remember that the chooser view will already be filtering by the IDs of any other relations in the form. For example if you&rsquo;re editing a contact and there&rsquo;s a relation to an organisation, the chooser will filter by that organisation <strong>if it contains the organisation ID</strong>. If you want to filter <em>only</em> using your referenced data field, make sure to remove any extra ID fields in the chooser view.</p></blockquote>
+<p>Note 2: remember that the chooser view will already be filtering by the IDs of any other relations in the form. For example if you&rsquo;re editing a contact and there&rsquo;s a relation to an organisation, the chooser will filter by that organisation <strong>if it contains the organisation ID</strong>. If you want to filter <em>only</em> using your referenced data field, make sure to remove any extra ID fields in the chooser view.</p>
+</blockquote>
 <h2 id="switching-a-field-from-one-type-to-another">Switching a field from one type to another</h2>
 <p>For example, converting a whole number field into a decimal number</p>
 <ol>
@@ -844,7 +849,7 @@ We now have a view of all possible combinations of course and trainer</li>
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2025
+    2026
     <span class="td-footer__authors">Agilebase Ltd</span></span><span class="td-footer__all_rights_reserved">All Rights Reserved</span><span class="ms-2"><a href="https://agilebase.co.uk/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></span>
       </div>
     </div>
