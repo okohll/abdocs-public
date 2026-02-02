@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.9dec61e084c5f5b85f0024cd9b9e7176.json"
+    data-offline-search-index-json-src="/offline-search-index.8361d1f10d934f69832b85cf7dfa26b2.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.9dec61e084c5f5b85f0024cd9b9e7176.json"
+    data-offline-search-index-json-src="/offline-search-index.8361d1f10d934f69832b85cf7dfa26b2.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -663,7 +663,7 @@
 <p>Finally, the API key provided needs to be submitted not as a HTTP request parameter, but as a header named ‘Authorization’. This is to reduce the change of it being cached or used in a browser string where it can be easily retained and read by unauthorised users. We use the Bearer authentication standard, where the value supplied is the word Bearer followed by a space then the authorisation key, but we also accept just a plain authorisation key.</p>
 <h3 id="php">PHP</h3>
 <p>Here’s a complete example of making a request, using PHP in WordPress</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://cloud.agilebase.co.uk/agileBase/mycompanyname/myviewid&#39;</span>;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://cloud.agilebase.co.uk/agileBase/mycompanyname/myviewid&#39;</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>$args <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>(<span style="color:#e6db74">&#39;headers&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">array</span>( <span style="color:#e6db74">&#39;Authorization&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;Bearer myauthorisationkey&#39;</span>));
 </span></span><span style="display:flex;"><span>
@@ -671,7 +671,7 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">var_dump</span>($response);
 </span></span></code></pre></div><p>Sample output would look like</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[
 </span></span><span style="display:flex;"><span>  {
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;forename&#34;</span>: <span style="color:#e6db74">&#34;Oliver&#34;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;surname&#34;</span>: <span style="color:#e6db74">&#34;Kohll&#34;</span>,
@@ -690,7 +690,7 @@
 </span></span><span style="display:flex;"><span>]
 </span></span></code></pre></div><p>of course the fields being those returned for the particular view chosen.</p>
 <h3 id="a-python-example">A Python example</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> requests
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> requests
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># API endpoint</span>
 </span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span>request_url<span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Headers, including the authorization header</span>
@@ -709,7 +709,7 @@
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Failed to retrieve data: </span><span style="color:#e6db74">{</span>response<span style="color:#f92672">.</span>status_code<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
 </span></span></code></pre></div><h3 id="command-line">Command line</h3>
 <p>Or just a simple one-liner:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -H <span style="color:#e6db74">&#34;Authorization: Bearer API_KEY&#34;</span> <span style="color:#e6db74">&#34;http://cloud.agilebase.co.uk/agileBase/mycompanyname/mycompanyid&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -H <span style="color:#e6db74">&#34;Authorization: Bearer API_KEY&#34;</span> <span style="color:#e6db74">&#34;http://cloud.agilebase.co.uk/agileBase/mycompanyname/mycompanyid&#34;</span>
 </span></span></code></pre></div><h3 id="request-options">Request options</h3>
 <p>Here are the options that can be provided as parameters to the request</p>
 <h4 id="simple_formattruefalse-default-false">simple_format=true/false (default false)</h4>

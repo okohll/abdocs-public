@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.9dec61e084c5f5b85f0024cd9b9e7176.json"
+    data-offline-search-index-json-src="/offline-search-index.8361d1f10d934f69832b85cf7dfa26b2.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.9dec61e084c5f5b85f0024cd9b9e7176.json"
+    data-offline-search-index-json-src="/offline-search-index.8361d1f10d934f69832b85cf7dfa26b2.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -692,10 +692,10 @@ b) the value of the first field in the view above</p>
 <h3 id="embedding-images">Embedding images</h3>
 <p>If you have an image file in your view, you can reference it by adding _path to the variable name.</p>
 <p>For example, if you have a file with field name &ldquo;Company Logo&rdquo;, you could embed the image in a template with the code</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;$company_logo_path&#34;</span> /&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;$company_logo_path&#34;</span> /&gt;
 </span></span></code></pre></div><h3 id="embedding-qr-codes">Embedding QR codes</h3>
 <p>Include the following code in your template to generate a QR code:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;resources/qrcode.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;resources/qrcode.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;resources/qrsetup.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ab_qrcode&#34;</span> <span style="color:#a6e22e">data-url</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;[my URL or data to encode]&#34;</span> <span style="color:#a6e22e">data-width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;[width in pixels]&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></div><h2 id="advanced-templating">Advanced templating</h2>
@@ -825,7 +825,7 @@ b) the value of the first field in the view above</p>
 <p>Some table types (currently only key/value tables) will add classes to each <code>th</code> or <code>td</code> depending on the datatype of the field, so one of</p>
 <p><code>varchar</code> (for text fields), <code>timestamp</code>, <code>float</code> (fields are actually double precision), <code>bigint</code> or <code>boolean</code>.</p>
 <p>So for example, if you want to make the backgrounds of all table headings blue, add</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">style</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">style</span>&gt;
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">table</span>.<span style="color:#a6e22e">standard</span>.<span style="color:#a6e22e">referenced_report_data</span> <span style="color:#f92672">th</span> {
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">blue</span>;
 </span></span><span style="display:flex;"><span>    }

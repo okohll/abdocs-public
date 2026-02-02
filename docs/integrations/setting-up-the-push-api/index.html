@@ -182,7 +182,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.9dec61e084c5f5b85f0024cd9b9e7176.json"
+    data-offline-search-index-json-src="/offline-search-index.8361d1f10d934f69832b85cf7dfa26b2.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -206,7 +206,7 @@
     aria-label="Search this site…"
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.9dec61e084c5f5b85f0024cd9b9e7176.json"
+    data-offline-search-index-json-src="/offline-search-index.8361d1f10d934f69832b85cf7dfa26b2.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -658,7 +658,7 @@ The system will now make a POST to the URL specified in step 2 whenever there’
 <p>This is obviously what to choose if sending to zapier.com, but there&rsquo;s nothing stopping you from using if for other systems too.</p>
 <p>The contents of the view are posted to the URL as JSON, as the body of the HTTP request.</p>
 <p>The body (JSON) will consist of two properties, &lsquo;fields&rsquo;, listing the field names and types and mapping them to internal field IDs, then &lsquo;data&rsquo;, an array of objects, one for each row. Here&rsquo;s an example</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span>{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;fields&#34;</span>: [
 </span></span><span style="display:flex;"><span>    {
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;exampletext_yhgfwesdf&#34;</span>,
@@ -685,7 +685,7 @@ The system will now make a POST to the URL specified in step 2 whenever there’
 </span></span></code></pre></div><h4 id="generate-simple-format">Generate &lsquo;simple format&rsquo;</h4>
 <p>If this option is left un-ticked, then internal field IDs will be used as the property keys in JSON objects representing each row in the view. Internal field names are un-changing but are less &lsquo;human readable&rsquo;. This is generally the best option to use as it ensures that if someone changes the name of a field in the view, the data structure won&rsquo;t change.</p>
 <p>If ticked, then &lsquo;human friendly&rsquo; keys will be used, e.g. a field called &lsquo;First Name&rsquo; will be represented with key &lsquo;first_name&rsquo;. The &lsquo;fields&rsquo; array will also be omitted, so the example above would become</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span>{
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;data&#34;</span>: [
 </span></span><span style="display:flex;"><span>    {
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;example_text&#34;</span>: <span style="color:#e6db74">&#34;Some text&#34;</span>,
