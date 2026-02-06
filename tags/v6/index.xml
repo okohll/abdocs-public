@@ -6,7 +6,7 @@
     <description>Recent content in V6 on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Feb 2026 11:37:01 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 17:21:01 +0000</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/tags/v6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Security Features</title>
@@ -555,13 +555,6 @@
       <description>&lt;h2 id=&#34;use-as-a-filter-for-relations&#34;&gt;Use as a filter for relations&lt;/h2&gt;&#xA;&lt;p&gt;See &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/#custom-filtering-when-choosing-a-relation&#34;&gt;Common build patters - custom filtering when using a relation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;prominent&#34;&gt;Prominent&lt;/h2&gt;&#xA;&lt;p&gt;Make the background of the referenced panel bright red - useful for showing warnings on screen.&lt;/p&gt;&#xA;&lt;p&gt;If the referenced field is a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/workflows/advanced/workflow-buttons/&#34;&gt;workflow button&lt;/a&gt;, then it will become mandatory - it will need to be pressed on every visit to a record, if the field is &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#field-visibility&#34;&gt;visible&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;display-of-fields&#34;&gt;Display of fields&lt;/h2&gt;&#xA;&lt;p&gt;Controls the display style - what content should be included the output, and also the format of the output: a standard panel, or various tabular styles, often used when there&amp;rsquo;s lots of data.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Creating a POST API</title>
-      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</guid>
-      <description>&lt;p&gt;Firstly, identify the table into which you wish to receive incoming data. Edit that table and open the &lt;em&gt;API&lt;/em&gt; panel. Tick &amp;lsquo;Public form or API data entry’, which will create an API for the table.&lt;/p&gt;&#xA;&lt;p&gt;To protect the system from spam input, we also suggest you tick &amp;lsquo;Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Organisation Settings</title>
       <link>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
@@ -569,7 +562,14 @@
       <description>&lt;p&gt;To access them:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;From the homepage, click your user icon at the top right of the screen and choose &lt;em&gt;Profile&lt;/em&gt; from the menu&lt;/li&gt;&#xA;&lt;li&gt;Go to &lt;em&gt;Account&lt;/em&gt; -&amp;gt; &lt;em&gt;Organisation Settings&lt;/em&gt; from the lefthand navigation bar&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;mandate-2fa&#34;&gt;Mandate 2FA&lt;/h3&gt;&#xA;&lt;p&gt;When this is ticked, all users in the organisation will be required to set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/2fa-setup/&#34;&gt;Two Factor Authentication&lt;/a&gt; before they can see or use any features of the application.&lt;/p&gt;&#xA;&lt;p&gt;We recommend that all administrators enable this if possible. Even when 2FA is mandated, admins can still &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#two-factor-authentication&#34;&gt;disable it temporarily&lt;/a&gt; on a per-user basis. The next time they log in they will be prompted to set it up again.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Creating a PUSH API</title>
+      <title>POST API - post data into Agilebase</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</link>
+      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-post-api/</guid>
+      <description>&lt;p&gt;Firstly, identify the table into which you wish to receive incoming data. Edit that table and open the &lt;em&gt;API&lt;/em&gt; panel. Tick &amp;lsquo;Public form or API data entry’, which will create an API for the table.&lt;/p&gt;&#xA;&lt;p&gt;To protect the system from spam input, we also suggest you tick &amp;lsquo;Require API key’ and reload the table to show the API key generated. This then has to be submitted with every POST request as the value of the HTTP Authorization header.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PUSH API - proactively post data from Agilebase to third party systems</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</link>
       <pubDate>Mon, 01 Jun 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-push-api/</guid>
@@ -611,7 +611,7 @@
       <description>&lt;p&gt;Once you&amp;rsquo;ve &lt;a href=&#34;https://docs.agilebase.co.uk/docs/advanced-usage/performance-optimisation/examining-performance/&#34;&gt;identified&lt;/a&gt; which views might be performance hogs, what can you do about it?&lt;/p&gt;&#xA;&lt;p&gt;There are a number of options to look at.&lt;/p&gt;&#xA;&lt;p&gt;Firstly, if a view is really slow you might want to temporarily speed it up with a quick fix to allow you to work on it.&#xA;One way to do that can be to add a filter to the view to make it not show any data.&#xA;That can be done with a filter on the row ID such as&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Creating a PULL API</title>
+      <title>PULL API - query Agilebase from third party systems</title>
       <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/</link>
       <pubDate>Fri, 29 May 2020 12:35:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/</guid>
@@ -630,6 +630,13 @@
       <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/views/special-uses/related-record-pickers/</guid>
       <description>&lt;p&gt;When a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/basic-field-types/#relation&#34;&gt;relation field&lt;/a&gt; is part of a form, the user can choose a record to link to from a view of items in the related table.&lt;/p&gt;&#xA;&lt;p&gt;That way, a subset of records can be shown relevant to the situation. For example, imagine there is a table of company records, which store customers and suppliers. When selecting a customer for a new invoice record, the user should be able to select only from companies which are customers, so a filtered view can be used.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Download files from Agilebase to third parties</title>
+      <link>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-download-api/</link>
+      <pubDate>Fri, 06 Feb 2026 16:40:00 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/docs/integrations/setting-up-the-download-api/</guid>
+      <description>&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;&#xA;&lt;p&gt;Create a view containing the files you want to make available via the API. I.e. &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/creating-a-view/&#34;&gt;create the view&lt;/a&gt; and add a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-types/special-field-types/file/&#34;&gt;file field&lt;/a&gt; to it.&lt;/p&gt;&#xA;&lt;p&gt;Turn the view into an API view by setting up the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/setting-up-the-pull-api/&#34;&gt;PULL API&lt;/a&gt; for it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;downloading-a-file&#34;&gt;Downloading a file&lt;/h2&gt;&#xA;&lt;p&gt;The view will now act as a pull API, however as the results are in JSON format, for the file field, you only get the filename, not the actual file itself.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PUSH API worked example - Zapier</title>
