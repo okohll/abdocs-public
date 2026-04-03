@@ -15,25 +15,11 @@
       <description>&lt;p&gt;As a no-code platform, Agilebase allows you to easily construct (and later de-construct or &amp;lsquo;refactor&amp;rsquo;) and change your software.&lt;/p&gt;&#xA;&lt;h2 id=&#34;toggling-development-mode-on-and-off&#34;&gt;Toggling development mode on and off&lt;/h2&gt;&#xA;&lt;p&gt;To get started, you need to toggle from &amp;rsquo;normal&amp;rsquo; mode to &amp;lsquo;development&amp;rsquo; mode.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/toggle-build-mode.png&#34; alt=&#34;Toggle development mode&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;You can do this wherever you are in the system and you will switch to building or developing the item you&amp;rsquo;re looking at. The three main areas this covers are:&lt;/p&gt;</description>
     </item>
     <item>
-      <title>What is low code / no code?</title>
-      <link>https://docs.agilebase.co.uk/introduction/what-is-no-code/</link>
-      <pubDate>Sat, 18 Apr 2020 16:57:55 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/introduction/what-is-no-code/</guid>
-      <description>&lt;p&gt;Over the last two years low code / no code software has appeared to burst onto the scene from nowhere. The truth however is a bit less spectacular. Low code / no code platforms have been in development under the radar for at least a decade. What has changed now is the promise has become a reality.&lt;/p&gt;&#xA;&lt;p&gt;Low code / no code promised to give users the power to produce bespoke systems, rather than have to rely on developers. For the last forty years off the shelf software was the only real alternative to bespoke development but over that time it gained a reputation for being inflexible and bloated.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Agile Academy</title>
       <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression/</link>
       <pubDate>Fri, 18 Feb 2022 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression/</guid>
       <description>&lt;p&gt;The Agile Academy learning pathway enables you to transform your career. You can go from  a citizen developer to a no-code software architect.&lt;/p&gt;&#xA;&lt;p&gt;Citizen developers can create their own applications using no code. Software architects can build complex applications, including powerful workflow features and integrations with other applications.&lt;/p&gt;&#xA;&lt;p&gt;To go on this journey requires no technical knowledge. Beginners - &amp;ldquo;citizen developers&amp;rdquo; - come from a diverse range of non-IT backgrounds. The only skills you need are the ability to think, be willing to learn, and be able to plan.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What is a back office system?</title>
-      <link>https://docs.agilebase.co.uk/introduction/what-is-a-back-office-system/</link>
-      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/introduction/what-is-a-back-office-system/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Back-office_software&#34;&gt;Back-office software&lt;/a&gt; solutions evolved with the emergence of cloud-based software as a service (SaaS) as a way of distinguishing them from front-office software, (which typically refers to software used for processes related to things like marketing, sales, interaction tracking, project management and other customer-facing activities).&lt;/p&gt;&#xA;&lt;p&gt;Whilst Agilebase is widely used as front-office platform our unique strength is in our ability to support not only this front end but also the back-office.&lt;/p&gt;</description>
     </item>
     <item>
       <title>2FA setup</title>
@@ -69,13 +55,6 @@
       <pubDate>Fri, 22 Apr 2022 13:00:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create a Table and associated Views to use it!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched &amp;ldquo;How to use Agilebase&amp;rdquo;&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;This stage of the guide will introduce you to the basic activities required to build a simple application. We will start by creating a table with different types of fields in order to store a variety of data. We will then show you how to create and control tiles, views and forms which are the interfaces that your users will use to enter and consume this data.&#xA;Let us start by building a simple task list.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Why use Agilebase?</title>
-      <link>https://docs.agilebase.co.uk/introduction/why-use-agilebase/</link>
-      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/introduction/why-use-agilebase/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/platform.jpg&#34; alt=&#34;Agilebase banner&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Agilebase has been created with some important aims in mind&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;to create software that people find enjoyable to use, which manifests in many ways, most obviously the attractive and colourful user interface, but also because it can match user&amp;rsquo;s requirements exactly&lt;/li&gt;&#xA;&lt;li&gt;to support the full ambitions of business owners. It&amp;rsquo;s simple to get started but the platform has a very high &lt;em&gt;technical ceiling&lt;/em&gt; - there&amp;rsquo;s not much you can&amp;rsquo;t accomplish&lt;/li&gt;&#xA;&lt;li&gt;to make the most out of an organisation workforce&amp;rsquo;s perhaps un-tapped skills and experience, allowing people to take full ownership of their own areas of their business&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Policies</title>
@@ -148,13 +127,6 @@
       <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;  Introduce Kanban / Card view. Power of dropdowns on fields. Show how easy to add graphs. Show off the advanced UI elements of aB&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Capturing Company and Contact details” video. Understand relational data&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;In this step of our guide we going to look at adding a dropdown field to &amp;ldquo;control&amp;rdquo; data input as we want to set up a Kanban board approach to managing Sales Opportunities.&#xA;This video assumes you are happy creating tables so jumps to the point of adding the Dropdown field.&#xA;If you are following along and want to build this table please copy the following table structure&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Who can use it?</title>
-      <link>https://docs.agilebase.co.uk/introduction/who-can-use-it/</link>
-      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/introduction/who-can-use-it/</guid>
-      <description>&lt;p&gt;Firstly, no formal programming experience is necessary.&lt;/p&gt;&#xA;&lt;p&gt;Often, people who are interested in building applications tend to be those who have created spreadsheets to run business processes but have become aware of the limitations and want to move to the next level.&lt;/p&gt;&#xA;&lt;p&gt;Following training, anyone with the requisite interest, ability and ambition can progress from making simple changes and additions to existing applications, to building complex applications&lt;/p&gt;&#xA;&lt;h2 id=&#34;citizen-developers&#34;&gt;Citizen Developers&lt;/h2&gt;&#xA;&lt;p&gt;People working within an organisation at any level can be trained in the technology and thought patterns necessary to build useful applications. Companies can therefore make the most of the abilities of their staff, that may currently be un-tapped.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Adding, editing and removing</title>
       <link>https://docs.agilebase.co.uk/docs/tables/adding-and-removing/</link>
       <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
@@ -188,13 +160,6 @@
       <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/guides/guide1-crm/calculated-datafields/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Introduce calculations and basic SQL&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have understanding of relational data&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;The ability to use your existing data to calculate new information will dramatically enhance the user interface, and lead your users to create new data!&lt;/p&gt;&#xA;&lt;p&gt;In this step fo the guide we&amp;rsquo;ll start with something simple, expanding the data we know about Organisations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;calculating-the-number-of-contacts-belonging-to-an-organisation&#34;&gt;Calculating the number of contacts belonging to an Organisation&lt;/h2&gt;&#xA;&lt;p&gt;Using the All Organisations view as a starting point, clone it and rename it &amp;ldquo;Organisation - Calculations.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Scaling potential</title>
-      <link>https://docs.agilebase.co.uk/introduction/scaling-potential/</link>
-      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/introduction/scaling-potential/</guid>
-      <description>&lt;p&gt;Using Agilebase you can start small (perhaps in one team or department) and build apps iteratively to encompass a constantly widening range of business requirements. Many back office and CRM systems don&amp;rsquo;t typically store high volumes of data, but as systems grow its not uncommon to add transactional apps such as customer order processing for example, which can experience high throughput.&lt;/p&gt;&#xA;&lt;p&gt;Agilebase supports all three stages of an organisation&amp;rsquo;s lifecycle - startup, scaling and growth. As a startup, development speed and flexibility are key, during scaling efficiency becomes important and as a large organisation, control, robustness and trust come to the fore. We&amp;rsquo;ll explain how each of these is covered.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Common Options</title>
@@ -251,13 +216,6 @@
       <pubDate>Sun, 20 Jun 2021 09:20:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/app_login/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s possible for a developer to create a third party application, for example a phone or tablet app, that communicates with Agilebase via the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations&#34;&gt;API&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Now to use the API, you don&amp;rsquo;t need to authenticate as a user, as long as the app has the correct Authorization key(s), it can read and write data to Agilebase.&lt;/p&gt;&#xA;&lt;p&gt;However, in some cases the app may need to confirm that someone has a valid Agilebase account before allowing them to use the app. This may or may not be necessary depending on the use case, for example depending on whether the app is free to use for anyone, or must be limited to paying customers.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Costing structure</title>
-      <link>https://docs.agilebase.co.uk/introduction/costing-structure/</link>
-      <pubDate>Mon, 22 Jun 2020 09:57:55 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/introduction/costing-structure/</guid>
-      <description>&lt;p&gt;A large variety of applications can be built using the Agilebase platform. Customers can start small (perhaps in one team or department, or a new startup business) and build apps iteratively to encompass a constantly widening range of business requirements.&lt;/p&gt;&#xA;&lt;p&gt;Our costing structure has been developed to ensure fairness and affordability however far along an organisation is in their growth.&lt;/p&gt;&#xA;&lt;p&gt;Costing is controlled by five factors&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Users - the number of people who can log in&lt;/li&gt;&#xA;&lt;li&gt;Tables - a measure of the size of an application - how many capabilities does it cover?&lt;/li&gt;&#xA;&lt;li&gt;Document storage - used if a company uploads or generates documents, images or videos&lt;/li&gt;&#xA;&lt;li&gt;Quantity of data - the number of records stored in a system&lt;/li&gt;&#xA;&lt;li&gt;Optional API charges - when integrating with third party software&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Each element has a sliding scale - the larger the number of units, the lower the per-unit cost, to allow large scale use while remaining affordable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating a view</title>

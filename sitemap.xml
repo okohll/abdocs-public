@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://docs.agilebase.co.uk/releases/</loc>
+    <lastmod>2026-04-03T10:57:55+01:00</lastmod>
+  </url><url>
     <loc>https://docs.agilebase.co.uk/blog/</loc>
     <lastmod>2026-04-03T10:53:18+01:00</lastmod>
   </url><url>
@@ -26,9 +29,6 @@
     <loc>https://docs.agilebase.co.uk/docs/introduction/</loc>
     <lastmod>2026-04-01T21:44:04+01:00</lastmod>
   </url><url>
-    <loc>https://docs.agilebase.co.uk/introduction/what-is-no-code/</loc>
-    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
-  </url><url>
     <loc>https://docs.agilebase.co.uk/docs/introduction/learner-progression/</loc>
     <lastmod>2026-04-03T11:04:49+01:00</lastmod>
   </url><url>
@@ -36,9 +36,6 @@
     <lastmod>2026-04-01T21:44:04+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/guides/guide1-crm/</loc>
-    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/introduction/what-is-a-back-office-system/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/security-and-compliance/</loc>
@@ -66,9 +63,6 @@
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</loc>
-    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/introduction/why-use-agilebase/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/security-and-compliance/policies/</loc>
@@ -110,9 +104,6 @@
     <loc>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
-    <loc>https://docs.agilebase.co.uk/introduction/who-can-use-it/</loc>
-    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
-  </url><url>
     <loc>https://docs.agilebase.co.uk/docs/tables/adding-and-removing/</loc>
     <lastmod>2024-02-07T18:15:05+00:00</lastmod>
   </url><url>
@@ -129,9 +120,6 @@
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/guides/guide1-crm/calculated-datafields/</loc>
-    <lastmod>2023-11-27T10:15:18+00:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/introduction/scaling-potential/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/fields/field-options/common-options/</loc>
@@ -169,9 +157,6 @@
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/app_login/</loc>
     <lastmod>2024-11-05T15:30:25+00:00</lastmod>
-  </url><url>
-    <loc>https://docs.agilebase.co.uk/introduction/costing-structure/</loc>
-    <lastmod>2024-07-31T09:18:58+01:00</lastmod>
   </url><url>
     <loc>https://docs.agilebase.co.uk/docs/views/creating-a-view/</loc>
     <lastmod>2023-11-27T10:15:18+00:00</lastmod>
