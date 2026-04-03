@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Agilebase docs</title>
+    <link>https://docs.agilebase.co.uk/blog/</link>
+    <description>Recent content in Blog on Agilebase docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 Apr 2026 10:53:18 +0100</lastBuildDate>
+    <atom:link href="https://docs.agilebase.co.uk/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Example: finding scheduling conflicts</title>
+      <link>https://docs.agilebase.co.uk/blog/2026/04/02/example-finding-scheduling-conflicts/</link>
+      <pubDate>Thu, 02 Apr 2026 09:57:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/blog/2026/04/02/example-finding-scheduling-conflicts/</guid>
+      <description>&lt;p&gt;There&amp;rsquo;s a relatively new (given Postgresql&amp;rsquo;s history) database feature called ‘date multi-ranges’ and it turns out that a partner of ours has found a great use for them for a customer they’re working with.&lt;/p&gt;&#xA;&lt;p&gt;It’s so interesting that I thought I’d write it up here. It’s potentially a widely applicable example with many possible uses amongst other customers, but also it’s just an elegant example of a great database feature that people who like to see how things work might like.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Learner Progression Levels on Agilebase docs</title>
+    <title>Agile Academy Levels on Agilebase docs</title>
     <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/</link>
-    <description>Recent content in Learner Progression Levels on Agilebase docs</description>
+    <description>Recent content in Agile Academy Levels on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Nov 2023 10:15:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 21:44:04 +0100</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Citizen Developer Level 1</title>
@@ -41,7 +41,7 @@
       <link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/software-architect/</link>
       <pubDate>Tue, 03 Oct 2023 13:00:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/software-architect/</guid>
-      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;As well as building and disassembling applications, software architects can set company-wide settings and manage the account as a whole. They can&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Add and remove &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/&#34;&gt;users&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Edit company level settings (e.g. whether to enforce 2FA)&lt;/li&gt;&#xA;&lt;li&gt;Change table &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/sensitive-data/&#34;&gt;sensitive and personal data&lt;/a&gt; settings (GDPR)&lt;/li&gt;&#xA;&lt;li&gt;View and controls users&amp;rsquo; learner progression levels&lt;/li&gt;&#xA;&lt;li&gt;Assign privileges&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;dont-know-where-to-start&#34;&gt;Don&amp;rsquo;t know where to start?&lt;/h2&gt;&#xA;&lt;p&gt;If your company has just started building using Agilebase and you are reading this, then you&amp;rsquo;re probably feeling that you&amp;rsquo;ve been thrown in to the deep end!&#xA;Don&amp;rsquo;t worry - using Agilebase will feel like you&amp;rsquo;ve been given a life buoy on &amp;hellip; with an outboard motor&amp;hellip; in lovely warm water&amp;hellip; next to the 5 star all inclusive carribean resort!&#xA;To kick off, watch the following guide which will walk you through building a fully functional sales CRM.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;As well as building and disassembling applications, software architects can set company-wide settings and manage the account as a whole. They can&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Add and remove &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/&#34;&gt;users&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Edit company level settings (e.g. whether to enforce 2FA)&lt;/li&gt;&#xA;&lt;li&gt;Change table &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/sensitive-data/&#34;&gt;sensitive and personal data&lt;/a&gt; settings (GDPR)&lt;/li&gt;&#xA;&lt;li&gt;View and set users&amp;rsquo; learning levels (Agile Academy)&lt;/li&gt;&#xA;&lt;li&gt;Assign privileges&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;dont-know-where-to-start&#34;&gt;Don&amp;rsquo;t know where to start?&lt;/h2&gt;&#xA;&lt;p&gt;If your company has just started building using Agilebase and you are reading this, then you&amp;rsquo;re probably feeling that you&amp;rsquo;ve been thrown in to the deep end!&#xA;Don&amp;rsquo;t worry - using Agilebase will feel like you&amp;rsquo;ve been given a life buoy on &amp;hellip; with an outboard motor&amp;hellip; in lovely warm water&amp;hellip; next to the 5 star all inclusive carribean resort!&#xA;To kick off, watch the following guide which will walk you through building a fully functional sales CRM.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
