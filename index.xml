@@ -183,11 +183,18 @@
       <description>&lt;p&gt;For each table, Agilebase will automatically build a data entry form for users to view, add and edit records with.&lt;/p&gt;&#xA;&lt;p&gt;The layout of this form can be controlled by selecting a layout option and adding separators to create blocks i.e. groups of fields which go together. This will create a more pleasant and usable system.&lt;/p&gt;&#xA;&lt;h2 id=&#34;layout&#34;&gt;Layout&lt;/h2&gt;&#xA;&lt;p&gt;The layout option is the main control. There are three options:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;single column&lt;/strong&gt; - a simple vertical list of fields&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;blocks in two columns&lt;/strong&gt; - makes the best use of screen space for large forms. Also allows tabs&#xA;&lt;ul&gt;&#xA;&lt;li&gt;All fields before the first separator are displayed in a section at the top of the screen, in two columns&lt;/li&gt;&#xA;&lt;li&gt;After that, each separator added creates a new block of fields. Blocks are arranged in two &amp;rsquo;newspaper&amp;rsquo; style columns which are displayed below the top section&lt;/li&gt;&#xA;&lt;li&gt;If the table has tabs, they are displayed below the top section&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;process flow&lt;/strong&gt; - blocks of fields are arranged vertically one after each other, works well when there the data entry form maps to a set process&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://docs.agilebase.co.uk/tags-and-options.png&#34; alt=&#34;Tags and options&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>3rd April 2026 - pinning views and other improvements</title>
+      <link>https://docs.agilebase.co.uk/releases/view-pinning/</link>
+      <pubDate>Tue, 07 Apr 2026 09:57:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/releases/view-pinning/</guid>
+      <description>&lt;p&gt;Last month&amp;rsquo;s release had some major improvements for developers, this one has some big benefits for everyone.&lt;/p&gt;&#xA;&lt;h2 id=&#34;view-pinning&#34;&gt;View pinning&lt;/h2&gt;&#xA;&lt;p&gt;Often, people have a favourite set of views that they frequently use. You can now &amp;lsquo;pin&amp;rsquo; those to the sidebar for easy access with one click, wherever you are in the system.&lt;/p&gt;&#xA;&lt;p&gt;To pin a view, simply click the pin icon to the left of the view name, when a view is open.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>2nd April 2026 - finding scheduling conflicts</title>
       <link>https://docs.agilebase.co.uk/blog/2026/04/02/2nd-april-2026-finding-scheduling-conflicts/</link>
       <pubDate>Thu, 02 Apr 2026 09:57:55 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/blog/2026/04/02/2nd-april-2026-finding-scheduling-conflicts/</guid>
-      <description>&lt;p&gt;There&amp;rsquo;s a relatively new (given Postgresql&amp;rsquo;s history) database feature called ‘date multi-ranges’ and it turns out that a partner of ours has found a great use for them for a customer they’re working with.&lt;/p&gt;&#xA;&lt;p&gt;It’s so interesting that I thought I’d write it up here. It’s potentially a widely applicable example with many possible uses amongst other customers, but also it’s just an elegant example of a great database feature that people who like to see how things work might like.&lt;/p&gt;</description>
+      <description>&lt;p&gt;There&amp;rsquo;s a relatively new (given Postgresql&amp;rsquo;s history) database feature called ‘date multi-ranges’ and it turns out that a partner of ours has found a great use for them for a customer they’re working with.&lt;/p&gt;&#xA;&lt;p&gt;It’s so interesting that I thought I’d write it up here. It’s potentially a widely applicable example with many possible uses amongst other customers, but also it’s just an elegant example of a great database feature that people who like to see how things work might appreciate.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Guide 3.3 - Records: Advanced UI Control</title>
@@ -398,6 +405,13 @@
       <pubDate>Tue, 19 May 2020 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/views/calculations/best_practices/</guid>
       <description>&lt;h2 id=&#34;centralise-calculations&#34;&gt;Centralise calculations&lt;/h2&gt;&#xA;&lt;p&gt;If a particular calculation is used in a number of different views, then it&amp;rsquo;s a good idea to create it once in a &amp;lsquo;utility&amp;rsquo; view, then &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/joins/#joining-to-a-view&#34;&gt;join to that view&lt;/a&gt; from any others that want to include it.&lt;/p&gt;&#xA;&lt;p&gt;To take a simple example, a VAT calculation &lt;code&gt;{net price} * 0.2&lt;/code&gt; may be created in a &amp;lsquo;vat calculation&amp;rsquo; view. Then any view wanting to display the VAT can just join to it and include the field. If any changes to the calculation need to be made in future, they then only need to be done in one place. The benefits of this increase as calculations become more complex.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Previous releases</title>
+      <link>https://docs.agilebase.co.uk/releases/previous/</link>
+      <pubDate>Sat, 04 Apr 2026 09:57:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/releases/previous/</guid>
+      <description>&lt;p&gt;Please see&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://agilebase.co.uk/category/release-announcement/&#34;&gt;https://agilebase.co.uk/category/release-announcement/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Login troubleshooting</title>

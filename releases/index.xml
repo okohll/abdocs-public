@@ -6,7 +6,21 @@
     <description>Recent content in Releases on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2026 11:17:02 +0100</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/releases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3rd April 2026 - pinning views and other improvements</title>
+      <link>https://docs.agilebase.co.uk/releases/view-pinning/</link>
+      <pubDate>Tue, 07 Apr 2026 09:57:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/releases/view-pinning/</guid>
+      <description>&lt;p&gt;Last month&amp;rsquo;s release had some major improvements for developers, this one has some big benefits for everyone.&lt;/p&gt;&#xA;&lt;h2 id=&#34;view-pinning&#34;&gt;View pinning&lt;/h2&gt;&#xA;&lt;p&gt;Often, people have a favourite set of views that they frequently use. You can now &amp;lsquo;pin&amp;rsquo; those to the sidebar for easy access with one click, wherever you are in the system.&lt;/p&gt;&#xA;&lt;p&gt;To pin a view, simply click the pin icon to the left of the view name, when a view is open.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Previous releases</title>
+      <link>https://docs.agilebase.co.uk/releases/previous/</link>
+      <pubDate>Sat, 04 Apr 2026 09:57:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/releases/previous/</guid>
+      <description>&lt;p&gt;Please see&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://agilebase.co.uk/category/release-announcement/&#34;&gt;https://agilebase.co.uk/category/release-announcement/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
