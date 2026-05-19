@@ -6,8 +6,15 @@
     <description>Recent content in Releases on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Apr 2026 11:17:02 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 16:14:16 +0100</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/releases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>17th May 2026 - more UI improvements, storage changes and coming up</title>
+      <link>https://docs.agilebase.co.uk/releases/ui-and-storage-improvements/</link>
+      <pubDate>Sun, 17 May 2026 09:57:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/releases/ui-and-storage-improvements/</guid>
+      <description>&lt;h2 id=&#34;pinning-persistence&#34;&gt;Pinning persistence&lt;/h2&gt;&#xA;&lt;p&gt;Last month&amp;rsquo;s release of the ability for users to pin views (i.e. keep favourite views permanently and easily accessible) went down well with customers and we had some great feedback.&lt;/p&gt;&#xA;&lt;p&gt;One request was to keep pinned views around between logins and other events, like platform upgrades. That&amp;rsquo;s now done.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Reminder - To pin a view, simply open in and click the pushpin icon at the top left. Then it will stick to the sidebar on the homepage, so you can click it to get back to it at any time. It will also appear at the top if you click the magnifying glass &amp;lsquo;search&amp;rsquo; icon in the top toolbar.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>3rd April 2026 - pinning views and other improvements</title>
       <link>https://docs.agilebase.co.uk/releases/view-pinning/</link>

@@ -141,6 +141,13 @@
       <description>&lt;p&gt;Exporting to spreadsheet is only one way of getting data out of Agilebase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt; can be used.&lt;/p&gt;&#xA;&lt;h2 id=&#34;allowing-exports&#34;&gt;Allowing exports&lt;/h2&gt;&#xA;&lt;p&gt;In order for a user to be allowed to export to spreadsheet, a number of critieria have to be matched, to suitably protect your organisation&amp;rsquo;s data.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>17th May 2026 - more UI improvements, storage changes and coming up</title>
+      <link>https://docs.agilebase.co.uk/releases/ui-and-storage-improvements/</link>
+      <pubDate>Sun, 17 May 2026 09:57:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/releases/ui-and-storage-improvements/</guid>
+      <description>&lt;h2 id=&#34;pinning-persistence&#34;&gt;Pinning persistence&lt;/h2&gt;&#xA;&lt;p&gt;Last month&amp;rsquo;s release of the ability for users to pin views (i.e. keep favourite views permanently and easily accessible) went down well with customers and we had some great feedback.&lt;/p&gt;&#xA;&lt;p&gt;One request was to keep pinned views around between logins and other events, like platform upgrades. That&amp;rsquo;s now done.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Reminder - To pin a view, simply open in and click the pushpin icon at the top left. Then it will stick to the sidebar on the homepage, so you can click it to get back to it at any time. It will also appear at the top if you click the magnifying glass &amp;lsquo;search&amp;rsquo; icon in the top toolbar.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Guide 3.2 - Views: Advanced UI Control</title>
       <link>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/views/</link>
       <pubDate>Tue, 17 Oct 2023 13:00:00 +0100</pubDate>
