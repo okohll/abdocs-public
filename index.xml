@@ -523,7 +523,7 @@
       <link>https://docs.agilebase.co.uk/docs/views/large-applications/</link>
       <pubDate>Sat, 06 Jun 2026 16:40:00 +0100</pubDate>
       <guid>https://docs.agilebase.co.uk/docs/views/large-applications/</guid>
-      <description>&lt;p&gt;As you build applications in Agilebase, you will quickly find yourself creating views as this section of the documentation describes.&lt;/p&gt;&#xA;&lt;p&gt;Each view serves a purpose, to help individual people carry out their daily work, for many functions from just creating lists of items to work through, through to more complex things like maths, calculating resource utilisations or stats for management reports.&lt;/p&gt;&#xA;&lt;p&gt;As an application grows in size, you will naturally start to want to make the output of one view feed into another.&lt;/p&gt;</description>
+      <description>&lt;p&gt;As you build applications in Agilebase, you will quickly find yourself creating views as this section of the documentation describes.&lt;/p&gt;&#xA;&lt;p&gt;Each view serves a purpose, to help individual people carry out their daily work. They support many functions from just creating lists of items to work through, through to more complex things like maths, calculating resource utilisations or stats for management reports.&lt;/p&gt;&#xA;&lt;p&gt;As an application grows in size, you will naturally start to want to make the output of one view feed into another.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Altering Data</title>

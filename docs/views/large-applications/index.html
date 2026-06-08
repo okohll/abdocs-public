@@ -53,15 +53,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2026-06-06T16:40:00+01:00">
-    <meta property="article:modified_time" content="2026-06-07T19:51:48+01:00">
+    <meta property="article:modified_time" content="2026-06-08T12:37:41+01:00">
     <meta property="article:tag" content="Citizen Developer Level 1">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Large applications">
   <meta itemprop="description" content="How views help when building large and complex applications">
   <meta itemprop="datePublished" content="2026-06-06T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2026-06-07T19:51:48+01:00">
-  <meta itemprop="wordCount" content="1654">
+  <meta itemprop="dateModified" content="2026-06-08T12:37:41+01:00">
+  <meta itemprop="wordCount" content="1653">
   <meta itemprop="keywords" content="Citizen Developer Level 1,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Large applications">
@@ -176,7 +176,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.401be3097a005491bde157f4f536d8d2.json"
+    data-offline-search-index-json-src="/offline-search-index.8c0a9939da231d604e5add4dd6bd6f8a.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -201,7 +201,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.401be3097a005491bde157f4f536d8d2.json"
+    data-offline-search-index-json-src="/offline-search-index.8c0a9939da231d604e5add4dd6bd6f8a.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -636,9 +636,9 @@
 
   </header>
 	<p>As you build applications in Agilebase, you will quickly find yourself creating views as this section of the documentation describes.</p>
-<p>Each view serves a purpose, to help individual people carry out their daily work, for many functions from just creating lists of items to work through, through to more complex things like maths, calculating resource utilisations or stats for management reports.</p>
+<p>Each view serves a purpose, to help individual people carry out their daily work. They support many functions from just creating lists of items to work through, through to more complex things like maths, calculating resource utilisations or stats for management reports.</p>
 <p>As an application grows in size, you will naturally start to want to make the output of one view feed into another.</p>
-<p>A good example is a recipe development application. As each ingredient is assigned an amount to add, a view can calculate the total for the recipe, then the percentage figure for each line. The percentage can be used for many purposes, for example</p>
+<p>A good example is a recipe development application. As each ingredient is assigned an amount in grams, a view can calculate the total for the recipe, then the percentage figure for each line. The percentage can be used for many purposes, for example</p>
 <ul>
 <li>scaling a recipe to make large amounts</li>
 <li>calculating the nutritional value of the recipe as a whole, given the values of each ingredient</li>
@@ -655,7 +655,7 @@
 <p>In fact, speaking personally for a moment, this is the part of Agilebase which I&rsquo;m most proud of, as a designer and developer of the platform. We often say that Agilebase is different to many other No Code or AI platforms in that it allows very complex yet robust applications to be built. An large factor is that we allow the full potential of the underlying PostgreSQL database to be utilised, by adding this ability to build up business logic layer by layer.</p>
 <p>Some of the traditional problems of view dependencies, along with our solutions are:</p>
 <h2 id="refactoring">Refactoring</h2>
-<p>One key issue is that when certain types of change are made to a view, like adding or removing a field, all dependent views have to be dropped first, then recreated again in the right order afterwards.</p>
+<p>One key issue is that when certain types of change are made to a view, like removing a field, all dependent views have to be dropped first, then recreated again in the right order afterwards.</p>
 <p>In the normal database world, this is a major issue, a time consuming manual operation. Agilebase though already has an in-memory representation of each view and knows how they&rsquo;re all connected.</p>
 <p>So where necessary, it can do that rebuilding, including view privileges. When that&rsquo;s triggered, the system will display the progress of rebuilding, with a count of the number of views left to go.
 If there are only a few dependencies to recreate, a transaction will be used and users will just experience a short delay if they try to access one of the views.</p>
@@ -673,13 +673,13 @@ If there are only a few dependencies to recreate, a transaction will be used and
 </blockquote>
 <h3 id="mitigations">Mitigations</h3>
 <p>So what does Agilebase offer for performance management?</p>
-<p>The first thing is monitoring and reporting. We rank views by speed and overall &rsquo;load&rsquo; i.e. how many times each view is called per day multiplied by how long each call takes. That gives the developer a priority list of views to look at. Importantly, even if a view isn&rsquo;t called directly, it&rsquo;s call count is incremented when a view joining to it is used. That way, those views for which improvements would have the most impact are highlighted.</p>
-<p>Secondly, caching. A PostgreSQL capability called view materialization is used to cache views. Agilebase can automatically refresh the cache on a set schedule, e.g. every 10 minutes or every hour, even down to every time it&rsquo;s called. The system is intelligent though - even if set to refresh on every call, the refresh is only actually done if data edits which could have affected the view have been made since the last call. Agilebase knows which data edits are being made and given how a view is constructed, which could affect it.</p>
+<p>The first thing is <strong>monitoring</strong> and reporting. We rank views by speed and overall &rsquo;load&rsquo; i.e. how many times each view is called per day multiplied by how long each call takes. That gives the developer a priority list of views to look at. Importantly, even if a view isn&rsquo;t called directly, it&rsquo;s call count is incremented when a view joining to it is used. That way, those views for which improvements would have the most impact are highlighted.</p>
+<p>Secondly, <strong>caching</strong>. A PostgreSQL capability called view materialization is used to cache views. Agilebase can automatically refresh the cache on a set schedule, e.g. every 10 minutes or every hour, even down to every time it&rsquo;s called. The system is intelligent though - even if set to refresh on every call, the refresh is only actually done if data edits which could have affected the view have been made since the last call. Agilebase knows which data edits are being made and given how a view is constructed, which could affect it.</p>
 <p>If a view in the middle of a long chain of views is cached, it can greatly speed things up. The database doesn&rsquo;t have to worry about anything &lsquo;underneath&rsquo; the cached view - all those joined views are irrelevant. To the database, it looks like the cached view is a simple table.</p>
-<p>There&rsquo;s an art to selecting views to cache. Agilebase helps by suggesting certain views based on various heuristics and statistics. For example, views which contain aggregate calculations, which are relatively slow and return small numbers of rows are good candidates.</p>
-<p>Thirdly, query plan tweaking. If a view is slow, Agilebase will experiment with disabling an enabling some query planning options, automatically setting them if they have a large enough effect for a view.</p>
-<p>Fourthly, index use. Agilebase will show which fields are indexed, so the user can select them for filtering if necessary. Indexes can&rsquo;t yet be created by a developer, but can be added on request.</p>
-<p>Lastly, Agilebase will generate &rsquo;explain&rsquo; plans on request. Third party tools like <a href="https://www.pgmustard.com">https://www.pgmustard.com</a> or <a href="https://explain.depesz.com">https://explain.depesz.com</a> will use those to make suggestions as to how performance might be improved.</p>
+<p>There&rsquo;s an art to selecting views to cache. Agilebase helps by <strong>suggesting</strong> certain views based on various heuristics and statistics. For example, views which contain aggregate calculations, which are relatively slow and return small numbers of rows are good candidates.</p>
+<p>Thirdly, <strong>query plan</strong> tweaking. If a view is slow, Agilebase will experiment with disabling an enabling some query planning options, automatically setting them if they have a large enough effect for a view.</p>
+<p>Fourthly, <strong>index</strong> use. Agilebase will show which fields are indexed, so the user can select them for filtering if necessary. Indexes can&rsquo;t yet be created by a developer, but can be added on request.</p>
+<p>Lastly, Agilebase will generate &lsquo;<strong>explain</strong>&rsquo; plans on request. Third party tools like <a href="https://www.pgmustard.com">https://www.pgmustard.com</a> or <a href="https://explain.depesz.com">https://explain.depesz.com</a> will use those to make suggestions as to how performance might be improved.</p>
 <h2 id="understanding">Understanding</h2>
 <p>When we do start to create complex view structures, containing many views depending on each other, it helps to be able to visualise how everything&rsquo;s connected. In the <a href="/docs/introduction/development-mode/">development interface</a>, you can select any view or table and generate the chart of joins to or from it.</p>
 <p>Here&rsquo;s part of the structure of one of the views which uses the product ingredient weight total.
@@ -688,11 +688,11 @@ If there are only a few dependencies to recreate, a transaction will be used and
 <p>The article we referenced at the start mentions a couple of other downsides of using chains of views. These ones though aren&rsquo;t relevant for us.</p>
 <ul>
 <li>Writeable views. Agilebase has it&rsquo;s own <a href="/docs/views/options/display-options/#interface-inline-editing">inline editing</a> mode which effectively allows this functionality for any view.</li>
-<li>Row level security. Again, we have our own mechanism in-application for this - [multi-tenanting]](/docs/security-and-compliance/security-features/roles/#multi-tenanting)</li>
+<li>Row level security. Again, we have our own mechanism in-application for this - <a href="/docs/security-and-compliance/security-features/roles/#multi-tenanting">multi-tenanting</a></li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>We think that the work explained above makes Agilebase one of the best platforms for database applications for businesses. To the robustness and performance capabilities of the Postgresql database, we add affordances to make the process of developing large, complex applications a lot easier..</p>
-<p>We must emphasise however that the trade-offs and decisions talked about above are those which fit the intended use cases. Cases in which really complex applications need to be developed, but they are primarily internal business applications. Customer facing applications working with big data for example may well have different needs.</p>
+<p>We think that the work explained above makes Agilebase one of the best platforms for database applications for businesses. To the robustness and performance capabilities of the <a href="https://postgresql.org">Postgresq</a> database, we add affordances to make the process of developing large, complex applications a lot easier..</p>
+<p>We must emphasise however that the trade-offs and decisions talked about above are those which fit the intended use cases. Cases in which really complex applications need to be developed, but they are primarily internal business applications. Consumer facing applications working with big data for example may well have different needs.</p>
 
 	<style>
   .feedback--answer {
@@ -751,7 +751,7 @@ If there are only a few dependencies to recreate, a transaction will be used and
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified June 7, 2026: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/c20f95289d4ab60e0e3d128a79b89af034dc26a1">Large apps (c20f952)</a>
+  Last modified June 8, 2026: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/829e24b8a0741a5794cedaacb7ea424e3d065baf">Large apps - tweaks (829e24b)</a>
 </div>
 
 </div>
