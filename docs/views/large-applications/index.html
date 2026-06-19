@@ -53,15 +53,15 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:published_time" content="2026-06-06T16:40:00+01:00">
-    <meta property="article:modified_time" content="2026-06-08T13:30:41+01:00">
+    <meta property="article:modified_time" content="2026-06-19T17:27:13+01:00">
     <meta property="article:tag" content="Citizen Developer Level 1">
     <meta property="article:tag" content="V6">
 
   <meta itemprop="name" content="Large applications">
   <meta itemprop="description" content="How views help when building large and complex applications">
   <meta itemprop="datePublished" content="2026-06-06T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2026-06-08T13:30:41+01:00">
-  <meta itemprop="wordCount" content="1653">
+  <meta itemprop="dateModified" content="2026-06-19T17:27:13+01:00">
+  <meta itemprop="wordCount" content="1686">
   <meta itemprop="keywords" content="Citizen Developer Level 1,V6">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Large applications">
@@ -176,7 +176,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.26af1800554c5aa492fe338b76346c61.json"
+    data-offline-search-index-json-src="/offline-search-index.eb76d7e34098030bf12744fd49e42e87.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -201,7 +201,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.26af1800554c5aa492fe338b76346c61.json"
+    data-offline-search-index-json-src="/offline-search-index.eb76d7e34098030bf12744fd49e42e87.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -676,7 +676,7 @@ If there are only a few dependencies to recreate, a transaction will be used and
 <p>The first thing is <strong>monitoring</strong> and reporting. We rank views by speed and overall &rsquo;load&rsquo; i.e. how many times each view is called per day multiplied by how long each call takes. That gives the developer a priority list of views to look at. Importantly, even if a view isn&rsquo;t called directly, it&rsquo;s call count is incremented when a view joining to it is used. That way, those views for which improvements would have the most impact are highlighted.</p>
 <p>Secondly, <strong>caching</strong>. A PostgreSQL capability called view materialization is used to cache views. Agilebase can automatically refresh the cache on a set schedule, e.g. every 10 minutes or every hour, even down to every time it&rsquo;s called. The system is intelligent though - even if set to refresh on every call, the refresh is only actually done if data edits which could have affected the view have been made since the last call. Agilebase knows which data edits are being made and given how a view is constructed, which could affect it.</p>
 <p>If a view in the middle of a long chain of views is cached, it can greatly speed things up. The database doesn&rsquo;t have to worry about anything &lsquo;underneath&rsquo; the cached view - all those joined views are irrelevant. To the database, it looks like the cached view is a simple table.</p>
-<p>There&rsquo;s an art to selecting views to cache. Agilebase helps by <strong>suggesting</strong> certain views based on various heuristics and statistics. For example, views which contain aggregate calculations, which are relatively slow and return small numbers of rows are good candidates.</p>
+<p>There&rsquo;s an art to selecting views to cache. Agilebase helps by <strong>suggesting</strong> certain views based on various heuristics and statistics. For example, views which contain aggregate calculations, which are relatively slow and return small numbers of rows are good candidates. When a view is cached, the system will report how much of a benefit the caching is, i.e. the proportion of times the data can be read without needing to update the cache.</p>
 <p>Thirdly, <strong>query plan</strong> tweaking. If a view is slow, Agilebase will experiment with disabling and enabling some query planning options, automatically setting them if they have a large enough effect for a view.</p>
 <p>Fourthly, <strong>index</strong> use. Agilebase will show which fields are indexed, so the user can select them for filtering if necessary. Indexes can&rsquo;t yet be created by a developer, but can be added on request.</p>
 <p>Lastly, Agilebase will generate &lsquo;<strong>explain</strong>&rsquo; plans on request. Third party tools like <a href="https://www.pgmustard.com">https://www.pgmustard.com</a> or <a href="https://explain.depesz.com">https://explain.depesz.com</a> will use those to make suggestions as to how performance might be improved.</p>
@@ -751,7 +751,7 @@ If there are only a few dependencies to recreate, a transaction will be used and
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified June 8, 2026: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/6671c720bfd76ba51bec10d73f7e5f53a96672c0">Large apps - typos (6671c72)</a>
+  Last modified June 19, 2026: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/cab6190d1ba82e1c2f5651d62d367c6c4928dde8">Release - usability updates (cab6190)</a>
 </div>
 
 </div>

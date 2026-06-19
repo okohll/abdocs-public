@@ -6,8 +6,15 @@
     <description>Recent content in Releases on Agilebase docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 May 2026 16:14:16 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 17:27:13 +0100</lastBuildDate>
     <atom:link href="https://docs.agilebase.co.uk/releases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>19th June 2026 - usability</title>
+      <link>https://docs.agilebase.co.uk/releases/usability/</link>
+      <pubDate>Fri, 19 Jun 2026 17:26:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/releases/usability/</guid>
+      <description>&lt;p&gt;This month we&amp;rsquo;ve done an overhaul of the user interface, both for users and developers.&lt;/p&gt;&#xA;&lt;p&gt;Some of this has been prompted by changes in staff amongst customers - as new people come on board and are inducted into what for them is a completely new system, we need to do as much as possible to make it easy to see how things work.&lt;/p&gt;&#xA;&lt;p&gt;Luckily, some recent major additions, particularly entity diagrams, have been found to be very useful - see &lt;a href=&#34;https://agilebase.co.uk/march-2026-improvements-for-new-and-seasoned-developers/&#34;&gt;https://agilebase.co.uk/march-2026-improvements-for-new-and-seasoned-developers/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>17th May 2026 - more UI improvements, storage changes and coming up</title>
       <link>https://docs.agilebase.co.uk/releases/ui-and-storage-improvements/</link>

@@ -141,6 +141,13 @@
       <description>&lt;p&gt;Exporting to spreadsheet is only one way of getting data out of Agilebase, but it is the most commonly used amongst everyday users. For less ad-hoc data transfers, such as integrations with third party systems involving incoming and/or outgoing data, the &lt;a href=&#34;https://docs.agilebase.co.uk/docs/integrations/&#34;&gt;API&lt;/a&gt; can be used.&lt;/p&gt;&#xA;&lt;h2 id=&#34;allowing-exports&#34;&gt;Allowing exports&lt;/h2&gt;&#xA;&lt;p&gt;In order for a user to be allowed to export to spreadsheet, a number of critieria have to be matched, to suitably protect your organisation&amp;rsquo;s data.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>19th June 2026 - usability</title>
+      <link>https://docs.agilebase.co.uk/releases/usability/</link>
+      <pubDate>Fri, 19 Jun 2026 17:26:55 +0100</pubDate>
+      <guid>https://docs.agilebase.co.uk/releases/usability/</guid>
+      <description>&lt;p&gt;This month we&amp;rsquo;ve done an overhaul of the user interface, both for users and developers.&lt;/p&gt;&#xA;&lt;p&gt;Some of this has been prompted by changes in staff amongst customers - as new people come on board and are inducted into what for them is a completely new system, we need to do as much as possible to make it easy to see how things work.&lt;/p&gt;&#xA;&lt;p&gt;Luckily, some recent major additions, particularly entity diagrams, have been found to be very useful - see &lt;a href=&#34;https://agilebase.co.uk/march-2026-improvements-for-new-and-seasoned-developers/&#34;&gt;https://agilebase.co.uk/march-2026-improvements-for-new-and-seasoned-developers/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>17th May 2026 - more UI improvements, storage changes and coming up</title>
       <link>https://docs.agilebase.co.uk/releases/ui-and-storage-improvements/</link>
       <pubDate>Sun, 17 May 2026 09:57:55 +0100</pubDate>

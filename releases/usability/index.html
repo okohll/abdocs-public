@@ -43,30 +43,26 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>6. Security and Access Control | Agilebase docs</title>
-<meta name="description" content="A look at the inbuilt security model and how to use it to control access">
-<meta property="og:url" content="https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/">
+<title>19th June 2026 - usability | Agilebase docs</title>
+<meta name="description" content="Usability improvements">
+<meta property="og:url" content="https://docs.agilebase.co.uk/releases/usability/">
   <meta property="og:site_name" content="Agilebase docs">
-  <meta property="og:title" content="6. Security and Access Control">
-  <meta property="og:description" content="A look at the inbuilt security model and how to use it to control access">
+  <meta property="og:title" content="19th June 2026 - usability">
+  <meta property="og:description" content="Usability improvements">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="guides">
-    <meta property="article:published_time" content="2023-08-31T13:00:00+01:00">
-    <meta property="article:modified_time" content="2023-11-27T10:15:18+00:00">
-    <meta property="article:tag" content="Junior Software Architect">
-    <meta property="article:tag" content="Security">
-    <meta property="article:tag" content="Access Control">
+    <meta property="article:section" content="releases">
+    <meta property="article:published_time" content="2026-06-19T17:26:55+01:00">
+    <meta property="article:modified_time" content="2026-06-19T17:27:13+01:00">
 
-  <meta itemprop="name" content="6. Security and Access Control">
-  <meta itemprop="description" content="A look at the inbuilt security model and how to use it to control access">
-  <meta itemprop="datePublished" content="2023-08-31T13:00:00+01:00">
-  <meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00">
-  <meta itemprop="wordCount" content="809">
-  <meta itemprop="keywords" content="Junior Software Architect,Security,Access Control">
+  <meta itemprop="name" content="19th June 2026 - usability">
+  <meta itemprop="description" content="Usability improvements">
+  <meta itemprop="datePublished" content="2026-06-19T17:26:55+01:00">
+  <meta itemprop="dateModified" content="2026-06-19T17:27:13+01:00">
+  <meta itemprop="wordCount" content="350">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="6. Security and Access Control">
-  <meta name="twitter:description" content="A look at the inbuilt security model and how to use it to control access">
+  <meta name="twitter:title" content="19th June 2026 - usability">
+  <meta name="twitter:description" content="Usability improvements">
 <link rel="preload" href="/scss/main.min.5921ef4139cb5ea61c948383287eb1d6e02b24f08694373d1e4cda500ed44031.css" as="style" integrity="sha256-WSHvQTnLXqYclIODKH6x1uArJPCGlDc9HkzaUA7UQDE=" crossorigin="anonymous">
 <link href="/scss/main.min.5921ef4139cb5ea61c948383287eb1d6e02b24f08694373d1e4cda500ed44031.css" rel="stylesheet" integrity="sha256-WSHvQTnLXqYclIODKH6x1uArJPCGlDc9HkzaUA7UQDE=" crossorigin="anonymous">
 <script
@@ -99,7 +95,7 @@
         <a class="nav-link" href="/docs/"><span>Docs</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="/guides/"><span>Guides</span></a>
+        <a class="nav-link" href="/guides/"><span>Guides</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/the-user-experience/"><span>The User Experience</span></a>
@@ -111,7 +107,7 @@
         <a class="nav-link" href="/blog/"><span>Blog</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/releases/"><span>Releases</span></a>
+        <a class="nav-link active" href="/releases/"><span>Releases</span></a>
       </li>
       <li class="nav-item td-navbar__light-dark-menu">
         <div class="td-light-dark-menu dropdown"><svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -212,48 +208,17 @@
   </form>
   <nav class="td-sidebar-nav collapse" id="td-section-nav">
     <ul class="td-sidebar-nav__section pe-md-3 ul-0">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-guides-li">
-    <a href="/guides/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-guides"><span class="">Guides</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-releases-li">
+    <a href="/releases/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-releases"><span class="">Releases</span></a>
     <ul class="ul-1">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-guidesguide1-crm-li">
-    <a href="/guides/guide1-crm/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-guidesguide1-crm"><span class="">Guide 1 - Build a CRM</span></a>
-    <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-guidesguide1-crmtasklist-li">
-    <a href="/guides/guide1-crm/tasklist/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide1-crmtasklist"><span class="">1. Creating a basic task list</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-guidesguide1-crmadding-relational-data-li">
-    <a href="/guides/guide1-crm/adding-relational-data/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide1-crmadding-relational-data"><span class="">2. Capturing Company and Contact data (Introducing Relational Databases)</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-guidesguide1-crmsales-pipeline-li">
-    <a href="/guides/guide1-crm/sales-pipeline/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide1-crmsales-pipeline"><span class="">3. Adding a Sales Pipeline - Kanban</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-guidesguide1-crmcalculated-datafields-li">
-    <a href="/guides/guide1-crm/calculated-datafields/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide1-crmcalculated-datafields"><span class="">4. Calculated Datafields</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-guidesguide1-crmcross-reference-and-automations-li">
-    <a href="/guides/guide1-crm/cross-reference-and-automations/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide1-crmcross-reference-and-automations"><span class="">5. Cross References and Automations</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-guidesguide1-crmsecurity-and-access-control-li">
-    <a href="/guides/guide1-crm/security-and-access-control/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__page" id="m-guidesguide1-crmsecurity-and-access-control"><span class="td-sidebar-nav-active-item">6. Security and Access Control</span></a>
-  </li>
-    </ul>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-guidesguide2-personalisation-li">
-    <a href="/guides/guide2-personalisation/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-guidesguide2-personalisation"><span class="">Guide 2 - Personalising our CRM</span></a>
-    <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-guidesguide2-personalisationcreating_personal_views-li">
-    <a href="/guides/guide2-personalisation/creating_personal_views/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide2-personalisationcreating_personal_views"><span class="">1. Personalising our CRM</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-guidesguide2-personalisationcreating_personal_charts-li">
-    <a href="/guides/guide2-personalisation/creating_personal_charts/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide2-personalisationcreating_personal_charts"><span class="">2. Personalising our CRM by adding charts</span></a>
-  </li>
-    </ul>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-guidesguide3-advanced-usage-li">
-    <a href="/guides/guide3-advanced-usage/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-guidesguide3-advanced-usage"><span class="">Guide 3 - Advanced Usage</span></a>
-    <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-guidesguide3-advanced-usagetiles-li">
-    <a href="/guides/guide3-advanced-usage/tiles/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide3-advanced-usagetiles"><span class="">Guide 3.1 - Tiles: Advanced UI Control</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-guidesguide3-advanced-usageviews-li">
-    <a href="/guides/guide3-advanced-usage/views/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide3-advanced-usageviews"><span class="">Guide 3.2 - Views: Advanced UI Control</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-guidesguide3-advanced-usagerecords-li">
-    <a href="/guides/guide3-advanced-usage/records/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-guidesguide3-advanced-usagerecords"><span class="">Guide 3.3 - Records: Advanced UI Control</span></a>
-  </li>
-    </ul>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-guidesfull-videos-li">
-    <a href="/guides/full-videos/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-guidesfull-videos"><span class="">Full Video Guides</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-releasesusability-li">
+    <a href="/releases/usability/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__page" id="m-releasesusability"><span class="td-sidebar-nav-active-item">19th June 2026 - usability</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-releasesui-and-storage-improvements-li">
+    <a href="/releases/ui-and-storage-improvements/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-releasesui-and-storage-improvements"><span class="">17th May 2026 - more UI improvements, storage changes and coming up</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-releasesview-pinning-li">
+    <a href="/releases/view-pinning/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-releasesview-pinning"><span class="">3rd April 2026 - pinning views and other improvements</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-releasesprevious-li">
+    <a href="/releases/previous/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-releasesprevious"><span class="">Previous releases</span></a>
   </li>
     </ul>
   </li>
@@ -273,38 +238,14 @@
 
 
 
-<a href="https://github.com/okohll/abdocs/edit/master/content//guides/guide1-crm/security-and-access-control" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-<a href="https://github.com/okohll/abdocs/issues/new?title=6.%20Security%20and%20Access%20Control" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/okohll/abdocs/edit/master/content//releases/usability" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/okohll/abdocs/issues/new?title=19th%20June%202026%20-%20usability" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
 
 </div>
 
 
             <div class="td-toc" data-proofer-ignore>
-<div class="td-toc-title">
-      <span class="td-toc-title__text">On this page</span>
-      <a class="td-toc-title__link" title="Top of page" href="#"></a>
-    </div>
-    <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#introduction">Introduction</a></li>
-      </ul>
-    </li>
-    <li><a href="#creating-roles">Creating Roles</a>
-      <ul>
-        <li><a href="#user-roles-permissions-and-tiles">User Roles, Permissions and Tiles</a></li>
-      </ul>
-    </li>
-    <li><a href="#advanced-access-control">Advanced Access Control</a>
-      <ul>
-        <li><a href="#field-visibility-and-user-roles">Field Visibility and User Roles</a></li>
-      </ul>
-    </li>
-    <li><a href="#success---a-basic-crm">SUCCESS - A basic CRM</a></li>
-  </ul>
-</nav>
-  </div>
+</div>
 
             <div class="taxonomy taxonomy-terms-cloud taxo-tags">
       <h5 class="taxonomy-title">Learner Levels</h5>
@@ -348,77 +289,45 @@
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
   <li class="breadcrumb-item">
-    <a href="/guides/">Guides</a></li>
-  <li class="breadcrumb-item">
-    <a href="/guides/guide1-crm/">Guide 1 - Build a CRM</a></li>
+    <a href="/releases/">Releases</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    6. Security and Access Control</li>
+    19th June 2026 - usability</li>
   </ol>
 </nav>
 <div class="td-content">
-	<h1>6. Security and Access Control</h1>
-	<div class="lead">A look at the inbuilt security model and how to use it to control access</div>
+	<h1>19th June 2026 - usability</h1>
+	<div class="lead">Usability improvements</div>
 	<header class="article-meta">
-		<div class="taxonomy taxonomy-terms-article taxo-tags">
-  <h5 class="taxonomy-title">Tags:</h5>
-  <ul class="taxonomy-terms">
-    <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/junior-software-architect/" data-taxonomy-term="junior-software-architect"><span class="taxonomy-label">Junior Software Architect</span></a></li>
-    <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/security/" data-taxonomy-term="security"><span class="taxonomy-label">Security</span></a></li>
-    <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/access-control/" data-taxonomy-term="access-control"><span class="taxonomy-label">Access Control</span></a></li>
-    </ul>
-</div>
-
+		
   </header>
-	<p><strong>Learning Aim:</strong>   Understand basic database privileges&hellip; Roles and giving them to Users!</p>
-<p><strong>Prerequisites:</strong> To have built a multi table system, to have more than themselves as users.</p>
-<h3 id="introduction">Introduction</h3>
-<p>AgileBase uses the classic concept of Roles to help you control the access users have to the system you are building.
-A classic metaphor would be the manager of an office has the keys to the building, whilst the staff do not. The person acting as the manager may change overtime, but the permission and privileges (in this case having keys) does not!</p>
-<p>[guide 1.6 - video 1]<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ybixmV1TdVA?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-    </div>
-</p>
-<h2 id="creating-roles">Creating Roles</h2>
-<p>For our scenario of a Basic CRM we will model the simple situation that all users will need to access contact information, but only some users will log tasks. Similarly, only some users will access sales opportunities.
-We can start by creating a Role called ‘Orgs and Contacts’
-Press Add Role and name it ‘Orgs and Contacts’
-Start by looking at the Privileges list. As you can see this shows you a list of ALL the tables in the system. We want users with this role to be able to read and importantly WRITE any organisation info.
-Set the radio button Edit on Organisations, Sites and Contacts
-<img src="/roles-privileges.png" alt="The Roles privilege list">
-Now look at the Members option. We can give this permission to all our users.</p>
-<p>For our Basic CRM we will need to do the same for a role to use Tasks and another for Sales Opportunites</p>
-<h3 id="user-roles-permissions-and-tiles">User Roles, Permissions and Tiles</h3>
-<p>Now to take a look from a User&rsquo;s perspective.
-Back to the starting page of Development mode and click Users to show ALL users
-Click on a user&rsquo;s record
-If we click on the Roles option, we can see any roles the user may be missing.
-Simple click to add
-<img src="/user-roles.png" alt="The Roles privilege list">
-Sometimes it&rsquo;s useful to see an individual’s permissions. This can be done by looking at the Privileges tab on their user record.</p>
-<p>Perhaps, more useful is ensuring they have the tile to access the functionality!!!
-Click on Tiles and you can see whether they have our Sales opportunity tile.
-When you add a tile you are prompted to choose the default view. It is an important consideration to choose the most appropriate view for your users.
-<img src="/user-adding-tile.png" alt="The Roles privilege list"></p>
-<h2 id="advanced-access-control">Advanced Access Control</h2>
-<p>Sometimes we may find a situation where access control can not be broken down to complete tables, but instead we want to have control on a field by field basis. In this instance we can use field visibility rules combined with the roles system.
-In our example scenario we have a role called “HR” and we only want ONLY users with this role to see a Date of Birth field on the Contact record.</p>
-<p>[guide 1.6 - video 1]<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/MEFep-NFl1o?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-    </div>
-</p>
-<p>We need to create a view that will control the visibility of the field, so we create a view in the &ldquo;System Visibility Tile”</p>
-<h3 id="field-visibility-and-user-roles">Field Visibility and User Roles</h3>
-<p>We have already had an exmaple of using a visibility rule to hide a button. In this case we are going a step further and controlling visibility based on the logged in User&rsquo;s roles.
-To start we will need a view called ‘vis - Contact HR only’ built rom the Contacts table.
-Since Field Visibility rules work by only showing the field if the record exists in a specified view we don’t need loads of columns, we just need to concentrate on filtering. For this example we need to filter by the Role the user has, and we can do this by using a calculation.
-Add a Calculation field of type boolean called ‘is in HR’. The SQL you need is&hellip;.</p>
-<pre tabindex="0"><code>  ab_userroles() ilike &#39;%HR%&#39;
-</code></pre><p>It is easy to follow if you have an understanding of SQL, if not there is plenty of help and tutorials on the internet. However, as a brief explanation, aB_userroles() is a variable that will return the list of roles that the logged in user is a member of. Ilike is a text match that looks for in this case the letters HR. In otherwords, this query will let us know is the user is a member of the HR role.
-Dont forget to apply the filter by going to the fiter option and adding where &ldquo;is in HR&rdquo; equals True</p>
-<p>All that&rsquo;s left to do is apply the visibilty rule to the chosen field. In this example, navigate to edit the Contacts table, Click on the DOB field.
-Scroll down to Field Visibility, show choosing the view ‘vis - Contact HR only’</p>
-<h2 id="success---a-basic-crm">SUCCESS - A basic CRM</h2>
-<p>If you have been following along and building your own system then congratulations you have a fledging CRM system for your business. You now have knowledge of the all the building blocks needed to extend this tool and turn it into a powerful back office system to help your colleagues manage their work.</p>
+	<p>This month we&rsquo;ve done an overhaul of the user interface, both for users and developers.</p>
+<p>Some of this has been prompted by changes in staff amongst customers - as new people come on board and are inducted into what for them is a completely new system, we need to do as much as possible to make it easy to see how things work.</p>
+<p>Luckily, some recent major additions, particularly entity diagrams, have been found to be very useful - see <a href="https://agilebase.co.uk/march-2026-improvements-for-new-and-seasoned-developers/">https://agilebase.co.uk/march-2026-improvements-for-new-and-seasoned-developers/</a></p>
+<p>Along with those, we&rsquo;ve been adding lots of little touches to increase practicality.</p>
+<p>For developers:</p>
+<ul>
+<li>when editing a field and you show the list of workflows related to that field, Agilebase now shows which ones <em>set</em> the field value as opposed to those which <em>use</em> it.</li>
+<li>when looking at the list of workflows in a view, you can see the timing of each i.e. how often it runs, along with the list of fields it updates and the conditions for running</li>
+<li>when adding joins to a view, &lsquo;upwards&rsquo; and &lsquo;downwards&rsquo; suggested joins are clearly identified. Suggested joins are also searchable</li>
+<li>when posting data to a table via an API, a more descriptive error message is shown if the API key is wrong</li>
+<li>even more detailed history is logged: whenever a view is cached, or a workflow is run, you can see what initial action triggered that (.e.g. an update of a product cost might trigger the refresh of a sales profits view)</li>
+</ul>
+<blockquote>
+<p>The more detailed history can be seen for view caching in the &lsquo;ab view access&rsquo; table - search for &lsquo;cache update&rsquo; in the details field.</p>
+</blockquote>
+<p>For users:</p>
+<ul>
+<li>lots of alignment improvements when editing a record, which has allowed&hellip;</li>
+<li>clutter reduction on screen - data is more easily readable at a glance</li>
+<li>if an embedded table (referenced data) in a record is particularly wide, the column it&rsquo;s in automatically expands to full screen width</li>
+<li>a number field can now display as a gauge if
+<ul>
+<li>it&rsquo;s <a href="/docs/tables/data-integrity-checks/#data-integrity-checks-advanced">constrained</a> to be within a certain range (at most 10 steps between min. and max. values)</li>
+<li>it is marked as a required field
+<img src="/gauge.png" alt="Gauge display"></li>
+</ul>
+</li>
+</ul>
 
 	<style>
   .feedback--answer {
@@ -477,7 +386,7 @@ Scroll down to Field Visibility, show choosing the view ‘vis - Contact HR only
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified November 27, 2023: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/80c844c5df1fab3cd59b900dcfdb667c41d9613c">Pivot table example (80c844c)</a>
+  Last modified June 19, 2026: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/cab6190d1ba82e1c2f5651d62d367c6c4928dde8">Release - usability updates (cab6190)</a>
 </div>
 
 </div>
