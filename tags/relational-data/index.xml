@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Relational Data on Agilebase docs</title>
-    <link>https://docs.agilebase.co.uk/tags/relational-data/</link>
-    <description>Recent content in Relational Data on Agilebase docs</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 27 Nov 2023 10:15:18 +0000</lastBuildDate>
-    <atom:link href="https://docs.agilebase.co.uk/tags/relational-data/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>2. Capturing Company and Contact data (Introducing Relational Databases)</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/adding-relational-data/</link>
-      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/adding-relational-data/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create related Tables to demonstrate the power of relational databases&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Creating a basic task list” video&amp;quot;&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;In this step of the guide we will build the engine of our CRM and in doing so start to introduce the concept of a relational database. We will do this as a practical example and you’ll see how agilebase makes this straight forward. We will be building a bigger system, but for the most part it’s simply reusing things we’ve already covered.. Let’s start with building a table called ‘Organisations’&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Relational Data on Agilebase docs</title>
+		<link>https://docs.agilebase.co.uk/tags/relational-data/</link>
+		<description>Recent content in Relational Data on Agilebase docs</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 27 Nov 2023 10:15:18 +0000</lastBuildDate>
+		
+			<atom:link href="https://docs.agilebase.co.uk/tags/relational-data/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>2. Capturing Company and Contact data (Introducing Relational Databases)</title>
+				<link>https://docs.agilebase.co.uk/guides/guide1-crm/adding-relational-data/</link>
+				<pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/guides/guide1-crm/adding-relational-data/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create related Tables to demonstrate the power of relational databases&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Creating a basic task list” video&amp;quot;&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;In this step of the guide we will build the engine of our CRM and in doing so start to introduce the concept of a relational database. We will do this as a practical example and you’ll see how agilebase makes this straight forward. We will be building a bigger system, but for the most part it’s simply reusing things we’ve already covered.. Let’s start with building a table called ‘Organisations’&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

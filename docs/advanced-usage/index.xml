@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Advanced Usage on Agilebase docs</title>
-    <link>https://docs.agilebase.co.uk/docs/advanced-usage/</link>
-    <description>Recent content in Advanced Usage on Agilebase docs</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 15 Nov 2025 14:37:01 +0000</lastBuildDate>
-    <atom:link href="https://docs.agilebase.co.uk/docs/advanced-usage/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Organisation Settings</title>
-      <link>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</guid>
-      <description>&lt;p&gt;To access them:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;From the homepage, click your user icon at the top right of the screen and choose &lt;em&gt;Profile&lt;/em&gt; from the menu&lt;/li&gt;&#xA;&lt;li&gt;Go to &lt;em&gt;Account&lt;/em&gt; -&amp;gt; &lt;em&gt;Organisation Settings&lt;/em&gt; from the lefthand navigation bar&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;mandate-2fa&#34;&gt;Mandate 2FA&lt;/h3&gt;&#xA;&lt;p&gt;When this is ticked, all users in the organisation will be required to set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/2fa-setup/&#34;&gt;Two Factor Authentication&lt;/a&gt; before they can see or use any features of the application.&lt;/p&gt;&#xA;&lt;p&gt;We recommend that all administrators enable this if possible. Even when 2FA is mandated, admins can still &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#two-factor-authentication&#34;&gt;disable it temporarily&lt;/a&gt; on a per-user basis. The next time they log in they will be prompted to set it up again.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Build Patterns</title>
-      <link>https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/</link>
-      <pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/</guid>
-      <description>&lt;p&gt;Some of these are just useful ideas, some are tips and tricks and some are larger-scale build patterns for more complex tasks commonly undertaken by customers.&lt;/p&gt;&#xA;&lt;p&gt;These tips will link to various other places in the documentation, but it will still be useful to have some experience of building in Agilebase before reading.&lt;/p&gt;&#xA;&lt;h2 id=&#34;settings-table-idea&#34;&gt;Settings table idea&lt;/h2&gt;&#xA;&lt;p&gt;To use a single store of a common setting throughout the application. When a setting is changed it will then automatically take effect throught the whole application.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Advanced Usage on Agilebase docs</title>
+		<link>https://docs.agilebase.co.uk/docs/advanced-usage/</link>
+		<description>Recent content in Advanced Usage on Agilebase docs</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 15 Nov 2025 14:37:01 +0000</lastBuildDate>
+		
+			<atom:link href="https://docs.agilebase.co.uk/docs/advanced-usage/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Organisation Settings</title>
+				<link>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</link>
+				<pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/docs/advanced-usage/company-settings/</guid>
+				<description>&lt;p&gt;To access them:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;From the homepage, click your user icon at the top right of the screen and choose &lt;em&gt;Profile&lt;/em&gt; from the menu&lt;/li&gt;&#xA;&lt;li&gt;Go to &lt;em&gt;Account&lt;/em&gt; -&amp;gt; &lt;em&gt;Organisation Settings&lt;/em&gt; from the lefthand navigation bar&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;mandate-2fa&#34;&gt;Mandate 2FA&lt;/h3&gt;&#xA;&lt;p&gt;When this is ticked, all users in the organisation will be required to set up &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/2fa-setup/&#34;&gt;Two Factor Authentication&lt;/a&gt; before they can see or use any features of the application.&lt;/p&gt;&#xA;&lt;p&gt;We recommend that all administrators enable this if possible. Even when 2FA is mandated, admins can still &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/#two-factor-authentication&#34;&gt;disable it temporarily&lt;/a&gt; on a per-user basis. The next time they log in they will be prompted to set it up again.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Build Patterns</title>
+				<link>https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/</link>
+				<pubDate>Fri, 24 Apr 2020 16:40:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/docs/advanced-usage/build-patterns/</guid>
+				<description>&lt;p&gt;Some of these are just useful ideas, some are tips and tricks and some are larger-scale build patterns for more complex tasks commonly undertaken by customers.&lt;/p&gt;&#xA;&lt;p&gt;These tips will link to various other places in the documentation, but it will still be useful to have some experience of building in Agilebase before reading.&lt;/p&gt;&#xA;&lt;h2 id=&#34;settings-table-idea&#34;&gt;Settings table idea&lt;/h2&gt;&#xA;&lt;p&gt;To use a single store of a common setting throughout the application. When a setting is changed it will then automatically take effect throught the whole application.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

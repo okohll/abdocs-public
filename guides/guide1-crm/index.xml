@@ -1,54 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Guide 1 - Build a CRM on Agilebase docs</title>
-    <link>https://docs.agilebase.co.uk/guides/guide1-crm/</link>
-    <description>Recent content in Guide 1 - Build a CRM on Agilebase docs</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 14 May 2026 19:32:25 +0100</lastBuildDate>
-    <atom:link href="https://docs.agilebase.co.uk/guides/guide1-crm/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>1. Creating a basic task list</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</link>
-      <pubDate>Fri, 22 Apr 2022 13:00:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create a Table and associated Views to use it!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched &amp;ldquo;How to use Agilebase&amp;rdquo;&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;This stage of the guide will introduce you to the basic activities required to build a simple application. We will start by creating a table with different types of fields in order to store a variety of data. We will then show you how to create and control tiles, views and forms which are the interfaces that your users will use to enter and consume this data.&#xA;Let us start by building a simple task list.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2. Capturing Company and Contact data (Introducing Relational Databases)</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/adding-relational-data/</link>
-      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/adding-relational-data/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create related Tables to demonstrate the power of relational databases&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Creating a basic task list” video&amp;quot;&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;In this step of the guide we will build the engine of our CRM and in doing so start to introduce the concept of a relational database. We will do this as a practical example and you’ll see how agilebase makes this straight forward. We will be building a bigger system, but for the most part it’s simply reusing things we’ve already covered.. Let’s start with building a table called ‘Organisations’&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>3. Adding a Sales Pipeline - Kanban</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</link>
-      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;  Introduce Kanban / Card view. Power of dropdowns on fields. Show how easy to add graphs. Show off the advanced UI elements of aB&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Capturing Company and Contact details” video. Understand relational data&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;In this step of our guide we going to look at adding a dropdown field to &amp;ldquo;control&amp;rdquo; data input as we want to set up a Kanban board approach to managing Sales Opportunities.&#xA;This video assumes you are happy creating tables so jumps to the point of adding the Dropdown field.&#xA;If you are following along and want to build this table please copy the following table structure&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>4. Calculated Datafields</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/calculated-datafields/</link>
-      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/calculated-datafields/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Introduce calculations and basic SQL&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have understanding of relational data&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;The ability to use your existing data to calculate new information will dramatically enhance the user interface, and lead your users to create new data!&lt;/p&gt;&#xA;&lt;p&gt;In this step fo the guide we&amp;rsquo;ll start with something simple, expanding the data we know about Organisations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;calculating-the-number-of-contacts-belonging-to-an-organisation&#34;&gt;Calculating the number of contacts belonging to an Organisation&lt;/h2&gt;&#xA;&lt;p&gt;Using the All Organisations view as a starting point, clone it and rename it &amp;ldquo;Organisation - Calculations.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>5. Cross References and Automations</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/cross-reference-and-automations/</link>
-      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/cross-reference-and-automations/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Using Cross Reference (Xref) fields in a table definition to display related info. Introduce WorkFlows (Buttons, sending emails, document generation). Being organised by using a naming convention!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Add a Sales Pipeline” and “Introducing calculated” video. Understand how to create calculations in views.&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;This part of the guide starts to introduce some more powerful and advanced features of the agileBase system. It looks at how we can give users of our basic CRM some power ups that make it a better user experience. Let’s continue with our Sales Opportunities and introduce the concept of cross referencing data before adding an automated email ‘reminder’ and a button to the user interface…&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>6. Security and Access Control</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</link>
-      <pubDate>Thu, 31 Aug 2023 13:00:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Understand basic database privileges&amp;hellip; Roles and giving them to Users!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; To have built a multi table system, to have more than themselves as users.&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;AgileBase uses the classic concept of Roles to help you control the access users have to the system you are building.&#xA;A classic metaphor would be the manager of an office has the keys to the building, whilst the staff do not. The person acting as the manager may change overtime, but the permission and privileges (in this case having keys) does not!&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Guide 1 - Build a CRM on Agilebase docs</title>
+		<link>https://docs.agilebase.co.uk/guides/guide1-crm/</link>
+		<description>Recent content in Guide 1 - Build a CRM on Agilebase docs</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 14 May 2026 19:32:25 +0100</lastBuildDate>
+		
+			<atom:link href="https://docs.agilebase.co.uk/guides/guide1-crm/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>1. Creating a basic task list</title>
+				<link>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</link>
+				<pubDate>Fri, 22 Apr 2022 13:00:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/guides/guide1-crm/tasklist/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create a Table and associated Views to use it!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched &amp;ldquo;How to use Agilebase&amp;rdquo;&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;This stage of the guide will introduce you to the basic activities required to build a simple application. We will start by creating a table with different types of fields in order to store a variety of data. We will then show you how to create and control tiles, views and forms which are the interfaces that your users will use to enter and consume this data.&#xA;Let us start by building a simple task list.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>2. Capturing Company and Contact data (Introducing Relational Databases)</title>
+				<link>https://docs.agilebase.co.uk/guides/guide1-crm/adding-relational-data/</link>
+				<pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/guides/guide1-crm/adding-relational-data/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt; Create related Tables to demonstrate the power of relational databases&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Creating a basic task list” video&amp;quot;&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;In this step of the guide we will build the engine of our CRM and in doing so start to introduce the concept of a relational database. We will do this as a practical example and you’ll see how agilebase makes this straight forward. We will be building a bigger system, but for the most part it’s simply reusing things we’ve already covered.. Let’s start with building a table called ‘Organisations’&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>3. Adding a Sales Pipeline - Kanban</title>
+				<link>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</link>
+				<pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;  Introduce Kanban / Card view. Power of dropdowns on fields. Show how easy to add graphs. Show off the advanced UI elements of aB&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Capturing Company and Contact details” video. Understand relational data&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;In this step of our guide we going to look at adding a dropdown field to &amp;ldquo;control&amp;rdquo; data input as we want to set up a Kanban board approach to managing Sales Opportunities.&#xA;This video assumes you are happy creating tables so jumps to the point of adding the Dropdown field.&#xA;If you are following along and want to build this table please copy the following table structure&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>4. Calculated Datafields</title>
+				<link>https://docs.agilebase.co.uk/guides/guide1-crm/calculated-datafields/</link>
+				<pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/guides/guide1-crm/calculated-datafields/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Introduce calculations and basic SQL&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have understanding of relational data&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;The ability to use your existing data to calculate new information will dramatically enhance the user interface, and lead your users to create new data!&lt;/p&gt;&#xA;&lt;p&gt;In this step fo the guide we&amp;rsquo;ll start with something simple, expanding the data we know about Organisations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;calculating-the-number-of-contacts-belonging-to-an-organisation&#34;&gt;Calculating the number of contacts belonging to an Organisation&lt;/h2&gt;&#xA;&lt;p&gt;Using the All Organisations view as a starting point, clone it and rename it &amp;ldquo;Organisation - Calculations.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>5. Cross References and Automations</title>
+				<link>https://docs.agilebase.co.uk/guides/guide1-crm/cross-reference-and-automations/</link>
+				<pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/guides/guide1-crm/cross-reference-and-automations/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Using Cross Reference (Xref) fields in a table definition to display related info. Introduce WorkFlows (Buttons, sending emails, document generation). Being organised by using a naming convention!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Add a Sales Pipeline” and “Introducing calculated” video. Understand how to create calculations in views.&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;This part of the guide starts to introduce some more powerful and advanced features of the agileBase system. It looks at how we can give users of our basic CRM some power ups that make it a better user experience. Let’s continue with our Sales Opportunities and introduce the concept of cross referencing data before adding an automated email ‘reminder’ and a button to the user interface…&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>6. Security and Access Control</title>
+				<link>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</link>
+				<pubDate>Thu, 31 Aug 2023 13:00:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Understand basic database privileges&amp;hellip; Roles and giving them to Users!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; To have built a multi table system, to have more than themselves as users.&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;AgileBase uses the classic concept of Roles to help you control the access users have to the system you are building.&#xA;A classic metaphor would be the manager of an office has the keys to the building, whilst the staff do not. The person acting as the manager may change overtime, but the permission and privileges (in this case having keys) does not!&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

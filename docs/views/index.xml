@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Views on Agilebase docs</title>
-    <link>https://docs.agilebase.co.uk/docs/views/</link>
-    <description>Recent content in Views on Agilebase docs</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 19 Jun 2026 17:27:13 +0100</lastBuildDate>
-    <atom:link href="https://docs.agilebase.co.uk/docs/views/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Creating a view</title>
-      <link>https://docs.agilebase.co.uk/docs/views/creating-a-view/</link>
-      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/docs/views/creating-a-view/</guid>
-      <description>&lt;p&gt;In Agilebase, a view &amp;lsquo;belongs to&amp;rsquo; a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt;. We&amp;rsquo;ll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we&amp;rsquo;ll assume we pick a contacts table.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ll also assume we already have some tables and some &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;to-create-a-view&#34;&gt;To create a view&lt;/h2&gt;&#xA;&lt;p&gt;You can create a view from scratch, or clone an existing one then edit it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Filters</title>
-      <link>https://docs.agilebase.co.uk/docs/views/filters/</link>
-      <pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/docs/views/filters/</guid>
-      <description>&lt;p&gt;Filters can be applied permanently to a view, allowing an administrator to specify the subset of records that should be displayed. This is often for convenience and to create more useful systems. For example, if you have a database of suppliers, you may want to create views showing those which are approved, those which aren&amp;rsquo;t, those which are local etc. Each view would have a different set of filters applied.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Large applications</title>
-      <link>https://docs.agilebase.co.uk/docs/views/large-applications/</link>
-      <pubDate>Sat, 06 Jun 2026 16:40:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/docs/views/large-applications/</guid>
-      <description>&lt;p&gt;As you build applications in Agilebase, you will quickly find yourself creating views as this section of the documentation describes.&lt;/p&gt;&#xA;&lt;p&gt;Each view serves a purpose, to help individual people carry out their daily work. They support many functions from just creating lists of items to work through, through to more complex things like maths, calculating resource utilisations or stats for management reports.&lt;/p&gt;&#xA;&lt;p&gt;As an application grows in size, you will naturally start to want to make the output of one view feed into another.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Views on Agilebase docs</title>
+		<link>https://docs.agilebase.co.uk/docs/views/</link>
+		<description>Recent content in Views on Agilebase docs</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 19 Jun 2026 17:27:13 +0100</lastBuildDate>
+		
+			<atom:link href="https://docs.agilebase.co.uk/docs/views/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Creating a view</title>
+				<link>https://docs.agilebase.co.uk/docs/views/creating-a-view/</link>
+				<pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/docs/views/creating-a-view/</guid>
+				<description>&lt;p&gt;In Agilebase, a view &amp;lsquo;belongs to&amp;rsquo; a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/&#34;&gt;table&lt;/a&gt;. We&amp;rsquo;ll see what that means in more detail below, but for now, just choose a table to show data from to users. In examples on this section of the documentation we&amp;rsquo;ll assume we pick a contacts table.&lt;/p&gt;&#xA;&lt;p&gt;We&amp;rsquo;ll also assume we already have some tables and some &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tiles/&#34;&gt;tiles&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;to-create-a-view&#34;&gt;To create a view&lt;/h2&gt;&#xA;&lt;p&gt;You can create a view from scratch, or clone an existing one then edit it.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Filters</title>
+				<link>https://docs.agilebase.co.uk/docs/views/filters/</link>
+				<pubDate>Wed, 13 May 2020 16:40:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/docs/views/filters/</guid>
+				<description>&lt;p&gt;Filters can be applied permanently to a view, allowing an administrator to specify the subset of records that should be displayed. This is often for convenience and to create more useful systems. For example, if you have a database of suppliers, you may want to create views showing those which are approved, those which aren&amp;rsquo;t, those which are local etc. Each view would have a different set of filters applied.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Large applications</title>
+				<link>https://docs.agilebase.co.uk/docs/views/large-applications/</link>
+				<pubDate>Sat, 06 Jun 2026 16:40:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/docs/views/large-applications/</guid>
+				<description>&lt;p&gt;As you build applications in Agilebase, you will quickly find yourself creating views as this section of the documentation describes.&lt;/p&gt;&#xA;&lt;p&gt;Each view serves a purpose, to help individual people carry out their daily work. They support many functions from just creating lists of items to work through, through to more complex things like maths, calculating resource utilisations or stats for management reports.&lt;/p&gt;&#xA;&lt;p&gt;As an application grows in size, you will naturally start to want to make the output of one view feed into another.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

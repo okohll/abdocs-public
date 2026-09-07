@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Access Control on Agilebase docs</title>
-    <link>https://docs.agilebase.co.uk/tags/access-control/</link>
-    <description>Recent content in Access Control on Agilebase docs</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 27 Nov 2023 10:15:18 +0000</lastBuildDate>
-    <atom:link href="https://docs.agilebase.co.uk/tags/access-control/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>6. Security and Access Control</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</link>
-      <pubDate>Thu, 31 Aug 2023 13:00:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Understand basic database privileges&amp;hellip; Roles and giving them to Users!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; To have built a multi table system, to have more than themselves as users.&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;AgileBase uses the classic concept of Roles to help you control the access users have to the system you are building.&#xA;A classic metaphor would be the manager of an office has the keys to the building, whilst the staff do not. The person acting as the manager may change overtime, but the permission and privileges (in this case having keys) does not!&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Access Control on Agilebase docs</title>
+		<link>https://docs.agilebase.co.uk/tags/access-control/</link>
+		<description>Recent content in Access Control on Agilebase docs</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 27 Nov 2023 10:15:18 +0000</lastBuildDate>
+		
+			<atom:link href="https://docs.agilebase.co.uk/tags/access-control/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>6. Security and Access Control</title>
+				<link>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</link>
+				<pubDate>Thu, 31 Aug 2023 13:00:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/guides/guide1-crm/security-and-access-control/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;   Understand basic database privileges&amp;hellip; Roles and giving them to Users!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; To have built a multi table system, to have more than themselves as users.&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;AgileBase uses the classic concept of Roles to help you control the access users have to the system you are building.&#xA;A classic metaphor would be the manager of an office has the keys to the building, whilst the staff do not. The person acting as the manager may change overtime, but the permission and privileges (in this case having keys) does not!&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

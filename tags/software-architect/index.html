@@ -32,33 +32,21 @@
 <link rel="alternate" type="application/rss&#43;xml" href="https://docs.agilebase.co.uk/tags/software-architect/index.xml">
 <meta name="robots" content="index, follow">
 
-
-<link rel="shortcut icon" href="/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
-
 <title>Software Architect | Agilebase docs</title>
 <meta name="description" content="">
 <meta property="og:url" content="https://docs.agilebase.co.uk/tags/software-architect/">
-  <meta property="og:site_name" content="Agilebase docs">
-  <meta property="og:title" content="Software Architect">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="website">
+	<meta property="og:site_name" content="Agilebase docs">
+	<meta property="og:title" content="Software Architect">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="website">
 
-  <meta itemprop="name" content="Software Architect">
-  <meta itemprop="datePublished" content="2026-01-30T13:00:00+01:00">
-  <meta itemprop="dateModified" content="2026-06-19T17:27:13+01:00">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Software Architect">
-<link rel="preload" href="/scss/main.min.5921ef4139cb5ea61c948383287eb1d6e02b24f08694373d1e4cda500ed44031.css" as="style" integrity="sha256-WSHvQTnLXqYclIODKH6x1uArJPCGlDc9HkzaUA7UQDE=" crossorigin="anonymous">
-<link href="/scss/main.min.5921ef4139cb5ea61c948383287eb1d6e02b24f08694373d1e4cda500ed44031.css" rel="stylesheet" integrity="sha256-WSHvQTnLXqYclIODKH6x1uArJPCGlDc9HkzaUA7UQDE=" crossorigin="anonymous">
+	<meta itemprop="name" content="Software Architect">
+	<meta itemprop="datePublished" content="2026-09-07T14:30:00+01:00">
+	<meta itemprop="dateModified" content="2026-09-07T23:18:28+01:00">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Software Architect">
+<link rel="preload" href="/scss/main.min.642e6db7d6d09e65a3567a34f763b2c802cdf175b57a5a2402500b5b55a9290a.css" as="style" integrity="sha256-ZC5tt9bQnmWjVno092OyyALN8XW1elokAlALW1WpKQo=" crossorigin="anonymous">
+<link href="/scss/main.min.642e6db7d6d09e65a3567a34f763b2c802cdf175b57a5a2402500b5b55a9290a.css" rel="stylesheet" integrity="sha256-ZC5tt9bQnmWjVno092OyyALN8XW1elokAlALW1WpKQo=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -124,8 +112,10 @@
         type="button"
         aria-expanded="false"
         data-bs-toggle="dropdown"
-        aria-label="Toggle theme (auto)">
+        title="Toggle theme (Auto)"
+        aria-label="Toggle theme (Auto)">
   <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+  <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
 </button>
 <ul class="dropdown-menu" aria-labelledby="bd-theme">
   <li>
@@ -158,7 +148,7 @@
   </div>
   <div class="td-navbar__search d-none d-lg-block">
     <div class="td-search td-search--offline">
-  <div class="td-search__icon"></div>
+  <div class="td-search__icon" aria-hidden="true"></div>
   <input
     type="search"
     name="q"
@@ -167,7 +157,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.ea8e6d79a728d9cdc1252c7e0557ceac.json"
+    data-offline-search-index-json-src="/offline-search-index.53ac8990a5d86e8bc8448dd679aa50ab.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -190,12 +180,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/security-and-compliance/security-features/">Security Features</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/">Security and Compliance</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Security Features</li>
   </ol>
 </nav><p>Setting up users, roles, privileges and related considerations</p>
@@ -215,10 +205,10 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/guides/guide1-crm/">Guide 1 - Build a CRM</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/guides/">Guides</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Guide 1 - Build a CRM</li>
   </ol>
 </nav><p>Building a number of applications to form a CRM system</p>
@@ -238,10 +228,10 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/security-and-compliance/">Security and Compliance</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Security and Compliance</li>
   </ol>
 </nav><p>Security features - users, roles and privileges. Policies and procedures</p>
@@ -261,14 +251,14 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/security-and-compliance/security-features/users/">Users</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/">Security and Compliance</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/security-features/">Security Features</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Users</li>
   </ol>
 </nav><p>Adding, viewing and removing users</p>
@@ -288,10 +278,10 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/artificial-intelligence/">Artificial Intelligence (AI)</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Artificial Intelligence (AI)</li>
   </ol>
 </nav><p>How AI and No Code work together in Agilebase</p>
@@ -311,16 +301,16 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/security-and-compliance/security-features/users/community-users/">Community Users</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/">Security and Compliance</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/security-features/">Security Features</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/security-features/users/">Users</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Community Users</li>
   </ol>
 </nav><p>Allowing access to people outside the organisation</p>
@@ -338,14 +328,39 @@
       
         
         <article class="card article-teaser article-type-docs">
+          <h3><a href="/docs/artificial-intelligence/ai-development/">AI developmment</a></h3>
+          <nav class="td-breadcrumbs">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
+    <a href="/docs/">Docs</a></li>
+  <li class="td-breadcrumbs__item">
+    <a href="/docs/artificial-intelligence/">Artificial Intelligence (AI)</a></li>
+  <li class="td-breadcrumbs__item">
+    AI developmment</li>
+  </ol>
+</nav><p>How AI and No Code work together in Agilebase</p>
+          <header class="article-meta">
+            <div class="taxonomy taxonomy-terms-article taxo-tags">
+  <h5 class="taxonomy-title">Tags:</h5>
+  <ul class="taxonomy-terms">
+    <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span></a></li>
+    <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/v6/" data-taxonomy-term="v6"><span class="taxonomy-label">V6</span></a></li>
+    </ul>
+</div>
+
+  </header>
+        </article>
+      
+        
+        <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/security-and-compliance/policies/">Policies</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/">Security and Compliance</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Policies</li>
   </ol>
 </nav><p>Policies and further information</p>
@@ -365,14 +380,14 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/security-and-compliance/security-features/roles/">Roles</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/">Security and Compliance</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/security-features/">Security Features</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Roles</li>
   </ol>
 </nav><p>Organising users into groups for better management</p>
@@ -390,16 +405,40 @@
       
         
         <article class="card article-teaser article-type-docs">
+          <h3><a href="/docs/artificial-intelligence/mcp-servers/">MCP servers</a></h3>
+          <nav class="td-breadcrumbs">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
+    <a href="/docs/">Docs</a></li>
+  <li class="td-breadcrumbs__item">
+    <a href="/docs/artificial-intelligence/">Artificial Intelligence (AI)</a></li>
+  <li class="td-breadcrumbs__item">
+    MCP servers</li>
+  </ol>
+</nav><p>Setting up MCP servers to allow you to interface with Agilebase via chat interfaces</p>
+          <header class="article-meta">
+            <div class="taxonomy taxonomy-terms-article taxo-tags">
+  <h5 class="taxonomy-title">Tags:</h5>
+  <ul class="taxonomy-terms">
+    <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span></a></li>
+    </ul>
+</div>
+
+  </header>
+        </article>
+      
+        
+        <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/security-and-compliance/security-features/privileges/">Privileges</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/">Security and Compliance</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/security-features/">Security Features</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Privileges</li>
   </ol>
 </nav><p>The different types of privilege and how they can be assigned</p>
@@ -419,14 +458,14 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/security-and-compliance/security-features/exporting/">Exporting</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/">Security and Compliance</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/security-features/">Security Features</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Exporting</li>
   </ol>
 </nav><p>Allowing users to export data to spreadsheet</p>
@@ -446,16 +485,16 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/security-and-compliance/security-features/usage-monitoring/usage-reporting/">Reporting</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/">Security and Compliance</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/security-features/">Security Features</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/security-features/usage-monitoring/">Usage Monitoring</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Reporting</li>
   </ol>
 </nav><p>Viewing, querying and reporting on log data</p>
@@ -475,14 +514,14 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/security-and-compliance/security-features/usage-monitoring/">Usage Monitoring</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/">Security and Compliance</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/security-features/">Security Features</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Usage Monitoring</li>
   </ol>
 </nav><p>Viewing usage statistics relating to users, tables and views</p>
@@ -502,14 +541,14 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/introduction/learner-progression-levels/software-architect/">Software Architect</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/introduction/">Introduction</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/introduction/learner-progression-levels/">Agile Academy Levels</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Software Architect</li>
   </ol>
 </nav><p>Building, assembling and managing the whole system</p>
@@ -528,14 +567,14 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/security-and-compliance/security-features/app_login/">Logging in from an app</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/">Security and Compliance</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/security-features/">Security Features</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Logging in from an app</li>
   </ol>
 </nav><p>Validating logins from a third party app</p>
@@ -555,12 +594,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/tables/hierarchy-navigation/">Hierarchy Navigation</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/tables/">Tables</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Hierarchy Navigation</li>
   </ol>
 </nav><p>Customising how the user navigates an application</p>
@@ -580,12 +619,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/tables/sensitive-data/">Sensitive data</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/tables/">Tables</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Sensitive data</li>
   </ol>
 </nav><p>Options relevant to storing commerically sensitive or personal data</p>
@@ -605,14 +644,14 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/fields/field-types/changing-field-types/">Changing Field Types</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/fields/">Fields</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/fields/field-types/">Field Types</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Changing Field Types</li>
   </ol>
 </nav><p>How to change a field from one type to another</p>
@@ -632,12 +671,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/tables/data-integrity-checks/">Data Integrity Checks</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/tables/">Tables</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Data Integrity Checks</li>
   </ol>
 </nav><p>Enforcing the correctness of data entered into the system</p>
@@ -657,12 +696,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/tables/options/">Options</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/tables/">Tables</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Options</li>
   </ol>
 </nav><p>Options which alter table behaviour</p>
@@ -682,12 +721,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/tables/workflow/">Workflow</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/tables/">Tables</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Workflow</li>
   </ol>
 </nav><p>Running a workflow whenever a record is added</p>
@@ -706,14 +745,14 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/views/calculations/examples/">Calculation Examples</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/views/">Views</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/views/calculations/">Calculations</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Calculation Examples</li>
   </ol>
 </nav><p>Some examples of useful calculations for each type of field (text, number etc.)</p>
@@ -733,12 +772,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/tables/users-and-roles/">Roles and Privileges</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/tables/">Tables</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Roles and Privileges</li>
   </ol>
 </nav><p>Assigning table privileges</p>
@@ -757,12 +796,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/tables/usage/">Usage</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/tables/">Tables</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Usage</li>
   </ol>
 </nav><p>Shows which users are viewing data from this table</p>
@@ -782,14 +821,14 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/views/calculations/best_practices/">Calculation Best Practices</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/views/">Views</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/views/calculations/">Calculations</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Calculation Best Practices</li>
   </ol>
 </nav><p>A few tips for working with calculations.</p>
@@ -809,16 +848,16 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/security-and-compliance/security-features/users/user_troubleshooting/">Login troubleshooting</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/">Security and Compliance</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/security-features/">Security Features</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/security-and-compliance/security-features/users/">Users</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Login troubleshooting</li>
   </ol>
 </nav><p>Helping people who have problems logging in</p>
@@ -838,12 +877,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/integrations/test-server/">Testing</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/integrations/">Integrations</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Testing</li>
   </ol>
 </nav><p>Using a test server to dry-run integrations</p>
@@ -863,12 +902,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/integrations/external-reporting/">External Reporting</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/integrations/">Integrations</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     External Reporting</li>
   </ol>
 </nav><p>Sending data to an external tool via a database link</p>
@@ -888,10 +927,10 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/advanced-usage/">Advanced Usage</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Advanced Usage</li>
   </ol>
 </nav><p>Resources typically useful in the later stages of development</p>
@@ -911,10 +950,10 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/tips-and-tricks/">Tips and Tricks</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Tips and Tricks</li>
   </ol>
 </nav><p>Some interesting solutions for common problems encountered when building apps with Agilebase</p>
@@ -934,12 +973,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/advanced-usage/company-settings/">Organisation Settings</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/advanced-usage/">Advanced Usage</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Organisation Settings</li>
   </ol>
 </nav><p>These settings apply to the whole Agilebase account</p>
@@ -959,12 +998,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/workflows/send-data-to-a-third-party-via-api/">Send Data to a third party via API</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/workflows/">Workflows</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Send Data to a third party via API</li>
   </ol>
 </nav><p>Each workflow can perform a single specific action</p>
@@ -983,12 +1022,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/advanced-usage/build-patterns/">Build Patterns</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/advanced-usage/">Advanced Usage</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Build Patterns</li>
   </ol>
 </nav><p>Common patterns, or recipes for accomplishing useful tasks</p>
@@ -1008,12 +1047,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/advanced-usage/performance-optimisation/">Performance Optimisation</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/advanced-usage/">Advanced Usage</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Performance Optimisation</li>
   </ol>
 </nav><p>Working with big data and complex views</p>
@@ -1033,14 +1072,14 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/advanced-usage/performance-optimisation/examining-performance/">Examining Performance</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/advanced-usage/">Advanced Usage</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/advanced-usage/performance-optimisation/">Performance Optimisation</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Examining Performance</li>
   </ol>
 </nav><p>Agilebase gives you some tools to enable you to see where performance issues might be surfacing</p>
@@ -1060,14 +1099,14 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/advanced-usage/performance-optimisation/speeding-things-up/">Speeding Things Up</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/advanced-usage/">Advanced Usage</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/advanced-usage/performance-optimisation/">Performance Optimisation</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Speeding Things Up</li>
   </ol>
 </nav><p>There are a number of ways that view performance can be optimised</p>
@@ -1087,12 +1126,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/integrations/push-example-zapier/">PUSH API worked example - Zapier</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/integrations/">Integrations</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     PUSH API worked example - Zapier</li>
   </ol>
 </nav><p>A worked example to send Agilebase data to a third party text messaging service using Zapier</p>
@@ -1112,12 +1151,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/integrations/complex-example/">Complete API worked example</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/integrations/">Integrations</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Complete API worked example</li>
   </ol>
 </nav><p>A more complex API example showing a real world integration consisting of multiple steps</p>
@@ -1137,12 +1176,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/integrations/comments-integration/">Comments integration</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/integrations/">Integrations</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Comments integration</li>
   </ol>
 </nav><p>Allows comments posted in Agilebase to be shared as Slack/Teams/Google etc. notifications</p>
@@ -1162,12 +1201,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/integrations/testing-a-login/">Authenticating users via the API</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/integrations/">Integrations</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Authenticating users via the API</li>
   </ol>
 </nav><p>Logging in as a user</p>
@@ -1187,12 +1226,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/integrations/email-integration/">Email Integration</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/integrations/">Integrations</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     Email Integration</li>
   </ol>
 </nav><p>Importing emails into Agilebase</p>
@@ -1212,12 +1251,12 @@
         <article class="card article-teaser article-type-docs">
           <h3><a href="/docs/integrations/api-response-codes/">API response codes</a></h3>
           <nav class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/integrations/">Integrations</a></li>
-  <li class="breadcrumb-item">
+  <li class="td-breadcrumbs__item">
     API response codes</li>
   </ol>
 </nav><p>Descriptions of the various HTTP error codes that might be returned if an API request fails</p>
@@ -1262,10 +1301,9 @@
     </div>
   </div>
 </footer>
-
     </div>
-    <script src="/js/main.min.65d702cee0bf35691ed701b78b7b713d03be4a9f1f184f95e8049d065c07bc57.js" integrity="sha256-ZdcCzuC/NWke1wG3i3txPQO&#43;Sp8fGE&#43;V6ASdBlwHvFc=" crossorigin="anonymous"></script>
-<script defer src="/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/js/main.min.3d0d77838f61724343097ae6aeb2f2d0abef2f9641b15ea3c258a49d2fe4e356.js" integrity="sha256-PQ13g49hckNDCXrmrrLy0KvvL5ZBsV6jwliknS/k41Y=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.decf3b53d8827d840369f490775626e2a5200e150a733f78f0081c126426cbbf.js" integrity="sha256-3s87U9iCfYQDafSQd1Ym4qUgDhUKcz948AgcEmQmy78=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
 

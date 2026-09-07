@@ -32,38 +32,26 @@
 <link rel="alternate" type="application/rss&#43;xml" href="https://docs.agilebase.co.uk/docs/security-and-compliance/index.xml">
 <meta name="robots" content="index, follow">
 
-
-<link rel="shortcut icon" href="/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
-
 <title>Security and Compliance | Agilebase docs</title>
 <meta name="description" content="Security features - users, roles and privileges. Policies and procedures">
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/security-and-compliance/">
-  <meta property="og:site_name" content="Agilebase docs">
-  <meta property="og:title" content="Security and Compliance">
-  <meta property="og:description" content="Security features - users, roles and privileges. Policies and procedures">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="website">
+	<meta property="og:site_name" content="Agilebase docs">
+	<meta property="og:title" content="Security and Compliance">
+	<meta property="og:description" content="Security features - users, roles and privileges. Policies and procedures">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="website">
 
-  <meta itemprop="name" content="Security and Compliance">
-  <meta itemprop="description" content="Security features - users, roles and privileges. Policies and procedures">
-  <meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00">
-  <meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00">
-  <meta itemprop="wordCount" content="89">
-  <meta itemprop="keywords" content="Software Architect,V6">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Security and Compliance">
-  <meta name="twitter:description" content="Security features - users, roles and privileges. Policies and procedures">
-<link rel="preload" href="/scss/main.min.5921ef4139cb5ea61c948383287eb1d6e02b24f08694373d1e4cda500ed44031.css" as="style" integrity="sha256-WSHvQTnLXqYclIODKH6x1uArJPCGlDc9HkzaUA7UQDE=" crossorigin="anonymous">
-<link href="/scss/main.min.5921ef4139cb5ea61c948383287eb1d6e02b24f08694373d1e4cda500ed44031.css" rel="stylesheet" integrity="sha256-WSHvQTnLXqYclIODKH6x1uArJPCGlDc9HkzaUA7UQDE=" crossorigin="anonymous">
+	<meta itemprop="name" content="Security and Compliance">
+	<meta itemprop="description" content="Security features - users, roles and privileges. Policies and procedures">
+	<meta itemprop="datePublished" content="2020-04-24T16:40:00+01:00">
+	<meta itemprop="dateModified" content="2023-11-27T10:15:18+00:00">
+	<meta itemprop="wordCount" content="89">
+	<meta itemprop="keywords" content="Software Architect,V6">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Security and Compliance">
+	<meta name="twitter:description" content="Security features - users, roles and privileges. Policies and procedures">
+<link rel="preload" href="/scss/main.min.642e6db7d6d09e65a3567a34f763b2c802cdf175b57a5a2402500b5b55a9290a.css" as="style" integrity="sha256-ZC5tt9bQnmWjVno092OyyALN8XW1elokAlALW1WpKQo=" crossorigin="anonymous">
+<link href="/scss/main.min.642e6db7d6d09e65a3567a34f763b2c802cdf175b57a5a2402500b5b55a9290a.css" rel="stylesheet" integrity="sha256-ZC5tt9bQnmWjVno092OyyALN8XW1elokAlALW1WpKQo=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -129,8 +117,10 @@
         type="button"
         aria-expanded="false"
         data-bs-toggle="dropdown"
-        aria-label="Toggle theme (auto)">
+        title="Toggle theme (Auto)"
+        aria-label="Toggle theme (Auto)">
   <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+  <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
 </button>
 <ul class="dropdown-menu" aria-labelledby="bd-theme">
   <li>
@@ -163,7 +153,7 @@
   </div>
   <div class="td-navbar__search d-none d-lg-block">
     <div class="td-search td-search--offline">
-  <div class="td-search__icon"></div>
+  <div class="td-search__icon" aria-hidden="true"></div>
   <input
     type="search"
     name="q"
@@ -172,7 +162,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.ea8e6d79a728d9cdc1252c7e0557ceac.json"
+    data-offline-search-index-json-src="/offline-search-index.53ac8990a5d86e8bc8448dd679aa50ab.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -188,7 +178,7 @@
             <div id="td-sidebar-menu" class="td-sidebar__inner">
   <form class="td-sidebar__search d-flex align-items-center">
     <div class="td-search td-search--offline">
-  <div class="td-search__icon"></div>
+  <div class="td-search__icon" aria-hidden="true"></div>
   <input
     type="search"
     name="q"
@@ -197,7 +187,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.ea8e6d79a728d9cdc1252c7e0557ceac.json"
+    data-offline-search-index-json-src="/offline-search-index.53ac8990a5d86e8bc8448dd679aa50ab.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -272,8 +262,15 @@
     <a href="/docs/security-and-compliance/policies/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docssecurity-and-compliancepolicies"><span class="">Policies</span></a>
   </li>
     </ul>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsartificial-intelligence-li">
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsartificial-intelligence-li">
     <a href="/docs/artificial-intelligence/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsartificial-intelligence"><span class="">Artificial Intelligence (AI)</span></a>
+    <ul class="ul-2 foldable">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsartificial-intelligenceai-development-li">
+    <a href="/docs/artificial-intelligence/ai-development/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsartificial-intelligenceai-development"><span class="">AI developmment</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsartificial-intelligencemcp-servers-li">
+    <a href="/docs/artificial-intelligence/mcp-servers/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsartificial-intelligencemcp-servers"><span class="">MCP servers</span></a>
+  </li>
+    </ul>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docstiles-li">
     <a href="/docs/tiles/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docstiles"><span class="">Tiles</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docstables-li">
@@ -579,10 +576,10 @@
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/requires-update/" data-taxonomy-term="requires-update"><span class="taxonomy-label">Requires Update</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/sales/" data-taxonomy-term="sales"><span class="taxonomy-label">Sales</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/security/" data-taxonomy-term="security"><span class="taxonomy-label">Security</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span><span class="taxonomy-count">41</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span><span class="taxonomy-count">43</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/system-architect/" data-taxonomy-term="system-architect"><span class="taxonomy-label">System Architect</span><span class="taxonomy-count">4</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/tabs/" data-taxonomy-term="tabs"><span class="taxonomy-label">Tabs</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/v6/" data-taxonomy-term="v6"><span class="taxonomy-label">V6</span><span class="taxonomy-count">99</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/v6/" data-taxonomy-term="v6"><span class="taxonomy-label">V6</span><span class="taxonomy-count">100</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/views/" data-taxonomy-term="views"><span class="taxonomy-label">Views</span><span class="taxonomy-count">1</span></a></li>
         </ul>
     </div>
@@ -592,10 +589,10 @@
           <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
             
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item active" aria-current="page">
+  <li class="td-breadcrumbs__item" aria-current="page">
     Security and Compliance</li>
   </ol>
 </nav>
@@ -720,10 +717,9 @@
     </div>
   </div>
 </footer>
-
     </div>
-    <script src="/js/main.min.65d702cee0bf35691ed701b78b7b713d03be4a9f1f184f95e8049d065c07bc57.js" integrity="sha256-ZdcCzuC/NWke1wG3i3txPQO&#43;Sp8fGE&#43;V6ASdBlwHvFc=" crossorigin="anonymous"></script>
-<script defer src="/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/js/main.min.3d0d77838f61724343097ae6aeb2f2d0abef2f9641b15ea3c258a49d2fe4e356.js" integrity="sha256-PQ13g49hckNDCXrmrrLy0KvvL5ZBsV6jwliknS/k41Y=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.decf3b53d8827d840369f490775626e2a5200e150a733f78f0081c126426cbbf.js" integrity="sha256-3s87U9iCfYQDafSQd1Ym4qUgDhUKcz948AgcEmQmy78=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
 

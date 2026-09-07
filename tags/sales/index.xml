@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Sales on Agilebase docs</title>
-    <link>https://docs.agilebase.co.uk/tags/sales/</link>
-    <description>Recent content in Sales on Agilebase docs</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 27 Nov 2023 10:15:18 +0000</lastBuildDate>
-    <atom:link href="https://docs.agilebase.co.uk/tags/sales/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>3. Adding a Sales Pipeline - Kanban</title>
-      <link>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</link>
-      <pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;  Introduce Kanban / Card view. Power of dropdowns on fields. Show how easy to add graphs. Show off the advanced UI elements of aB&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Capturing Company and Contact details” video. Understand relational data&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;In this step of our guide we going to look at adding a dropdown field to &amp;ldquo;control&amp;rdquo; data input as we want to set up a Kanban board approach to managing Sales Opportunities.&#xA;This video assumes you are happy creating tables so jumps to the point of adding the Dropdown field.&#xA;If you are following along and want to build this table please copy the following table structure&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Sales on Agilebase docs</title>
+		<link>https://docs.agilebase.co.uk/tags/sales/</link>
+		<description>Recent content in Sales on Agilebase docs</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 27 Nov 2023 10:15:18 +0000</lastBuildDate>
+		
+			<atom:link href="https://docs.agilebase.co.uk/tags/sales/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>3. Adding a Sales Pipeline - Kanban</title>
+				<link>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</link>
+				<pubDate>Wed, 16 Aug 2023 13:00:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/guides/guide1-crm/sales-pipeline/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Learning Aim:&lt;/strong&gt;  Introduce Kanban / Card view. Power of dropdowns on fields. Show how easy to add graphs. Show off the advanced UI elements of aB&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites:&lt;/strong&gt; User to have watched “Capturing Company and Contact details” video. Understand relational data&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;In this step of our guide we going to look at adding a dropdown field to &amp;ldquo;control&amp;rdquo; data input as we want to set up a Kanban board approach to managing Sales Opportunities.&#xA;This video assumes you are happy creating tables so jumps to the point of adding the Dropdown field.&#xA;If you are following along and want to build this table please copy the following table structure&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

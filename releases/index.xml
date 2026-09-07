@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Releases on Agilebase docs</title>
-    <link>https://docs.agilebase.co.uk/releases/</link>
-    <description>Recent content in Releases on Agilebase docs</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 21 Jun 2026 21:38:13 +0100</lastBuildDate>
-    <atom:link href="https://docs.agilebase.co.uk/releases/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>19th June 2026 - usability</title>
-      <link>https://docs.agilebase.co.uk/releases/usability/</link>
-      <pubDate>Fri, 19 Jun 2026 17:26:55 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/releases/usability/</guid>
-      <description>&lt;p&gt;This month we&amp;rsquo;ve done an overhaul of the user interface, both for users and developers.&lt;/p&gt;&#xA;&lt;p&gt;Some of this has been prompted by changes in staff amongst customers - as new people come on board and are inducted into what for them is a completely new system, we need to do as much as possible to make it easy to see how things work.&lt;/p&gt;&#xA;&lt;p&gt;Luckily, some recent major additions, particularly entity diagrams, have been found to be very useful - see &lt;a href=&#34;https://agilebase.co.uk/march-2026-improvements-for-new-and-seasoned-developers/&#34;&gt;https://agilebase.co.uk/march-2026-improvements-for-new-and-seasoned-developers/&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>17th May 2026 - more UI improvements, storage changes and coming up</title>
-      <link>https://docs.agilebase.co.uk/releases/ui-and-storage-improvements/</link>
-      <pubDate>Sun, 17 May 2026 09:57:55 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/releases/ui-and-storage-improvements/</guid>
-      <description>&lt;h2 id=&#34;pinning-persistence&#34;&gt;Pinning persistence&lt;/h2&gt;&#xA;&lt;p&gt;Last month&amp;rsquo;s release of the ability for users to pin views (i.e. keep favourite views permanently and easily accessible) went down well with customers and we had some great feedback.&lt;/p&gt;&#xA;&lt;p&gt;One request was to keep pinned views around between logins and other events, like platform upgrades. That&amp;rsquo;s now done.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Reminder - To pin a view, simply open in and click the pushpin icon at the top left. Then it will stick to the sidebar on the homepage, so you can click it to get back to it at any time. It will also appear at the top if you click the magnifying glass &amp;lsquo;search&amp;rsquo; icon in the top toolbar.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>3rd April 2026 - pinning views and other improvements</title>
-      <link>https://docs.agilebase.co.uk/releases/view-pinning/</link>
-      <pubDate>Tue, 07 Apr 2026 09:57:55 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/releases/view-pinning/</guid>
-      <description>&lt;p&gt;Last month&amp;rsquo;s release had some major improvements for developers, this one has some big benefits for everyone.&lt;/p&gt;&#xA;&lt;h2 id=&#34;view-pinning&#34;&gt;View pinning&lt;/h2&gt;&#xA;&lt;p&gt;Often, people have a favourite set of views that they frequently use. You can now &amp;lsquo;pin&amp;rsquo; those to the sidebar for easy access with one click, wherever you are in the system.&lt;/p&gt;&#xA;&lt;p&gt;To pin a view, simply click the pin icon to the left of the view name, when a view is open.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Previous releases</title>
-      <link>https://docs.agilebase.co.uk/releases/previous/</link>
-      <pubDate>Sat, 04 Apr 2026 09:57:55 +0100</pubDate>
-      <guid>https://docs.agilebase.co.uk/releases/previous/</guid>
-      <description>&lt;p&gt;Please see&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://agilebase.co.uk/category/release-announcement/&#34;&gt;https://agilebase.co.uk/category/release-announcement/&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Releases on Agilebase docs</title>
+		<link>https://docs.agilebase.co.uk/releases/</link>
+		<description>Recent content in Releases on Agilebase docs</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 21 Jun 2026 21:38:13 +0100</lastBuildDate>
+		
+			<atom:link href="https://docs.agilebase.co.uk/releases/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>19th June 2026 - usability</title>
+				<link>https://docs.agilebase.co.uk/releases/usability/</link>
+				<pubDate>Fri, 19 Jun 2026 17:26:55 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/releases/usability/</guid>
+				<description>&lt;p&gt;This month we&amp;rsquo;ve done an overhaul of the user interface, both for users and developers.&lt;/p&gt;&#xA;&lt;p&gt;Some of this has been prompted by changes in staff amongst customers - as new people come on board and are inducted into what for them is a completely new system, we need to do as much as possible to make it easy to see how things work.&lt;/p&gt;&#xA;&lt;p&gt;Luckily, some recent major additions, particularly entity diagrams, have been found to be very useful - see &lt;a href=&#34;https://agilebase.co.uk/march-2026-improvements-for-new-and-seasoned-developers/&#34;&gt;https://agilebase.co.uk/march-2026-improvements-for-new-and-seasoned-developers/&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>17th May 2026 - more UI improvements, storage changes and coming up</title>
+				<link>https://docs.agilebase.co.uk/releases/ui-and-storage-improvements/</link>
+				<pubDate>Sun, 17 May 2026 09:57:55 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/releases/ui-and-storage-improvements/</guid>
+				<description>&lt;h2 id=&#34;pinning-persistence&#34;&gt;Pinning persistence&lt;/h2&gt;&#xA;&lt;p&gt;Last month&amp;rsquo;s release of the ability for users to pin views (i.e. keep favourite views permanently and easily accessible) went down well with customers and we had some great feedback.&lt;/p&gt;&#xA;&lt;p&gt;One request was to keep pinned views around between logins and other events, like platform upgrades. That&amp;rsquo;s now done.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Reminder - To pin a view, simply open in and click the pushpin icon at the top left. Then it will stick to the sidebar on the homepage, so you can click it to get back to it at any time. It will also appear at the top if you click the magnifying glass &amp;lsquo;search&amp;rsquo; icon in the top toolbar.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>3rd April 2026 - pinning views and other improvements</title>
+				<link>https://docs.agilebase.co.uk/releases/view-pinning/</link>
+				<pubDate>Tue, 07 Apr 2026 09:57:55 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/releases/view-pinning/</guid>
+				<description>&lt;p&gt;Last month&amp;rsquo;s release had some major improvements for developers, this one has some big benefits for everyone.&lt;/p&gt;&#xA;&lt;h2 id=&#34;view-pinning&#34;&gt;View pinning&lt;/h2&gt;&#xA;&lt;p&gt;Often, people have a favourite set of views that they frequently use. You can now &amp;lsquo;pin&amp;rsquo; those to the sidebar for easy access with one click, wherever you are in the system.&lt;/p&gt;&#xA;&lt;p&gt;To pin a view, simply click the pin icon to the left of the view name, when a view is open.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Previous releases</title>
+				<link>https://docs.agilebase.co.uk/releases/previous/</link>
+				<pubDate>Sat, 04 Apr 2026 09:57:55 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/releases/previous/</guid>
+				<description>&lt;p&gt;Please see&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://agilebase.co.uk/category/release-announcement/&#34;&gt;https://agilebase.co.uk/category/release-announcement/&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

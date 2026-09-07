@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Guides on Agilebase docs</title>
-    <link>https://docs.agilebase.co.uk/guides/</link>
-    <description>Recent content in Guides on Agilebase docs</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://docs.agilebase.co.uk/guides/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+	<channel>
+		<title>Guides on Agilebase docs</title>
+		<link>https://docs.agilebase.co.uk/guides/</link>
+		<description>Recent content in Guides on Agilebase docs</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate></lastBuildDate>
+		
+			<atom:link href="https://docs.agilebase.co.uk/guides/index.xml" rel="self" type="application/rss+xml" />
+	</channel>
 </rss>

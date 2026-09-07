@@ -32,38 +32,26 @@
 <link rel="alternate" type="application/rss&#43;xml" href="https://docs.agilebase.co.uk/docs/artificial-intelligence/index.xml">
 <meta name="robots" content="index, follow">
 
-
-<link rel="shortcut icon" href="/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
-
 <title>Artificial Intelligence (AI) | Agilebase docs</title>
 <meta name="description" content="How AI and No Code work together in Agilebase">
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/artificial-intelligence/">
-  <meta property="og:site_name" content="Agilebase docs">
-  <meta property="og:title" content="Artificial Intelligence (AI)">
-  <meta property="og:description" content="How AI and No Code work together in Agilebase">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="website">
+	<meta property="og:site_name" content="Agilebase docs">
+	<meta property="og:title" content="Artificial Intelligence (AI)">
+	<meta property="og:description" content="How AI and No Code work together in Agilebase">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="website">
 
-  <meta itemprop="name" content="Artificial Intelligence (AI)">
-  <meta itemprop="description" content="How AI and No Code work together in Agilebase">
-  <meta itemprop="datePublished" content="2024-02-07T14:30:00+01:00">
-  <meta itemprop="dateModified" content="2025-12-23T23:12:04+00:00">
-  <meta itemprop="wordCount" content="386">
-  <meta itemprop="keywords" content="Software Architect,V6">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Artificial Intelligence (AI)">
-  <meta name="twitter:description" content="How AI and No Code work together in Agilebase">
-<link rel="preload" href="/scss/main.min.5921ef4139cb5ea61c948383287eb1d6e02b24f08694373d1e4cda500ed44031.css" as="style" integrity="sha256-WSHvQTnLXqYclIODKH6x1uArJPCGlDc9HkzaUA7UQDE=" crossorigin="anonymous">
-<link href="/scss/main.min.5921ef4139cb5ea61c948383287eb1d6e02b24f08694373d1e4cda500ed44031.css" rel="stylesheet" integrity="sha256-WSHvQTnLXqYclIODKH6x1uArJPCGlDc9HkzaUA7UQDE=" crossorigin="anonymous">
+	<meta itemprop="name" content="Artificial Intelligence (AI)">
+	<meta itemprop="description" content="How AI and No Code work together in Agilebase">
+	<meta itemprop="datePublished" content="2024-02-07T14:30:00+01:00">
+	<meta itemprop="dateModified" content="2026-09-07T23:17:58+01:00">
+	<meta itemprop="wordCount" content="318">
+	<meta itemprop="keywords" content="Software Architect,V6">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Artificial Intelligence (AI)">
+	<meta name="twitter:description" content="How AI and No Code work together in Agilebase">
+<link rel="preload" href="/scss/main.min.642e6db7d6d09e65a3567a34f763b2c802cdf175b57a5a2402500b5b55a9290a.css" as="style" integrity="sha256-ZC5tt9bQnmWjVno092OyyALN8XW1elokAlALW1WpKQo=" crossorigin="anonymous">
+<link href="/scss/main.min.642e6db7d6d09e65a3567a34f763b2c802cdf175b57a5a2402500b5b55a9290a.css" rel="stylesheet" integrity="sha256-ZC5tt9bQnmWjVno092OyyALN8XW1elokAlALW1WpKQo=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -129,8 +117,10 @@
         type="button"
         aria-expanded="false"
         data-bs-toggle="dropdown"
-        aria-label="Toggle theme (auto)">
+        title="Toggle theme (Auto)"
+        aria-label="Toggle theme (Auto)">
   <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+  <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
 </button>
 <ul class="dropdown-menu" aria-labelledby="bd-theme">
   <li>
@@ -163,7 +153,7 @@
   </div>
   <div class="td-navbar__search d-none d-lg-block">
     <div class="td-search td-search--offline">
-  <div class="td-search__icon"></div>
+  <div class="td-search__icon" aria-hidden="true"></div>
   <input
     type="search"
     name="q"
@@ -172,7 +162,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.ea8e6d79a728d9cdc1252c7e0557ceac.json"
+    data-offline-search-index-json-src="/offline-search-index.53ac8990a5d86e8bc8448dd679aa50ab.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -188,7 +178,7 @@
             <div id="td-sidebar-menu" class="td-sidebar__inner">
   <form class="td-sidebar__search d-flex align-items-center">
     <div class="td-search td-search--offline">
-  <div class="td-search__icon"></div>
+  <div class="td-search__icon" aria-hidden="true"></div>
   <input
     type="search"
     name="q"
@@ -197,7 +187,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.ea8e6d79a728d9cdc1252c7e0557ceac.json"
+    data-offline-search-index-json-src="/offline-search-index.53ac8990a5d86e8bc8448dd679aa50ab.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -272,8 +262,15 @@
     <a href="/docs/security-and-compliance/policies/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docssecurity-and-compliancepolicies"><span class="">Policies</span></a>
   </li>
     </ul>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsartificial-intelligence-li">
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsartificial-intelligence-li">
     <a href="/docs/artificial-intelligence/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__section" id="m-docsartificial-intelligence"><span class="td-sidebar-nav-active-item">Artificial Intelligence (AI)</span></a>
+    <ul class="ul-2 foldable">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsartificial-intelligenceai-development-li">
+    <a href="/docs/artificial-intelligence/ai-development/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsartificial-intelligenceai-development"><span class="">AI developmment</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsartificial-intelligencemcp-servers-li">
+    <a href="/docs/artificial-intelligence/mcp-servers/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsartificial-intelligencemcp-servers"><span class="">MCP servers</span></a>
+  </li>
+    </ul>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docstiles-li">
     <a href="/docs/tiles/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docstiles"><span class="">Tiles</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docstables-li">
@@ -556,12 +553,9 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#private-ai">Private AI</a>
-      <ul>
-        <li><a href="#self-hosted-models">Self hosted models</a></li>
-      </ul>
-    </li>
+    <li><a href="#1-development">1) Development</a></li>
+    <li><a href="#2-ai-workflows">2) AI workflows</a></li>
+    <li><a href="#3-chat-interface">3) Chat interface</a></li>
   </ul>
 </nav>
   </div>
@@ -593,10 +587,10 @@
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/requires-update/" data-taxonomy-term="requires-update"><span class="taxonomy-label">Requires Update</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/sales/" data-taxonomy-term="sales"><span class="taxonomy-label">Sales</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/security/" data-taxonomy-term="security"><span class="taxonomy-label">Security</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span><span class="taxonomy-count">41</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span><span class="taxonomy-count">43</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/system-architect/" data-taxonomy-term="system-architect"><span class="taxonomy-label">System Architect</span><span class="taxonomy-count">4</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/tabs/" data-taxonomy-term="tabs"><span class="taxonomy-label">Tabs</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/v6/" data-taxonomy-term="v6"><span class="taxonomy-label">V6</span><span class="taxonomy-count">99</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/v6/" data-taxonomy-term="v6"><span class="taxonomy-label">V6</span><span class="taxonomy-count">100</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/views/" data-taxonomy-term="views"><span class="taxonomy-label">Views</span><span class="taxonomy-count">1</span></a></li>
         </ul>
     </div>
@@ -606,10 +600,10 @@
           <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
             
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item">
+  <ol class="td-breadcrumbs__list">
+  <li class="td-breadcrumbs__item">
     <a href="/docs/">Docs</a></li>
-  <li class="breadcrumb-item active" aria-current="page">
+  <li class="td-breadcrumbs__item" aria-current="page">
     Artificial Intelligence (AI)</li>
   </ol>
 </nav>
@@ -626,34 +620,39 @@
 </div>
 
   </header>
-	<p>AI is used in many core features of Agilebase: to give you ideas about what to build, help to build those systems and build more advanced features more quickly than you would be able to do on your own as you progress your learning.</p>
-<p>It&rsquo;s possible, with a few simple prompts, for Agilebase&rsquo;s AI to build a complete system for you from scratch, for whatever you want (a CRM system for a charity, an asset tracking system for a film production company, or whatever you want to describe).</p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/sBYr8Sf6hAI?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-    </div>
-
-<p>Then when fleshing it out, the AI can help with more complex tasks like adding calculations for reporting.</p>
-<p>However, AI isn&rsquo;t a replacement for your own understanding, more of an aid. It&rsquo;s always a good idea to have some knowledge of the principles of how database systems work and Agilebase in particular - <a href="/docs/tables/relational-database-concepts/">relational database concepts</a> is a good starting point.</p>
-<h2 id="getting-started">Getting Started</h2>
-<p>See <a href="/docs/tables/adding-and-removing/#using-ai-to-add-multiple-tables">Using AI to add multiple tables</a> as the starting point for building a complete system, or extending an existing system with new applications</p>
-<h2 id="private-ai">Private AI</h2>
-<p>Where AI features are available in Agilebase, EU AI providers bound by strict GDPR regulations are used. Contractually, data is never shared or used for model training purposes.</p>
-<p>Whenever you use AI features, which are marked with a &lsquo;sparkles&rsquo; icon and the word AI inside a button, the prompts that you provide, along with other information from the Agilebase system (explained in the documentation for each feature) is sent to the AI.</p>
-<p>For example, when you</p>
+	<p>AI use in Agilebase falls into three categories. In all cases, use is optional. By default EU AI providers bound by strict GDPR regulations are used. Contractually, data is never shared or used for model training purposes. Please contact us if you wish to use your own privately hosted models.</p>
+<h2 id="1-development">1) Development</h2>
+<p><a href="/docs/artificial-intelligence/ai-development/">AI can aid you</a> in creating a system from scratch, or adding functionality, particularly when it comes to more complex things like SQL calculations.</p>
+<h2 id="2-ai-workflows">2) AI workflows</h2>
+<p>As well as working <em>on</em> the system, you can put AI to work <em>in</em> the system as well, modifying your data in bulk, with <a href="/docs/workflows/ai-workflows/">AI workflows</a>. These can create or update records, merging existing data into prompts.</p>
+<p>Examples could be</p>
 <ul>
-<li><a href="/docs/tables/adding-and-removing/#using-ai-to-add-multiple-tables">create a system</a> - the prompt you provide, plus a list of existing tables in the system is sent</li>
-<li><a href="/docs/fields/#adding-fields-automatically-using-ai">add fields to a table</a> - the prompt you provide, plus a list of existing tables in the system is sent</li>
-<li><a href="/docs/views/calculations/#using-the-ai">create a calculation</a> - the prompt you provide, plus a list of existing fields in all joined tables/views, is sent</li>
-<li><a href="/docs/charting/built-in-charting/">create a chart</a> - the chart description you provide, the view name and a list of fields in the view is sent</li>
-<li><a href="/docs/fields/field-types/special-field-types/file/document-templates/">edit a document template</a> - the existing template content and the list of available template variables (fields etc.) is sent</li>
+<li>letting people enter basic details for records (sales enquiries, time logs etc.) and letting the AI automatically categorise and add metadata in the background</li>
+<li>when a new field is added to a table, update all historical records to set sensible values for it</li>
+<li>summarising large amounts of data or extracting key points for reporting</li>
 </ul>
-<h3 id="self-hosted-models">Self hosted models</h3>
-<p>Should you wish, you can <a href="/docs/advanced-usage/company-settings/">configure your organisation settings</a> to use your own choice of AI, including self-hosted models to ensure traffic never leaves your own controlled infrastructure.</p>
+<h2 id="3-chat-interface">3) Chat interface</h2>
+<p>In Agilebase you have the ability to easily <a href="/docs/artificial-intelligence/mcp-servers/">create MCP servers</a>. What is an MCP server? The acronym&rsquo;s not very helpful, as per many tech. acronyms (it stands for Model Context Protocol), but in simple terms it means you can connect up a standard AI chat interface with Agilebase and query your system with natural language.</p>
+<p>So for example you can ask the system a question and it will look up information from views, or you can ask it to do something like add a note to add a new person to the database.</p>
+<p>The full power comes because MCP is an industry standard, which means you can not just connect Agilebase, but via one chat interface, connect many different systems. So for example, it could monitor an email inbox, to triage, categorise and create support tickets, sales enquiries etc. in Agilebase.</p>
 
 	<div class="section-index">
     
     
-    </div>
+    <hr class="panel-line">
+        <div class="entry">
+                <h5>
+                    <a href="/docs/artificial-intelligence/ai-development/">AI developmment</a>
+                </h5>
+                <p>How AI and No Code work together in Agilebase</p>
+            </div>
+        <div class="entry">
+                <h5>
+                    <a href="/docs/artificial-intelligence/mcp-servers/">MCP servers</a>
+                </h5>
+                <p>Setting up MCP servers to allow you to interface with Agilebase via chat interfaces</p>
+            </div>
+        </div>
 <style>
   .feedback--answer {
     display: inline-block;
@@ -711,7 +710,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified December 23, 2025: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/6812395df2234a55ea01ffe869201ba12ba939b2">Comments as a system table (6812395)</a>
+  Last modified September 7, 2026: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/de9c943d5a55bcd78511ba34d6812f509ad129df">Hugo upgrade (de9c943)</a>
 </div>
 </div>
 
@@ -742,10 +741,9 @@
     </div>
   </div>
 </footer>
-
     </div>
-    <script src="/js/main.min.65d702cee0bf35691ed701b78b7b713d03be4a9f1f184f95e8049d065c07bc57.js" integrity="sha256-ZdcCzuC/NWke1wG3i3txPQO&#43;Sp8fGE&#43;V6ASdBlwHvFc=" crossorigin="anonymous"></script>
-<script defer src="/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/js/main.min.3d0d77838f61724343097ae6aeb2f2d0abef2f9641b15ea3c258a49d2fe4e356.js" integrity="sha256-PQ13g49hckNDCXrmrrLy0KvvL5ZBsV6jwliknS/k41Y=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.decf3b53d8827d840369f490775626e2a5200e150a733f78f0081c126426cbbf.js" integrity="sha256-3s87U9iCfYQDafSQd1Ym4qUgDhUKcz948AgcEmQmy78=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
 
 
