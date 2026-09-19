@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sun, 21 Jun 2026 21:38:13 +0100</lastBuildDate>
+			<lastBuildDate>Sat, 19 Sep 2026 00:25:14 +0100</lastBuildDate>
 		
 			<atom:link href="https://docs.agilebase.co.uk/releases/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>21st September 2026 - MCP servers and Passkeys</title>
+				<link>https://docs.agilebase.co.uk/releases/mcp-server/</link>
+				<pubDate>Sat, 19 Sep 2026 09:57:55 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/releases/mcp-server/</guid>
+				<description>&lt;p&gt;This release includes a couple of major features for you to try out.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;They are both currently in beta testing, which means it&amp;rsquo;s not recommended to roll them out across your entire organisation yet, but they are complete and work, so administrators can use and test them.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;mcp-server&#34;&gt;MCP server&lt;/h2&gt;&#xA;&lt;p&gt;The addition of an MCP server functionality for Agilebase brings a powerful new capability for AI agents and people to interact with your system from outside it. In fact, you can connect up many different systems, if they have their own MCP servers, to transfer data intelligently between them or synthesize it.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>19th June 2026 - usability</title>
 				<link>https://docs.agilebase.co.uk/releases/usability/</link>
