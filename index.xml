@@ -89,6 +89,13 @@
 				<description>&lt;p&gt;The primary purpose of roles is to apply privileges to groups of users, rather than applying them individually. That makes managing large numbers of users easier and also more secure as it&amp;rsquo;s easy to see which privileges each type of user has and which they don&amp;rsquo;t.&lt;/p&gt;&#xA;&lt;p&gt;If you&amp;rsquo;re not sure how to use roles, a good starting point might be to align them with the job roles in your organisation, or departments.&lt;/p&gt;</description>
 			</item>
 			<item>
+				<title>Roadmap</title>
+				<link>https://docs.agilebase.co.uk/releases/roadmap/</link>
+				<pubDate>Tue, 29 Sep 2026 09:45:55 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/releases/roadmap/</guid>
+				<description>&lt;p&gt;Agilebase is constantly being updated with many minor improvements and bug fixes. Pretty much every week we release some new changes to our test systems, which get packaged up into final releases to customers once tested.&lt;/p&gt;&#xA;&lt;p&gt;However, there are some longer term threads that are more planned than reactive.&lt;/p&gt;&#xA;&lt;p&gt;Recently, we&amp;rsquo;ve released passkey support, which is one of those.&lt;/p&gt;&#xA;&lt;p&gt;Currently, we&amp;rsquo;re planning out the major elements of how our MCP server will evolve. That&amp;rsquo;s the feature which gives AI agents the ability to retrieve and store data in Agilebase.&lt;/p&gt;</description>
+			</item>
+			<item>
 				<title>MCP servers</title>
 				<link>https://docs.agilebase.co.uk/docs/artificial-intelligence/mcp-servers/</link>
 				<pubDate>Mon, 07 Sep 2026 14:30:00 +0100</pubDate>
@@ -128,7 +135,7 @@
 				<link>https://docs.agilebase.co.uk/releases/mcp-server/</link>
 				<pubDate>Sat, 19 Sep 2026 09:57:55 +0100</pubDate>
 				<guid>https://docs.agilebase.co.uk/releases/mcp-server/</guid>
-				<description>&lt;p&gt;This release includes a couple of major features for you to try out.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;They are both currently in beta testing, which means it&amp;rsquo;s not recommended to roll them out across your entire organisation yet, but they are complete and work, so administrators can use and test them.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;mcp-server&#34;&gt;MCP server&lt;/h2&gt;&#xA;&lt;p&gt;The addition of an MCP server functionality for Agilebase brings a powerful new capability for AI agents and people to interact with your system from outside it. In fact, you can connect up many different systems, if they have their own MCP servers, to transfer data intelligently between them or synthesize it.&lt;/p&gt;</description>
+				<description>&lt;p&gt;This release includes a couple of major features for you to try out.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;They are both currently in beta testing, which means it&amp;rsquo;s not recommended to roll them out across your entire organisation yet, but they are complete and work, so administrators can use and test them.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;mcp-server&#34;&gt;MCP server&lt;/h2&gt;&#xA;&lt;p&gt;The addition of an MCP server functionality to Agilebase brings a powerful new capability for AI agents and people to interact with your system from outside it. In fact, you can connect up many different systems, if they have their own MCP servers, to transfer data intelligently between them or synthesize it.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Guide 3.1 - Tiles: Advanced UI Control</title>
