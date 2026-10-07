@@ -10,7 +10,7 @@
 		
 		
 		
-			<lastBuildDate>Tue, 29 Sep 2026 14:49:48 +0100</lastBuildDate>
+			<lastBuildDate>Wed, 07 Oct 2026 17:22:59 +0100</lastBuildDate>
 		
 			<atom:link href="https://docs.agilebase.co.uk/releases/index.xml" rel="self" type="application/rss+xml" />
 			<item>
@@ -18,14 +18,14 @@
 				<link>https://docs.agilebase.co.uk/releases/roadmap/</link>
 				<pubDate>Tue, 29 Sep 2026 09:45:55 +0100</pubDate>
 				<guid>https://docs.agilebase.co.uk/releases/roadmap/</guid>
-				<description>&lt;p&gt;Agilebase is constantly being updated with many minor improvements and bug fixes. Pretty much every week we release some new changes to our test systems, which get packaged up into final releases to customers once tested.&lt;/p&gt;&#xA;&lt;p&gt;However, there are some longer term threads that are more planned than reactive.&lt;/p&gt;&#xA;&lt;p&gt;Recently, we&amp;rsquo;ve released passkey support, which is one of those.&lt;/p&gt;&#xA;&lt;p&gt;Currently, we&amp;rsquo;re planning out the major elements of how our MCP server will evolve. That&amp;rsquo;s the feature which gives AI agents the ability to retrieve and store data in Agilebase.&lt;/p&gt;</description>
+				<description>&lt;p&gt;Agilebase is constantly being updated with many minor improvements and bug fixes. Pretty much every week we release some new changes to our test systems, which get packaged up into final releases to customers once tested.&lt;/p&gt;&#xA;&lt;p&gt;However, there are some longer term threads that are more planned than reactive.&lt;/p&gt;&#xA;&lt;p&gt;Recently, we&amp;rsquo;ve released &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/passkeys/&#34;&gt;passkey&lt;/a&gt; support, which is one of those.&lt;/p&gt;&#xA;&lt;p&gt;Currently, we&amp;rsquo;re planning out the major elements of how our AI support will evolve. Specifically, our MCP server, the feature which gives AI agents the ability to retrieve and store data in Agilebase.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>21st September 2026 - MCP servers and Passkeys</title>
 				<link>https://docs.agilebase.co.uk/releases/mcp-server/</link>
 				<pubDate>Sat, 19 Sep 2026 09:57:55 +0100</pubDate>
 				<guid>https://docs.agilebase.co.uk/releases/mcp-server/</guid>
-				<description>&lt;p&gt;This release includes a couple of major features for you to try out.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;They are both currently in beta testing, which means it&amp;rsquo;s not recommended to roll them out across your entire organisation yet, but they are complete and work, so administrators can use and test them.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;mcp-server&#34;&gt;MCP server&lt;/h2&gt;&#xA;&lt;p&gt;The addition of an MCP server functionality to Agilebase brings a powerful new capability for AI agents and people to interact with your system from outside it. In fact, you can connect up many different systems, if they have their own MCP servers, to transfer data intelligently between them or synthesize it.&lt;/p&gt;</description>
+				<description>&lt;p&gt;This release includes a couple of major features for you to try out.&lt;/p&gt;&#xA;&lt;p&gt;The release will be rolled out gradually over the next few weeks, customer test servers first.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mcp-server&#34;&gt;MCP server&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This is currently in beta testing, which means it&amp;rsquo;s not recommended to roll them out across your entire organisation yet, but feature is complete and works, so administrators can use and test.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;The addition of an MCP server functionality to Agilebase brings a powerful new capability for AI agents and people to interact with your system from outside it. In fact, you can connect up many different systems, if they have their own MCP servers, to transfer data intelligently between them or synthesize it.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>19th June 2026 - usability</title>
