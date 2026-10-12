@@ -41,13 +41,13 @@
 	<meta property="og:type" content="article">
 		<meta property="article:section" content="releases">
 		<meta property="article:published_time" content="2026-09-19T09:57:55+01:00">
-		<meta property="article:modified_time" content="2026-10-07T17:22:59+01:00">
+		<meta property="article:modified_time" content="2026-10-12T10:57:32+01:00">
 
 	<meta itemprop="name" content="21st September 2026 - MCP servers and Passkeys">
 	<meta itemprop="description" content="Two beta features - MCP servers for AI interactions, Passkeys for more secure logins">
 	<meta itemprop="datePublished" content="2026-09-19T09:57:55+01:00">
-	<meta itemprop="dateModified" content="2026-10-07T17:22:59+01:00">
-	<meta itemprop="wordCount" content="717">
+	<meta itemprop="dateModified" content="2026-10-12T10:57:32+01:00">
+	<meta itemprop="wordCount" content="789">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="21st September 2026 - MCP servers and Passkeys">
 	<meta name="twitter:description" content="Two beta features - MCP servers for AI interactions, Passkeys for more secure logins">
@@ -163,7 +163,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b51eebd762f9a9c6d4f510ca33061d95.json"
+    data-offline-search-index-json-src="/offline-search-index.ea70053cbdde79db01a18ee171ffd7ae.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -188,7 +188,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b51eebd762f9a9c6d4f510ca33061d95.json"
+    data-offline-search-index-json-src="/offline-search-index.ea70053cbdde79db01a18ee171ffd7ae.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -251,6 +251,7 @@
         <li><a href="#passkey-faq">Passkey FAQ</a></li>
       </ul>
     </li>
+    <li><a href="#api-changes">API changes</a></li>
     <li><a href="#other">Other</a></li>
   </ul>
 </nav>
@@ -342,6 +343,12 @@
 <p>In that case, when you press the &rsquo;login with passkey&rsquo; button, you&rsquo;ll be shown a QR code which you can scan with your phone.</p>
 <h4 id="if-i-have-a-passkey-can-i-still-use-my-username-and-password">If I have a passkey can I still use my username and password?</h4>
 <p>In the short term, yes, you can use either method to log in. In the long term, people with passkeys will only be able to log in with that method, to take advantage of the increased security.</p>
+<h2 id="api-changes">API changes</h2>
+<p>Some minor updates have been made to the API surface, for people who are integrating systems with Agilebase to know about:</p>
+<ul>
+<li>The OpenAPI spec. Agilebase provides mistakenly set &lsquo;row_limit&rsquo; as a boolean, it&rsquo;s now a whole number</li>
+<li>For Authorization via API key, the &ldquo;Bearer &quot; prefix to the API key in the Authorization header is now not case sensitive - lowercase can be used as well as a capital B</li>
+</ul>
 <h2 id="other">Other</h2>
 <p>Many other incremental improvements and bugfixes have been implemented since the last release. To see all of them, please take a look at</p>
 <p><a href="https://github.com/agileChilli/Agilebase-updates/issues?q=is%3Aissue%20state%3Aclosed">https://github.com/agileChilli/Agilebase-updates/issues?q=is%3Aissue%20state%3Aclosed</a></p>
@@ -404,7 +411,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified October 7, 2026: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/b364bdf518a6755291217bd6d7e7e61d7f4ca979">Passkeys page and roadmap tweaks (b364bdf)</a>
+  Last modified October 12, 2026: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/152756ec58053a40c625ad4307870553fc560454">API notes in release notes (152756e)</a>
 </div>
 
 </div>
