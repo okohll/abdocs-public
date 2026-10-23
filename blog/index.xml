@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Mon, 07 Sep 2026 22:59:05 +0100</lastBuildDate>
+			<lastBuildDate>Fri, 23 Oct 2026 15:57:10 +0100</lastBuildDate>
 		
 			<atom:link href="https://docs.agilebase.co.uk/blog/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>24th September 2026 - infrastructure upgrade</title>
+				<link>https://docs.agilebase.co.uk/blog/2026/09/24/24th-september-2026-infrastructure-upgrade/</link>
+				<pubDate>Thu, 24 Sep 2026 09:57:55 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/blog/2026/09/24/24th-september-2026-infrastructure-upgrade/</guid>
+				<description>&lt;p&gt;We will soon be migrating customer systems to new infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;The upgrade is designed to provide an even more secure, robust and reliable foundation for Agilebase, improve performance and give us greater control over the infrastructure supporting your system.&lt;/p&gt;&#xA;&lt;h1 id=&#34;whats-changing&#34;&gt;What’s changing?&lt;/h1&gt;&#xA;&lt;p&gt;As part of the upgrade, we are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Upgrading our database technology to the latest high-performance and security standards.&lt;/li&gt;&#xA;&lt;li&gt;Moving to UK-owned and operated sovereign infrastructure, with backups hosted within the EU.&lt;/li&gt;&#xA;&lt;li&gt;Moving each customer to their own dedicated environment, rather than sharing infrastructure with other Agilebase customers. This provides greater isolation and resilience.&lt;/li&gt;&#xA;&lt;li&gt;Strengthening the overall infrastructure to help minimise disruption and downtime.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;what-does-this-mean-for-you&#34;&gt;What does this mean for you?&lt;/h1&gt;&#xA;&lt;p&gt;The main change you will notice is that your Agilebase login address will change.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>2nd April 2026 - finding scheduling conflicts</title>
 				<link>https://docs.agilebase.co.uk/blog/2026/04/02/2nd-april-2026-finding-scheduling-conflicts/</link>

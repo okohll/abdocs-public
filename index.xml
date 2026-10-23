@@ -243,13 +243,6 @@
 				<description>&lt;p&gt;Last month&amp;rsquo;s release had some major improvements for developers, this one has some big benefits for everyone.&lt;/p&gt;&#xA;&lt;h2 id=&#34;view-pinning&#34;&gt;View pinning&lt;/h2&gt;&#xA;&lt;p&gt;Often, people have a favourite set of views that they frequently use. You can now &amp;lsquo;pin&amp;rsquo; those to the sidebar for easy access with one click, wherever you are in the system.&lt;/p&gt;&#xA;&lt;p&gt;To pin a view, simply click the pin icon to the left of the view name, when a view is open.&lt;/p&gt;</description>
 			</item>
 			<item>
-				<title>2nd April 2026 - finding scheduling conflicts</title>
-				<link>https://docs.agilebase.co.uk/blog/2026/04/02/2nd-april-2026-finding-scheduling-conflicts/</link>
-				<pubDate>Thu, 02 Apr 2026 09:57:55 +0100</pubDate>
-				<guid>https://docs.agilebase.co.uk/blog/2026/04/02/2nd-april-2026-finding-scheduling-conflicts/</guid>
-				<description>&lt;p&gt;There&amp;rsquo;s a relatively new (given Postgresql&amp;rsquo;s history) database feature called ‘date multi-ranges’ and it turns out that a partner of ours has found a great use for them for a customer they’re working with.&lt;/p&gt;&#xA;&lt;p&gt;It’s so interesting that I thought I’d write it up here. It’s potentially a widely applicable example with many possible uses amongst other customers, but also it’s just an elegant example of a great database feature that people who like to see how things work might appreciate.&lt;/p&gt;</description>
-			</item>
-			<item>
 				<title>Guide 3.3 - Records: Advanced UI Control</title>
 				<link>https://docs.agilebase.co.uk/guides/guide3-advanced-usage/records/</link>
 				<pubDate>Tue, 17 Oct 2023 13:00:00 +0100</pubDate>
@@ -794,6 +787,20 @@
 				<pubDate>Fri, 30 Jan 2026 13:00:00 +0100</pubDate>
 				<guid>https://docs.agilebase.co.uk/docs/integrations/api-response-codes/</guid>
 				<description>&lt;p&gt;If an API request succeeds, the standard HTTP success code, 200 will be returned as the response status.&lt;/p&gt;&#xA;&lt;p&gt;If there is any error and the request fails, a different code will be returned.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;400: bad request, e.g. a necessary parameter for the request is missing, such as &amp;rsquo;t&amp;rsquo; to identify a table&lt;/li&gt;&#xA;&lt;li&gt;401: unauthorised e.g. the API key is missing or invalid&lt;/li&gt;&#xA;&lt;li&gt;403: forbidden, e.g. an action was requested that can&amp;rsquo;t be carried out in the circumstances, e.g. an attempt was made to alter a locked record&lt;/li&gt;&#xA;&lt;li&gt;404: not found, an object identified in the request was not found e.g. no match was found for a table ID specified with the &amp;rsquo;t&amp;rsquo; parameter&lt;/li&gt;&#xA;&lt;li&gt;409: conflict, e.g. data was supplied that doesn&amp;rsquo;t pass checks, such as a date outside of the field&amp;rsquo;s allowable range&lt;/li&gt;&#xA;&lt;li&gt;424: failed dependency, e.g. a third party service which Agilebase calls in the process of completing an action has failed&lt;/li&gt;&#xA;&lt;li&gt;429: too many requests e.g. the frequency of requests is too high, please throttle them back&lt;/li&gt;&#xA;&lt;li&gt;507: insufficient storage e.g. when creating a record, the limit set on the number of records which can be stored has been reached&lt;/li&gt;&#xA;&lt;li&gt;500: some other server error&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;When there is an error, a response header X-AB-error is also set with the type and content of the error message. That should help developers to troubleshoot and find the cause of the issue.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>24th September 2026 - infrastructure upgrade</title>
+				<link>https://docs.agilebase.co.uk/blog/2026/09/24/24th-september-2026-infrastructure-upgrade/</link>
+				<pubDate>Thu, 24 Sep 2026 09:57:55 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/blog/2026/09/24/24th-september-2026-infrastructure-upgrade/</guid>
+				<description>&lt;p&gt;We will soon be migrating customer systems to new infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;The upgrade is designed to provide an even more secure, robust and reliable foundation for Agilebase, improve performance and give us greater control over the infrastructure supporting your system.&lt;/p&gt;&#xA;&lt;h1 id=&#34;whats-changing&#34;&gt;What’s changing?&lt;/h1&gt;&#xA;&lt;p&gt;As part of the upgrade, we are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Upgrading our database technology to the latest high-performance and security standards.&lt;/li&gt;&#xA;&lt;li&gt;Moving to UK-owned and operated sovereign infrastructure, with backups hosted within the EU.&lt;/li&gt;&#xA;&lt;li&gt;Moving each customer to their own dedicated environment, rather than sharing infrastructure with other Agilebase customers. This provides greater isolation and resilience.&lt;/li&gt;&#xA;&lt;li&gt;Strengthening the overall infrastructure to help minimise disruption and downtime.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;what-does-this-mean-for-you&#34;&gt;What does this mean for you?&lt;/h1&gt;&#xA;&lt;p&gt;The main change you will notice is that your Agilebase login address will change.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>2nd April 2026 - finding scheduling conflicts</title>
+				<link>https://docs.agilebase.co.uk/blog/2026/04/02/2nd-april-2026-finding-scheduling-conflicts/</link>
+				<pubDate>Thu, 02 Apr 2026 09:57:55 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/blog/2026/04/02/2nd-april-2026-finding-scheduling-conflicts/</guid>
+				<description>&lt;p&gt;There&amp;rsquo;s a relatively new (given Postgresql&amp;rsquo;s history) database feature called ‘date multi-ranges’ and it turns out that a partner of ours has found a great use for them for a customer they’re working with.&lt;/p&gt;&#xA;&lt;p&gt;It’s so interesting that I thought I’d write it up here. It’s potentially a widely applicable example with many possible uses amongst other customers, but also it’s just an elegant example of a great database feature that people who like to see how things work might appreciate.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Scratchpad - Passkeys development</title>
