@@ -10,7 +10,7 @@
 		
 		
 		
-			<lastBuildDate>Fri, 23 Oct 2026 15:57:10 +0100</lastBuildDate>
+			<lastBuildDate>Sat, 14 Nov 2026 21:09:23 +0000</lastBuildDate>
 		
 			<atom:link href="https://docs.agilebase.co.uk/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
@@ -28,13 +28,6 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Software Architect</title>
-				<link>https://docs.agilebase.co.uk/tags/software-architect/</link>
-				<pubDate>Mon, 07 Sep 2026 14:30:00 +0100</pubDate>
-				<guid>https://docs.agilebase.co.uk/tags/software-architect/</guid>
-				<description></description>
-			</item>
-			<item>
 				<title>Citizen Developer Level 1</title>
 				<link>https://docs.agilebase.co.uk/tags/citizen-developer-level-1/</link>
 				<pubDate>Sat, 06 Jun 2026 16:40:00 +0100</pubDate>
@@ -46,6 +39,13 @@
 				<link>https://docs.agilebase.co.uk/tags/junior-software-architect/</link>
 				<pubDate>Fri, 06 Feb 2026 16:40:00 +0100</pubDate>
 				<guid>https://docs.agilebase.co.uk/tags/junior-software-architect/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Software Architect</title>
+				<link>https://docs.agilebase.co.uk/tags/software-architect/</link>
+				<pubDate>Fri, 30 Jan 2026 13:00:00 +0100</pubDate>
+				<guid>https://docs.agilebase.co.uk/tags/software-architect/</guid>
 				<description></description>
 			</item>
 			<item>

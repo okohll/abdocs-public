@@ -10,7 +10,7 @@
 		
 		
 		
-			<lastBuildDate>Fri, 19 Jun 2026 17:27:13 +0100</lastBuildDate>
+			<lastBuildDate>Fri, 06 Nov 2026 17:46:34 +0000</lastBuildDate>
 		
 			<atom:link href="https://docs.agilebase.co.uk/tags/citizen-developer-level-1/index.xml" rel="self" type="application/rss+xml" />
 			<item>
@@ -32,7 +32,7 @@
 				<link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-1/</link>
 				<pubDate>Tue, 12 Sep 2023 13:00:00 +0100</pubDate>
 				<guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-1/</guid>
-				<description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;This is the start of the Agilebase journey. At this level you can create your own customisations, using no coding.&lt;/p&gt;&#xA;&lt;p&gt;An Agilebase citizen developer can create &amp;lsquo;personal copies&amp;rsquo; of any &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;view&lt;/a&gt; and edit those copies&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;remove or add fields, excepting any that are marked &amp;lsquo;confidential&amp;rsquo; (only higher level developers can access those fields)&lt;/li&gt;&#xA;&lt;li&gt;rearrange fields&lt;/li&gt;&#xA;&lt;li&gt;change field sorting&lt;/li&gt;&#xA;&lt;li&gt;add filters or remove filters (except on &amp;lsquo;confidential&amp;rsquo; fields)&lt;/li&gt;&#xA;&lt;li&gt;add and remove &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;charts&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;A confidential field is one that has a &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/field-options/common-options/#show-if-record-in-view&#34;&gt;visibility&lt;/a&gt; rule, or is used for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt;.&lt;/p&gt;</description>
+				<description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;This is the start of the Agilebase journey. At this level you can create your own customisations, using no coding.&lt;/p&gt;&#xA;&lt;p&gt;An Agilebase citizen developer can create &amp;lsquo;personal copies&amp;rsquo; of &lt;a href=&#34;https://docs.agilebase.co.uk/docs/views/&#34;&gt;views&lt;/a&gt; and edit those copies&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;remove or add fields, excepting any used for &lt;a href=&#34;https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/roles/#multi-tenanting&#34;&gt;multi-tenanting&lt;/a&gt; (only higher level developers can access those fields)&lt;/li&gt;&#xA;&lt;li&gt;add calculations&lt;/li&gt;&#xA;&lt;li&gt;rearrange fields and change sorting&lt;/li&gt;&#xA;&lt;li&gt;add or remove filters (except on multi-tenanting fields)&lt;/li&gt;&#xA;&lt;li&gt;add and remove &lt;a href=&#34;https://docs.agilebase.co.uk/docs/charting/&#34;&gt;charts&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;join in data from other tables&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Views used by workflows can&amp;rsquo;t be copied, and creating brand new views comes at level 2.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>1. Personalising our CRM</title>

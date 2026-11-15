@@ -33,23 +33,23 @@
 <meta name="robots" content="index, follow">
 
 <title>Artificial Intelligence (AI) | Agilebase docs</title>
-<meta name="description" content="How AI and No Code work together in Agilebase">
+<meta name="description" content="How AI and No Code can work together in Agilebase">
 <meta property="og:url" content="https://docs.agilebase.co.uk/docs/artificial-intelligence/">
 	<meta property="og:site_name" content="Agilebase docs">
 	<meta property="og:title" content="Artificial Intelligence (AI)">
-	<meta property="og:description" content="How AI and No Code work together in Agilebase">
+	<meta property="og:description" content="How AI and No Code can work together in Agilebase">
 	<meta property="og:locale" content="en">
 	<meta property="og:type" content="website">
 
 	<meta itemprop="name" content="Artificial Intelligence (AI)">
-	<meta itemprop="description" content="How AI and No Code work together in Agilebase">
+	<meta itemprop="description" content="How AI and No Code can work together in Agilebase">
 	<meta itemprop="datePublished" content="2024-02-07T14:30:00+01:00">
-	<meta itemprop="dateModified" content="2026-09-07T23:17:58+01:00">
-	<meta itemprop="wordCount" content="318">
+	<meta itemprop="dateModified" content="2026-11-14T21:09:23+00:00">
+	<meta itemprop="wordCount" content="633">
 	<meta itemprop="keywords" content="Software Architect,V6">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Artificial Intelligence (AI)">
-	<meta name="twitter:description" content="How AI and No Code work together in Agilebase">
+	<meta name="twitter:description" content="How AI and No Code can work together in Agilebase">
 <link rel="preload" href="/scss/main.min.642e6db7d6d09e65a3567a34f763b2c802cdf175b57a5a2402500b5b55a9290a.css" as="style" integrity="sha256-ZC5tt9bQnmWjVno092OyyALN8XW1elokAlALW1WpKQo=" crossorigin="anonymous">
 <link href="/scss/main.min.642e6db7d6d09e65a3567a34f763b2c802cdf175b57a5a2402500b5b55a9290a.css" rel="stylesheet" integrity="sha256-ZC5tt9bQnmWjVno092OyyALN8XW1elokAlALW1WpKQo=" crossorigin="anonymous">
 <script
@@ -162,7 +162,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b9217b62dfa9c9b29890e7f2e20aa888.json"
+    data-offline-search-index-json-src="/offline-search-index.b188a149bf5950740235f9e134eafe7a.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -187,7 +187,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/offline-search-index.b9217b62dfa9c9b29890e7f2e20aa888.json"
+    data-offline-search-index-json-src="/offline-search-index.b188a149bf5950740235f9e134eafe7a.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -264,15 +264,8 @@
     <a href="/docs/security-and-compliance/policies/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docssecurity-and-compliancepolicies"><span class="">Policies</span></a>
   </li>
     </ul>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docsartificial-intelligence-li">
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docsartificial-intelligence-li">
     <a href="/docs/artificial-intelligence/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__section" id="m-docsartificial-intelligence"><span class="td-sidebar-nav-active-item">Artificial Intelligence (AI)</span></a>
-    <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsartificial-intelligenceai-development-li">
-    <a href="/docs/artificial-intelligence/ai-development/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsartificial-intelligenceai-development"><span class="">AI developmment</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsartificial-intelligencemcp-servers-li">
-    <a href="/docs/artificial-intelligence/mcp-servers/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsartificial-intelligencemcp-servers"><span class="">MCP servers</span></a>
-  </li>
-    </ul>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docstiles-li">
     <a href="/docs/tiles/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docstiles"><span class="">Tiles</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docstables-li">
@@ -555,9 +548,17 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#1-development">1) Development</a></li>
-    <li><a href="#2-ai-workflows">2) AI workflows</a></li>
-    <li><a href="#3-chat-interface">3) Chat interface</a></li>
+    <li><a href="#the-ai-connector">The AI connector</a>
+      <ul>
+        <li><a href="#concept">Concept</a></li>
+        <li><a href="#control">Control</a></li>
+        <li><a href="#data-privacy">Data privacy</a></li>
+        <li><a href="#connecting">Connecting</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#disconnecting">Disconnecting</a></li>
+      </ul>
+    </li>
+    <li><a href="#ai-workflows">AI workflows</a></li>
   </ul>
 </nav>
   </div>
@@ -589,10 +590,10 @@
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/requires-update/" data-taxonomy-term="requires-update"><span class="taxonomy-label">Requires Update</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/sales/" data-taxonomy-term="sales"><span class="taxonomy-label">Sales</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/security/" data-taxonomy-term="security"><span class="taxonomy-label">Security</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span><span class="taxonomy-count">43</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/software-architect/" data-taxonomy-term="software-architect"><span class="taxonomy-label">Software Architect</span><span class="taxonomy-count">41</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/system-architect/" data-taxonomy-term="system-architect"><span class="taxonomy-label">System Architect</span><span class="taxonomy-count">4</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/tabs/" data-taxonomy-term="tabs"><span class="taxonomy-label">Tabs</span><span class="taxonomy-count">1</span></a></li>
-        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/v6/" data-taxonomy-term="v6"><span class="taxonomy-label">V6</span><span class="taxonomy-count">101</span></a></li>
+        <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/v6/" data-taxonomy-term="v6"><span class="taxonomy-label">V6</span><span class="taxonomy-count">100</span></a></li>
         <li><a class="taxonomy-term" href="https://docs.agilebase.co.uk/tags/views/" data-taxonomy-term="views"><span class="taxonomy-label">Views</span><span class="taxonomy-count">1</span></a></li>
         </ul>
     </div>
@@ -611,7 +612,7 @@
 </nav>
 <div class="td-content">
 	<h1>Artificial Intelligence (AI)</h1>
-  <div class="lead">How AI and No Code work together in Agilebase</div>
+  <div class="lead">How AI and No Code can work together in Agilebase</div>
 	<header class="article-meta">
 		<div class="taxonomy taxonomy-terms-article taxo-tags">
   <h5 class="taxonomy-title">Tags:</h5>
@@ -622,39 +623,51 @@
 </div>
 
   </header>
-	<p>AI use in Agilebase falls into three categories. In all cases, use is optional. By default EU AI providers bound by strict GDPR regulations are used. Contractually, data is never shared or used for model training purposes. Please contact us if you wish to use your own privately hosted models.</p>
-<h2 id="1-development">1) Development</h2>
-<p><a href="/docs/artificial-intelligence/ai-development/">AI can aid you</a> in creating a system from scratch, or adding functionality, particularly when it comes to more complex things like SQL calculations.</p>
-<h2 id="2-ai-workflows">2) AI workflows</h2>
-<p>As well as working <em>on</em> the system, you can put AI to work <em>in</em> the system as well, modifying your data in bulk, with <a href="/docs/workflows/ai-workflows/">AI workflows</a>. These can create or update records, merging existing data into prompts.</p>
+	<h2 id="the-ai-connector">The AI connector</h2>
+<p>AI use in Agilebase is optional and controllable. It&rsquo;s disabled by default and can be enabled on a per-user basis by a software architect level user.</p>
+<h3 id="concept">Concept</h3>
+<p>Agilebase provides a connector that allows any third party AI interface to connect to Agilebase as an authenticated user. Someone using an AI chat interface like Chat GPT, Claude or Mistral, can ask Agilebase to look up information and take actions.</p>
+<p>Almost any action the user themselves can take, can also be taken via the AI interface. That includes searching for and editing data, up to development of the system, building tables and views, if the user has those capabilities. There are some exceptions, notably all System Architect only features are excluded, such as setting privileges and adding or removing user accounts.</p>
+<p>The connector is an <a href="https://mcpservers.org/learn/what-is-an-mcp-server">MCP server</a>.</p>
+<h3 id="control">Control</h3>
+<p>The AI connector starts completely disabled. In order for someone to use it, a Software Architect must enable it for them individually.</p>
+<p>For each user, the software architect can choose a level to allow. <a href="/docs/security-and-compliance/security-features/users/">Edit the user</a> and set the AI privilege level</p>
+<ul>
+<li>view - the AI can only read data, not change it</li>
+<li>edit - records can be created and updated, but not deleted. That can only be done by someone directly logged in to Agilebase</li>
+<li>develop - work on the system, updating tables and views. Again, removing objects is excluded</li>
+</ul>
+<p>The user&rsquo;s own privileges also apply. If the user can&rsquo;t see a table or view, the AI won&rsquo;t either. If they can&rsquo;t develop, the AI won&rsquo;t be able to.</p>
+<h3 id="data-privacy">Data privacy</h3>
+<p>The choice of AI system to connect is critical. Once connected, the AI has access to all the data the logged in person using it does. You should check that the AI vendor is able to, and will protect your company data.</p>
+<blockquote>
+<p>Internally, we ourselves use <a href="https://mistral.ai">Mistral</a>. This is an EU owned and hosted service with strict GDPR controls.</p>
+</blockquote>
+<h3 id="connecting">Connecting</h3>
+<p>Once a Software Architect has enabled someone&rsquo;s AI access to one of the levels above, they can connect a third party AI.</p>
+<p>In the AI&rsquo;s settings or configuration, add a custom connector, sometimes called an MCP server.</p>
+<p>You only need to specify one thing, the URL of the Agilebase MCP server, which is</p>
+<p>https://[subdomain].agilebase.co.uk/agileBase/mcp</p>
+<p>where [subdomain] gives the address of your system. Usually it&rsquo;s your company name, lowercase with spaces removed.</p>
+<p>On connecting, the user will be sent to an Agilebase page which asks if they want to allow the third party system to connect with their privileges. Here they can choose the maximum privilege level to allow the AI - <strong>view</strong>, <strong>edit</strong> or <strong>develop</strong>, up to the maximum privilege they have as a user and the maximum the Software Architect has enabled for them.</p>
+<p>If you want to later change that selection, please disconnect and reconnect the connector, or MCP server, in the third party software.</p>
+<h3 id="usage">Usage</h3>
+<p>Once connected, simply chat to the system. Use the word Agilebase to prompt the connector. For example, &lsquo;What are the project statuses in Agilebase?&rsquo; or &lsquo;In Agilebase, how would I create a report to show monthly sales totals?&rsquo;</p>
+<h3 id="disconnecting">Disconnecting</h3>
+<p>When a user logs out, any AI sessions are disconnected too. The same happens if the user is disabled, deleted or if their password is changed.</p>
+<h2 id="ai-workflows">AI workflows</h2>
+<p><a href="/docs/workflows/ai-workflows/">AI workflows</a> allow AI to work in the background, modifying your data in bulk in an automated fashion. These can create or update records, merging existing data into prompts.</p>
 <p>Examples could be</p>
 <ul>
 <li>letting people enter basic details for records (sales enquiries, time logs etc.) and letting the AI automatically categorise and add metadata in the background</li>
 <li>when a new field is added to a table, update all historical records to set sensible values for it</li>
 <li>summarising large amounts of data or extracting key points for reporting</li>
 </ul>
-<h2 id="3-chat-interface">3) Chat interface</h2>
-<p>In Agilebase you have the ability to easily <a href="/docs/artificial-intelligence/mcp-servers/">create MCP servers</a>. What is an MCP server? The acronym&rsquo;s not very helpful, as per many tech. acronyms (it stands for Model Context Protocol), but in simple terms it means you can connect up a standard AI chat interface with Agilebase and query your system with natural language.</p>
-<p>So for example you can ask the system a question and it will look up information from views, or you can ask it to do something like add a note to add a new person to the database.</p>
-<p>The full power comes because MCP is an industry standard, which means you can not just connect Agilebase, but via one chat interface, connect many different systems. So for example, it could monitor an email inbox, to triage, categorise and create support tickets, sales enquiries etc. in Agilebase.</p>
 
 	<div class="section-index">
     
     
-    <hr class="panel-line">
-        <div class="entry">
-                <h5>
-                    <a href="/docs/artificial-intelligence/ai-development/">AI developmment</a>
-                </h5>
-                <p>How AI and No Code work together in Agilebase</p>
-            </div>
-        <div class="entry">
-                <h5>
-                    <a href="/docs/artificial-intelligence/mcp-servers/">MCP servers</a>
-                </h5>
-                <p>Setting up MCP servers to allow you to interface with Agilebase via chat interfaces</p>
-            </div>
-        </div>
+    </div>
 <style>
   .feedback--answer {
     display: inline-block;
@@ -712,7 +725,7 @@
 </script>
 <br />
 <div class="td-page-meta__lastmod">
-  Last modified September 7, 2026: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/de9c943d5a55bcd78511ba34d6812f509ad129df">Hugo upgrade (de9c943)</a>
+  Last modified November 14, 2026: <a data-proofer-ignore href="https://github.com/okohll/abdocs/commit/e6a5944a754a7dd12b575e14ed1cad590885c17d">New MCP server (e6a5944)</a>
 </div>
 </div>
 

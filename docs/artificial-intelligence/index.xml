@@ -10,22 +10,8 @@
 		
 		
 		
-			<lastBuildDate>Sat, 19 Sep 2026 00:16:41 +0100</lastBuildDate>
+			<lastBuildDate></lastBuildDate>
 		
 			<atom:link href="https://docs.agilebase.co.uk/docs/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>AI developmment</title>
-				<link>https://docs.agilebase.co.uk/docs/artificial-intelligence/ai-development/</link>
-				<pubDate>Mon, 07 Sep 2026 14:30:00 +0100</pubDate>
-				<guid>https://docs.agilebase.co.uk/docs/artificial-intelligence/ai-development/</guid>
-				<description>&lt;p&gt;AI is used in many core features of Agilebase: to give you ideas about what to build, help to build those systems and build more advanced features more quickly than you would be able to do on your own as you progress your learning.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s possible, with a few simple prompts, for Agilebase&amp;rsquo;s AI to build a complete system for you from scratch, for whatever you want (a CRM system for a charity, an asset tracking system for a film production company, or whatever you want to describe).&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>MCP servers</title>
-				<link>https://docs.agilebase.co.uk/docs/artificial-intelligence/mcp-servers/</link>
-				<pubDate>Mon, 07 Sep 2026 14:30:00 +0100</pubDate>
-				<guid>https://docs.agilebase.co.uk/docs/artificial-intelligence/mcp-servers/</guid>
-				<description>&lt;p&gt;In Agilebase you have the ability to easily create MCP servers). What is an MCP server? The acronym&amp;rsquo;s not very helpful, as per many tech. acronyms (it stands for Model Context Protocol), but in simple terms it means you can connect up a standard third party AI chat interface, like ChatGPT, Claude or Mistral, to Agilebase and query your system with natural language.&lt;/p&gt;&#xA;&lt;p&gt;It will also let AI agents query and take actions in the system.&lt;/p&gt;</description>
-			</item>
 	</channel>
 </rss>

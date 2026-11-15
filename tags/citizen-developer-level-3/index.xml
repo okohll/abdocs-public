@@ -10,7 +10,7 @@
 		
 		
 		
-			<lastBuildDate>Sun, 07 Jun 2026 19:51:48 +0100</lastBuildDate>
+			<lastBuildDate>Fri, 06 Nov 2026 17:46:34 +0000</lastBuildDate>
 		
 			<atom:link href="https://docs.agilebase.co.uk/tags/citizen-developer-level-3/index.xml" rel="self" type="application/rss+xml" />
 			<item>
@@ -18,7 +18,7 @@
 				<link>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-3/</link>
 				<pubDate>Tue, 03 Oct 2023 13:00:00 +0100</pubDate>
 				<guid>https://docs.agilebase.co.uk/docs/introduction/learner-progression-levels/citizen-developer-level-3/</guid>
-				<description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;A Software Architect (see below) can, at their discretion, assign a citizen developer 3 &amp;lsquo;develop&amp;rsquo; privileges on a table (or tables).&lt;/p&gt;&#xA;&lt;p&gt;That allows them to&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;add &lt;a href=&#34;https://docs.agilebase.co.uk/docs/fields/&#34;&gt;fields&lt;/a&gt; to those table, excluding referenced fields&lt;/li&gt;&#xA;&lt;li&gt;remove fields that they themselves have added (not others)&lt;/li&gt;&#xA;&lt;li&gt;edit the basic properties of any field in those tables, e.g. the list of options in a dropdown box&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Additionally, actions not related to having develop privileges on a particular table are&lt;/p&gt;</description>
+				<description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;A Software Architect (see below) can, at their discretion, assign a citizen developer 3 &amp;lsquo;develop&amp;rsquo; privileges on tables.&lt;/p&gt;&#xA;&lt;p&gt;The privileges are as per Citizen Developer level 2, but you can also update or remove fields which have visibility rules, and manage &lt;a href=&#34;https://docs.agilebase.co.uk/docs/tables/data-integrity-checks/#data-integrity-checks-advanced&#34;&gt;data integrity constraints&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Views work in the same way as at level 2.&lt;/p&gt;&#xA;&lt;h2 id=&#34;useful-links&#34;&gt;Useful Links&lt;/h2&gt;&#xA;&lt;p&gt;Videos about how to control the UI &lt;a href=&#34;https://docs.agilebase.co.uk/guides/guide3-advanced-usage/&#34;&gt;Guide 3 - Advanced UI Usage&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;For more information about:&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>4. Calculated Datafields</title>

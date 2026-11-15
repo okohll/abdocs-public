@@ -10,7 +10,7 @@
 		
 		
 		
-			<lastBuildDate>Fri, 23 Oct 2026 15:57:10 +0100</lastBuildDate>
+			<lastBuildDate>Sat, 14 Nov 2026 21:09:23 +0000</lastBuildDate>
 		
 			<atom:link href="https://docs.agilebase.co.uk/tags/v6/index.xml" rel="self" type="application/rss+xml" />
 			<item>
@@ -74,7 +74,7 @@
 				<link>https://docs.agilebase.co.uk/docs/artificial-intelligence/</link>
 				<pubDate>Wed, 07 Feb 2024 14:30:00 +0100</pubDate>
 				<guid>https://docs.agilebase.co.uk/docs/artificial-intelligence/</guid>
-				<description>&lt;p&gt;AI use in Agilebase falls into three categories. In all cases, use is optional. By default EU AI providers bound by strict GDPR regulations are used. Contractually, data is never shared or used for model training purposes. Please contact us if you wish to use your own privately hosted models.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-development&#34;&gt;1) Development&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://docs.agilebase.co.uk/docs/artificial-intelligence/ai-development/&#34;&gt;AI can aid you&lt;/a&gt; in creating a system from scratch, or adding functionality, particularly when it comes to more complex things like SQL calculations.&lt;/p&gt;</description>
+				<description>&lt;h2 id=&#34;the-ai-connector&#34;&gt;The AI connector&lt;/h2&gt;&#xA;&lt;p&gt;AI use in Agilebase is optional and controllable. It&amp;rsquo;s disabled by default and can be enabled on a per-user basis by a software architect level user.&lt;/p&gt;&#xA;&lt;h3 id=&#34;concept&#34;&gt;Concept&lt;/h3&gt;&#xA;&lt;p&gt;Agilebase provides a connector that allows any third party AI interface to connect to Agilebase as an authenticated user. Someone using an AI chat interface like Chat GPT, Claude or Mistral, can ask Agilebase to look up information and take actions.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Community Users</title>
@@ -82,13 +82,6 @@
 				<pubDate>Fri, 05 Nov 2021 12:40:00 +0100</pubDate>
 				<guid>https://docs.agilebase.co.uk/docs/security-and-compliance/security-features/users/community-users/</guid>
 				<description>&lt;p&gt;Agilebase is primarily a platform for building back office systems for employees (or members of the organisation) to use.&lt;/p&gt;&#xA;&lt;p&gt;However, it&amp;rsquo;s common to allow access to people outside the organisation to perform limited data entry tasks. For example, you may wish your suppliers to be able to upload certificates of conformances to items they sell you, or you may have a large workforce of contractors who you require to fill in timesheets.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>AI developmment</title>
-				<link>https://docs.agilebase.co.uk/docs/artificial-intelligence/ai-development/</link>
-				<pubDate>Mon, 07 Sep 2026 14:30:00 +0100</pubDate>
-				<guid>https://docs.agilebase.co.uk/docs/artificial-intelligence/ai-development/</guid>
-				<description>&lt;p&gt;AI is used in many core features of Agilebase: to give you ideas about what to build, help to build those systems and build more advanced features more quickly than you would be able to do on your own as you progress your learning.&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s possible, with a few simple prompts, for Agilebase&amp;rsquo;s AI to build a complete system for you from scratch, for whatever you want (a CRM system for a charity, an asset tracking system for a film production company, or whatever you want to describe).&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>1. Creating a basic task list</title>
